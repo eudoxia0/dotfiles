@@ -1,0 +1,54 @@
+xvt.colorIT: #87af5f
+URxvt.colorBD: #d7d7d7
+URxvt.colorUL: #87afd7
+
+Urxvt*.saveLines: 65535
+Urxvt*.cursorBlink: false
+Urxvt*.urgentOnBell: true
+
+URxvt*scrollBar: true
+URxvt*scrollBar_right: true
+
+Urxvt*.cursorColor: #DCDCCC
+
+URxvt*.depth: 32
+! Transparency
+URxvt*depth: 32
+!URxvt*.transparent: true
+!URxvt*foreground:#B0B0B0
+URxvt.background: rgba:1111/1111/1111/dddd
+!URxvt*.shading: 15 
+
+*background: #111111
+*foreground: #babdb6
+! Black (not tango) + DarkGrey
+*color0:  #000000
+*color8:  #555753
+! DarkRed + Red
+*color1:  #ff6565
+*color9:  #ff8d8d
+! DarkGreen + Green
+*color2:  #93d44f
+*color10: #c8e7a8
+! ! DarkYellow + Yellow
+*color3:  #eab93d
+*color11: #ffc123
+! ! DarkBlue + Blue
+*color4:  #204a87
+*color12: #3465a4
+! ! DarkMagenta + Magenta
+*color5:  #ce5c00
+*color13: #f57900
+! !DarkCyan + Cyan (both not tango)
+*color6:  #89b6e2
+*color14: #46a4ff
+! ! LightGrey + White
+*color7:  #cccccc
+*color15: #ffffff
+
+URxvt.font: xft:Terminus:size=9
+
+Xft*dpi:              96
+Xft*antialias:        True
+Xft*hinting:          Full
+
