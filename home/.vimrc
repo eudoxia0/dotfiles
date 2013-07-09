@@ -37,6 +37,6 @@ augroup END
 
 " Slimv
 
-let g:slimv_swank_cmd = "! xterm -e /home/eudoxia/ccl/lx86cl64 --load /home/eudoxia/.vim/bundle/slimv.vim/slime/start-swank.lisp &"
+let g:slimv_swank_cmd = "! xterm -e sbcl --load /home/eudoxia/.vim/bundle/slimv.vim/slime/start-swank.lisp &"
 let g:lisp_rainbow=1
 

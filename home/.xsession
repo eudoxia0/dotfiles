@@ -1,3 +1,4 @@
+xscreensaver -nosplash &
 ./rotate.sh &
 transmission-gtk &
 
