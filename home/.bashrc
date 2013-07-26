@@ -80,21 +80,29 @@ fi
 
 # here be my shit
 
-# yeah yeah for some reason putting this in .xsession or .xinitrc
-# doesn't work
-eval `gnome-keyring-daemon` &
-export GNOME_KEYRING_SOCKET &
-export GNOME_KEYRING_PID &
-export SSH_AUTH_SOCK="$GNOME_KEYRING_CONTROL/ssh" &
+# virtualenvwrapper
+export WORKON_HOME=~/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_RESPECT_VIRTUALENV=true
+export PS1="\u:\W$ "
 
-[[ $TERM != "screen" ]] && exec tmux
+[[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
+alias 'dwenv'='deactivate;workon daywatch_env'
+alias 'ttenv'='deactivate;pythonbrew venv use ttwick'
+alias 'dwpenv'='deactivate;workon dw_platform_env'
+
+alias ls="ls --group-directories-first --color=auto -h "
 alias reboot="sudo reboot"
 alias shd="sudo shutdown now -h"
 alias cls="printf \"\\033c\""
 alias 'lock'='xscreensaver-command -lock'
 
-PS1='\[\033[01m\][ \[\033[01;34m\]\u@\h \[\033[00m\]\[\033[01m\]] \[\033[01;32m\]\w\[\033[00m\]\n\[\033[01;34m\]$\[\033[00m\]> '
-
 alias homeshick="$HOME/.homesick/repos/homeshick/home/.homeshick"
 
+PS1='\[\033[01m\][ \[\033[01;34m\]\u@\h \[\033[00m\]\[\033[01m\]] \[\033[01;32m\]\w\[\033[00m\]\n\[\033[01;34m\]$\[\033[00m\]> '
+
+if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
+    tmux attach || tmux new; exit
+fi
