@@ -384,5 +384,5 @@ client.add_signal("focus", function(c) c.border_color = beautiful.border_focus e
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
- awful.util.spawn_with_shell("xcompmgr -c -t-5 -l-5 -r4.2 -o.55 &")
+awful.util.spawn_with_shell("xcompmgr -c -t-5 -l-5 -r4.2 -o.55 &")
 

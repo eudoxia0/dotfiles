@@ -51,4 +51,3 @@ URxvt.font: xft:Terminus:size=9
 Xft*dpi:              96
 Xft*antialias:        True
 Xft*hinting:          Full
-

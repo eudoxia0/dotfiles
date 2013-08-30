@@ -90,8 +90,8 @@ export PS1="\u:\W$ "
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
 alias 'dwenv'='deactivate;workon daywatch_env'
-alias 'ttenv'='deactivate;pythonbrew venv use ttwick'
-alias 'dwpenv'='deactivate;workon dw_platform_env'
+alias 'ttenv'='deactivate;pythonbrew venv use coupons_se'
+alias 'dwpenv'='deactivate;workon dwp_env'
 
 alias ls="ls --group-directories-first --color=auto -h "
 alias reboot="sudo reboot"
@@ -101,8 +101,9 @@ alias 'lock'='xscreensaver-command -lock'
 
 alias homeshick="$HOME/.homesick/repos/homeshick/home/.homeshick"
 
-PS1='\[\033[01m\][ \[\033[01;34m\]\u@\h \[\033[00m\]\[\033[01m\]] \[\033[01;32m\]\w\[\033[00m\]\n\[\033[01;34m\]$\[\033[00m\]> '
+PS1="\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)\$\[\033[01m\][ \[\033[01;34m\]\u@\h \[\033[00m\]\[\033[01m\]] \[\033[01;32m\]\w\[\033[00m\]\n\[\033[01;34m\]$\[\033[00m\]> "
 
 if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
     tmux attach || tmux new; exit
 fi
+
