@@ -38,22 +38,22 @@
      # tags_urgent_statusline = ""
 
      tags_border_color = "#112211"
-     tags_border_width = 1
+     tags_border_width = 0
 
      # Frame / Client
      client_normal_fg = "#AABBAA"
      client_normal_bg = "#223322"
      client_normal_statusline = "\s[3;9;#121212;x] \s[2;8;#ff0000;x](1;client_close)"
 
-     client_sel_fg = "#223322"
+     client_sel_fg = "#AABBAA"
      client_sel_bg = "#AABBAA"
      client_sel_statusline = "\s[3;9;#121212;x] \s[2;8;#ff0000;x](1;client_close)"
 
      # client_free_statusline = ""
 
      frame_bg = "#555555"
-     client_titlebar_width = 12
-     client_border_width = 1
+     client_titlebar_width = 0
+     client_border_width = 0
 
    [/theme]
 
@@ -215,7 +215,7 @@
   [key] mod = {"Control"} key = "Left"  func = "tag_prev" [/key]
 
   [key] mod = {"Control"} key = "Up"  func = "screen_next" [/key]
-  [key] mod = {"Control"} key = "Down" func = "screen_prev" [/key]
+  [key] mod = {"Coqntrol"} key = "Down" func = "screen_prev" [/key]
 
   [key] mod = {"Super"} key = "q" func = "client_close" [/key]
 
@@ -280,9 +280,13 @@
   [key] mod = {"Super", "Shift"} key = "h" func = "infobar_toggle_hide" cmd = "default" [/key]
 
   # Launcher
-  [key] mod = {"Super"} key = "p" func = "launcher" cmd = "exec" [/key]
+  [key] mod = {"Super"} key = "r" func = "launcher" cmd = "exec" [/key]
 
   # Mine
-  [key] mod = {"Control","Super"} key = "c" func = "launcher" cmd = "chromium-browser" [/key]
+  [key] mod = {"Control","Super"} key = "c" func = "spawn" cmd = "chromium-browser" [/key]
+  [key] mod = {"Control","Super"} key = "x" func = "spawn" cmd = "xchat" [/key]
+  [key] mod = {"Control","Super"} key = "e" func = "spawn" cmd = "emacs" [/key]
+  [key] mod = {"Control","Super"} key = "s" func = "spawn" cmd = "emacs -f slime" [/key]
+  [key] mod = {"Control","Super"} key = "f" func = "spawn" cmd = "pcmanfm" [/key]
 
 [/keys]

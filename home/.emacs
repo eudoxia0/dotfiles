@@ -13,4 +13,16 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;(set-face-attribute 'default nil :font "Terminus-9")
+(set-face-attribute 'default nil :height 130)
 
+(add-to-list 'load-path "~/.emacs.d/solarized")
+(add-to-list 'load-path "~/.emacs.d/base16")
+(add-to-list 'load-path "~/.emacs.d/plugins")
+
+(require 'solarized-light-theme)
+
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))

@@ -1,0 +1,45 @@
+;-*-Lisp-*-
+
+(in-package :stumpwm)
+
+(set-prefix-key (kbd "F20"))
+
+(setq *terminal* "urxvt")
+
+(define-key *root-map* (kbd "q") "quit")
+(define-key *root-map* (kbd "r") "reload")
+
+;;; Workspaces
+
+(define-key *top-map* (kbd "F1") "gselect 1")
+(define-key *top-map* (kbd "F2") "gselect 2")
+(define-key *top-map* (kbd "F3") "gselect 3")
+(define-key *top-map* (kbd "F4") "gselect 4")
+
+;;; Keybindings
+
+(defcommand chromium () ()
+  (run-or-raise "chromium-browser" '(:class "Chromium")))
+(define-key *root-map* (kbd "c") "chromium")
+
+(define-key *root-map* (kbd "x") "exec xscreensaver-command -lock")
+
+;; from http://www.mygooglest.com/fni/stumpwm.html
+;; Web browsing commands
+;; Get the X selection and order the GUI browser to open it. Presumably it
+;; is a HTTP address.
+(defcommand open-selection-browser () ()
+  "docstring"
+  (run-shell-command (cat "exec chromium-browser " (get-x-selection))))
+
+(define-key *root-map* (kbd "b") "open-selection-browser")
+
+;; ask the user for a search string and search for it in Google
+(defcommand google (search)
+  ((:string "Search in Google for: "))
+  "docstring"
+  (check-type search string)
+  (substitute #\+ #\Space search)
+  (run-shell-command (cat "firefox http://www.google.com/search?q=" search)))
+
+(define-key *root-map* (kbd "g") "google")
