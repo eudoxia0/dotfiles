@@ -2,27 +2,24 @@
 
 (in-package :stumpwm)
 
-(set-prefix-key (kbd "F20"))
+(set-prefix-key (kbd "s-t"))
 
 (setq *terminal* "urxvt")
 
-(define-key *root-map* (kbd "q") "quit")
-(define-key *root-map* (kbd "r") "reload")
+(define-key *root-map* (kbd "C-q") "quit")
+(define-key *root-map* (kbd "C-r") "reload")
 
 ;;; Workspaces
 
-(define-key *top-map* (kbd "F1") "gselect 1")
-(define-key *top-map* (kbd "F2") "gselect 2")
-(define-key *top-map* (kbd "F3") "gselect 3")
-(define-key *top-map* (kbd "F4") "gselect 4")
+(define-key *top-map* (kbd "F1") "gselect web")
+(define-key *top-map* (kbd "F2") "gselect term")
+(define-key *top-map* (kbd "F3") "gselect edit")
+(define-key *top-map* (kbd "F4") "gselect im")
 
 ;;; Keybindings
 
 (defcommand chromium () ()
   (run-or-raise "chromium-browser" '(:class "Chromium")))
-(define-key *root-map* (kbd "c") "chromium")
-
-(define-key *root-map* (kbd "x") "exec xscreensaver-command -lock")
 
 ;; from http://www.mygooglest.com/fni/stumpwm.html
 ;; Web browsing commands
@@ -30,9 +27,7 @@
 ;; is a HTTP address.
 (defcommand open-selection-browser () ()
   "docstring"
-  (run-shell-command (cat "exec chromium-browser " (get-x-selection))))
-
-(define-key *root-map* (kbd "b") "open-selection-browser")
+  (run-shell-command (concatenate 'string "exec chromium-browser " (get-x-selection))))
 
 ;; ask the user for a search string and search for it in Google
 (defcommand google (search)
@@ -42,4 +37,38 @@
   (substitute #\+ #\Space search)
   (run-shell-command (cat "firefox http://www.google.com/search?q=" search)))
 
+
+(setf *mouse-focus-policy* :click)
+
+;;; Keybindings
+
+(define-key *root-map* (kbd "C-t") "urxvt")
+(define-key *root-map* (kbd "C-c") "chromium")
+(define-key *root-map* (kbd "C-x") "xchat")
+(define-key *root-map* (kbd "C-i") "pidgin")
+(define-key *root-map* (kbd "b") "open-selection-browser")
+(define-key *root-map* (kbd "x") "exec xscreensaver-command -lock")
 (define-key *root-map* (kbd "g") "google")
+
+;;; Theme
+
+(set-fg-color "SteelBlue")
+(set-bg-color "Black")
+(set-border-color "Gray30")
+(set-msg-border-width 0)
+(setf *message-window-padding* 20)
+(setf *maxsize-border-width* 2)
+(setf *normal-border-width* 5)
+(setf *window-border-style* :tight)
+(set-focus-color "MidnightBlue")
+(set-unfocus-color "Black")
+(set-frame-outline-width 0)
+
+;;; Autostart
+
+(stumpwm::run-commands
+ "gnew web"
+ "gnew term"
+ "gnew edit"
+ "gnew im"
+ "gselect web")

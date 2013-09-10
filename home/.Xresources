@@ -6,7 +6,7 @@ Urxvt*.saveLines: 65535
 Urxvt*.cursorBlink: false
 Urxvt*.urgentOnBell: true
 
-URxvt*scrollBar: true
+URxvt*scrollBar: false
 URxvt*scrollBar_right: true
 
 Urxvt*.cursorColor: #DCDCCC
@@ -46,7 +46,7 @@ URxvt.background: rgba:1111/1111/1111/dddd
 *color7:  #cccccc
 *color15: #ffffff
 
-URxvt.font: xft:Terminus:size=9
+URxvt.font: xft:Terminus-9:size=10
 
 Xft*dpi:              96
 Xft*antialias:        True
