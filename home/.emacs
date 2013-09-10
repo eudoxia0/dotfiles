@@ -19,7 +19,6 @@
 (setq inhibit-splash-screen t)
 ;; Always y/n o p
 (fset 'yes-or-no-p 'y-or-n-p)
-(fset 'yes-or-no-p 'y-or-n-p)
 
 (set-face-attribute 'default nil :font "Monaco")
 (set-face-attribute 'default nil :height 120)
