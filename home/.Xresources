@@ -50,4 +50,6 @@ URxvt.font: xft:Terminus-9:size=10
 
 Xft*dpi:              96
 Xft*antialias:        True
-Xft*hinting:          Full
+Xft*hinting:          true
+Xft.autohint: True
+Xft.lcdfilter: lcddefault
