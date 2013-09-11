@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.15 for eudoxia on Sun Jul  7 13:18:17 2013.
+# Written by xscreensaver-demo 5.22 for eudoxia on Tue Sep 10 18:57:33 2013.
 # http://www.jwz.org/xscreensaver/
 
 timeout:	12:00:00
@@ -47,7 +47,7 @@ programs:								      \
 -				maze -root				    \n\
 - GL: 				superquadrics -root			    \n\
 				attraction -root			    \n\
-				blitspin -root				    \n\
+-				blitspin -root				    \n\
 -				greynetic -root				    \n\
 -				helix -root				    \n\
 				hopalong -root				    \n\
@@ -252,6 +252,12 @@ programs:								      \
 - GL: 				hilbert -root				    \n\
 - GL: 				tronbit -root				    \n\
 -				unicode -root				    \n\
+				electricsheep --root 1			    \n\
+- GL: 				dnalogo -root				    \n\
+				hexadrop -root				    \n\
+  GL: 				kaleidocycle -root			    \n\
+  GL: 				quasicrystal -root			    \n\
+  GL: 				unknownpleasures -root			    \n\
 
 
 pointerPollTime:    0:00:05
