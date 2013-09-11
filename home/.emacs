@@ -1,10 +1,13 @@
+;;; Lisp
+
 (load (expand-file-name "~/quicklisp/slime-helper.el"))
 (setq inferior-lisp-program "sbcl")
 
 (set-language-environment "utf-8")
 (setq slime-net-coding-system 'utf-8-unix)
 
-;(global-font-lock-mode t) 
+;;; Basic interface options
+
 (mouse-wheel-mode t)
 (setq require-final-newline t)
 
@@ -21,18 +24,34 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (set-face-attribute 'default nil :font "Monaco")
-(set-face-attribute 'default nil :height 120)
+(set-face-attribute 'default nil :height 100)
 
-(add-to-list 'load-path "~/.emacs.d/plugins")
-(add-to-list 'load-path "~/.emacs.d/plugins/nav")
+;;; Packages
 
-(require 'nav)
-(require 'yaml-mode)
-(require 'clojure-mode)
-(require 'd-mode)
-(require 'textile-mode)
+(require 'package)
+(package-initialize)
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("marmalade" . "http://marmalade-repo.org/packages/")
+                         ("melpa" . "http://melpa.milkbox.net/packages/")))
 
-(nav-disable-overeager-window-splitting)
+(defvar packages
+  '(org nav
+    ;; Major modes
+    yaml-mode clojure-mode d-mode textile-mode markdown-mode))
+
+(defun packages-installed-p ()
+  (not (memq 'nil (mapcar (lambda (p) (package-installed-p p)) packages))))
+
+(unless (packages-installed-p)
+  (package-refresh-contents)
+  ;; install the missing packages
+  (dolist (p packages)
+    (when (not (package-installed-p p))
+      (package-install p))))
+
+(provide 'packages)
+
+;;; Package specific options
 
 (autoload 'markdown-mode "markdown-mode"
    "Major mode for editing Markdown files" t)
@@ -42,6 +61,6 @@
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.d$" . d-mode))
 (add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
-(add-to-list 'auto-mode-alist '("\\.textile$" . clojure-mode))
+(add-to-list 'auto-mode-alist '("\\.textile$" . textile-mode))
 
 (load-theme 'dichromacy t)
