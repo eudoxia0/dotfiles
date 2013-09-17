@@ -2,18 +2,18 @@
 ## File management, authentication, and other essential system processes
 
 if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
+    source /etc/X11/xinit/xinitrc.d/30-dbus
     eval "$(dbus-launch --sh-syntax --exit-with-session)"
 fi
 
-
-eval `gnome-keyring-daemon`
-export GNOME_KEYRING_SOCKET &
-export GNOME_KEYRING_PID &
-export SSH_AUTH_SOCK="$GNOME_KEYRING_CONTROL/ssh" &
+eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
+export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
 xscreensaver -nosplash &
 ./rotate.sh &
 nm-applet &
-transmission-gtk &
+pnmixer &
+xrdb .Xresources &
+transmission-gtk -m &
 
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0" 
 
