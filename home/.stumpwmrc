@@ -3,6 +3,7 @@
 (in-package :stumpwm)
 
 (set-prefix-key (kbd "s-t"))
+(setf *mouse-focus-policy* :click)
 
 (setq *terminal* "urxvt")
 
@@ -11,44 +12,45 @@
 
 ;;; Workspaces
 
-(define-key *top-map* (kbd "F1") "gselect web")
-(define-key *top-map* (kbd "F2") "gselect term")
-(define-key *top-map* (kbd "F3") "gselect edit")
-(define-key *top-map* (kbd "F4") "gselect im")
+(define-key *top-map* (kbd "s-1") "gselect web")
+(define-key *top-map* (kbd "s-2") "gselect term")
+(define-key *top-map* (kbd "s-3") "gselect edit")
+(define-key *top-map* (kbd "s-4") "gselect im")
 
-;;; Keybindings
+;;; Commands
 
-(defcommand chromium () ()
-  (run-or-raise "chromium-browser" '(:class "Chromium")))
+(defmacro com (name cmd keybinding &optional (class name))
+  `(progn
+     (defcommand ,name () ()
+       (run-or-raise ,cmd '(:class ,(symbol-name class))))
+     (define-key *top-map* (kbd ,keybinding) ,(symbol-name name))))
 
-;; from http://www.mygooglest.com/fni/stumpwm.html
-;; Web browsing commands
-;; Get the X selection and order the GUI browser to open it. Presumably it
-;; is a HTTP address.
+(com chromium "chromium" "C-s-c")
+(com xchat "xchat" "C-s-x")
+(com pidgin "pidgin" "C-s-i")
+(com fm "thunar" "C-s-f")
+
 (defcommand open-selection-browser () ()
-  "docstring"
+  "from http://www.mygooglest.com/fni/stumpwm.html
+   Get the X selection and order the GUI browser to open it."
   (run-shell-command (concatenate 'string "exec chromium-browser " (get-x-selection))))
 
-;; ask the user for a search string and search for it in Google
 (defcommand google (search)
   ((:string "Search in Google for: "))
-  "docstring"
+  "ask the user for a search string and search for it in Google"
   (check-type search string)
   (substitute #\+ #\Space search)
   (run-shell-command (cat "firefox http://www.google.com/search?q=" search)))
 
-
-(setf *mouse-focus-policy* :click)
-
 ;;; Keybindings
 
-(define-key *root-map* (kbd "C-t") "urxvt")
-(define-key *root-map* (kbd "C-c") "chromium")
-(define-key *root-map* (kbd "C-x") "xchat")
-(define-key *root-map* (kbd "C-i") "pidgin")
+(defcommand xlock () ()
+  "docstring"
+  (run-shell-command "exec xscreensaver-command -lock"))
+
 (define-key *root-map* (kbd "b") "open-selection-browser")
-(define-key *root-map* (kbd "x") "exec xscreensaver-command -lock")
 (define-key *root-map* (kbd "g") "google")
+(define-key *root-map* (kbd "x") "xlock")
 
 ;;; Theme
 
@@ -57,8 +59,8 @@
 (set-border-color "Gray30")
 (set-msg-border-width 0)
 (setf *message-window-padding* 20)
-(setf *maxsize-border-width* 2)
-(setf *normal-border-width* 5)
+(setf *maxsize-border-width* 0)
+(setf *normal-border-width* 1)
 (setf *window-border-style* :tight)
 (set-focus-color "MidnightBlue")
 (set-unfocus-color "Black")
@@ -71,4 +73,5 @@
  "gnew term"
  "gnew edit"
  "gnew im"
- "gselect web")
+ "gselect web"
+ "xsetroot -cursor_name left_ptr")
