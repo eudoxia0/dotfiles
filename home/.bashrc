@@ -102,10 +102,13 @@ ex ()
   fi
 }
 
+# Let's make Java a little less ugly (lol)
+
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
 
 # virtualenvwrapper
 export WORKON_HOME=~/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+source /usr/bin/virtualenvwrapper.sh
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
 export PS1="\u:\W$ "
