@@ -115,6 +115,9 @@ export PS1="\u:\W$ "
 
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
+# RubyGems
+export PATH="$PATH:$HOME/.gem/ruby/2.0.0/bin"
+
 alias 'dwenv'='deactivate;workon daywatch_env'
 alias 'ttenv'='deactivate;pythonbrew venv use coupons_se'
 alias 'dwpenv'='deactivate;workon dwp_env'
