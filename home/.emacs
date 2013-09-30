@@ -38,6 +38,7 @@
   '(org nav
     ;; Major modes
     yaml-mode clojure-mode d-mode textile-mode markdown-mode gnuplot-mode
+    erlang haskell-mode    
     ;; Other plugins
     rainbow-delimiters))
 
@@ -55,8 +56,6 @@
 
 ;;; Package specific options
 
-(autoload 'markdown-mode "markdown-mode"
-   "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
@@ -65,7 +64,7 @@
 (add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.textile$" . textile-mode))
 (add-to-list 'auto-mode-alist '("\\.gp$" . gnuplot-mode))
-
+(add-to-list 'auto-mode-alist '("\\.hs$" . haskell-mode))
 
 ;;; Load themes
 
