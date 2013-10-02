@@ -9,7 +9,7 @@
 ;;; local-projects sometimes breaks for some reason ¯\_(ツ)_/¯
 
 (in-package #:asdf)
-(defvar *subdir-search-registry* '(#p"/mnt/d/code/")
+(defvar *subdir-search-registry* '(#p"/home/eudoxia/code/")
   "List of directories to search subdirectories within.")
 (defvar *subdir-search-wildcard* :wild
   "Value of :wild means search only one level of subdirectories; value of :wild-inferiors means search
@@ -28,3 +28,45 @@
           (return (first files)))))))
 (pushnew 'sysdef-subdir-search *system-definition-search-functions*)
 (in-package :cl-user)
+
+(defun read-separator (str)
+ (let
+  ((*readtable* (copy-readtable *readtable* nil)))
+  (set-macro-character #\, (lambda (stream char)
+                            (declare (ignore char) (ignore stream))
+                            'break))
+  (read str nil)))
+
+(set-macro-character #\{
+ (lambda (str char)
+  (declare (ignore char))
+  (let
+   ((*readtable* (copy-readtable *readtable* nil)))
+   (set-macro-character #\} (lambda (stream char)
+                             (declare (ignore char) (ignore stream))
+                             'end))
+
+   (let
+    ((pairs (loop for key = (read str nil nil t)
+                  for sep = (read str nil nil t)
+                  for value = (read str nil nil t)
+                  for end? = (read-separator str)
+                  do (when (not (eql '=> sep)) (error "Expected =>, did not get"))
+                  do (when (not (or (eql 'end end?) (eql 'break end?))) (error "Expected , or }"))
+                  collect (list key value)
+                  while (not (eql 'end end?))))
+     (retn (gensym)))
+    `(let
+      ((,retn (make-hash-table :test #'equal)))
+      ,@(mapcar
+         (lambda (pair)
+          `(setf (gethash ,(car pair) ,retn) ,(cadr pair)))
+         pairs)
+      ,retn)))))
+
+(set-pprint-dispatch 'hash-table
+ (lambda (str ht)
+  (format str "{~{~{~S => ~S~}~^, ~}}"
+   (loop for key being the hash-keys of ht
+         for value being the hash-values of ht
+         collect (list key value)))))

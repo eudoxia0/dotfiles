@@ -1,6 +1,7 @@
 [user]
 	name = Fernando Borretti
-    email = eudoxiahp@gmail.com
+	email = eudoxiahp@gmail.com
 [diff]
-        tool = meld
-
+	tool = meld
+[color]
+	ui = auto

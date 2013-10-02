@@ -12,10 +12,13 @@ main = do
         , modMask = mod4Mask     -- Rebind Mod to the Windows key
         , borderWidth = 0
         , startupHook = do
-            spawn "feh --bg-fill wall.png &"
             spawn "xcompmgr -c -t-5 -l-5 -r4.2 -o.55 &"
         } `additionalKeys`
         [ ((mod4Mask .|. controlMask, xK_c), spawn "chromium-browser")
+        , ((mod4Mask .|. controlMask, xK_x), spawn "xchat")
+        , ((mod4Mask .|. controlMask, xK_i), spawn "pidgin")
+        , ((mod4Mask .|. controlMask, xK_e), spawn "emacs")
+        , ((mod4Mask .|. controlMask, xK_f), spawn "pcmanfm")
         , ((mod4Mask, xK_Return), spawn "rxvt-unicode")
         , ((mod4Mask .|. shiftMask, xK_c), kill)
         , ((mod4Mask, xK_r), spawn "gmrun")

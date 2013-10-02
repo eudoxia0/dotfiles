@@ -37,7 +37,10 @@
 (defvar packages
   '(org nav
     ;; Major modes
-    yaml-mode clojure-mode d-mode textile-mode markdown-mode))
+    yaml-mode clojure-mode d-mode textile-mode markdown-mode gnuplot-mode
+    erlang haskell-mode    
+    ;; Other plugins
+    rainbow-delimiters))
 
 (defun packages-installed-p ()
   (not (memq 'nil (mapcar (lambda (p) (package-installed-p p)) packages))))
@@ -53,8 +56,6 @@
 
 ;;; Package specific options
 
-(autoload 'markdown-mode "markdown-mode"
-   "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
@@ -62,10 +63,11 @@
 (add-to-list 'auto-mode-alist '("\\.d$" . d-mode))
 (add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.textile$" . textile-mode))
+(add-to-list 'auto-mode-alist '("\\.gp$" . gnuplot-mode))
+(add-to-list 'auto-mode-alist '("\\.hs$" . haskell-mode))
 
 ;;; Load themes
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 (load-theme 'dichromacy t)
-
