@@ -75,3 +75,6 @@
  "gnew im"
  "gselect web"
  "xsetroot -cursor_name left_ptr")
+
+(require 'swank)
+(swank:create-server)

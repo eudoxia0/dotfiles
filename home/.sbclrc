@@ -10,7 +10,7 @@
 ;;; local-projects sometimes breaks for some reason ¯\_(ツ)_/¯
 
 (in-package #:asdf)
-(defvar *subdir-search-registry* '(#p"/home/eudoxia/code/")
+(defvar *subdir-search-registry* '(#p"/home/eudoxia/code/" #p"/mnt/d/code/")
   "List of directories to search subdirectories within.")
 (defvar *subdir-search-wildcard* :wild
   "Value of :wild means search only one level of subdirectories; value of :wild-inferiors means search
