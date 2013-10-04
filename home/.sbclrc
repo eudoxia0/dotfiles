@@ -1,3 +1,4 @@
+;;;; -*- Lisp -*-
 ;;; The following lines added by ql:add-to-init-file:
 #-quicklisp
 (let ((quicklisp-init (merge-pathnames "quicklisp/setup.lisp"
@@ -70,3 +71,6 @@
    (loop for key being the hash-keys of ht
          for value being the hash-values of ht
          collect (list key value)))))
+
+;;; Safety first!
+(declaim (optimize (safety 3)))
