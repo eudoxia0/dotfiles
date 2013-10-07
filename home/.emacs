@@ -56,6 +56,12 @@
 
 ;;; Package specific options
 
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((lisp . t)))
+
+;;; Modes
+
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))

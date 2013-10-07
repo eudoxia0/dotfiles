@@ -3,9 +3,11 @@
 (in-package :stumpwm)
 
 (set-prefix-key (kbd "s-t"))
-(setf *mouse-focus-policy* :click)
+(setf *mouse-focus-policy* :sloppy)
+(setf *frame-number-map* "1234567890")
 
 (setq *terminal* "urxvt")
+(defparameter +www-browser+ "chromium")
 
 (define-key *root-map* (kbd "C-q") "quit")
 (define-key *root-map* (kbd "C-r") "reload")
@@ -25,7 +27,7 @@
        (run-or-raise ,cmd '(:class ,(symbol-name class))))
      (define-key *top-map* (kbd ,keybinding) ,(symbol-name name))))
 
-(com chromium "chromium" "C-s-c")
+(com chromium +www-browser+ "C-s-c")
 (com xchat "xchat" "C-s-x")
 (com pidgin "pidgin" "C-s-i")
 (com fm "thunar" "C-s-f")
@@ -33,14 +35,14 @@
 (defcommand open-selection-browser () ()
   "from http://www.mygooglest.com/fni/stumpwm.html
    Get the X selection and order the GUI browser to open it."
-  (run-shell-command (concatenate 'string "exec chromium-browser " (get-x-selection))))
+  (run-shell-command (concatenate 'string "exec " +www-browser+ " " (get-x-selection))))
 
 (defcommand google (search)
   ((:string "Search in Google for: "))
   "ask the user for a search string and search for it in Google"
   (check-type search string)
   (substitute #\+ #\Space search)
-  (run-shell-command (cat "firefox http://www.google.com/search?q=" search)))
+  (run-shell-command (concatenate 'string "exec" +www-browser+ "http://www.google.com/search?q=" search)))
 
 ;;; Keybindings
 
