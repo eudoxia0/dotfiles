@@ -5,3 +5,5 @@
 	tool = meld
 [color]
 	ui = auto
+[alias]
+	tree = log --pretty='%Cgreen%h%Creset [%ai] %s %Cred<%Creset%an%Cred>' --decorate --graph
