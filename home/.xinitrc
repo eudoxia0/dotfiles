@@ -14,6 +14,7 @@ xscreensaver -nosplash &
 ./rotate.sh &
 nm-applet &
 pnmixer &
+redshift &
 xrdb .Xresources &
 transmission-gtk -m &
 
