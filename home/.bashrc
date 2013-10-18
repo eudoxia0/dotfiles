@@ -115,8 +115,10 @@ export PS1="\u:\W$ "
 
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
-# RubyGems
-export PATH="$PATH:$HOME/.gem/ruby/2.0.0/bin"
+# NPM
+export PATH="$PATH:$HOME/.npm/bin"
+# rbenv
+eval "$(rbenv init -)"
 
 alias 'dwenv'='deactivate;workon daywatch_env'
 alias 'ttenv'='deactivate;pythonbrew venv use coupons_se'
@@ -135,4 +137,3 @@ PS1="\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)\$\[\033[01m\][ \[\033[01
 if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
     tmux attach || tmux new; exit
 fi
-
