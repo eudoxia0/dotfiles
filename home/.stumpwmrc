@@ -1,6 +1,10 @@
-;-*-Lisp-*-
+;;;;-*-Lisp-*-
 
 (in-package :stumpwm)
+
+(declaim (optimize (speed 3)
+                   (debug 1)
+                   (safety 0)))
 
 (set-prefix-key (kbd "s-t"))
 (setf *mouse-focus-policy* :sloppy)
@@ -18,6 +22,8 @@
 (define-key *top-map* (kbd "s-2") "gselect term")
 (define-key *top-map* (kbd "s-3") "gselect edit")
 (define-key *top-map* (kbd "s-4") "gselect im")
+(define-key *top-map* (kbd "s-5") "gselect file")
+(define-key *top-map* (kbd "s-6") "gselect mail")
 
 ;;; Commands
 
@@ -30,7 +36,12 @@
 (com chromium +www-browser+ "C-s-c")
 (com xchat "xchat" "C-s-x")
 (com pidgin "pidgin" "C-s-i")
-(com fm "thunar" "C-s-f")
+(com fm "pcmanfm" "C-s-f")
+(com lock "xscreensaver-command -lock" "s-x")
+
+(defcommand battery () ()
+  "docstring"
+  (message (run-shell-command "acpi")))
 
 (defcommand open-selection-browser () ()
   "from http://www.mygooglest.com/fni/stumpwm.html
@@ -52,7 +63,6 @@
 
 (define-key *root-map* (kbd "b") "open-selection-browser")
 (define-key *root-map* (kbd "g") "google")
-(define-key *root-map* (kbd "x") "xlock")
 
 ;;; Theme
 
@@ -68,6 +78,17 @@
 (set-unfocus-color "Black")
 (set-frame-outline-width 0)
 
+;;; Group placement rules
+
+
+#|(defmacro frame (group &rest apps)
+  `(define-frame-preference ,group
+     ,(loop for app in apps collecting
+            `(0 nil t :class ,(symbol-name app)))))
+
+(frame "web" :chromium)
+(frame "edit" :emacs)
+|#
 ;;; Autostart
 
 (stumpwm::run-commands
@@ -75,8 +96,10 @@
  "gnew term"
  "gnew edit"
  "gnew im"
+ "gnew file"
+ "gnew mail"
  "gselect web"
- "xsetroot -cursor_name left_ptr")
+ "exec bash .xinitrc")
 
 (require 'swank)
 (swank:create-server)

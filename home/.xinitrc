@@ -1,5 +1,7 @@
 #!/bin/sh
 
+./.screenlayout/home.sh &
+
 ## Ensure that the D-Bus Communication System is running properly to fix
 ## File management, authentication, and other essential system processes
 
