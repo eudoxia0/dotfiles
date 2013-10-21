@@ -51,3 +51,5 @@ URxvt.font: xft:Terminus-9:size=10
 Xft*dpi:              96
 Xft*antialias:        True
 Xft*hinting:          true
+
+xosview*memGraph: True
