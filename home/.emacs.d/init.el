@@ -20,11 +20,14 @@
 (mouse-wheel-mode t)
 (setq require-final-newline t)
 
+(cua-mode 1)
+
 ;; Hide scrollbars
 (scroll-bar-mode -1)
 ;; Hide toolbar
 (tool-bar-mode -1)
 (menu-bar-mode 0)
+(global-linum-mode 1)
 ;; Empty scratch buffer
 (setq initial-scratch-message "")
 ;; Don't show startup screen
@@ -41,20 +44,21 @@
 
 (setq vc-follow-symlinks t)
 
-;; Highlight line
-(global-hl-line-mode)
-
 ;; Font options
-(set-face-attribute 'default nil :font "Monaco")
+(set-face-attribute 'default nil :font "Inconsolata")
 (set-face-attribute 'default nil :height 100)
 
 ;;; Common Lisp options
+
+;(load (expand-file-name "~/quicklisp/log4slime-setup.el"))
+;(global-log4slime-mode 1)
 
 (load (expand-file-name "~/quicklisp/slime-helper.el"))
 (setq inferior-lisp-program "sbcl")
 
 (set-language-environment "utf-8")
 (setq slime-net-coding-system 'utf-8-unix)
+
 
 (slime-setup '(slime-repl
                slime-asdf
@@ -118,15 +122,3 @@
 (global-set-key (kbd "<f8>")
                 (lambda()(interactive)(find-file "~/.emacs.d/init.el")))
 (global-set-key (kbd "C-.") 'magit-status)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ecb-options-version "2.40"))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
