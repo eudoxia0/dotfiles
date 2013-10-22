@@ -2,12 +2,17 @@
 ;;;                                        Bogdan Maryniuk
 
 ;; Fire up server
-(require 'server)
+;(require 'server)
 ;;Start emacs server in running GUI and not already running
-(setq server-socket-dir "/tmp/emacs-shared")
-(if (display-graphic-p)
-    (unless (server-running-p)
-      (server-start)))
+;(setq server-socket-dir "/tmp/emacs-shared")
+;(if (display-graphic-p)
+;    (unless (server-running-p)
+;      (server-start)))
+
+(add-hook 'after-save-hook 
+          (lambda ()
+            (if (eq major-mode 'emacs-lisp-mode)
+                (save-excursion (byte-compile-file buffer-file-name)))))
 
 ;;; Themes
 
@@ -48,77 +53,14 @@
 (set-face-attribute 'default nil :font "Inconsolata")
 (set-face-attribute 'default nil :height 100)
 
-;;; Common Lisp options
-
-;(load (expand-file-name "~/quicklisp/log4slime-setup.el"))
-;(global-log4slime-mode 1)
-
-(load (expand-file-name "~/quicklisp/slime-helper.el"))
-(setq inferior-lisp-program "sbcl")
-
-(set-language-environment "utf-8")
-(setq slime-net-coding-system 'utf-8-unix)
-
-
-(slime-setup '(slime-repl
-               slime-asdf
-               slime-fuzzy
-               slime-banner
-               slime-indentation
-               slime-media))
-
-(setq slime-enable-evaluate-in-emacs t)
-
-;;; Packages
-
-(require 'package)
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages/")
-                         ("melpa" . "http://melpa.milkbox.net/packages/")))
-(package-initialize)
-
-(defvar packages
-  '(org nav
-    ;; Major modes
-    yaml-mode clojure-mode d-mode textile-mode markdown-mode gnuplot-mode
-    erlang haskell-mode fsharp-mode sass-mode rainbow-mode ruby-mode
-    ;; Other plugins
-    rainbow-delimiters magit ecb))
-
-(defun packages-installed-p ()
-  (not (memq 'nil (mapcar (lambda (p) (package-installed-p p)) packages))))
-
-(unless (packages-installed-p)
-  (package-refresh-contents)
-  ;; install the missing packages
-  (dolist (p packages)
-    (when (not (package-installed-p p))
-      (package-install p))))
-
-(provide 'packages)
-
-;;; Package specific options
-
-(org-babel-do-load-languages
- 'org-babel-load-languages
- '((lisp . t)))
-
-;;; Modes
-
-(setq auto-mode-alist
-      (append '(("\\.md\\'" . markdown-mode)
-		("\\.\\(yaml\\|yml\\)$" . yaml-mode)
-		("\\.d$" . d-mode)
-		("\\.clj$" . clojure-mode)
-		("\\.textile$" . textile-mode)
-		("\\.gp$" . gnuplot-mode)
-		("\\.sql$" . sql-mode)
-		("\\.\\(rb\\|Gemfile\\|Rakefile\\)$" . ruby-mode)
-		("\\.hs$" . haskell-mode))
-	      auto-mode-alist))
-
 ;;; Keybindings
 
 (global-set-key (kbd "<f8>")
                 (lambda()(interactive)(find-file "~/.emacs.d/init.el")))
 (global-set-key (kbd "C-.") 'magit-status)
+
+;;; Other files
+
+(load (expand-file-name "~/.emacs.d/pack.el"))
+(load (expand-file-name "~/.emacs.d/opt.el"))
+(load (expand-file-name "~/.emacs.d/lisp.el"))
