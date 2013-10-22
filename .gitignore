@@ -1,1 +1,7 @@
 *.swp
+\#*\#
+.#*
+*~
+.venv
+.irssi/*.log
+*.elc
