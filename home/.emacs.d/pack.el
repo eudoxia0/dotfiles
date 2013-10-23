@@ -12,7 +12,9 @@
     yaml-mode clojure-mode d-mode textile-mode markdown-mode gnuplot-mode
     erlang haskell-mode fsharp-mode sass-mode rainbow-mode ruby-mode
     ;; Other plugins
-    rainbow-delimiters magit ecb))
+    rainbow-delimiters magit ecb
+    ;; Themes
+    color-theme-solarized color-theme-twilight color-theme-github))
 
 (defun packages-installed-p ()
   (not (memq 'nil (mapcar (lambda (p) (package-installed-p p)) packages))))
