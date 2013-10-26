@@ -51,6 +51,7 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+. ~/.shell/sys.sh
 . ~/.shell/alias.sh
 . ~/.shell/fn.sh
 . ~/.shell/var.sh
