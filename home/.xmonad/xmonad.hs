@@ -31,6 +31,8 @@ customKeys =   [
         , ((mod4Mask .|. controlMask, xK_i), spawn "pidgin")
         , ((mod4Mask .|. controlMask, xK_e), spawn "emacs")
         , ((mod4Mask .|. controlMask, xK_f), spawn "pcmanfm")
+        , ((mod4Mask .|. controlMask, xK_a), spawn "audacious")
+        , ((mod4Mask .|. controlMask, xK_o), spawn "xosview")
         , ((mod4Mask, xK_Return), spawn "rxvt-unicode")
         , ((mod4Mask .|. shiftMask, xK_c), kill)
         , ((mod4Mask, xK_r), spawn "gmrun")
