@@ -14,6 +14,6 @@
 		("\\.textile$" . textile-mode)
 		("\\.gp$" . gnuplot-mode)
 		("\\.sql$" . sql-mode)
-		("\\.\\(rb\\|Gemfile\\|Rakefile\\)$" . ruby-mode)
+		("\\.\\(rb\\|Gemfile\\|Vagrantfile\\|Rakefile\\)$" . ruby-mode)
 		("\\.hs$" . haskell-mode))
 	      auto-mode-alist))
