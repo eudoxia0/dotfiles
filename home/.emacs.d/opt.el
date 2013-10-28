@@ -14,6 +14,35 @@
 		("\\.textile$" . textile-mode)
 		("\\.gp$" . gnuplot-mode)
 		("\\.sql$" . sql-mode)
-		("\\.\\(rb\\|Gemfile\\|Vagrantfile\\|Rakefile\\)$" . ruby-mode)
+		("\\.\\(rb\\|Gemfile\\|Vagrantfile\\|Rakefile\\)$" . enh-ruby-mode)
 		("\\.hs$" . haskell-mode))
 	      auto-mode-alist))
+
+;; Autocomplete
+
+(require 'auto-complete-config)
+(ac-config-default)
+(setq ac-ignore-case nil)
+(add-to-list 'ac-modes 'enh-ruby-mode)
+(add-to-list 'ac-modes 'web-mode)
+
+;; Projectile
+
+(require 'grizzl)
+(projectile-global-mode)
+(setq projectile-enable-caching t)
+(setq projectile-completion-system 'grizzl)
+;; Press Command-p for fuzzy find in project
+(global-set-key (kbd "s-p") 'projectile-find-file)
+;; Press Command-b for fuzzy switch buffer
+(global-set-key (kbd "s-b") 'projectile-switch-to-buffer)
+
+;; Highlight indentation
+
+(require 'highlight-indentation)
+(add-hook 'prog-mode
+           (lambda () (highlight-indentation-current-column-mode)))
+
+;; Powerline
+
+(require 'powerline)

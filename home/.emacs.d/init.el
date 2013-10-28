@@ -9,17 +9,13 @@
 ;    (unless (server-running-p)
 ;      (server-start)))
 
+(require 'cl)
+(require 'whitespace)
+
 (add-hook 'after-save-hook 
           (lambda ()
             (if (eq major-mode 'emacs-lisp-mode)
                 (save-excursion (byte-compile-file buffer-file-name)))))
-
-;;; Themes
-
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(setq custom-safe-themes t)
-
-(load-theme 'dichromacy t)
 
 ;;; Basic interface options
 
@@ -27,6 +23,8 @@
 (setq require-final-newline t)
 
 (cua-mode 1)
+
+(windmove-default-keybindings)
 
 ;; Hide scrollbars
 (scroll-bar-mode -1)
@@ -50,6 +48,20 @@
 
 (setq vc-follow-symlinks t)
 
+(setq whitespace-line-column 80) ;; limit line length
+(setq whitespace-style '(face lines-tail))
+
+(add-hook 'prog-mode-hook
+          (lambda ()
+            (font-lock-add-keywords
+             nil
+             '(("\\<\\(FIXME\\|TODO\\|BUG\\):" 1 font-lock-warning-face t)))))
+
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
 ;; Font options
 (set-face-attribute 'default nil :font "Inconsolata")
 (set-face-attribute 'default nil :height 100)
@@ -65,3 +77,10 @@
 (load (expand-file-name "~/.emacs.d/pack.el"))
 (load (expand-file-name "~/.emacs.d/opt.el"))
 (load (expand-file-name "~/.emacs.d/lisp.el"))
+
+;;; Themes
+
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(setq custom-safe-themes t)
+
+(load-theme 'soft-morning t)
