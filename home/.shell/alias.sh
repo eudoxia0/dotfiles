@@ -19,3 +19,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=tty -d skip'
     alias egrep='egrep --color=auto'
 fi
+
+export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+export LESS=' -R '

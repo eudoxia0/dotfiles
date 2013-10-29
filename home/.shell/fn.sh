@@ -27,3 +27,10 @@ ex ()
 lsp () {
   sbcl --noinform --load $1 --quit
 }
+
+# dial - ssh into a host defined in .shell/hosts.txt
+# usage: dial <host>
+# see: .shell/hosts.txt
+dial () {
+  ssh `grep $1 ~/.shell/hosts.txt | tr -s ' ' | cut -d ' ' -f 2`
+}

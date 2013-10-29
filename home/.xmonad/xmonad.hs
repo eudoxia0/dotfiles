@@ -30,6 +30,7 @@ customKeys =   [
         , ((mod4Mask .|. controlMask, xK_x), spawn "xchat")
         , ((mod4Mask .|. controlMask, xK_i), spawn "pidgin")
         , ((mod4Mask .|. controlMask, xK_e), spawn "emacs")
+        , ((mod4Mask .|. controlMask, xK_s), spawn "emacs -f slime -f delete-other-windows")
         , ((mod4Mask .|. controlMask, xK_f), spawn "pcmanfm")
         , ((mod4Mask .|. controlMask, xK_a), spawn "audacious")
         , ((mod4Mask .|. controlMask, xK_o), spawn "xosview")
