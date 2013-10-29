@@ -24,3 +24,5 @@ if [ $BSD ]; then
     # Assume its FreeBSD
     function ins() { cd /usr/ports/$1; sudo make clean install $2; }
 fi
+
+PATH=$HOME/.shelly/bin:$PATH

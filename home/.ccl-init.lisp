@@ -1,1 +1,1 @@
-(load "init.lisp")
+(load (merge-pathnames "init.lisp"))
