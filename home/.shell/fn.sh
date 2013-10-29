@@ -21,3 +21,9 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+
+# lsp - run a Common Lisp file as a script
+# usage: lsp <file>
+lsp () {
+  sbcl --noinform --load $1 --quit
+}
