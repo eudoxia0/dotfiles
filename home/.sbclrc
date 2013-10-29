@@ -32,14 +32,6 @@
 (pushnew 'sysdef-subdir-search *system-definition-search-functions*)
 (in-package :cl-user)
 
-(defun read-separator (str)
- (let
-  ((*readtable* (copy-readtable *readtable* nil)))
-  (set-macro-character #\, (lambda (stream char)
-                            (declare (ignore char) (ignore stream))
-                            'break))
-  (read str nil)))
-
 (set-pprint-dispatch 'hash-table
  (lambda (str ht)
   (format str "{~{~{~S => ~S~}~^, ~}}"
@@ -48,4 +40,4 @@
          collect (list key value)))))
 
 ;;; Safety first!
-(declaim (optimize (safety 3)))
+(declaim (optimize (safety 3) (debug 3) (speed 0)))
