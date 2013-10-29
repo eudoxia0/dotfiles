@@ -1,1 +1,1 @@
-.lisprc
+(load "init.lisp")
