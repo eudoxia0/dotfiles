@@ -56,6 +56,7 @@ fi
 . ~/.shell/fn.sh
 . ~/.shell/var.sh
 . ~/.shell/complete.sh
+. ~/.shell/tv.sh
 
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
