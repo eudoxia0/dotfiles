@@ -1,0 +1,9 @@
+[submodule "home/.emacs.d/custom/emacs-powerline"]
+	path = home/.emacs.d/custom/emacs-powerline
+	url = https://github.com/jonathanchu/emacs-powerline.git
+[submodule "home/.emacs.d/themes/owainlewis"]
+	path = home/.emacs.d/themes/owainlewis
+	url = https://github.com/owainlewis/emacs-color-themes.git
+[submodule "home/.emacs.d/themes/noctilux"]
+	path = home/.emacs.d/themes/noctilux
+	url = https://github.com/stafu/noctilux-theme.git
