@@ -30,7 +30,29 @@ lsp () {
 
 # dial - ssh into a host defined in .shell/hosts.txt
 # usage: dial <host>
-# see: .shell/hosts.txt
+# depends on: .shell/hosts.txt
 dial () {
   ssh `grep $1 ~/.shell/hosts.txt | tr -s ' ' | cut -d ' ' -f 2`
+}
+
+# geo - get the location of a host
+# usage: geo <host>
+# output: <country>,<state>,<lat>,<lon>
+geo () {
+  local DATA=`curl http://www.freegeoip.net/csv/$1 -o /tmp/.geoip -s`
+  local OUT="cat /tmp/.geoip | tr -d '\"' | cut -d ',' -f "
+  local COUNTRY=`eval ${OUT} 3`
+  local STATE=`eval ${OUT} 4`
+  local LAT=`eval ${OUT} 8`
+  local LON=`eval ${OUT} 9`
+  rm /tmp/.geoip
+  echo $COUNTRY,$STATE,$LAT,$LON
+}
+
+world_time () {
+    local datetime="date +%H:%M"
+    echo -e 'UTC\t\t' `TZ="Europe/Reijkjavik" $datetime`
+    echo -e 'Berlin\t\t' `TZ="Europe/Berlin" $datetime`
+    echo -e 'Seoul\t\t' `TZ="Asia/Seoul" $datetime`
+    echo -e 'Adelaide\t' `TZ="Australia/Adelaide" $datetime`
 }
