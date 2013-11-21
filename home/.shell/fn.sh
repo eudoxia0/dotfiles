@@ -49,10 +49,23 @@ geo () {
   echo $COUNTRY,$STATE,$LAT,$LON
 }
 
+# world_time - print the time in different timezones
+# usage: world_time
+# slightly modified from: https://github.com/isislovecruft/scripts
 world_time () {
     local datetime="date +%H:%M"
     echo -e 'UTC\t\t' `TZ="Europe/Reijkjavik" $datetime`
     echo -e 'Berlin\t\t' `TZ="Europe/Berlin" $datetime`
-    echo -e 'Seoul\t\t' `TZ="Asia/Seoul" $datetime`
     echo -e 'Adelaide\t' `TZ="Australia/Adelaide" $datetime`
+    echo -e 'Tokyo\t\t' `TZ="Asia/Tokyo" $datetime`
+}
+
+# encrypt, decrypt - encrypt and decrypt a folder with a password
+# usage: [encrypt|decrypt] <file>
+# from: http://superuser.com/questions/162624/how-to-password-protect-gzip-files-on-the-command-line
+encrypt () {
+    tar cz $1 | openssl enc -aes-256-cbc -e > $1.tar.gz.enc
+}
+decrypt () {
+    openssl aes-256-cbc -d -in $1.tar.gz.enc -out $1.decrypted.tar.gz
 }
