@@ -15,8 +15,11 @@
 		("\\.gp$" . gnuplot-mode)
 		("\\.sql$" . sql-mode)
 		("\\.\\(rb\\|Gemfile\\|Vagrantfile\\|Rakefile\\)$" . enh-ruby-mode)
-		("\\.hs$" . haskell-mode))
-	      auto-mode-alist))
+		("\\.hs$" . haskell-mode)
+        ;; Web modes
+        ("\\.html$" . web-mode)
+        ("\\.tmpl$" . web-mode))
+	    auto-mode-alist))
 
 ;; Autocomplete
 
@@ -46,3 +49,8 @@
 ;; Powerline
 
 (require 'powerline)
+
+;; Web-mode
+
+(setq web-mode-engines-alist
+      '(("closure" . "\\.tmpl\\'")))

@@ -2,12 +2,12 @@
 ;;;                                        Bogdan Maryniuk
 
 ;; Fire up server
-;(require 'server)
-;;Start emacs server in running GUI and not already running
-;(setq server-socket-dir "/tmp/emacs-shared")
-;(if (display-graphic-p)
-;    (unless (server-running-p)
-;      (server-start)))
+(require 'server)
+;Start emacs server in running GUI and not already running
+(setq server-socket-dir "/tmp/emacs-shared")
+(if (display-graphic-p)
+    (unless (server-running-p)
+      (server-start)))
 
 (require 'cl)
 (require 'whitespace)
@@ -25,6 +25,12 @@
 (cua-mode 1)
 
 (windmove-default-keybindings)
+
+(setq redisplay-dont-pause t
+  scroll-margin 1
+  scroll-step 1
+  scroll-conservatively 10000
+  scroll-preserve-screen-position 1)
 
 ;; Hide scrollbars
 (scroll-bar-mode -1)
