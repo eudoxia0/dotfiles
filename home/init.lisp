@@ -6,38 +6,31 @@
   (when (probe-file quicklisp-init)
     (load quicklisp-init)))
 
-;;; Because I'm tired of symlinking everything to local-projects/ and because
-;;; local-projects sometimes breaks for some reason ¯\_(ツ)_/¯
-
-(in-package #:asdf)
-(defvar *subdir-search-registry* (list (merge-pathnames "code/"
-                                                        (user-homedir-pathname))
-                                       #p"/mnt/d/code/")
-  "List of directories to search subdirectories within.")
-(defvar *subdir-search-wildcard* :wild
-  "Value of :wild means search only one level of subdirectories; value of :wild-inferiors means search
- all levels of subdirectories (I don't advise using this in big directories!)")
-(defun sysdef-subdir-search (system)
-  (let ((latter-path (make-pathname :name (coerce-name system)
-                                    :directory (list :relative
-                                                     *subdir-search-wildcard*)
-                                    :type "asd"
-                                    :version :newest
-                                    :case :local)))
-    (dolist (d *subdir-search-registry*)
-      (let* ((wild-path (merge-pathnames latter-path d))
-             (files (directory wild-path)))
-        (when files
-          (return (first files)))))))
-(pushnew 'sysdef-subdir-search *system-definition-search-functions*)
-(in-package :cl-user)
-
+;;; Better printing for hash tables
 (set-pprint-dispatch 'hash-table
  (lambda (str ht)
   (format str "{~{~{~S => ~S~}~^, ~}}"
    (loop for key being the hash-keys of ht
          for value being the hash-values of ht
          collect (list key value)))))
+
+;;; Better printing for objects
+
+#|
+(require :mop-utils)
+
+(defun class-slots (obj)
+  (mop-utils:slot-names-of obj))
+
+(defun slot-values (obj)
+  (loop for slot in (class-slots obj)
+        collecting
+        (list (symbol-name slot) (slot-value obj slot))))
+
+(set-pprint-dispatch 'standard-object
+  (lambda (str obj)
+    (format str "{~{~{~S => ~S~}~^, ~}}"
+            (slot-values obj))))|#
 
 ;;; Safety first!
 (declaim (optimize (safety 3) (debug 3) (speed 0)))
