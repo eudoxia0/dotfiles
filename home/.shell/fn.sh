@@ -69,3 +69,10 @@ encrypt () {
 decrypt () {
     openssl aes-256-cbc -d -in $1.tar.gz.enc -out $1.decrypted.tar.gz
 }
+
+# lisp_up - update quicklisp local projects
+# usage: lisp_up
+lisp_up () {
+    find ~/quicklisp/local-projects \
+        -mindepth 1 -maxdepth 1 -type d -exec git pull origin master
+}
