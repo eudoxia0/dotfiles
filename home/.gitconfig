@@ -11,3 +11,4 @@
     undo = reset --soft HEAD~1
 [merge]
 	guitool = meld
+	tool = meld
