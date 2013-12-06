@@ -11,7 +11,7 @@
 (setf *frame-number-map* "1234567890")
 
 (setq *terminal* "urxvt")
-(defparameter +www-browser+ "chromium")
+(defparameter +www-browser+ "firefox-trunk")
 
 (define-key *root-map* (kbd "C-q") "quit")
 (define-key *root-map* (kbd "C-r") "reload")
@@ -33,15 +33,16 @@
        (run-or-raise ,cmd '(:class ,(symbol-name class))))
      (define-key *top-map* (kbd ,keybinding) ,(symbol-name name))))
 
-(com chromium +www-browser+ "C-s-c")
+(com browser +www-browser+ "C-s-b")
 (com xchat "xchat" "C-s-x")
 (com pidgin "pidgin" "C-s-i")
+(com music "audacious" "C-s-m")
 (com fm "pcmanfm" "C-s-f")
 (com lock "xscreensaver-command -lock" "s-x")
 
 (defcommand battery () ()
   "docstring"
-  (message (run-shell-command "acpi")))
+  (message "~A" (run-shell-command "acpi" t)))
 
 (defcommand open-selection-browser () ()
   "from http://www.mygooglest.com/fni/stumpwm.html
@@ -91,6 +92,11 @@ URGENT: ~A" (window-title target)))
 (set-focus-color "MidnightBlue")
 (set-unfocus-color "Black")
 (set-frame-outline-width 0)
+
+
+;; theme
+;; e5d7a1 : dark yellow
+;; ad3208 : red
 
 ;;; Group placement rules
 
@@ -174,8 +180,7 @@ URGENT: ~A" (window-title target)))
  "gnew im"
  "gnew file"
  "gnew mail"
- "gselect web"
- "exec bash .xinitrc")
+ "gselect web")
 
 (require 'swank)
 (swank:create-server)
