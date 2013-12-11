@@ -13,12 +13,12 @@
     ;; Major modes
     yaml-mode clojure-mode d-mode textile-mode markdown-mode gnuplot-mode
     erlang haskell-mode fsharp-mode sass-mode rainbow-mode enh-ruby-mode
-    web-mode projectile grizzl
+    web-mode projectile grizzl graphviz-dot-mode
     ;; Other plugins
     rainbow-delimiters magit ecb auto-complete ag highlight-indentation
     ;; Themes
     color-theme-solarized color-theme-twilight color-theme-github
-    soft-morning-theme))
+    soft-morning-theme zenburn-theme))
 
 (defun packages-installed-p ()
   (not (memq 'nil (mapcar (lambda (p) (package-installed-p p)) my-packages))))

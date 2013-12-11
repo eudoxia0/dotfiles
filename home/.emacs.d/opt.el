@@ -1,4 +1,6 @@
-;;; Package specific options
+;;;; Package specific options
+
+;;; Org mode
 
 (org-babel-do-load-languages
  'org-babel-load-languages
@@ -6,6 +8,10 @@
    (ditaa . t)))
 
 (setq org-ditaa-jar-path "/usr/bin/ditaa") ; sigh
+
+(defun my-org-confirm-babel-evaluate (lang body)
+  (not (string= lang "ditaa")))  ; don't ask for ditaa
+(setq org-confirm-babel-evaluate 'my-org-confirm-babel-evaluate)
 
 ;;; Modes
 
@@ -19,9 +25,10 @@
 		("\\.sql$" . sql-mode)
 		("\\.\\(rb\\|Gemfile\\|Vagrantfile\\|Rakefile\\)$" . enh-ruby-mode)
 		("\\.hs$" . haskell-mode)
-        ;; Web modes
-        ("\\.html$" . web-mode)
-        ("\\.tmpl$" . web-mode))
+                ("\\.dot$" . graphviz-dot-mode)
+                ;; Web modes
+                ("\\.html$" . web-mode)
+                ("\\.tmpl$" . web-mode))
 	    auto-mode-alist))
 
 ;; Autocomplete

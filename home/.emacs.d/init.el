@@ -32,6 +32,8 @@
   scroll-conservatively 10000
   scroll-preserve-screen-position 1)
 
+;; Fill paragraph to 80
+(setq-default fill-column 80)
 ;; Hide scrollbars
 (scroll-bar-mode -1)
 ;; Hide toolbar
@@ -42,6 +44,9 @@
 (setq initial-scratch-message "")
 ;; Don't show startup screen
 (setq inhibit-splash-screen t)
+;; Get rid of overwrite mode because i sometimes
+;; enable it by accident
+(put 'overwrite-mode 'disabled t)
 ;; Always y/n
 (fset 'yes-or-no-p 'y-or-n-p)
 
@@ -89,4 +94,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (setq custom-safe-themes t)
 
-(load-theme 'soft-morning t)
+(color-theme-initialize)
+(color-theme-emacs-21)
+
+;(load-theme 'odersky t)
