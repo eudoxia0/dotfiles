@@ -1,4 +1,8 @@
 ;;;; -*- Lisp -*-
+
+
+(setf *print-case* :downcase)
+
 ;;; The following lines added by ql:add-to-init-file:
 #-quicklisp
 (let ((quicklisp-init (merge-pathnames "quicklisp/setup.lisp"
