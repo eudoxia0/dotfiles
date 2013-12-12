@@ -2,10 +2,6 @@
 
 (in-package :stumpwm)
 
-(declaim (optimize (speed 3)
-                   (debug 1)
-                   (safety 0)))
-
 (set-prefix-key (kbd "s-t"))
 (setf *mouse-focus-policy* :sloppy)
 (setf *frame-number-map* "1234567890")
@@ -27,18 +23,26 @@
 
 ;;; Commands
 
-(defmacro com (name cmd keybinding &optional (class name))
+(defmacro com (name cmd keybinding class)
   `(progn
      (defcommand ,name () ()
-       (run-or-raise ,cmd '(:class ,(symbol-name class))))
+       (run-or-raise ,cmd '(:class ,class)))
      (define-key *top-map* (kbd ,keybinding) ,(symbol-name name))))
 
-(com browser +www-browser+ "C-s-b")
-(com xchat "xchat" "C-s-x")
-(com pidgin "pidgin" "C-s-i")
-(com music "audacious" "C-s-m")
-(com fm "pcmanfm" "C-s-f")
-(com lock "xscreensaver-command -lock" "s-x")
+(com browser +www-browser+ "C-s-b"
+     "browser")
+(com irc "xchat" "C-s-x"
+     "im")
+(com im "pidgin" "C-s-i"
+     "im")
+(com music "audacious" "C-s-m"
+     "music")
+(com fm "pcmanfm" "C-s-f"
+     "fm")
+(com slime "emacs -f slime -f delete-other-windows" "C-s-s"
+     "emacs")
+
+(com lock "xscreensaver-command -lock" "s-x" "screensaver")
 
 (defcommand battery () ()
   "docstring"
@@ -53,8 +57,7 @@
   ((:string "Search in Google for: "))
   "ask the user for a search string and search for it in Google"
   (check-type search string)
-  (substitute #\+ #\Space search)
-  (run-shell-command (concatenate 'string "exec" +www-browser+ "http://www.google.com/search?q=" search)))
+  (run-shell-command (concatenate 'string "exec" +www-browser+ "http://www.google.com/search?q=" (substitute #\+ #\Space search))))
 
 ;; TODO add hook so I get notified when people say my name on IRC or IM me
 (defun echo-urgent-window (target)
@@ -100,7 +103,10 @@ URGENT: ~A" (window-title target)))
 
 ;;; Group placement rules
 
+;(clear-window-placement-rules)
 
+;(define-frame-preference "web"
+;  (0 t t "browser-class"))
 
 ;; Useless gaps
 ;; from https://gist.github.com/Octantis/5651256
