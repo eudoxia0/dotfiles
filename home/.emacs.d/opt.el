@@ -2,6 +2,8 @@
 
 ;;; Org mode
 
+(require 'ess-site)
+
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((lisp . t)
@@ -13,6 +15,7 @@
   (not (string= lang "ditaa")))  ; don't ask for ditaa
 (setq org-confirm-babel-evaluate 'my-org-confirm-babel-evaluate)
 
+(setq org-export-with-smart-quotes t)
 ;;; Modes
 
 (setq auto-mode-alist
@@ -63,4 +66,9 @@
 ;; Web-mode
 
 (setq web-mode-engines-alist
-      '(("closure" . "\\.tmpl\\'")))
+      '(("\\.tmpl\\'" . "twig")))
+
+;; JSLint
+
+(require 'flymake-jslint)
+(add-hook 'js-mode-hook 'flymake-jslint-load)
