@@ -13,9 +13,10 @@
     ;; Major modes
     yaml-mode clojure-mode d-mode textile-mode markdown-mode gnuplot-mode
     erlang haskell-mode fsharp-mode sass-mode rainbow-mode enh-ruby-mode
-    web-mode projectile grizzl graphviz-dot-mode
+    web-mode projectile grizzl graphviz-dot-mode ess cmake-mode
     ;; Other plugins
     rainbow-delimiters magit ecb auto-complete ag highlight-indentation
+    google-c-style flycheck
     ;; Themes
     color-theme-solarized color-theme-twilight color-theme-github
     soft-morning-theme zenburn-theme))
