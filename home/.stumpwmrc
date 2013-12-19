@@ -7,7 +7,7 @@
 (setf *frame-number-map* "1234567890")
 
 (setq *terminal* "urxvt")
-(defparameter +www-browser+ "firefox-trunk")
+(defparameter +www-browser+ "chromium")
 
 (define-key *root-map* (kbd "C-q") "quit")
 (define-key *root-map* (kbd "C-r") "reload")
@@ -39,7 +39,7 @@
      "music")
 (com fm "pcmanfm" "C-s-f"
      "fm")
-(com slime "emacs -f slime -f delete-other-windows" "C-s-s"
+(com slime "emacs -eval \"(slime-connect \\\"127.0.0.1\\\" 4005)\" -f delete-other-windows" "C-s-s"
      "emacs")
 
 (com lock "xscreensaver-command -lock" "s-x" "screensaver")
@@ -189,4 +189,4 @@ URGENT: ~A" (window-title target)))
  "gselect web")
 
 (require 'swank)
-(swank:create-server)
+(swank:create-server :dont-close t)
