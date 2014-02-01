@@ -4,7 +4,7 @@
 ;(global-log4slime-mode 1)
 
 (load (expand-file-name "~/quicklisp/slime-helper.el"))
-(setq inferior-lisp-program "sbcl --noinform")
+(setq inferior-lisp-program "sbcl")
 
 (set-language-environment "utf-8")
 (setq slime-net-coding-system 'utf-8-unix)
@@ -30,3 +30,5 @@
       ;; Move the input-start marker after the REPL result.
       (set-marker marker (point)))
     (slime-repl-show-maximum-output)))
+
+(add-hook 'lisp-mode-hook 'rainbow-delimiters-mode)
