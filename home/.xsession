@@ -13,9 +13,9 @@ fi
 eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
 export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
 xscreensaver -nosplash &
-./rotate.sh &
-nm-applet &
+.scripts/rotate.sh &
 redshift &
+nm-applet &
 xrdb .Xresources &
 transmission-gtk -m &
 
