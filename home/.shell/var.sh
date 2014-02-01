@@ -8,4 +8,4 @@ export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
 
 # NPM
-export PATH="$PATH:$HOME/.npm/bin"
+export PATH="$PATH:$HOME/.npm/bin:$HOME/.scripts"
