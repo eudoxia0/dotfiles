@@ -2,7 +2,7 @@
 
 (in-package :stumpwm)
 
-(set-prefix-key (kbd "s-t"))
+(set-prefix-key (kbd "s-w"))
 (setf *mouse-focus-policy* :sloppy)
 (setf *frame-number-map* "1234567890")
 
@@ -186,7 +186,8 @@ URGENT: ~A" (window-title target)))
  "gnew im"
  "gnew file"
  "gnew mail"
- "gselect web")
+ "gselect web"
+ "exec xcompmgr -c -t-5 -l-5 -r4.2 -o.55")
 
 (require 'swank)
 (swank:create-server :dont-close t)
