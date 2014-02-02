@@ -10,6 +10,8 @@
   (when (probe-file quicklisp-init)
     (load quicklisp-init)))
 
+(require :swank)
+
 ;;; Better printing for hash tables
 (set-pprint-dispatch 'hash-table
  (lambda (str ht)
@@ -38,3 +40,9 @@
 
 ;;; Safety first!
 (declaim (optimize (safety 3) (debug 3) (speed 0)))
+
+(sb-ext:restrict-compiler-policy 'debug 3)
+
+(defun image (src)
+  (swank:eval-in-emacs
+   `(nm-slime-media-insert-image (create-image ,src) ,src)))
