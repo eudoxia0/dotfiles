@@ -18,6 +18,8 @@
     ;; Other plugins
     rainbow-delimiters magit ecb auto-complete ag highlight-indentation
     google-c-style flycheck
+    ;; Other
+    gnugo
     ;; Themes
     color-theme-solarized color-theme-twilight color-theme-github
     soft-morning-theme zenburn-theme))
