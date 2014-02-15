@@ -4,13 +4,15 @@
 
 sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
   redshift transmission-gtk make automake emacs unison pcmanfm giflib gimp \
-  sbcl ecl clisp gimp inkscape terminus-font autoconf
+  sbcl ecl clisp gimp inkscape terminus-font autoconf libtool autogen
 
 # Set up Quicklisp
 
 curl -O http://beta.quicklisp.org/quicklisp.lisp
 sbcl --load quicklisp.lisp --eval "(quicklisp-quickstart:install)" --quit
 sbcl --load quicklisp/setup.lisp --eval "(ql:quickload :swank)" --quit
+# We install swank here because it will be loaded by the init.lisp from my dotfiles
+rm quicklisp.lisp
 
 # Set up homeshick
 git clone git://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
