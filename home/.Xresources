@@ -2,7 +2,7 @@ xvt.colorIT: #87af5f
 URxvt.colorBD: #d7d7d7
 URxvt.colorUL: #87afd7
 
-Urxvt*.saveLines: 65535
+Urxvt*.saveLines: 128000
 Urxvt*.cursorBlink: false
 Urxvt*.urgentOnBell: true
 
@@ -11,13 +11,9 @@ URxvt*scrollBar_right: true
 
 Urxvt*.cursorColor: #DCDCCC
 
-URxvt*.depth: 32
 ! Transparency
-URxvt*depth: 32
-!URxvt*.transparent: true
-!URxvt*foreground:#B0B0B0
-URxvt.background: rgba:1111/1111/1111/dddd
-!URxvt*.shading: 15 
+URxvt*.depth: 32
+URxvt*.background: rgba:1111/1111/1111/dddd
 
 *background: #111111
 *foreground: #babdb6
