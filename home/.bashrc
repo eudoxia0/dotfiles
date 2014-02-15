@@ -65,6 +65,6 @@ eval "$(rbenv init -)"
 
 PS1="\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)\$\[\033[01m\][ \[\033[01;34m\]\u@\h \[\033[00m\]\[\033[01m\]] \[\033[01;32m\]\w\[\033[00m\]\n\[\033[01;34m\]$\[\033[00m\]> "
 
-if hash tmux 2>/dev/null && [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
-    tmux attach || tmux new; exit
-fi
+#if hash tmux 2>/dev/null && [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
+#    tmux attach || tmux new; exit
+#fi
