@@ -32,7 +32,7 @@ lsp () {
 # usage: dial <host>
 # depends on: .shell/hosts.txt
 dial () {
-  ssh `grep $1 ~/.shell/hosts.txt | tr -s ' ' | cut -d ' ' -f 2`
+  ssh `grep $1 ~/.shell/hosts.txt | tr -s ' ' | cut -d ' ' -f 2-10`
 }
 
 # geo - get the location of a host
@@ -74,5 +74,5 @@ decrypt () {
 # usage: lisp_up
 lisp_up () {
     find ~/quicklisp/local-projects \
-        -mindepth 1 -maxdepth 1 -type d -exec git pull origin master
+        -mindepth 1 -maxdepth 1 -type d -exec git pull origin master \;
 }
