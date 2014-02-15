@@ -7,7 +7,7 @@
 (setf *frame-number-map* "1234567890")
 
 (setq *terminal* "urxvt")
-(defparameter +www-browser+ "chromium")
+(defparameter +www-browser+ "firefox")
 
 (define-key *root-map* (kbd "C-q") "quit")
 (define-key *root-map* (kbd "C-r") "reload")
@@ -29,8 +29,10 @@
        (run-or-raise ,cmd '(:class ,class)))
      (define-key *top-map* (kbd ,keybinding) ,(symbol-name name))))
 
-(com browser +www-browser+ "C-s-b"
+(com browser +www-browser+ "C-s-w"
      "browser")
+(com tor ".tor/start-tor-browser" "C-s-t"
+     "tor")
 (com irc "xchat" "C-s-x"
      "im")
 (com im "pidgin" "C-s-i"
