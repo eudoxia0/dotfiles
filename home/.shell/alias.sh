@@ -1,5 +1,5 @@
-alias dwenv='deactivate;workon daywatch_env'
-alias ttenv='deactivate;pythonbrew venv use coupons_se'
+alias dwenv='deactivate;workon dwenv'
+alias ttenv='deactivate;workon ttenv'
 alias dwpenv='deactivate;workon dwp_env'
 
 alias ls="ls --group-directories-first --color=auto -h "
