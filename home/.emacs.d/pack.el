@@ -17,7 +17,7 @@
     mediawiki
     ;; Other plugins
     rainbow-delimiters magit ecb auto-complete ag highlight-indentation
-    google-c-style flycheck
+    google-c-style flycheck flymake-jslint
     ;; Other
     gnugo
     ;; Themes
