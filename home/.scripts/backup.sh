@@ -9,9 +9,15 @@ else
     base=/media/eudoxia # This is Ubuntu
 fi
 
+if [ -d "$base/Kindle" ]; then
+  # Is the Kindle on?
+  cp "$base/Kindle/documents/My Clippings.txt" ~/self/clippings.txt
+fi
+
 unison ~/code $base/backup/code
 unison ~/images $base/backup/images
 unison ~/writing $base/backup/writing
 unison ~/self $base/backup/self
 unison ~/.scripts $base/backup/.scripts
 unison ~/backup $base/backup/backup
+unison ~/notes $base/backup/notes
