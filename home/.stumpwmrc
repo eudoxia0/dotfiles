@@ -9,9 +9,6 @@
 (setq *terminal* "urxvt")
 (defparameter +www-browser+ "firefox")
 
-(define-key *root-map* (kbd "C-q") "quit")
-(define-key *root-map* (kbd "C-r") "reload")
-
 ;;; Workspaces
 
 (define-key *top-map* (kbd "s-1") "gselect web")
@@ -31,7 +28,7 @@
 
 (com browser +www-browser+ "C-s-w"
      "browser")
-(com tor ".tor/start-tor-browser" "C-s-t"
+(com tor "sh tor/start-tor-browser" "C-s-t"
      "tor")
 (com irc "xchat" "C-s-x"
      "im")
@@ -41,7 +38,7 @@
      "music")
 (com fm "pcmanfm" "C-s-f"
      "fm")
-(com slime "emacs -eval \"(slime-connect \\\"127.0.0.1\\\" 4005)\" -f delete-other-windows" "C-s-s"
+(com slime "emacs -f slime -f delete-other-windows" "C-s-s"
      "emacs")
 
 (com lock "xscreensaver-command -lock" "s-x" "screensaver")
@@ -50,29 +47,23 @@
   "docstring"
   (message "~A" (run-shell-command "acpi" t)))
 
+(defcommand uptime () ()
+  "Display the system uptime"
+  (message "~A" (run-shell-command "uptime" t)))
+
 (defcommand open-selection-browser () ()
   "from http://www.mygooglest.com/fni/stumpwm.html
    Get the X selection and order the GUI browser to open it."
-  (run-shell-command (concatenate 'string "exec " +www-browser+ " " (get-x-selection))))
-
-(defcommand google (search)
-  ((:string "Search in Google for: "))
-  "ask the user for a search string and search for it in Google"
-  (check-type search string)
-  (run-shell-command (concatenate 'string "exec" +www-browser+ "http://www.google.com/search?q=" (substitute #\+ #\Space search))))
+  (run-shell-command (concatenate 'string
+                                  +www-browser+
+                                  " \""
+                                  (get-x-selection)
+                                  "\"")))
 
 ;; TODO add hook so I get notified when people say my name on IRC or IM me
 (defun echo-urgent-window (target)
-  (message-no-timeout "^3*~
-~a
+  (message "Attention: ~A" (window-title target)))
 
-　　☆ *　. 　☆
-　☆　. ∧＿∧　∩　* ☆
-ｷﾀ━━━( ・∀・)/ . ━━━！！
-　 . ⊂　　 ノ* ☆
-　☆ * (つ ノ .☆
-　 　 (ノ
-URGENT: ~A" (window-title target)))
 (add-hook *urgent-window-hook* 'echo-urgent-window)
 
 ;;; Keybindings
@@ -82,7 +73,7 @@ URGENT: ~A" (window-title target)))
   (run-shell-command "exec xscreensaver-command -lock"))
 
 (define-key *root-map* (kbd "b") "open-selection-browser")
-(define-key *root-map* (kbd "g") "google")
+(define-key *root-map* (kbd "u") "uptime")
 
 ;;; Theme
 
@@ -179,6 +170,19 @@ URGENT: ~A" (window-title target)))
             ;;     (run-hook 'frame-gap-off))
             (reset-all-windows))
 
+;;; Remove some keybindings
+
+(undefine-key *root-map* (kbd "F1"))
+(undefine-key *root-map* (kbd "F2"))
+(undefine-key *root-map* (kbd "F3"))
+(undefine-key *root-map* (kbd "F4"))
+(undefine-key *root-map* (kbd "F5"))
+(undefine-key *root-map* (kbd "F6"))
+(undefine-key *root-map* (kbd "F7"))
+(undefine-key *root-map* (kbd "F8"))
+(undefine-key *root-map* (kbd "F9"))
+(undefine-key *root-map* (kbd "F10"))
+
 ;;; Autostart
 
 (stumpwm::run-commands
@@ -188,8 +192,4 @@ URGENT: ~A" (window-title target)))
  "gnew im"
  "gnew file"
  "gnew mail"
- "gselect web"
- "exec xcompmgr -c -t-5 -l-5 -r4.2 -o.55")
-
-(require 'swank)
-(swank:create-server :dont-close t)
+ "gselect web")
