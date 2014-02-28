@@ -21,3 +21,4 @@ unison ~/self $base/backup/self
 unison ~/.scripts $base/backup/.scripts
 unison ~/backup $base/backup/backup
 unison ~/notes $base/backup/notes
+unison ~/library $base/backup/library
