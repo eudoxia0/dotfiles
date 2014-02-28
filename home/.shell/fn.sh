@@ -58,6 +58,7 @@ world_time () {
     echo -e 'Berlin\t\t' `TZ="Europe/Berlin" $datetime`
     echo -e 'Adelaide\t' `TZ="Australia/Adelaide" $datetime`
     echo -e 'Tokyo\t\t' `TZ="Asia/Tokyo" $datetime`
+    echo -e 'Houston\t\t' `TZ="US/Central" $datetime`
 }
 
 # encrypt, decrypt - encrypt and decrypt a folder with a password
