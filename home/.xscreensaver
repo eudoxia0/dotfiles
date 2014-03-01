@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.15 for eudoxia on Fri Feb 28 13:27:06 2014.
+# Written by xscreensaver-demo 5.26 for eudoxia on Sat Mar  1 11:09:40 2014.
 # http://www.jwz.org/xscreensaver/
 
 timeout:	12:00:00
@@ -34,7 +34,7 @@ grabVideoFrames:    False
 chooseRandomImages: False
 imageDirectory:	
 
-mode:		blank
+mode:		random
 selected:	-1
 
 textMode:	url
@@ -258,6 +258,7 @@ programs:								      \
 - GL: 				kaleidocycle -root			    \n\
 - GL: 				quasicrystal -root			    \n\
 - GL: 				unknownpleasures -root			    \n\
+  GL: 				geodesic -root				    \n\
 
 
 pointerPollTime:    0:00:05
