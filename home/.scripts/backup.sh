@@ -23,7 +23,6 @@ unison ~/backup $base/backup
 unison ~/notes $base/notes
 unison ~/library $base/library
 unison ~/.shell/hosts.txt $base/.shell/hosts.txt
-unison ~/.config/transmission $base/.config/transmission
 unison ~/.localrc $base/.localrc
 unison ~/.liferea_1.8 $base/.liferea_1.8
 unison ~/.ssh $base/.ssh
