@@ -4,9 +4,9 @@
 # usage: backup.sh
 
 if [ "$HOSTNAME" = desktop ]; then
-    base=/run/media/eudoxia # This is Arch
+    base=/run/media/eudoxia/backup # This is Arch
 else
-    base=/media/eudoxia # This is Ubuntu
+    base=/media/eudoxia/backup # This is Ubuntu
 fi
 
 if [ -d "$base/Kindle" ]; then
@@ -14,16 +14,16 @@ if [ -d "$base/Kindle" ]; then
   cp "$base/Kindle/documents/My Clippings.txt" ~/self/clippings.txt
 fi
 
-unison ~/code $base/backup/code
-unison ~/images $base/backup/images
-unison ~/writing $base/backup/writing
-unison ~/self $base/backup/self
-unison ~/.scripts $base/backup/.scripts
-unison ~/backup $base/backup/backup
-unison ~/notes $base/backup/notes
-unison ~/library $base/backup/library
-unison ~/.shell/hosts.txt $base/backup/.shell/hosts.txt
-unison ~/.config/transmission $base/backup/.config/transmission
-unison ~/.localrc $base/backup/.localrc
-unison ~/.liferea_1.8 $base/backup/liferea_1.8
+unison ~/code $base/code
+unison ~/images $base/images
+unison ~/writing $base/writing
+unison ~/self $base/self
+unison ~/.scripts $base/.scripts
+unison ~/backup $base/backup
+unison ~/notes $base/notes
+unison ~/library $base/library
+unison ~/.shell/hosts.txt $base/.shell/hosts.txt
+unison ~/.config/transmission $base/.config/transmission
+unison ~/.localrc $base/.localrc
+unison ~/.liferea_1.8 $base/liferea_1.8
 
