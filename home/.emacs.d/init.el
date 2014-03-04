@@ -3,7 +3,7 @@
 
 ;; Fire up server
 (require 'server)
-;Start emacs server in running GUI and not already running
+
 (setq server-socket-dir "/tmp/emacs-shared")
 (if (display-graphic-p)
     (unless (server-running-p)
@@ -93,8 +93,6 @@
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (setq custom-safe-themes t)
-
 (color-theme-initialize)
-(color-theme-emacs-21)
 
-;(load-theme 'odersky t)
+(color-theme-emacs-21)
