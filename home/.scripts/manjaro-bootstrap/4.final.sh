@@ -12,7 +12,11 @@ sudo pacman -S nodejs
 sudo npm -g install jslint
 
 # Various other tools
-sudo pacman -S clang llvm keepass maxima gnuplot patch meld
+sudo pacman -S clang llvm keepass maxima gnuplot patch meld scrot \
+  calibre tint2 banshee cmake bzr vala python2-pip
+
+# Non-tools
+sudo yaourt ttf-win7-fonts
 
 sudo yaourt tor-browser-en
 
@@ -22,3 +26,6 @@ sudo yaourt dogecoin-qt
 sudo yaourt litecoin-qt
 sudo yaourt electrum
 sudo yaourt cpuminer
+
+sudo yaourt marlin
+sudo yaourt pandoc-static
