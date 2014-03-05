@@ -39,3 +39,4 @@ unison ~/.liferea_1.8 $base/.liferea_1.8
 echo "SSH"
 unison ~/.ssh $base/.ssh -ignore "Name known_hosts"
 
+chown -R $USER ~/.ssh
