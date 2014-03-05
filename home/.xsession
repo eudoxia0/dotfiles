@@ -1,6 +1,6 @@
 #!/bin/sh
 
-./.screenlayout/home.sh &
+.scripts/rotate.sh &
 
 ## Ensure that the D-Bus Communication System is running properly to fix
 ## File management, authentication, and other essential system processes
@@ -13,10 +13,11 @@ fi
 eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
 export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
 xscreensaver -nosplash &
-.scripts/rotate.sh &
 redshift &
 nm-applet &
 xrdb .Xresources &
+homeshick pull dotfiles &
+
 transmission-gtk -m &
 
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0" 
