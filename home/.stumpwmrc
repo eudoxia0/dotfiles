@@ -26,10 +26,21 @@
        (run-or-raise ,cmd '(:class ,class)))
      (define-key *top-map* (kbd ,keybinding) ,(symbol-name name))))
 
+;; Remove emacs keybinding
+(undefine-key *root-map* (kbd "e"))
+
+(defcommand emacs () ()
+  (run-or-raise "sh .scripts/start-emacs.sh" '(:class "emacs")))
+(define-key *root-map* (kbd "e") "emacs")
+
 (com browser +www-browser+ "C-s-w"
      "browser")
-(com tor "sh tor/start-tor-browser" "C-s-t"
+(com tor "sh tor/start-tor-browser" "C-s-o"
      "tor")
+(com torrent "transmission-gtk" "C-s-t"
+     "torrent")
+(com library "calibre" "C-s-b"
+     "library")
 (com irc "xchat" "C-s-x"
      "im")
 (com im "pidgin" "C-s-i"
@@ -38,8 +49,6 @@
      "music")
 (com fm "pcmanfm" "C-s-f"
      "fm")
-(com slime "emacs -f slime -f delete-other-windows" "C-s-s"
-     "emacs")
 
 (com lock "xscreensaver-command -lock" "s-x" "screensaver")
 
