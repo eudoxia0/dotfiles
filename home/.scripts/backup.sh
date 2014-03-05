@@ -14,16 +14,28 @@ if [ -d "$base/Kindle" ]; then
   cp "$base/Kindle/documents/My Clippings.txt" ~/self/clippings.txt
 fi
 
+echo "Code"
 unison ~/code $base/code
+echo "Images"
 unison ~/images $base/images
+echo "Writing"
 unison ~/writing $base/writing
+echo "Self"
 unison ~/self $base/self
+echo "Scripts"
 unison ~/.scripts $base/.scripts
+echo "Backup"
 unison ~/backup $base/backup
+echo "Notes"
 unison ~/notes $base/notes
+echo "Library"
 unison ~/library $base/library
+echo "hosts.txt"
 unison ~/.shell/hosts.txt $base/.shell/hosts.txt
+echo "Local variables"
 unison ~/.localrc $base/.localrc
+echo "Liferea feeds"
 unison ~/.liferea_1.8 $base/.liferea_1.8
-unison ~/.ssh $base/.ssh
+echo "SSH"
+unison ~/.ssh $base/.ssh -ignore "Name known_hosts"
 
