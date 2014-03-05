@@ -14,29 +14,29 @@ if [ -d "$base/Kindle" ]; then
   cp "$base/Kindle/documents/My Clippings.txt" ~/self/clippings.txt
 fi
 
-echo "Code"
+echo "-- Code"
 unison ~/code $base/code
-echo "Images"
+echo "-- Images"
 unison ~/images $base/images
-echo "Writing"
+echo "-- Writing"
 unison ~/writing $base/writing
-echo "Self"
+echo "-- Self"
 unison ~/self $base/self
-echo "Scripts"
+echo "-- Scripts"
 unison ~/.scripts $base/.scripts
-echo "Backup"
+echo "-- Backup"
 unison ~/backup $base/backup
-echo "Notes"
+echo "-- Notes"
 unison ~/notes $base/notes
-echo "Library"
+echo "-- Library"
 unison ~/library $base/library
-echo "hosts.txt"
+echo "-- hosts.txt"
 unison ~/.shell/hosts.txt $base/.shell/hosts.txt
-echo "Local variables"
+echo "-- Local variables"
 unison ~/.localrc $base/.localrc
-echo "Liferea feeds"
+echo "-- Liferea feeds"
 unison ~/.liferea_1.8 $base/.liferea_1.8
-echo "SSH"
+echo "-- SSH"
 unison ~/.ssh $base/.ssh -ignore "Name known_hosts"
 
 chown -R $USER ~/.ssh
