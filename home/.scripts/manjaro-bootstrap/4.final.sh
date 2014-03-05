@@ -13,7 +13,7 @@ sudo npm -g install jslint
 
 # Various other tools
 sudo pacman -S clang llvm keepass maxima gnuplot patch meld scrot \
-  calibre tint2 banshee cmake bzr vala python2-pip
+  calibre tint2 banshee cmake bzr vala python2-pip screenfetch \
 
 # Non-tools
 sudo yaourt ttf-win7-fonts
@@ -29,3 +29,7 @@ sudo yaourt cpuminer
 
 sudo yaourt marlin
 sudo yaourt pandoc-static
+
+# Ruby
+
+sudo yaourt rbenv
