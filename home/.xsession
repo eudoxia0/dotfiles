@@ -17,6 +17,7 @@ redshift &
 nm-applet &
 xrdb .Xresources &
 homeshick pull dotfiles &
+numlockx &
 
 transmission-gtk -m &
 
