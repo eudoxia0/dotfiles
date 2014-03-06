@@ -30,12 +30,8 @@ echo "-- Notes"
 unison ~/notes $base/notes
 echo "-- Library"
 unison ~/library $base/library
-echo "-- hosts.txt"
-unison ~/.shell/hosts.txt $base/.shell/hosts.txt
-echo "-- Local variables"
-unison ~/.localrc $base/.localrc
-echo "-- Liferea feeds"
-unison ~/.liferea_1.8 $base/.liferea_1.8
+echo "-- Feeds"
+unison ~/.newsbeuter/urls $base/.newsbeuter/urls
 echo "-- SSH"
 unison ~/.ssh $base/.ssh -ignore "Name known_hosts"
 
