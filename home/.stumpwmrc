@@ -20,6 +20,9 @@
 
 ;;; Commands
 
+(defun in-terminal (command)
+  (concatenate 'string *terminal* " -e " command))
+
 (defmacro com (name cmd keybinding class)
   `(progn
      (defcommand ,name () ()
@@ -45,6 +48,8 @@
      "im")
 (com im "pidgin" "C-s-i"
      "im")
+(com rss (in-terminal "newsbeuter") "C-S-r"
+     "rss")
 (com music "audacious" "C-s-m"
      "music")
 (com fm "pcmanfm" "C-s-f"
