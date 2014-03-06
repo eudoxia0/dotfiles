@@ -1,33 +1,68 @@
 #!/bin/sh
 
+# Install drivers
+# Recommend do this outside of X
+
+sudo mhwd -a pci nonfree 0300
+sudo mhwd-gpu --setgl nvidia
+
+sudo reboot
+
 # Install packages
 
 sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
   redshift transmission-gtk make automake emacs unison pcmanfm giflib gimp \
-  sbcl ecl clisp gimp inkscape terminus-font autoconf libtool autogen
+  gimp inkscape terminus-font autoconf libtool autogen
 
-# Set up Quicklisp
+# Various other tools
+sudo pacman -S clang llvm keepass maxima gnuplot patch meld scrot \
+  calibre tint2 banshee cmake bzr vala python2-pip screenfetch \
+  numlockx scala sbt
 
+# Non-tools
+sudo yaourt ttf-win7-fonts
+
+sudo yaourt tor-browser-en
+
+# le bitbutts
+sudo yaourt dogecoin-qt
+sudo yaourt litecoin-qt
+sudo yaourt electrum
+sudo yaourt cpuminer
+
+sudo yaourt marlin
+sudo yaourt pandoc-static
+
+# Set up environments for other languages
+
+# Lisp
+
+sudo pacman -S sbcl ecl clisp
+
+# set up Quicklisp
 curl -O http://beta.quicklisp.org/quicklisp.lisp
-sbcl --load quicklisp.lisp --eval "(quicklisp-quickstart:install)" --quit
-sbcl --load quicklisp/setup.lisp --eval "(ql:quickload :swank)" --quit
-# We install swank here because it will be loaded by the init.lisp from my dotfiles
+sbcl --no-userinit --load quicklisp.lisp --eval "(quicklisp-quickstart:install)" --quit
+sbcl --no-userinit --load quicklisp/setup.lisp --eval "(ql:quickload :swank)" --quit
+# we install swank here because it will be loaded by the init.lisp from my dotfiles
 rm quicklisp.lisp
 
-# Set up homeshick
-git clone git://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
-printf '\nsource "$HOME/.homesick/repos/homeshick/homeshick.sh"' >> $HOME/.bashrc
-source $HOME/.bashrc
+# Node
 
-# Set up ssh
+sudo pacman -S nodejs
+sudo npm -g install jslint
 
-ssh-keygen -t rsa -C "eudoxiahp@gmail.com"
-cat .ssh/id_rsa.pub
+# Ruby
 
-# Wait for me to put my key in github
-read -n1 -r -p "[Press any key to continue]" key
+# install rbenv and ruby-build plugin
+sudo yaourt -S --noconfirm rbenv ruby-build rbenv-default-gems
 
-homeshick clone eudoxia0/dotfiles
+# install a reasonably recent Ruby version
+rbenv install 2.1.0
+
+rbenv global 2.1.0
+
+# install useful ruby gems
+
 
 # Build stumpwm
 
@@ -39,3 +74,13 @@ autoconf
 sbcl --eval "(ql:quickload '(:clx :cl-ppcre :xembed))" --quit
 make
 sudo make install
+
+# Set up homeshick
+sudo yaourt -s --noconfirm homeshick-git
+homeshick clone eudoxia0/dotfiles
+
+# Remove packages
+
+sudo pacman -Rns conky nitrogen parcellite synapse geany lxterminal tint2 \
+  obconf tintwizard qupzilla openbox obmenu-generator openbox-themes \
+  lxappearance-obconf thunar thunar-archive-plugin thunar-volman xnoise
