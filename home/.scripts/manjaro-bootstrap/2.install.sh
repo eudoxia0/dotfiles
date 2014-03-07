@@ -12,12 +12,9 @@ sudo reboot
 
 sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
   redshift transmission-gtk make automake emacs unison pcmanfm giflib gimp \
-  gimp inkscape terminus-font autoconf libtool autogen
-
-# Various other tools
-sudo pacman -S clang llvm keepass maxima gnuplot patch meld scrot \
-  calibre tint2 banshee cmake bzr vala python2-pip screenfetch \
-  numlockx scala sbt
+  gimp inkscape terminus-font autoconf libtool autogen clang llvm keepass \
+  maxima gnuplot patch meld scrot calibre tint2 banshee cmake bzr vala \
+  python2-pip screenfetch numlockx scala sbt ruby bison
 
 # Non-tools
 sudo yaourt ttf-win7-fonts
@@ -57,12 +54,14 @@ sudo npm -g install jslint
 sudo yaourt -S --noconfirm rbenv ruby-build rbenv-default-gems
 
 # install a reasonably recent Ruby version
+rbenv install 2.2.0-dev
 rbenv install 2.1.0
+rbenv install 1.9.3-dev
 
 rbenv global 2.1.0
 
 # install useful ruby gems
-
+gem install veewee
 
 # Build stumpwm
 
