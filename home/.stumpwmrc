@@ -4,7 +4,7 @@
 
 (set-prefix-key (kbd "s-w"))
 (setf *mouse-focus-policy* :sloppy)
-(setf *frame-number-map* "1234567890")
+(setf *frame-number-map* "123456789")
 
 (setq *terminal* "urxvt")
 (defparameter +www-browser+ "firefox")
