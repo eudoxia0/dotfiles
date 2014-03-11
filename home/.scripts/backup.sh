@@ -32,6 +32,7 @@ echo "-- Library"
 unison ~/library $base/library
 echo "-- Feeds"
 unison ~/.newsbeuter/urls $base/.newsbeuter/urls
+unison ~/.newsbeuter/config $base/.newsbeuter/config
 echo "-- SSH"
 unison ~/.ssh $base/.ssh -ignore "Name known_hosts"
 
