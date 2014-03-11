@@ -4,7 +4,10 @@ servers = (
     chatnet = "Undernet";
     port = "6667";
   },
-  { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; },
+  { address = "irc.dal.net";
+    chatnet = "DALnet";
+    port = "6667";
+  },
   {
     address = "irc.oftc.net";
     chatnet = "OFTC";
@@ -14,6 +17,12 @@ servers = (
   {
     address = "irc.freenode.net";
     chatnet = "Freenode";
+    port = "6667";
+    autoconnect = "yes";
+  },
+  {
+    address = "efnet.eversible.com";
+    chatnet = "EFNet";
     port = "6667";
     autoconnect = "yes";
   }
@@ -30,14 +39,20 @@ chatnets = {
 };
 
 channels = (
+  # Freenode
   { name = "##hplusroadmap"; chatnet = "Freenode"; autojoin = "yes"; },
-  {
-    name = "#opensourceecology";
-    chatnet = "Freenode";
-    autojoin = "yes";
-  },
+  { name = "#opensourceecology"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "#lisp"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "#lispgames"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "#lispweb"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "#sbcl"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "#stumpwm"; chatnet = "Freenode"; autojoin = "yes"; },
+  # OFTC
   { name = "#llvm"; chatnet = "OFTC"; autojoin = "yes"; },
-  { name = "#defcad"; chatnet = "OFTC"; autojoin = "yes"; }
+  { name = "#defcad"; chatnet = "OFTC"; autojoin = "yes"; },
+  # EFNet
+  { name = "#cjdns"; chatnet = "EFNet"; autojoin = "yes"; },
+  { name = "#projectmeshnet"; chatnet = "EFNet"; autojoin = "yes"; }
 );
 
 aliases = {
