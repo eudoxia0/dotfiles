@@ -14,27 +14,17 @@ sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
   redshift transmission-gtk make automake emacs unison pcmanfm giflib gimp \
   gimp inkscape terminus-font autoconf libtool autogen clang llvm keepass \
   maxima gnuplot patch meld scrot calibre tint2 banshee cmake bzr vala \
-  python2-pip screenfetch numlockx scala sbt ruby bison graphviz ditaa
+  python2-pip screenfetch numlockx scala sbt ruby bison graphviz ditaa \
+  virtualbox sbcl ecl clisp nodejs
 
-# Non-tools
-sudo yaourt ttf-win7-fonts
-
-sudo yaourt tor-browser-en
-
-# le bitbutts
-sudo yaourt dogecoin-qt
-sudo yaourt litecoin-qt
-sudo yaourt electrum
-sudo yaourt cpuminer
-
-sudo yaourt marlin
-sudo yaourt pandoc-static
+# Yaourt packages
+sudo yaourt -S --noconfirm ttf-win7-fonts tor-browser-en dogecoin-qt \
+  litecoin-qt electrum cpuminer marlin pandoc-static rbenv ruby-build \
+  rbenv-default-gems
 
 # Set up environments for other languages
 
 # Lisp
-
-sudo pacman -S sbcl ecl clisp
 
 # set up Quicklisp
 curl -O http://beta.quicklisp.org/quicklisp.lisp
@@ -45,13 +35,9 @@ rm quicklisp.lisp
 
 # Node
 
-sudo pacman -S nodejs
 sudo npm -g install jslint
 
-# Ruby
-
-# install rbenv and ruby-build plugin
-sudo yaourt -S --noconfirm rbenv ruby-build rbenv-default-gems
+# Ruby 
 
 # install a reasonably recent Ruby version
 rbenv install 2.2.0-dev
