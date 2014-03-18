@@ -4,12 +4,13 @@ servers = (
     chatnet = "Undernet";
     port = "6667";
   },
-  { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; },
-  {
-    address = "irc.oftc.net";
+  { address = "irc.dal.net";
+    chatnet = "DALnet";
+    port = "6667";
+  },
+  { address = "irc.oftc.net";
     chatnet = "OFTC";
     port = "6667";
-    autoconnect = "yes";
   },
   {
     address = "irc.freenode.net";
@@ -17,11 +18,10 @@ servers = (
     port = "6667";
     autoconnect = "yes";
   },
-  {
+  { 
     address = "efnet.eversible.com";
     chatnet = "EFNet";
     port = "6667";
-    autoconnect = "yes";
   }
 );
 
@@ -39,22 +39,18 @@ chatnets = {
 channels = (
   # Freenode
   { name = "##hplusroadmap"; chatnet = "Freenode"; autojoin = "yes"; },
-  {
-    name = "#opensourceecology";
-    chatnet = "Freenode";
-    autojoin = "yes";
-  },
+  { name = "#opensourceecology"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#lisp"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#lispgames"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#lispweb"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#sbcl"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#stumpwm"; chatnet = "Freenode"; autojoin = "yes"; },
   # OFTC
-  { name = "#llvm"; chatnet = "OFTC"; autojoin = "yes"; },
-  { name = "#defcad"; chatnet = "OFTC"; autojoin = "yes"; },
+  { name = "#llvm"; chatnet = "OFTC"; autojoin = "no"; },
+  { name = "#fosscad"; chatnet = "OFTC"; autojoin = "no"; },
   # EFNet
-  { name = "#cjdns"; chatnet = "EFNet"; autojoin = "yes"; },
-  { name = "#projectmeshnet"; chatnet = "EFNet"; autojoin = "yes"; }
+  { name = "#cjdns"; chatnet = "EFNet"; autojoin = "no"; },
+  { name = "#projectmeshnet"; chatnet = "EFNet"; autojoin = "no"; }
 );
 
 settings = {
@@ -63,4 +59,22 @@ settings = {
     user_name = "eudoxia";
     nick = "eudoxia";
   };
+
+  "irc/core" = { part_message = ""; skip_motd = "yes"; };
+
+  "fe-common/core" = {
+    autolog = "yes";
+    autolog_path = "~/.irclogs/$tag/$0/%Y-%m-%d.log";
+    show_names_on_join = "no";
+    timestamps = "no";
+    show_nickmode = "yes";
+    show_nickmode_empty = "no";
+  };
 };
+
+aliases = {
+  W = "window";
+  WC = "window close";
+  Q = "quit";
+};
+
