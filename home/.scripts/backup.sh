@@ -14,26 +14,23 @@ if [ -d "$base/Kindle" ]; then
   cp "$base/Kindle/documents/My Clippings.txt" ~/self/clippings.txt
 fi
 
-echo "-- Code"
-unison ~/code $base/code
-echo "-- Images"
-unison ~/images $base/images
-echo "-- Writing"
-unison ~/writing $base/writing
-echo "-- Self"
-unison ~/self $base/self
-echo "-- Scripts"
-unison ~/.scripts $base/.scripts
-echo "-- Backup"
-unison ~/backup $base/backup
-echo "-- Notes"
-unison ~/notes $base/notes
-echo "-- Library"
-unison ~/library $base/library
-echo "-- Feeds"
-unison ~/.newsbeuter/urls $base/.newsbeuter/urls
-unison ~/.newsbeuter/config $base/.newsbeuter/config
-echo "-- SSH"
-unison ~/.ssh $base/.ssh -ignore "Name known_hosts"
+function sync() {
+  # Function to sync directories, optionally passing extra args
+  echo -e "\e[31m$1\e[0m"
+  unison ~/$1 $base/$1 ${@:2}
+}
+
+sync code
+sync images
+sync writing
+sync self
+sync .scripts
+sync backup
+sync notes
+sync library
+sync .newsbeuter/urls
+sync .newsbeuter/config
+sync .ssh -ignore "Name known_hosts"
+sync .irclogs
 
 chown -R $USER ~/.ssh
