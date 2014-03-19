@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # backup - copy important files to USB drive
 # usage: backup.sh
@@ -14,7 +14,7 @@ if [ -d "$base/Kindle" ]; then
   cp "$base/Kindle/documents/My Clippings.txt" ~/self/clippings.txt
 fi
 
-function sync() {
+sync () {
   # Function to sync directories, optionally passing extra args
   echo -e "\e[31m$1\e[0m"
   unison ~/$1 $base/$1 ${@:2}
