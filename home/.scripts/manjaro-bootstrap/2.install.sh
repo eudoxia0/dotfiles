@@ -15,11 +15,11 @@ sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
   gimp inkscape terminus-font autoconf libtool autogen clang llvm keepass \
   maxima gnuplot patch meld scrot calibre tint2 banshee cmake bzr vala \
   python2-pip screenfetch numlockx scala sbt ruby bison graphviz ditaa \
-  virtualbox sbcl ecl clisp nodejs units
+  virtualbox sbcl ecl clisp nodejs units pcmanfm ansible
 
 # Yaourt packages
 sudo yaourt -S --noconfirm ttf-win7-fonts tor-browser-en dogecoin-qt \
-  litecoin-qt electrum cpuminer marlin pandoc-static rbenv ruby-build \
+  litecoin-qt electrum cpuminer pandoc-static rbenv ruby-build ansible \
   rbenv-default-gems
 
 # Set up environments for other languages
