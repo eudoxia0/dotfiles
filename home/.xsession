@@ -12,13 +12,13 @@ fi
 
 eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
 export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
+
+# Autostart X stuff
 xscreensaver -nosplash &
 redshift &
 nm-applet &
 xrdb .Xresources &
-homeshick pull dotfiles &
 numlockx &
-
 transmission-gtk -m &
 
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0" 
