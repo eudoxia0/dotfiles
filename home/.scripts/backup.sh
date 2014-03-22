@@ -3,11 +3,7 @@
 # backup - copy important files to USB drive
 # usage: backup.sh
 
-if [ "$HOSTNAME" = desktop ]; then
-    base=/run/media/eudoxia/backup # This is Arch
-else
-    base=/media/eudoxia/backup # This is Ubuntu
-fi
+base=/run/media/eudoxia/backup
 
 if [ -d "$base/Kindle" ]; then
   # Is the Kindle on?
