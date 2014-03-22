@@ -1,1 +1,1 @@
-(load (merge-pathnames "init.lisp" (user-homedir-pathname)))
+(load (merge-pathnames ".init.lisp" (user-homedir-pathname)))
