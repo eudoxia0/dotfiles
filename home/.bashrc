@@ -58,8 +58,6 @@ fi
 . ~/.shell/complete.sh
 . ~/.shell/tv.sh
 
-[[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
-
 # rbenv
 eval "$(rbenv init -)"
 
