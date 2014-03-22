@@ -1,13 +1,13 @@
 # Maximum and minimum number of peers to connect to per torrent.
-min_peers = 40
-max_peers = 100
+#min_peers = 40
+#max_peers = 100
 
 # Same as above but for seeding completed torrents (-1 = same as downloading)
-min_peers_seed = -1
-max_peers_seed = -1
+#min_peers_seed = -1
+#max_peers_seed = -1
 
 # Maximum number of simultanious uploads per torrent.
-max_uploads = 20
+#max_uploads = 20
 
 # Global upload and download rate in KiB. "0" for unlimited.
 #download_rate = 0
@@ -40,7 +40,7 @@ schedule = low_diskspace,5,60,close_low_diskspace=100M
 check_hash = yes
 
 # Set whether the client should try to connect to UDP trackers.
-#use_udp_trackers = yes
+use_udp_trackers = yes
 
 # Encryption options, set to none (default) or any combination of the following:
 # allow_incoming, try_outgoing, require, require_RC4, enable_retry, prefer_plaintext
@@ -59,3 +59,7 @@ encryption = allow_incoming,try_outgoing,enable_retry
 dht = auto 
 dht_port = 6881
 peer_exchange = yes
+
+# XML-RPC
+scgi_port = 127.0.0.1:5000
+encoding_list = UTF-8
