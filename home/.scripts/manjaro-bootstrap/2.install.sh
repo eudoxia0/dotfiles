@@ -10,9 +10,9 @@ sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
   virtualbox sbcl ecl clisp nodejs units pcmanfm ansible
 
 # Yaourt packages
-sudo yaourt -S --noconfirm ttf-win7-fonts tor-browser-en dogecoin-qt \
-  litecoin-qt electrum cpuminer pandoc-static rbenv ruby-build ansible \
-  rbenv-default-gems
+sudo yaourt -S --noconfirm ttf-win7-fonts-autodownload tor-browser-en \
+  dogecoin-qt litecoin-qt electrum cpuminer pandoc-static rbenv ruby-build \
+  vagrant-git rbenv-default-gems
 
 # Set up environments for other languages
 
@@ -41,6 +41,16 @@ rbenv global 2.1.0
 # install useful ruby gems
 gem install veewee
 
+# Set up homeshick
+sudo yaourt -s --noconfirm homeshick-git
+homeshick clone eudoxia0/dotfiles
+
+# Make sure the USB drive is mounted
+backup.sh
+
+# Now that we have init.lisp:
+sbcl --eval "(ql:quickload :quicklisp-slime-helper)" --quit
+
 # Build stumpwm
 
 cd Downloads/
@@ -48,16 +58,6 @@ git clone https://github.com/sabetts/stumpwm.git
 cd stumpwm/
 autoconf
 ./configure
-sbcl --eval "(ql:quickload '(:clx :cl-ppcre :xembed))" --quit
+sbcl --eval "(ql:quickload '(:clx :clx-truetype :cl-ppcre :xembed))" --quit
 make
 sudo make install
-
-# Set up homeshick
-sudo yaourt -s --noconfirm homeshick-git
-homeshick clone eudoxia0/dotfiles
-
-# Remove packages
-
-sudo pacman -Rns conky nitrogen parcellite synapse geany lxterminal tint2 \
-  obconf tintwizard qupzilla openbox obmenu-generator openbox-themes \
-  lxappearance-obconf thunar thunar-archive-plugin thunar-volman xnoise
