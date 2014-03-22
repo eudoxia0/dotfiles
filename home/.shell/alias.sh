@@ -7,7 +7,6 @@ alias reboot="sudo reboot"
 alias shd="sudo shutdown now -h"
 alias cls="printf \"\\033c\""
 alias lock='xscreensaver-command -lock'
-alias homeshick="$HOME/.homesick/repos/homeshick/home/.homeshick"
 alias psql='psql -h localhost'
 
 # enable color support of ls and also add handy aliases
