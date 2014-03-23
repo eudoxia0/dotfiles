@@ -4,14 +4,8 @@ servers = (
     chatnet = "Undernet";
     port = "6667";
   },
-  { address = "irc.dal.net";
-    chatnet = "DALnet";
-    port = "6667";
-  },
-  { address = "irc.oftc.net";
-    chatnet = "OFTC";
-    port = "6667";
-  },
+  { address = "irc.dal.net"; chatnet = "DALnet"; port = "6667"; },
+  { address = "irc.oftc.net"; chatnet = "OFTC"; port = "6667"; },
   {
     address = "irc.freenode.net";
     chatnet = "Freenode";
@@ -39,7 +33,11 @@ chatnets = {
 channels = (
   # Freenode
   { name = "##hplusroadmap"; chatnet = "Freenode"; autojoin = "yes"; },
-  { name = "#opensourceecology"; chatnet = "Freenode"; autojoin = "yes"; },
+  {
+    name = "#opensourceecology";
+    chatnet = "Freenode";
+    autojoin = "yes";
+  },
   { name = "#lisp"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#lispgames"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#lispweb"; chatnet = "Freenode"; autojoin = "yes"; },
@@ -70,11 +68,25 @@ settings = {
     show_nickmode = "yes";
     show_nickmode_empty = "no";
   };
+  "fe-text" = { actlist_sort = "refnum"; };
 };
 
-aliases = {
-  W = "window";
-  WC = "window close";
-  Q = "quit";
-};
+aliases = { W = "window"; WC = "window close"; Q = "quit"; };
 
+statusbar = {
+  default = {
+    window = {
+      items = {
+        barstart = { priority = "100"; };
+        time = { };
+        user = { };
+        window = { };
+        window_empty = { };
+        lag = { priority = "-1"; };
+        more = { priority = "-1"; alignment = "right"; };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+  };
+};
+logs = { };
