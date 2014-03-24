@@ -1,3 +1,7 @@
+# Folders #
+###########
+.vagrant
+
 # Compiled source #
 ###################
 *.com
