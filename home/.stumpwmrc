@@ -38,9 +38,9 @@
 
 (com browser +www-browser+ "C-s-w"
      "browser")
-(com tor "sh tor/start-tor-browser" "C-s-o"
+(com tor "tor-browser-en" "C-s-o"
      "tor")
-(com torrent "transmission-gtk" "C-s-t"
+(com torrent "ntorrent" "C-s-t"
      "torrent")
 (com library "calibre" "C-s-b"
      "library")
