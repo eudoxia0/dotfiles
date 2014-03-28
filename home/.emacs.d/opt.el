@@ -76,7 +76,7 @@
 (add-hook 'python-mode-hook 'flymake-mode)
 (add-hook 'common-lisp-mode 'flymake-mode)
 
-(setq pycodechecker "epylint")
+(setq pycodechecker "epylint2")
 (when (load "flymake" t)
   (defun flymake-pycodecheck-init ()
     (let* ((temp-file (flymake-init-create-temp-buffer-copy
