@@ -7,7 +7,8 @@ sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
   inkscape terminus-font autoconf libtool autogen clang llvm keepass maxima \
   gnuplot patch meld scrot calibre tint2 banshee cmake bzr vala python2-pip \
   screenfetch numlockx scala sbt ruby bison graphviz ditaa virtualbox sbcl \
-  ecl clisp nodejs units pcmanfm ansible newsbeuter bash-completion
+  ecl clisp nodejs units pcmanfm ansible newsbeuter bash-completion \
+  python2-virtualenv virtualenvwrapper
 
 # Yaourt packages
 sudo yaourt -S --noconfirm ttf-win7-fonts-autodownload tor-browser-en \
