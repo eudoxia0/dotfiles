@@ -25,7 +25,6 @@ sync backup
 sync notes
 sync library
 sync .newsbeuter/urls
-sync .newsbeuter/config
 echo -e "\e[31m.ssh\e[0m"
 unison ~/.ssh $base/.ssh -ignore "Name known_hosts"
 sync .irclogs
