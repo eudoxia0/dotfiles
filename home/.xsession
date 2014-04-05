@@ -20,6 +20,7 @@ nm-applet &
 xrdb .Xresources &
 numlockx &
 rtorrent &
+xsetroot -cursor_name left_ptr &
 
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0" 
 
@@ -27,4 +28,4 @@ if [ -x /usr/bin/xdg-user-dirs-update ]; then
    /usr/bin/xdg-user-dirs-update
 fi
 
-exec stumpwm
+exec xmonad
