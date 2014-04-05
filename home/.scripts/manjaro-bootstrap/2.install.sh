@@ -9,7 +9,8 @@ sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
   screenfetch numlockx scala sbt ruby bison graphviz ditaa virtualbox sbcl \
   ecl clisp nodejs units pcmanfm ansible newsbeuter bash-completion skype \
   python2-virtualenv python-virtualenvwrapper python2-pylint r net-tools \
-  virtualbox-host-modules zathura zathura-pdf-mupdf zathura-djvu
+  virtualbox-host-modules zathura zathura-pdf-mupdf zathura-djvu xmonad \
+  xmonad-contrib
 
 # Yaourt packages
 sudo yaourt -S --noconfirm ttf-win7-fonts-autodownload tor-browser-en \
@@ -52,14 +53,3 @@ backup.sh
 
 # Now that we have init.lisp:
 sbcl --eval "(ql:quickload :quicklisp-slime-helper)" --quit
-
-# Build stumpwm
-
-cd Downloads/
-git clone https://github.com/sabetts/stumpwm.git
-cd stumpwm/
-autoconf
-./configure
-sbcl --eval "(ql:quickload '(:clx :clx-truetype :cl-ppcre :xembed))" --quit
-make
-sudo make install
