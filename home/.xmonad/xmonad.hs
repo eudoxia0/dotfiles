@@ -23,6 +23,8 @@ main = do
            spawn myBrowser)
         , ((myMod .|. controlMask, xK_f),
            spawn "pcmanfm")
+        , ((myMod .|. controlMask, xK_e),
+           spawn "emacs")
         , ((myMod .|. controlMask, xK_o),
            spawn "tor-browser-en")
         , ((myMod .|. controlMask, xK_t),
