@@ -17,7 +17,7 @@ main = do
         , terminal    = myTerm
         , workspaces  = ["α","β","γ","δ","ε","ζ","η"]
         } `additionalKeys`
-        [ ((myMod, xK_Return),
+        [ ((myMod, xK_c),
            spawn myTerm)
         , ((myMod .|. controlMask, xK_w),
            spawn myBrowser)
