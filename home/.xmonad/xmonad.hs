@@ -19,6 +19,8 @@ main = do
         } `additionalKeys`
         [ ((myMod, xK_c),
            spawn myTerm)
+        , ((myMod, xK_r),
+           spawn "gmrun")
         , ((myMod .|. controlMask, xK_w),
            spawn myBrowser)
         , ((myMod .|. controlMask, xK_f),
