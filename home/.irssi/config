@@ -42,7 +42,6 @@ channels = (
   { name = "#lispgames"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#lispweb"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#sbcl"; chatnet = "Freenode"; autojoin = "yes"; },
-  { name = "#stumpwm"; chatnet = "Freenode"; autojoin = "yes"; },
   # OFTC
   { name = "#llvm"; chatnet = "OFTC"; autojoin = "no"; },
   { name = "#fosscad"; chatnet = "OFTC"; autojoin = "no"; },
@@ -69,6 +68,7 @@ settings = {
     show_nickmode_empty = "no";
   };
   "fe-text" = { actlist_sort = "refnum"; };
+  "perl/core/scripts" = { awl_viewer = "no"; };
 };
 
 aliases = { W = "window"; WC = "window close"; Q = "quit"; };
@@ -91,13 +91,6 @@ statusbar = {
       items = {
         barstart = { priority = "100"; };
         awl_0 = { };
-        barend = { priority = "100"; alignment = "right"; };
-      };
-    };
-    awl_1 = {
-      items = {
-        barstart = { priority = "100"; };
-        awl_1 = { };
         barend = { priority = "100"; alignment = "right"; };
       };
     };
