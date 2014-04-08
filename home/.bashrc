@@ -66,3 +66,4 @@ PS1="\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)\$\[\033[01m\][ \[\033[01
 #if hash tmux 2>/dev/null && [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
 #    tmux attach || tmux new; exit
 #fi
+CIM_HOME=/home/eudoxia/.cim; [ -s '/home/eudoxia/.cim/init.sh' ] && . '/home/eudoxia/.cim/init.sh'
