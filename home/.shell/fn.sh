@@ -22,12 +22,6 @@ ex ()
   fi
 }
 
-# lsp - run a Common Lisp file as a script
-# usage: lsp <file>
-lsp () {
-  sbcl --noinform --load $1 --quit
-}
-
 # dial - ssh into a host defined in .shell/hosts.txt
 # usage: dial <host>
 # depends on: .shell/hosts.txt
@@ -69,13 +63,6 @@ encrypt () {
 }
 decrypt () {
     openssl aes-256-cbc -d -in $1.tar.gz.enc -out $1.decrypted.tar.gz
-}
-
-# lisp_up - update quicklisp local projects
-# usage: lisp_up
-lisp_up () {
-    find ~/quicklisp/local-projects \
-        -mindepth 1 -maxdepth 1 -type d -exec git pull origin master \;
 }
 
 # colored man pages
