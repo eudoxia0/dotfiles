@@ -39,7 +39,6 @@ channels = (
     autojoin = "yes";
   },
   { name = "#lisp"; chatnet = "Freenode"; autojoin = "yes"; },
-  { name = "#lispgames"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#lispweb"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#sbcl"; chatnet = "Freenode"; autojoin = "yes"; },
   # OFTC
