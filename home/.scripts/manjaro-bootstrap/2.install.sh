@@ -6,11 +6,10 @@ sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
   redshift rtorrent make automake emacs unison pcmanfm giflib gimp gimp \
   inkscape terminus-font autoconf libtool autogen clang llvm keepass maxima \
   gnuplot patch meld scrot calibre tint2 banshee cmake bzr vala python2-pip \
-  screenfetch numlockx scala sbt ruby bison graphviz ditaa virtualbox sbcl \
-  ecl clisp nodejs units pcmanfm ansible newsbeuter bash-completion skype \
-  python2-virtualenv python-virtualenvwrapper python2-pylint r net-tools \
-  virtualbox-host-modules zathura zathura-pdf-mupdf zathura-djvu xmonad \
-  xmonad-contrib gmrun
+  screenfetch numlockx scala sbt ruby bison graphviz ditaa virtualbox nodejs \
+  units pcmanfm ansible newsbeuter bash-completion skype python2-virtualenv \
+  python-virtualenvwrapper python2-pylint r net-tools virtualbox-host-modules \
+  zathura zathura-pdf-mupdf zathura-djvu xmonad xmonad-contrib gmrun
 
 # Yaourt packages
 sudo yaourt -S --noconfirm ttf-win7-fonts-autodownload tor-browser-en \
