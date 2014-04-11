@@ -1,18 +1,21 @@
-#!/usr/bin/env python2
+import json
+import yaml
 
-from __future__ import print_function
-import sys
-from bs4 import BeautifulSoup
+root = json.loads(open('bookmarks.1.json').read())
 
-bookmarks = BeautifulSoup(open('bookmarks.html').read())
+delete_fields = ['dateAdded', 'guid', 'id', 'index', 'lastModified', 'root',
+                 'type', 'parent', 'charset', 'annos']
 
+def step(node):
+    has_children = 'children' in node
+    for field in delete_fields:
+        if field in node:
+            del node[field]
+    if has_children:
+        node['children'] = [step(child) for child in
+                            node['children']]
+    return node
 
-print('Tagging data we want to extract...', file=sys.stderr)
-for node in bookmarks.find_all('h3') + bookmarks.find_all('a'):
-    node['class'] = 'extractme'
-print('Extracting data', file=sys.stderr)
-for node in bookmarks.find_all(['h3', 'a'], {'class': 'extractme'}):
-    if node.name == 'h3':
-        print('- ' + node.text.encode('utf8') + ':')
-    else:
-        print('    - "' + node.text.encode('utf8') + '": "' + node['href'] + '"')
+data = [step(child) for child in root['children']]
+
+print(yaml.dump(data, default_flow_style=False))
