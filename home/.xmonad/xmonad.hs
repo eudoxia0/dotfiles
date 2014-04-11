@@ -26,7 +26,7 @@ main = do
         , ((myMod .|. controlMask, xK_f),
            spawn "pcmanfm")
         , ((myMod .|. controlMask, xK_e),
-           spawn "emacs")
+           spawn ".scripts/start-emacs.sh")
         , ((myMod .|. controlMask, xK_o),
            spawn "tor-browser-en")
         , ((myMod .|. controlMask, xK_t),
