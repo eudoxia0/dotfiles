@@ -18,15 +18,6 @@ sudo yaourt -S --noconfirm ttf-win7-fonts-autodownload tor-browser-en \
 
 # Set up environments for other languages
 
-# Lisp
-
-# set up Quicklisp
-curl -O http://beta.quicklisp.org/quicklisp.lisp
-sbcl --no-userinit --load quicklisp.lisp --eval "(quicklisp-quickstart:install)" --quit
-sbcl --no-userinit --load quicklisp/setup.lisp --eval "(ql:quickload :swank)" --quit
-# we install swank here because it will be loaded by the init.lisp from my dotfiles
-rm quicklisp.lisp
-
 # Node
 
 sudo npm -g install jslint
