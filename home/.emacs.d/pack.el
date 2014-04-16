@@ -22,7 +22,7 @@
     gnugo
     ;; Themes
     color-theme-solarized color-theme-twilight color-theme-github
-    soft-morning-theme zenburn-theme))
+    soft-morning-theme zenburn-theme qsimpleq-theme))
 
 (defun packages-installed-p ()
   (not (memq 'nil (mapcar (lambda (p) (package-installed-p p)) my-packages))))

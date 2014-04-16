@@ -95,4 +95,5 @@
 (setq custom-safe-themes t)
 (color-theme-initialize)
 
-(color-theme-emacs-21)
+;(color-theme-solarized-light)
+(load-theme 'qsimpleq t)
