@@ -14,7 +14,7 @@ sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
 # Yaourt packages
 sudo yaourt -S --noconfirm ttf-win7-fonts-autodownload tor-browser-en \
   dogecoin-qt litecoin-qt electrum cpuminer pandoc-static rbenv ruby-build \
-  vagrant-git rbenv-default-gems heroku-toolbelt
+  vagrant-git rbenv-default-gems heroku-toolbelt ttf-monaco
 
 # Set up environments for other languages
 
