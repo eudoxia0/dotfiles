@@ -21,9 +21,9 @@ def step(node):
         del node['children']
     else:
         # Bookmark
-        node = [node[TITLE_KEY], node['uri']]
+        node = {'label': node[TITLE_KEY], 'uri': node['uri']}
     return node
 
 data = [step(child) for child in root['children']]
 
-print(yaml.dump(data, default_flow_style=False))
+print(yaml.dump(data, default_flow_style=False, allow_unicode=True))
