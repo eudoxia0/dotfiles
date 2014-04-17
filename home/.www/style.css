@@ -1,0 +1,21 @@
+a {
+  padding: 2px;
+  font-size: 14px;
+}
+
+li { margin: 3px 0; }
+
+a:link {
+    color: #AD3108;
+}
+a:visited {
+    color: #AD3108;
+}
+a:hover {
+    border: 1px solid black;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
