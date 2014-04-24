@@ -5,14 +5,15 @@
 (use-package :markup)
 
 (defparameter +path+
-  (merge-pathnames
-   #p".www/"
-   (user-homedir-pathname)))
+  (merge-pathnames #p".www/" (user-homedir-pathname)))
 
 (defparameter +bookmarks-path+
-  (merge-pathnames #p"bookmarks.yaml" +path+))
+  (merge-pathnames #p"self/bookmarks.yaml"
+                   (user-homedir-pathname)))
 (defparameter +style-path+
   (merge-pathnames #p"style.css" +path+))
+(defparameter +js-path+
+  (merge-pathnames #p"logs.js" +path+))
 (defparameter +homepage-path+
   (merge-pathnames #p"homepage.html" +path+))
 
@@ -39,20 +40,39 @@
           (:link :rel "stylesheet"
                  :href +style-path+))
    (:body
-    (:section :id "bar"
-              (:ul
-                (:li (:a :href "https://github.com/"
-                         "gh"))
-                (:li (:a :href "https://twitter.com/"
-                         "tw"))))
-    (:section :id "ports"
-              (:ul
-                (:li (:a :href "http://localhost:8000/"
-                         "8000"))
-                (:li (:a :href "http://localhost:8080/"
-                         "8080"))
-                (:li (:a :href "http://localhost:9000/"
-                         "9000"))))
-    (:section :id "bookmarks"
-              (loop for node in +bookmarks+ do
-                (step-node node))))))
+    (:div :id "bar"
+          (:ul
+           (:li (:a :href "https://github.com/"
+                    "gh"))
+           (:li (:a :href "https://twitter.com/"
+                    "tw"))
+           (:li (:a :href "https://mail.google.com/mail/u/0/#inbox"
+                    "mail"))
+           (:li (:a :href "https://mail.google.com/mail/u/1/#inbox"
+                    "work mail"))
+           (:li (:a :href "https://tryo.slack.com/messages"
+                    "slack"))
+           (:li (:a :href "http://www.reddit.com/"
+                    "reddit"))))
+    (:div :id "logs"
+          (:h3 "Logs")
+          (:ul
+           (:li (:a :id "yesterday" "Yesterday's logs"))
+           (:li (:a :id "today" "Today's logs"))))
+    (:div :id "ports"
+          (:h3 "Ports")
+          (:ul
+           (:li (:a :href "http://localhost:8000/"
+                    "8000"))
+           (:li (:a :href "http://localhost:8080/"
+                    "8080"))
+           (:li (:a :href "http://localhost:9000/"
+                    "9000"))))
+    (:div :id "bookmarks"
+          (:h3 "Bookmarks")
+          (loop for node in +bookmarks+ do
+            (step-node node)))
+
+    (:script :src "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
+             "")
+    (:script :src +js-path+ ""))))
