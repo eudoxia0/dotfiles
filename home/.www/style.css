@@ -2,15 +2,20 @@
     font-family: Helvetica;
 }
 
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 a {
-    padding: 1px;
     font-size: 15px;
     text-decoration: none;
     border: 1px solid #fff;
 }
 
 li {
-    margin: 1px 0;
+    margin-bottom: 3px;
 }
 
 a:link {
