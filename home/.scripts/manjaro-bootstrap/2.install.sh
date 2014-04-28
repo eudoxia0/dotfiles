@@ -10,7 +10,7 @@ sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
   units pcmanfm ansible newsbeuter bash-completion skype python2-virtualenv \
   python-virtualenvwrapper python2-pylint r net-tools virtualbox-host-modules \
   zathura zathura-pdf-mupdf zathura-djvu xmonad xmonad-contrib gmrun xcompmgr \
-  nfs-utils
+  nfs-utils gdb valgrind
 
 # Yaourt packages
 sudo yaourt -S --noconfirm ttf-win7-fonts-autodownload tor-browser-en \
