@@ -17,7 +17,7 @@
     mediawiki scala-mode2 ensime
     ;; Other plugins
     rainbow-delimiters magit ecb auto-complete ag highlight-indentation
-    google-c-style flycheck flymake-jslint
+    google-c-style flycheck flymake-jslint ido
     ;; Other
     gnugo
     ;; Themes
