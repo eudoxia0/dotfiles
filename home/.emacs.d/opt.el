@@ -66,8 +66,7 @@
 ;; Web-mode
 
 (setq web-mode-engines-alist
-'(("\\.html\\" . "django")
-  ("\\.tmpl\\" . "closure")))
+      '(("\\.tmpl\\" . "closure")))
 
 ;; JSLint
 

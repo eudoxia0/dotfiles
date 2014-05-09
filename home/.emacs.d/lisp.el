@@ -3,9 +3,9 @@
 ;(load (expand-file-name "~/quicklisp/log4slime-setup.el"))
 ;(global-log4slime-mode 1)
 
-(load (expand-file-name "~/quicklisp/slime-helper.el"))
+(load (expand-file-name "~/.cim/quicklisp/slime-helper.el"))
 (setq inferior-lisp-program
-      (expand-file-name "~/.cim/bin/sbcl"))
+      (expand-file-name "~/.cim/bin/sbcl-1.1.16"))
 
 (set-language-environment "utf-8")
 (setq slime-net-coding-system 'utf-8-unix)
