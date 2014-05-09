@@ -30,10 +30,11 @@
        (markup (:li (:a :href (gethash "uri" node)
                         (gethash "label" node))))))
 
-(with-open-file (*output-stream* +homepage-path+
-                                 :direction :output
-                                 :if-does-not-exist :create
-                                 :if-exists :supersede)
+(with-open-file (*output-stream*
+                 +homepage-path+
+                 :direction :output
+                 :if-does-not-exist :create
+                 :if-exists :supersede)
   (html5
    (:head (:title "Bookmarks")
           (:meta :charset "utf-8")
@@ -42,33 +43,28 @@
    (:body
     (:div :id "bar"
           (:ul
-           (:li (:a :href "https://github.com/"
-                    "gh"))
-           (:li (:a :href "https://twitter.com/"
-                    "tw"))
+           (:li (:a :href "https://github.com/" "gh"))
+           (:li (:a :href "https://twitter.com/" "tw"))
+           (:li (:a :href "https://www.facebook.com/" "fb"))
            (:li (:a :href "https://mail.google.com/mail/u/0/#inbox"
                     "mail"))
            (:li (:a :href "https://mail.google.com/mail/u/1/#inbox"
                     "work mail"))
-           (:li (:a :href "https://tryo.slack.com/messages"
-                    "slack"))
-           (:li (:a :href "http://www.reddit.com/"
-                    "reddit"))))
-    (:div :id "logs"
-          (:h3 "Logs")
-          (:ul
-           (:li (:a :id "yesterday" "Yesterday's logs"))
-           (:li (:a :id "today" "Today's logs"))))
-    (:div :id "ports"
-          (:h3 "Ports")
-          (:ul
-           (:li (:a :href "http://localhost:8000/"
-                    "8000"))
-           (:li (:a :href "http://localhost:8080/"
-                    "8080"))
-           (:li (:a :href "http://localhost:9000/"
-                    "9000"))))
-    (:div :id "bookmarks"
+           (:li (:a :href "https://tryo.slack.com/messages" "slack"))
+           (:li (:a :href "http://www.reddit.com/" "reddit"))))
+    (:div :id "links" :class "column"
+          (:div :id "logs"
+                (:h3 "Logs")
+                (:ul
+                 (:li (:a :id "yesterday" "Yesterday's logs"))
+                 (:li (:a :id "today" "Today's logs"))))
+          (:div :id "ports"
+                (:h3 "Ports")
+                (:ul
+                 (:li (:a :href "http://localhost:8000/" "8000"))
+                 (:li (:a :href "http://localhost:8080/" "8080"))
+                 (:li (:a :href "http://localhost:9000/" "9000")))))
+    (:div :id "bookmarks" :class "column"
           (:h3 "Bookmarks")
           (loop for node in +bookmarks+ do
             (step-node node)))

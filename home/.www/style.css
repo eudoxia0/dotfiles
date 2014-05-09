@@ -2,6 +2,26 @@
     font-family: Helvetica;
 }
 
+body { margin: 8px; }
+
+.column { zoom: 1; margin: 0 20px; }
+.column:before, .column:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.column:after { clear: both; }
+
+#bookmarks { float: right; width: 60%; }
+#links { float: left; width: 30%; }
+
+#bar {
+    margin: 0 auto;
+    border: 4px solid #AD3108;
+    text-align: center;
+    width: 30%;
+}
+
+#bar ul { padding: 0; margin: 20px 30px; }
+
+#bar li { display: inline; margin: 3px 12px; }
+
 *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
