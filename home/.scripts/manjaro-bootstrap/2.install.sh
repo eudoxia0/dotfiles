@@ -15,7 +15,7 @@ sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
 # Yaourt packages
 sudo yaourt -S --noconfirm ttf-win7-fonts-autodownload tor-browser-en \
   dogecoin-qt litecoin-qt electrum cpuminer pandoc-static rbenv ruby-build \
-  vagrant-git rbenv-default-gems heroku-toolbelt ttf-monaco
+  vagrant-git rbenv-default-gems heroku-toolbelt ttf-monaco grive
 
 # Set up environments for other languages
 
@@ -48,4 +48,3 @@ sbcl --eval "(ql:quickload :quicklisp-slime-helper)" --quit
 # Setup NFS services (For Vagrant)
 sudo systemctl enable rpc-idmapd
 sudo systemctl enable rpc-mountd
-
