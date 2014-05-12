@@ -3,7 +3,7 @@
 # Install packages
 
 sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
-  redshift rtorrent make automake emacs unison pcmanfm giflib gimp \
+  redshift transmission-gtk make automake emacs unison pcmanfm giflib gimp \
   inkscape terminus-font autoconf libtool autogen clang llvm keepass maxima \
   gnuplot patch meld scrot calibre tint2 banshee cmake bzr vala python2-pip \
   screenfetch numlockx scala sbt ruby bison graphviz ditaa virtualbox nodejs \

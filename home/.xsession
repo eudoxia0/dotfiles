@@ -23,6 +23,7 @@ numlockx &
 rtorrent &
 xsetroot -cursor_name left_ptr &
 xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
+transmission-gtk -m &
 
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0" 
 
