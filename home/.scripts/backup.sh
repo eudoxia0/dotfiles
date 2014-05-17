@@ -28,6 +28,7 @@ sync .newsbeuter/urls
 echo -e "\e[31m.ssh\e[0m"
 unison ~/.ssh $base/.ssh -ignore "Name known_hosts"
 sync .irclogs
-sync torrents/watch
+sync drive
+sync cards
 
 chown -R $USER ~/.ssh
