@@ -6,6 +6,6 @@
 homeshick pull dotfiles &
 
 # Computer-specific lisp shim
-source self/.lisp-pathnames
+source self/.lisp-pathnames &
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
