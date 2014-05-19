@@ -2,14 +2,16 @@
 
 (in-package :stumpwm)
 
+;;;; General options
+
 (set-prefix-key (kbd "s-w"))
 (setf *mouse-focus-policy* :sloppy)
 (setf *frame-number-map* "123456789")
 
-(setq *terminal* "urxvt")
+(setq +terminal+ "urxvt")
 (defparameter +www-browser+ "firefox")
 
-;;; Workspaces
+;;;; Workspaces
 
 (define-key *top-map* (kbd "s-1") "gselect web")
 (define-key *top-map* (kbd "s-2") "gselect term")
@@ -18,44 +20,41 @@
 (define-key *top-map* (kbd "s-5") "gselect file")
 (define-key *top-map* (kbd "s-6") "gselect mail")
 
-;;; Commands
+;;;; Commands
 
-(defun in-terminal (command)
-  (concatenate 'string *terminal* " -e " command))
-
-(defmacro com (name cmd keybinding class)
-  `(progn
-     (defcommand ,name () ()
-       (run-or-raise ,cmd '(:class ,class)))
-     (define-key *top-map* (kbd ,keybinding) ,(symbol-name name))))
-
-;; Remove emacs keybinding
-(undefine-key *root-map* (kbd "e"))
+;;; Applications
 
 (defcommand emacs () ()
   (run-or-raise "sh .scripts/start-emacs.sh" '(:class "emacs")))
-(define-key *root-map* (kbd "e") "emacs")
 
-(com browser +www-browser+ "C-s-w"
-     "browser")
-(com tor "tor-browser-en" "C-s-o"
-     "tor")
-(com torrent "ntorrent" "C-s-t"
-     "torrent")
-(com library "calibre" "C-s-b"
-     "library")
-(com irc "xchat" "C-s-x"
-     "im")
-(com im "pidgin" "C-s-i"
-     "im")
-(com rss (in-terminal "newsbeuter") "C-S-r"
-     "rss")
-(com music "audacious" "C-s-m"
-     "music")
-(com fm "pcmanfm" "C-s-f"
-     "fm")
+(defcommand browser () ()
+  (run-or-raise +www-browser+ '(:class "browser")))
 
-(com lock "xscreensaver-command -lock" "s-x" "screensaver")
+(defcommand tor-browser () ()
+  (run-or-raise "tor-browser-en" '(:class "tor-browser")))
+
+(defcommand torrent () ()
+  (run-or-raise "transmission-gtk" '(:class "torrent")))
+
+(defcommand library () ()
+  (run-or-raise "calibre" '(:class "library")))
+
+(defcommand im () ()
+  (run-or-raise "pidgin" '(:class "im")))
+
+(defcommand music () ()
+  (run-or-raise "audacious" '(:class "music")))
+
+(defcommand fm () ()
+  (run-or-raise "pcmanfm" '(:class "fm")))
+
+(defcommand terminal () ()
+  (run-or-raise +terminal+ '(:class "term")))
+
+;;; System
+
+(defcommand screensaver () ()
+  (run-or-raise "xscreensaver-command -lock" '(:class "screensaver")))
 
 (defcommand battery () ()
   "docstring"
@@ -74,22 +73,58 @@
                                   (get-x-selection)
                                   "\"")))
 
-;; TODO add hook so I get notified when people say my name on IRC or IM me
+;;; Keybindings
+
+;; Remove some keybindings
+
+(undefine-key *root-map* (kbd "F1"))
+(undefine-key *root-map* (kbd "F2"))
+(undefine-key *root-map* (kbd "F3"))
+(undefine-key *root-map* (kbd "F4"))
+(undefine-key *root-map* (kbd "F5"))
+(undefine-key *root-map* (kbd "F6"))
+(undefine-key *root-map* (kbd "F7"))
+(undefine-key *root-map* (kbd "F8"))
+(undefine-key *root-map* (kbd "F9"))
+(undefine-key *root-map* (kbd "F10"))
+
+(undefine-key *top-map* (kbd "e")) ; Emacs
+;(undefine-key *top-map* (kbd "k")) ; Kill
+(undefine-key *top-map* (kbd "c")) ; Console
+(undefine-key *top-map* (kbd "!")) ; Run shell command
+
+; Repeat bindings
+(undefine-key *root-map* (kbd "C-c"))
+(undefine-key *root-map* (kbd "C-b"))
+(undefine-key *root-map* (kbd "C-a"))
+
+(define-key *root-map* (kbd "e") "emacs")
+
+(define-key *top-map* (kbd "C-s-w") "browser")
+(define-key *top-map* (kbd "C-s-o") "tor-browser")
+(define-key *top-map* (kbd "C-s-t") "torrent")
+(define-key *top-map* (kbd "C-s-b") "library")
+(define-key *top-map* (kbd "C-s-i") "im")
+(define-key *top-map* (kbd "C-s-m") "music")
+(define-key *top-map* (kbd "C-s-f") "fm")
+
+(define-key *top-map* (kbd "s-x") "screensaver")
+;(define-key *top-map* (kbd "s-q") "kill-window")
+(define-key *top-map* (kbd "s-c") "terminal")
+(define-key *top-map* (kbd "s-r") "exec")
+
+; Take a screenshot
+
+(define-key *root-map* (kbd "Print") "exec scrot")
+
+;;;; Notifications
+
 (defun echo-urgent-window (target)
   (message "Attention: ~A" (window-title target)))
 
 (add-hook *urgent-window-hook* 'echo-urgent-window)
 
-;;; Keybindings
-
-(defcommand xlock () ()
-  "docstring"
-  (run-shell-command "exec xscreensaver-command -lock"))
-
-(define-key *root-map* (kbd "b") "open-selection-browser")
-(define-key *root-map* (kbd "u") "uptime")
-
-;;; Theme
+;;;; Theme
 
 (set-fg-color "SteelBlue")
 (set-bg-color "Black")
@@ -108,96 +143,7 @@
 ;; e5d7a1 : dark yellow
 ;; ad3208 : red
 
-;;; Group placement rules
-
-;(clear-window-placement-rules)
-
-;(define-frame-preference "web"
-;  (0 t t "browser-class"))
-
-;; Useless gaps
-;; from https://gist.github.com/Octantis/5651256
-
-(defvar *useless-gaps-size* 15)
-(defvar *useless-gaps-on* nil)
-
-;; Redefined - with `if`s for *useless-gaps-on*
-(defun maximize-window (win)
-  "Maximize the window."
-  (multiple-value-bind (x y wx wy width height border stick)
-      (geometry-hints win)
-
-    (if *useless-gaps-on*
-        (setf width (- width (* 2 *useless-gaps-size*))
-              height (- height (* 2 *useless-gaps-size*))
-              x (+ x *useless-gaps-size*)
-              y (+ y *useless-gaps-size*)))
-
-    (dformat 4 "maximize window ~a x: ~d y: ~d width: ~d height: ~d border: ~d stick: ~s~%" win x y width height border stick)
-    ;; This is the only place a window's geometry should change
-    (set-window-geometry win :x wx :y wy :width width :height height :border-width 0)
-    (xlib:with-state ((window-parent win))
-      ;; FIXME: updating the border doesn't need to be run everytime
-      ;; the window is maximized, but only when the border style or
-      ;; window type changes. The overhead is probably minimal,
-      ;; though.
-      (setf (xlib:drawable-x (window-parent win)) x
-            (xlib:drawable-y (window-parent win)) y
-            (xlib:drawable-border-width (window-parent win)) border)
-      ;; the parent window should stick to the size of the window
-      ;; unless it isn't being maximized to fill the frame.
-      (if (or stick
-              (find *window-border-style* '(:tight :none)))
-          (setf (xlib:drawable-width (window-parent win)) (window-width win)
-                (xlib:drawable-height (window-parent win)) (window-height win))
-          (let ((frame (window-frame win)))
-            (setf (xlib:drawable-width (window-parent win)) (- (frame-width frame)
-                                                               (* 2 (xlib:drawable-border-width (window-parent win)))
-                                                               (if *useless-gaps-on* (* 2 *useless-gaps-size*) 0))
-                  (xlib:drawable-height (window-parent win)) (- (frame-display-height (window-group win) frame)
-                                                                (* 2 (xlib:drawable-border-width (window-parent win)))
-                                                                (if *useless-gaps-on* (* 2 *useless-gaps-size*) 0)))))
-      ;; update the "extents"
-      (xlib:change-property (window-xwin win) :_NET_FRAME_EXTENTS
-                            (list wx wy
-                                  (- (xlib:drawable-width (window-parent win)) width wx)
-                                  (- (xlib:drawable-height (window-parent win)) height wy))
-                            :cardinal 32))))
-
-(defun reset-all-windows ()
-  "Reset the size for all tiled windows"
-  (let ((windows (mapcan (lambda (g)
-                           (mapcar (lambda (w) w) (sort-windows g)))
-                         (sort-groups (current-screen)))))
-    (mapcar (lambda (w)
-              (if (string= (class-name (class-of w)) "TILE-WINDOW")
-                  (maximize-window w))) windows)))
-
-(defcommand gaps () ()
-            "Toggle the padding of tiled windows"
-            (setf *useless-gaps-on* (null *useless-gaps-on*))
-
-            ;; Following is pseudo code to use hooks
-            ;; to do something like change border colors or size
-            ;; (if *useless-gaps-on*
-            ;;     (run-hook 'frame-gap-on)
-            ;;     (run-hook 'frame-gap-off))
-            (reset-all-windows))
-
-;;; Remove some keybindings
-
-(undefine-key *root-map* (kbd "F1"))
-(undefine-key *root-map* (kbd "F2"))
-(undefine-key *root-map* (kbd "F3"))
-(undefine-key *root-map* (kbd "F4"))
-(undefine-key *root-map* (kbd "F5"))
-(undefine-key *root-map* (kbd "F6"))
-(undefine-key *root-map* (kbd "F7"))
-(undefine-key *root-map* (kbd "F8"))
-(undefine-key *root-map* (kbd "F9"))
-(undefine-key *root-map* (kbd "F10"))
-
-;;; Autostart
+;;;; Autostart
 
 (stumpwm::run-commands
  "gnew web"
@@ -207,3 +153,7 @@
  "gnew file"
  "gnew mail"
  "gselect web")
+
+;;;; Extras
+
+(load (compile-file ".wm/gaps.lisp"))
