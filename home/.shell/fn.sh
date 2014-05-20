@@ -76,3 +76,16 @@ man() {
     LESS_TERMCAP_us=$'\E[04;38;5;146m' \
     man "$@"
 }
+
+
+cl_compile() {
+    sbcl --noinform --eval "(compile-file \"$1\")" --quit
+}
+
+cl_compile_all() {
+    find . -name '*.lisp*' -exec cl_compile {} \;
+}
+
+sbcl_gencore() {
+    sbcl --eval '(sb-ext:save-lisp-and-die "sbcl.core")' --quit
+}

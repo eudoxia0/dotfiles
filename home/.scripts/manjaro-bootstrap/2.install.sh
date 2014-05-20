@@ -10,12 +10,16 @@ sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
   units pcmanfm ansible newsbeuter bash-completion skype python2-virtualenv \
   python-virtualenvwrapper python2-pylint r net-tools virtualbox-host-modules \
   zathura zathura-pdf-mupdf zathura-djvu xmonad xmonad-contrib gmrun xcompmgr \
-  nfs-utils gdb valgrind
+  nfs-utils gdb valgrind sbcl
 
 # Yaourt packages
 sudo yaourt -S --noconfirm ttf-win7-fonts-autodownload tor-browser-en \
   dogecoin-qt litecoin-qt electrum cpuminer pandoc-static rbenv ruby-build \
   vagrant-git rbenv-default-gems heroku-toolbelt ttf-monaco grive
+
+# Set up homeshick
+sudo yaourt -s --noconfirm homeshick-git
+homeshick clone eudoxia0/dotfiles
 
 # Set up environments for other languages
 
@@ -35,15 +39,18 @@ rbenv global 2.1.0
 # install useful ruby gems
 gem install veewee
 
-# Set up homeshick
-sudo yaourt -s --noconfirm homeshick-git
-homeshick clone eudoxia0/dotfiles
+# Lisp
+curl -o /tmp/ql.lisp http://beta.quicklisp.org/quicklisp.lisp
+sbcl --no-sysinit --no-userinit --load /tmp/ql.lisp \
+  --eval '(quicklisp-quickstart:install :path ".quicklisp")' \
+  --quit
+sbcl --eval '(ql:quickload :quicklisp-slime-helper)' --quit
+
+sbcl_gencore
+sudo mv sbcl.core /usr/lib/sbcl/sbcl.core
 
 # Make sure the USB drive is mounted
 backup.sh
-
-# Now that we have init.lisp:
-sbcl --eval "(ql:quickload :quicklisp-slime-helper)" --quit
 
 # Setup NFS services (For Vagrant)
 sudo systemctl enable rpc-idmapd

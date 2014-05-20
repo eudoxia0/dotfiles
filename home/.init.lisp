@@ -5,7 +5,7 @@
 ;;; The following lines added by ql:add-to-init-file:
 
 #-quicklisp
-(load (merge-pathnames ".cim/quicklisp/setup.lisp"
+(load (merge-pathnames ".quicklisp/setup"
                        (user-homedir-pathname)))
 
 ;;; Better printing for hash tables
