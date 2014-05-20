@@ -88,10 +88,10 @@
 (undefine-key *root-map* (kbd "F9"))
 (undefine-key *root-map* (kbd "F10"))
 
-(undefine-key *top-map* (kbd "e")) ; Emacs
-;(undefine-key *top-map* (kbd "k")) ; Kill
-(undefine-key *top-map* (kbd "c")) ; Console
-(undefine-key *top-map* (kbd "!")) ; Run shell command
+(undefine-key *root-map* (kbd "e")) ; Emacs
+(undefine-key *root-map* (kbd "k")) ; Kill
+(undefine-key *root-map* (kbd "c")) ; Console
+(undefine-key *root-map* (kbd "!")) ; Run shell command
 
 ; Repeat bindings
 (undefine-key *root-map* (kbd "C-c"))
@@ -109,7 +109,7 @@
 (define-key *top-map* (kbd "C-s-f") "fm")
 
 (define-key *top-map* (kbd "s-x") "screensaver")
-;(define-key *top-map* (kbd "s-q") "kill-window")
+(define-key *top-map* (kbd "s-q") "delete")
 (define-key *top-map* (kbd "s-c") "terminal")
 (define-key *top-map* (kbd "s-r") "exec")
 
