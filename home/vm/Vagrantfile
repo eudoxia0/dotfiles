@@ -4,17 +4,13 @@ HDIR = "../code"
 GDIR = "/home/vagrant/code"
 
 ROOT = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_"
+SUFFIX = "_chef-provisionerless.box"
 
-URLS = {
-  "ubuntu-14.04" => "ubuntu-14.04_chef-provisionerless.box",
-  "debian-7.4" => "debian-7.4_chef-provisionerless.box",
-  "centos-6.5" => "centos-6.5_chef-provisionerless.box",
-  "freebsd-10.0" => "freebsd-10.0_chef-provisionerless.box",
-}
+def url(box_name)
+  return ROOT + box_name + SUFFIX
+end
 
 Vagrant.configure("2") do |config|
-  #config.vm.network :forwarded_port, guest: 8000, host: 8000
-
   config.vm.provider :virtualbox do |vb|
     vb.customize ["modifyvm", :id, "--memory", "2048"]
     vb.customize ["modifyvm", :id, "--cpus", "2"]
@@ -22,28 +18,28 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "ubuntu" do |m|
     m.vm.box = "ubuntu-14.04"
-    m.vm.box_url = ROOT + URLS[m.vm.box]
+    m.vm.box_url = url(m.vm.box)
 
     m.vm.synced_folder HDIR, GDIR
   end
 
   config.vm.define "debian" do |m|
     m.vm.box = "debian-7.4"
-    m.vm.box_url = ROOT + URLS[m.vm.box]
+    m.vm.box_url = url(m.vm.box)
 
     m.vm.synced_folder HDIR, GDIR
   end
 
   config.vm.define "centos" do |m|
     m.vm.box = "centos-6.5"
-    m.vm.box_url = ROOT + URLS[m.vm.box]
+    m.vm.box_url = url(m.vm.box)
 
     m.vm.synced_folder HDIR, GDIR
   end
 
   config.vm.define "freebsd" do |m|
     m.vm.box = "freebsd-10.0"
-    m.vm.box_url = ROOT + URLS[m.vm.box]
+    m.vm.box_url = url(m.vm.box)
     m.vm.guest = :freebsd
 
     m.vm.synced_folder HDIR, GDIR, :nfs => true
