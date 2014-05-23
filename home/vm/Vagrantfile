@@ -6,7 +6,7 @@ GDIR = "/home/vagrant/code"
 ROOT = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_"
 
 URLS = {
-  "ubuntu-14.04" => "ubuntu-14.04_chef-provisionerless.box"
+  "ubuntu-14.04" => "ubuntu-14.04_chef-provisionerless.box",
   "debian-7.4" => "debian-7.4_chef-provisionerless.box",
   "centos-6.5" => "centos-6.5_chef-provisionerless.box",
   "freebsd-10.0" => "freebsd-10.0_chef-provisionerless.box",
