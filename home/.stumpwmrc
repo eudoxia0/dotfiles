@@ -156,4 +156,4 @@
 
 ;;;; Extras
 
-(load (compile-file ".wm/gaps.lisp"))
+(load ".wm/gaps")
