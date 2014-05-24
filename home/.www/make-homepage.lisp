@@ -13,19 +13,24 @@
 (defparameter +style-path+
   (merge-pathnames #p"style.css" +path+))
 (defparameter +js-path+
-  (merge-pathnames #p"logs.js" +path+))
+  (merge-pathnames #p"script.js" +path+))
 (defparameter +homepage-path+
   (merge-pathnames #p"homepage.html" +path+))
 
 (defparameter +bookmarks+ (yaml:parse +bookmarks-path+))
 
+(defparameter +id+ 0)
+
 (defun step-node (node)
   (aif (gethash "sub" node)
        ;; Folder
-       (markup (:span (gethash "label" node))
+       (markup (:div :class "folder-name"
+                     :id (write-to-string (incf +id+))
+                     (gethash "label" node))
                (:ul :class "folder"
-                (loop for sub-node in it do
-                  (step-node sub-node))))
+                    :folder-id (write-to-string +id+)
+                    (loop for sub-node in it do
+                      (step-node sub-node))))
        ;; Bookmark
        (markup (:li (:a :href (gethash "uri" node)
                         (gethash "label" node))))))

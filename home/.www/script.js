@@ -15,3 +15,8 @@ $(document).ready(function() {
     $('#today').attr('href', format(today));
     $('#yesterday').attr('href', format(yesterday));
 });
+
+$(".folder-name").click(function() {
+    console.log('clicke');
+    $(".folder[folder-id=" + $(this).attr('id') + "]").toggle();
+});
