@@ -1,3 +1,4 @@
+/* Get a link to today's and yesterday's ##hplusroadmap logs */
 var base = 'http://gnusha.org/logs/'
 var today = new Date();
 var yesterday = new Date();
@@ -11,12 +12,14 @@ function format(date) {
       '.log';
 }
 
-$(document).ready(function() {
-    $('#today').attr('href', format(today));
-    $('#yesterday').attr('href', format(yesterday));
-});
-
+/* When clicking on the name of a folder, show/hide its contents */
 $(".folder-name").click(function() {
     console.log('clicke');
     $(".folder[folder-id=" + $(this).attr('id') + "]").toggle();
+});
+
+$(document).ready(function() {
+    $('#today').attr('href', format(today));
+    $('#yesterday').attr('href', format(yesterday));
+    $('.folder').hide();
 });
