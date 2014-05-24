@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.26 for eudoxia on Sat Mar  1 11:09:40 2014.
+# Written by xscreensaver-demo 5.26 for eudoxia on Tue Apr 22 13:48:30 2014.
 # http://www.jwz.org/xscreensaver/
 
 timeout:	12:00:00
@@ -34,7 +34,7 @@ grabVideoFrames:    False
 chooseRandomImages: False
 imageDirectory:	
 
-mode:		random
+mode:		blank
 selected:	-1
 
 textMode:	url
