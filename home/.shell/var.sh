@@ -7,7 +7,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 source /usr/bin/virtualenvwrapper.sh
 
 # NPM
-export PATH="$PATH:$HOME/.npm/bin:$HOME/.scripts"
+export PATH="$PATH:$HOME/.npm/bin:$HOME/.scripts:$HOME/.cabal/bin"
 
 # Ruby
 export PATH="$PATH:$HOME/.gem/ruby/2.1.0/bin"

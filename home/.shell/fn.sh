@@ -87,5 +87,6 @@ cl_compile_all() {
 }
 
 sbcl_gencore() {
-    sbcl --eval '(sb-ext:save-lisp-and-die "sbcl.core")' --quit
+    # Generate a core file for faster loading
+    sbcl --eval '(sb-ext:save-lisp-and-die ".sbcl/sbcl.core")' --quit
 }
