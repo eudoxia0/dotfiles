@@ -2,9 +2,9 @@
 
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
 
-# virtualenvwrapper
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
+# less
+export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+export LESS=' -R '
 
 # NPM
 export PATH="$PATH:$HOME/.npm/bin:$HOME/.scripts:$HOME/.cabal/bin"
