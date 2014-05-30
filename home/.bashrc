@@ -55,7 +55,6 @@ fi
 . ~/.shell/fn.sh
 . ~/.shell/var.sh
 . ~/.shell/complete.sh
-. ~/.shell/tv.sh
 
 # rbenv
 eval "$(rbenv init -)"
