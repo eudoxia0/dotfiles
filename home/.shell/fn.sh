@@ -22,13 +22,6 @@ ex ()
   fi
 }
 
-# dial - ssh into a host defined in .shell/hosts.txt
-# usage: dial <host>
-# depends on: .shell/hosts.txt
-dial () {
-  ssh `grep $1 ~/self/hosts.txt | tr -s ' ' | cut -d ' ' -f 2-10`
-}
-
 # geo - get the location of a host
 # usage: geo <host>
 # output: <country>,<state>,<lat>,<lon>
