@@ -1,7 +1,6 @@
 ;;;; Package specific options
 
 ;;; Org mode
-
 (require 'ess-site)
 
 (org-babel-do-load-languages
@@ -16,8 +15,8 @@
 (setq org-confirm-babel-evaluate 'my-org-confirm-babel-evaluate)
 
 (setq org-export-with-smart-quotes t)
-;;; Modes
 
+;;; Modes
 (setq auto-mode-alist
       (append '(("\\.md\\'" . markdown-mode)
 		("\\.\\(yaml\\|yml\\)$" . yaml-mode)
@@ -35,7 +34,6 @@
 	    auto-mode-alist))
 
 ;; Autocomplete
-
 (require 'auto-complete-config)
 (ac-config-default)
 (setq ac-ignore-case nil)
@@ -43,7 +41,6 @@
 (add-to-list 'ac-modes 'web-mode)
 
 ;; Projectile
-
 (require 'grizzl)
 (projectile-global-mode)
 (setq projectile-enable-caching t)
@@ -54,31 +51,32 @@
 (global-set-key (kbd "s-b") 'projectile-switch-to-buffer)
 
 ;; Highlight indentation
-
 (require 'highlight-indentation)
 (add-hook 'prog-mode
            (lambda () (highlight-indentation-current-column-mode)))
 
 ;; Powerline
-
 (require 'powerline)
 
 ;; Web-mode
-
 (setq web-mode-engines-alist
       '(("\\.tmpl\\" . "closure")))
-
-;; JSLint
-
-(require 'flymake-jslint)
-(add-hook 'js-mode-hook 'flymake-jslint-load)
-(add-hook 'python-mode-hook 'flymake-mode)
-(add-hook 'common-lisp-mode 'flymake-mode)
 
 ;; CEDET
 
 ;; ido
-
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
 (ido-mode 1)
+
+;; Haskell
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+
+;; Flycheck
+(add-hook 'nxml-mode-hook 'flycheck-enable-except-on-temp-buffers)
+
+;; Flyspell
+(setq ispell-program-name "hunspell")
+(require 'rw-hunspell)
+(add-hook 'prog-mode-hook 'flyspell-prog-mode)
+(add-hook 'nxml-mode-hook 'flyspell-prog-mode)
