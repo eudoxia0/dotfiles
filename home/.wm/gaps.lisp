@@ -1,10 +1,10 @@
 ;; Useless gaps
 ;; from https://gist.github.com/Octantis/5651256
 
-(defvar *useless-gaps-size* 15)
+(defvar *useless-gaps-size* 25)
 (defvar *useless-gaps-on* nil)
 
-;; Redefined - with `if`s for *useless-gaps-on*
+;; Redefined - with `if`s for *useless-gaps-on*gaps
 (defun maximize-window (win)
   "Maximize the window."
   (multiple-value-bind (x y wx wy width height border stick)
