@@ -1,23 +1,16 @@
 ;;;     "Show me your ~/.emacs and I will tell you who you are."
 ;;;                                        Bogdan Maryniuk
 
-;; Fire up server
-(require 'server)
-
-(setq server-socket-dir "/tmp/emacs-shared")
-(if (display-graphic-p)
-    (unless (server-running-p)
-      (server-start)))
-
 (require 'cl)
 (require 'whitespace)
 
+;; Compile files after saving them
 (add-hook 'after-save-hook 
           (lambda ()
             (if (eq major-mode 'emacs-lisp-mode)
                 (save-excursion (byte-compile-file buffer-file-name)))))
 
-;;; Basic interface options
+;;; Interface
 
 (mouse-wheel-mode t)
 (setq require-final-newline t)
@@ -62,6 +55,11 @@
 (setq whitespace-line-column 80) ;; limit line length
 (setq whitespace-style '(face lines-tail))
 
+;; Font options
+(set-face-attribute 'default nil :font "Inconsolata")
+(set-face-attribute 'default nil :height 100)
+
+;;; Functionality
 (add-hook 'prog-mode-hook
           (lambda ()
             (font-lock-add-keywords
@@ -73,9 +71,20 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
-;; Font options
-(set-face-attribute 'default nil :font "Inconsolata")
-(set-face-attribute 'default nil :height 100)
+;; Fire up server
+(require 'server)
+
+(setq server-socket-dir "/tmp/emacs-shared")
+(if (display-graphic-p)
+    (unless (server-running-p)
+      (server-start)))
+
+;;; Other files
+
+(load (expand-file-name "~/.emacs.d/pack.el"))
+(load (expand-file-name "~/.emacs.d/opt.el"))
+(load (expand-file-name "~/.emacs.d/lisp.el"))
+(load (expand-file-name "~/code/wax/emacs/wax-mode.el"))
 
 ;;; Keybindings
 
@@ -83,29 +92,10 @@
                 (lambda()(interactive)(find-file "~/.emacs.d/init.el")))
 (global-set-key (kbd "C-.") 'magit-status)
 
-;;; Other files
-
-(load (expand-file-name "~/.emacs.d/pack.el"))
-(load (expand-file-name "~/.emacs.d/opt.el"))
-(load (expand-file-name "~/.emacs.d/lisp.el"))
-
 ;;; Themes
 
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (setq custom-safe-themes t)
 (color-theme-initialize)
 
 ;(color-theme-solarized-light)
-(load-theme 'qsimpleq t)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ecb-options-version "2.40"))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+(load-theme 'noctilux t)
