@@ -98,4 +98,4 @@
 (color-theme-initialize)
 
 ;(color-theme-solarized-light)
-(load-theme 'noctilux t)
+(load-theme 'mccarthy t)
