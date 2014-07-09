@@ -80,3 +80,12 @@
 (require 'rw-hunspell)
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
 (add-hook 'nxml-mode-hook 'flyspell-prog-mode)
+
+;; nxml
+
+(setq nxml-slash-auto-complete-flag t)
+
+;; dot mode
+
+(setq dot-tab-width 2)
+(defvaralias 'dot-indent-level 'dot-tab-width)

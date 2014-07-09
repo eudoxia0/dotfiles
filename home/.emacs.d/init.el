@@ -98,4 +98,4 @@
 (color-theme-initialize)
 
 ;(color-theme-solarized-light)
-(load-theme 'mccarthy t)
+(load-theme 'qsimpleq t)
