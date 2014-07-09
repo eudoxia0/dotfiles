@@ -12,7 +12,7 @@
     yaml-mode clojure-mode d-mode textile-mode markdown-mode gnuplot-mode
     erlang haskell-mode fsharp-mode sass-mode rainbow-mode enh-ruby-mode
     web-mode projectile grizzl graphviz-dot-mode ess cmake-mode
-    mediawiki scala-mode2 ensime powerline rust-mode
+    mediawiki scala-mode2 ensime powerline rust-mode tuareg
     ;; Other plugins
     rainbow-delimiters magit ecb auto-complete ag highlight-indentation
     google-c-style flycheck ido flyspell rw-hunspell
