@@ -19,4 +19,4 @@
 ;;; Safety first!
 (declaim (optimize (safety 3) (debug 3) (speed 0)))
 
-(sb-ext:restrict-compiler-policy 'debug 3)
+#+sbcl (sb-ext:restrict-compiler-policy 'debug 3)
