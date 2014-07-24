@@ -11,7 +11,7 @@ sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
   python-virtualenvwrapper python2-pylint r net-tools virtualbox-host-modules \
   zathura zathura-pdf-mupdf zathura-djvu xmonad xmonad-contrib gmrun xcompmgr \
   nfs-utils gdb valgrind sbcl hunspell hunspell-en python-sphinx erlang \
-  adobe-source-sans-pro-fonts doxygen nimrod
+  adobe-source-sans-pro-fonts doxygen nimrod blender povray tidyhtml
 
 # Yaourt packages
 sudo yaourt -S --noconfirm ttf-win7-fonts-autodownload tor-browser-en \
