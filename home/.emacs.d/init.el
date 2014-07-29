@@ -84,7 +84,6 @@
 (load (expand-file-name "~/.emacs.d/pack.el"))
 (load (expand-file-name "~/.emacs.d/opt.el"))
 (load (expand-file-name "~/.emacs.d/lisp.el"))
-(load (expand-file-name "~/code/wax/emacs/wax-mode.el"))
 
 ;;; Keybindings
 
