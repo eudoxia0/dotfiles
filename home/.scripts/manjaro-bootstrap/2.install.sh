@@ -10,8 +10,8 @@ sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
   units pcmanfm ansible newsbeuter bash-completion skype python2-virtualenv \
   python-virtualenvwrapper python2-pylint r net-tools virtualbox-host-modules \
   zathura zathura-pdf-mupdf zathura-djvu xmonad xmonad-contrib gmrun xcompmgr \
-  nfs-utils gdb valgrind sbcl hunspell hunspell-en python-sphinx erlang \
-  adobe-source-sans-pro-fonts doxygen nimrod blender povray tidyhtml
+  nfs-utils gdb valgrind hunspell hunspell-en python-sphinx erlang povray \
+  adobe-source-sans-pro-fonts doxygen nimrod blender tidyhtml sbcl
 
 # Yaourt packages
 sudo yaourt -S --noconfirm ttf-win7-fonts-autodownload tor-browser-en \
@@ -47,9 +47,6 @@ sbcl --no-sysinit --no-userinit --load /tmp/ql.lisp \
   --eval '(quicklisp-quickstart:install :path ".quicklisp")' \
   --quit
 sbcl --eval '(ql:quickload :quicklisp-slime-helper)' --quit
-
-sbcl_gencore
-sudo mv sbcl.core /usr/lib/sbcl/sbcl.core
 
 # Make sure the USB drive is mounted
 backup.sh
