@@ -28,6 +28,7 @@
 		("\\.\\(rb\\|Gemfile\\|Vagrantfile\\|Rakefile\\)$" . enh-ruby-mode)
 		("\\.hs$" . haskell-mode)
                 ("\\.dot$" . graphviz-dot-mode)
+                ("\\.doc$" . adoc-mode)
                 ;; Web modes
                 ("\\.html$" . web-mode)
                 ("\\.tmpl$" . web-mode))
