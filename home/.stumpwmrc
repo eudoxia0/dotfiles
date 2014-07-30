@@ -9,7 +9,7 @@
 (setf *frame-number-map* "123456789")
 
 (setq +terminal+ "urxvt")
-(defparameter +www-browser+ "firefox")
+(defparameter +www-browser+ "chromium")
 
 ;;;; Workspaces
 
@@ -157,3 +157,4 @@
 ;;;; Extras
 
 (load ".wm/gaps")
+(load ".wm/vms")
