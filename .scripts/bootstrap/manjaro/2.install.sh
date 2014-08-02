@@ -19,34 +19,6 @@ sudo yaourt -S --noconfirm ttf-win7-fonts-autodownload tor-browser-en \
   vagrant-git rbenv-default-gems heroku-toolbelt ttf-monaco grive tsung \
   libfixposix wrk
 
-# Set up environments for other languages
-
-# Node
-
-sudo npm -g install jslint
-
-# Ruby 
-
-# install a reasonably recent Ruby version
-rbenv install 2.2.0-dev
-rbenv install 2.1.0
-rbenv install 1.9.3-dev
-
-rbenv global 2.1.0
-
-# install useful ruby gems
-gem install veewee
-
-# Lisp
-curl -o /tmp/ql.lisp http://beta.quicklisp.org/quicklisp.lisp
-sbcl --no-sysinit --no-userinit --load /tmp/ql.lisp \
-  --eval '(quicklisp-quickstart:install :path ".quicklisp")' \
-  --quit
-sbcl --eval '(ql:quickload :quicklisp-slime-helper)' --quit
-
-# Make sure the USB drive is mounted
-backup.sh
-
 # Setup NFS services (For Vagrant)
 sudo systemctl enable rpc-idmapd
 sudo systemctl enable rpc-mountd
