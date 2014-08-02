@@ -1,7 +1,7 @@
 (in-package :stumpwm)
 
 (defun base-cmd (str)
-  (concatenate 'string "vboxmanage list "))
+  (concatenate 'string "vboxmanage list " str))
 
 (defparameter +list-vms-command+ (base-cmd "vms"))
 (defparameter +list-running-vms-command+ (base-cmd "runningvms"))
@@ -9,12 +9,8 @@
 (defun process-vm-list (str)
   (mapcar
    #'(lambda (line)
-       (let* ((vm-id (first (split-string line " ")))
-              (split (split-string vm-id "_"))
-              ;; We don't care about the last two items
-              (vm-name (subseq split 0 (- (length split) 2)))))
-       (format nil "~{~A_~}" vm-name))
-   (split-string str "\n")))
+       (subseq line 0 (position #\Space line)))
+   (split-string str (string #\Newline))))
 
 (defun list-vms ()
   (process-vm-list
@@ -23,3 +19,11 @@
 (defun list-running-vms ()
   (process-vm-list
    (run-shell-command +list-running-vms-command+ t)))
+
+(defcommand vms () ()
+  "List all VirtualBox VMs"
+  (message "~{~A~&~}" (list-vms)))
+
+(defcommand running-vms () ()
+  "List running VirtualBox VMs."
+  (message "~{~A~&~}" (list-running-vms)))
