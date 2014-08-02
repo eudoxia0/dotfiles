@@ -1,9 +1,9 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.26 for eudoxia on Tue Apr 22 13:48:30 2014.
+# Written by xscreensaver-demo 5.26 for eudoxia on Mon May 26 13:56:42 2014.
 # http://www.jwz.org/xscreensaver/
 
 timeout:	12:00:00
-cycle:		0:04:00
+cycle:		0:02:00
 lock:		False
 lockTimeout:	0:00:00
 passwdTimeout:	0:00:30
