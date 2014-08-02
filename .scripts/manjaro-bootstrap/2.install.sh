@@ -19,10 +19,6 @@ sudo yaourt -S --noconfirm ttf-win7-fonts-autodownload tor-browser-en \
   vagrant-git rbenv-default-gems heroku-toolbelt ttf-monaco grive tsung \
   libfixposix wrk
 
-# Set up homeshick
-sudo yaourt -s --noconfirm homeshick-git
-homeshick clone eudoxia0/dotfiles
-
 # Set up environments for other languages
 
 # Node

@@ -5,5 +5,5 @@ alsamixer
 
 # Create directories, remove some default ones
 rm -rf Documents Manjaro Music Pictures Public Templates Videos
-mkdir -p torrents/watch
+mkdir torrents
 mkdir .session
