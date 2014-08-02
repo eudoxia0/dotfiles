@@ -4,7 +4,7 @@
 ;(global-log4slime-mode 1)
 
 (load (expand-file-name "~/.quicklisp/slime-helper.el"))
-(setq inferior-lisp-program "sbcl")
+(setq inferior-lisp-program "ccl")
 
 (set-language-environment "utf-8")
 (setq slime-net-coding-system 'utf-8-unix)
