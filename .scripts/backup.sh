@@ -30,5 +30,6 @@ unison ~/.ssh $base/.ssh -ignore "Name known_hosts"
 sync .irclogs
 sync drive
 sync cards
+sync dotfiles
 
 chown -R $USER ~/.ssh
