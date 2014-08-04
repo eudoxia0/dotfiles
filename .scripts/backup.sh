@@ -31,5 +31,6 @@ sync .irclogs
 sync drive
 sync cards
 sync dotfiles
+sync .purple
 
 chown -R $USER ~/.ssh
