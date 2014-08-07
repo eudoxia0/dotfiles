@@ -15,9 +15,7 @@
     scala-mode2 ensime powerline rust-mode tuareg pov-mode adoc-mode
     ;; Other plugins
     rainbow-delimiters magit ecb auto-complete ag highlight-indentation
-    google-c-style flycheck ido flyspell rw-hunspell
-    ;; Other
-    gnugo
+    google-c-style flycheck ido flyspell rw-hunspell gnugo
     ;; Themes
     color-theme-solarized color-theme-twilight color-theme-github
     soft-morning-theme zenburn-theme qsimpleq-theme noctilux-theme
