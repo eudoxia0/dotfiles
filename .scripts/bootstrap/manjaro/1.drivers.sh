@@ -1,4 +1,4 @@
-#/bin/sh
+#!/usr/bin/env bash
 
 # Install drivers
 # Recommend do this outside of X

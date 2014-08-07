@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Install packages
 
@@ -12,12 +12,13 @@ sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
   zathura zathura-pdf-mupdf zathura-djvu xmonad xmonad-contrib gmrun xcompmgr \
   nfs-utils gdb valgrind hunspell hunspell-en python-sphinx erlang povray \
   adobe-source-sans-pro-fonts doxygen nimrod blender tidyhtml sbcl asciidoc \
-  pidgin pidgin-otr irssi flashplugin vlc
+  pidgin pidgin-otr irssi flashplugin vlc texinfo arandr texlive-core \
+  texlive-publishers texlive-latexextra
 
 # Yaourt packages
 sudo yaourt -S --noconfirm ttf-win7-fonts-autodownload tor-browser-en \
   electrum pandoc-static rbenv ruby-build vagrant-git rbenv-default-gems \
-  heroku-toolbelt ttf-monaco grive tsung libfixposix wrk
+  heroku-toolbelt ttf-monaco grive tsung libfixposix wrk ccl-bin saxon-b
 
 # Setup NFS services (For Vagrant)
 sudo systemctl enable rpc-idmapd
