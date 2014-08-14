@@ -12,5 +12,3 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=tty -d skip'
     alias egrep='egrep --color=auto'
 fi
-
-alias dotfiles="cd ~/.homesick/repos/dotfiles/home/"
