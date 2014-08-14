@@ -13,7 +13,7 @@ sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
   nfs-utils gdb valgrind hunspell hunspell-en python-sphinx erlang povray \
   adobe-source-sans-pro-fonts doxygen nimrod blender tidyhtml sbcl asciidoc \
   pidgin pidgin-otr irssi flashplugin vlc texinfo arandr texlive-core \
-  texlive-publishers texlive-latexextra
+  texlive-publishers texlive-latexextra cheese
 
 # Yaourt packages
 sudo yaourt -S --noconfirm ttf-win7-fonts-autodownload tor-browser-en \
