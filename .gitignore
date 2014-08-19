@@ -5,3 +5,4 @@
 .venv
 .irssi/*.log
 *.elc
+.vagrant
