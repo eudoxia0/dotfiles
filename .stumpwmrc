@@ -9,3 +9,4 @@
 (load ".wm/gaps")
 (load ".wm/vms")
 (load ".wm/alarm")
+(load ".wm/input")
