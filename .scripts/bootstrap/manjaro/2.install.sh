@@ -18,7 +18,8 @@ sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
 # Yaourt packages
 sudo yaourt -S --noconfirm ttf-win7-fonts-autodownload tor-browser-en \
   electrum pandoc-static rbenv ruby-build vagrant-git rbenv-default-gems \
-  heroku-toolbelt ttf-monaco grive tsung libfixposix wrk ccl-bin saxon-b
+  heroku-toolbelt ttf-monaco grive tsung libfixposix wrk ccl-bin saxon-b \
+  faba-icons-git moka-icons-git orchis-gtk-git
 
 # Setup NFS services (For Vagrant)
 sudo systemctl enable rpc-idmapd
