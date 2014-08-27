@@ -33,14 +33,11 @@ chatnets = {
 channels = (
   # Freenode
   { name = "##hplusroadmap"; chatnet = "Freenode"; autojoin = "yes"; },
-  {
-    name = "#opensourceecology";
-    chatnet = "Freenode";
-    autojoin = "yes";
-  },
+  { name = "#opensourceecology"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#lisp"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#lispweb"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#sbcl"; chatnet = "Freenode"; autojoin = "yes"; },
+  { name = "#stumpwm"; chatnet = "Freenode"; autojoin = "yes"; },
   # OFTC
   { name = "#llvm"; chatnet = "OFTC"; autojoin = "no"; },
   { name = "#fosscad"; chatnet = "OFTC"; autojoin = "no"; },
