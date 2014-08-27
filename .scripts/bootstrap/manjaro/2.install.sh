@@ -13,13 +13,13 @@ sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
   nfs-utils gdb valgrind hunspell hunspell-en python-sphinx erlang povray \
   adobe-source-sans-pro-fonts doxygen nimrod blender tidyhtml sbcl asciidoc \
   pidgin pidgin-otr irssi flashplugin vlc texinfo arandr texlive-core \
-  texlive-publishers texlive-latexextra cheese ocaml
+  texlive-publishers texlive-latexextra cheese ocaml xdotool
 
 # Yaourt packages
 sudo yaourt -S --noconfirm ttf-win7-fonts-autodownload tor-browser-en \
   electrum pandoc-static rbenv ruby-build vagrant-git rbenv-default-gems \
   heroku-toolbelt ttf-monaco grive tsung libfixposix wrk ccl-bin saxon-b \
-  faba-icons-git moka-icons-git orchis-gtk-git
+  faba-icons-git moka-icons-git orchis-gtk-git xcape-git
 
 # Setup NFS services (For Vagrant)
 sudo systemctl enable rpc-idmapd
