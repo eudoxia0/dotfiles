@@ -42,3 +42,7 @@ alsamixer
 rm -rf Documents Manjaro Music Pictures Public Templates Videos
 mkdir torrents
 mkdir .session
+
+# When pressed on their own (ie not modifying other keys), left and right shift
+# produce a left and right parenthesis, respectively
+xcape -e "Shift_L=parenleft;Shift_R=parenright"
