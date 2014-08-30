@@ -18,20 +18,23 @@
 
 ;;;; Theme
 
-(set-fg-color "SteelBlue")
-(set-bg-color "Black")
-(set-border-color "Gray30")
-(set-msg-border-width 0)
-(setf *message-window-padding* 20)
-(setf *maxsize-border-width* 0)
-(setf *normal-border-width* 1)
-(setf *window-border-style* :tight)
+(setf *normal-border-width* 0
+      *maxsize-border-width* 0
+      *transient-border-width* 0
+      *window-border-style* :tight)
+
+(set-win-bg-color "White")
 (set-focus-color "MidnightBlue")
 (set-unfocus-color "Black")
+
+(set-border-color "Black")
+
+(set-msg-border-width 0)
 (set-frame-outline-width 0)
 
-;; e5d7a1 : dark yellow
-;; ad3208 : red
+(set-normal-gravity :center)
+(set-maxsize-gravity :center)
+(set-transient-gravity :center)
 
 ;;;; Autostart
 
