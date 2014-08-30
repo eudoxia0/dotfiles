@@ -19,7 +19,7 @@
 # Emoji
 
 <Multi_key> <e> <c> : "😸"
-<Multi_key> <e> <?> : "¯\_(ツ)_/¯"
+<Multi_key> <e> <q> : "¯\_(ツ)_/¯"
 
 # Misc. Typographic Elements
 <Multi_key> <period> <period> <period> : "…"
