@@ -31,7 +31,8 @@
                 ("\\.doc$" . adoc-mode)
                 ;; Web modes
                 ("\\.html$" . web-mode)
-                ("\\.tmpl$" . web-mode))
+                ("\\.tmpl$" . web-mode)
+                ("\\.eco$" . web-mode))
 	    auto-mode-alist))
 
 ;; Autocomplete
@@ -61,7 +62,7 @@
 
 ;; Web-mode
 (setq web-mode-engines-alist
-      '(("\\.tmpl\\" . "closure")))
+      '(("\\.eco\\" . "erb")))
 
 ;; CEDET
 
