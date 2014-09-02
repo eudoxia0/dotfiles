@@ -14,6 +14,10 @@ fi
 eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
 export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
 
+# When pressed on their own (ie not modifying other keys), left and right shift
+# produce a left and right parenthesis, respectively
+xcape -e "Shift_L=parenleft;Shift_R=parenright"
+
 # Autostart X stuff
 xscreensaver -nosplash &
 redshift -l -34.866944:-56.166667 &
