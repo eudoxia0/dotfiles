@@ -6,6 +6,8 @@
 (setf *mouse-focus-policy* :sloppy)
 (setf *frame-number-map* "123456789")
 
+(set-font "-xos4-terminus-medium-r-normal-*-12-120-*-*-*-60-*-u")
+
 (setq +terminal+ "urxvt")
 (defparameter +www-browser+ "chromium")
 
