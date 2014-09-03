@@ -1,6 +1,6 @@
 # -*- mode: conf -*-
 
-# Greek Alphabet
+### Greek Alphabet
 <Multi_key> <g> <a> : "α"
 <Multi_key> <g> <b> : "β"
 <Multi_key> <g> <g> : "γ"
@@ -10,18 +10,35 @@
 <Multi_key> <g> <z> : "ζ"
 <Multi_key> <g> <l> : "λ"
 
-# Latex Text
-
-<Multi_key> <l> <i> : "\in"
-<Multi_key> <l> <c> : "\subset"
-<Multi_key> <l> <0> : "\emptyset"
-
-# Emoji
-
+### Emoji
 <Multi_key> <e> <c> : "😸"
-<Multi_key> <e> <q> : "¯\_(ツ)_/¯"
+<Multi_key> <e> <q> : "¯\\_(ツ)_/¯"
 
-# Misc. Typographic Elements
-<Multi_key> <period> <period> <period> : "…"
-<Multi_key> <n> <d> : "–"
-<Multi_key> <m> <d> : "— "
+### Misc. Typographic Elements
+<Multi_key> <period> <period> : "…"
+<Multi_key> <period> <n>      : "–"
+<Multi_key> <period> <m>      : "— "
+
+### Latex Text
+
+## Operations
+<Multi_key> <l> <t> : "\\times"
+
+## Delimiters
+<Multi_key> <l> <o> <b> : "\\left["
+<Multi_key> <l> <c> <b> : "\\left]"
+<Multi_key> <l> <o> <c> : "\\left{"
+<Multi_key> <l> <c> <c> : "\\left}"
+
+## Sets
+<Multi_key> <l> <s> <u> : "\\cup"
+<Multi_key> <l> <s> <i> : "\\cap"
+<Multi_key> <l> <s> <i> : "\\in"
+<Multi_key> <l> <s> <c> : "\\subset"
+<Multi_key> <l> <s> <0> : "\\emptyset"
+
+## Special sets
+<Multi_key> <l> <r> : "\\mathbb{R}"
+
+## Arrows
+<Multi_key> <l> <r> <a> : "\\rightarrow"
