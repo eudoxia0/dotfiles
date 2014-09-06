@@ -8,7 +8,7 @@
 
 (set-font "-xos4-terminus-medium-r-normal-*-12-120-*-*-*-60-*-u")
 
-(setq +terminal+ "urxvt")
+(setf +terminal+ "urxvt")
 (defparameter +www-browser+ "chromium")
 
 ;;;; Notifications
