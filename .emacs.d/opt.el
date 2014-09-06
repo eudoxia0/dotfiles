@@ -61,8 +61,8 @@
 (require 'powerline)
 
 ;; Web-mode
-(setq web-mode-engines-alist
-      '(("\\.eco\\" . "erb")))
+(require 'web-mode)
+(setq web-mode-engines-alist '(("erb" . "\\.eco\\'")))
 
 ;; CEDET
 
