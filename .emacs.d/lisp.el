@@ -31,6 +31,3 @@
       ;; Move the input-start marker after the REPL result.
       (set-marker marker (point)))
     (slime-repl-show-maximum-output)))
-
-(add-hook 'lisp-mode-hook 'rainbow-delimiters-mode)
-(add-hook 'lisp-mode-hook 'paredit-mode)
