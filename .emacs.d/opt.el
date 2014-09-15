@@ -182,7 +182,8 @@
                 ;; Web modes
                 ("\\.html$" . web-mode)
                 ("\\.tmpl$" . web-mode)
-                ("\\.eco$" . web-mode))
+                ("\\.eco$" . web-mode)
+                ("\\.scss$" . sass-mode))
 	    auto-mode-alist))
 
 ;;;; Themes
@@ -190,4 +191,4 @@
 (setq custom-safe-themes t)
 (color-theme-initialize)
 
-(load-theme 'mccarthy t)
+(load-theme 'qsimpleq t)
