@@ -20,7 +20,6 @@ sync code
 sync images
 sync writing
 sync self
-sync .scripts
 sync backup
 sync notes
 sync library
@@ -30,7 +29,6 @@ unison ~/.ssh $base/.ssh -ignore "Name known_hosts"
 sync .irclogs
 sync drive
 sync cards
-sync dotfiles
 sync .purple
 
 chown -R $USER ~/.ssh
