@@ -9,5 +9,6 @@
 (load (expand-file-name "~/.emacs.d/setup-dot.el"))
 (load (expand-file-name "~/.emacs.d/setup-nxml.el"))
 (load (expand-file-name "~/.emacs.d/setup-autocomplete.el"))
+(load (expand-file-name "~/.emacs.d/setup-web.el"))
 (load (expand-file-name "~/.emacs.d/key.el"))
 (load (expand-file-name "~/.emacs.d/theme.el"))

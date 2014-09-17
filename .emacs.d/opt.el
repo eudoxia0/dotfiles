@@ -7,12 +7,6 @@
 ;; Powerline
 (require 'powerline)
 
-;; Web-mode
-(require 'web-mode)
-(setq web-mode-engines-alist '(("erb" . "\\.eco\\'")))
-
-;; CEDET
-
 ;; ido
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
