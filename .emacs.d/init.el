@@ -8,7 +8,7 @@
 (load (expand-file-name "~/.emacs.d/opt.el"))
 (load (expand-file-name "~/.emacs.d/setup-org.el"))
 (load (expand-file-name "~/.emacs.d/setup-dot.el"))
-(load (expand-file-name "~/.emacs.d/setup-nxml.el"))
+(load (expand-file-name "~/.emacs.d/setup-xml.el"))
 (load (expand-file-name "~/.emacs.d/setup-autocomplete.el"))
 (load (expand-file-name "~/.emacs.d/setup-spellcheck.el"))
 (load (expand-file-name "~/.emacs.d/setup-web.el"))
