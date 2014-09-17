@@ -11,11 +11,6 @@
 (setq projectile-enable-caching t)
 (setq projectile-completion-system 'grizzl)
 
-;; Highlight indentation
-(require 'highlight-indentation)
-(add-hook 'prog-mode
-           (lambda () (highlight-indentation-current-column-mode)))
-
 ;; Powerline
 (require 'powerline)
 
