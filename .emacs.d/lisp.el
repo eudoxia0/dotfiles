@@ -1,7 +1,6 @@
-;;; Common Lisp options
+;;;; Configuration for Lisp modes
 
-;(load (expand-file-name "~/.quicklisp/log4slime-setup.el"))
-;(global-log4slime-mode 1)
+;;; Common Lisp options
 
 (load (expand-file-name "~/.quicklisp/slime-helper.el"))
 (setq inferior-lisp-program "sbcl")
@@ -31,3 +30,12 @@
       ;; Move the input-start marker after the REPL result.
       (set-marker marker (point)))
     (slime-repl-show-maximum-output)))
+
+;;; Rainbow Parentheses
+
+(add-hook 'lisp-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'emacs-lisp-mode-hook 'rainbow-delimiters-mode)
+
+;;; Paredit
+
+(add-hook 'lisp-mode-hook 'paredit-mode)
