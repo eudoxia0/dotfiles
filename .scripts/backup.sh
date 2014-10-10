@@ -21,14 +21,12 @@ sync images
 sync writing
 sync self
 sync backup
-sync notes
+sync personal
 sync library
 sync .newsbeuter/urls
 echo -e "\e[31m.ssh\e[0m"
 unison ~/.ssh $base/.ssh -ignore "Name known_hosts"
 sync .irclogs
-sync drive
-sync cards
 sync .purple
 
 chown -R $USER ~/.ssh
