@@ -19,7 +19,7 @@
     ;; Themes
     color-theme-solarized color-theme-twilight color-theme-github
     soft-morning-theme zenburn-theme qsimpleq-theme noctilux-theme
-    sublime-themes))
+    sublime-themes espresso-theme tronesque-theme naquadah-theme))
 
 (defun packages-installed-p ()
   (not (memq 'nil (mapcar (lambda (p) (package-installed-p p)) my-packages))))
