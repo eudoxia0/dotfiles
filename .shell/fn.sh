@@ -48,6 +48,11 @@ world_time () {
     echo -e 'Houston\t\t' `TZ="US/Central" $datetime`
 }
 
+# last_boot - the time the computer was started
+last_boot () {
+    last | less | head -n 1 | cut -d ' ' -f 11
+}
+
 # encrypt, decrypt - encrypt and decrypt a folder with a password
 # usage: [encrypt|decrypt] <file>
 # from: http://superuser.com/questions/162624/how-to-password-protect-gzip-files-on-the-command-line
