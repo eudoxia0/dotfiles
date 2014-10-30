@@ -29,7 +29,7 @@
   (reduce #'(lambda (digit-a digit-b)
               (concatenate 'string digit-a digit-b))
           (loop for i from 1 to 5 collecting (digit))))
-                           
+
 (defun extract-word (word)
   (let* ((pos (search word +list+))
          (newline (position #\Newline +list+ :start pos)))

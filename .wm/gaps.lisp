@@ -9,13 +9,13 @@
   "Maximize the window."
   (multiple-value-bind (x y wx wy width height border stick)
       (geometry-hints win)
-    
+
     (if *useless-gaps-on*
         (setf width (- width (* 2 *useless-gaps-size*))
               height (- height (* 2 *useless-gaps-size*))
               x (+ x *useless-gaps-size*)
               y (+ y *useless-gaps-size*)))
-    
+
     (dformat 4 "maximize window ~a x: ~d y: ~d width: ~d height: ~d border: ~d stick: ~s~%" win x y width height border stick)
     ;; This is the only place a window's geometry should change
     (set-window-geometry win :x wx :y wy :width width :height height :border-width 0)
@@ -59,7 +59,7 @@
 (defcommand gaps () ()
   "Toggle the padding of tiled windows"
   (setf *useless-gaps-on* (null *useless-gaps-on*))
-  
+
   ;; Following is pseudo code to use hooks
   ;; to do something like change border colors or size
   ;; (if *useless-gaps-on*

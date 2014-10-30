@@ -8,7 +8,7 @@ backup.sh
 
 sudo npm -g install jslint
 
-# Ruby 
+# Ruby
 
 # install a reasonably recent Ruby version
 rbenv install 2.2.0-dev

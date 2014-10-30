@@ -1,5 +1,5 @@
 servers = (
-  { 
+  {
     address = "irc.undernet.org";
     chatnet = "Undernet";
     port = "6667";
@@ -12,7 +12,7 @@ servers = (
     port = "6667";
     autoconnect = "yes";
   },
-  { 
+  {
     address = "efnet.eversible.com";
     chatnet = "EFNet";
     port = "6667";
@@ -47,7 +47,7 @@ channels = (
 );
 
 settings = {
-  core = { 
+  core = {
     real_name = "eudoxia";
     user_name = "eudoxia";
     nick = "eudoxia";

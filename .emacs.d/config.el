@@ -4,7 +4,7 @@
 (require 'whitespace)
 
 ;; Compile files after saving them
-(add-hook 'after-save-hook 
+(add-hook 'after-save-hook
           (lambda ()
             (if (eq major-mode 'emacs-lisp-mode)
                 (save-excursion (byte-compile-file buffer-file-name)))))
