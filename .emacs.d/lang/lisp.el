@@ -38,4 +38,4 @@
 
 ;;; Paredit
 
-(add-hook 'lisp-mode-hook 'paredit-mode)
+;(add-hook 'lisp-mode-hook 'paredit-mode)
