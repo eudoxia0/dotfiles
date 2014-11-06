@@ -16,6 +16,7 @@
     ;; Other plugins
     rainbow-delimiters magit ecb auto-complete ag highlight-indentation
     google-c-style flycheck ido flyspell rw-hunspell gnugo paredit pep8
+    company
     ;; Themes
     color-theme-solarized color-theme-twilight color-theme-github
     soft-morning-theme zenburn-theme qsimpleq-theme noctilux-theme

@@ -15,7 +15,9 @@
                slime-indentation
                slime-xref-browser
                slime-fancy
-               slime-media))
+               slime-media
+               ;slime-company
+               ))
 
 (setq slime-enable-evaluate-in-emacs t)
 

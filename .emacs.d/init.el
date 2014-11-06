@@ -1,6 +1,8 @@
 ;;;     "Show me your ~/.emacs and I will tell you who you are."
 ;;;                                        Bogdan Maryniuk
 
+;(add-to-list 'load-path "~/.emacs.d/site-list/")
+
 (load (expand-file-name "~/.emacs.d/config.el"))
 (load (expand-file-name "~/.emacs.d/pack.el"))
 (load (expand-file-name "~/.emacs.d/lang/lisp.el"))
@@ -18,3 +20,5 @@
 (load (expand-file-name "~/.emacs.d/setup-wax.el"))
 (load (expand-file-name "~/.emacs.d/key.el"))
 (load (expand-file-name "~/.emacs.d/theme.el"))
+
+;(require 'slime-company)
