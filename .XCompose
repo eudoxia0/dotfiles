@@ -1,6 +1,6 @@
 # -*- mode: conf -*-
 
-### Greek Alphabet
+### Greek
 <Multi_key> <g> <a> : "α"
 <Multi_key> <g> <b> : "β"
 <Multi_key> <g> <g> : "γ"
@@ -9,6 +9,35 @@
 <Multi_key> <g> <e> : "ε"
 <Multi_key> <g> <z> : "ζ"
 <Multi_key> <g> <l> : "λ"
+
+### Japanese
+
+## Vowels
+<Multi_key> <j> <a> : "あ"
+<Multi_key> <j> <e> : "え"
+<Multi_key> <j> <i> : "い"
+<Multi_key> <j> <o> : "お"
+<Multi_key> <j> <u> : "う"
+
+## Consonants
+<Multi_key> <j> <k> <a> : "か"
+<Multi_key> <j> <k> <i> : "き"
+<Multi_key> <j> <k> <u> : "く"
+<Multi_key> <j> <k> <e> : "け"
+<Multi_key> <j> <k> <o> : "こ"
+
+<Multi_key> <j> <s> <a> : "さ"
+<Multi_key> <j> <s> <h> <i> : "し"
+<Multi_key> <j> <s> <u> : "す"
+<Multi_key> <j> <s> <e> : "せ"
+<Multi_key> <j> <s> <o> : "そ"
+
+<Multi_key> <j> <t> <a> : "た"
+<Multi_key> <j> <t> <s> <u> : "つ"
+<Multi_key> <j> <t> <e> : "て"
+<Multi_key> <j> <t> <o> : "と"
+
+<Multi_key> <j> <c> <h> <i> : "ち"
 
 ### Emoji
 <Multi_key> <e> <c> : "😸"
