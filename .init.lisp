@@ -1,6 +1,6 @@
 ;;;; -*- Lisp -*-
 
-(setf *print-case* :downcase)
+;(setf *print-case* :downcase)
 
 ;;; The following lines added by ql:add-to-init-file:
 
