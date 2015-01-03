@@ -21,7 +21,6 @@ sync images
 sync writing
 sync self
 sync backup
-sync personal
 sync library
 sync .newsbeuter/urls
 echo -e "\e[31m.ssh\e[0m"
