@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 # Install packages
-
 sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
   redshift transmission-gtk make automake emacs unison pcmanfm giflib gimp \
   inkscape terminus-font autoconf libtool autogen clang llvm keepass maxima \
@@ -19,7 +18,7 @@ sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
 sudo yaourt -S --noconfirm ttf-win7-fonts-autodownload tor-browser-en \
   electrum pandoc-static rbenv ruby-build vagrant-git rbenv-default-gems \
   heroku-toolbelt ttf-monaco grive tsung libfixposix wrk ccl-bin saxon-b \
-  faba-icons-git moka-icons-git orchis-gtk-git xcape-git
+  faba-icons-git moka-icons-git orchis-gtk-git xcape-git pidgin-opensteamworks
 
 # Setup NFS services (For Vagrant)
 sudo systemctl enable rpc-idmapd
