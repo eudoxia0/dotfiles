@@ -1,4 +1,4 @@
-FOLDER="/home/eudoxia/images/wallpapers/rotating" # Change to your directory
+FOLDER="/home/eudoxia/images/wallpapers" # Change to your directory
 cd $FOLDER
 
 loop () {
