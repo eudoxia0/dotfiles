@@ -8,7 +8,26 @@
 <Multi_key> <g> <D> : "Δ"
 <Multi_key> <g> <e> : "ε"
 <Multi_key> <g> <z> : "ζ"
+<Multi_key> <g> <n> : "η"
+<Multi_key> <g> <0> : "θ"
+<Multi_key> <g> <i> : "ι"
+<Multi_key> <g> <k> : "κ"
 <Multi_key> <g> <l> : "λ"
+<Multi_key> <g> <u> : "μ"
+<Multi_key> <g> <v> : "ν"
+<Multi_key> <g> <x> : "ξ"
+<Multi_key> <g> <p> : "π"
+<Multi_key> <g> <r> : "ρ"
+<Multi_key> <g> <s> : "σ"
+<Multi_key> <g> <S> : "Σ"
+<Multi_key> <g> <t> : "τ"
+<Multi_key> <g> <r> : "φ"
+<Multi_key> <g> <X> : "χ"
+<Multi_key> <g> <r> : "ψ"
+<Multi_key> <g> <r> : "ω"
+
+### Spanish
+<Multi_key> <s> <n> : "ñ"
 
 ### Japanese
 
