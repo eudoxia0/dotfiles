@@ -20,7 +20,7 @@ xcape -e "Shift_L=parenleft;Shift_R=parenright"
 
 # Autostart X stuff
 xscreensaver -nosplash &
-redshift -l -34.866944:-56.166667 &
+redshift &
 xrdb .Xresources &
 numlockx &
 xsetroot -cursor_name left_ptr &
