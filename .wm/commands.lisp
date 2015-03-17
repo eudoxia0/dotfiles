@@ -44,11 +44,50 @@
   "Display the system uptime"
   (message "~A" (run-shell-command "uptime" t)))
 
-(defcommand open-selection-browser () ()
-  "from http://www.mygooglest.com/fni/stumpwm.html
-   Get the X selection and order the GUI browser to open it."
-  (run-shell-command (concatenate 'string
-                                  +www-browser+
-                                  " \""
-                                  (get-x-selection)
-                                  "\"")))
+;;; Input
+
+(defcommand send-click (times)
+  ((:number "Number of clicks to send: "))
+  "Send a simulated click."
+  (loop repeat times do
+    (send-click)))
+
+(defun send-string (str)
+  (run-shell-command (format nil "xdotool type ~S" str)))
+
+(defcommand send-string (text)
+  ((:string "Text to send: "))
+  "Send a string to input."
+  (send-string text))
+
+(defcommand special (name)
+    ((:string "Name: "))
+  (let ((string (gethash name thorn:*character-table*)))
+    (if string
+        (send-string string))))
+
+;;; Virtual Machines
+
+(defun base-cmd (str)
+  (concatenate 'string "vboxmanage list " str))
+
+(defparameter +list-vms-command+ (base-cmd "vms"))
+(defparameter +list-running-vms-command+ (base-cmd "runningvms"))
+
+(defun process-vm-list (str)
+  (mapcar
+   #'(lambda (line)
+       (subseq line 0 (position #\Space line)))
+   (split-string str (string #\Newline))))
+
+(defcommand vms () ()
+  "List all VirtualBox VMs"
+  (let ((list (process-vm-list
+               (run-shell-command +list-vms-command+ t))))
+  (message "~{~A~&~}" list)))
+
+(defcommand running-vms () ()
+  "List running VirtualBox VMs."
+  (let ((list (process-vm-list
+               (run-shell-command +list-running-vms-command+ t))))
+    (message "~{~A~&~}" list)))
