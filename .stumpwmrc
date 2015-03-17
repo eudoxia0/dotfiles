@@ -1,12 +1,10 @@
 ;;;;-*-Lisp-*-
 
-(in-package :stumpwm)
+(asdf:load-system :thorn)
 
 ;;; Load modules
-(load ".wm/opt")
+(load ".wm/option")
 (load ".wm/commands")
 (load ".wm/keys")
 (load ".wm/gaps")
-(load ".wm/vms")
 (load ".wm/alarm")
-(load ".wm/input")
