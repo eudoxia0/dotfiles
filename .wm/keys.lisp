@@ -51,5 +51,8 @@
 (define-key *top-map* (kbd "s-c") "terminal")
 (define-key *top-map* (kbd "s-r") "exec")
 
+; Send special input
+(define-key *top-map* (kbd "s-i") "input-special")
+
 ; Take a screenshot
 (define-key *root-map* (kbd "Print") "exec scrot")
