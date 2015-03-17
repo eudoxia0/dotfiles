@@ -46,21 +46,21 @@
 
 ;;; Input
 
-(defcommand send-click (times)
+(defcommand input-click (times)
   ((:number "Number of clicks to send: "))
   "Send a simulated click."
   (loop repeat times do
-    (send-click)))
+    (run-shell-command "xdotool click 1")))
 
 (defun send-string (str)
   (run-shell-command (format nil "xdotool type ~S" str)))
 
-(defcommand send-string (text)
+(defcommand input-string (text)
   ((:string "Text to send: "))
   "Send a string to input."
   (send-string text))
 
-(defcommand special (name)
+(defcommand input-special (name)
     ((:string "Name: "))
   (let ((string (gethash name thorn:*character-table*)))
     (if string
