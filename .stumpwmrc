@@ -1,6 +1,6 @@
 ;;;;-*-Lisp-*-
 
-(asdf:load-system :thorn)
+(ql:quickload :thorn)
 
 ;;; Load modules
 (load ".wm/option")
