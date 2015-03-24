@@ -1,4 +1,6 @@
-FOLDER="/home/eudoxia/images/wallpapers" # Change to your directory
+FOLDER="/home/eudoxia/images/wallpapers"
+DELAY=300
+
 cd $FOLDER
 
 loop () {
@@ -7,8 +9,7 @@ loop () {
     FILE=$(ls -1 | sed -n ${RAN}p)
     echo $FILE
     feh --bg-fill "$FOLDER/$FILE"
-    sleep 300 # Time between change
+    sleep $DELAY # Time between change
     loop
 }
 loop
-

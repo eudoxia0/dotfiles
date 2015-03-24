@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # backup - copy important files to USB drive
 # usage: backup.sh
