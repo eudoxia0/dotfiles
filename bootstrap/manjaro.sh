@@ -1,5 +1,34 @@
 #!/usr/bin/env bash
 
+# Prepare pacman
+
+sudo pacman -S manjaro-system pacman
+sudo pacman -S archlinux-keyring manjaro-keyring
+sudo pacman-key --refresh-keys
+sudo pacman-mirrors -g
+sudo pacman-optimize
+
+# I'm going to remove these anyways, so let's speed up the update
+
+sudo pacman -Rns conky nitrogen parcellite synapse geany obconf tintwizard \
+  qupzilla openbox obmenu-generator openbox-themes lxappearance-obconf thunar \
+  thunar-archive-plugin thunar-volman xnoise evince
+
+# Update
+
+sudo pacman -Syu
+
+# At this point the script will probably fail, and you have to fix the updates
+# yourself
+
+# Install drivers
+# Recommend do this outside of X
+
+sudo mhwd -a pci nonfree 0300
+sudo mhwd-gpu --setgl nvidia
+
+sudo reboot
+
 # Install packages
 sudo pacman -S yaourt rxvt-unicode git firefox bitcoin-qt sqlite3 nss feh \
   redshift transmission-gtk make automake emacs unison pcmanfm giflib gimp \
