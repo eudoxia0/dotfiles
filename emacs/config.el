@@ -71,3 +71,60 @@
       `((".*" ,temporary-file-directory t)))
 
 (setq-default show-trailing-whitespace t)
+
+;;; Projectile
+
+(require 'grizzl)
+(projectile-global-mode)
+(setq projectile-enable-caching t)
+(setq projectile-completion-system 'grizzl)
+
+;;; Powerline
+
+(require 'powerline)
+
+;;; Flycheck
+
+(add-hook 'nxml-mode-hook 'flycheck-enable-except-on-temp-buffers)
+
+;;; Ido
+
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode 1)
+
+;;; Org-mode
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((lisp . t)
+   (ditaa . t)))
+
+(setq org-ditaa-jar-path "/usr/bin/ditaa") ; sigh
+
+(defun my-org-confirm-babel-evaluate (lang body)
+  (not (string= lang "ditaa")))  ; don't ask for ditaa
+(setq org-confirm-babel-evaluate 'my-org-confirm-babel-evaluate)
+
+(setq org-export-with-smart-quotes t)
+
+;;; Dot mode
+
+(setq dot-tab-width 2)
+(defvaralias 'dot-indent-level 'dot-tab-width)
+
+;;; Autocomplete
+
+(add-hook 'after-init-hook 'global-company-mode)
+
+;;; Spellcheck
+
+(add-hook 'nxml-mode-hook 'flyspell-prog-mode)
+
+;;; Web mode
+
+(require 'web-mode)
+
+;;; XML
+
+(setq nxml-slash-auto-complete-flag t)
