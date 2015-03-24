@@ -1,7 +1,7 @@
 #!/bin/sh
 
-.scripts/rotate.sh &
-.screenlayout/home.sh &
+.scripts/rotate_wallpaper &
+.screenlayout/default &
 
 ## Ensure that the D-Bus Communication System is running properly to fix
 ## File management, authentication, and other essential system processes

@@ -1,8 +1,8 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.29 for eudoxia on Sat Aug  2 12:36:57 2014.
+# Written by xscreensaver-demo 5.15 for eudoxia on Tue Mar 24 11:45:12 2015.
 # http://www.jwz.org/xscreensaver/
 
-timeout:	12:00:00
+timeout:	1:40:00
 cycle:		0:02:00
 lock:		False
 lockTimeout:	0:00:00
@@ -18,8 +18,8 @@ prefsCommand:	xscreensaver-demo -prefs
 nice:		10
 memoryLimit:	0
 fade:		True
-unfade:		True
-fadeSeconds:	0:00:01
+unfade:		False
+fadeSeconds:	0:00:03
 fadeTicks:	20
 captureStderr:	True
 ignoreUninstalledPrograms:False
@@ -37,7 +37,7 @@ imageDirectory:
 mode:		random
 selected:	-1
 
-textMode:	url
+textMode:	date
 textLiteral:	XScreenSaver
 textFile:	
 textProgram:	fortune
@@ -58,19 +58,19 @@ programs:								      \
 -				rocks -root				    \n\
 				rorschach -root				    \n\
 -				decayscreen -root			    \n\
-				flame -root				    \n\
+-				flame -root				    \n\
 -				halo -root				    \n\
 -				slidescreen -root			    \n\
 -				pedal -root				    \n\
--				bouboule -root -delay 19512		    \n\
-				braid -root				    \n\
+				bouboule -root				    \n\
+-				braid -root				    \n\
 				coral -root				    \n\
 -				deco -root				    \n\
 				drift -root				    \n\
 -				fadeplot -root				    \n\
-				galaxy -root -ncolors 114		    \n\
+				galaxy -root				    \n\
 -				goop -root				    \n\
-				grav -root				    \n\
+-				grav -root				    \n\
 				ifs -root				    \n\
 - GL: 				jigsaw -root				    \n\
 				julia -root				    \n\
@@ -78,18 +78,18 @@ programs:								      \
 - GL: 				moebius -root				    \n\
 -				moire -root				    \n\
 - GL: 				morph3d -root				    \n\
-				mountain -root				    \n\
+-				mountain -root				    \n\
 -				munch -root				    \n\
 				penrose -root				    \n\
 - GL: 				pipes -root				    \n\
 -				rd-bomb -root				    \n\
 - GL: 				rubik -root				    \n\
--				sierpinski -root			    \n\
+				sierpinski -root			    \n\
 -				slip -root				    \n\
 - GL: 				sproingies -root			    \n\
-				starfish -root				    \n\
+-				starfish -root				    \n\
 -				strange -root				    \n\
--				swirl -root				    \n\
+				swirl -root				    \n\
 				triangle -root				    \n\
 -				xjack -root				    \n\
 -				xlyap -root				    \n\
@@ -101,7 +101,7 @@ programs:								      \
 -				cynosure -root				    \n\
 				discrete -root				    \n\
 -				distort -root				    \n\
-				epicycle -root -delay 17073 -colors 197	    \n\
+				epicycle -root				    \n\
 				flow -root				    \n\
 - GL: 				glplanet -root				    \n\
 -				interference -root			    \n\
@@ -117,31 +117,29 @@ programs:								      \
 				ccurve -root				    \n\
 -				compass -root				    \n\
 -				deluxe -root				    \n\
-				demon -root				    \n\
+-				demon -root				    \n\
 - GL: 				extrusion -root				    \n\
-				loop -root				    \n\
+-				loop -root				    \n\
 -				penetrate -root				    \n\
-				petri -root -diaglim 1.4797 -anychan	      \
-				  0.0325 -minorchan 0.4878		    \n\
+-				petri -root				    \n\
 -				phosphor -root				    \n\
 - GL: 				pulsar -root				    \n\
 -				ripples -root				    \n\
 -				shadebobs -root				    \n\
 - GL: 				sierpinski3d -root			    \n\
 -				spotlight -root				    \n\
-				squiral -root				    \n\
+-				squiral -root				    \n\
 				wander -root				    \n\
 -				webcollage -root			    \n\
 -				xflame -root				    \n\
 -				xmatrix -root				    \n\
-  GL: 				gflux -root -speed 0.05 -squares 29	      \
-				  -waves 4				    \n\
+  GL: 				gflux -root				    \n\
 -				nerverot -root				    \n\
--				xrayswarm -root				    \n\
+				xrayswarm -root				    \n\
 -				xspirograph -root			    \n\
 - GL: 				circuit -root				    \n\
 - GL: 				dangerball -root			    \n\
-  GL: 				engine -root -titles			    \n\
+- GL: 				engine -root				    \n\
 - GL: 				flipscreen3d -root			    \n\
 - GL: 				gltext -root				    \n\
 - GL: 				menger -root				    \n\
@@ -150,42 +148,40 @@ programs:								      \
 -				speedmine -root				    \n\
 - GL: 				starwars -root				    \n\
 - GL: 				stonerview -root			    \n\
-				vermiculate -root			    \n\
-				whirlwindwarp -root			    \n\
+-				vermiculate -root			    \n\
+-				whirlwindwarp -root			    \n\
 -				zoom -root				    \n\
-				anemone -root				    \n\
+-				anemone -root				    \n\
 				apollonian -root			    \n\
 - GL: 				boxed -root				    \n\
 - GL: 				cubenetic -root				    \n\
 - GL: 				endgame -root				    \n\
 				euler2d -root				    \n\
 -				fluidballs -root			    \n\
-  GL: 				flurry -root				    \n\
+- GL: 				flurry -root				    \n\
 - GL: 				glblur -root				    \n\
   GL: 				glsnake -root				    \n\
 -				halftone -root				    \n\
 - GL: 				juggler3d -root				    \n\
-- GL: 				lavalite -root -speed 0.0025 -resolution 38 \n\
-				polyominoes -root -ncolors 202		    \n\
+- GL: 				lavalite -root				    \n\
+				polyominoes -root			    \n\
 - GL: 				queens -root				    \n\
 - GL: 				sballs -root				    \n\
   GL: 				spheremonics -root			    \n\
-				thornbird -root				    \n\
+-				thornbird -root				    \n\
 -				twang -root				    \n\
 - GL: 				antspotlight -root			    \n\
 -				apple2 -root				    \n\
 - GL: 				atunnel -root				    \n\
 -				barcode -root				    \n\
-- GL: 				blinkbox -root				    \n\
+  GL: 				blinkbox -root				    \n\
 - GL: 				blocktube -root				    \n\
-- GL: 				bouncingcow -root -delay 16829 -speed	      \
-				  0.1768 -count 7			    \n\
+- GL: 				bouncingcow -root			    \n\
 				cloudlife -root				    \n\
 - GL: 				cubestorm -root				    \n\
 -				eruption -root				    \n\
 - GL: 				flipflop -root				    \n\
-  GL: 				flyingtoasters -root -delay 19512	      \
-				  -nslices 25				    \n\
+- GL: 				flyingtoasters -root			    \n\
 -				fontglide -root				    \n\
 - GL: 				gleidescope -root			    \n\
 - GL: 				glknots -root				    \n\
@@ -195,41 +191,37 @@ programs:								      \
 - GL: 				jigglypuff -root			    \n\
 -				metaballs -root				    \n\
 - GL: 				mirrorblob -root			    \n\
-				piecewise -root				    \n\
-- GL: 				polytopes -root				    \n\
+-				piecewise -root				    \n\
+  GL: 				polytopes -root				    \n\
 -				pong -root				    \n\
 -				popsquares -root			    \n\
-- GL: 				surfaces -root				    \n\
+  GL: 				surfaces -root				    \n\
 -				xanalogtv -root				    \n\
-				abstractile -root			    \n\
+-				abstractile -root			    \n\
 				anemotaxis -root			    \n\
 - GL: 				antinspect -root			    \n\
 -				fireworkx -root				    \n\
--				fuzzyflakes -root -speed 5 -layers 5	      \
-				  -random-colors -arms 6 -thickness 11	      \
-				  -radius 27				    \n\
+-				fuzzyflakes -root			    \n\
 				interaggregate -root			    \n\
-				intermomentary -root			    \n\
+-				intermomentary -root			    \n\
 -				memscroller -root			    \n\
 - GL: 				noof -root				    \n\
 -				pacman -root				    \n\
-- GL: 				pinion -root -spin 2.7927		    \n\
+- GL: 				pinion -root				    \n\
   GL: 				polyhedra -root				    \n\
-- GL: 				providence -root -delay 0		    \n\
+- GL: 				providence -root			    \n\
 				substrate -root				    \n\
--				wormhole -root -stars 56		    \n\
+-				wormhole -root				    \n\
 - GL: 				antmaze -root				    \n\
-- GL: 				boing -root -size 0.2704 -speed 1.6537	      \
-				  -smooth -lighting -no-scanlines	    \n\
-				boxfit -root -count 61			    \n\
+- GL: 				boing -root				    \n\
+				boxfit -root				    \n\
 - GL: 				carousel -root				    \n\
 				celtic -root				    \n\
-- GL: 				crackberg -root -visibility 1 -nsubdivs 6     \
-				  -no-crack				    \n\
+- GL: 				crackberg -root				    \n\
 - GL: 				cube21 -root				    \n\
 -				fiberlamp -root				    \n\
 - GL: 				fliptext -root				    \n\
-  GL: 				glhanoi -root -poles 3			    \n\
+- GL: 				glhanoi -root				    \n\
 - GL: 				tangram -root				    \n\
 - GL: 				timetunnel -root			    \n\
   GL: 				glschool -root				    \n\
@@ -248,19 +240,10 @@ programs:								      \
 - GL: 				photopile -root				    \n\
 - GL: 				skytentacles -root			    \n\
 - GL: 				rubikblocks -root			    \n\
-- GL: 				companioncube -root -speed 0.4939	    \n\
-  GL: 				hilbert -root				    \n\
+- GL: 				companioncube -root			    \n\
+- GL: 				hilbert -root				    \n\
 - GL: 				tronbit -root				    \n\
 -				unicode -root				    \n\
--				electricsheep --root 1			    \n\
-- GL: 				dnalogo -root				    \n\
--				hexadrop -root				    \n\
-- GL: 				kaleidocycle -root			    \n\
-- GL: 				quasicrystal -root			    \n\
-- GL: 				unknownpleasures -root			    \n\
-  GL: 				geodesic -root				    \n\
-  GL: 				projectiveplane -root			    \n\
--				tessellimage -root			    \n\
 
 
 pointerPollTime:    0:00:05
