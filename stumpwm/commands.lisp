@@ -5,7 +5,7 @@
 ;;; Applications
 
 (defcommand emacs () ()
-  (run-or-raise "sh .scripts/start-emacs.sh" '(:class "emacs")))
+  (run-or-raise "emacs" '(:class "emacs")))
 
 (defcommand browser () ()
   (run-or-raise +www-browser+ '(:class "browser")))
