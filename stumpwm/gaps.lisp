@@ -1,5 +1,6 @@
 ;; Useless gaps
 ;; from https://gist.github.com/Octantis/5651256
+(in-package :stumpwm)
 
 (defvar *useless-gaps-size* 25)
 (defvar *useless-gaps-on* nil)
