@@ -1,9 +1,4 @@
-#
 # ~/.bash_profile
-#
-
-# Reload keymap
-xmodmap .Xmodmap &
 
 # Force GTK and QT to use .XCompose
 export GTK_IM_MODULE=xim
