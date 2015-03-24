@@ -1,0 +1,60 @@
+# Apps
+
+sudo apt-get install -y chromium keepass2 git feh redshift transmission-gtk \
+  emacs unison pcmanfm gimp inkscape keepass2 gnuplot scrot calibre numlockx \
+  graphviz virtualbox units newsbeuter pidgin pidgin-otr vlc arandr cheese \
+  xdotool flashplugin-nonfree zathura zathura-djvu zathura-ps font-inconsolata \
+  xscreensaver xscreensaver-data-extra xscreensaver-gl-extra
+
+# Dev stuff
+
+sudo apt-get install -y make automake autoconf libtool autogen patch meld \
+  cmake bze gdb valgrind hunspell scala ruby clang llvm subversion
+
+# Build Emacs
+
+sudo apt-get install -y git-core libxaw7-dev libxpm-dev libpng12-dev \
+  libtiff5-dev libgif-dev libjpeg8-dev libgtk2.0-dev libncurses5-dev \
+  texinfo
+
+curl -O http://mirror.nbtelecom.com.br/gnu/emacs/emacs-24.3.tar.gz
+tar -zxvf emacs-24.3.tar.gz
+cd emacs-24.3/
+./autogen.sh
+./configure
+make --jobs=2
+sudo make install
+
+# Build SBCL
+
+curl -O http://ufpr.dl.sourceforge.net/project/sbcl/sbcl/1.2.9/sbcl-1.2.9-x86-64-linux-binary.tar.bz2
+tar -xjf sbcl-1.2.9-x86-64-linux-binary.tar.bz2
+cd sbcl-1.2.9-x86-64-linux/
+sudo bash install.sh
+
+# Build Electrum
+
+sudo apt-get install -y python-qt4 python-pip
+sudo pip install https://download.electrum.org/Electrum-2.0.3.tar.gz
+
+# Build StumpWM
+
+git clone https://github.com/stumpwm/stumpwm.git
+cd stumpwm/
+autoconf
+sbcl --eval '(ql:quickload (list :cl-ppcre :clx))' --quit
+make sudo make install
+
+# Build xcape
+
+sudo apt-get install -y gcc pkg-config libx11-dev libxtst-dev libxi-dev
+git clone https://github.com/alols/xcape.git
+cd xcape
+git reset --hard f3802fc086
+make
+sudo make install
+cd ..
+
+# Delete everything
+
+rm -rf sbcl-1.2.9-x86-64-linux/ stumpwm/ xcape/
