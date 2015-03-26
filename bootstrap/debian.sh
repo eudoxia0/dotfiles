@@ -55,6 +55,26 @@ make
 sudo make install
 cd ..
 
+# Ruby
+
+git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
+
+sudo apt-get install -y build-essential libssl-dev libcurl4-openssl-dev \
+  libreadline-dev
+
+# Python
+
+sudo apt-get install python-pip
+sudo pip install ansible
+
+# Vagrant
+
+curl -o vagrant.deb https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2_x86_64.deb
+sudo dpkg -i vagrant.deb
+rm vagrant.deb
+
 # Delete everything
 
 rm -rf sbcl-1.2.9-x86-64-linux/ stumpwm/ xcape/
