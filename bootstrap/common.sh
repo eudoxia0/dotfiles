@@ -1,20 +1,12 @@
 #!/usr/bin/env bash
 
-# Make sure the USB drive is mounted
-backup.sh
-
-# Set up environments for other languages
 # Node
 
 sudo npm -g install jslint
 
 # Ruby
 
-# install a reasonably recent Ruby version
-rbenv install 2.2.0-dev
-rbenv install 2.1.0
-rbenv install 1.9.3-dev
-
+rbenv install 2.1.0 -k
 rbenv global 2.1.0
 
 # install useful ruby gems
