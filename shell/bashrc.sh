@@ -45,8 +45,6 @@ alias ls="ls --group-directories-first --color=auto -h "
 alias reboot="sudo reboot"
 alias shd="sudo shutdown now -h"
 alias cls="printf \"\\033c\""
-alias lock='xscreensaver-command -lock'
-alias psql='psql -h localhost'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -68,21 +66,6 @@ world_time () {
     echo -e 'Adelaide\t' `TZ="Australia/Adelaide" $datetime`
     echo -e 'Tokyo\t\t' `TZ="Asia/Tokyo" $datetime`
     echo -e 'Houston\t\t' `TZ="US/Central" $datetime`
-}
-
-# last_boot - the time the computer was started
-last_boot () {
-    last | less | head -n 1 | cut -d ' ' -f 11
-}
-
-# encrypt, decrypt - encrypt and decrypt a folder with a password
-# usage: [encrypt|decrypt] <file>
-# from: http://superuser.com/questions/162624/how-to-password-protect-gzip-files-on-the-command-line
-encrypt () {
-    tar cz $1 | openssl enc -aes-256-cbc -e > $1.tar.gz.enc
-}
-decrypt () {
-    openssl aes-256-cbc -d -in $1.tar.gz.enc -out $1.decrypted.tar.gz
 }
 
 # colored man pages
@@ -108,21 +91,24 @@ export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 export LESS=' -R '
 
 # NPM
-export PATH="$PATH:$HOME/.npm/bin:$HOME/.scripts:$HOME/.cabal/bin"
+export PATH="$PATH:$HOME/.npm/bin"
 
-# Ruby
-export PATH="$PATH:$HOME/.rbenv/versions/2.1.0/bin"
-export PATH="$PATH:$HOME/.rbenv/versions/2.2.0-dev/bin"
+# Scripts
+export PATH="$PATH:$HOME/.scripts"
+
+# Haskell
+export PATH="$PATH:$HOME/.cabal/bin"
+
+# rbenv
+export PATH="$PATH:$HOME/.rbenv/bin"
+
+# Local binaries
+export PATH="$PATH:$HOME/.local/bin"
 
 # General
 PS1="\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)\$\[\033[01m\][ \[\033[01;34m\]\u@\h \[\033[00m\]\[\033[01m\]] \[\033[01;32m\]\w\[\033[00m\]\n\[\033[01;34m\]$\[\033[00m\]> "
 
 export EDITOR="emacs"
-
-# Android
-export ANDROID_SDK_ROOT="/home/eudoxia/android/adt-bundle-linux-x86_64-20140702/"
-export ANDROID_NDK_ROOT="/home/eudoxia/android/android-ndk-r10b/"
-
 # Autocomplete
 
 # enable programmable completion features (you don't need to enable
