@@ -10,3 +10,4 @@ cp xsession.sh ~/.xsession
 cp xresources ~/.Xresources
 cp xscreensaver ~/.Xscreensaver
 cp layout.sh ~/.screenlayout/default.sh
+cp redshift.conf ~/.config/redshift.conf
