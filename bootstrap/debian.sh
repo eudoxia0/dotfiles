@@ -75,6 +75,11 @@ curl -o vagrant.deb https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2_x86_6
 sudo dpkg -i vagrant.deb
 rm vagrant.deb
 
+# LaTeX
+
+sudo apt-get install -y texlive-base texlive-math-extra texlive-latex-recommended \
+    texlive-publishers texlive-latex-extra
+
 # Delete everything
 
 rm -rf sbcl-1.2.9-x86-64-linux/ stumpwm/ xcape/
