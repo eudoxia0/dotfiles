@@ -48,6 +48,7 @@
 
 ;; Always use spaces when indenting (unless overridden for buffer)
 (setq-default indent-tabs-mode nil)
+(setq tab-width 2)
 
 (setq vc-follow-symlinks t)
 
@@ -124,6 +125,12 @@
 ;;; Web mode
 
 (require 'web-mode)
+
+(defun my-web-mode-hook ()
+  "Hooks for Web mode."
+  (setq web-mode-markup-indent-offset 2))
+
+(add-hook 'web-mode-hook  'my-web-mode-hook)
 
 ;;; XML
 
