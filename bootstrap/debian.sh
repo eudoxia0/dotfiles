@@ -9,7 +9,8 @@ sudo apt-get install -y chromium keepass2 git feh redshift transmission-gtk \
 # Dev stuff
 
 sudo apt-get install -y make automake autoconf libtool autogen patch meld \
-  cmake bze gdb valgrind hunspell scala ruby clang llvm subversion
+  cmake bze gdb valgrind hunspell scala ruby clang llvm subversion python-dev \
+  libxml2-dev libxslt-dev virtualenvwrapper
 
 # Build Emacs
 
