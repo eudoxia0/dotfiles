@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.15 for eudoxia on Tue Mar 24 11:45:12 2015.
+# Written by xscreensaver-demo 5.30 for eudoxia on Sat May  2 17:21:18 2015.
 # http://www.jwz.org/xscreensaver/
 
 timeout:	1:40:00
@@ -244,6 +244,14 @@ programs:								      \
 - GL: 				hilbert -root				    \n\
 - GL: 				tronbit -root				    \n\
 -				unicode -root				    \n\
+  GL: 				geodesic -root				    \n\
+				hexadrop -root				    \n\
+  GL: 				kaleidocycle -root			    \n\
+  GL: 				quasicrystal -root			    \n\
+  GL: 				unknownpleasures -root			    \n\
+  GL: 				projectiveplane -root			    \n\
+-				tessellimage -root			    \n\
+  GL: 				winduprobot -root			    \n\
 
 
 pointerPollTime:    0:00:05
@@ -254,4 +262,5 @@ GetViewPortIsFullOfLies:False
 procInterrupts:	True
 xinputExtensionDev: False
 overlayStderr:	True
+authWarningSlack:   20
 
