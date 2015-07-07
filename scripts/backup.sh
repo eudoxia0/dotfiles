@@ -3,17 +3,13 @@
 # backup - copy important files to USB drive
 # usage: backup.sh
 
-base=/run/media/eudoxia/backup
-
-if [ -d "$base/Kindle" ]; then
-  # Is the Kindle on?
-  cp "$base/Kindle/documents/My Clippings.txt" ~/self/clippings.txt
-fi
+BASE=/media/eudoxia/backup
 
 sync () {
-  # Function to sync directories, optionally passing extra args
-  echo -e "\e[31m$1\e[0m"
-  unison ~/$1 $base/$1 ${@:2}
+  # Function to sync directory contents
+  echo -n -e "\e[31m·\e[0m $1"
+  rsync -a ~/$1/ $BASE/$1/
+  echo -e " \e[32m✓\e[0m"
 }
 
 sync code
@@ -23,8 +19,6 @@ sync self
 sync backup
 sync library
 sync .newsbeuter/urls
-echo -e "\e[31m.ssh\e[0m"
-unison ~/.ssh $base/.ssh -ignore "Name known_hosts"
+sync .ssh
 sync .purple
-
-chown -R $USER ~/.ssh
+sync .fonts
