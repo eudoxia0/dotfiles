@@ -16,6 +16,5 @@
 ;;; General theme options
 
 (setq custom-safe-themes t)
-(color-theme-initialize)
 
-(load-theme 'qsimpleq t)
+;(load-theme 'mccarthy t)
