@@ -2,7 +2,6 @@
 
 (require 'package)
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.milkbox.net/packages/")))
 (package-initialize)
 
@@ -13,14 +12,17 @@
     erlang haskell-mode fsharp-mode sass-mode rainbow-mode enh-ruby-mode
     web-mode projectile grizzl graphviz-dot-mode ess cmake-mode mediawiki
     scala-mode2 ensime powerline rust-mode tuareg pov-mode adoc-mode
+    idris-mode
+    ;; disabled: rw-hunspell pep8
     ;; Other plugins
     rainbow-delimiters magit ecb auto-complete ag highlight-indentation
-    google-c-style flycheck ido flyspell rw-hunspell gnugo paredit pep8
-    company cider
+    google-c-style flycheck ido flyspell gnugo paredit company cider
     ;; Themes
-    color-theme-solarized color-theme-twilight color-theme-github
-    soft-morning-theme zenburn-theme qsimpleq-theme noctilux-theme
-    sublime-themes espresso-theme tronesque-theme naquadah-theme))
+    ;qsimpleq-theme
+    ;color-theme-solarized color-theme-twilight color-theme-github
+    ;soft-morning-theme zenburn-theme qsimpleq-theme noctilux-theme
+    ;sublime-themes espresso-theme tronesque-theme naquadah-theme
+    ))
 
 (defun packages-installed-p ()
   (not (memq 'nil (mapcar (lambda (p) (package-installed-p p)) my-packages))))
