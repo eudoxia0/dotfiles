@@ -1,30 +1,22 @@
 # Apps
 
 sudo apt-get install -y chromium keepass2 git feh redshift transmission-gtk \
-  emacs unison pcmanfm gimp inkscape keepass2 gnuplot scrot calibre numlockx \
-  graphviz virtualbox units newsbeuter pidgin pidgin-otr vlc arandr cheese \
-  xdotool flashplugin-nonfree zathura zathura-djvu zathura-ps font-inconsolata \
+  emacs pcmanfm gimp inkscape keepass2 gnuplot scrot calibre numlockx \ graphviz
+  virtualbox units newsbeuter pidgin pidgin-otr vlc arandr cheese \ xdotool
+  flashplugin-nonfree zathura zathura-djvu zathura-ps font-inconsolata \
   xscreensaver xscreensaver-data-extra xscreensaver-gl-extra
 
 # Dev stuff
 
 sudo apt-get install -y make automake autoconf libtool autogen patch meld \
   cmake bze gdb valgrind hunspell scala ruby clang llvm subversion python-dev \
-  libxml2-dev libxslt-dev virtualenvwrapper
+  libxml2-dev libxslt-dev virtualenvwrapper haskell-platform
 
 # Build Emacs
 
-sudo apt-get install -y git-core libxaw7-dev libxpm-dev libpng12-dev \
-  libtiff5-dev libgif-dev libjpeg8-dev libgtk2.0-dev libncurses5-dev \
-  texinfo
+wget -q -O - http://emacs.secretsauce.net/key.gpg | sudo apt-key add -
 
-curl -O http://mirror.nbtelecom.com.br/gnu/emacs/emacs-24.3.tar.gz
-tar -zxvf emacs-24.3.tar.gz
-cd emacs-24.3/
-./autogen.sh
-./configure
-make --jobs=2
-sudo make install
+sudo apt-get install emacs-snapshot
 
 # Build SBCL
 
