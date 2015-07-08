@@ -14,7 +14,7 @@
 (mouse-wheel-mode t)
 (setq require-final-newline t)
 
-(cua-mode 1)
+;(cua-mode 1)
 
 (windmove-default-keybindings)
 
@@ -23,6 +23,8 @@
   scroll-step 1
   scroll-conservatively 10000
   scroll-preserve-screen-position 1)
+
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; Fill paragraph to 80
 (setq-default fill-column 80)
@@ -135,3 +137,11 @@
 ;;; XML
 
 (setq nxml-slash-auto-complete-flag t)
+
+;;; Clojure
+
+(setq cider-lein-command (expand-file-name "~/.scripts/lein"))
+
+;;; JavaScript
+
+(setq js-indent-level 2)

@@ -6,6 +6,7 @@
 (load (expand-file-name "~/.emacs.d/file-modes.el"))
 (load (expand-file-name "~/.emacs.d/keys.el"))
 (load (expand-file-name "~/.emacs.d/theme.el"))
+(load (expand-file-name "~/.emacs.d/scriba.el"))
 
 (load (expand-file-name "~/.emacs.d/lang/lisp.el"))
 (load (expand-file-name "~/.emacs.d/lang/lass.el"))
