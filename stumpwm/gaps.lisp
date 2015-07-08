@@ -1,17 +1,27 @@
-;; Useless gaps
-;; from https://gist.github.com/Octantis/5651256
+;;;; Add useless gaps around windows
+;;;;
+;;;; Originally from https://gist.github.com/vlnx/5651256
+;;;;
+;;;; With some modifications by yours truly, to prevent it from crushing dialog
+;;;; windows
+;;;;
 (in-package :stumpwm)
 
 (defvar *useless-gaps-size* 25)
 (defvar *useless-gaps-on* nil)
 
-;; Redefined - with `if`s for *useless-gaps-on*gaps
+(defun resize-window-p (window)
+  "Should this window be resized?"
+  (and *useless-gaps-on*
+       (not (or (window-transient-p window)
+                (window-modal-p window)))))
+
 (defun maximize-window (win)
   "Maximize the window."
   (multiple-value-bind (x y wx wy width height border stick)
       (geometry-hints win)
 
-    (if *useless-gaps-on*
+    (if (resize-window-p win)
         (setf width (- width (* 2 *useless-gaps-size*))
               height (- height (* 2 *useless-gaps-size*))
               x (+ x *useless-gaps-size*)
@@ -32,15 +42,23 @@
       ;; unless it isn't being maximized to fill the frame.
       (if (or stick
               (find *window-border-style* '(:tight :none)))
-          (setf (xlib:drawable-width (window-parent win)) (window-width win)
-                (xlib:drawable-height (window-parent win)) (window-height win))
+          (setf (xlib:drawable-width (window-parent win))
+                (window-width win)
+                (xlib:drawable-height (window-parent win))
+                (window-height win))
           (let ((frame (window-frame win)))
-            (setf (xlib:drawable-width (window-parent win)) (- (frame-width frame)
-                                                               (* 2 (xlib:drawable-border-width (window-parent win)))
-                                                               (if *useless-gaps-on* (* 2 *useless-gaps-size*) 0))
-                  (xlib:drawable-height (window-parent win)) (- (frame-display-height (window-group win) frame)
-                                                                (* 2 (xlib:drawable-border-width (window-parent win)))
-                                                                (if *useless-gaps-on* (* 2 *useless-gaps-size*) 0)))))
+            (setf (xlib:drawable-width (window-parent win))
+                  (- (frame-width frame)
+                     (* 2 (xlib:drawable-border-width (window-parent win)))
+                     (if (resize-window-p win)
+                         (* 2 *useless-gaps-size*)
+                         0))
+                  (xlib:drawable-height (window-parent win))
+                  (- (frame-display-height (window-group win) frame)
+                     (* 2 (xlib:drawable-border-width (window-parent win)))
+                     (if (resize-window-p win)
+                         (* 2 *useless-gaps-size*)
+                         0)))))
       ;; update the "extents"
       (xlib:change-property (window-xwin win) :_NET_FRAME_EXTENTS
                             (list wx wy
