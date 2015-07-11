@@ -7,8 +7,11 @@
 (defcommand emacs () ()
   (run-or-raise "emacs" '(:class "emacs")))
 
+(defcommand terminal () ()
+  (run-shell-command "gnome-terminal" '(:class "terminal")))
+
 (defcommand browser () ()
-  (run-or-raise +www-browser+ '(:class "browser")))
+  (run-or-raise "chromium" '(:class "browser")))
 
 (defcommand tor-browser () ()
   (run-or-raise "tor-browser-en" '(:class "tor-browser")))
@@ -27,9 +30,6 @@
 
 (defcommand fm () ()
   (run-or-raise "pcmanfm" '(:class "fm")))
-
-(defcommand terminal () ()
-  (run-or-raise +terminal+ '(:class "term")))
 
 ;;; System
 

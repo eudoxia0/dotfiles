@@ -8,9 +8,6 @@
 
 (set-font "-xos4-terminus-medium-r-normal-*-12-120-*-*-*-60-*-u")
 
-(setf +terminal+ "urxvt")
-(defparameter +www-browser+ "chromium")
-
 ;;;; Notifications
 
 (defun echo-urgent-window (target)
@@ -38,7 +35,7 @@
 (set-maxsize-gravity :center)
 (set-transient-gravity :center)
 
-;;;; Autostart
+;;;; After start
 
 (stumpwm::run-commands
  "gnew web"
@@ -47,4 +44,5 @@
  "gnew im"
  "gnew file"
  "gnew mail"
- "gselect web")
+ "gselect web"
+ "gaps")

@@ -50,8 +50,6 @@
 (define-key *top-map* (kbd "s-q") "delete")
 (define-key *top-map* (kbd "s-c") "terminal")
 (define-key *top-map* (kbd "s-r") "exec")
-
-; Send special input
 (define-key *top-map* (kbd "s-i") "input-special")
 
 ; Take a screenshot
