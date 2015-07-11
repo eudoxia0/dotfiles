@@ -76,7 +76,7 @@
                   (maximize-window w))) windows)))
 
 (defcommand gaps () ()
-  "Toggle the padding of tiled windows"
+  "Toggle useless gaps."
   (setf *useless-gaps-on* (null *useless-gaps-on*))
 
   ;; Following is pseudo code to use hooks
