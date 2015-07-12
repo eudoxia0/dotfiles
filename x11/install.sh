@@ -12,3 +12,5 @@ cp xscreensaver ~/.Xscreensaver
 cp layout.sh ~/.screenlayout/default.sh
 cp redshift.conf ~/.config/redshift.conf
 cp gtkrc.conf ~/.gtkrc-2.0
+
+chmod +x ~/.screenlayout/default.sh
