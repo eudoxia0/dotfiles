@@ -11,3 +11,4 @@
 (load (expand-file-name "~/.emacs.d/lang/lisp.el"))
 (load (expand-file-name "~/.emacs.d/lang/lass.el"))
 (load (expand-file-name "~/.emacs.d/lang/haskell.el"))
+(load (expand-file-name "~/.emacs.d/lang/coq.el"))

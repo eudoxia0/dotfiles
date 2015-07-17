@@ -10,7 +10,7 @@ mkdir $EMACS_DIR
 mkdir $EMACS_DIR/lang
 
 for file in init config file-modes keys packages theme lang/lisp \
-            lang/haskell lang/lass scriba
+            lang/haskell lang/lass lang/coq scriba
 do
   cp $file.el $EMACS_DIR/$file.el
 done
