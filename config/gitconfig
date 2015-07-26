@@ -4,6 +4,7 @@
 [diff]
 	tool = meld
 	guitool = meld
+        whitespace = "red reverse"
 [color]
 	ui = auto
 [alias]
