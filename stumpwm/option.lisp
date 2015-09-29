@@ -38,11 +38,13 @@
 ;;;; After start
 
 (stumpwm::run-commands
- "gnew web"
- "gnew term"
- "gnew edit"
- "gnew im"
- "gnew file"
- "gnew mail"
- "gselect web"
+ "gnew 1"
+ "gnew 2"
+ "gnew 3"
+ "gnew 4"
+ "gnew 5"
+ "gnew 6"
+ "gnew 7"
+ "gnew 8"
+ "gselect 1"
  "gaps")

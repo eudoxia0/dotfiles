@@ -27,12 +27,14 @@
 
 ;;; Workspaces
 
-(define-key *top-map* (kbd "s-1") "gselect web")
-(define-key *top-map* (kbd "s-2") "gselect term")
-(define-key *top-map* (kbd "s-3") "gselect edit")
-(define-key *top-map* (kbd "s-4") "gselect im")
-(define-key *top-map* (kbd "s-5") "gselect file")
-(define-key *top-map* (kbd "s-6") "gselect mail")
+(define-key *top-map* (kbd "s-1") "gselect 1")
+(define-key *top-map* (kbd "s-2") "gselect 2")
+(define-key *top-map* (kbd "s-3") "gselect 3")
+(define-key *top-map* (kbd "s-4") "gselect 4")
+(define-key *top-map* (kbd "s-5") "gselect 5")
+(define-key *top-map* (kbd "s-6") "gselect 6")
+(define-key *top-map* (kbd "s-7") "gselect 7")
+(define-key *top-map* (kbd "s-8") "gselect 8")
 
 ;;; Command keybindings
 
@@ -51,6 +53,8 @@
 (define-key *top-map* (kbd "s-c") "terminal")
 (define-key *top-map* (kbd "s-r") "exec")
 (define-key *top-map* (kbd "s-i") "input-special")
+
+(define-key *top-map* (kbd "s-e") "single-click")
 
 ; Take a screenshot
 (define-key *root-map* (kbd "Print") "exec scrot")

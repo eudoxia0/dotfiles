@@ -26,7 +26,7 @@
   (run-or-raise "pidgin" '(:class "im")))
 
 (defcommand music () ()
-  (run-or-raise "audacious" '(:class "music")))
+  (run-or-raise "clementine" '(:class "music")))
 
 (defcommand fm () ()
   (run-or-raise "pcmanfm" '(:class "fm")))
@@ -45,6 +45,10 @@
   (message "~A" (run-shell-command "uptime" t)))
 
 ;;; Input
+
+(defcommand single-click () ()
+  "Send a click."
+  (run-shell-command "xdotool click 1"))
 
 (defcommand input-click (times)
   ((:number "Number of clicks to send: "))
