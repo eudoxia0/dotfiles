@@ -18,7 +18,8 @@ sync writing
 sync self
 sync backup
 sync library
-sync .newsbeuter/urls
+sync music
+sync .newsbeuter
 sync .ssh
 sync .purple
 sync .fonts
