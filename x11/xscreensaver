@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.30 for eudoxia on Sat May  2 17:21:18 2015.
+# Written by xscreensaver-demo 5.30 for eudoxia on Mon Oct 12 13:25:01 2015.
 # http://www.jwz.org/xscreensaver/
 
 timeout:	1:40:00
@@ -56,14 +56,14 @@ programs:								      \
 -				pyro -root				    \n\
 -				qix -root				    \n\
 -				rocks -root				    \n\
-				rorschach -root				    \n\
+-				rorschach -root				    \n\
 -				decayscreen -root			    \n\
 -				flame -root				    \n\
 -				halo -root				    \n\
 -				slidescreen -root			    \n\
 -				pedal -root				    \n\
 				bouboule -root				    \n\
--				braid -root				    \n\
+				braid -root				    \n\
 				coral -root				    \n\
 -				deco -root				    \n\
 				drift -root				    \n\
@@ -96,7 +96,7 @@ programs:								      \
 - GL: 				atlantis -root				    \n\
 -				bsod -root				    \n\
 - GL: 				bubble3d -root				    \n\
-  GL: 				cage -root				    \n\
+- GL: 				cage -root				    \n\
 -				crystal -root				    \n\
 -				cynosure -root				    \n\
 				discrete -root				    \n\
@@ -119,7 +119,7 @@ programs:								      \
 -				deluxe -root				    \n\
 -				demon -root				    \n\
 - GL: 				extrusion -root				    \n\
--				loop -root				    \n\
+				loop -root				    \n\
 -				penetrate -root				    \n\
 -				petri -root				    \n\
 -				phosphor -root				    \n\
@@ -133,7 +133,7 @@ programs:								      \
 -				webcollage -root			    \n\
 -				xflame -root				    \n\
 -				xmatrix -root				    \n\
-  GL: 				gflux -root				    \n\
+- GL: 				gflux -root				    \n\
 -				nerverot -root				    \n\
 				xrayswarm -root				    \n\
 -				xspirograph -root			    \n\
@@ -174,7 +174,7 @@ programs:								      \
 -				apple2 -root				    \n\
 - GL: 				atunnel -root				    \n\
 -				barcode -root				    \n\
-  GL: 				blinkbox -root				    \n\
+- GL: 				blinkbox -root				    \n\
 - GL: 				blocktube -root				    \n\
 - GL: 				bouncingcow -root			    \n\
 				cloudlife -root				    \n\
@@ -211,7 +211,7 @@ programs:								      \
   GL: 				polyhedra -root				    \n\
 - GL: 				providence -root			    \n\
 				substrate -root				    \n\
--				wormhole -root				    \n\
+				wormhole -root				    \n\
 - GL: 				antmaze -root				    \n\
 - GL: 				boing -root				    \n\
 				boxfit -root				    \n\
@@ -246,12 +246,12 @@ programs:								      \
 -				unicode -root				    \n\
   GL: 				geodesic -root				    \n\
 				hexadrop -root				    \n\
-  GL: 				kaleidocycle -root			    \n\
-  GL: 				quasicrystal -root			    \n\
+- GL: 				kaleidocycle -root			    \n\
+- GL: 				quasicrystal -root			    \n\
   GL: 				unknownpleasures -root			    \n\
   GL: 				projectiveplane -root			    \n\
 -				tessellimage -root			    \n\
-  GL: 				winduprobot -root			    \n\
+- GL: 				winduprobot -root			    \n\
 
 
 pointerPollTime:    0:00:05
