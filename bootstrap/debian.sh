@@ -4,7 +4,8 @@ sudo apt-get install -y chromium keepass2 git feh redshift transmission-gtk \
   emacs pcmanfm gimp inkscape keepass2 gnuplot scrot calibre numlockx \ graphviz
   virtualbox units newsbeuter pidgin pidgin-otr vlc arandr cheese \ xdotool
   flashplugin-nonfree zathura zathura-djvu zathura-ps font-inconsolata \
-  xscreensaver xscreensaver-data-extra xscreensaver-gl-extra
+  xscreensaver xscreensaver-gl xscreensaver-gl-extra xscreensaver-data \
+  xscreensaver-data-extra
 
 # Dev stuff
 
