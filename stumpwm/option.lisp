@@ -46,5 +46,6 @@
  "gnew 6"
  "gnew 7"
  "gnew 8"
+ "gnew-float floating"
  "gselect 1"
  "gaps")

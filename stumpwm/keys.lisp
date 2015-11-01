@@ -35,6 +35,7 @@
 (define-key *top-map* (kbd "s-6") "gselect 6")
 (define-key *top-map* (kbd "s-7") "gselect 7")
 (define-key *top-map* (kbd "s-8") "gselect 8")
+(define-key *top-map* (kbd "s-f") "gselect floating")
 
 ;;; Command keybindings
 
