@@ -16,6 +16,7 @@
                 ("\\.html$" . web-mode)
                 ("\\.tmpl$" . web-mode)
                 ("\\.eco$" . web-mode)
+                ("\\.jsx$" . jsx-mode)
                 ("\\.scss$" . scss-mode)
                 ("\\.lass\\'" . lass-mode))
 	    auto-mode-alist))
