@@ -8,11 +8,12 @@
 (defvar my-packages
   '(org nav
     ;; Major modes
-    yaml-mode clojure-mode d-mode textile-mode markdown-mode gnuplot-mode
-    erlang haskell-mode fsharp-mode sass-mode rainbow-mode enh-ruby-mode
-    web-mode projectile grizzl graphviz-dot-mode ess cmake-mode mediawiki
-    scala-mode2 ensime powerline rust-mode tuareg pov-mode adoc-mode
-    idris-mode
+    sly yaml-mode clojure-mode d-mode textile-mode markdown-mode
+    gnuplot-mode erlang haskell-mode fsharp-mode sass-mode
+    rainbow-mode enh-ruby-mode web-mode projectile grizzl
+    graphviz-dot-mode ess cmake-mode mediawiki scala-mode2 ensime
+    powerline rust-mode tuareg adoc-mode ;pov-mode idris-mode
+    jsx-mode
     ;; disabled: rw-hunspell pep8
     ;; Other plugins
     rainbow-delimiters magit ecb auto-complete ag highlight-indentation
@@ -21,7 +22,7 @@
     ;qsimpleq-theme
     ;color-theme-solarized color-theme-twilight color-theme-github
     ;soft-morning-theme zenburn-theme qsimpleq-theme noctilux-theme
-    ;sublime-themes espresso-theme tronesque-theme naquadah-theme
+    sublime-themes ;espresso-theme tronesque-theme naquadah-theme
     ))
 
 (defun packages-installed-p ()
