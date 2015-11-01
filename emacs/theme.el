@@ -17,4 +17,4 @@
 
 (setq custom-safe-themes t)
 
-;(load-theme 'mccarthy t)
+(load-theme 'wilson t)
