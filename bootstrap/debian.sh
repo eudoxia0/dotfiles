@@ -69,6 +69,14 @@ curl -o vagrant.deb https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2_x86_6
 sudo dpkg -i vagrant.deb
 rm vagrant.deb
 
+# Haskell
+
+wget -q -O- https://s3.amazonaws.com/download.fpcomplete.com/debian/fpco.key | sudo apt-key add -
+echo 'deb http://download.fpcomplete.com/debian/jessie stable main'| sudo tee /etc/apt/sources.list.d/fpco.list
+
+sudo apt-get update
+sudo apt-get install -y stack
+
 # LaTeX
 
 sudo apt-get install -y texlive-base texlive-math-extra texlive-latex-recommended \
