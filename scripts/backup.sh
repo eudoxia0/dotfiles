@@ -23,3 +23,4 @@ sync .newsbeuter
 sync .ssh
 sync .purple
 sync .fonts
+sync work
