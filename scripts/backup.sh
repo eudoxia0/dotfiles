@@ -24,3 +24,4 @@ sync .ssh
 sync .purple
 sync .fonts
 sync work
+sync wiki
