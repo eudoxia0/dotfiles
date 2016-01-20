@@ -16,7 +16,7 @@
     jsx-mode
     ;; disabled: rw-hunspell pep8
     ;; Other plugins
-    rainbow-delimiters magit ecb auto-complete ag highlight-indentation
+    rainbow-delimiters ecb auto-complete ag highlight-indentation
     google-c-style flycheck ido flyspell gnugo paredit company cider
     ;; Themes
     ;qsimpleq-theme
