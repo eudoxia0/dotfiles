@@ -7,8 +7,8 @@
 ;;;;
 (in-package :stumpwm)
 
-(defvar *useless-gaps-size* 25)
-(defvar *useless-gaps-on* nil)
+(defparameter *useless-gaps-size* 100)
+(defparameter *useless-gaps-on* nil)
 
 (defun resize-window-p (window)
   "Should this window be resized?"
@@ -78,10 +78,4 @@
 (defcommand gaps () ()
   "Toggle useless gaps."
   (setf *useless-gaps-on* (null *useless-gaps-on*))
-
-  ;; Following is pseudo code to use hooks
-  ;; to do something like change border colors or size
-  ;; (if *useless-gaps-on*
-  ;;     (run-hook 'frame-gap-on)
-  ;;     (run-hook 'frame-gap-off))
   (reset-all-windows))
