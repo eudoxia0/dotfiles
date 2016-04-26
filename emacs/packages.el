@@ -18,6 +18,7 @@
     ;; Other plugins
     rainbow-delimiters ecb auto-complete ag highlight-indentation
     google-c-style flycheck ido flyspell gnugo paredit company cider
+    unicode-fonts
     ;; Themes
     ;qsimpleq-theme
     ;color-theme-solarized color-theme-twilight color-theme-github

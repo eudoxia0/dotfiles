@@ -58,8 +58,8 @@
 (setq whitespace-style '(face lines-tail))
 
 ;; Font options
-(set-face-attribute 'default nil :font "Inconsolata")
-(set-face-attribute 'default nil :height 100)
+(unicode-fonts-setup)
+(set-frame-font "Inconsolata 10")
 
 ;;; Functionality
 (add-hook 'prog-mode-hook
