@@ -1,23 +1,17 @@
 # Apps
 
 sudo apt-get install -y chromium keepass2 git feh redshift transmission-gtk \
-  emacs pcmanfm gimp inkscape keepass2 gnuplot scrot calibre numlockx \ graphviz
-  virtualbox units newsbeuter pidgin pidgin-otr vlc arandr cheese \ xdotool
+  emacs pcmanfm gimp inkscape keepass2 gnuplot scrot calibre numlockx graphviz \
+  virtualbox units newsbeuter pidgin pidgin-otr vlc arandr cheese xdotool \
   flashplugin-nonfree zathura zathura-djvu zathura-ps font-inconsolata \
   xscreensaver xscreensaver-gl xscreensaver-gl-extra xscreensaver-data \
-  xscreensaver-data-extra ntp ntpdate
+  xscreensaver-data-extra ntp ntpdate xcape
 
 # Dev stuff
 
 sudo apt-get install -y make automake autoconf libtool autogen patch meld \
-  cmake bze gdb valgrind hunspell scala ruby clang llvm subversion python-dev \
-  libxml2-dev libxslt-dev virtualenvwrapper haskell-platform coq proofgeneral
-
-# Build Emacs
-
-wget -q -O - http://emacs.secretsauce.net/key.gpg | sudo apt-key add -
-
-sudo apt-get install emacs-snapshot
+  cmake gdb valgrind hunspell scala ruby clang llvm subversion python-dev \
+  libxml2-dev libxslt-dev virtualenvwrapper coq proofgeneral
 
 # Build SBCL
 
