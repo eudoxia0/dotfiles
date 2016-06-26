@@ -7,7 +7,8 @@ sudo apt-get install -y chromium-browser keepass2 feh redshift transmission-gtk 
      xscreensaver-data-extra ntp ntpdate xcape leafpad texlive-base \
      texlive-math-extra texlive-latex-recommended texlive-publishers \
      texlive-latex-extra  xfonts-terminus lxappearance unrar-free pavucontrol \
-     youtube-dl torbrowser-launcher fonts-linuxlibertine gargoyle-free
+     youtube-dl torbrowser-launcher fonts-linuxlibertine gargoyle-free qtads \
+     fonts-ancient-scripts ttf-ancient-fonts openbabel gromacs
 
 # Programming
 
