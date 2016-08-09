@@ -16,3 +16,4 @@ cp newsbeuter.conf ~/.newsbeuter/config
 cp ocamlinit.ml ~/.ocamlinit
 cp psqlrc ~/.psqlrc
 cp gitconfig ~/.gitconfig
+cp gargoylerc ~/.garglkrc
