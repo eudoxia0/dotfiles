@@ -3,7 +3,7 @@
 sudo apt-get install -y chromium keepass2 git feh redshift transmission-gtk \
   emacs pcmanfm gimp inkscape keepass2 gnuplot scrot calibre numlockx graphviz \
   virtualbox units newsbeuter pidgin pidgin-otr vlc arandr cheese xdotool \
-  flashplugin-nonfree zathura zathura-djvu zathura-ps font-inconsolata \
+  flashplugin-nonfree zathura zathura-djvu zathura-ps fonts-inconsolata \
   xscreensaver xscreensaver-gl xscreensaver-gl-extra xscreensaver-data \
   xscreensaver-data-extra ntp ntpdate xcape
 
@@ -32,16 +32,6 @@ cd stumpwm/
 autoconf
 sbcl --eval '(ql:quickload (list :cl-ppcre :clx))' --quit
 make sudo make install
-
-# Build xcape
-
-sudo apt-get install -y gcc pkg-config libx11-dev libxtst-dev libxi-dev
-git clone https://github.com/alols/xcape.git
-cd xcape
-git reset --hard f3802fc086
-make
-sudo make install
-cd ..
 
 # Ruby
 
