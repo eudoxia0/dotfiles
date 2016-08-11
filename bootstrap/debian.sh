@@ -5,7 +5,7 @@ sudo apt-get install -y chromium keepass2 git feh redshift transmission-gtk \
   virtualbox units newsbeuter pidgin pidgin-otr vlc arandr cheese xdotool \
   flashplugin-nonfree zathura zathura-djvu zathura-ps fonts-inconsolata \
   xscreensaver xscreensaver-gl xscreensaver-gl-extra xscreensaver-data \
-  xscreensaver-data-extra ntp ntpdate xcape curl
+  xscreensaver-data-extra ntp ntpdate xcape curl xfonts-terminus
 
 # Dev stuff
 
@@ -27,7 +27,7 @@ gpg --verify sbcl-1.3.8-crhodes.asc
 cat sbcl-1.3.8-crhodes.asc
 sha256sum sbcl-1.3.8-x86-64-linux-binary.tar
 
-tar -xvf sbcl-1.3.8-x86-64-linux-binary.tar 
+tar -xvf sbcl-1.3.8-x86-64-linux-binary.tar
 cd sbcl-1.3.8-x86-64-linux/
 sudo bash install.sh
 
@@ -78,4 +78,3 @@ sudo apt-get install -y stack
 
 sudo apt-get install -y texlive-base texlive-math-extra texlive-latex-recommended \
     texlive-publishers texlive-latex-extra
-
