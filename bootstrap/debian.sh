@@ -41,8 +41,10 @@ sudo pip install https://download.electrum.org/Electrum-2.0.3.tar.gz
 git clone https://github.com/stumpwm/stumpwm.git
 cd stumpwm/
 autoconf
+./configure
 sbcl --eval '(ql:quickload (list :cl-ppcre :clx))' --quit
-make sudo make install
+make
+sudo make install
 
 # Ruby
 
