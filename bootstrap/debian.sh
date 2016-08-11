@@ -79,6 +79,3 @@ sudo apt-get install -y stack
 sudo apt-get install -y texlive-base texlive-math-extra texlive-latex-recommended \
     texlive-publishers texlive-latex-extra
 
-# Delete everything
-
-rm -rf sbcl-1.2.9-x86-64-linux/ stumpwm/ xcape/
