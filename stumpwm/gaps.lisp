@@ -7,7 +7,7 @@
 ;;;;
 (in-package :stumpwm)
 
-(defparameter *useless-gaps-size* 100)
+(defparameter *useless-gaps-size* 50)
 (defparameter *useless-gaps-on* nil)
 
 (defun resize-window-p (window)
