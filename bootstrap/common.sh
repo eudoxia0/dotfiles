@@ -20,13 +20,6 @@ sbcl --no-sysinit --no-userinit --load /tmp/ql.lisp \
   --quit
 sbcl --eval '(ql:quickload :quicklisp-slime-helper)' --quit
 
-# Since we have a system SBCL, let's download it from the repo and build a
-# recent local copy
-git clone https://github.com/sbcl/sbcl.git
-cd sbcl
-sh make.sh
-sudo sh install.sh
-
 # Turn this thing up
 alsamixer
 
