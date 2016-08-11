@@ -19,8 +19,3 @@ sbcl --no-sysinit --no-userinit --load /tmp/ql.lisp \
   --eval '(quicklisp-quickstart:install :path ".quicklisp")' \
   --quit
 sbcl --eval '(ql:quickload :quicklisp-slime-helper)' --quit
-
-# Create directories, remove some default ones
-rm -rf Documents Manjaro Music Pictures Public Templates Videos
-mkdir torrents
-mkdir .session
