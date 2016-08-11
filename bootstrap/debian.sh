@@ -5,7 +5,7 @@ sudo apt-get install -y chromium keepass2 git feh redshift transmission-gtk \
   virtualbox units newsbeuter pidgin pidgin-otr vlc arandr cheese xdotool \
   flashplugin-nonfree zathura zathura-djvu zathura-ps fonts-inconsolata \
   xscreensaver xscreensaver-gl xscreensaver-gl-extra xscreensaver-data \
-  xscreensaver-data-extra ntp ntpdate xcape
+  xscreensaver-data-extra ntp ntpdate xcape curl
 
 # Dev stuff
 
@@ -15,9 +15,20 @@ sudo apt-get install -y make automake autoconf libtool autogen patch meld \
 
 # Build SBCL
 
-curl -O http://ufpr.dl.sourceforge.net/project/sbcl/sbcl/1.2.9/sbcl-1.2.9-x86-64-linux-binary.tar.bz2
-tar -xjf sbcl-1.2.9-x86-64-linux-binary.tar.bz2
-cd sbcl-1.2.9-x86-64-linux/
+cd ~/Downloads
+mkdir sbcl
+cd sbcl
+curl -O http://ufpr.dl.sourceforge.net/project/sbcl/sbcl/1.3.8/sbcl-1.3.8-x86-64-linux-binary.tar.bz2
+curl -O http://ufpr.dl.sourceforge.net/project/sbcl/sbcl/1.3.8/sbcl-1.3.8-crhodes.asc
+bunzip2 sbcl-1.3.8-x86-64-linux-binary.tar.bz2
+
+gpg --keyserver pgp.mit.edu --recv-keys 100D63CD
+gpg --verify sbcl-1.3.8-crhodes.asc
+cat sbcl-1.3.8-crhodes.asc
+sha256sum sbcl-1.3.8-x86-64-linux-binary.tar
+
+tar -xvf sbcl-1.3.8-x86-64-linux-binary.tar 
+cd sbcl-1.3.8-x86-64-linux/
 sudo bash install.sh
 
 # Build Electrum
