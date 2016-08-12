@@ -5,7 +5,7 @@ sudo apt-get install -y chromium keepass2 git feh redshift transmission-gtk \
   virtualbox units newsbeuter pidgin pidgin-otr vlc arandr cheese xdotool \
   flashplugin-nonfree zathura zathura-djvu zathura-ps fonts-inconsolata \
   xscreensaver xscreensaver-gl xscreensaver-gl-extra xscreensaver-data \
-  xscreensaver-data-extra ntp ntpdate xcape curl xfonts-terminus
+  xscreensaver-data-extra ntp ntpdate xcape curl xfonts-terminus shotwell
 
 # Dev stuff
 
