@@ -11,7 +11,8 @@ sudo apt-get install -y chromium keepass2 git feh redshift transmission-gtk \
 
 sudo apt-get install -y make automake autoconf libtool autogen patch meld \
   cmake gdb valgrind hunspell scala ruby clang llvm subversion python-dev \
-  libxml2-dev libxslt-dev virtualenvwrapper coq proofgeneral swi-prolog
+  libxml2-dev libxslt-dev virtualenvwrapper coq proofgeneral swi-prolog \
+  build-essential libssl-dev libcurl4-openssl-dev libreadline-dev
 
 # Build SBCL
 
@@ -51,9 +52,6 @@ sudo make install
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
-
-sudo apt-get install -y build-essential libssl-dev libcurl4-openssl-dev \
-  libreadline-dev
 
 # Python
 
