@@ -4,11 +4,6 @@
 
 sudo npm -g install jslint
 
-# Ruby
-
-rbenv install 2.1.0 -k
-rbenv global 2.1.0
-
 # install useful ruby gems
 gem install veewee
 gem install sass
