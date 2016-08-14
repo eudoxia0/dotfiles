@@ -1,9 +1,9 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.30 for eudoxia on Mon Oct 12 13:25:01 2015.
+# Written by xscreensaver-demo 5.30 for eudoxia on Sun Aug 14 11:25:06 2016.
 # http://www.jwz.org/xscreensaver/
 
-timeout:	1:40:00
-cycle:		0:02:00
+timeout:	12:00:00
+cycle:		0:01:00
 lock:		False
 lockTimeout:	0:00:00
 passwdTimeout:	0:00:30
@@ -29,7 +29,7 @@ dpmsQuickOff:	False
 dpmsStandby:	2:00:00
 dpmsSuspend:	2:00:00
 dpmsOff:	4:00:00
-grabDesktopImages:  True
+grabDesktopImages:  False
 grabVideoFrames:    False
 chooseRandomImages: False
 imageDirectory:	
@@ -37,7 +37,7 @@ imageDirectory:
 mode:		random
 selected:	-1
 
-textMode:	date
+textMode:	url
 textLiteral:	XScreenSaver
 textFile:	
 textProgram:	fortune
@@ -46,17 +46,17 @@ textURL:	http://planet.debian.org/rss20.xml
 programs:								      \
 -				maze -root				    \n\
 - GL: 				superquadrics -root			    \n\
-				attraction -root			    \n\
+-				attraction -root			    \n\
 -				blitspin -root				    \n\
 -				greynetic -root				    \n\
--				helix -root				    \n\
--				hopalong -root				    \n\
+				helix -root				    \n\
+				hopalong -root				    \n\
 				imsmap -root				    \n\
 -				noseguy -root				    \n\
 -				pyro -root				    \n\
 -				qix -root				    \n\
 -				rocks -root				    \n\
--				rorschach -root				    \n\
+				rorschach -root				    \n\
 -				decayscreen -root			    \n\
 -				flame -root				    \n\
 -				halo -root				    \n\
@@ -72,6 +72,7 @@ programs:								      \
 -				goop -root				    \n\
 -				grav -root				    \n\
 				ifs -root				    \n\
+-				unicode -root				    \n\
 - GL: 				jigsaw -root				    \n\
 				julia -root				    \n\
 -				kaleidescope -root			    \n\
@@ -89,19 +90,19 @@ programs:								      \
 - GL: 				sproingies -root			    \n\
 -				starfish -root				    \n\
 -				strange -root				    \n\
-				swirl -root				    \n\
-				triangle -root				    \n\
+-				swirl -root				    \n\
+-				triangle -root				    \n\
 -				xjack -root				    \n\
 -				xlyap -root				    \n\
 - GL: 				atlantis -root				    \n\
--				bsod -root				    \n\
+				bsod -root				    \n\
 - GL: 				bubble3d -root				    \n\
-- GL: 				cage -root				    \n\
+  GL: 				cage -root				    \n\
 -				crystal -root				    \n\
 -				cynosure -root				    \n\
 				discrete -root				    \n\
 -				distort -root				    \n\
-				epicycle -root				    \n\
+-				epicycle -root				    \n\
 				flow -root				    \n\
 - GL: 				glplanet -root				    \n\
 -				interference -root			    \n\
@@ -117,7 +118,7 @@ programs:								      \
 				ccurve -root				    \n\
 -				compass -root				    \n\
 -				deluxe -root				    \n\
--				demon -root				    \n\
+				demon -root				    \n\
 - GL: 				extrusion -root				    \n\
 				loop -root				    \n\
 -				penetrate -root				    \n\
@@ -136,7 +137,7 @@ programs:								      \
 - GL: 				gflux -root				    \n\
 -				nerverot -root				    \n\
 				xrayswarm -root				    \n\
--				xspirograph -root			    \n\
+				xspirograph -root			    \n\
 - GL: 				circuit -root				    \n\
 - GL: 				dangerball -root			    \n\
 - GL: 				engine -root				    \n\
@@ -148,10 +149,10 @@ programs:								      \
 -				speedmine -root				    \n\
 - GL: 				starwars -root				    \n\
 - GL: 				stonerview -root			    \n\
--				vermiculate -root			    \n\
+				vermiculate -root			    \n\
 -				whirlwindwarp -root			    \n\
 -				zoom -root				    \n\
--				anemone -root				    \n\
+				anemone -root				    \n\
 				apollonian -root			    \n\
 - GL: 				boxed -root				    \n\
 - GL: 				cubenetic -root				    \n\
@@ -160,7 +161,7 @@ programs:								      \
 -				fluidballs -root			    \n\
 - GL: 				flurry -root				    \n\
 - GL: 				glblur -root				    \n\
-  GL: 				glsnake -root				    \n\
+- GL: 				glsnake -root				    \n\
 -				halftone -root				    \n\
 - GL: 				juggler3d -root				    \n\
 - GL: 				lavalite -root				    \n\
@@ -168,7 +169,7 @@ programs:								      \
 - GL: 				queens -root				    \n\
 - GL: 				sballs -root				    \n\
   GL: 				spheremonics -root			    \n\
--				thornbird -root				    \n\
+				thornbird -root				    \n\
 -				twang -root				    \n\
 - GL: 				antspotlight -root			    \n\
 -				apple2 -root				    \n\
@@ -192,12 +193,12 @@ programs:								      \
 -				metaballs -root				    \n\
 - GL: 				mirrorblob -root			    \n\
 -				piecewise -root				    \n\
-  GL: 				polytopes -root				    \n\
+- GL: 				polytopes -root				    \n\
 -				pong -root				    \n\
 -				popsquares -root			    \n\
-  GL: 				surfaces -root				    \n\
+- GL: 				surfaces -root				    \n\
 -				xanalogtv -root				    \n\
--				abstractile -root			    \n\
+				abstractile -root			    \n\
 				anemotaxis -root			    \n\
 - GL: 				antinspect -root			    \n\
 -				fireworkx -root				    \n\
@@ -243,13 +244,12 @@ programs:								      \
 - GL: 				companioncube -root			    \n\
 - GL: 				hilbert -root				    \n\
 - GL: 				tronbit -root				    \n\
--				unicode -root				    \n\
-  GL: 				geodesic -root				    \n\
+- GL: 				geodesic -root				    \n\
 				hexadrop -root				    \n\
-- GL: 				kaleidocycle -root			    \n\
+  GL: 				kaleidocycle -root			    \n\
 - GL: 				quasicrystal -root			    \n\
-  GL: 				unknownpleasures -root			    \n\
-  GL: 				projectiveplane -root			    \n\
+- GL: 				unknownpleasures -root			    \n\
+- GL: 				projectiveplane -root			    \n\
 -				tessellimage -root			    \n\
 - GL: 				winduprobot -root			    \n\
 
