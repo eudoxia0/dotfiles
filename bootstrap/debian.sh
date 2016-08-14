@@ -56,6 +56,9 @@ git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/r
 rbenv install 2.1.0 -k
 rbenv global 2.1.0
 
+gem install sass
+gem install jekyll
+
 # Python
 
 sudo apt-get install python-pip
