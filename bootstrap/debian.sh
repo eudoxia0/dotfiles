@@ -64,12 +64,6 @@ gem install jekyll
 sudo apt-get install python-pip
 sudo pip install ansible
 
-# Vagrant
-
-curl -o vagrant.deb https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2_x86_64.deb
-sudo dpkg -i vagrant.deb
-rm vagrant.deb
-
 # Haskell
 
 wget -q -O- https://s3.amazonaws.com/download.fpcomplete.com/debian/fpco.key | sudo apt-key add -
