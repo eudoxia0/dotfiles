@@ -32,6 +32,14 @@ tar -xvf sbcl-1.3.8-x86-64-linux-binary.tar
 cd sbcl-1.3.8-x86-64-linux/
 sudo bash install.sh
 
+# Quicklisp
+
+curl -o /tmp/ql.lisp http://beta.quicklisp.org/quicklisp.lisp
+sbcl --no-sysinit --no-userinit --load /tmp/ql.lisp \
+  --eval '(quicklisp-quickstart:install :path ".quicklisp")' \
+  --quit
+sbcl --eval '(ql:quickload :quicklisp-slime-helper)' --quit
+
 # Build Electrum
 
 sudo apt-get install -y python-qt4 python-pip
