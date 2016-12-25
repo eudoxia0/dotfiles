@@ -59,6 +59,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "urxvt", NULL };
 static const char *browsercmd[] = { "chromium", NULL };
 static const char *filemancmd[] = { "pcmanfm", NULL };
+static const char *lockcmd[] = { "xscreensaver-command -lock", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -98,6 +99,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_c,      spawn,          {.v = termcmd } },
         { MODKEY|ControlMask,           XK_w,      spawn,          {.v = browsercmd } },
         { MODKEY|ControlMask,           XK_f,      spawn,          {.v = filemancmd } },
+        { MODKEY,                       XK_x,      spawn,          {.v = lockcmd } },
 };
 
 /* button definitions */
