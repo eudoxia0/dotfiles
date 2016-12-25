@@ -5,7 +5,8 @@ sudo apt-get install -y chromium keepass2 git feh redshift transmission-gtk \
   virtualbox units newsbeuter pidgin pidgin-otr vlc arandr cheese xdotool \
   flashplugin-nonfree zathura zathura-djvu zathura-ps fonts-inconsolata \
   xscreensaver xscreensaver-gl xscreensaver-gl-extra xscreensaver-data \
-  xscreensaver-data-extra ntp ntpdate xcape curl xfonts-terminus shotwell
+  xscreensaver-data-extra ntp ntpdate xcape curl xfonts-terminus shotwell \
+  flashplugin-nonfree
 
 # Dev stuff
 
@@ -84,3 +85,5 @@ sudo apt-get install -y stack
 
 sudo apt-get install -y texlive-base texlive-math-extra texlive-latex-recommended \
     texlive-publishers texlive-latex-extra
+
+# Inform
