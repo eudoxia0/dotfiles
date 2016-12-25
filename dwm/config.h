@@ -62,6 +62,7 @@ static const char *filemancmd[] = { "pcmanfm", NULL };
 static const char *lockcmd[] = { "xscreensaver-command -lock", NULL };
 static const char *librarycmd[] = { "calibre", NULL };
 static const char *passmancmd[] = { "keepass2", NULL };
+static const char *torcmd[] = { "torbrowser-launcher", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -103,6 +104,7 @@ static Key keys[] = {
         { MODKEY|ControlMask,           XK_f,      spawn,          {.v = filemancmd } },
         { MODKEY|ControlMask,           XK_b,      spawn,          {.v = librarycmd } },
         { MODKEY|ControlMask,           XK_k,      spawn,          {.v = passmancmd } },
+        { MODKEY|ControlMask,           XK_t,      spawn,          {.v = torcmd } },
         { MODKEY,                       XK_x,      spawn,          {.v = lockcmd } },
 };
 
