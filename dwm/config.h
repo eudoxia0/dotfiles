@@ -104,7 +104,7 @@ static Key keys[] = {
         { MODKEY|ControlMask,           XK_f,      spawn,          {.v = filemancmd } },
         { MODKEY|ControlMask,           XK_b,      spawn,          {.v = librarycmd } },
         { MODKEY|ControlMask,           XK_k,      spawn,          {.v = passmancmd } },
-        { MODKEY|ControlMask,           XK_t,      spawn,          {.v = torcmd } },
+        { MODKEY|ControlMask,           XK_p,      spawn,          {.v = torcmd } },
         { MODKEY,                       XK_x,      spawn,          {.v = lockcmd } },
 };
 
