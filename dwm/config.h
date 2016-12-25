@@ -57,10 +57,12 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
+static const char *browsercmd[] = { "chromium", NULL };
+static const char *filemancmd[] = { "pcmanfm", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },     // Spawn terminal
+        // Core
 	{ MODKEY,                       XK_b,      togglebar,      {0} },                 // Toggle modeline
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },          // Next window
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },          // Previous window
@@ -92,6 +94,10 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },                // Quit
+        // Applications
+	{ MODKEY,                       XK_c,      spawn,          {.v = termcmd } },
+        { MODKEY|ControlMask,           XK_w,      spawn,          {.v = browsercmd } },
+        { MODKEY|ControlMask,           XK_f,      spawn,          {.v = filemancmd } },
 };
 
 /* button definitions */
