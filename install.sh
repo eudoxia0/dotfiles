@@ -11,6 +11,6 @@ set_up "Common Lisp" lisp
 set_up "Emacs" emacs
 set_up "shell" shell
 set_up "X11" x11
-set_up "StumpWM" stumpwm
+set_up "dwm" dwm
 set_up "scripts" scripts
 set_up "other configuration" config
