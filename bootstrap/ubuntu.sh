@@ -40,21 +40,6 @@ rbenv global 2.1.0
 gem install sass
 gem install jekyll
 
-# Docker
-
-sudo apt-get install -y apt-transport-https ca-certificates
-sudo apt-key adv \
-  --keyserver hkp://p80.pool.sks-keyservers.net:80 \
-  --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
-# Add docker to sources.list
-sudo gedit /etc/apt/sources.list.d/docker.list
-sudo apt-get update
-sudo apt-get install -y docker-engine
-sudo systemctl enable docker
-sudo usermod -aG docker eudoxia
-
-sudo apt-get install -y python-pip
-
 # Qt
 
 sudo apt-get install -y qt4-qtconfig
