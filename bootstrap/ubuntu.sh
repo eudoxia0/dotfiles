@@ -1,20 +1,26 @@
 # Personal
 
 sudo apt-get install -y chromium-browser keepass2 feh redshift transmission-gtk \
-     pcmanfm gimp inkscape gnuplot scrot calibre graphviz units pidgin \
-     pidgin-otr vlc arandr cheese xdotool fonts-inconsolata xscreensaver \
-     xscreensaver-gl xscreensaver-gl-extra xscreensaver-data \
-     xscreensaver-data-extra ntp ntpdate xcape leafpad texlive-base \
-     texlive-math-extra texlive-latex-recommended texlive-publishers \
-     texlive-latex-extra  xfonts-terminus lxappearance unrar-free pavucontrol \
-     youtube-dl torbrowser-launcher fonts-linuxlibertine gargoyle-free qtads \
-     fonts-ancient-scripts ttf-ancient-fonts openbabel gromacs
+     pcmanfm gimp inkscape gnuplot scrot calibre graphviz units \
+     vlc cheese xdotool fonts-inconsolata xscreensaver xscreensaver-data \
+     xscreensaver-gl xscreensaver-gl-extra xscreensaver-data-extra xcape \
+     leafpad unrar lxappearance youtube-dl fonts-linuxlibertine torbrowser-launcher \
+     gargoyle-free qtads fonts-ancient-scripts ttf-ancient-fonts openbabel gromacs
+
+# TeX
+
+sudo apt-get install -y texlive-base texlive-math-extra \
+     texlive-latex-recommended texlive-publishers texlive-latex-extra \
 
 # Programming
 
-sudo apt-get install -y git emacs make automake autoconf libtool autogen patch \
-  meld cmake gdb valgrind hunspell scala ruby clang llvm subversion python-dev \
-  libxml2-dev libxslt-dev virtualenvwrapper coq proofgeneral
+sudo apt-get install -y git subversion patch \
+    make automake autoconf libtool autogen cmake \
+    meld \
+    gdb valgrind \
+    emacs hunspell \
+    llvm clang \
+    coq
 
 # Lisp
 
