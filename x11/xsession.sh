@@ -1,7 +1,6 @@
 #!/bin/sh
 
 .scripts/rotate_wallpaper &
-.screenlayout/hdmi-work.sh &
 
 ## Ensure that the D-Bus Communication System is running properly to fix
 ## File management, authentication, and other essential system processes
