@@ -9,8 +9,5 @@ fi
 cp xsession.sh ~/.xsession
 cp xresources ~/.Xresources
 cp xscreensaver ~/.xscreensaver
-cp layout.sh ~/.screenlayout/default.sh
 cp redshift.conf ~/.config/redshift.conf
 cp gtkrc.conf ~/.gtkrc-2.0
-
-chmod +x ~/.screenlayout/default.sh
