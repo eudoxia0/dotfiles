@@ -31,19 +31,6 @@ sbcl --no-sysinit --no-userinit --load /tmp/ql.lisp \
   --quit
 sbcl --eval '(ql:quickload :quicklisp-slime-helper)' --quit
 
-# StumpWM
-
-cd ~
-git clone https://github.com/stumpwm/stumpwm.git
-cd stumpwm/
-autoconf
-./configure
-sbcl --eval '(ql:quickload (list :cl-ppcre :clx))' --quit
-make
-sudo make install
-cd ..
-rm -rf stumpwm/
-
 # Ruby
 
 sudo apt-get install -y rbenv ruby-build
