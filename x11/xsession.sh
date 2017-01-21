@@ -10,9 +10,6 @@
 #    eval "$(dbus-launch --sh-syntax --exit-with-session)"
 #fi
 
-#eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
-#export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
-
 # When pressed on their own (ie not modifying other keys), left and right shift
 # produce a left and right parenthesis, respectively
 xcape -e "Shift_L=parenleft;Shift_R=parenright"
@@ -24,7 +21,7 @@ xrdb .Xresources &
 numlockx &
 xsetroot -cursor_name left_ptr &
 #xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &
-transmission-gtk -m &
+#transmission-gtk -m &
 
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 
@@ -32,4 +29,14 @@ export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 #   /usr/bin/xdg-user-dirs-update
 #fi
 
+# Start dbus
+
+#sudo dbus-launch
+
+# Start the gnome keyring
+
+#eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
+#export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
+
 exec dwm
+#exec dbus-launch --exit-with-session dwm
