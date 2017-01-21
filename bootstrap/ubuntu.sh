@@ -7,7 +7,8 @@ sudo apt-get install -y chromium-browser keepass2 feh redshift transmission-gtk 
      leafpad unrar lxappearance youtube-dl fonts-linuxlibertine torbrowser-launcher \
      gargoyle-free qtads fonts-ancient-scripts ttf-ancient-fonts openbabel gromacs \
      libx11-dev libxft-dev libxinerama-dev \
-     dmenu
+     dmenu \
+     htop
 
 # TeX
 
