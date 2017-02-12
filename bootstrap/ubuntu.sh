@@ -8,7 +8,8 @@ sudo apt-get install -y chromium-browser keepass2 feh redshift transmission-gtk 
      gargoyle-free qtads fonts-ancient-scripts ttf-ancient-fonts openbabel gromacs \
      libx11-dev libxft-dev libxinerama-dev \
      dmenu \
-     htop
+     htop \
+     libimage-exiftool-perl
 
 # TeX
 
