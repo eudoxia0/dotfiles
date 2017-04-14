@@ -38,5 +38,6 @@ export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 #eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
 #export GNOME_KEYRING_CONTROL GNOME_KEYRING_PID GPG_AGENT_INFO SSH_AUTH_SOCK
 
-exec dwm
+GTK_IM_MODULE=uim
+exec spectrwm
 #exec dbus-launch --exit-with-session dwm
