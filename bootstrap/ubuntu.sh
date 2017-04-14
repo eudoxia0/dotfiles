@@ -9,7 +9,8 @@ sudo apt-get install -y chromium-browser keepass2 feh redshift transmission-gtk 
      libx11-dev libxft-dev libxinerama-dev \
      dmenu \
      htop \
-     libimage-exiftool-perl
+     libimage-exiftool-perl \
+     spectrwm uim
 
 # TeX
 
