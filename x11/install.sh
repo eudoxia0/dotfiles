@@ -11,3 +11,5 @@ cp xresources ~/.Xresources
 cp xscreensaver ~/.xscreensaver
 cp redshift.conf ~/.config/redshift.conf
 cp gtkrc.conf ~/.gtkrc-2.0
+cp compose.txt ~/.XCompose
+cp modmpa.txt ~/.Xmodmap
