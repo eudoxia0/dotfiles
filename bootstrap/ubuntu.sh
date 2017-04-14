@@ -12,6 +12,8 @@ sudo apt-get install -y chromium-browser keepass2 feh redshift transmission-gtk 
      libimage-exiftool-perl \
      spectrwm uim
 
+im-config -n uim
+
 # TeX
 
 sudo apt-get install -y texlive-base texlive-math-extra \
