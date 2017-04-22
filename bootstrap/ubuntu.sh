@@ -27,25 +27,8 @@ sudo apt-get install -y git subversion patch \
     gdb valgrind \
     emacs hunspell \
     llvm clang \
-    coq
-
-# Lisp
-
-cd ~/Downloads
-mkdir sbcl
-cd sbcl
-curl -O http://ufpr.dl.sourceforge.net/project/sbcl/sbcl/1.3.8/sbcl-1.3.8-x86-64-linux-binary.tar.bz2
-curl -O http://ufpr.dl.sourceforge.net/project/sbcl/sbcl/1.3.8/sbcl-1.3.8-crhodes.asc
-bunzip2 sbcl-1.3.8-x86-64-linux-binary.tar.bz2
-
-gpg --keyserver pgp.mit.edu --recv-keys 100D63CD
-gpg --verify sbcl-1.3.8-crhodes.asc
-cat sbcl-1.3.8-crhodes.asc
-sha256sum sbcl-1.3.8-x86-64-linux-binary.tar
-
-tar -xvf sbcl-1.3.8-x86-64-linux-binary.tar
-cd sbcl-1.3.8-x86-64-linux/
-sudo bash install.sh
+    coq \
+    sbcl
 
 # Quicklisp
 
