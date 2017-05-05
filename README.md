@@ -2,7 +2,7 @@
 
 # Setup
 
-1. Clone the repository: `git clone git@github.com:eudoxia0/dotfiles.git`
+1. Clone the repository: `git clone https://github.com/eudoxia0/dotfiles.git`
 2. `./install.sh`
 
 # License
