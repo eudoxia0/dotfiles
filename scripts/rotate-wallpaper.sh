@@ -1,15 +1,15 @@
-FOLDER="/home/eudoxia/images/wallpapers"
+FOLDER="$HOME/.walls"
 DELAY=300
 
 cd $FOLDER
 
-loop () {
+change_wallpaper() {
     NUMBER=$(ls -1 | wc -l)
     RAN=$(($RANDOM%$NUMBER+1))
     FILE=$(ls -1 | sed -n ${RAN}p)
     echo $FILE
     feh --bg-fill "$FOLDER/$FILE"
     sleep $DELAY # Time between change
-    loop
 }
-loop
+
+while true; do change_wallpaper; done
