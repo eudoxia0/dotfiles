@@ -18,6 +18,7 @@ im-config -n uim
 
 sudo apt-get install -y texlive-base texlive-math-extra \
      texlive-latex-recommended texlive-publishers texlive-latex-extra \
+     texinfo
 
 # Programming
 
@@ -37,6 +38,17 @@ sbcl --no-sysinit --no-userinit --load /tmp/ql.lisp \
   --eval '(quicklisp-quickstart:install :path ".quicklisp")' \
   --quit
 sbcl --eval '(ql:quickload :quicklisp-slime-helper)' --quit
+
+# StumpWM
+
+sbcl --noinform --eval '(ql:quickload (list :clx :cl-ppcre))' --quit
+cd ~/Downloads
+git clone https://github.com/stumpwm/stumpwm.git
+cd stumpwm
+./autogen.sh
+./configure
+make
+sudo make install
 
 # Ruby
 
