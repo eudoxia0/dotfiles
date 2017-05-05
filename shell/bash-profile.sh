@@ -4,6 +4,9 @@
 export GTK_IM_MODULE=xim
 export QT_IM_MODULE=xim
 
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 # OPAM configuration
