@@ -13,3 +13,8 @@ cp redshift.conf ~/.config/redshift.conf
 cp gtkrc.conf ~/.gtkrc-2.0
 cp compose.txt ~/.XCompose
 cp modmap.txt ~/.Xmodmap
+
+WALLPAPERS_DIR=~/.walls
+
+mkdir -p $WALLPAPERS_DIR
+cp -R ../wallpapers/. $WALLPAPERS_DIR
