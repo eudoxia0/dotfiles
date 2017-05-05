@@ -1,6 +1,6 @@
 ;;;; Coq
 
-(load-file "/usr/share/emacs/site-lisp/proofgeneral/generic/proof-site.el")
+;(load-file "/usr/share/emacs/site-lisp/proofgeneral/generic/proof-site.el")
 
 (require 'unicode-tokens)
 
