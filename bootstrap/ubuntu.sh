@@ -41,8 +41,8 @@ sbcl --eval '(ql:quickload :quicklisp-slime-helper)' --quit
 # Ruby
 
 sudo apt-get install -y rbenv ruby-build
-rbenv install 2.1.0 -k
-rbenv global 2.1.0
+rbenv install 2.4.0 -k
+rbenv global 2.4.0
 
 gem install sass
 gem install jekyll
