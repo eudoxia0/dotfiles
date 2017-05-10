@@ -31,7 +31,7 @@
 
 ! cursor
 *.cursorColor:  #eeeeee
-*cursorBlink: 1
+*cursorBlink: 0
 
 ! padding
 *internalBorder: 10
