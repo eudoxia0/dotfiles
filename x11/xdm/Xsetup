@@ -1,0 +1,20 @@
+#!/bin/sh
+#
+# This script is run as root before showing login widget.
+
+#xsetroot -solid rgb:8/8/8
+
+#--- set Shutdown/Reboot buttons
+# from http://cafim.sssup.it/~giulio/other/Customization_XDM.html
+
+(
+xmessage -buttons Shutdown:20,Reboot:21 "" ;
+case $? in
+ 20)
+ exec /sbin/poweroff;;
+ 21)
+ exec /sbin/reboot;;
+ *)
+ echo "Xmessage closed on `date`";;
+esac
+)&
