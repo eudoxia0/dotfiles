@@ -91,7 +91,7 @@
 ;;;; Autotiling
 ;;;; from https://github.com/Bronsa/bronsa-overlay/blob/master/x11-wm/stumpwm/files/contrib/autotile.lisp
 
-
+#|
 (defun do-auto-tile (group)
   (let* ((tlen (length (group-windows group)))
          (len (1- tlen)))
@@ -122,7 +122,7 @@
 (add-hook *new-window-hook* #'autotile-hook)
 (add-hook *destroy-window-hook* #'autotile-hook)
 
-
+|#
 ;;;; Keybindings
 
 
