@@ -6,6 +6,9 @@ case $- in
       *) return;;
 esac
 
+# In xterm, turn the cursor into an I-beam
+echo -e -n "\x1b[\x36 q"
+
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
 # append to the history file, don't overwrite it
