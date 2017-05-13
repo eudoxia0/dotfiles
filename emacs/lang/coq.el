@@ -2,7 +2,7 @@
 
 ;(load-file "/usr/share/emacs/site-lisp/proofgeneral/generic/proof-site.el")
 
-(require 'unicode-tokens)
+;(require 'unicode-tokens)
 
 (add-hook 'coq-mode-hook
           (lambda ()
