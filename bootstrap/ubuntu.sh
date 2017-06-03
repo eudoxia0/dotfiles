@@ -34,7 +34,7 @@ sudo apt-get install -y git subversion patch \
 
 curl -o /tmp/ql.lisp https://beta.quicklisp.org/quicklisp.lisp
 sbcl --no-sysinit --no-userinit --load /tmp/ql.lisp \
-  --eval '(quicklisp-quickstart:install :path ".quicklisp")' \
+  --eval "(quicklisp-quickstart:install :path \"$HOME/.quicklisp\")" \
   --quit
 
 # StumpWM
