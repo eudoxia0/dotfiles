@@ -39,7 +39,7 @@ sbcl --no-sysinit --no-userinit --load /tmp/ql.lisp \
 
 # StumpWM
 
-sbcl --noinform --eval '(ql:quickload (list :clx :cl-ppcre))' --quit
+sbcl --noinform --eval '(ql:quickload (list :clx :cl-ppcre :alexandria))' --quit
 cd ~/Downloads
 git clone https://github.com/stumpwm/stumpwm.git
 cd stumpwm
