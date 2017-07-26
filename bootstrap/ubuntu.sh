@@ -9,7 +9,8 @@ sudo apt-get install -y chromium-browser keepass2 feh redshift transmission-gtk 
      libx11-dev libxft-dev libxinerama-dev \
      htop \
      libimage-exiftool-perl \
-     uim
+     uim \
+     arc-theme
 
 im-config -n uim
 
