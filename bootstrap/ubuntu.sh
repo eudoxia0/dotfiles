@@ -7,10 +7,10 @@ sudo apt-get install -y chromium-browser keepass2 feh redshift transmission-gtk 
      leafpad unrar lxappearance youtube-dl fonts-linuxlibertine torbrowser-launcher \
      gargoyle-free qtads fonts-ancient-scripts ttf-ancient-fonts openbabel gromacs \
      libx11-dev libxft-dev libxinerama-dev \
-     dmenu \
      htop \
      libimage-exiftool-perl \
-     spectrwm uim
+     uim \
+     arc-theme
 
 im-config -n uim
 
@@ -35,13 +35,12 @@ sudo apt-get install -y git subversion patch \
 
 curl -o /tmp/ql.lisp https://beta.quicklisp.org/quicklisp.lisp
 sbcl --no-sysinit --no-userinit --load /tmp/ql.lisp \
-  --eval '(quicklisp-quickstart:install :path ".quicklisp")' \
+  --eval "(quicklisp-quickstart:install :path \"$HOME/.quicklisp\")" \
   --quit
-sbcl --eval '(ql:quickload :quicklisp-slime-helper)' --quit
 
 # StumpWM
 
-sbcl --noinform --eval '(ql:quickload (list :clx :cl-ppcre))' --quit
+sbcl --noinform --eval '(ql:quickload (list :clx :cl-ppcre :alexandria))' --quit
 cd ~/Downloads
 git clone https://github.com/stumpwm/stumpwm.git
 cd stumpwm
