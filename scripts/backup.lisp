@@ -8,27 +8,29 @@ same name in `parent`."
                     :output t
                     :error-output t))
 
-(defparameter *directories-to-synchronize*
+(defparameter +directories-to-synchronize+
   (list "code" "images" "writing" "self" "backup" "library" "music" "work"
         "wiki" ".ssh" ".purple" ".fonts"))
 
-(defparameter *source-parent-directory* (user-homedir-pathname)
+(defparameter +source-parent-directory+ (user-homedir-pathname)
   "The directory containing the directories we want to back up.")
 
 (defun backup-directory ()
   (let ((username (uiop:run-program "whoami" :output '(:string :stripped t))))
     (make-pathname :directory (list :absolute "media" username "backup"))))
 
-(defun absolute-source-pathname (directory-name)
-  (make-pathname :directory `(:absolute ,@(rest (pathname-directory *source-parent-directory*))
-                                        ,directory-name)))
-
 ;;; Interface
 
 (defun make-backup ()
   "Back up local directories to the backup store."
   (let ((backup-directory (backup-directory)))
-    (loop for directory-name in *directories-to-synchronize* do
-      (let ((source-directory (absolute-source-pathname directory-name)))
-        (synchronize-directories :source source-directory
-                                 :parent backup-directory)))))
+    (loop for directory-name in +directories-to-synchronize+ do
+      (synchronize-directories :source (merge-pathnames directory-name +source-parent-directory+)
+                               :parent backup-directory))))
+
+(defun restore-backup ()
+  "Restore the backup."
+  (let ((backup-directory (backup-directory)))
+    (loop for directory-name in +directories-to-synchronize+ do
+      (synchronize-directories :source (merge-pathnames directory-name backup-directory)
+                               :parent +source-parent-directory+))))
