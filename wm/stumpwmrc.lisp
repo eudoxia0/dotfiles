@@ -5,7 +5,7 @@
 ;;;; Constants
 
 
-(defparameter +browser+ "chromium-browser")
+(defparameter +browser+ "firefox")
 
 
 ;;;; Commands
@@ -223,6 +223,26 @@
 
 (add-hook *urgent-window-hook* 'echo-urgent-window)
 
+;;;; Battery checker
+
+(defun battery-level ()
+  "Run the ACPI command, and return the battery's charge percentage as an
+integer 1-100."
+  (ppcre:register-groups-bind (percentage) ("([0-9]+)%" (run-shell-command "acpi" t))
+    (parse-integer percentage)))
+
+(defun check-battery ()
+  "Check the current battery level, notifying the user if it's full or low."
+  (flet ((notify (message)
+           (run-shell-command (format nil "notify-send --urgency=critical --category=device ~S" message))))
+    (let ((l (battery-level)))
+      (cond ((= l 100)
+             ;; Remind me to unplug the cable
+             (notify "Battery is full"))
+            ((<= l 10)
+             ;; The battery is low
+             (notify (format nil "Battery at ~A%" l))))))
+  (values))
 
 ;;;; Theme
 
@@ -266,6 +286,10 @@
  "gselect 1"
  "gaps")
 
+;; Start the battery-checking thread
+(run-with-timer 5
+                120 ;; Repeat every two minutes
+                #'check-battery)
 
 
 ;; from https://github.com/lidstah/liddotfiles/blob/master/stumpwmrc_BLUEZ
