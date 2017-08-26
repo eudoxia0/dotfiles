@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-sbcl --noinform --load ~/.sbclrc --script $1
+sbcl --noinform --load ~/.sbclrc --script $1 ${@:2}
