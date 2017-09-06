@@ -1,6 +1,6 @@
 # Personal
 
-sudo apt-get install -y chromium-browser keepass2 feh redshift transmission-gtk \
+sudo apt-get install -y firefox keepass2 feh redshift transmission-gtk \
      pcmanfm gimp inkscape gnuplot scrot calibre graphviz units numlockx \
      vlc cheese xdotool fonts-inconsolata xscreensaver xscreensaver-data \
      xscreensaver-gl xscreensaver-gl-extra xscreensaver-data-extra xcape \
@@ -22,9 +22,8 @@ sudo apt-get install -y texlive-base texlive-math-extra \
 
 # Programming
 
-sudo apt-get install -y git subversion patch \
+sudo apt-get install -y git subversion patch meld \
     make automake autoconf libtool autogen cmake \
-    meld \
     gdb valgrind \
     emacs hunspell \
     llvm clang \
@@ -37,6 +36,13 @@ curl -o /tmp/ql.lisp https://beta.quicklisp.org/quicklisp.lisp
 sbcl --no-sysinit --no-userinit --load /tmp/ql.lisp \
   --eval "(quicklisp-quickstart:install :path \"$HOME/.quicklisp\")" \
   --quit
+
+# Java
+
+sudo apt-get install -y python-software-properties
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
 
 # StumpWM
 
