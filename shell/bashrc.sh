@@ -85,9 +85,8 @@ man() {
 
 # Variables
 
-# Let's make Java a little less ugly (lol)
-
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
+# Java
+export JAVA_HOME="/usr/lib/jvm/java-8-oracle"
 
 # less
 export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
