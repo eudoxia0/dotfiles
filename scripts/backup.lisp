@@ -1,4 +1,5 @@
 #!/usr/bin/env cl
+; -*- Mode:Lisp -*-
 
 (defun synchronize-directories (&key source parent)
   "Synchronize the contents of the `source` directory to a subdirectory of the
