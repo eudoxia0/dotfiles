@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-cp stumpwmrc.lisp ~/.stumpwmrc
+mkdir -p ~/.fvwm
+cp fvwm.conf ~/.fvwm/config
