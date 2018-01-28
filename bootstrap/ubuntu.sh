@@ -6,7 +6,7 @@ sudo apt-get install -y firefox keepass2 feh redshift transmission-gtk \
      xscreensaver-gl xscreensaver-gl-extra xscreensaver-data-extra xcape \
      leafpad unrar lxappearance youtube-dl fonts-linuxlibertine torbrowser-launcher \
      gargoyle-free qtads fonts-ancient-scripts ttf-ancient-fonts openbabel gromacs \
-     libx11-dev libxft-dev libxinerama-dev \
+     libx11-dev libxft-dev libxinerama-dev fvwm \
      htop \
      libimage-exiftool-perl \
      uim \
@@ -43,17 +43,6 @@ sudo apt-get install -y python-software-properties
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-java8-installer
-
-# StumpWM
-
-sbcl --noinform --eval '(ql:quickload (list :clx :cl-ppcre :alexandria))' --quit
-cd ~/Downloads
-git clone https://github.com/stumpwm/stumpwm.git
-cd stumpwm
-./autogen.sh
-./configure
-make
-sudo make install
 
 # Ruby
 
