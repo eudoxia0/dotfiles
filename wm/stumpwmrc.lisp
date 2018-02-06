@@ -70,6 +70,9 @@
   "Send a click."
   (run-shell-command "xdotool click 1"))
 
+(defcommand middle-click () ()
+  "Send a middle click."
+  (run-shell-command "xdotool click 2"))
 
 (defcommand input-click (times)
   ((:number "Number of clicks to send: "))
@@ -197,6 +200,7 @@
 
 
 (define-key *top-map* (kbd "s-e") "single-click")
+(define-key *top-map* (kbd "s-v") "middle-click")
 
 
 ; Take a screenshot
