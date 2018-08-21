@@ -44,7 +44,6 @@ cp psqlrc.txt ~/.psqlrc
 cp xscreensaver.txt ~/.xscreensaver
 cp gtkrc.txt ~/.gtkrc-2.0
 cp ctwmrc.txt ~/.ctwmrc
-cp profile.sh ~/.profile
 cp bashrc.sh ~/.bashrc
 
 mkdir -p ~/.scripts
