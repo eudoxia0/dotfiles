@@ -42,6 +42,7 @@ cp psqlrc.txt ~/.psqlrc
 cp xscreensaver.txt ~/.xscreensaver
 cp gtkrc.txt ~/.gtkrc-2.0
 cp ctwmrc.txt ~/.ctwmrc
+cp bashrc.sh ~/.bashrc
 
 mkdir ~/.scripts
 cp battery.sh ~/.scripts/battery.sh
