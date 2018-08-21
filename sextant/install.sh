@@ -46,7 +46,7 @@ cp gtkrc.txt ~/.gtkrc-2.0
 cp ctwmrc.txt ~/.ctwmrc
 cp bashrc.sh ~/.bashrc
 
-mkdir ~/.scripts
+mkdir -p ~/.scripts
 cp battery.sh ~/.scripts/battery.sh
 cp backup.sh ~/.scripts/backup.sh
 chmod +x ~/.scripts/battery.sh
