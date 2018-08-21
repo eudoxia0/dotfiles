@@ -2,6 +2,6 @@
 
 # License
 
-Copyright (c) 2013-2018 Fernando Borretti (eudoxiahp@gmail.com)
+Copyright (c) 2013-2018 Fernando Borretti
 
 Released under the MIT license.
