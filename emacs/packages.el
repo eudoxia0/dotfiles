@@ -13,7 +13,7 @@
     rainbow-mode enh-ruby-mode web-mode projectile grizzl
     graphviz-dot-mode ess cmake-mode mediawiki scala-mode ensime
     powerline rust-mode tuareg adoc-mode ;pov-mode idris-mode
-    jsx-mode
+    jsx-mode sml-mode
     ;; disabled: rw-hunspell pep8
     ;; Other plugins
     rainbow-delimiters ecb auto-complete ag highlight-indentation
