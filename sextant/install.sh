@@ -22,10 +22,12 @@ sudo apt-get install -y git make emacs25 duplicity gpg sqlite3 libsqlite3-dev \
 sudo apt-get install -y openjdk-8-jdk maven
 
 # Ruby
-sudo apt-get install -y rbenv ruby-build
-rbenv install 2.4.0
-rbenv global 2.4.0
-rbenv exec gem install jekyll
+if ! [ -x "$(command -v rbenv)" ]; then
+    sudo apt-get install -y rbenv ruby-build
+    rbenv install 2.4.0
+    rbenv global 2.4.0
+    rbenv exec gem install jekyll
+fi
 
 # Haskell
 if ! [ -x "$(command -v stack)" ]; then
