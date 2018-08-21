@@ -1,12 +1,7 @@
 # eudoxia's dotfiles
 
-# Setup
-
-1. Clone the repository: `git clone https://github.com/eudoxia0/dotfiles.git`
-2. `./install.sh`
-
 # License
 
-Copyright (c) 2013-2017 Fernando Borretti (eudoxiahp@gmail.com)
+Copyright (c) 2013-2018 Fernando Borretti (eudoxiahp@gmail.com)
 
 Released under the MIT license.
