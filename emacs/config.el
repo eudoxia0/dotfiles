@@ -59,7 +59,7 @@
 
 ;; Font options
 (unicode-fonts-setup)
-(set-frame-font "Inconsolata 10")
+(set-frame-font "Inconsolata 12")
 
 ;;; Functionality
 (add-hook 'prog-mode-hook
