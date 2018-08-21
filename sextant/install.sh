@@ -35,10 +35,10 @@ sudo apt-get install -y git mlton smlnj
 
 # Config files and scripts
 
-cp gitconfig ~/.gitconfig
-cp psqlrc ~/.psqlrc
-cp xscreensaver ~/.xscreensaver
-cp gtkrc ~/.gtkrc-2.0
+cp gitconfig.txt ~/.gitconfig
+cp psqlrc.txt ~/.psqlrc
+cp xscreensaver.txt ~/.xscreensaver
+cp gtkrc.txt ~/.gtkrc-2.0
 
 mkdir ~/.scripts
 cp battery.sh ~/.scripts/battery.sh
