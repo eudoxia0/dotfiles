@@ -49,6 +49,7 @@ chmod +x ~/.scripts/backup.sh
 cp compose.txt ~/.XCompose
 cp modmap.txt ~/.Xmodmap
 cp xsession.sh ~/.xsession
+cp xresources.txt ~/.Xresources
 
 sudo cp xdm-xsetup /etc/X11/xdm/Xsetup
 sudo cp xdm-xstartup /etc/X11/xdm/Xstartup
