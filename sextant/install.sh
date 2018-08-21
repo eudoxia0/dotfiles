@@ -5,7 +5,7 @@ sudo apt-get install -y xserver-xorg-core xserver-xorg-video-intel \
      xserver-xorg-input-evdev x11-xserver-utils xinit xdm xterm ctwm
 
 # Sound
-sudo apt-get install pavucontrol pulseaudio pulseaudio-module-zeroconf \
+sudo apt-get install -y pavucontrol pulseaudio pulseaudio-module-zeroconf \
      alsa-utils avahi-daemon
 # stochastically experiment with alsamixer and pavucontrol until it works
 
