@@ -33,13 +33,18 @@ fi
 # SML
 sudo apt-get install -y git mlton smlnj
 
-# Copy files
+# Config files and scripts
+
 cp gitconfig ~/.gitconfig
 cp psqlrc ~/.psqlrc
 cp xscreensaver ~/.xscreensaver
 cp gtkrc ~/.gtkrc-2.0
+
 mkdir ~/.scripts
 cp battery.sh ~/.scripts/battery.sh
 cp backup.sh ~/.scripts/backup.sh
 chmod +x ~/.scripts/battery.sh
 chmod +x ~/.scripts/backup.sh
+
+cp compose.txt ~/.XCompose
+cp modmap.txt ~/.Xmodmap
