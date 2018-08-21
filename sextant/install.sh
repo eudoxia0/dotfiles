@@ -32,3 +32,7 @@ fi
 
 # SML
 sudo apt-get install -y git mlton smlnj
+
+# Copy files
+cp gitconfig ~/.gitconfig
+cp psqlrc ~/.psqlrc
