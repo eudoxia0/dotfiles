@@ -1,5 +1,7 @@
 # Run after bootstrap.sh
 
+sudo apt-get update
+
 # X11
 sudo apt-get install -y xserver-xorg-core xserver-xorg-video-intel \
      xserver-xorg-input-evdev x11-xserver-utils xinit xdm xterm ctwm
@@ -53,3 +55,5 @@ cp xresources.txt ~/.Xresources
 
 sudo cp xdm-xsetup /etc/X11/xdm/Xsetup
 sudo cp xdm-xstartup /etc/X11/xdm/Xstartup
+sudo chmod +x /etc/X11/xdm/Xsetup
+sudo chmod +x /etc/X11/xdm/Xstartup
