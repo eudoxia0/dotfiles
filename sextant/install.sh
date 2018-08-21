@@ -38,3 +38,5 @@ cp gitconfig ~/.gitconfig
 cp psqlrc ~/.psqlrc
 cp xscreensaver ~/.xscreensaver
 cp gtkrc ~/.gtkrc-2.0
+mkdir ~/.scripts
+cp battery.sh ~/.scripts/battery.sh
