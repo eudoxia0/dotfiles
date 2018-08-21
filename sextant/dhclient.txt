@@ -52,3 +52,5 @@ request subnet-mask, broadcast-address, time-offset, routers,
 #  rebind 2 2000/1/12 00:00:01;
 #  expire 2 2000/1/12 00:00:01;
 #}
+
+supersede domain-name-servers 8.8.8.8, 8.8.4.4;
