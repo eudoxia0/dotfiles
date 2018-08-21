@@ -40,3 +40,6 @@ cp xscreensaver ~/.xscreensaver
 cp gtkrc ~/.gtkrc-2.0
 mkdir ~/.scripts
 cp battery.sh ~/.scripts/battery.sh
+cp backup.sh ~/.scripts/backup.sh
+chmod +x ~/.scripts/battery.sh
+chmod +x ~/.scripts/backup.sh
