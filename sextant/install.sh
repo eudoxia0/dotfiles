@@ -37,3 +37,4 @@ sudo apt-get install -y git mlton smlnj
 cp gitconfig ~/.gitconfig
 cp psqlrc ~/.psqlrc
 cp xscreensaver ~/.xscreensaver
+cp gtkrc ~/.gtkrc-2.0
