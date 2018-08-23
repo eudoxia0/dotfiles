@@ -66,3 +66,6 @@ sudo chmod +x /etc/X11/xdm/Xstartup
 # Wallpapers
 mkdir -p ~/.walls
 cp -R wallpapers/. ~/.walls
+
+# Uninstall
+sudo apt-get -y remove bluetooth
