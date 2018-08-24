@@ -8,6 +8,6 @@ gs -dCompatibilityLevel=1.4 \
    -dNOPAUSE \
    -dBATCH \
    -sDEVICE=pdfwrite \
-   -sOutputFile=$2 \
+   -sOutputFile="$2" \
    -c ".setpdfwrite <</NeverEmbed [ ]>> setdistillerparams" \
-   -f $1
+   -f "$1"
