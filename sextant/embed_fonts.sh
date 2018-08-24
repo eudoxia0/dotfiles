@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
 # usage: embed_fonts.sh <input.pdf> <output.pdf>
 
-gs -dCompatibilityLevel=1.4 \
-   -dPDFSETTINGS=/screen \
-   -dCompressFonts=true \
-   -dSubsetFonts=true \
-   -dNOPAUSE \
+gs -dNOPAUSE \
    -dBATCH \
    -sDEVICE=pdfwrite \
+   -dPDFSETTINGS=/prepress \
+   -dEmbedAllFonts=true \
    -sOutputFile="$2" \
-   -c ".setpdfwrite <</NeverEmbed [ ]>> setdistillerparams" \
    -f "$1"
