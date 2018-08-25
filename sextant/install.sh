@@ -17,7 +17,7 @@ sudo apt-get install -y git make emacs25 duplicity gpg sqlite3 libsqlite3-dev \
     texlive-xetex firefox-esr xcape neofetch fonts-inconsolata xfonts-terminus \
     ttf-linux-libertine clang mupdf acpi viewnior lxappearance ntp feh gnuplot \
     xscreensaver xscreensaver-data-extra xscreensaver-gl xscreensaver-gl-extra \
-    git transmission-gtk djview4 kid3-qt mpv unrar
+    git transmission-gtk djview4 kid3-qt mpv unrar ttf-ancient-fonts
 
 # Java
 sudo apt-get install -y openjdk-8-jdk maven
