@@ -1,9 +1,6 @@
 # -*- mode: conf -*-
 
-
 ### Greek
-
-
 <Multi_key> <g> <a> : "α"
 <Multi_key> <g> <b> : "β"
 <Multi_key> <g> <g> : "γ"
@@ -31,13 +28,10 @@
 
 
 ### Spanish
-
-
 <Multi_key> <s> <n> : "ñ"
 
 
 ### Japanese
-
 
 ## Vowels
 <Multi_key> <j> <a> : "あ"
@@ -54,51 +48,38 @@
 <Multi_key> <j> <k> <e> : "け"
 <Multi_key> <j> <k> <o> : "こ"
 
-
 <Multi_key> <j> <s> <a> : "さ"
 <Multi_key> <j> <s> <h> <i> : "し"
 <Multi_key> <j> <s> <u> : "す"
 <Multi_key> <j> <s> <e> : "せ"
 <Multi_key> <j> <s> <o> : "そ"
 
-
 <Multi_key> <j> <t> <a> : "た"
 <Multi_key> <j> <t> <s> <u> : "つ"
 <Multi_key> <j> <t> <e> : "て"
 <Multi_key> <j> <t> <o> : "と"
 
-
 <Multi_key> <j> <c> <h> <i> : "ち"
 
-
 ### Emoji
-
-
 <Multi_key> <e> <c> : "😸"
 <Multi_key> <e> <s> : "¯\\_(ツ)_/¯"
 
-
 ### Typography
-
-
 <Multi_key> <period> <period> <period> : "…"
 <Multi_key> <n> <->      : "–"
 <Multi_key> <m> <->      : "— "
 
-
 ### Latex Text
-
 
 ## Operations
 <Multi_key> <l> <t> : "\\times"
-
 
 ## Delimiters
 <Multi_key> <l> <o> <b> : "\\left["
 <Multi_key> <l> <c> <b> : "\\left]"
 <Multi_key> <l> <o> <c> : "\\left{"
 <Multi_key> <l> <c> <c> : "\\left}"
-
 
 ## Sets
 <Multi_key> <l> <s> <u> : "\\cup"
@@ -107,10 +88,8 @@
 <Multi_key> <l> <s> <c> : "\\subset"
 <Multi_key> <l> <s> <0> : "\\emptyset"
 
-
 ## Special sets
 <Multi_key> <l> <r> : "\\mathbb{R}"
-
 
 ## Arrows
 <Multi_key> <l> <r> <a> : "\\rightarrow"
