@@ -26,20 +26,16 @@
 <Multi_key> <g> <r> : "ψ"
 <Multi_key> <g> <r> : "ω"
 
-
 ### Spanish
 <Multi_key> <s> <n> : "ñ"
 
-
 ### Japanese
-
 ## Vowels
 <Multi_key> <j> <a> : "あ"
 <Multi_key> <j> <e> : "え"
 <Multi_key> <j> <i> : "い"
 <Multi_key> <j> <o> : "お"
 <Multi_key> <j> <u> : "う"
-
 
 ## Consonants
 <Multi_key> <j> <k> <a> : "か"
