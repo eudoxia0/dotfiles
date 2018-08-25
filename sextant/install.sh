@@ -55,7 +55,7 @@ chmod +x ~/.scripts/battery.sh
 chmod +x ~/.scripts/backup.sh
 chmod +x ~/.scripts/embed_fonts.sh
 
-cp compose.txt ~/.XCompose
+cp xcompose.txt ~/.XCompose
 cp modmap.txt ~/.Xmodmap
 cp xsession.sh ~/.xsession
 cp xresources.txt ~/.Xresources
