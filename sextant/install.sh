@@ -56,7 +56,7 @@ chmod +x ~/.scripts/backup.sh
 chmod +x ~/.scripts/embed_fonts.sh
 
 cp xcompose.txt ~/.XCompose
-cp modmap.txt ~/.Xmodmap
+cp xmodmap.txt ~/.Xmodmap
 cp xsession.sh ~/.xsession
 cp xresources.txt ~/.Xresources
 
