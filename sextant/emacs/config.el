@@ -11,7 +11,7 @@
 
 ;;; Interface
 
-(mouse-wheel-mode t)
+;(mouse-wheel-mode t)
 (setq require-final-newline t)
 (global-disable-mouse-mode)
 
