@@ -31,7 +31,6 @@
     highlight-indentation
     ido
     paredit
-    projectile
     rainbow-delimiters
     rainbow-mode
     unicode-fonts
