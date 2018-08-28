@@ -15,8 +15,17 @@
     ;; Lisp
     sly
     ;; Minor modes and tools
-    rainbow-delimiters auto-complete ag highlight-indentation
-    flycheck ido flyspell paredit company unicode-fonts disable-mouse
+    rainbow-delimiters
+    auto-complete
+    ag
+    highlight-indentation
+    flycheck
+    ido
+    flyspell
+    paredit
+    company
+    unicode-fonts
+    disable-mouse
     ;; Themes
     sublime-themes
     ))
