@@ -7,9 +7,9 @@
 
 (defvar my-packages
   '(;; Major modes
-    sly yaml-mode clojure-mode d-mode textile-mode markdown-mode
-    gnuplot-mode erlang haskell-mode fsharp-mode scss-mode
-    rainbow-mode enh-ruby-mode web-mode projectile grizzl
+    sly yaml-mode d-mode markdown-mode
+    gnuplot-mode haskell-mode scss-mode
+    rainbow-mode web-mode projectile grizzl
     graphviz-dot-mode powerline rust-mode tuareg adoc-mode ;pov-mode idris-mode
     sml-mode disable-mouse
     ;; Other plugins
