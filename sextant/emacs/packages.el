@@ -13,12 +13,8 @@
     gnuplot-mode
     haskell-mode
     scss-mode
-    rainbow-mode
     web-mode
-    projectile
-    grizzl
     graphviz-dot-mode
-    powerline
     rust-mode
     tuareg
     adoc-mode
@@ -26,6 +22,10 @@
     ;; Lisp
     sly
     ;; Minor modes and tools
+    rainbow-mode
+    projectile
+    grizzl
+    powerline
     rainbow-delimiters
     auto-complete
     ag
