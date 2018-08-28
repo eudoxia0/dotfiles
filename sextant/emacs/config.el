@@ -76,10 +76,6 @@
 
 (setq-default show-trailing-whitespace t)
 
-;;; Powerline
-
-(require 'powerline)
-
 ;;; Flycheck
 
 (add-hook 'nxml-mode-hook 'flycheck-enable-except-on-temp-buffers)
