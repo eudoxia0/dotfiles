@@ -7,10 +7,21 @@
 
 (defvar my-packages
   '(;; File-specific modes
-    yaml-mode d-mode markdown-mode
-    gnuplot-mode haskell-mode scss-mode
-    rainbow-mode web-mode projectile grizzl
-    graphviz-dot-mode powerline rust-mode tuareg adoc-mode
+    yaml-mode
+    d-mode
+    markdown-mode
+    gnuplot-mode
+    haskell-mode
+    scss-mode
+    rainbow-mode
+    web-mode
+    projectile
+    grizzl
+    graphviz-dot-mode
+    powerline
+    rust-mode
+    tuareg
+    adoc-mode
     sml-mode
     ;; Lisp
     sly
