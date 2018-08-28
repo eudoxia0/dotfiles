@@ -28,11 +28,9 @@
     disable-mouse
     flycheck
     flyspell
-    grizzl
     highlight-indentation
     ido
     paredit
-    powerline
     projectile
     rainbow-delimiters
     rainbow-mode
