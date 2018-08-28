@@ -1,31 +1,33 @@
 # Run after bootstrap.sh
 
+# Packages
 sudo apt-get update
 
-# X11
-sudo apt-get install -y xserver-xorg-core xserver-xorg-video-intel \
-    xserver-xorg-input-evdev x11-xserver-utils xinit xdm xterm xdotool xcape \
-    stumpwm
+X11_PACKAGES="xserver-xorg-core xserver-xorg-video-intel \
+xserver-xorg-input-evdev x11-xserver-utils xinit xdm xterm xdotool xcape \
+stumpwm"
 
-# Sound
-sudo apt-get install -y pavucontrol pulseaudio pulseaudio-module-zeroconf \
-    alsa-utils avahi-daemon
-# stochastically experiment with alsamixer and pavucontrol until it works
+SOUND_PACKAGES="pavucontrol pulseaudio pulseaudio-module-zeroconf alsa-utils \
+avahi-daemon"
 
-# Packages
-sudo apt-get install -y git make emacs25 duplicity gpg sqlite3 libsqlite3-dev \
-    texlive-xetex firefox-esr xcape neofetch fonts-inconsolata xfonts-terminus \
-    ttf-linux-libertine clang mupdf acpi viewnior lxappearance ntp feh gnuplot \
-    xscreensaver xscreensaver-data-extra xscreensaver-gl xscreensaver-gl-extra \
-    git transmission-gtk djview4 kid3-qt mpv unrar ttf-ancient-fonts \
-    laptop-mode-tools libwebkit2gtk-4.0-37-gtk2
+GENERAL_PACKAGES="git make emacs25 duplicity gnupg sqlite3 libsqlite3-dev \
+texlive-xetex firefox-esr xcape neofetch fonts-inconsolata xfonts-terminus \
+fonts-linuxlibertine clang mupdf acpi viewnior lxappearance ntp feh gnuplot \
+xscreensaver xscreensaver-data-extra xscreensaver-gl xscreensaver-gl-extra \
+transmission-gtk djview4 kid3-qt mpv unrar ttf-ancient-fonts laptop-mode-tools \
+libwebkit2gtk-4.0-37-gtk2"
 
-# Java
-sudo apt-get install -y openjdk-8-jdk maven
+JAVA_PACKAGES="openjdk-8-jdk maven"
+
+RUBY_PACKAGES="rbenv ruby-build"
+
+SML_PACKAGES="smlnj mlton"
+
+sudo apt-get install -y $X11_PACKAGES $SOUND_PACKAGES $GENERAL_PACKAGES \
+     $JAVA_PACKAGES $RUBY_PACKAGES $SML_PACKAGES
 
 # Ruby
 if ! [ -x "$(command -v rbenv)" ]; then
-    sudo apt-get install -y rbenv ruby-build
     rbenv install 2.4.0
     rbenv global 2.4.0
     rbenv exec gem install jekyll
@@ -35,9 +37,6 @@ fi
 if ! [ -x "$(command -v stack)" ]; then
     curl -sSL https://get.haskellstack.org/ | sh
 fi
-
-# SML
-sudo apt-get install -y mlton smlnj
 
 # Config files and scripts
 cp gitconfig.txt ~/.gitconfig
