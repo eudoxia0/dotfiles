@@ -13,16 +13,12 @@
     graphviz-dot-mode ess cmake-mode mediawiki scala-mode ensime
     powerline rust-mode tuareg adoc-mode ;pov-mode idris-mode
     jsx-mode sml-mode disable-mouse
-    ;; disabled: rw-hunspell pep8
     ;; Other plugins
     rainbow-delimiters ecb auto-complete ag highlight-indentation
     google-c-style flycheck ido flyspell gnugo paredit company cider
     unicode-fonts
     ;; Themes
-    ;qsimpleq-theme
-    ;color-theme-solarized color-theme-twilight color-theme-github
-    ;soft-morning-theme zenburn-theme qsimpleq-theme noctilux-theme
-    sublime-themes ;espresso-theme tronesque-theme naquadah-theme
+    sublime-themes
     ))
 
 (defun packages-installed-p ()
