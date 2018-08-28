@@ -6,8 +6,7 @@
 (package-initialize)
 
 (defvar my-packages
-  '(org nav
-    ;; Major modes
+  '(;; Major modes
     sly yaml-mode clojure-mode d-mode textile-mode markdown-mode
     gnuplot-mode erlang haskell-mode fsharp-mode scss-mode
     rainbow-mode enh-ruby-mode web-mode projectile grizzl
