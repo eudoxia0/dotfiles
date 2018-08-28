@@ -7,36 +7,36 @@
 
 (defvar my-packages
   '(;; File-specific modes
-    yaml-mode
-    d-mode
-    markdown-mode
-    gnuplot-mode
-    haskell-mode
-    scss-mode
-    web-mode
-    graphviz-dot-mode
-    rust-mode
-    tuareg
     adoc-mode
+    d-mode
+    gnuplot-mode
+    graphviz-dot-mode
+    haskell-mode
+    markdown-mode
+    rust-mode
+    scss-mode
     sml-mode
+    tuareg
+    web-mode
+    yaml-mode
     ;; Lisp
     sly
     ;; Minor modes and tools
-    rainbow-mode
-    projectile
-    grizzl
-    powerline
-    rainbow-delimiters
-    auto-complete
     ag
-    highlight-indentation
-    flycheck
-    ido
-    flyspell
-    paredit
+    auto-complete
     company
-    unicode-fonts
     disable-mouse
+    flycheck
+    flyspell
+    grizzl
+    highlight-indentation
+    ido
+    paredit
+    powerline
+    projectile
+    rainbow-delimiters
+    rainbow-mode
+    unicode-fonts
     ;; Themes
     sublime-themes
     ))
