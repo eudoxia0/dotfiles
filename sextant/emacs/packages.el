@@ -10,13 +10,11 @@
     sly yaml-mode clojure-mode d-mode textile-mode markdown-mode
     gnuplot-mode erlang haskell-mode fsharp-mode scss-mode
     rainbow-mode enh-ruby-mode web-mode projectile grizzl
-    graphviz-dot-mode ess cmake-mode mediawiki scala-mode ensime
-    powerline rust-mode tuareg adoc-mode ;pov-mode idris-mode
-    jsx-mode sml-mode disable-mouse
+    graphviz-dot-mode powerline rust-mode tuareg adoc-mode ;pov-mode idris-mode
+    sml-mode disable-mouse
     ;; Other plugins
     rainbow-delimiters ecb auto-complete ag highlight-indentation
-    google-c-style flycheck ido flyspell gnugo paredit company cider
-    unicode-fonts
+    flycheck ido flyspell paredit company unicode-fonts
     ;; Themes
     sublime-themes
     ))
