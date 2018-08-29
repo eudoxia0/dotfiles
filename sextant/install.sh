@@ -14,7 +14,7 @@ GENERAL_PACKAGES="git make emacs25 duplicity gnupg sqlite3 libsqlite3-dev \
 texlive-xetex firefox-esr xcape neofetch fonts-inconsolata xfonts-terminus \
 fonts-linuxlibertine clang mupdf acpi viewnior lxappearance ntp feh gnuplot \
 xscreensaver xscreensaver-data-extra xscreensaver-gl xscreensaver-gl-extra \
-transmission-gtk djview4 kid3-qt mpv unrar ttf-ancient-fonts laptop-mode-tools \
+transmission-gtk djview4 easytag mpv unrar ttf-ancient-fonts laptop-mode-tools \
 libwebkit2gtk-4.0-37-gtk2"
 
 JAVA_PACKAGES="openjdk-8-jdk maven"
