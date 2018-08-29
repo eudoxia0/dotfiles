@@ -18,5 +18,6 @@
                 ("\\.eco$" . web-mode)
                 ("\\.jsx$" . jsx-mode)
                 ("\\.scss$" . scss-mode)
-                ("\\.lass\\'" . lass-mode))
+                ("\\.lass\\'" . lass-mode)
+                ("\\.ctex$" . latex-mode))
 	    auto-mode-alist))
