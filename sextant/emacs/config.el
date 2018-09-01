@@ -135,3 +135,7 @@
 ;;; JavaScript
 
 (setq js-indent-level 2)
+
+;;; SML
+
+(setq sml-indent-level 4)
