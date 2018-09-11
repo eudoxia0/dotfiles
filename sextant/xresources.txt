@@ -31,7 +31,7 @@ XTerm.vt100.color7:     #dddddd
 XTerm.vt100.color15:    #dddddd
 
 !! Font
-XTerm.vt100.font: terminus-12
+XTerm.vt100.font: terminus-16
 
 !! Cursor
 XTerm.vt100.cursorColor: #eeeeee
