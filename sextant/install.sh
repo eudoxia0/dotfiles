@@ -1,5 +1,11 @@
 # Run after bootstrap.sh
 
+# Sources
+sudo cp sources.list /etc/apt/sources.list
+
+sudo apt-get install -y apt-transport-https ca-certificates \
+    software-properties-common
+
 # Packages
 sudo apt-get update
 
