@@ -21,7 +21,7 @@ texlive-xetex firefox-esr xcape neofetch fonts-inconsolata xfonts-terminus \
 fonts-linuxlibertine clang mupdf acpi viewnior lxappearance ntp feh gnuplot \
 xscreensaver xscreensaver-data-extra xscreensaver-gl xscreensaver-gl-extra \
 transmission-gtk djview4 easytag mpv unrar ttf-ancient-fonts laptop-mode-tools \
-libwebkit2gtk-4.0-37-gtk2"
+libwebkit2gtk-4.0-37-gtk2 ocaml ocaml-native-compilers"
 
 JAVA_PACKAGES="openjdk-8-jdk maven"
 
@@ -87,3 +87,7 @@ fi
 
 mkdir -p $EMACS_DIR/lang
 cp -R emacs/. $EMACS_DIR
+
+# Node
+mkdir -p ~/.npm-global
+npm config set prefix '~/.npm-global'
