@@ -21,8 +21,7 @@ texlive-xetex firefox-esr xcape neofetch fonts-inconsolata xfonts-terminus \
 fonts-linuxlibertine clang mupdf acpi viewnior lxappearance ntp feh gnuplot \
 xscreensaver xscreensaver-data-extra xscreensaver-gl xscreensaver-gl-extra \
 transmission-gtk djview4 easytag mpv unrar ttf-ancient-fonts laptop-mode-tools \
-libwebkit2gtk-4.0-37-gtk2 ocaml ocaml-native-compilers docbook-xml \
-docbook-xsl-doc-html docbook-xsl-doc-pdf"
+libwebkit2gtk-4.0-37-gtk2 ocaml ocaml-native-compilers docbook-xml"
 
 JAVA_PACKAGES="openjdk-8-jdk maven"
 
