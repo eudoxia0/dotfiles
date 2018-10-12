@@ -2,8 +2,8 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/eudoxia/.gtkrc-2.0.mine"
-gtk-theme-name="Mist"
-gtk-icon-theme-name="Adwaita"
+gtk-theme-name="Arc"
+gtk-icon-theme-name="Arc"
 gtk-font-name="Sans 10"
 gtk-cursor-theme-name="Adwaita"
 gtk-cursor-theme-size=0
