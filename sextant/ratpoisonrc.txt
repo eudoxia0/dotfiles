@@ -1,0 +1,28 @@
+escape s-w
+
+bind e exec emacs
+
+definekey top s-q delete
+definekey top s-Q quit
+definekey top s-R restart
+
+definekey top s-c exec xterm
+definekey top s-x exec xscreensaver-command -lock
+definekey top s-e exec xdotool click 1
+definekey top s-v exec xdotool click 2
+
+definekey top C-s-w exec firefox
+definekey top C-s-f exec pcmanfm
+definekey top C-s-t exec transmission-gtk
+definekey top Print exec scrot
+
+unbind C-k
+unbind C-K
+unbind k
+unbind C-a
+unbind c
+unbind C-c
+unbind C-r
+
+exec /home/eudoxia/.scripts/sloppy
+exec /home/eudoxia/.scripts/rpws.pl init 8 -k
