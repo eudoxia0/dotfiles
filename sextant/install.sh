@@ -11,7 +11,7 @@ sudo apt-get update
 
 X11_PACKAGES="xserver-xorg-core xserver-xorg-video-intel \
 xserver-xorg-input-evdev x11-xserver-utils xinit xdm xterm xdotool xcape \
-stumpwm"
+ratpoison"
 
 SOUND_PACKAGES="pavucontrol pulseaudio pulseaudio-module-zeroconf alsa-utils \
 avahi-daemon"
@@ -22,7 +22,7 @@ fonts-linuxlibertine clang mupdf acpi viewnior lxappearance ntp feh gnuplot \
 xscreensaver xscreensaver-data-extra xscreensaver-gl xscreensaver-gl-extra \
 transmission-gtk djview4 easytag mpv unrar ttf-ancient-fonts laptop-mode-tools \
 libwebkit2gtk-4.0-37-gtk2 ocaml ocaml-native-compilers docbook-xml docbook-xsl \
-docbook-xsl-ns xsltproc fop"
+docbook-xsl-ns xsltproc fop lm-sensors tlp thermald"
 
 JAVA_PACKAGES="openjdk-8-jdk maven"
 
@@ -51,13 +51,14 @@ cp psqlrc.txt ~/.psqlrc
 cp xscreensaver.txt ~/.xscreensaver
 cp gtkrc.txt ~/.gtkrc-2.0
 cp bashrc.sh ~/.bashrc
-cp stumpwmrc.lisp ~/.stumpwmrc
+cp ratpoisonrc.txt ~/.ratpoisonrc
 sudo cp dhclient.txt /etc/dhcp/dhclient.conf
 
 mkdir -p ~/.scripts
 cp battery.sh ~/.scripts/battery.sh
 cp backup.sh ~/.scripts/backup.sh
 cp embed_fonts.sh ~/.scripts/embed_fonts.sh
+cp rpws.pl ~/.scripts/rpws.pl
 chmod +x ~/.scripts/battery.sh
 chmod +x ~/.scripts/backup.sh
 chmod +x ~/.scripts/embed_fonts.sh
