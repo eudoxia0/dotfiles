@@ -22,7 +22,7 @@ fonts-linuxlibertine clang mupdf acpi viewnior lxappearance ntp feh gnuplot \
 xscreensaver xscreensaver-data-extra xscreensaver-gl xscreensaver-gl-extra \
 transmission-gtk djview4 easytag mpv unrar ttf-ancient-fonts laptop-mode-tools \
 libwebkit2gtk-4.0-37-gtk2 ocaml ocaml-native-compilers docbook-xml docbook-xsl \
-docbook-xsl-ns xsltproc fop lm-sensors tlp thermald"
+docbook-xsl-ns xsltproc fop lm-sensors tlp thermald mupdf-tools"
 
 JAVA_PACKAGES="openjdk-8-jdk maven"
 
