@@ -73,6 +73,8 @@ sudo cp xdm-xstartup /etc/X11/xdm/Xstartup
 sudo chmod +x /etc/X11/xdm/Xsetup
 sudo chmod +x /etc/X11/xdm/Xstartup
 
+cp mimeapps.list ~/.local/share/applications/mimeapps.list
+
 # Wallpapers
 mkdir -p ~/.walls
 cp -R wallpapers/. ~/.walls
