@@ -52,7 +52,8 @@ cp psqlrc.txt ~/.psqlrc
 cp xscreensaver.txt ~/.xscreensaver
 cp gtkrc.txt ~/.gtkrc-2.0
 cp bashrc.sh ~/.bashrc
-cp ctwmrc.txt ~/.ctwmrc
+mkdir -p ~/.fvwm/
+cp fvwm.txt ~/.fvwm/config
 sudo cp dhclient.txt /etc/dhcp/dhclient.conf
 
 mkdir -p ~/.scripts
