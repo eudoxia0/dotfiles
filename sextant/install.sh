@@ -76,10 +76,6 @@ sudo chmod +x /etc/X11/xdm/Xstartup
 
 cp mimeapps.list ~/.local/share/applications/mimeapps.list
 
-# Wallpapers
-mkdir -p ~/.walls
-cp -R wallpapers/. ~/.walls
-
 # Uninstall
 sudo apt-get -y remove bluetooth
 
