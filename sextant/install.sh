@@ -58,7 +58,6 @@ mkdir -p ~/.scripts
 cp battery.sh ~/.scripts/battery.sh
 cp backup.sh ~/.scripts/backup.sh
 cp embed_fonts.sh ~/.scripts/embed_fonts.sh
-cp rpws.pl ~/.scripts/rpws.pl
 chmod +x ~/.scripts/battery.sh
 chmod +x ~/.scripts/backup.sh
 chmod +x ~/.scripts/embed_fonts.sh
