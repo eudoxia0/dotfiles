@@ -1,4 +1,4 @@
-# Run after bootstrap.sh
+sh# Run after bootstrap.sh
 
 # Sources
 sudo cp sources.list /etc/apt/sources.list
@@ -60,6 +60,7 @@ mkdir -p ~/.scripts
 cp battery.sh ~/.scripts/battery.sh
 cp backup.sh ~/.scripts/backup.sh
 cp embed_fonts.sh ~/.scripts/embed_fonts.sh
+cp rotate_wallpaper.sh ~/.scripts/rotate_wallpaper.sh
 chmod +x ~/.scripts/battery.sh
 chmod +x ~/.scripts/backup.sh
 chmod +x ~/.scripts/embed_fonts.sh
