@@ -29,3 +29,4 @@ back_up_directory texmf
 back_up_directory wiki
 back_up_directory work
 back_up_directory writing
+back_up_directory Zotero
