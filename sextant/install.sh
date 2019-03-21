@@ -1,4 +1,4 @@
-sh# Run after bootstrap.sh
+# Run after bootstrap.sh
 
 # Sources
 sudo cp sources.list /etc/apt/sources.list
