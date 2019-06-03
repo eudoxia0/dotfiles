@@ -11,4 +11,4 @@ request subnet-mask, broadcast-address, time-offset, routers,
 	netbios-name-servers, netbios-scope, interface-mtu,
 	rfc3442-classless-static-routes, ntp-servers;
 
-supersede domain-name-servers 8.8.8.8, 8.8.4.4;
+supersede domain-name-servers 1.1.1.1 1.0.0.1;
