@@ -88,7 +88,3 @@ fi
 
 mkdir -p $EMACS_DIR/lang
 cp -R emacs/. $EMACS_DIR
-
-# Node
-mkdir -p ~/.npm-global
-npm config set prefix '~/.npm-global'
