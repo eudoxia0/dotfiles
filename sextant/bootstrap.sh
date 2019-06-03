@@ -1,6 +1,7 @@
 # Run as root immediately after installation
 
-echo "Etc/GMT+3" > /etc/timezone
+echo "America/Montevideo" > /etc/timezone
+rm /etc/localtime
 dpkg-reconfigure -f noninteractive tzdata
 apt-get update
 apt-get install curl sudo
