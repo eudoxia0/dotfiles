@@ -25,14 +25,12 @@ libwebkit2gtk-4.0-37-gtk2 ocaml ocaml-native-compilers docbook-xml docbook-xsl \
 docbook-xsl-ns xsltproc fop lm-sensors tlp thermald mupdf-tools ttf-mscorefonts-installer \
 zotero-standalone clementine pcmanfm screenfetch leafpad firmware-iwlwifi keepassx calibre xarchiver htop ansible"
 
-JAVA_PACKAGES="openjdk-8-jdk maven"
-
 RUBY_PACKAGES="rbenv ruby-build"
 
 SML_PACKAGES="smlnj mlton"
 
 sudo apt-get install -y $X11_PACKAGES $SOUND_PACKAGES $GENERAL_PACKAGES \
-     $JAVA_PACKAGES $RUBY_PACKAGES $SML_PACKAGES
+     $RUBY_PACKAGES $SML_PACKAGES
 
 # Ruby
 if ! [ -x "$(command -v rbenv)" ]; then
