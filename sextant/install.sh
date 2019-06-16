@@ -76,8 +76,28 @@ sudo chmod +x /etc/X11/xdm/Xstartup
 
 cp mimeapps.list ~/.local/share/applications/mimeapps.list
 
-# Uninstall
-sudo apt-get -y remove bluetooth
+# Remove the directories you start out with in your home directory
+function rem() {
+  if [ -d $1 ]
+  then
+    rmdir $1
+  fi
+}
+
+rem Documents
+rem Pictures
+rem Templates
+rem Desktop
+rem Downloads
+rem Music
+rem Public
+rem Videos
+
+# Remove unnecessary packages
+sudo apt-get purge -y aptitude debian-faq doc-debian ispell vim-tiny bluetooth
+
+# Remove orphans
+sudo apt-get purge -y vim-common libswitch-perl libxapian30 libclass-isa-perl
 
 # Emacs
 EMACS_DIR=~/.emacs.d
