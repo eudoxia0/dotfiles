@@ -1,5 +1,7 @@
 # Run after bootstrap.sh
 
+set -euxo pipefail
+
 # Sources
 sudo cp sources.list /etc/apt/sources.list
 
