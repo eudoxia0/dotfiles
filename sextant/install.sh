@@ -63,6 +63,7 @@ cp rotate_wallpaper.sh ~/.scripts/rotate_wallpaper.sh
 chmod +x ~/.scripts/battery.sh
 chmod +x ~/.scripts/backup.sh
 chmod +x ~/.scripts/embed_fonts.sh
+chmod +x ~/.scripts/rotate_wallpaper.sh
 
 cp xcompose.txt ~/.XCompose
 cp xmodmap.txt ~/.Xmodmap
