@@ -11,7 +11,7 @@ sudo apt-get update
 
 X11_PACKAGES="xserver-xorg-core xserver-xorg-video-intel \
 xserver-xorg-input-evdev x11-xserver-utils xinit xdm xterm xdotool xcape \
-stumpwm"
+stumpwm sunclock"
 
 SOUND_PACKAGES="pavucontrol pulseaudio pulseaudio-module-zeroconf alsa-utils \
 avahi-daemon"
