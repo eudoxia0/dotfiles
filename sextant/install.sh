@@ -25,7 +25,7 @@ xscreensaver xscreensaver-data-extra xscreensaver-gl xscreensaver-gl-extra \
 transmission-gtk djview4 easytag mpv unrar-free ttf-ancient-fonts \
 libwebkit2gtk-4.0-37-gtk2 ocaml ocaml-native-compilers docbook-xml docbook-xsl \
 docbook-xsl-ns xsltproc fop lm-sensors tlp thermald mupdf-tools \
-zotero-standalone clementine pcmanfm screenfetch leafpad keepassx calibre xarchiver htop ansible inxi"
+zotero-standalone clementine pcmanfm screenfetch leafpad keepassx calibre xarchiver htop ansible inxi arc-theme"
 
 RUBY_PACKAGES="rbenv ruby-build"
 
