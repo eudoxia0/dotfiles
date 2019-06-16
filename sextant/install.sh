@@ -22,7 +22,7 @@ GENERAL_PACKAGES="git make emacs25 duplicity gnupg sqlite3 libsqlite3-dev \
 texlive-xetex firefox-esr xcape neofetch fonts-inconsolata xfonts-terminus \
 fonts-linuxlibertine clang mupdf acpi viewnior lxappearance ntp feh gnuplot \
 xscreensaver xscreensaver-data-extra xscreensaver-gl xscreensaver-gl-extra \
-transmission-gtk djview4 easytag mpv unrar ttf-ancient-fonts \
+transmission-gtk djview4 easytag mpv unrar-free ttf-ancient-fonts \
 libwebkit2gtk-4.0-37-gtk2 ocaml ocaml-native-compilers docbook-xml docbook-xsl \
 docbook-xsl-ns xsltproc fop lm-sensors tlp thermald mupdf-tools ttf-mscorefonts-installer \
 zotero-standalone clementine pcmanfm screenfetch leafpad firmware-iwlwifi keepassx calibre xarchiver htop ansible inxi"
