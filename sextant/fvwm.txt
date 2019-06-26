@@ -107,30 +107,6 @@ AddToMenu FvwmRootMenu "root" Title
 + "restart"    Restart
 + "quit"       Quit
 
-DestroyMenu FvwmWindowOpsMenu
-AddToMenu   FvwmWindowOpsMenu "Window Operations" Title
-+ "Move%menu/window-move.xpm%"  Move
-+ "Resize%menu/window-resize.xpm%"  Resize
-+ "(De)Iconify%menu/window-iconify.xpm%"  Iconify
-+ "(Un)Maximize%menu/window-maximize.xpm%"  Maximize
-+ "(Un)Shade%menu/window-shade.xpm%"  WindowShade
-+ "(Un)Stick%menu/window-stick.xpm%"  Stick
-+ "" Nop
-+ "Close%menu/window-close.xpm%"  Close
-+ "Delete%menu/window-delete.xpm%"  Delete
-+ "Destroy%menu/window-destroy.xpm%"  Destroy
-+ "" Nop
-+ "StaysOnTop%menu/window-raise.xpm%"  Pick (CirculateHit) Layer 0 6
-+ "Layer +1%menu/window-raise.xpm%"  Pick (CirculateHit) Layer +1
-+ "StaysPut%menu/window.xpm%"  Pick (CirculateHit) Layer 0 4
-+ "Layer -1%menu/window-lower.xpm%"  Pick (CirculateHit) Layer -1
-+ "StaysOnBottom%menu/window-lower.xpm%"  Pick (CirculateHit) Layer 0 2
-+ "" Nop
-+ "%menu/window.xpm%Window Screenshot"  Pick (CirculateHit) FvwmWindowScreenshot
-+ "%menu/display.xpm%Screenshot" FvwmDesktopScreenshot 5
-+ "" Nop
-+ "Identify%menu/window-identify.xpm%"  Module FvwmIdent
-
 #
 # Style
 #
@@ -154,3 +130,4 @@ Mouse 1 1 A Close
 Mouse 1 6 A Iconify
 Mouse 1 4 A WindowShade toggle
 Mouse 1 2 A Maximize 100 100
+
