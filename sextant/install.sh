@@ -19,7 +19,8 @@ stumpwm"
 SOUND_PACKAGES="pavucontrol pulseaudio pulseaudio-module-zeroconf alsa-utils \
 avahi-daemon"
 
-DEV_PACKAGES="git make emacs25 clang gnuplot ocaml ocaml-native-compilers"
+DEV_PACKAGES="git make emacs25 clang gnuplot ocaml ocaml-native-compilers \
+rbenv ruby-build smlnj mlton"
 
 GENERAL_PACKAGES="duplicity gnupg sqlite3 libsqlite3-dev \
 texlive-xetex firefox-esr neofetch fonts-inconsolata xfonts-terminus \
@@ -28,10 +29,6 @@ transmission-gtk djview4 easytag mpv unrar-free ttf-ancient-fonts \
 libwebkit2gtk-4.0-37-gtk2 docbook-xml docbook-xsl \
 docbook-xsl-ns xsltproc fop lm-sensors tlp thermald mupdf-tools \
 zotero-standalone clementine pcmanfm screenfetch keepassx calibre xarchiver htop ansible inxi arc-theme redshift"
-
-RUBY_PACKAGES="rbenv ruby-build"
-
-SML_PACKAGES="smlnj mlton"
 
 sudo apt-get install -y $X11_PACKAGES $SOUND_PACKAGES $DEV_PACKAGES \
      $GENERAL_PACKAGES $RUBY_PACKAGES $SML_PACKAGES
