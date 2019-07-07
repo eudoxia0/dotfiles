@@ -19,7 +19,9 @@ stumpwm"
 SOUND_PACKAGES="pavucontrol pulseaudio pulseaudio-module-zeroconf alsa-utils \
 avahi-daemon"
 
-GENERAL_PACKAGES="git make emacs25 duplicity gnupg sqlite3 libsqlite3-dev \
+DEV_PACKAGES="git make emacs25"
+
+GENERAL_PACKAGES="duplicity gnupg sqlite3 libsqlite3-dev \
 texlive-xetex firefox-esr xcape neofetch fonts-inconsolata xfonts-terminus \
 fonts-linuxlibertine clang mupdf acpi viewnior lxappearance ntp feh gnuplot \
 transmission-gtk djview4 easytag mpv unrar-free ttf-ancient-fonts \
@@ -31,8 +33,8 @@ RUBY_PACKAGES="rbenv ruby-build"
 
 SML_PACKAGES="smlnj mlton"
 
-sudo apt-get install -y $X11_PACKAGES $SOUND_PACKAGES $GENERAL_PACKAGES \
-     $RUBY_PACKAGES $SML_PACKAGES
+sudo apt-get install -y $X11_PACKAGES $SOUND_PACKAGES $DEV_PACKAGES \
+     $GENERAL_PACKAGES $RUBY_PACKAGES $SML_PACKAGES
 
 # Ruby
 if ! [ -x "$(command -v rbenv)" ]; then
