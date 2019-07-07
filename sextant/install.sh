@@ -13,6 +13,7 @@ sudo apt-get update
 
 X11_PACKAGES="xserver-xorg-core xserver-xorg-video-intel \
 xserver-xorg-input-evdev x11-xserver-utils xinit xdm xterm xdotool xcape \
+xscreensaver xscreensaver-data-extra xscreensaver-gl xscreensaver-gl-extra \
 stumpwm"
 
 SOUND_PACKAGES="pavucontrol pulseaudio pulseaudio-module-zeroconf alsa-utils \
@@ -21,11 +22,10 @@ avahi-daemon"
 GENERAL_PACKAGES="git make emacs25 duplicity gnupg sqlite3 libsqlite3-dev \
 texlive-xetex firefox-esr xcape neofetch fonts-inconsolata xfonts-terminus \
 fonts-linuxlibertine clang mupdf acpi viewnior lxappearance ntp feh gnuplot \
-xscreensaver xscreensaver-data-extra xscreensaver-gl xscreensaver-gl-extra \
 transmission-gtk djview4 easytag mpv unrar-free ttf-ancient-fonts \
 libwebkit2gtk-4.0-37-gtk2 ocaml ocaml-native-compilers docbook-xml docbook-xsl \
 docbook-xsl-ns xsltproc fop lm-sensors tlp thermald mupdf-tools \
-zotero-standalone clementine pcmanfm screenfetch leafpad keepassx calibre xarchiver htop ansible inxi arc-theme redshift"
+zotero-standalone clementine pcmanfm screenfetch keepassx calibre xarchiver htop ansible inxi arc-theme redshift"
 
 RUBY_PACKAGES="rbenv ruby-build"
 
