@@ -19,11 +19,11 @@ stumpwm"
 SOUND_PACKAGES="pavucontrol pulseaudio pulseaudio-module-zeroconf alsa-utils \
 avahi-daemon"
 
-DEV_PACKAGES="git make emacs25 clang"
+DEV_PACKAGES="git make emacs25 clang gnuplot"
 
 GENERAL_PACKAGES="duplicity gnupg sqlite3 libsqlite3-dev \
 texlive-xetex firefox-esr neofetch fonts-inconsolata xfonts-terminus \
-fonts-linuxlibertine mupdf acpi viewnior lxappearance ntp feh gnuplot \
+fonts-linuxlibertine mupdf acpi viewnior lxappearance ntp feh \
 transmission-gtk djview4 easytag mpv unrar-free ttf-ancient-fonts \
 libwebkit2gtk-4.0-37-gtk2 ocaml ocaml-native-compilers docbook-xml docbook-xsl \
 docbook-xsl-ns xsltproc fop lm-sensors tlp thermald mupdf-tools \
