@@ -31,7 +31,7 @@ docbook-xsl-ns xsltproc fop lm-sensors tlp thermald mupdf-tools \
 zotero-standalone clementine pcmanfm screenfetch keepassx calibre xarchiver htop ansible inxi arc-theme redshift"
 
 sudo apt-get install -y $X11_PACKAGES $SOUND_PACKAGES $DEV_PACKAGES \
-     $GENERAL_PACKAGES $RUBY_PACKAGES $SML_PACKAGES
+     $GENERAL_PACKAGES
 
 # Ruby
 if ! [ -x "$(command -v rbenv)" ]; then
