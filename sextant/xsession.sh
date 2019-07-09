@@ -1,5 +1,5 @@
 .scripts/rotate_wallpaper.sh &
-xmodmap ~/.Xmodmap &
+xmodmap ~/.config/x11/xmodmap &
 xrdb ~/.Xresources &
 xcape -e "Shift_L=parenleft;Shift_R=parenright" &
 xscreensaver -no-splash &
