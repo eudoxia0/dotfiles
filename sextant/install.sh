@@ -34,7 +34,8 @@ sudo apt-get install -y $X11_PACKAGES $SOUND_PACKAGES $DEV_PACKAGES \
      $GENERAL_PACKAGES
 
 # Config files and scripts
-cp gitconfig.txt ~/.gitconfig
+mkdir -p ~/.config/git/
+cp gitconfig.txt ~/.config/git/config
 cp psqlrc.txt ~/.psqlrc
 cp xscreensaver.txt ~/.xscreensaver
 cp gtkrc.txt ~/.gtkrc-2.0
