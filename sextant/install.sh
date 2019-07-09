@@ -33,11 +33,6 @@ zotero-standalone clementine pcmanfm screenfetch keepassx calibre xarchiver htop
 sudo apt-get install -y $X11_PACKAGES $SOUND_PACKAGES $DEV_PACKAGES \
      $GENERAL_PACKAGES
 
-# Haskell
-if ! [ -x "$(command -v stack)" ]; then
-    curl -sSL https://get.haskellstack.org/ | sh
-fi
-
 # Config files and scripts
 cp gitconfig.txt ~/.gitconfig
 cp psqlrc.txt ~/.psqlrc
