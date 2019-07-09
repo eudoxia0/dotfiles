@@ -68,7 +68,7 @@ cp mimeapps.list ~/.local/share/applications/mimeapps.list
 function rem() {
   if [ -d $1 ]
   then
-    rmdir $1
+    rmdir ~/$1
   fi
 }
 
