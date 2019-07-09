@@ -33,13 +33,6 @@ zotero-standalone clementine pcmanfm screenfetch keepassx calibre xarchiver htop
 sudo apt-get install -y $X11_PACKAGES $SOUND_PACKAGES $DEV_PACKAGES \
      $GENERAL_PACKAGES
 
-# Ruby
-if ! [ -x "$(command -v rbenv)" ]; then
-    rbenv install 2.4.0
-    rbenv global 2.4.0
-    rbenv exec gem install jekyll
-fi
-
 # Haskell
 if ! [ -x "$(command -v stack)" ]; then
     curl -sSL https://get.haskellstack.org/ | sh
