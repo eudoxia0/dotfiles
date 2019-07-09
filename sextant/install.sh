@@ -40,7 +40,8 @@ cp psqlrc.txt ~/.psqlrc
 cp xscreensaver.txt ~/.xscreensaver
 cp gtkrc.txt ~/.gtkrc-2.0
 cp bashrc.sh ~/.bashrc
-cp stumpwmrc.lisp ~/.stumpwmrc
+mkdir -p ~/.config/stumpwm/
+cp stumpwmrc.lisp ~/.config/stumpwm/config
 sudo cp dhclient.txt /etc/dhcp/dhclient.conf
 
 mkdir -p ~/.scripts
