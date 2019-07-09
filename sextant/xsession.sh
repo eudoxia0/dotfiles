@@ -1,6 +1,6 @@
 .scripts/rotate_wallpaper.sh &
 xmodmap ~/.config/x11/xmodmap &
-xrdb ~/.Xresources &
+xrdb ~/.config/x11/xresources &
 xcape -e "Shift_L=parenleft;Shift_R=parenright" &
 xscreensaver -no-splash &
 .scripts/battery.sh &

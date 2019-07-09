@@ -58,7 +58,7 @@ mkdir -p ~/.config/x11/
 cp xcompose.txt ~/.XCompose
 cp xmodmap.txt ~/.config/x11/xmodmap
 cp xsession.sh ~/.xsession
-cp xresources.txt ~/.Xresources
+cp xresources.txt ~/.config/x11/xresources
 
 sudo cp xdm-xsetup /etc/X11/xdm/Xsetup
 sudo cp xdm-xstartup /etc/X11/xdm/Xstartup
