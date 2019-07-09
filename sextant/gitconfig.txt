@@ -14,5 +14,3 @@
 [merge]
 	guitool = meld
 	tool = meld
-[core]
-	excludesfile = /home/eudoxia/.gitignore
