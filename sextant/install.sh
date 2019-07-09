@@ -54,6 +54,7 @@ chmod +x ~/.scripts/backup.sh
 chmod +x ~/.scripts/embed_fonts.sh
 chmod +x ~/.scripts/rotate_wallpaper.sh
 
+mkdir -p ~/.config/x11/
 cp xcompose.txt ~/.XCompose
 cp xmodmap.txt ~/.Xmodmap
 cp xsession.sh ~/.xsession
