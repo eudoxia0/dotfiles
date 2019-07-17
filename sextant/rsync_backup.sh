@@ -2,7 +2,7 @@
 
 set -euxo pipefail
 echo "Drive: (probably /media/eudoxia/BACKUP)"
-read -s BACKUP_DRIVE
+read BACKUP_DRIVE
 
 rsync --quiet --archive --human-readable --perms --executability --times --checksum --delete \
       ~/files/ \
