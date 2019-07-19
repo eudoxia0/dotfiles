@@ -69,7 +69,7 @@ cp mimeapps.list ~/.local/share/applications/mimeapps.list
 
 # Remove the directories you start out with in your home directory
 function rem() {
-  if [ -d $1 ]
+  if [ -d ~/$1 ]
   then
     rmdir ~/$1
   fi
