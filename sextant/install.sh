@@ -28,7 +28,7 @@ fonts-linuxlibertine mupdf acpi viewnior lxappearance ntp feh \
 transmission-gtk djview4 easytag mpv unrar-free ttf-ancient-fonts \
 libwebkit2gtk-4.0-37-gtk2 docbook-xml docbook-xsl \
 docbook-xsl-ns xsltproc fop lm-sensors tlp thermald mupdf-tools \
-zotero-standalone clementine pcmanfm screenfetch keepassx calibre xarchiver htop ansible inxi arc-theme redshift"
+clementine pcmanfm screenfetch keepassx calibre xarchiver htop ansible inxi arc-theme redshift"
 
 sudo apt-get install -y $X11_PACKAGES $SOUND_PACKAGES $DEV_PACKAGES \
      $GENERAL_PACKAGES
