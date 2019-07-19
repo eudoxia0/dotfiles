@@ -111,7 +111,7 @@
 
 (define-key *top-map* (kbd "s-x") "screensaver")
 (define-key *top-map* (kbd "s-q") "delete")
-(define-key *top-map* (kbd "s-c") "exec xterm")
+(define-key *top-map* (kbd "s-c") "exec urxvt")
 (define-key *top-map* (kbd "s-r") "exec")
 
 
