@@ -20,7 +20,7 @@ SOUND_PACKAGES="pavucontrol pulseaudio pulseaudio-module-zeroconf alsa-utils \
 avahi-daemon"
 
 DEV_PACKAGES="git make emacs25 clang gnuplot ocaml ocaml-native-compilers \
-smlnj mlton jekyll"
+smlnj jekyll"
 
 GENERAL_PACKAGES="duplicity gnupg sqlite3 libsqlite3-dev \
 texlive-xetex firefox-esr neofetch fonts-inconsolata xfonts-terminus \
