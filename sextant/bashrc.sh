@@ -95,9 +95,6 @@ if ! shopt -oq posix; then
 fi
 
 export PATH="$PATH:$HOME/.scripts"
-export PATH="$PATH:~/.npm-global/bin"
-export PATH="$PATH:/usr/lib/dart/bin"
-export PATH="$PATH:~/.pub-cache/bin"
 
 export GOPATH=$HOME/code/go
 
