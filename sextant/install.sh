@@ -79,7 +79,6 @@ rem Documents
 rem Pictures
 rem Templates
 rem Desktop
-rem Downloads
 rem Music
 rem Public
 rem Videos
