@@ -1,41 +1,52 @@
-!!! xterm
+! Theme: Very basic colors
 
-XTerm.vt100.utf8: 1
+#define V_FONT           terminus-12
+#define V_BG             black
+#define V_FG             white
+#define V_BLACK          black
+#define V_RED            maroon
+#define V_GREEN          green
+#define V_YELLOW         olive
+#define V_BLUE           navy
+#define V_MAGENTA        purple
+#define V_CYAN           teal
+#define V_WHITE          silver
+#define V_BRIGHT_BLACK   black
+#define V_BRIGHT_RED     red
+#define V_BRIGHT_GREEN   lime
+#define V_BRIGHT_YELLOW  yellow
+#define V_BRIGHT_BLUE    blue
+#define V_BRIGHT_MAGENTA fuchsia
+#define V_BRIGHT_CYAN    aqua
+#define V_BRIGHT_WHITE   white
+#define V_CURSOR_COLOR   #eeeeee
 
-!! Colors
-XTerm.vt100.foreground: #c6a57b
-XTerm.vt100.background: #151515
-! black
-XTerm.vt100.color0:     #101010
-XTerm.vt100.color8:     #404040
-! red
-XTerm.vt100.color1:     #953331
-XTerm.vt100.color9:     #8D4A48
-! green
-XTerm.vt100.color2:     #546A29
-XTerm.vt100.color10:    #7E9960
-! yellow
-XTerm.vt100.color3:     #909737
-XTerm.vt100.color11:    #9CA554
-! blue
-XTerm.vt100.color4:     #385E6B
-XTerm.vt100.color12:    #5C737C
-! magenta
-XTerm.vt100.color5:     #7F355E
-XTerm.vt100.color13:    #95618B
-! cyan
-XTerm.vt100.color6:     #34676F
-XTerm.vt100.color14:    #5D858A
-! white
-XTerm.vt100.color7:     #dddddd
-XTerm.vt100.color15:    #dddddd
+! URxvt
 
-!! Font
-XTerm.vt100.font: terminus-16
+URxvt.font: V_FONT
 
-!! Cursor
-XTerm.vt100.cursorColor: #eeeeee
-XTerm.vt100.cursorBlink: 0
+URxvt.foreground: V_FG
+URxvt.background: V_BG
 
-!! Padding
-XTerm.vt100.internalBorder: 10
+URxvt.color0: V_BLACK
+URxvt.color1: V_RED
+URxvt.color2: V_GREEN
+URxvt.color3: V_YELLOW
+URxvt.color4: V_BLUE
+URxvt.color5: V_MAGENTA
+URxvt.color6: V_CYAN
+URxvt.color7: V_WHITE
+URxvt.color8: V_BRIGHT_BLACK
+URxvt.color9: V_BRIGHT_RED
+URxvt.color10: V_BRIGHT_GREEN
+URxvt.color11: V_BRIGHT_YELLOW
+URxvt.color12: V_BRIGHT_BLUE
+URxvt.color13: V_BRIGHT_MAGENTA
+URxvt.color14: V_BRIGHT_CYAN
+URxvt.color15: V_BRIGHT_WHITE
+
+URxvt.cursorColor: V_CURSOR_COLOR
+URxvt.cursorBlink: false
+
+URxvt.internalBorder: 10
+URxvt.scrollBar: false
