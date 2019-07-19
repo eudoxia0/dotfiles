@@ -12,7 +12,7 @@ sudo apt-get install -y apt-transport-https ca-certificates \
 sudo apt-get update
 
 X11_PACKAGES="xserver-xorg-core xserver-xorg-video-intel \
-xserver-xorg-input-evdev x11-xserver-utils xinit xdm xterm xdotool xcape \
+xserver-xorg-input-evdev x11-xserver-utils xinit xdm rxvt-unicode-256color xdotool xcape \
 xscreensaver xscreensaver-data-extra xscreensaver-gl xscreensaver-gl-extra \
 stumpwm"
 
