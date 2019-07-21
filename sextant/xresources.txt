@@ -1,4 +1,4 @@
-#include ".config/x11/basic-theme"
+#include "basic-theme"
 
 ! URxvt
 
