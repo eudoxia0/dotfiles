@@ -1,0 +1,22 @@
+! Theme: Very basic colors
+
+#define V_FONT           terminus-12
+#define V_BG             black
+#define V_FG             white
+#define V_BLACK          black
+#define V_RED            maroon
+#define V_GREEN          green
+#define V_YELLOW         olive
+#define V_BLUE           navy
+#define V_MAGENTA        purple
+#define V_CYAN           teal
+#define V_WHITE          silver
+#define V_BRIGHT_BLACK   black
+#define V_BRIGHT_RED     red
+#define V_BRIGHT_GREEN   lime
+#define V_BRIGHT_YELLOW  yellow
+#define V_BRIGHT_BLUE    blue
+#define V_BRIGHT_MAGENTA fuchsia
+#define V_BRIGHT_CYAN    aqua
+#define V_BRIGHT_WHITE   white
+#define V_CURSOR_COLOR   #eeeeee
