@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 set -euxo pipefail
-echo "Drive: (probably /media/eudoxia/BACKUP)"
-read BACKUP_DRIVE
+BACKUP_DRIVE=/media/eudoxia/Backup
 
 rsync --quiet --archive --human-readable --perms --executability --times --checksum --delete \
       ~/files/ \
