@@ -43,6 +43,8 @@ cp bashrc.sh ~/.bashrc
 mkdir -p ~/.config/stumpwm/
 cp stumpwmrc.lisp ~/.config/stumpwm/config
 sudo cp dhclient.txt /etc/dhcp/dhclient.conf
+mkdir -p ~/.emacs.d/
+cp init.el ~/.emacs.d/init.el
 
 mkdir -p ~/.scripts
 cp battery.sh ~/.scripts/battery.sh
@@ -90,13 +92,3 @@ sudo apt-get purge -y aptitude debian-faq doc-debian ispell vim-tiny bluetooth
 # Remove orphans
 # find orphans with `sudo deborphan --guess-all`
 sudo apt-get purge -y vim-common libswitch-perl libxapian30 libclass-isa-perl
-
-# Emacs
-EMACS_DIR=~/.emacs.d
-
-if [ -d "$EMACS_DIR" ]; then
-  rm -rf $EMACS_DIR
-fi
-
-mkdir -p $EMACS_DIR/lang
-cp -R emacs/. $EMACS_DIR
