@@ -1,6 +1,6 @@
 [user]
 	name = Fernando Borretti
-	email = eudoxiahp@gmail.com
+	email = fernando@borretti.me
 [diff]
 	tool = meld
 	guitool = meld
