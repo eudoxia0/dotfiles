@@ -61,7 +61,6 @@ cp xcompose.txt ~/.XCompose
 cp xmodmap.txt ~/.config/x11/xmodmap
 cp xsession.sh ~/.xsession
 cp xresources.txt ~/.config/x11/xresources
-cp xresources-basic-theme.txt ~/.config/x11/basic-theme
 
 sudo cp xdm-xsetup /etc/X11/xdm/Xsetup
 sudo cp xdm-xstartup /etc/X11/xdm/Xstartup

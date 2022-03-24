@@ -1,33 +1,71 @@
-! Theme
+!!!! Color Themes
 
-#include "basic-theme"
+!!! Ocean Dark
 
-! URxvt
+#define FOREGROUND     #c0c5ce
+#define BACKGROUND     #2b303b
+#define CURSOR_COLOR   #d0d0d0
 
-URxvt.font: V_FONT
+#define NORMAL_BLACK   #2b303b
+#define NORMAL_RED     #bf616a
+#define NORMAL_YELLOW  #ebcb8b
+#define NORMAL_GREEN   #a3be8c
+#define NORMAL_BLUE    #8fa1b3
+#define NORMAL_MAGENTA #b48ead
+#define NORMAL_CYAN    #96b5b4
+#define NORMAL_WHITE   #c0c5ce
+#define BRIGHT_BLACK   #65737e
+#define BRIGHT_RED     #bf616a
+#define BRIGHT_YELLOW  #ebcb8b
+#define BRIGHT_GREEN   #a3be8c
+#define BRIGHT_BLUE    #8fa1b3
+#define BRIGHT_MAGENTA #b48ead
+#define BRIGHT_CYAN    #96b5b4
+#define BRIGHT_WHITE   #eff1f5
 
-URxvt.foreground: V_FG
-URxvt.background: V_BG
+!!! Base16 Default Dark
 
-URxvt.color0: V_BLACK
-URxvt.color1: V_RED
-URxvt.color2: V_GREEN
-URxvt.color3: V_YELLOW
-URxvt.color4: V_BLUE
-URxvt.color5: V_MAGENTA
-URxvt.color6: V_CYAN
-URxvt.color7: V_WHITE
-URxvt.color8: V_BRIGHT_BLACK
-URxvt.color9: V_BRIGHT_RED
-URxvt.color10: V_BRIGHT_GREEN
-URxvt.color11: V_BRIGHT_YELLOW
-URxvt.color12: V_BRIGHT_BLUE
-URxvt.color13: V_BRIGHT_MAGENTA
-URxvt.color14: V_BRIGHT_CYAN
-URxvt.color15: V_BRIGHT_WHITE
+#define FOREGROUND     #d0d0d0
+#define BACKGROUND     #151515
+#define CURSOR_COLOR   #c0c5ce
 
-URxvt.cursorColor: V_CURSOR_COLOR
-URxvt.cursorBlink: false
+#define NORMAL_BLACK   #151515
+#define NORMAL_RED     #ac4142
+#define NORMAL_YELLOW  #90a959
+#define NORMAL_GREEN   #f4bf75
+#define NORMAL_BLUE    #6a9fb5
+#define NORMAL_MAGENTA #aa759f
+#define NORMAL_CYAN    #75b5aa
+#define NORMAL_WHITE   #d0d0d0
+#define BRIGHT_BLACK   #505050
+#define BRIGHT_RED     #ac4142
+#define BRIGHT_YELLOW  #90a959
+#define BRIGHT_GREEN   #f4bf75
+#define BRIGHT_BLUE    #6a9fb5
+#define BRIGHT_MAGENTA #aa759f
+#define BRIGHT_CYAN    #75b5aa
+#define BRIGHT_WHITE   #f5f5f5
 
-URxvt.internalBorder: 10
-URxvt.scrollBar: false
+!!!! st Configuration
+
+st.font:        Terminus:pixelsize=16:antialias=true:autohint=true;
+st.borderpx:    20
+st.foreground:  FOREGROUND
+st.background:  BACKGROUND
+st.cursorColor: CURSOR_COLOR
+st.color0:      NORMAL_BLACK
+st.color1:      NORMAL_RED
+st.color2:      NORMAL_YELLOW
+st.color3:      NORMAL_GREEN
+st.color4:      NORMAL_BLUE
+st.color5:      NORMAL_MAGENTA
+st.color6:      NORMAL_CYAN
+st.color7:      NORMAL_WHITE
+st.color8:      BRIGHT_BLACK
+st.color9:      BRIGHT_RED
+st.color10:     BRIGHT_YELLOW
+st.color11:     BRIGHT_GREEN
+st.color12:     BRIGHT_BLUE
+st.color13:     BRIGHT_MAGENTA
+st.color14:     BRIGHT_CYAN
+st.color15:     BRIGHT_WHITE
