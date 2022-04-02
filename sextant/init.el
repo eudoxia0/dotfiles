@@ -68,7 +68,8 @@
 ;; Get rid of overwrite mode because sometimes I enable it by accident.
 (put 'overwrite-mode 'disabled t)
 ;; Default font.
-(set-frame-font "Inconsolata 8")
+(custom-set-faces
+ '(default ((t (:background nil :family "Inconsolata" :foundry "PfEd" :slant normal :weight normal :height 113 :width normal)))))
 ;; Show trailing whitespace.
 (setq-default show-trailing-whitespace t)
 ;; Highlight the current line.
