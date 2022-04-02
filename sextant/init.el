@@ -137,6 +137,10 @@
 (setq-default indent-tabs-mode nil)
 ;; Set the default tab width to 4.
 (setq-default tab-width 4)
+;; IDO mode for better completions.
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode 1)
 
 ;;;;
 ;;;; 7. Mode-Specific Configuration
