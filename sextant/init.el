@@ -135,6 +135,8 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 ;; Use tabs instead of spaces.
 (setq-default indent-tabs-mode nil)
+;; Set the default tab width to 4.
+(setq-default tab-width 4)
 
 ;;;;
 ;;;; 7. Mode-Specific Configuration
@@ -179,6 +181,14 @@
 (define-derived-mode concordia-mode text-mode "Concordia"
   "Major mode for editing ConcordiaML files."
   (setq font-lock-defaults '((concordia-font-lock-keywords))))
+
+;;;
+;;; OCaml
+;;;
+
+;; ## added by OPAM user-setup for emacs / base ## 56ab50dc8996d2bb95e7856a6eddb17b ## you can edit, but keep this line
+(require 'opam-user-setup "~/.emacs.d/opam-user-setup.el")
+;; ## end of OPAM user-setup addition for emacs / base ## keep this line
 
 ;;;;
 ;;;; Custom Set Variables
