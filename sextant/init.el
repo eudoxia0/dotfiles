@@ -68,7 +68,7 @@
 ;; Get rid of overwrite mode because sometimes I enable it by accident.
 (put 'overwrite-mode 'disabled t)
 ;; Default font.
-(set-frame-font "Inconsolata 12")
+(set-frame-font "Inconsolata 8")
 ;; Show trailing whitespace.
 (setq-default show-trailing-whitespace t)
 ;; Highlight the current line.
