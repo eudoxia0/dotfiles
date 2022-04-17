@@ -19,7 +19,7 @@
 
 ;; Use MELPA and MELPA-Stable exclusively.
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
-			 ("melpa-stable" . "https://stable.melpa.org/packages/")))
+			             ("melpa-stable" . "https://stable.melpa.org/packages/")))
 
 (package-initialize)
 
