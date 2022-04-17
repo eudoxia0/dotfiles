@@ -30,6 +30,8 @@
     sublime-themes ; Sublime themes
     tuareg         ; OCaml IDE
     merlin         ; OCaml error highlighting
+    company        ; completion
+    merlin-company ; completion for OCaml
     ))
 
 ;; Iterate over package list and install them.
