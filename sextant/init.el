@@ -19,19 +19,25 @@
 
 ;; Use MELPA and MELPA-Stable exclusively.
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
-			             ("melpa-stable" . "https://stable.melpa.org/packages/")))
+			 ("melpa-stable" . "https://stable.melpa.org/packages/")
+			 ("elpa" . "https://elpa.gnu.org/packages/")))
 
 (package-initialize)
+
+(unless package-archive-contents
+  (package-refresh-contents))
 
 (defvar my-packages
   '(olivetti       ; Distraction-free writing mode
     slime          ; Common Lisp IDE
     github-theme   ; GitHub theme
     sublime-themes ; Sublime themes
+    aircon-theme   ; light colour theme
     tuareg         ; OCaml IDE
     merlin         ; OCaml error highlighting
     company        ; completion
     merlin-company ; completion for OCaml
+    markdown-mode  ; Markdown support
     ))
 
 ;; Iterate over package list and install them.
@@ -43,7 +49,7 @@
 ;;;; 2. Colour Theme
 ;;;;
 
-(load-theme 'github t)
+(load-theme 'aircon t)
 
 ;;;;
 ;;;; 3. User Interface
@@ -75,7 +81,7 @@
 ;; Show trailing whitespace.
 (setq-default show-trailing-whitespace t)
 ;; Highlight the current line.
-(global-hl-line-mode +1)
+;(global-hl-line-mode +1)
 
 ;;;;
 ;;;; 4. Splash Screen
@@ -168,6 +174,12 @@
 	  (lambda ()
 	    (set-frame-font "Times New Roman 18" t)))
 
+;;;
+;;; NXML
+;;;
+
+(setq nxml-slash-auto-complete-flag t)
+
 ;;;;
 ;;;; Custom Modes
 ;;;;
@@ -199,6 +211,12 @@
 ;; ## added by OPAM user-setup for emacs / base ## 56ab50dc8996d2bb95e7856a6eddb17b ## you can edit, but keep this line
 (require 'opam-user-setup "~/.emacs.d/opam-user-setup.el")
 ;; ## end of OPAM user-setup addition for emacs / base ## keep this line
+
+;;;
+;;; Austral
+;;;
+
+(require 'austral-mode "~/.emacs.d/austral-mode.el")
 
 ;;;;
 ;;;; Custom Set Variables
