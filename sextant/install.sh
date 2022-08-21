@@ -42,6 +42,8 @@ cp gtkrc.txt ~/.gtkrc-2.0
 cp bashrc.sh ~/.bashrc
 mkdir -p ~/.config/stumpwm/
 cp stumpwmrc.lisp ~/.config/stumpwm/config
+mkdir -p ~/.config/spectrwm/
+cp spectrwm.conf ~/.config/spectrwm/spectrwm.conf
 sudo cp dhclient.txt /etc/dhcp/dhclient.conf
 mkdir -p ~/.emacs.d/
 cp init.el ~/.emacs.d/init.el
