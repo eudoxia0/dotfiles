@@ -31,7 +31,7 @@ You should import these into a deck with a template having the fields:
 - `Front`
 - `Back`
 
-Example usage:
+# Example Usage
 
 ```
 $ echo -e 'Greek Alphabet\nAlpha\nBeta\nGamma' | ./ordinal.py
