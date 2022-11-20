@@ -1,38 +1,3 @@
-# Run after bootstrap.sh
-
-set -euxo pipefail
-
-# Sources
-#sudo cp sources.list /etc/apt/sources.list
-
-sudo apt-get install -y apt-transport-https ca-certificates \
-    software-properties-common
-
-# Packages
-sudo apt-get update
-
-X11_PACKAGES="xserver-xorg-core xserver-xorg-video-intel \
-xserver-xorg-input-evdev x11-xserver-utils xinit xdm rxvt-unicode-256color xdotool xcape \
-xscreensaver xscreensaver-data-extra xscreensaver-gl xscreensaver-gl-extra \
-stumpwm"
-
-SOUND_PACKAGES="pavucontrol pulseaudio pulseaudio-module-zeroconf alsa-utils \
-avahi-daemon"
-
-DEV_PACKAGES="git make emacs25 clang gnuplot ocaml ocaml-native-compilers \
-smlnj jekyll"
-
-GENERAL_PACKAGES="duplicity gnupg sqlite3 libsqlite3-dev \
-texlive-xetex firefox-esr neofetch fonts-inconsolata xfonts-terminus \
-fonts-linuxlibertine mupdf acpi viewnior lxappearance ntp feh \
-transmission-gtk djview4 easytag mpv unrar-free ttf-ancient-fonts \
-libwebkit2gtk-4.0-37-gtk2 docbook-xml docbook-xsl \
-docbook-xsl-ns xsltproc fop lm-sensors tlp thermald mupdf-tools \
-clementine pcmanfm screenfetch keepassx calibre xarchiver htop ansible inxi arc-theme redshift"
-
-sudo apt-get install -y $X11_PACKAGES $SOUND_PACKAGES $DEV_PACKAGES \
-     $GENERAL_PACKAGES
-
 # Config files and scripts
 mkdir -p ~/.config/git/
 cp gitconfig.txt ~/.config/git/config
@@ -70,26 +35,3 @@ sudo chmod +x /etc/X11/xdm/Xsetup
 sudo chmod +x /etc/X11/xdm/Xstartup
 
 cp mimeapps.list ~/.local/share/applications/mimeapps.list
-
-# Remove the directories you start out with in your home directory
-function rem() {
-  if [ -d ~/$1 ]
-  then
-    rmdir ~/$1
-  fi
-}
-
-rem Documents
-rem Pictures
-rem Templates
-rem Desktop
-rem Music
-rem Public
-rem Videos
-
-# Remove unnecessary packages
-sudo apt-get purge -y aptitude debian-faq doc-debian ispell vim-tiny bluetooth
-
-# Remove orphans
-# find orphans with `sudo deborphan --guess-all`
-sudo apt-get purge -y vim-common libswitch-perl libxapian30 libclass-isa-perl
