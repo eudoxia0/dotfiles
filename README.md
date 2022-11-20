@@ -2,6 +2,6 @@
 
 # License
 
-Copyright (c) 2013–2019 Fernando Borretti
+Copyright (c) 2013–2022 Fernando Borretti
 
 Released under the MIT license.
