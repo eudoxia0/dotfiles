@@ -1,6 +1,4 @@
-# Config files and scripts
-mkdir -p ~/.config/git/
-cp gitconfig.txt ~/.config/git/config
+
 
 cp xscreensaver.txt ~/.xscreensaver
 cp gtkrc.txt ~/.gtkrc-2.0
