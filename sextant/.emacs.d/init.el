@@ -76,12 +76,13 @@
 ;; Get rid of overwrite mode because sometimes I enable it by accident.
 (put 'overwrite-mode 'disabled t)
 ;; Default font.
-(custom-set-faces
- '(default ((t (:background nil :family "Inconsolata" :foundry "PfEd" :slant normal :weight normal :height 113 :width normal)))))
+(add-to-list 'default-frame-alist
+             '(font . "Inconsolata-12"))
 ;; Show trailing whitespace.
 (setq-default show-trailing-whitespace t)
 ;; Highlight the current line.
-;(global-hl-line-mode +1)
+(global-hl-line-mode +1)
+(set-face-background 'hl-line "#eeeeee")
 
 ;;;;
 ;;;; 4. Splash Screen
