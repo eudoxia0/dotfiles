@@ -6,3 +6,4 @@
 .irssi/*.log
 *.elc
 .vagrant
+st/st
