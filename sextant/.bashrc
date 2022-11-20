@@ -81,7 +81,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 alias gcam='git commit -a -m'
-alias gpom='git push origin master'
+alias gp='git push -u origin HEAD'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
