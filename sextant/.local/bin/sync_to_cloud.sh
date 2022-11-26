@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-rclone sync /home/eudoxia/files/cloud/ endeis-crypt:cloud
+rclone -v sync /home/eudoxia/files/cloud/ endeis-crypt:cloud
