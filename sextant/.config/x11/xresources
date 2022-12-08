@@ -2,26 +2,26 @@
 
 !!! Ocean Dark
 
-#define FOREGROUND     #c0c5ce
-#define BACKGROUND     #2b303b
-#define CURSOR_COLOR   #d0d0d0
+!#define FOREGROUND     !#c0c5ce
+!#define BACKGROUND     !#2b303b
+!#define CURSOR_COLOR   !#d0d0d0
 
-#define NORMAL_BLACK   #2b303b
-#define NORMAL_RED     #bf616a
-#define NORMAL_YELLOW  #ebcb8b
-#define NORMAL_GREEN   #a3be8c
-#define NORMAL_BLUE    #8fa1b3
-#define NORMAL_MAGENTA #b48ead
-#define NORMAL_CYAN    #96b5b4
-#define NORMAL_WHITE   #c0c5ce
-#define BRIGHT_BLACK   #65737e
-#define BRIGHT_RED     #bf616a
-#define BRIGHT_YELLOW  #ebcb8b
-#define BRIGHT_GREEN   #a3be8c
-#define BRIGHT_BLUE    #8fa1b3
-#define BRIGHT_MAGENTA #b48ead
-#define BRIGHT_CYAN    #96b5b4
-#define BRIGHT_WHITE   #eff1f5
+!#define NORMAL_BLACK   !#2b303b
+!#define NORMAL_RED     !#bf616a
+!#define NORMAL_YELLOW  !#ebcb8b
+!#define NORMAL_GREEN   !#a3be8c
+!#define NORMAL_BLUE    !#8fa1b3
+!#define NORMAL_MAGENTA !#b48ead
+!#define NORMAL_CYAN    !#96b5b4
+!#define NORMAL_WHITE   !#c0c5ce
+!#define BRIGHT_BLACK   !#65737e
+!#define BRIGHT_RED     !#bf616a
+!#define BRIGHT_YELLOW  !#ebcb8b
+!#define BRIGHT_GREEN   !#a3be8c
+!#define BRIGHT_BLUE    !#8fa1b3
+!#define BRIGHT_MAGENTA !#b48ead
+!#define BRIGHT_CYAN    !#96b5b4
+!#define BRIGHT_WHITE   !#eff1f5
 
 !!! Base16 Default Dark
 
@@ -69,3 +69,30 @@ st.color12:     BRIGHT_BLUE
 st.color13:     BRIGHT_MAGENTA
 st.color14:     BRIGHT_CYAN
 st.color15:     BRIGHT_WHITE
+
+!!!! urxvt configuration.
+
+URxvt.font:            -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
+URxvt.xftAntialias:    true
+URxvt.cursorBlink:     true
+URxvt.scrollBar_right: true
+URxvt.internalBorder:  20
+URxvt.foreground:      FOREGROUND
+URxvt.background:      BACKGROUND
+URxvt.cursorColor:     CURSOR_COLOR
+URxvt.color0:          NORMAL_BLACK
+URxvt.color1:          NORMAL_RED
+URxvt.color2:          NORMAL_YELLOW
+URxvt.color3:          NORMAL_GREEN
+URxvt.color4:          NORMAL_BLUE
+URxvt.color5:          NORMAL_MAGENTA
+URxvt.color6:          NORMAL_CYAN
+URxvt.color7:          NORMAL_WHITE
+URxvt.color8:          BRIGHT_BLACK
+URxvt.color9:          BRIGHT_RED
+URxvt.color10:         BRIGHT_YELLOW
+URxvt.color11:         BRIGHT_GREEN
+URxvt.color12:         BRIGHT_BLUE
+URxvt.color13:         BRIGHT_MAGENTA
+URxvt.color14:         BRIGHT_CYAN
+URxvt.color15:         BRIGHT_WHITE
