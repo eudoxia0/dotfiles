@@ -210,14 +210,16 @@
 (add-hook 'tuareg-mode-hook #'merlin-mode)
 (add-hook 'caml-mode-hook #'merlin-mode)
 ;; ## added by OPAM user-setup for emacs / base ## 56ab50dc8996d2bb95e7856a6eddb17b ## you can edit, but keep this line
-(require 'opam-user-setup "~/.emacs.d/opam-user-setup.el")
+(when (file-exists-p "~/.emacs.d/opam-user-setup.el")
+  (require 'opam-user-setup "~/.emacs.d/opam-user-setup.el"))
 ;; ## end of OPAM user-setup addition for emacs / base ## keep this line
 
 ;;;
 ;;; Austral
 ;;;
 
-(require 'austral-mode "~/.emacs.d/austral-mode.el")
+(when (file-exists-p "~/.emacs.d/austral-mode.el")
+  (require 'austral-mode "~/.emacs.d/austral-mode.el"))
 
 ;;;;
 ;;;; Custom Set Variables
