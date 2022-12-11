@@ -1,5 +1,12 @@
 # eudoxia's dotfiles
 
+Set up:
+
+```bash
+$ sudo bash -c "echo 'eudoxia ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/10-eudoxia"
+$ ./cycle.sh sextant:sextant
+```
+
 # License
 
 Copyright (c) 2013–2022 Fernando Borretti
