@@ -5,6 +5,9 @@ function probe_battery() {
     if (( charge < 10 )); then
 	xmessage -center "Battery level: $charge%"
     fi
+    if (( charge > 90 )); then
+	xmessage -center "Battery level: $charge%"
+    fi
 }
 
 while true; do
