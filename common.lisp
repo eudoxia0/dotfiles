@@ -60,6 +60,9 @@
 
   :apply (((component file-component))
           (with-slots (path contents) component
+            ;; Ensure the parent directories exist.
+            (ensure-directories-exist (uiop:pathname-parent-directory-pathname path))
+            ;; Write the file.
             (with-open-file (stream path
                                     :direction :output
                                     :if-exists :supersede
