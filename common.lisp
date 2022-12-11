@@ -60,7 +60,6 @@
 
   :apply (((component file-component))
           (with-slots (path contents) component
-            (format t "~A~%" path)
             (with-open-file (stream path
                                     :direction :output
                                     :if-exists :supersede
