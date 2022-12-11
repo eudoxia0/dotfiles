@@ -34,3 +34,35 @@
   :unapply ((component)
             "Does nothing."
             nil))
+
+;;;
+;;; File Component
+;;;
+
+(defcomponent file-component (component)
+  ((path :reader path
+         :initarg :path
+         :type pathname
+         :documentation "The path to the file.")
+   (contents :reader contents
+             :initarg :contents
+             :type string
+             :documentation "The file contents."))
+  :documentation "A component to create a file."
+
+  :appliedp ((component)
+             "Applied when the file exists and its contents are identical to the string."
+             (with-slots (path contents) component
+               (and (probe-file path)
+                    (string= (uiop:read-file-string path) contents))))
+
+  :apply ((component)
+          (with-slots (path contents) component
+            (with-open-file (stream path
+                                    :direction :output
+                                    :if-exists :supersede
+                                    :if-does-not-exist :create)
+              (write-sequence contents stream))))
+
+  :unapply ((component)
+            (delete-file (path component))))
