@@ -63,4 +63,7 @@
                 (make-file-component :title ".xsession"
                                      :source #p"sextant/.xsession"
                                      :target (native-path "~/.xsession"))
+                (make-file-component :title "init.el"
+                                     :source #p"sextant/.emacs.d/init.el"
+                                     :target (native-path "~/.emacs.d/init.el"))
                 )))
