@@ -50,4 +50,17 @@
                                :packages +packages+)
                 (make-file-component :title ".XCompose"
                                      :source #p"sextant/.XCompose"
-                                     :target (native-path "~/.XCompose")))))
+                                     :target (native-path "~/.XCompose"))
+                (make-file-component :title ".bashrc"
+                                     :source #p"sextant/.bashrc"
+                                     :target (native-path "~/.bashrc"))
+                (make-file-component :title ".garglkrc"
+                                     :source #p"sextant/.garglkrc"
+                                     :target (native-path "~/.garglkrc"))
+                (make-file-component :title ".xscreensaver"
+                                     :source #p"sextant/.xscreensaver"
+                                     :target (native-path "~/.xscreensaver"))
+                (make-file-component :title ".xsession"
+                                     :source #p"sextant/.xsession"
+                                     :target (native-path "~/.xsession"))
+                )))
