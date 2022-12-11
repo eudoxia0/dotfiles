@@ -40,6 +40,11 @@
 
 ;;; Configuration class.
 
+(defun make-file (path)
+  (make-file-component :title path
+                       :source (format nil "sextant/~A" path)
+                       :target (native-path (format nil "~~/~A" path))))
+
 (defconfig sextant
   :secrets ()
   :components (((config sextant) vault)
@@ -48,22 +53,18 @@
                 (make-instance 'apt-one-way-component
                                :title "Install apt packages"
                                :packages +packages+)
-                (make-file-component :title ".XCompose"
-                                     :source #p"sextant/.XCompose"
-                                     :target (native-path "~/.XCompose"))
-                (make-file-component :title ".bashrc"
-                                     :source #p"sextant/.bashrc"
-                                     :target (native-path "~/.bashrc"))
-                (make-file-component :title ".garglkrc"
-                                     :source #p"sextant/.garglkrc"
-                                     :target (native-path "~/.garglkrc"))
-                (make-file-component :title ".xscreensaver"
-                                     :source #p"sextant/.xscreensaver"
-                                     :target (native-path "~/.xscreensaver"))
-                (make-file-component :title ".xsession"
-                                     :source #p"sextant/.xsession"
-                                     :target (native-path "~/.xsession"))
-                (make-file-component :title "init.el"
-                                     :source #p"sextant/.emacs.d/init.el"
-                                     :target (native-path "~/.emacs.d/init.el"))
+                (make-file ".XCompose")
+                (make-file ".bashrc")
+                (make-file ".garglkrc")
+                (make-file ".xscreensaver")
+                (make-file ".xsession")
+                (make-file ".emacs.d/init.el")
+                (make-file ".local/bin/battery.sh")
+                (make-file ".local/bin/embed_fonts.sh")
+                (make-file ".local/bin/ordinal.py")
+                (make-file ".local/bin/poetry.py")
+                (make-file ".local/bin/rotate_wallpaper.sh")
+                (make-file ".local/bin/ssd_rsync_backup.sh")
+                (make-file ".local/bin/sync_from_cloud.sh")
+                (make-file ".local/bin/sync_to_cloud.sh")
                 )))
