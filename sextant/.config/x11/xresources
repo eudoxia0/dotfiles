@@ -96,3 +96,35 @@ URxvt.color12:         BRIGHT_BLUE
 URxvt.color13:         BRIGHT_MAGENTA
 URxvt.color14:         BRIGHT_CYAN
 URxvt.color15:         BRIGHT_WHITE
+
+!!!! xterm configuration
+
+! Terminal name.
+XTerm.termName:          xterm-256color
+! Font.
+XTerm.vt100.faceName:    Terminus:pixelsize=16:antialias=true:autohint=true;
+! Inner border.
+XTerm.vt100.internalBorder: 20
+! Use UTF-8
+XTerm.vt100.locale:      false
+XTerm.vt100.utf8:        true
+! Colour theme.
+XTerm.vt100.foreground:  FOREGROUND
+XTerm.vt100.background:  BACKGROUND
+XTerm.vt100.cursorColor: CURSOR_COLOR
+XTerm.vt100.color0:      NORMAL_BLACK
+XTerm.vt100.color1:      NORMAL_RED
+XTerm.vt100.color2:      NORMAL_YELLOW
+XTerm.vt100.color3:      NORMAL_GREEN
+XTerm.vt100.color4:      NORMAL_BLUE
+XTerm.vt100.color5:      NORMAL_MAGENTA
+XTerm.vt100.color6:      NORMAL_CYAN
+XTerm.vt100.color7:      NORMAL_WHITE
+XTerm.vt100.color8:      BRIGHT_BLACK
+XTerm.vt100.color9:      BRIGHT_RED
+XTerm.vt100.color10:     BRIGHT_YELLOW
+XTerm.vt100.color11:     BRIGHT_GREEN
+XTerm.vt100.color12:     BRIGHT_BLUE
+XTerm.vt100.color13:     BRIGHT_MAGENTA
+XTerm.vt100.color14:     BRIGHT_CYAN
+XTerm.vt100.color15:     BRIGHT_WHITE
