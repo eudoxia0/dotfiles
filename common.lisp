@@ -25,8 +25,8 @@
   :documentation "A component to install APT package. One way because
   unapplying does not uninstall the packages, for speed."
   :appliedp ((component)
-             "Triggers when any package is not installed."
-             (some #'(lambda (pkg) (not (apt-installed-p pkg))) (packages component)))
+             "Applied when all packages are installed."
+             (every #'apt-installed-p (packages component)))
   :apply ((component)
           "Install all packages."
           (let ((cmd (format nil "sudo apt-get install -y ~{~A ~}" (packages component))))
