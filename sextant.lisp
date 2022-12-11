@@ -47,4 +47,7 @@
                (list
                 (make-instance 'apt-one-way-component
                                :title "Install apt packages"
-                               :packages +packages+))))
+                               :packages +packages+)
+                (make-file-component :title ".XCompose"
+                                     :source #p"sextant/.XCompose"
+                                     :target (native-path "~/.XCompose")))))
