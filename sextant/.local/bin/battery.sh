@@ -3,10 +3,10 @@
 function probe_battery() {
     local var charge=`acpi -b | grep -oP "\d+%" | tr -d "%"`
     if (( charge < 10 )); then
-	xmessage -center "Battery level: $charge%"
+        notify-send "Plug Charger" "Battery level is $charge%"
     fi
     if (( charge > 90 )); then
-	xmessage -center "Battery level: $charge%"
+	    notify-send "Unplug Charger" "Battery level is $charge%"
     fi
 }
 
