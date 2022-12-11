@@ -61,13 +61,13 @@
   :apply (((component file-component))
           (with-slots (path contents) component
             ;; Ensure the parent directories exist.
-            (ensure-directories-exist (uiop:pathname-parent-directory-pathname path))
+            (ensure-directories-exist (uiop:pathname-directory-pathname path))
             ;; Write the file.
             (with-open-file (stream path
                                     :direction :output
                                     :if-exists :supersede
                                     :if-does-not-exist :create)
-              (write-sequence contents stream))))
+              (write-string contents stream))))
 
   :unapply (((component file-component))
             (delete-file (component-path component))))
