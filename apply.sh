@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-# Apply a configuration
 
-stow --target=/home/eudoxia --stow $1
+sudo lcm apply $1 common.lisp sextant.lisp
