@@ -40,10 +40,11 @@
 
 ;;; Configuration class.
 
-(defun make-file (path)
+(defun make-file (path &optional (executable nil))
   (make-file-component :title path
                        :source (format nil "sextant/~A" path)
-                       :target (native-path (format nil "~~/~A" path))))
+                       :target (native-path (format nil "~~/~A" path))
+                       :executable executable))
 
 (defconfig sextant
   :secrets ()
@@ -59,14 +60,14 @@
                 (make-file ".xscreensaver")
                 (make-file ".xsession")
                 (make-file ".emacs.d/init.el")
-                (make-file ".local/bin/battery.sh")
-                (make-file ".local/bin/embed_fonts.sh")
-                (make-file ".local/bin/ordinal.py")
-                (make-file ".local/bin/poetry.py")
-                (make-file ".local/bin/rotate_wallpaper.sh")
-                (make-file ".local/bin/ssd_rsync_backup.sh")
-                (make-file ".local/bin/sync_from_cloud.sh")
-                (make-file ".local/bin/sync_to_cloud.sh")
+                (make-file ".local/bin/battery.sh" t)
+                (make-file ".local/bin/embed_fonts.sh" t)
+                (make-file ".local/bin/ordinal.py" t)
+                (make-file ".local/bin/poetry.py" t)
+                (make-file ".local/bin/rotate_wallpaper.sh" t)
+                (make-file ".local/bin/ssd_rsync_backup.sh" t)
+                (make-file ".local/bin/sync_from_cloud.sh" t)
+                (make-file ".local/bin/sync_to_cloud.sh" t)
                 (make-file ".config/git/config")
                 (make-file ".config/spectrwm/spectrwm.conf")
                 (make-file ".config/x11/xmodmap")
