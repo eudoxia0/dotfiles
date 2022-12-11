@@ -67,4 +67,8 @@
                 (make-file ".local/bin/ssd_rsync_backup.sh")
                 (make-file ".local/bin/sync_from_cloud.sh")
                 (make-file ".local/bin/sync_to_cloud.sh")
+                (make-file ".config/git/config")
+                (make-file ".config/spectrwm/spectrwm.conf")
+                (make-file ".config/x11/xmodmap")
+                (make-file ".config/x11/xresources")
                 )))
