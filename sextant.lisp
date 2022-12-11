@@ -36,6 +36,7 @@
    "pavucontrol"
    "whois"
    "expect"
+   "dunst"
    ))
 
 ;;; Configuration class.
