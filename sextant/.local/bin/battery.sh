@@ -6,7 +6,7 @@ function probe_battery() {
         notify-send "Plug Charger" "Battery level is $charge%"
     fi
     if (( charge > 90 )); then
-	    notify-send "Unplug Charger" "Battery level is $charge%"
+        notify-send "Unplug Charger" "Battery level is $charge%"
     fi
 }
 
