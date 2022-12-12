@@ -37,6 +37,7 @@
    "whois"
    "expect"
    "dunst"
+   "gnuplot"
    ))
 
 ;;; Configuration class.
