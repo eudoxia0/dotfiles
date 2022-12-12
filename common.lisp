@@ -18,7 +18,7 @@
 
 (defun apt-installed-p (package)
   (multiple-value-bind (a b code)
-      (uiop:run-program (format nil "apt-cache show ~A" package) :ignore-error-status t)
+      (uiop:run-program (format nil "dpkg -s ~A" package) :ignore-error-status t)
     (declare (ignore a b))
     (= code 0)))
 
