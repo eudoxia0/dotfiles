@@ -38,6 +38,8 @@
    "expect"
    "dunst"
    "gnuplot"
+   "htop"
+   "libfuse2" ;; For the Mochi app.
    ))
 
 ;;; Configuration class.
