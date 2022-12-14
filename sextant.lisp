@@ -40,6 +40,7 @@
    "gnuplot"
    "htop"
    "libfuse2" ;; For the Mochi app.
+   "jekyll"
    ))
 
 ;;; Configuration class.
