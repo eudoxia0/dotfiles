@@ -65,7 +65,6 @@
                      :socket nil)))
     (setf (attributes pathname) (encode-attributes attrs))))
 
-
 (defcomponent file-component (component)
   ((path :reader component-path
          :initarg :path
