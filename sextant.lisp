@@ -42,6 +42,7 @@
    "htop"
    "libfuse2" ;; For the Mochi app.
    "jekyll"
+   "gparted"
    ))
 
 ;;; Configuration class.
