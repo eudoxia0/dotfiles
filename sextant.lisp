@@ -23,6 +23,7 @@
    "calibre"
    "scrot"
    "xfonts-terminus"
+   "texlive-fonts-extra"
    "xcape"
    "xsecurelock"
    "dmenu"
@@ -41,13 +42,14 @@
    "htop"
    "libfuse2" ;; For the Mochi app.
    "jekyll"
+   "gparted"
    ))
 
 ;;; Configuration class.
 
 (defun make-file (path &optional (executable nil))
   (make-file-component :title path
-                       :source (format nil "sextant/~A" path)
+                       :source (format nil "files/~A" path)
                        :target (native-path (format nil "~~/~A" path))
                        :executable executable))
 
