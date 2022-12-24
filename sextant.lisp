@@ -23,6 +23,7 @@
    "calibre"
    "scrot"
    "xfonts-terminus"
+   "texlive-fonts-extra"
    "xcape"
    "xsecurelock"
    "dmenu"
