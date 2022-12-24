@@ -1,0 +1,9 @@
+@-moz-document domain(wikipedia.org) {
+    p { text-align: justify !important; }
+    body { font-family: serif !important;; }
+}
+
+@-moz-document domain(iranicaonline.org) {
+    #article-overview h1 { font-family: 'Gill Sans'; }
+    #content p { font-family: 'Times New Roman'; text-align: justify; }
+}
