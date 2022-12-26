@@ -190,7 +190,7 @@
 ;;;
 
 ;; Disable following links.
-(put 'markdown-follow-link-at-point 'disabled t)
+(setq markdown-mouse-follow-link nil)
 
 ;;;
 ;;; OCaml
