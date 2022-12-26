@@ -185,6 +185,13 @@
 
 (setq nxml-slash-auto-complete-flag t)
 
+;;;
+;;; Markdown
+;;;
+
+;; Disable following links.
+(put 'markdown-follow-link-at-point 'disabled t)
+
 ;;;;
 ;;;; Custom Modes
 ;;;;
