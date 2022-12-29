@@ -2,10 +2,10 @@
 ;;;; Configuration for host "sextant"
 ;;;;
 (in-package :cl-user)
-(defpackage sextant
+(defpackage config
   (:use :cl :lcm :common)
-  (:export :sextant))
-(in-package :sextant)
+  (:export :sextant :bullroarer))
+(in-package :config)
 
 ;;; Constants.
 
@@ -106,6 +106,6 @@
 
 (defconfig bullroarer
   :secrets ()
-  :components (((config sextant) vault)
+  :components (((config bullroarer) vault)
                (declare (ignore config vault))
                (list-of-components :laptop nil)))
