@@ -103,3 +103,9 @@
   :components (((config sextant) vault)
                (declare (ignore config vault))
                (list-of-components :laptop t)))
+
+(defconfig bullroarer
+  :secrets ()
+  :components (((config sextant) vault)
+               (declare (ignore config vault))
+               (list-of-components :laptop nil)))
