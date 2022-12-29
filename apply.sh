@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-lcm apply $1 common.lisp sextant.lisp
+lcm apply $1 common.lisp config.lisp
