@@ -71,7 +71,7 @@
                 (make-file ".local/bin/embed_fonts.sh" t)
                 (make-file ".local/bin/ordinal.py" t)
                 (make-file ".local/bin/poetry.py" t)
-                (make-file ".local/bin/rotate_wallpaper.sh" t)
+                (make-file ".local/bin/wallpaper.sh" t)
                 (make-file ".local/bin/ssd_rsync_backup.sh" t)
                 (make-file ".local/bin/sync_from_cloud.sh" t)
                 (make-file ".local/bin/sync_to_cloud.sh" t)
