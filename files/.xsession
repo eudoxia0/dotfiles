@@ -1,4 +1,4 @@
-#rotate_wallpaper.sh &
+wallpaper.sh &
 xsetroot -solid '#708090'
 xmodmap ~/.config/x11/xmodmap &
 xrdb ~/.config/x11/xresources &
