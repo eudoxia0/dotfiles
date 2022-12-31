@@ -9,6 +9,6 @@ $ ./cycle.sh sextant:sextant
 
 # License
 
-Copyright (c) 2013–2022 Fernando Borretti
+Copyright (c) 2013–2023 Fernando Borretti
 
 Released under the MIT license.
