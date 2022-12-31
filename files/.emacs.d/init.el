@@ -183,25 +183,32 @@
 ;;; NXML
 ;;;
 
-(setq nxml-slash-auto-complete-flag t)
+(require 'nxml-mode)
 
-;;;
-;;; Markdown
-;;;
+(defun my-finish-element ()
+  (interactive)
+  (nxml-balanced-close-start-tag-inline))
 
-;; Disable following links.
-(setq markdown-mouse-follow-link nil)
+(defun my-nxml-newline ()
+  "Insert a newline, indenting the current line and the newline appropriately in nxml-mode."
+  (interactive)
+  ;; Are we between an open and closing tag?
+  (if (and (char-before) (char-after)
+           (char-equal (char-before) ?>)
+           (char-equal (char-after) ?<))
+      ;; If so, indent it properly.
+      (let ((indentation (current-indentation)))
+        (newline)
+        (indent-line-to (+ indentation 4))
+        (newline)
+        (indent-line-to indentation)
+        (previous-line)
+        (end-of-line))
+    ;; Otherwise just insert a regular newline.
+    (newline)))
 
-;;;
-;;; OCaml
-;;;
-
-(add-hook 'tuareg-mode-hook #'merlin-mode)
-(add-hook 'caml-mode-hook #'merlin-mode)
-;; ## added by OPAM user-setup for emacs / base ## 56ab50dc8996d2bb95e7856a6eddb17b ## you can edit, but keep this line
-(when (file-exists-p "~/.emacs.d/opam-user-setup.el")
-  (require 'opam-user-setup "~/.emacs.d/opam-user-setup.el"))
-;; ## end of OPAM user-setup addition for emacs / base ## keep this line
+(define-key nxml-mode-map (kbd ">") 'my-finish-element)
+(define-key nxml-mode-map (kbd "RET") 'my-nxml-newline)
 
 ;;;;
 ;;;; Custom Modes
@@ -224,6 +231,24 @@
 (define-derived-mode concordia-mode text-mode "Concordia"
   "Major mode for editing ConcordiaML files."
   (setq font-lock-defaults '((concordia-font-lock-keywords))))
+
+;;;
+;;; Markdown
+;;;
+
+;; Disable following links.
+(setq markdown-mouse-follow-link nil)
+
+;;;
+;;; OCaml
+;;;
+
+(add-hook 'tuareg-mode-hook #'merlin-mode)
+(add-hook 'caml-mode-hook #'merlin-mode)
+;; ## added by OPAM user-setup for emacs / base ## 56ab50dc8996d2bb95e7856a6eddb17b ## you can edit, but keep this line
+(when (file-exists-p "~/.emacs.d/opam-user-setup.el")
+  (require 'opam-user-setup "~/.emacs.d/opam-user-setup.el"))
+;; ## end of OPAM user-setup addition for emacs / base ## keep this line
 
 ;;;
 ;;; Austral
