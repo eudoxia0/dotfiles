@@ -44,6 +44,7 @@
    "jekyll"
    "gparted"
    "djview4"
+   "meld"
    ))
 
 ;;; Configuration class.
