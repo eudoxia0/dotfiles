@@ -185,9 +185,28 @@
 
 (require 'nxml-mode)
 
+(defun my-in-start-tag-p ()
+  ;; Check that we're at the end of a start tag. From the source code of
+  ;; `nxml-balanced-close-start-tag`.
+  (let ((token-end (nxml-token-before))
+	    (pos (1+ (point)))
+	    (token-start xmltok-start))
+    (or (eq xmltok-type 'partial-start-tag)
+		(and (memq xmltok-type '(start-tag
+					             empty-element
+					             partial-empty-element))
+		     (>= token-end pos)))))
+
 (defun my-finish-element ()
   (interactive)
-  (nxml-balanced-close-start-tag-inline))
+  (if (my-in-start-tag-p)
+      ;; If we're at the end of a start tag like `<foo`, complete this to
+      ;; `<foo></foo>`, then move the point between the start and end tags.
+      (nxml-balanced-close-start-tag-inline)
+      ;; Otherwise insert an angle bracket.
+      (insert ">")))
+
+(define-key nxml-mode-map (kbd ">") 'my-finish-element)
 
 (defun my-nxml-newline ()
   "Insert a newline, indenting the current line and the newline appropriately in nxml-mode."
@@ -207,8 +226,9 @@
     ;; Otherwise just insert a regular newline.
     (newline)))
 
-(define-key nxml-mode-map (kbd ">") 'my-finish-element)
 (define-key nxml-mode-map (kbd "RET") 'my-nxml-newline)
+
+(setq nxml-child-indent 4 nxml-attribute-indent 4)
 
 ;;;;
 ;;;; Custom Modes
