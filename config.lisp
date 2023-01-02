@@ -43,6 +43,7 @@
    "libfuse2" ;; For the Mochi app.
    "jekyll"
    "gparted"
+   "djview4"
    ))
 
 ;;; Configuration class.
