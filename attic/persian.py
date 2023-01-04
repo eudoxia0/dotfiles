@@ -19,10 +19,10 @@ ALPHABET: list[Letter] = [
     Letter(
         final="ـا",
         medial="ـا",
-        initial="ا",
+        initial="ا or آ",
         isolated="ا",
         name="Alef",
-        pronunciation="**a** in cat, **e** in bed, **o** in not",
+        pronunciation="- initial آ: as in c**augh**t\\n- initial ا: **a** in cat, **e** in bed, **o** in not\\n- other ا: **a** in cat",
     ),
     # Be
     Letter(
@@ -301,33 +301,31 @@ ALPHABET: list[Letter] = [
         initial="یـ",
         isolated="ی",
         name="Ye",
-        pronunciation="Multiple: **i** kit, **y** in yes, **e** in men.",
+        pronunciation="Multiple: **i** kit, **e** in men,  /ye/ like **y** in yes.",
     ),
 ]
 
 def letter_forms():
-    print("Form,Name,Answer")
+    print("Front,Back")
     for l in ALPHABET:
-        print(f"initial,\"{l.name}\",\"{l.initial}\"")
-        print(f"medial,\"{l.name}\",\"{l.medial}\"")
-        print(f"final,\"{l.name}\",\"{l.final}\"")
-        print(f"isolated,\"{l.name}\",\"{l.isolated}\"")
+        print(f"\"What is the initial form of the Persian letter {l.name}?\",\"## {l.initial}\"")
+        print(f"\"What is the media form of the Persian letter {l.name}?\",\"## {l.medial}\"")
+        print(f"\"What is the final form of the Persian letter {l.name}?\",\"## {l.final}\"")
+        print(f"\"What is the isolated form of the Persian letter {l.name}?\",\"## {l.isolated}\"")
 
 def identification():
-    print("Letter,Name")
+    print("Front,Back")
     for l in ALPHABET:
-        print(f"\"{l.initial}\",\"{l.name}\"")
-        print(f"\"{l.medial}\",\"{l.name}\"")
-        print(f"\"{l.final}\",\"{l.name}\"")
-        print(f"\"{l.isolated}\",\"{l.name}\"")
+        print(f"\"What is the name of this letter?\n## {l.initial}\",\"{l.name}\"")
+        print(f"\"What is the name of this letter?\n## {l.medial}\",\"{l.name}\"")
+        print(f"\"What is the name of this letter?\n## {l.final}\",\"{l.name}\"")
+        print(f"\"What is the name of this letter?\n## {l.isolated}\",\"{l.name}\"")
 
 def pronunciation():
-    print("Letter,Pronunciation")
+    print("Front,Back")
     for l in ALPHABET:
-        print(f"\"{l.initial}\",\"{l.pronunciation}\"")
-        print(f"\"{l.medial}\",\"{l.pronunciation}\"")
-        print(f"\"{l.final}\",\"{l.pronunciation}\"")
-        print(f"\"{l.isolated}\",\"{l.pronunciation}\"")
+        print(f"\"How is the letter {l.name} pronounced?\",\"{l.pronunciation}\"")
 
-
+letter_forms()
+identification()
 pronunciation()
