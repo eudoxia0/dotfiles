@@ -38,6 +38,8 @@
     company        ; completion
     merlin-company ; completion for OCaml
     markdown-mode  ; Markdown support
+    visual-regexp  ; interactive regex search replace
+    yaml-mode      ; YAML highlighting
     ))
 
 ;; Iterate over package list and install them.
