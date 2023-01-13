@@ -308,18 +308,18 @@ ALPHABET: list[Letter] = [
 def letter_forms():
     print("Front,Back")
     for l in ALPHABET:
-        print(f"\"What is the initial form of the Persian letter {l.name}?\",\"## {l.initial}\"")
-        print(f"\"What is the media form of the Persian letter {l.name}?\",\"## {l.medial}\"")
-        print(f"\"What is the final form of the Persian letter {l.name}?\",\"## {l.final}\"")
-        print(f"\"What is the isolated form of the Persian letter {l.name}?\",\"## {l.isolated}\"")
+        print(f"\"What is the initial form of the Persian letter {l.name}?\",\"# {l.initial}\"")
+        print(f"\"What is the medial form of the Persian letter {l.name}?\",\"# {l.medial}\"")
+        print(f"\"What is the final form of the Persian letter {l.name}?\",\"# {l.final}\"")
+        print(f"\"What is the isolated form of the Persian letter {l.name}?\",\"# {l.isolated}\"")
 
 def identification():
     print("Front,Back")
     for l in ALPHABET:
-        print(f"\"What is the name of this letter?\n## {l.initial}\",\"{l.name}\"")
-        print(f"\"What is the name of this letter?\n## {l.medial}\",\"{l.name}\"")
-        print(f"\"What is the name of this letter?\n## {l.final}\",\"{l.name}\"")
-        print(f"\"What is the name of this letter?\n## {l.isolated}\",\"{l.name}\"")
+        print(f"\"What is the name of this letter?\n# {l.initial}\",\"{l.name}\"")
+        print(f"\"What is the name of this letter?\n# {l.medial}\",\"{l.name}\"")
+        print(f"\"What is the name of this letter?\n# {l.final}\",\"{l.name}\"")
+        print(f"\"What is the name of this letter?\n# {l.isolated}\",\"{l.name}\"")
 
 def pronunciation():
     print("Front,Back")
