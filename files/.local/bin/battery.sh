@@ -12,5 +12,5 @@ function probe_battery() {
 
 while true; do
     probe_battery;
-    sleep 300
+    sleep 60
 done
