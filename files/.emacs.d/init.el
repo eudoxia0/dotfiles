@@ -130,17 +130,6 @@
 ;; Track the column number.
 (setq column-number-mode t)
 
-;; Set the mode line format.
-(setq-default mode-line-format
-	      (list
-	       " "
-	       '(:eval (propertize "%b" 'face 'bold))
-	       " [%m] %p ("
-	       '(line-number-mode "%l")
-	       ","
-	       '(column-number-mode "%c")
-	       ")"))
-
 ;;;;
 ;;;; 6. Behaviour
 ;;;;
