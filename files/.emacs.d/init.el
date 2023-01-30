@@ -19,8 +19,8 @@
 
 ;; Use MELPA and MELPA-Stable exclusively.
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
-			 ("melpa-stable" . "https://stable.melpa.org/packages/")
-			 ("elpa" . "https://elpa.gnu.org/packages/")))
+			             ("melpa-stable" . "https://stable.melpa.org/packages/")
+			             ("elpa" . "https://elpa.gnu.org/packages/")))
 
 (package-initialize)
 
