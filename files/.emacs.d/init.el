@@ -40,6 +40,7 @@
     markdown-mode  ; Markdown support
     visual-regexp  ; interactive regex search replace
     yaml-mode      ; YAML highlighting
+    haskell-mode   ; Haskell support
     ))
 
 ;; Iterate over package list and install them.
