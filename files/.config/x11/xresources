@@ -96,6 +96,7 @@ URxvt.color12:         BRIGHT_BLUE
 URxvt.color13:         BRIGHT_MAGENTA
 URxvt.color14:         BRIGHT_CYAN
 URxvt.color15:         BRIGHT_WHITE
+URxvt.perl-ext-common:-confirm-paste
 
 !!!! xterm configuration
 
