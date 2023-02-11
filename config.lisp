@@ -45,6 +45,8 @@
    "gparted"
    "djview4"
    "meld"
+   "podman"
+   "python-is-python3"
    ))
 
 ;;; Configuration class.
