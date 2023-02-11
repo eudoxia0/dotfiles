@@ -7,5 +7,5 @@ if [ -d ~/files/Images/Wallpapers/ ]; then
     sleep 300
 else
     # Otherwise set a default colour.
-    xsetroot -solid '#708090'
+    xsetroot -solid '#555577'
 fi
