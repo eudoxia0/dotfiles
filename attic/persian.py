@@ -324,7 +324,7 @@ def identification():
 def pronunciation():
     print("Front,Back")
     for l in ALPHABET:
-        print(f"\"How is the letter {l.name} pronounced?\",\"{l.pronunciation}\"")
+        print(f"\"How is this letter pronounced?\n# {l.isolated}\",\"{l.pronunciation}\"")
 
 letter_forms()
 identification()
