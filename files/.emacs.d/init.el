@@ -19,8 +19,8 @@
 
 ;; Use MELPA and MELPA-Stable exclusively.
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
-			 ("melpa-stable" . "https://stable.melpa.org/packages/")
-			 ("elpa" . "https://elpa.gnu.org/packages/")))
+			             ("melpa-stable" . "https://stable.melpa.org/packages/")
+			             ("elpa" . "https://elpa.gnu.org/packages/")))
 
 (package-initialize)
 
@@ -40,6 +40,7 @@
     markdown-mode  ; Markdown support
     visual-regexp  ; interactive regex search replace
     yaml-mode      ; YAML highlighting
+    haskell-mode   ; Haskell support
     ))
 
 ;; Iterate over package list and install them.
@@ -128,17 +129,6 @@
 
 ;; Track the column number.
 (setq column-number-mode t)
-
-;; Set the mode line format.
-(setq-default mode-line-format
-	      (list
-	       " "
-	       '(:eval (propertize "%b" 'face 'bold))
-	       " [%m] %p ("
-	       '(line-number-mode "%l")
-	       ","
-	       '(column-number-mode "%c")
-	       ")"))
 
 ;;;;
 ;;;; 6. Behaviour
