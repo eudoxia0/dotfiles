@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+output=$(acpi 2>&1)
+
+if [[ "$output" =~ "No support for device type: power_supply" ]]; then
+  exit 0
+fi
+
 function probe_battery() {
     local var charge=`acpi -b | grep -oP "\d+%" | tr -d "%"`
     if (( charge < 10 )); then
