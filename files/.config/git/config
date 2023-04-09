@@ -1,16 +1,16 @@
 [user]
-	name = Fernando Borretti
-	email = fernando@borretti.me
+    name = Fernando Borretti
+    email = fernando@borretti.me
 [diff]
-	tool = meld
-	guitool = meld
-        whitespace = "red reverse"
+    tool = meld
+    guitool = meld
+    whitespace = "red reverse"
 [color]
-	ui = auto
+    ui = auto
 [alias]
-	tree = log --pretty='%Cgreen%h%Creset [%ai] %s %Cred<%Creset%an%Cred>' --decorate --graph
-        undo = reset --soft HEAD~1
-        s = status
+    tree = log --pretty='%Cgreen%h%Creset [%ai] %s %Cred<%Creset%an%Cred>' --decorate --graph
+    undo = reset --soft HEAD~1
+    s = status
 [merge]
-	guitool = meld
-	tool = meld
+    guitool = meld
+    tool = meld
