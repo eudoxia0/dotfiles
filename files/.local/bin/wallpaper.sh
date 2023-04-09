@@ -5,7 +5,7 @@ if [ -d ~/files/4\ Resources/6\ Images/wallpapers/rotation ]; then
     # every 5 minutes.
     while true; do
         feh --randomize --bg-fill ~/files/4\ Resources/6\ Images/wallpapers/rotation/*
-        sleep 300
+        sleep 120
     done
 else
     # Otherwise set a default colour.
