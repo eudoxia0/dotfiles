@@ -19,8 +19,8 @@
 
 ;; Use MELPA and MELPA-Stable exclusively.
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
-			             ("melpa-stable" . "https://stable.melpa.org/packages/")
-			             ("elpa" . "https://elpa.gnu.org/packages/")))
+                         ("melpa-stable" . "https://stable.melpa.org/packages/")
+                         ("elpa" . "https://elpa.gnu.org/packages/")))
 
 (package-initialize)
 
@@ -39,8 +39,6 @@
     merlin-company ; completion for OCaml
     markdown-mode  ; Markdown support
     visual-regexp  ; interactive regex search replace
-    yaml-mode      ; YAML highlighting
-    haskell-mode   ; Haskell support
     ))
 
 ;; Iterate over package list and install them.
