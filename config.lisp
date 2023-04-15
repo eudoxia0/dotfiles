@@ -79,7 +79,6 @@
            (make-file ".local/bin/ssd_rsync_backup.sh" t)
            (make-file ".local/bin/sync_from_cloud.sh" t)
            (make-file ".local/bin/sync_to_cloud.sh" t)
-           (make-file ".local/bin/recorder.sh" t)
            (make-file ".config/git/config")
            (make-file ".config/spectrwm/spectrwm.conf")
            (make-file ".config/x11/xmodmap")
