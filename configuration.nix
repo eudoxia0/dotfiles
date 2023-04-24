@@ -119,6 +119,7 @@
       pcmanfm
       spectrwm
       gnome.cheese
+      gnome.gnome-sound-recorder
       # x11
       xcape
       scrot
