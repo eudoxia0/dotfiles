@@ -116,6 +116,7 @@
       calibre
       dmenu
       emacs
+      vim
       pcmanfm
       spectrwm
       gnome.cheese
