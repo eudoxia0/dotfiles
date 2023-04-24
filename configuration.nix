@@ -118,6 +118,7 @@
       emacs
       pcmanfm
       spectrwm
+      gnome.cheese
       # x11
       xcape
       scrot
