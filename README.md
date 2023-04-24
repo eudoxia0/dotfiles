@@ -1,8 +1,14 @@
 # eudoxia's dotfiles
 
-TODO
+## Setup
 
-# License
+Run:
+
+```bash
+$ ./recrank.sh
+```
+
+## License
 
 Copyright (c) 2013–2023 Fernando Borretti
 
