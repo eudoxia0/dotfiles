@@ -1,0 +1,131 @@
+!!!! Color Themes
+
+!!! Ocean Dark
+
+!#define FOREGROUND     !#c0c5ce
+!#define BACKGROUND     !#2b303b
+!#define CURSOR_COLOR   !#d0d0d0
+
+!#define NORMAL_BLACK   !#2b303b
+!#define NORMAL_RED     !#bf616a
+!#define NORMAL_YELLOW  !#ebcb8b
+!#define NORMAL_GREEN   !#a3be8c
+!#define NORMAL_BLUE    !#8fa1b3
+!#define NORMAL_MAGENTA !#b48ead
+!#define NORMAL_CYAN    !#96b5b4
+!#define NORMAL_WHITE   !#c0c5ce
+!#define BRIGHT_BLACK   !#65737e
+!#define BRIGHT_RED     !#bf616a
+!#define BRIGHT_YELLOW  !#ebcb8b
+!#define BRIGHT_GREEN   !#a3be8c
+!#define BRIGHT_BLUE    !#8fa1b3
+!#define BRIGHT_MAGENTA !#b48ead
+!#define BRIGHT_CYAN    !#96b5b4
+!#define BRIGHT_WHITE   !#eff1f5
+
+!!! Base16 Default Dark
+
+#define FOREGROUND     #d0d0d0
+#define BACKGROUND     #151515
+#define CURSOR_COLOR   #c0c5ce
+
+#define NORMAL_BLACK   #151515
+#define NORMAL_RED     #ac4142
+#define NORMAL_YELLOW  #90a959
+#define NORMAL_GREEN   #f4bf75
+#define NORMAL_BLUE    #6a9fb5
+#define NORMAL_MAGENTA #aa759f
+#define NORMAL_CYAN    #75b5aa
+#define NORMAL_WHITE   #d0d0d0
+#define BRIGHT_BLACK   #505050
+#define BRIGHT_RED     #ac4142
+#define BRIGHT_YELLOW  #90a959
+#define BRIGHT_GREEN   #f4bf75
+#define BRIGHT_BLUE    #6a9fb5
+#define BRIGHT_MAGENTA #aa759f
+#define BRIGHT_CYAN    #75b5aa
+#define BRIGHT_WHITE   #f5f5f5
+
+!!!! st Configuration
+
+st.font:        Terminus:pixelsize=16:antialias=true:autohint=true;
+st.borderpx:    20
+st.foreground:  FOREGROUND
+st.background:  BACKGROUND
+st.cursorColor: CURSOR_COLOR
+st.color0:      NORMAL_BLACK
+st.color1:      NORMAL_RED
+st.color2:      NORMAL_YELLOW
+st.color3:      NORMAL_GREEN
+st.color4:      NORMAL_BLUE
+st.color5:      NORMAL_MAGENTA
+st.color6:      NORMAL_CYAN
+st.color7:      NORMAL_WHITE
+st.color8:      BRIGHT_BLACK
+st.color9:      BRIGHT_RED
+st.color10:     BRIGHT_YELLOW
+st.color11:     BRIGHT_GREEN
+st.color12:     BRIGHT_BLUE
+st.color13:     BRIGHT_MAGENTA
+st.color14:     BRIGHT_CYAN
+st.color15:     BRIGHT_WHITE
+
+!!!! urxvt configuration.
+
+URxvt.font:            -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
+URxvt.xftAntialias:    true
+URxvt.cursorBlink:     true
+URxvt.scrollBar_right: true
+URxvt.internalBorder:  20
+URxvt.foreground:      FOREGROUND
+URxvt.background:      BACKGROUND
+URxvt.cursorColor:     CURSOR_COLOR
+URxvt.color0:          NORMAL_BLACK
+URxvt.color1:          NORMAL_RED
+URxvt.color2:          NORMAL_YELLOW
+URxvt.color3:          NORMAL_GREEN
+URxvt.color4:          NORMAL_BLUE
+URxvt.color5:          NORMAL_MAGENTA
+URxvt.color6:          NORMAL_CYAN
+URxvt.color7:          NORMAL_WHITE
+URxvt.color8:          BRIGHT_BLACK
+URxvt.color9:          BRIGHT_RED
+URxvt.color10:         BRIGHT_YELLOW
+URxvt.color11:         BRIGHT_GREEN
+URxvt.color12:         BRIGHT_BLUE
+URxvt.color13:         BRIGHT_MAGENTA
+URxvt.color14:         BRIGHT_CYAN
+URxvt.color15:         BRIGHT_WHITE
+URxvt.perl-ext-common:-confirm-paste
+
+!!!! xterm configuration
+
+! Terminal name.
+XTerm.termName:          xterm-256color
+! Font.
+XTerm.vt100.faceName:    Terminus:pixelsize=16:antialias=true:autohint=true;
+! Inner border.
+XTerm.vt100.internalBorder: 20
+! Use UTF-8
+XTerm.vt100.locale:      false
+XTerm.vt100.utf8:        true
+! Colour theme.
+XTerm.vt100.foreground:  FOREGROUND
+XTerm.vt100.background:  BACKGROUND
+XTerm.vt100.cursorColor: CURSOR_COLOR
+XTerm.vt100.color0:      NORMAL_BLACK
+XTerm.vt100.color1:      NORMAL_RED
+XTerm.vt100.color2:      NORMAL_YELLOW
+XTerm.vt100.color3:      NORMAL_GREEN
+XTerm.vt100.color4:      NORMAL_BLUE
+XTerm.vt100.color5:      NORMAL_MAGENTA
+XTerm.vt100.color6:      NORMAL_CYAN
+XTerm.vt100.color7:      NORMAL_WHITE
+XTerm.vt100.color8:      BRIGHT_BLACK
+XTerm.vt100.color9:      BRIGHT_RED
+XTerm.vt100.color10:     BRIGHT_YELLOW
+XTerm.vt100.color11:     BRIGHT_GREEN
+XTerm.vt100.color12:     BRIGHT_BLUE
+XTerm.vt100.color13:     BRIGHT_MAGENTA
+XTerm.vt100.color14:     BRIGHT_CYAN
+XTerm.vt100.color15:     BRIGHT_WHITE
