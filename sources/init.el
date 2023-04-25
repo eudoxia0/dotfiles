@@ -39,6 +39,7 @@
     merlin-company ; completion for OCaml
     markdown-mode  ; Markdown support
     visual-regexp  ; interactive regex search replace
+    nix-mode       ; Nix highlighting
     ))
 
 ;; Iterate over package list and install them.
