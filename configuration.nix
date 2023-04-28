@@ -121,6 +121,8 @@
       spectrwm
       gnome.cheese
       gnome.gnome-sound-recorder
+      font-manager
+      dunst
       # x11
       xcape
       scrot
@@ -134,10 +136,8 @@
       whois
       htop
       curl
-      font-manager
       acpi
       libnotify
-      dunst
       # fonts
       terminus_font
       terminus_font_ttf
@@ -185,6 +185,9 @@
   networking.firewall.enable = true;
   networking.firewall.allowedTCPPorts = [];
   networking.firewall.allowedUDPPorts = [];
+
+  # Disable Bluetooth.
+  hardware.bluetooth.enable = false;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
