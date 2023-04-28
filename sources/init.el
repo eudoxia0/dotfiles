@@ -39,6 +39,7 @@
     merlin-company ; completion for OCaml
     markdown-mode  ; Markdown support
     visual-regexp  ; interactive regex search replace
+    nix-mode       ; Nix highlighting
     ))
 
 ;; Iterate over package list and install them.
@@ -78,7 +79,7 @@
 (put 'overwrite-mode 'disabled t)
 ;; Default font.
 (add-to-list 'default-frame-alist
-             '(font . "Inconsolata-12"))
+             '(font . "Inconsolata-13"))
 ;; Show trailing whitespace.
 (setq-default show-trailing-whitespace t)
 ;; Highlight the current line.

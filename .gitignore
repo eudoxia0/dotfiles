@@ -1,6 +1,2 @@
-*.swp
-\#*\#
-.#*
 *~
-*.elc
-st/st
+hardware-configuration.nix
