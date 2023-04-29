@@ -118,6 +118,7 @@
       font-manager
       dunst
       viewnior
+      feh
       # x11
       xcape
       scrot
