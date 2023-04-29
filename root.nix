@@ -103,6 +103,7 @@ in
       calibre
       dmenu
       emacs
+      vscode
       vim
       pcmanfm
       spectrwm
