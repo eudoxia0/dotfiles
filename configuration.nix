@@ -135,6 +135,7 @@
       acpi
       libnotify
       age
+      neofetch
       # fonts
       terminus_font
       terminus_font_ttf
