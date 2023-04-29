@@ -130,6 +130,7 @@ in
       dunst
       viewnior
       feh
+      gimp
       # x11
       xcape
       scrot
