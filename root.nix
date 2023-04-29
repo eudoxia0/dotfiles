@@ -142,6 +142,7 @@ in
       gnuplot
       meld
       jekyll
+      gcc
       # utils
       whois
       htop
