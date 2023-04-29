@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+hostname=`hostname`
+
 function recrank() {
     sudo nixos-rebuild switch -I nixos-config=$1.nix
 }
