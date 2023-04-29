@@ -7,7 +7,7 @@ if [ "$#" -ne 1 ]; then
     exit
 fi
 
-BACKUP_DRIVE=/media/eudoxia/$1
+BACKUP_DRIVE=/run/media/eudoxia/$1
 
 if [ ! -d $BACKUP_DRIVE ]; then
     echo "Backup directory does not exist."
