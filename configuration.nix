@@ -173,6 +173,17 @@
   networking.firewall.allowedTCPPorts = [];
   networking.firewall.allowedUDPPorts = [];
 
+  # Syncthing.
+  services = {
+    syncthing = {
+      enable = true;
+      user = "eudoxia";
+      dataDir = "/home/eudoxia/files";
+      configDir = "/home/eudoxia/.config/syncthing";
+      guiAddress = "127.0.0.1:8384";
+    };
+  };
+
   # Disable Bluetooth.
   hardware.bluetooth.enable = false;
 
