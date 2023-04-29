@@ -117,6 +117,7 @@
       gnome.gnome-sound-recorder
       font-manager
       dunst
+      viewnior
       # x11
       xcape
       scrot
