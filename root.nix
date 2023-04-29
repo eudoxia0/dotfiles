@@ -143,6 +143,7 @@ in
       meld
       jekyll
       gcc
+      clang
       # utils
       whois
       htop
