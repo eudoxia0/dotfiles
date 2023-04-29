@@ -98,6 +98,10 @@ in
     pulse.enable = true;
   };
 
+  # ClamAV
+  services.clamav.daemon.enable = true;
+  services.clamav.updater.enable = true;
+
   # Enable touchpad support (enabled default in most desktopManager).
   services.xserver.libinput.enable = true;
 
