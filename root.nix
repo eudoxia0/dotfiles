@@ -141,6 +141,7 @@ in
       podman
       gnuplot
       meld
+      jekyll
       # utils
       whois
       htop
