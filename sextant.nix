@@ -40,6 +40,10 @@
   # high-resolution display
   hardware.video.hidpi.enable = lib.mkDefault true;
 
+  #
+  # CUSTOM
+  #
+
   # Enable swap on luks
   boot.initrd.luks.devices."luks-8731a1f4-b3ab-4db5-a669-be2bf61e8a2b".device = "/dev/disk/by-uuid/8731a1f4-b3ab-4db5-a669-be2bf61e8a2b";
   boot.initrd.luks.devices."luks-8731a1f4-b3ab-4db5-a669-be2bf61e8a2b".keyFile = "/crypto_keyfile.bin";
