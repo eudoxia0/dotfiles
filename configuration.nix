@@ -161,11 +161,6 @@
 
   programs.ssh.startAgent = true;
 
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
-
   networking.firewall.enable = true;
   networking.firewall.allowedTCPPorts = [];
   networking.firewall.allowedUDPPorts = [];
