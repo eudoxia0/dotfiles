@@ -28,6 +28,9 @@ in
     "8.8.8.8"
     "8.8.4.4"
   ];
+  networking.networkmanager.dns = "none";
+  networking.resolvconf.enable = false;
+  services.resolved.enable = false;
 
   # Set your time zone.
   time.timeZone = "Australia/Sydney";
