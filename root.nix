@@ -166,6 +166,19 @@ in
       dataDir = "/home/eudoxia/files";
       configDir = "/home/eudoxia/.config/syncthing";
       guiAddress = "127.0.0.1:8384";
+
+      overrideDevices = true;
+      overrideFolders = true;
+      devices = {
+        "bullroarer" = { id = "OSZS5JQ-H3U262N-ELG4DDF-6BJVBPD-M2HN4OD-D2AEIIH-T7TN7R6-DLQHWA3"; };
+        "sextant" = { id = "R5FLI7N-4HVR44U-3C3C6SB-FPHAOGV-CQ6RQZT-4J7KORO-2LWB4MR-7D4WZQ7"; };
+      };
+      folders = {
+        "files" = {
+          path = "/home/eudoxia/files";
+          devices = [ "bullroarer" "sextant" ];
+        };
+      };
     };
   };
 
