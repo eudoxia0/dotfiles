@@ -106,7 +106,7 @@
       # x11 apps
       firefox
       rxvt-unicode
-      keepassx
+      keepass
       calibre
       dmenu
       emacs
