@@ -149,6 +149,7 @@ in
       age
       neofetch
       dig
+      appimage-run
       # fonts
       terminus_font
       terminus_font_ttf
