@@ -8,8 +8,6 @@ let
 in
 {
   imports = [
-    # Include the results of the hardware scan.
-    ./sextant.nix
     (import "${home-manager}/nixos")
   ];
 

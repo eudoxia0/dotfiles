@@ -3,6 +3,7 @@
 {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
+    ./root.nix
   ];
 
   boot.initrd.availableKernelModules = [ "xhci_pci" "thunderbolt" "nvme" "rtsx_pci_sdmmc" ];
