@@ -23,12 +23,6 @@ in
     "/crypto_keyfile.bin" = null;
   };
 
-  # Enable swap on luks
-  boot.initrd.luks.devices."luks-8731a1f4-b3ab-4db5-a669-be2bf61e8a2b".device = "/dev/disk/by-uuid/8731a1f4-b3ab-4db5-a669-be2bf61e8a2b";
-  boot.initrd.luks.devices."luks-8731a1f4-b3ab-4db5-a669-be2bf61e8a2b".keyFile = "/crypto_keyfile.bin";
-
-  networking.hostName = "sextant";
-
   # Enable networking
   networking.networkmanager.enable = true;
 
@@ -57,11 +51,6 @@ in
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
-  services.xserver.videoDrivers = [ "intel" ];
-  services.xserver.deviceSection = ''
-    Option "DRI" "2"
-    Option "TearFree" "true"
-  '';
   services.xserver.displayManager.lightdm.enable = true;
   services.xserver.desktopManager.pantheon.enable = true;
   services.xserver.displayManager.defaultSession = "none+spectrwm";

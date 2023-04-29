@@ -38,4 +38,16 @@
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
   # high-resolution display
   hardware.video.hidpi.enable = lib.mkDefault true;
+
+  # Enable swap on luks
+  boot.initrd.luks.devices."luks-8731a1f4-b3ab-4db5-a669-be2bf61e8a2b".device = "/dev/disk/by-uuid/8731a1f4-b3ab-4db5-a669-be2bf61e8a2b";
+  boot.initrd.luks.devices."luks-8731a1f4-b3ab-4db5-a669-be2bf61e8a2b".keyFile = "/crypto_keyfile.bin";
+
+  networking.hostName = "sextant";
+
+  services.xserver.videoDrivers = [ "intel" ];
+  services.xserver.deviceSection = ''
+    Option "DRI" "2"
+    Option "TearFree" "true"
+  '';
 }
