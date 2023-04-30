@@ -155,6 +155,7 @@ in
       dig
       appimage-run
       zip
+      unzip
       # fonts
       terminus_font
       terminus_font_ttf
