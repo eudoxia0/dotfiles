@@ -144,6 +144,7 @@ in
       jekyll
       gcc
       clang
+      ocaml
       # utils
       whois
       htop
