@@ -132,6 +132,7 @@ in
       xcape
       scrot
       xsecurelock
+      redshift
       # dev
       git
       podman
