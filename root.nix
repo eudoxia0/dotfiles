@@ -118,7 +118,6 @@ in
       emacs
       vscode
       vim
-      vscode
       xfce.thunar
       xfce.xfconf # needed for thunar
       spectrwm
