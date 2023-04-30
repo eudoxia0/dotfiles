@@ -146,7 +146,9 @@ in
       gcc
       clang
       ocaml
+      jdk17
       # utils
+      file
       whois
       htop
       curl
