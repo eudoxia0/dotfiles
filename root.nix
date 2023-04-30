@@ -28,6 +28,17 @@ in
     "8.8.8.8"
     "8.8.4.4"
   ];
+  # Tell NetworkManager not to write /etc/resolv.conf
+  networking.networkmanager.dns = "none";
+  # Disable resolvconf.
+  networking.resolvconf.enable = false;
+  # Disable systemd-resolved
+  services.resolved.enable = false;
+  # Overwrite /etc/resolv.conf
+  environment.etc."resolv.conf".text = ''
+    nameserver 8.8.8.8
+    nameserver 8.8.4.4
+  '';
 
   # Set your time zone.
   time.timeZone = "Australia/Sydney";
@@ -87,8 +98,14 @@ in
     pulse.enable = true;
   };
 
+  # ClamAV
+  services.clamav.daemon.enable = true;
+  services.clamav.updater.enable = true;
+
   # Enable touchpad support (enabled default in most desktopManager).
   services.xserver.libinput.enable = true;
+
+  services.tumbler.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.eudoxia = {
@@ -105,7 +122,9 @@ in
       emacs
       vscode
       vim
-      pcmanfm
+      vscode
+      xfce.thunar
+      xfce.xfconf # needed for thunar
       spectrwm
       gnome.cheese
       gnome.gnome-sound-recorder
@@ -113,6 +132,7 @@ in
       dunst
       viewnior
       feh
+      gimp
       # x11
       xcape
       scrot
@@ -122,6 +142,10 @@ in
       podman
       gnuplot
       meld
+      jekyll
+      gcc
+      clang
+      ocaml
       # utils
       whois
       htop
@@ -130,6 +154,8 @@ in
       libnotify
       age
       neofetch
+      dig
+      appimage-run
       # fonts
       terminus_font
       terminus_font_ttf
@@ -167,6 +193,19 @@ in
       dataDir = "/home/eudoxia/files";
       configDir = "/home/eudoxia/.config/syncthing";
       guiAddress = "127.0.0.1:8384";
+
+      overrideDevices = true;
+      overrideFolders = true;
+      devices = {
+        "bullroarer" = { id = "OSZS5JQ-H3U262N-ELG4DDF-6BJVBPD-M2HN4OD-D2AEIIH-T7TN7R6-DLQHWA3"; };
+        "sextant" = { id = "R5FLI7N-4HVR44U-3C3C6SB-FPHAOGV-CQ6RQZT-4J7KORO-2LWB4MR-7D4WZQ7"; };
+      };
+      folders = {
+        "files" = {
+          path = "/home/eudoxia/files";
+          devices = [ "bullroarer" "sextant" ];
+        };
+      };
     };
   };
 
