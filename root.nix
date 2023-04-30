@@ -220,8 +220,8 @@ in
       ".config/spectrwm/spectrwm.conf" = {
         source = ./sources/spectrwm.conf;
       };
-      ".xprofile" = {
-        source = ./sources/xprofile.sh;
+      ".config/spectrwm/autostart.sh" = {
+        source = ./sources/autostart.sh;
       };
       ".garglkrc" = {
         source = ./sources/garglkrc.conf;
