@@ -128,6 +128,7 @@ in
       viewnior
       feh
       gimp
+      signal-desktop
       # x11
       xcape
       scrot
