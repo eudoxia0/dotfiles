@@ -157,6 +157,8 @@ in
       appimage-run
       zip
       unzip
+      v4l-utils
+      fd
       # fonts
       terminus_font
       terminus_font_ttf
