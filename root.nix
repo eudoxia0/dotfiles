@@ -61,6 +61,8 @@ in
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.displayManager.lightdm.greeters.gtk.enable = false;
+  services.xserver.displayManager.lightdm.greeters.pantheon.enable = true;
   services.xserver.desktopManager.pantheon.enable = true;
   services.xserver.displayManager.defaultSession = "none+spectrwm";
   services.xserver.windowManager.spectrwm.enable = true;
