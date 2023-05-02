@@ -165,6 +165,8 @@ in
       unzip
       v4l-utils
       fd
+      aspell
+      aspellDicts.en
       # fonts
       terminus_font
       terminus_font_ttf
