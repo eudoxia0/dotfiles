@@ -119,6 +119,8 @@ in
       dmenu
       emacs
       vscode
+      gnumake
+      opam
       vim
       xfce.thunar
       xfce.xfconf # needed for thunar
@@ -135,6 +137,7 @@ in
       xcape
       scrot
       xsecurelock
+      python3
       redshift
       # dev
       git
