@@ -131,6 +131,7 @@ in
       feh
       gimp
       signal-desktop
+      libreoffice
       # x11
       xcape
       scrot
