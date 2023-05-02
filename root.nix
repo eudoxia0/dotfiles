@@ -119,8 +119,6 @@ in
       dmenu
       emacs
       vscode
-      gnumake
-      opam
       vim
       xfce.thunar
       xfce.xfconf # needed for thunar
@@ -149,6 +147,8 @@ in
       clang
       ocaml
       jdk17
+      gnumake
+      opam
       # utils
       file
       whois
