@@ -193,8 +193,9 @@ in
   programs.ssh.startAgent = true;
 
   networking.firewall.enable = true;
-  networking.firewall.allowedTCPPorts = [];
-  networking.firewall.allowedUDPPorts = [];
+  # Syncthing ports
+  networking.firewall.allowedTCPPorts = [ 8384 22000 ];
+  networking.firewall.allowedUDPPorts = [ 22000 21027 ];
 
   # Syncthing.
   services = {
