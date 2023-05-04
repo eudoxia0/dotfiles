@@ -256,6 +256,9 @@ in
       ".Xresources" = {
         source = ./sources/xresources;
       };
+      ".sbclrc" = {
+        source = ./sources/sbclrc.lisp;
+      };
       ".local/bin" = {
         source = ./sources/scripts;
         recursive = true;
