@@ -259,6 +259,9 @@ in
       ".sbclrc" = {
         source = ./sources/sbclrc.lisp;
       };
+      ".config/common-lisp/source-registry.conf.d/10-lisp.conf" = {
+        source = ./sources/10-lisp.conf;
+      };
       ".local/bin" = {
         source = ./sources/scripts;
         recursive = true;
