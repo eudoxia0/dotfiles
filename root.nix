@@ -150,6 +150,7 @@ in
       jdk17
       gnumake
       opam
+      sbcl
       # utils
       file
       whois
