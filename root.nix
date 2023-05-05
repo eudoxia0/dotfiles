@@ -109,7 +109,7 @@ in
   users.users.eudoxia = {
     isNormalUser = true;
     description = "eudoxia";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "vboxusers" ];
     packages = with pkgs; [
       # x11 apps
       firefox
@@ -132,7 +132,6 @@ in
       gimp
       signal-desktop
       libreoffice
-      virtualbox
       # x11
       xcape
       scrot
