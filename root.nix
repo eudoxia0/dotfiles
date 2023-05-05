@@ -180,6 +180,12 @@ in
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # VirtualBox.
+   virtualisation.virtualbox.host.enable = true;
+   users.extraGroups.vboxusers.members = [ "eudoxia" ];
+   virtualisation.virtualbox.guest.enable = true;
+   virtualisation.virtualbox.guest.x11 = true;
+
   fonts = {
     fontconfig.enable = true;
     fonts = with pkgs; [
