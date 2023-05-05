@@ -132,6 +132,7 @@ in
       gimp
       signal-desktop
       libreoffice
+      virtualbox
       # x11
       xcape
       scrot
@@ -168,6 +169,7 @@ in
       fd
       aspell
       aspellDicts.en
+      graphviz
       # fonts
       terminus_font
       terminus_font_ttf
