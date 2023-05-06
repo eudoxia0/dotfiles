@@ -53,6 +53,24 @@ in
   # Networking
   #
 
+  networking.networkmanager.enable = true;
+  networking.nameservers = [
+    "8.8.8.8"
+    "8.8.4.4"
+  ];
+
+  # Tell NetworkManager not to write /etc/resolv.conf
+  networking.networkmanager.dns = "none";
+  # Disable resolvconf.
+  networking.resolvconf.enable = false;
+  # Disable systemd-resolved
+  services.resolved.enable = false;
+  # Overwrite /etc/resolv.conf
+  environment.etc."resolv.conf".text = ''
+    nameserver 8.8.8.8
+    nameserver 8.8.4.4
+  '';
+
   #
   # Sound
   #
@@ -80,24 +98,11 @@ in
   # Hacks
   #
 
-  # Enable networking
-  networking.networkmanager.enable = true;
+  #
+  # ---
+  #
 
-  networking.nameservers = [
-    "8.8.8.8"
-    "8.8.4.4"
-  ];
-  # Tell NetworkManager not to write /etc/resolv.conf
-  networking.networkmanager.dns = "none";
-  # Disable resolvconf.
-  networking.resolvconf.enable = false;
-  # Disable systemd-resolved
-  services.resolved.enable = false;
-  # Overwrite /etc/resolv.conf
-  environment.etc."resolv.conf".text = ''
-    nameserver 8.8.8.8
-    nameserver 8.8.4.4
-  '';
+
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
