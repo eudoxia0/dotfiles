@@ -11,6 +11,58 @@ in
     (import "${home-manager}/nixos")
   ];
 
+  #
+  # General
+  #
+
+  #
+  # Users
+  #
+
+  #
+  # Boot
+  #
+
+  #
+  # Networking
+  #
+
+  #
+  # Locale
+  #
+
+  #
+  # X11
+  #
+
+  #
+  # Sound
+  #
+
+  #
+  # Security
+  #
+
+  #
+  # VirtualBox
+  #
+
+  #
+  # Syncthing
+  #
+
+  #
+  # Fonts
+  #
+
+  #
+  # Home Manager
+  #
+
+  #
+  # Hacks
+  #
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
