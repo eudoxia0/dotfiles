@@ -97,6 +97,45 @@ in
   # Services
   #
 
+  # VirtualBox.
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "eudoxia" ];
+  virtualisation.virtualbox.guest.enable = true;
+  virtualisation.virtualbox.guest.x11 = true;
+
+  # Syncthing.
+  services = {
+    syncthing = {
+      enable = true;
+      user = "eudoxia";
+      dataDir = "/home/eudoxia/files";
+      configDir = "/home/eudoxia/.config/syncthing";
+      guiAddress = "127.0.0.1:8384";
+
+      overrideDevices = true;
+      overrideFolders = true;
+      devices = {
+        "bullroarer" = { id = "OSZS5JQ-H3U262N-ELG4DDF-6BJVBPD-M2HN4OD-D2AEIIH-T7TN7R6-DLQHWA3"; };
+        "sextant" = { id = "R5FLI7N-4HVR44U-3C3C6SB-FPHAOGV-CQ6RQZT-4J7KORO-2LWB4MR-7D4WZQ7"; };
+      };
+      folders = {
+        "files" = {
+          path = "/home/eudoxia/files";
+          devices = [ "bullroarer" "sextant" ];
+        };
+      };
+    };
+  };
+
+  # Other services.
+  services.printing.enable = true;
+
+  # Touchpad support.
+  services.xserver.libinput.enable = true;
+
+  # Thumbnail server.
+  services.tumbler.enable = true;
+
   #
   # Home Manager
   #
@@ -249,6 +288,13 @@ in
 
   hardware.bluetooth.enable = false;
 
+  programs.ssh.startAgent = true;
+
+  networking.firewall.enable = true;
+  # Syncthing ports
+  networking.firewall.allowedTCPPorts = [ 8384 22000 ];
+  networking.firewall.allowedUDPPorts = [ 22000 21027 ];
+
   #
   # Boot
   #
@@ -270,64 +316,4 @@ in
     ln -sfn ${pkgs.glibc.out}/lib64/ld-linux-x86-64.so.2 /lib64/ld-linux-x86-64.so.2.tmp
     mv -f /lib64/ld-linux-x86-64.so.2.tmp /lib64/ld-linux-x86-64.so.2 # atomically replace
   '';
-
-  #
-  # ---
-  #
-
-
-
-
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
-
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  services.xserver.libinput.enable = true;
-
-  services.tumbler.enable = true;
-
-  # VirtualBox.
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "eudoxia" ];
-  virtualisation.virtualbox.guest.enable = true;
-  virtualisation.virtualbox.guest.x11 = true;
-
-  programs.ssh.startAgent = true;
-
-  networking.firewall.enable = true;
-  # Syncthing ports
-  networking.firewall.allowedTCPPorts = [ 8384 22000 ];
-  networking.firewall.allowedUDPPorts = [ 22000 21027 ];
-
-  # Syncthing.
-  services = {
-    syncthing = {
-      enable = true;
-      user = "eudoxia";
-      dataDir = "/home/eudoxia/files";
-      configDir = "/home/eudoxia/.config/syncthing";
-      guiAddress = "127.0.0.1:8384";
-
-      overrideDevices = true;
-      overrideFolders = true;
-      devices = {
-        "bullroarer" = { id = "OSZS5JQ-H3U262N-ELG4DDF-6BJVBPD-M2HN4OD-D2AEIIH-T7TN7R6-DLQHWA3"; };
-        "sextant" = { id = "R5FLI7N-4HVR44U-3C3C6SB-FPHAOGV-CQ6RQZT-4J7KORO-2LWB4MR-7D4WZQ7"; };
-      };
-      folders = {
-        "files" = {
-          path = "/home/eudoxia/files";
-          devices = [ "bullroarer" "sextant" ];
-        };
-      };
-    };
-  };
-
-
-
-
-
-
 }
