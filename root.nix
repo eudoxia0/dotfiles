@@ -20,11 +20,11 @@ in
   #
 
   #
-  # Boot
+  # Services
   #
 
   #
-  # Networking
+  # Home Manager
   #
 
   #
@@ -32,7 +32,11 @@ in
   #
 
   #
-  # X11
+  # Fonts
+  #
+
+  #
+  # Networking
   #
 
   #
@@ -40,23 +44,15 @@ in
   #
 
   #
+  # X11
+  #
+
+  #
   # Security
   #
 
   #
-  # VirtualBox
-  #
-
-  #
-  # Syncthing
-  #
-
-  #
-  # Fonts
-  #
-
-  #
-  # Home Manager
+  # Boot
   #
 
   #
