@@ -15,12 +15,8 @@ in
   # General
   #
 
-  system.stateVersion = "22.11"; # Did you read the comment?
-
-  # System packages.
+  system.stateVersion = "22.11";
   environment.systemPackages = with pkgs; [];
-
-  # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
   #
