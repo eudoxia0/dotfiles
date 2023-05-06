@@ -19,6 +19,77 @@ in
   # Users
   #
 
+  users.users.eudoxia = {
+    isNormalUser = true;
+    description = "eudoxia";
+    extraGroups = [ "networkmanager" "wheel" "vboxusers" ];
+    packages = with pkgs; [
+      # x11 apps
+      firefox
+      rxvt-unicode
+      keepass
+      calibre
+      dmenu
+      emacs
+      vscode
+      vim
+      xfce.thunar
+      xfce.xfconf # needed for thunar
+      spectrwm
+      gnome.cheese
+      gnome.gnome-sound-recorder
+      font-manager
+      dunst
+      viewnior
+      feh
+      gimp
+      signal-desktop
+      libreoffice
+      # x11
+      xcape
+      scrot
+      xsecurelock
+      python3
+      redshift
+      # dev
+      git
+      podman
+      gnuplot
+      meld
+      jekyll
+      gcc
+      clang
+      ocaml
+      jdk17
+      gnumake
+      opam
+      sbcl
+      # utils
+      file
+      whois
+      htop
+      curl
+      acpi
+      libnotify
+      age
+      neofetch
+      dig
+      appimage-run
+      zip
+      unzip
+      v4l-utils
+      fd
+      aspell
+      aspellDicts.en
+      graphviz
+      # fonts
+      terminus_font
+      terminus_font_ttf
+      inconsolata
+    ];
+  };
+
+
   #
   # Services
   #
@@ -93,7 +164,6 @@ in
   # Security
   #
 
-  # Passwordless sudo.
   security.sudo.extraRules = [
     {
       users = [ "eudoxia" ];
@@ -105,6 +175,8 @@ in
       ];
     }
   ];
+
+  hardware.bluetooth.enable = false;
 
 
   #
@@ -152,77 +224,6 @@ in
   services.xserver.libinput.enable = true;
 
   services.tumbler.enable = true;
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.eudoxia = {
-    isNormalUser = true;
-    description = "eudoxia";
-    extraGroups = [ "networkmanager" "wheel" "vboxusers" ];
-    packages = with pkgs; [
-      # x11 apps
-      firefox
-      rxvt-unicode
-      keepass
-      calibre
-      dmenu
-      emacs
-      vscode
-      vim
-      xfce.thunar
-      xfce.xfconf # needed for thunar
-      spectrwm
-      gnome.cheese
-      gnome.gnome-sound-recorder
-      font-manager
-      dunst
-      viewnior
-      feh
-      gimp
-      signal-desktop
-      libreoffice
-      # x11
-      xcape
-      scrot
-      xsecurelock
-      python3
-      redshift
-      # dev
-      git
-      podman
-      gnuplot
-      meld
-      jekyll
-      gcc
-      clang
-      ocaml
-      jdk17
-      gnumake
-      opam
-      sbcl
-      # utils
-      file
-      whois
-      htop
-      curl
-      acpi
-      libnotify
-      age
-      neofetch
-      dig
-      appimage-run
-      zip
-      unzip
-      v4l-utils
-      fd
-      aspell
-      aspellDicts.en
-      graphviz
-      # fonts
-      terminus_font
-      terminus_font_ttf
-      inconsolata
-    ];
-  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -276,9 +277,6 @@ in
       };
     };
   };
-
-  # Disable Bluetooth.
-  hardware.bluetooth.enable = false;
 
   home-manager.users.eudoxia = {
     home.stateVersion = "22.11";
