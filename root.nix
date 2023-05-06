@@ -83,6 +83,20 @@ in
   # Security
   #
 
+  # Passwordless sudo.
+  security.sudo.extraRules = [
+    {
+      users = [ "eudoxia" ];
+      commands = [
+        {
+          command = "ALL";
+          options= [ "NOPASSWD" ];
+        }
+      ];
+    }
+  ];
+
+
   #
   # Boot
   #
@@ -122,18 +136,6 @@ in
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
-  # Passwordless sudo.
-  security.sudo.extraRules = [
-    {
-      users = [ "eudoxia" ];
-      commands = [
-        {
-          command = "ALL";
-          options= [ "NOPASSWD" ];
-        }
-      ];
-    }
-  ];
 
   # Enable sound with pipewire.
   sound.enable = true;
