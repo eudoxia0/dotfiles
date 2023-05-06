@@ -15,6 +15,20 @@ in
   # General
   #
 
+  # This value determines the NixOS release from which the default
+  # settings for stateful data, like file locations and database versions
+  # on your system were taken. It‘s perfectly fine and recommended to leave
+  # this value at the release version of the first install of this system.
+  # Before changing this value read the documentation for this option
+  # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
+  system.stateVersion = "22.11"; # Did you read the comment?
+
+  # System packages.
+  environment.systemPackages = with pkgs; [];
+
+  # Allow unfree packages
+  nixpkgs.config.allowUnfree = true;
+
   #
   # Users
   #
@@ -89,7 +103,6 @@ in
     ];
   };
 
-
   #
   # Services
   #
@@ -97,186 +110,6 @@ in
   #
   # Home Manager
   #
-
-  #
-  # Locale
-  #
-
-  time.timeZone = "Australia/Sydney";
-  i18n.defaultLocale = "en_US.UTF-8";
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_US.UTF-8";
-    LC_IDENTIFICATION = "en_US.UTF-8";
-    LC_MEASUREMENT = "en_US.UTF-8";
-    LC_MONETARY = "en_US.UTF-8";
-    LC_NAME = "en_US.UTF-8";
-    LC_NUMERIC = "en_US.UTF-8";
-    LC_PAPER = "en_US.UTF-8";
-    LC_TELEPHONE = "en_US.UTF-8";
-    LC_TIME = "en_US.UTF-8";
-  };
-
-  #
-  # Fonts
-  #
-
-  #
-  # Networking
-  #
-
-  networking.networkmanager.enable = true;
-  networking.nameservers = [
-    "8.8.8.8"
-    "8.8.4.4"
-  ];
-
-  # Tell NetworkManager not to write /etc/resolv.conf
-  networking.networkmanager.dns = "none";
-  # Disable resolvconf.
-  networking.resolvconf.enable = false;
-  # Disable systemd-resolved
-  services.resolved.enable = false;
-  # Overwrite /etc/resolv.conf
-  environment.etc."resolv.conf".text = ''
-    nameserver 8.8.8.8
-    nameserver 8.8.4.4
-  '';
-
-  #
-  # Sound
-  #
-
-  sound.enable = true;
-  hardware.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-  };
-
-  #
-  # X11
-  #
-
-  #
-  # Security
-  #
-
-  security.sudo.extraRules = [
-    {
-      users = [ "eudoxia" ];
-      commands = [
-        {
-          command = "ALL";
-          options= [ "NOPASSWD" ];
-        }
-      ];
-    }
-  ];
-
-  hardware.bluetooth.enable = false;
-
-
-  #
-  # Boot
-  #
-
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/boot/efi";
-  boot.initrd.secrets = {
-    "/crypto_keyfile.bin" = null;
-  };
-
-  #
-  # Hacks
-  #
-
-  #
-  # ---
-  #
-
-
-
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-  services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.displayManager.lightdm.greeters.gtk.enable = false;
-  services.xserver.displayManager.lightdm.greeters.pantheon.enable = true;
-  services.xserver.desktopManager.pantheon.enable = true;
-  services.xserver.displayManager.defaultSession = "none+spectrwm";
-  services.xserver.windowManager.spectrwm.enable = true;
-
-  # Configure keymap in X11
-  services.xserver = {
-    layout = "us";
-    xkbVariant = "";
-  };
-
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
-
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  services.xserver.libinput.enable = true;
-
-  services.tumbler.enable = true;
-
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
-  # VirtualBox.
-   virtualisation.virtualbox.host.enable = true;
-   users.extraGroups.vboxusers.members = [ "eudoxia" ];
-   virtualisation.virtualbox.guest.enable = true;
-   virtualisation.virtualbox.guest.x11 = true;
-
-  fonts = {
-    fontconfig.enable = true;
-    fonts = with pkgs; [
-      inconsolata
-      terminus_font
-      terminus_font_ttf
-    ];
-  };
-
-  # System packages.
-  environment.systemPackages = with pkgs; [];
-
-
-  programs.ssh.startAgent = true;
-
-  networking.firewall.enable = true;
-  # Syncthing ports
-  networking.firewall.allowedTCPPorts = [ 8384 22000 ];
-  networking.firewall.allowedUDPPorts = [ 22000 21027 ];
-
-  # Syncthing.
-  services = {
-    syncthing = {
-      enable = true;
-      user = "eudoxia";
-      dataDir = "/home/eudoxia/files";
-      configDir = "/home/eudoxia/.config/syncthing";
-      guiAddress = "127.0.0.1:8384";
-
-      overrideDevices = true;
-      overrideFolders = true;
-      devices = {
-        "bullroarer" = { id = "OSZS5JQ-H3U262N-ELG4DDF-6BJVBPD-M2HN4OD-D2AEIIH-T7TN7R6-DLQHWA3"; };
-        "sextant" = { id = "R5FLI7N-4HVR44U-3C3C6SB-FPHAOGV-CQ6RQZT-4J7KORO-2LWB4MR-7D4WZQ7"; };
-      };
-      folders = {
-        "files" = {
-          path = "/home/eudoxia/files";
-          devices = [ "bullroarer" "sextant" ];
-        };
-      };
-    };
-  };
 
   home-manager.users.eudoxia = {
     home.stateVersion = "22.11";
@@ -322,13 +155,124 @@ in
     };
   };
 
-  # This value determines the NixOS release from which the default
-  # settings for stateful data, like file locations and database versions
-  # on your system were taken. It‘s perfectly fine and recommended to leave
-  # this value at the release version of the first install of this system.
-  # Before changing this value read the documentation for this option
-  # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "22.11"; # Did you read the comment?
+  #
+  # Locale
+  #
+
+  time.timeZone = "Australia/Sydney";
+  i18n.defaultLocale = "en_US.UTF-8";
+  i18n.extraLocaleSettings = {
+    LC_ADDRESS = "en_US.UTF-8";
+    LC_IDENTIFICATION = "en_US.UTF-8";
+    LC_MEASUREMENT = "en_US.UTF-8";
+    LC_MONETARY = "en_US.UTF-8";
+    LC_NAME = "en_US.UTF-8";
+    LC_NUMERIC = "en_US.UTF-8";
+    LC_PAPER = "en_US.UTF-8";
+    LC_TELEPHONE = "en_US.UTF-8";
+    LC_TIME = "en_US.UTF-8";
+  };
+
+  #
+  # Fonts
+  #
+
+  fonts = {
+    fontconfig.enable = true;
+    fonts = with pkgs; [
+      inconsolata
+      terminus_font
+      terminus_font_ttf
+    ];
+  };
+
+  #
+  # Networking
+  #
+
+  networking.networkmanager.enable = true;
+  networking.nameservers = [
+    "8.8.8.8"
+    "8.8.4.4"
+  ];
+
+  # Tell NetworkManager not to write /etc/resolv.conf
+  networking.networkmanager.dns = "none";
+  # Disable resolvconf.
+  networking.resolvconf.enable = false;
+  # Disable systemd-resolved
+  services.resolved.enable = false;
+  # Overwrite /etc/resolv.conf
+  environment.etc."resolv.conf".text = ''
+    nameserver 8.8.8.8
+    nameserver 8.8.4.4
+  '';
+
+  #
+  # Sound
+  #
+
+  sound.enable = true;
+  hardware.pulseaudio.enable = false;
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+  };
+
+  #
+  # X11
+  #
+
+  # Enable the X11 windowing system.
+  services.xserver.enable = true;
+  services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.displayManager.lightdm.greeters.gtk.enable = false;
+  services.xserver.displayManager.lightdm.greeters.pantheon.enable = true;
+  services.xserver.desktopManager.pantheon.enable = true;
+  services.xserver.displayManager.defaultSession = "none+spectrwm";
+  services.xserver.windowManager.spectrwm.enable = true;
+
+  # Configure keymap in X11
+  services.xserver = {
+    layout = "us";
+    xkbVariant = "";
+  };
+
+  #
+  # Security
+  #
+
+  security.sudo.extraRules = [
+    {
+      users = [ "eudoxia" ];
+      commands = [
+        {
+          command = "ALL";
+          options= [ "NOPASSWD" ];
+        }
+      ];
+    }
+  ];
+
+  hardware.bluetooth.enable = false;
+
+  #
+  # Boot
+  #
+
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.efi.efiSysMountPoint = "/boot/efi";
+  boot.initrd.secrets = {
+    "/crypto_keyfile.bin" = null;
+  };
+
+  #
+  # Hacks
+  #
 
   # A hack to enable jar files to run.
   system.activationScripts.ldso = lib.stringAfter [ "usrbinenv" ] ''
@@ -336,4 +280,64 @@ in
     ln -sfn ${pkgs.glibc.out}/lib64/ld-linux-x86-64.so.2 /lib64/ld-linux-x86-64.so.2.tmp
     mv -f /lib64/ld-linux-x86-64.so.2.tmp /lib64/ld-linux-x86-64.so.2 # atomically replace
   '';
+
+  #
+  # ---
+  #
+
+
+
+
+  # Enable CUPS to print documents.
+  services.printing.enable = true;
+
+
+
+  # Enable touchpad support (enabled default in most desktopManager).
+  services.xserver.libinput.enable = true;
+
+  services.tumbler.enable = true;
+
+  # VirtualBox.
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "eudoxia" ];
+  virtualisation.virtualbox.guest.enable = true;
+  virtualisation.virtualbox.guest.x11 = true;
+
+  programs.ssh.startAgent = true;
+
+  networking.firewall.enable = true;
+  # Syncthing ports
+  networking.firewall.allowedTCPPorts = [ 8384 22000 ];
+  networking.firewall.allowedUDPPorts = [ 22000 21027 ];
+
+  # Syncthing.
+  services = {
+    syncthing = {
+      enable = true;
+      user = "eudoxia";
+      dataDir = "/home/eudoxia/files";
+      configDir = "/home/eudoxia/.config/syncthing";
+      guiAddress = "127.0.0.1:8384";
+
+      overrideDevices = true;
+      overrideFolders = true;
+      devices = {
+        "bullroarer" = { id = "OSZS5JQ-H3U262N-ELG4DDF-6BJVBPD-M2HN4OD-D2AEIIH-T7TN7R6-DLQHWA3"; };
+        "sextant" = { id = "R5FLI7N-4HVR44U-3C3C6SB-FPHAOGV-CQ6RQZT-4J7KORO-2LWB4MR-7D4WZQ7"; };
+      };
+      folders = {
+        "files" = {
+          path = "/home/eudoxia/files";
+          devices = [ "bullroarer" "sextant" ];
+        };
+      };
+    };
+  };
+
+
+
+
+
+
 }
