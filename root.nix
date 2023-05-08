@@ -68,6 +68,7 @@ in
       gnumake
       opam
       sbcl
+      gfortran
       # utils
       file
       whois
