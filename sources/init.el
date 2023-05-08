@@ -144,6 +144,10 @@
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
 (ido-mode 1)
+;; No backup~ files.
+(setq make-backup-files nil)
+;; No #autosave# files.
+(setq auto-save-default nil)
 
 ;;;;
 ;;;; 7. Mode-Specific Configuration
