@@ -26,7 +26,11 @@ in
   users.users.eudoxia = {
     isNormalUser = true;
     description = "eudoxia";
-    extraGroups = [ "networkmanager" "wheel" "vboxusers" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      # "vboxusers" # VirtualBox
+    ];
     packages = with pkgs; [
       # x11 apps
       firefox
@@ -99,10 +103,10 @@ in
   #
 
   # VirtualBox.
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "eudoxia" ];
-  virtualisation.virtualbox.guest.enable = true;
-  virtualisation.virtualbox.guest.x11 = true;
+  #virtualisation.virtualbox.host.enable = true;
+  #users.extraGroups.vboxusers.members = [ "eudoxia" ];
+  #virtualisation.virtualbox.guest.enable = true;
+  #virtualisation.virtualbox.guest.x11 = true;
 
   # Syncthing.
   services = {
