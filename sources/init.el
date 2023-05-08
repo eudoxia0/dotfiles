@@ -40,7 +40,7 @@
     markdown-mode  ; Markdown support
     visual-regexp  ; interactive regex search replace
     nix-mode       ; Nix highlighting
-    rust-mode
+    rust-mode      ; rust highlighting
     ))
 
 ;; Iterate over package list and install them.
