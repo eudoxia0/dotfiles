@@ -82,6 +82,7 @@ fi
 
 alias gcam='git commit -a -m'
 alias gp='git push -u origin HEAD'
+alias gh='git checkout master'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
