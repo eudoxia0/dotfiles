@@ -53,6 +53,7 @@ in
       gimp
       signal-desktop
       libreoffice
+      gparted
       # x11
       xcape
       scrot
