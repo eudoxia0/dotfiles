@@ -41,6 +41,7 @@
     visual-regexp  ; interactive regex search replace
     nix-mode       ; Nix highlighting
     rust-mode      ; rust highlighting
+    yaml-mode
     ))
 
 ;; Iterate over package list and install them.
