@@ -15,7 +15,7 @@ EXPECTANCY: list[str] = [
     "Review your inspirations",
     "Know what inspires you and why",
     "Make your inspirations visible",
-    "Ask: what could go wrong?"
+    "Ask: what could go wrong?",
     "Compare the ideal state with the current state",
     "Visualize and contrast the present and future",
     "Nothing is carved in stone",
