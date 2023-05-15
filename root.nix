@@ -94,6 +94,7 @@ in
       aspellDicts.en
       graphviz
       pandoc
+      texlive.combined.scheme-full
       # fonts
       terminus_font
       terminus_font_ttf
