@@ -54,6 +54,7 @@ in
       signal-desktop
       libreoffice
       gparted
+      diffpdf
       # x11
       xcape
       scrot
