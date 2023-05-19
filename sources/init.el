@@ -19,8 +19,7 @@
   (package-refresh-contents))
 
 (defvar my-packages
-  '(olivetti       ; Distraction-free writing mode
-    slime          ; Common Lisp IDE
+  '(slime          ; Common Lisp IDE
     github-theme   ; GitHub theme
     sublime-themes ; Sublime themes
     aircon-theme   ; light colour theme

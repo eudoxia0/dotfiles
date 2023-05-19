@@ -101,6 +101,8 @@ in
       inconsolata
       liberation_ttf
       doulos-sil
+      # Emacs packages
+      emacsPackages.olivetti
     ];
   };
 
