@@ -34,7 +34,7 @@
 (put 'overwrite-mode 'disabled t)
 ;; Default font.
 (add-to-list 'default-frame-alist
-             '(font . "Monaco-13"))
+             '(font . "Monaco-12"))
 ;; Show trailing whitespace.
 (setq-default show-trailing-whitespace t)
 ;; Highlight the current line.
