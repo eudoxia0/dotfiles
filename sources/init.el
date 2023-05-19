@@ -32,9 +32,9 @@
 (global-linum-mode 1)
 ;; Get rid of overwrite mode because sometimes I enable it by accident.
 (put 'overwrite-mode 'disabled t)
-;; Default font.
-(add-to-list 'default-frame-alist
-             '(font . "Monaco-12"))
+;; Default fonts.
+(set-face-attribute 'default nil :font "Monaco-12")
+(set-face-attribute 'mode-line nil :font "Monaco-12")
 ;; Show trailing whitespace.
 (setq-default show-trailing-whitespace t)
 ;; Highlight the current line.
