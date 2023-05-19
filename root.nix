@@ -100,6 +100,7 @@ in
       terminus_font_ttf
       inconsolata
       liberation_ttf
+      doulos-sil
     ];
   };
 
@@ -223,6 +224,7 @@ in
       terminus_font
       terminus_font_ttf
       liberation_ttf
+      doulos-sil
     ];
   };
 
