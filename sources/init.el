@@ -246,35 +246,5 @@
 ;; ## end of OPAM user-setup addition for emacs / base ## keep this line
 
 ;;;;
-;;;; Custom Modes
-;;;;
-
-;;;
-;;; ConcordiaML
-;;;
-
-;;; Syntax highlighting
-
-(defvar concordia-font-lock-keywords
-  '(("\\\\begin{\\([a-zA-Z]+\\)}" 1 font-lock-function-name-face)
-    ("\\\\end{\\([a-zA-Z]+\\)}" 1 font-lock-function-name-face)
-    ("\\\\[a-zA-Z]+" . font-lock-keyword-face)
-    ("@begin{\\([a-zA-Z]+\\)}" 1 font-lock-function-name-face)
-    ("@end{\\([a-zA-Z]+\\)}" 1 font-lock-function-name-face)
-    ("@[a-zA-Z]+" . font-lock-keyword-face)))
-
-(define-derived-mode concordia-mode text-mode "Concordia"
-  "Major mode for editing ConcordiaML files."
-  (setq font-lock-defaults '((concordia-font-lock-keywords))))
-
-
-;;;
-;;; Austral
-;;;
-
-(when (file-exists-p "~/.emacs.d/austral-mode.el")
-  (require 'austral-mode "~/.emacs.d/austral-mode.el"))
-
-;;;;
 ;;;; Custom Set Variables
 ;;;;
