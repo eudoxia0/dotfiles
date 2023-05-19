@@ -113,6 +113,7 @@ in
       emacsPackages.nix-mode
       emacsPackages.rust-mode
       emacsPackages.yaml-mode
+      emacsPackages.disable-mouse
     ];
   };
 
