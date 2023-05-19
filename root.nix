@@ -104,6 +104,7 @@ in
       # Emacs packages
       emacsPackages.olivetti
       emacsPackages.slime
+      emacsPackages.github-theme
     ];
   };
 

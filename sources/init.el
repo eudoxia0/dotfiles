@@ -19,8 +19,7 @@
   (package-refresh-contents))
 
 (defvar my-packages
-  '(github-theme   ; GitHub theme
-    sublime-themes ; Sublime themes
+  '(sublime-themes ; Sublime themes
     aircon-theme   ; light colour theme
     tuareg         ; OCaml IDE
     merlin         ; OCaml error highlighting
