@@ -22,8 +22,8 @@
 (setq ring-bell-function 'ignore)
 ;; Don't blink the cursor.
 (blink-cursor-mode 0)
-;; Make the cursor a bar.
-(setq-default cursor-type 'bar)
+;; Make the cursor a box.
+(setq-default cursor-type 'box)
 ;; Set the cursor colour.
 (set-cursor-color "#cccccc")
 ;; Fill paragraphs to 80 columns.
