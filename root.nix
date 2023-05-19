@@ -108,6 +108,7 @@ in
       emacsPackages.sublime-themes
       emacsPackages.aircon-theme
       emacsPackages.company
+      emacsPackages.markdown-mode
     ];
   };
 
