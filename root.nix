@@ -105,6 +105,7 @@ in
       emacsPackages.olivetti
       emacsPackages.slime
       emacsPackages.github-theme
+      emacsPackages.sublime-themes
     ];
   };
 

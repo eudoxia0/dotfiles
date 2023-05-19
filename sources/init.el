@@ -19,8 +19,7 @@
   (package-refresh-contents))
 
 (defvar my-packages
-  '(sublime-themes ; Sublime themes
-    aircon-theme   ; light colour theme
+  '(aircon-theme   ; light colour theme
     tuareg         ; OCaml IDE
     merlin         ; OCaml error highlighting
     company        ; completion
