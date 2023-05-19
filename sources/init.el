@@ -236,7 +236,14 @@
   (require 'opam-user-setup "~/.emacs.d/opam-user-setup.el"))
 ;; ## end of OPAM user-setup addition for emacs / base ## keep this line
 
+;;;;
+;;;; Custom Commands
+;;;;
 
+(defun e/persian ()
+  "Use the Persian input method."
+  (interactive)
+  (set-input-method "farsi-transliterate-banan"))
 
 ;;;;
 ;;;; Custom Set Variables
