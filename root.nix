@@ -38,7 +38,7 @@ in
       keepass
       calibre
       dmenu
-      emacs
+      emacs-gtk
       vscode
       vim
       xfce.thunar
