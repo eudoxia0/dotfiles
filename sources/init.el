@@ -40,6 +40,9 @@
 ;; Highlight the current line.
 (global-hl-line-mode +1)
 (set-face-background 'hl-line "#eeeeee")
+;; Disable the mouse.
+(require 'disable-mouse)
+(global-disable-mouse-mode)
 
 ;;;;
 ;;;; Splash Screen
