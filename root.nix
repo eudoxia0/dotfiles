@@ -103,6 +103,7 @@ in
       doulos-sil
       # Emacs packages
       emacsPackages.olivetti
+      emacsPackages.slime
     ];
   };
 

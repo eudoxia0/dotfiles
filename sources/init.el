@@ -19,8 +19,7 @@
   (package-refresh-contents))
 
 (defvar my-packages
-  '(slime          ; Common Lisp IDE
-    github-theme   ; GitHub theme
+  '(github-theme   ; GitHub theme
     sublime-themes ; Sublime themes
     aircon-theme   ; light colour theme
     tuareg         ; OCaml IDE
