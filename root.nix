@@ -218,7 +218,12 @@ in
   #
 
   fonts = {
-    fontconfig.enable = true;
+    fontconfig = {
+      enable = true;
+      localConf = ''
+        <dir>~/files/4 Resources/4 Fonts</dir>
+      '';
+    };
     fonts = with pkgs; [
       inconsolata
       terminus_font
