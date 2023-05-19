@@ -40,14 +40,6 @@
 ;; Highlight the current line.
 (global-hl-line-mode +1)
 (set-face-background 'hl-line "#eeeeee")
-;; Disable the mouse.
-(require 'disable-mouse)
-(global-disable-mouse-mode)
-;; Disable the arrow keys.
-(global-unset-key (kbd "<left>"))
-(global-unset-key (kbd "<right>"))
-(global-unset-key (kbd "<up>"))
-(global-unset-key (kbd "<down>"))
 
 ;;;;
 ;;;; Splash Screen
@@ -214,6 +206,20 @@
   "Use the Persian input method."
   (interactive)
   (set-input-method "farsi-transliterate-banan"))
+
+;;;;
+;;;; Interaction
+;;;;
+
+;; Disable the mouse.
+(require 'disable-mouse)
+(global-disable-mouse-mode)
+
+;; Disable the arrow keys.
+(global-unset-key (kbd "<left>"))
+(global-unset-key (kbd "<right>"))
+(global-unset-key (kbd "<up>"))
+(global-unset-key (kbd "<down>"))
 
 ;;;;
 ;;;; Custom Set Variables
