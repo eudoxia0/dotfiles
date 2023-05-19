@@ -99,6 +99,7 @@ in
       terminus_font
       terminus_font_ttf
       inconsolata
+      liberation_ttf
     ];
   };
 
@@ -221,6 +222,7 @@ in
       inconsolata
       terminus_font
       terminus_font_ttf
+      liberation_ttf
     ];
   };
 
