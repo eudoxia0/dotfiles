@@ -110,6 +110,9 @@ in
       emacsPackages.company
       emacsPackages.markdown-mode
       emacsPackages.visual-regexp
+      emacsPackages.nix-mode
+      emacsPackages.rust-mode
+      emacsPackages.yaml-mode
     ];
   };
 

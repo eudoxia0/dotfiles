@@ -3,33 +3,6 @@
 ;;;;
 
 ;;;;
-;;;; Package Management
-;;;;
-
-(require 'package)
-
-;; Use MELPA and MELPA-Stable exclusively.
-(setq package-archives '(("melpa" . "https://melpa.org/packages/")
-                         ("melpa-stable" . "https://stable.melpa.org/packages/")
-                         ("elpa" . "https://elpa.gnu.org/packages/")))
-
-(package-initialize)
-
-(unless package-archive-contents
-  (package-refresh-contents))
-
-(defvar my-packages
-  '(nix-mode       ; Nix highlighting
-    rust-mode      ; rust highlighting
-    yaml-mode
-    ))
-
-;; Iterate over package list and install them.
-(dolist (p my-packages)
-  (unless (package-installed-p p)
-    (package-install p)))
-
-;;;;
 ;;;; Colour Theme
 ;;;;
 
