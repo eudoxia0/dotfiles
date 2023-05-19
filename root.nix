@@ -107,6 +107,7 @@ in
       emacsPackages.github-theme
       emacsPackages.sublime-themes
       emacsPackages.aircon-theme
+      emacsPackages.company
     ];
   };
 

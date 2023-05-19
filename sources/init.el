@@ -19,11 +19,7 @@
   (package-refresh-contents))
 
 (defvar my-packages
-  '(tuareg         ; OCaml IDE
-    merlin         ; OCaml error highlighting
-    company        ; completion
-    merlin-company ; completion for OCaml
-    markdown-mode  ; Markdown support
+  '(markdown-mode  ; Markdown support
     visual-regexp  ; interactive regex search replace
     nix-mode       ; Nix highlighting
     rust-mode      ; rust highlighting
