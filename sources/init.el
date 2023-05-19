@@ -1,18 +1,9 @@
 ;;;;     "Show me your ~/.emacs and I will tell you who you are."
 ;;;;                                        Bogdan Maryniuk
 ;;;;
-;;;; Sections:
-;;;;
-;;;;   1. Package Management
-;;;;   2. Colour Theme
-;;;;   3. User Interface
-;;;;   4. Splash Screen
-;;;;   5. Mode Line
-;;;;   6. Behaviour
-;;;;   7. Mode-Specific Configuration
 
 ;;;;
-;;;; 1. Package Management
+;;;; Package Management
 ;;;;
 
 (require 'package)
@@ -50,13 +41,13 @@
     (package-install p)))
 
 ;;;;
-;;;; 2. Colour Theme
+;;;; Colour Theme
 ;;;;
 
 (load-theme 'aircon t)
 
 ;;;;
-;;;; 3. User Interface
+;;;; User Interface
 ;;;;
 
 ;; No scroll bar.
@@ -89,7 +80,7 @@
 (set-face-background 'hl-line "#eeeeee")
 
 ;;;;
-;;;; 4. Splash Screen
+;;;; Splash Screen
 ;;;;
 
 ;; Disable the messages buffer.
@@ -125,14 +116,14 @@
   (message (random-words-of-encouragement)))
 
 ;;;;
-;;;; 5. Mode Line
+;;;; Mode Line
 ;;;;
 
 ;; Track the column number.
 (setq column-number-mode t)
 
 ;;;;
-;;;; 6. Behaviour
+;;;; Behaviour
 ;;;;
 
 ;; Delete trailing whitespace on save.
@@ -151,7 +142,7 @@
 (setq auto-save-default nil)
 
 ;;;;
-;;;; 7. Mode-Specific Configuration
+;;;; Mode-Specific Configuration
 ;;;;
 
 ;;;
@@ -244,6 +235,8 @@
 (when (file-exists-p "~/.emacs.d/opam-user-setup.el")
   (require 'opam-user-setup "~/.emacs.d/opam-user-setup.el"))
 ;; ## end of OPAM user-setup addition for emacs / base ## keep this line
+
+
 
 ;;;;
 ;;;; Custom Set Variables
