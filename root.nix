@@ -109,6 +109,7 @@ in
       emacsPackages.aircon-theme
       emacsPackages.company
       emacsPackages.markdown-mode
+      emacsPackages.visual-regexp
     ];
   };
 

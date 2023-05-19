@@ -19,8 +19,7 @@
   (package-refresh-contents))
 
 (defvar my-packages
-  '(visual-regexp  ; interactive regex search replace
-    nix-mode       ; Nix highlighting
+  '(nix-mode       ; Nix highlighting
     rust-mode      ; rust highlighting
     yaml-mode
     ))
