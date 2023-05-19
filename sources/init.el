@@ -19,8 +19,7 @@
   (package-refresh-contents))
 
 (defvar my-packages
-  '(aircon-theme   ; light colour theme
-    tuareg         ; OCaml IDE
+  '(tuareg         ; OCaml IDE
     merlin         ; OCaml error highlighting
     company        ; completion
     merlin-company ; completion for OCaml
