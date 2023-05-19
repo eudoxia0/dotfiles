@@ -221,6 +221,11 @@
 (global-unset-key (kbd "<up>"))
 (global-unset-key (kbd "<down>"))
 
+;; Disable things I often invoke by mistake.
+(global-unset-key (kbd "C-v"))
+(global-unset-key (kbd "M-v"))
+(global-unset-key (kbd "C-l"))
+
 ;;;;
 ;;;; Custom Set Variables
 ;;;;
