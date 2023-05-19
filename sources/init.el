@@ -135,7 +135,7 @@
 
 (require 'nxml-mode)
 
-(defun my-in-start-tag-p ()
+(defun e/in-start-tag-p ()
   ;; Check that we're at the end of a start tag. From the source code of
   ;; `nxml-balanced-close-start-tag`.
   (let ((token-end (nxml-token-before))
@@ -147,18 +147,18 @@
 					             partial-empty-element))
 		     (>= token-end pos)))))
 
-(defun my-finish-element ()
+(defun e/finish-element ()
   (interactive)
-  (if (my-in-start-tag-p)
+  (if (e/in-start-tag-p)
       ;; If we're at the end of a start tag like `<foo`, complete this to
       ;; `<foo></foo>`, then move the point between the start and end tags.
       (nxml-balanced-close-start-tag-inline)
       ;; Otherwise insert an angle bracket.
       (insert ">")))
 
-(define-key nxml-mode-map (kbd ">") 'my-finish-element)
+(define-key nxml-mode-map (kbd ">") 'e/finish-element)
 
-(defun my-nxml-newline ()
+(defun e/nxml-newline ()
   "Insert a newline, indenting the current line and the newline appropriately in nxml-mode."
   (interactive)
   ;; Are we between an open and closing tag?
@@ -176,7 +176,7 @@
     ;; Otherwise just insert a regular newline.
     (newline)))
 
-(define-key nxml-mode-map (kbd "RET") 'my-nxml-newline)
+(define-key nxml-mode-map (kbd "RET") 'e/nxml-newline)
 
 (setq nxml-child-indent 4 nxml-attribute-indent 4)
 
