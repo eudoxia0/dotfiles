@@ -21,6 +21,7 @@ let
       disable-mouse
       tuareg
       merlin
+      hydra
     ]));
 in
 {
