@@ -275,6 +275,8 @@
   ("8" (digit-argument 8))
   ("9" (digit-argument 9))
 
+  ("/" undo)
+
   ("i" nil))
 
 (global-set-key (kbd "C-z") 'e/hydra-vi/body)
