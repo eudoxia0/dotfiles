@@ -5,6 +5,23 @@ let
     url = "https://github.com/nix-community/home-manager/archive/release-22.11.tar.gz";
     sha256 = "1cp2rpprcfl4mjsrsrpfg6278nf05a0mpl3m0snksvdalfmc5si5";
   };
+  customEmacs =
+    ((pkgs.emacsPackagesFor pkgs.emacs-gtk).emacsWithPackages (epkgs: with epkgs; [
+      olivetti
+      slime
+      github-theme
+      sublime-themes
+      aircon-theme
+      company
+      markdown-mode
+      visual-regexp
+      nix-mode
+      rust-mode
+      yaml-mode
+      disable-mouse
+      tuareg
+      merlin
+    ]));
 in
 {
   imports = [
@@ -38,7 +55,7 @@ in
       keepass
       calibre
       dmenu
-      emacs-gtk
+      customEmacs
       vscode
       vim
       xfce.thunar
@@ -101,21 +118,6 @@ in
       inconsolata
       liberation_ttf
       doulos-sil
-      # Emacs packages
-      emacsPackages.olivetti
-      emacsPackages.slime
-      emacsPackages.github-theme
-      emacsPackages.sublime-themes
-      emacsPackages.aircon-theme
-      emacsPackages.company
-      emacsPackages.markdown-mode
-      emacsPackages.visual-regexp
-      emacsPackages.nix-mode
-      emacsPackages.rust-mode
-      emacsPackages.yaml-mode
-      emacsPackages.disable-mouse
-      emacsPackages.tuareg
-      emacsPackages.merlin
     ];
   };
 
