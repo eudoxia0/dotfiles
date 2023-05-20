@@ -243,7 +243,7 @@
   ("<" shrink-window-horizontally)
   ("+" text-scale-increase)
   ("-" text-scale-decrease)
-  ("r" (lambda () (interactive) (text-scale-increase 0)))
+  ("r" (text-scale-increase 0))
   ("q" nil))
 
 (global-set-key (kbd "C-v") 'e/hydra-windows/body)
