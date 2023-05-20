@@ -229,5 +229,25 @@
 (global-unset-key (kbd "C-l"))
 
 ;;;;
+;;;; Hydras
+;;;;
+
+(defhydra e/hydra-windows (:foreign-keys warn)
+  "windows"
+  ("x" delete-window)
+  ("f" delete-other-windows)
+  ("v" split-window-vertically)
+  ("h" split-window-horizontally)
+  ("o" other-window)
+  (">" enlarge-window-horizontally)
+  ("<" shrink-window-horizontally)
+  ("+" text-scale-increase)
+  ("-" text-scale-decrease)
+  ("r" (lambda () (interactive) (text-scale-increase 0)))
+  ("q" nil))
+
+(global-set-key (kbd "C-v") 'e/hydra-windows/body)
+
+;;;;
 ;;;; Custom Set Variables
 ;;;;
