@@ -248,6 +248,37 @@
 
 (global-set-key (kbd "C-v") 'e/hydra-windows/body)
 
+(defhydra e/hydra-vi (:foreign-keys warn)
+  "modal editing"
+  ("h" backward-char)
+  ("j" next-line)
+  ("k" previous-line)
+  ("l" forward-char)
+
+  ("a" move-beginning-of-line)
+  ("e" move-end-of-line)
+
+  ("w" kill-region)
+  ("W" kill-ring-save)
+  ("y" yank)
+
+  ("SPC" set-mark-command)
+
+  ("0" (digit-argument 0))
+  ("1" (digit-argument 1))
+  ("2" (digit-argument 2))
+  ("3" (digit-argument 3))
+  ("4" (digit-argument 4))
+  ("5" (digit-argument 5))
+  ("6" (digit-argument 6))
+  ("7" (digit-argument 7))
+  ("8" (digit-argument 8))
+  ("9" (digit-argument 9))
+
+  ("i" nil))
+
+(global-set-key (kbd "C-e") 'e/hydra-vi/body)
+
 ;;;;
 ;;;; Custom Set Variables
 ;;;;
