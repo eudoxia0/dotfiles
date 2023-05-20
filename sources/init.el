@@ -220,6 +220,8 @@
 (global-unset-key (kbd "<right>"))
 (global-unset-key (kbd "<up>"))
 (global-unset-key (kbd "<down>"))
+(global-unset-key (kbd "<home>"))
+(global-unset-key (kbd "<end>"))
 
 ;; Disable things I often invoke by mistake.
 (global-unset-key (kbd "C-v"))
