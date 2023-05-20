@@ -114,6 +114,8 @@ in
       emacsPackages.rust-mode
       emacsPackages.yaml-mode
       emacsPackages.disable-mouse
+      emacsPackages.tuareg
+      emacsPackages.merlin
     ];
   };
 
