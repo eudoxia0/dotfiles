@@ -250,10 +250,10 @@
 
 (defhydra e/hydra-vi (:foreign-keys warn)
   "modal editing"
-  ("h" backward-char)
-  ("j" next-line)
-  ("k" previous-line)
-  ("l" forward-char)
+  ("b" backward-char)
+  ("n" next-line)
+  ("p" previous-line)
+  ("f" forward-char)
 
   ("a" move-beginning-of-line)
   ("e" move-end-of-line)
@@ -261,6 +261,9 @@
   ("w" kill-region)
   ("W" kill-ring-save)
   ("y" yank)
+
+  ("s" isearch-forward)
+  ("r" isearch-backward)
 
   ("SPC" set-mark-command)
 
