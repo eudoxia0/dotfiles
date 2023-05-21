@@ -282,7 +282,7 @@
 
   ("i" nil))
 
-(global-set-key (kbd "<esc>") 'e/hydra-vi/body)
+(global-set-key (kbd "<escape>") 'e/hydra-vi/body)
 
 ;;;;
 ;;;; Custom Set Variables
