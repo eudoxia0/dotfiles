@@ -264,6 +264,7 @@
 
   ("s" isearch-forward)
   ("r" isearch-backward)
+  ("G" goto-line)
 
   ("SPC" set-mark-command)
 
