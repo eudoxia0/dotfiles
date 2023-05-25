@@ -274,9 +274,11 @@
 
   ("s" isearch-forward)
   ("r" isearch-backward)
-  ("G" goto-line)
+  ("t" iy-go-to-char)
+  ("T" iy-go-to-char-backward)
 
   ("SPC" set-mark-command)
+  ("G" goto-line)
 
   ("0" (digit-argument 0))
   ("1" (digit-argument 1))
