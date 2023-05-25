@@ -23,6 +23,7 @@ let
       merlin
       hydra
       dockerfile-mode
+      typescript-mode
     ]));
 in
 {
