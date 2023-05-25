@@ -25,6 +25,7 @@ let
       dockerfile-mode
       typescript-mode
       magit
+      graphviz-dot-mode
     ]));
 in
 {
