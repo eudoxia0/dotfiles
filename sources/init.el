@@ -257,6 +257,8 @@
 
   ("a" move-beginning-of-line)
   ("e" move-end-of-line)
+  ("N" (next-line 10))
+  ("P" (previous-line 10))
 
   ("w" kill-region)
   ("W" kill-ring-save)
