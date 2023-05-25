@@ -283,6 +283,10 @@
 
   ("/" undo)
 
+  ("B" switch-to-buffer)
+  (">" next-buffer)
+  ("<" previous-buffer)
+
   ("i" nil))
 
 (global-set-key (kbd "<escape>") 'e/hydra-vi/body)
