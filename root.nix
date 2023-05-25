@@ -24,6 +24,7 @@ let
       hydra
       dockerfile-mode
       typescript-mode
+      magit
     ]));
 in
 {
