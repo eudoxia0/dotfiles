@@ -3,6 +3,14 @@
 ;;;;
 
 ;;;;
+;;;; Load Path
+;;;;
+
+(push "~/.emacs.d/lisp" load-path)
+
+(require 'iy-go-to-char)
+
+;;;;
 ;;;; Colour Theme
 ;;;;
 

@@ -197,6 +197,9 @@ in
       ".emacs.d/init.el" = {
         source = ./sources/init.el;
       };
+      ".emacs.d/lisp/iy-go-to-char.el" = {
+        source = ./sources/iy-go-to-char.el;
+      };
       ".config/git/config" = {
         source = ./sources/gitconfig.conf;
       };
