@@ -22,6 +22,7 @@ let
       tuareg
       merlin
       hydra
+      dockerfile-mode
     ]));
 in
 {
