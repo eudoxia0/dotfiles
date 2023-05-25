@@ -248,7 +248,7 @@
 
 (global-set-key (kbd "C-v") 'e/hydra-windows/body)
 
-(defhydra e/hydra-vi (:foreign-keys warn)
+(defhydra e/hydra-vi (:foreign-keys warn :hint nil)
   "modal editing"
   ("b" backward-char)
   ("n" next-line)
