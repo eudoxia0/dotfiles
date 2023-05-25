@@ -73,6 +73,7 @@ in
       libreoffice
       gparted
       diffpdf
+      chromium
       # x11
       xcape
       scrot
