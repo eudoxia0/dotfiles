@@ -26,6 +26,7 @@ let
       typescript-mode
       magit
       graphviz-dot-mode
+      plantuml-mode
     ]));
 in
 {
