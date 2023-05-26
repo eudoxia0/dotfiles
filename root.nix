@@ -79,6 +79,7 @@ in
       gparted
       diffpdf
       chromium
+      foliate
       # x11
       xcape
       scrot
