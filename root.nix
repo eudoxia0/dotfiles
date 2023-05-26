@@ -221,6 +221,25 @@ in
         recursive = true;
       };
     };
+
+    xdg = {
+      enable = true;
+      mimeApps = {
+        enable = true;
+        defaultApplications = {
+          "text/plain" = "emacs.desktop";
+          "text/html" = "firefox.desktop";
+          "image/png" = "viewnior.desktop";
+          "image/jpeg" = "viewnior.desktop";
+          "image/gif" = "viewnior.desktop";
+          "image/tiff" = "viewnior.desktop";
+          "application/pdf" = "org.gnome.Evince.desktop";
+          "application/vnd.oasis.opendocument.text" = "writer.desktop";
+          "application/epub+zip" = "com.github.johnfactotum.Foliate.desktop";
+          "application/x-mobipocket-ebook" = "com.github.johnfactotum.Foliate.desktop";
+        };
+      };
+    };
   };
 
   #
