@@ -340,18 +340,6 @@ in
   # Security
   #
 
-  security.sudo.extraRules = [
-    {
-      users = [ "eudoxia" ];
-      commands = [
-        {
-          command = "ALL";
-          options= [ "NOPASSWD" ];
-        }
-      ];
-    }
-  ];
-
   hardware.bluetooth.enable = false;
 
   programs.ssh.startAgent = true;
