@@ -295,13 +295,20 @@
   ("8" (digit-argument 8))
   ("9" (digit-argument 9))
 
+  ("d" delete-char)
+  ("D" kill-word)
+
+  (":" execute-extended-command)
+  ("x" replace-string)
+  ("X" vr/query-replace)
+
   ("/" undo)
 
   ("B" switch-to-buffer)
   (">" next-buffer)
   ("<" previous-buffer)
 
-  ("i" nil))
+  ("i" nil :color blue))
 
 (global-set-key (kbd "<escape>") 'e/hydra-vi/body)
 
