@@ -267,6 +267,10 @@
   ("e" move-end-of-line)
   ("N" (next-line 10))
   ("P" (previous-line 10))
+  ;; Page Up
+  ("<prior>" scroll-down-command)
+  ;; Page Down
+  ("<next>" scroll-up-command)
 
   ("w" kill-region)
   ("W" kill-ring-save)
