@@ -121,6 +121,7 @@ in
       pandoc
       texlive.combined.scheme-full
       tree
+      imagemagick
       # fonts
       terminus_font
       terminus_font_ttf
