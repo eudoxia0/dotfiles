@@ -122,6 +122,7 @@ in
       texlive.combined.scheme-full
       tree
       imagemagick
+      sloccount
       # fonts
       terminus_font
       terminus_font_ttf
