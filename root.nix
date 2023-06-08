@@ -81,6 +81,7 @@ in
       diffpdf
       chromium
       foliate
+      dbeaver
       # x11
       xcape
       scrot
