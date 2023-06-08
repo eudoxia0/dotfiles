@@ -94,7 +94,6 @@ in
       redshift
       # dev
       git
-      podman
       gnuplot
       meld
       jekyll
@@ -106,6 +105,8 @@ in
       opam
       sbcl
       gfortran
+      podman-compose
+      fuse-overlayfs
       # utils
       file
       whois
@@ -141,6 +142,30 @@ in
   #
   # Services
   #
+
+  # Podman.
+  virtualisation.podman = {
+    enable = true;
+    defaultNetwork.settings = {
+        dns_enabled = true;
+    };
+  };
+
+
+  # # Docker.
+  # virtualisation.docker = {
+  #   enable = true;
+  #   daemon.settings = {
+  #     dns = [
+  #       "8.8.8.8"
+  #       "8.8.4.4"
+  #     ];
+  #   };
+  #   rootless = {
+  #     enable = true;
+  #     setSocketVariable = true;
+  #   };
+  # };
 
   # VirtualBox.
   #virtualisation.virtualbox.host.enable = true;
@@ -228,6 +253,9 @@ in
       ".local/bin" = {
         source = ./sources/scripts;
         recursive = true;
+      };
+      ".config/containers/registries.conf" = {
+        source = ./sources/container-registries.conf;
       };
     };
 
