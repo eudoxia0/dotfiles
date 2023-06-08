@@ -106,7 +106,7 @@ in
       sbcl
       gfortran
       podman-compose
-      fuse-overlayfs
+      fuse-overlayfs # podman perf hack
       # utils
       file
       whois
