@@ -82,6 +82,10 @@ in
       chromium
       foliate
       dbeaver
+      # games
+      endgame-singularity
+      gargoyle
+      the-powder-toy
       # x11
       xcape
       scrot
