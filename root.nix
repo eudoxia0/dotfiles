@@ -67,6 +67,7 @@ in
       xfce.thunar
       xfce.xfconf # needed for thunar
       spectrwm
+      fvwm
       gnome.cheese
       gnome.gnome-sound-recorder
       font-manager
