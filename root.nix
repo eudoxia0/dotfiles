@@ -226,9 +226,6 @@ in
       ".garglkrc" = {
         source = ./sources/garglkrc.conf;
       };
-      ".XCompose" = {
-        source = ./sources/XCompose;
-      };
       ".emacs.d/init.el" = {
         source = ./sources/init.el;
       };
