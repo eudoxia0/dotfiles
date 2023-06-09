@@ -235,9 +235,6 @@ in
       ".config/git/config" = {
         source = ./sources/gitconfig.conf;
       };
-      ".xmodmap" = {
-        source = ./sources/xmodmap;
-      };
       ".Xresources" = {
         source = ./sources/xresources;
       };
