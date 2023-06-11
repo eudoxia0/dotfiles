@@ -221,7 +221,7 @@ in
       ".config/spectrwm/spectrwm.conf" = {
         source = ./sources/spectrwm.conf;
       };
-      ".config/spectrwm/autostart.sh" = {
+      ".config/x11/autostart.sh" = {
         source = ./sources/autostart.sh;
       };
       ".garglkrc" = {
