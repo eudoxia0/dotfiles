@@ -83,6 +83,7 @@ in
       foliate
       dbeaver
       pavucontrol
+      xfontsel
       # games
       endgame-singularity
       gargoyle
