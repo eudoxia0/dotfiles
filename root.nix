@@ -81,6 +81,7 @@ in
       chromium
       foliate
       dbeaver
+      pavucontrol
       # games
       endgame-singularity
       gargoyle
