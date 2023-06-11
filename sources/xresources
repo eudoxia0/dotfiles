@@ -51,7 +51,7 @@
 ! Terminal name.
 XTerm.termName:          xterm-256color
 ! Font.
-XTerm.vt100.faceName:    Terminus:pixelsize=16:antialias=true:autohint=true;
+XTerm.vt100.faceName:    Terminus:pixelsize=20:antialias=true:autohint=true;
 ! Inner border.
 XTerm.vt100.internalBorder: 20
 ! Use UTF-8
