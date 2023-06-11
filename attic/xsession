@@ -1,9 +1,0 @@
-wallpaper.sh &
-recorder.sh &
-xrdb ~/.config/x11/xresources &
-xcape -e "Shift_L=parenleft;Shift_R=parenright" &
-xscreensaver -no-splash &
-if [ -n $(which battery.sh) ]; then
-    battery.sh &
-fi
-exec spectrwm
