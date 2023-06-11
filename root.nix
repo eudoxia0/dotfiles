@@ -257,6 +257,10 @@ in
       };
     };
 
+    # Other apps try to configure mimeapps.list. This tells home-manager to
+    # override its contents.
+    xdg.configFile."mimeapps.list".force = true;
+
     xdg = {
       enable = true;
       mimeApps = {
