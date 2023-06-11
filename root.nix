@@ -67,7 +67,6 @@ in
       xfce.thunar
       xfce.xfconf # needed for thunar
       spectrwm
-      fvwm
       gnome.cheese
       gnome.gnome-sound-recorder
       font-manager
@@ -359,7 +358,7 @@ in
   services.xserver.desktopManager.pantheon.enable = true;
   services.xserver.displayManager.defaultSession = "none+spectrwm";
   services.xserver.windowManager.spectrwm.enable = true;
-  services.xserver.windowManager.fvwm.enable = true;
+  services.xserver.windowManager.fvwm2.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
