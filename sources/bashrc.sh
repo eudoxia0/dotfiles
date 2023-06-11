@@ -85,6 +85,7 @@ alias gco='git checkout'
 alias gu='git push -u origin HEAD'
 alias gd='git pull origin'
 alias gh='git checkout master'
+alias gco='git checkout'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
