@@ -224,6 +224,9 @@ in
       ".config/x11/autostart.sh" = {
         source = ./sources/autostart.sh;
       };
+      ".fvwm/config" = {
+        source = ./sources/fvwm.conf;
+      };
       ".garglkrc" = {
         source = ./sources/garglkrc.conf;
       };
