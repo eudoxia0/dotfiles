@@ -82,6 +82,7 @@ in
       chromium
       foliate
       dbeaver
+      xterm
       # games
       endgame-singularity
       gargoyle
