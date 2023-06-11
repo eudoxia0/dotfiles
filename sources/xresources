@@ -46,34 +46,6 @@
 #define BRIGHT_CYAN    #75b5aa
 #define BRIGHT_WHITE   #f5f5f5
 
-!!!! urxvt configuration.
-
-URxvt.font:            -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
-URxvt.xftAntialias:    true
-URxvt.cursorBlink:     true
-URxvt.scrollBar_right: true
-URxvt.internalBorder:  20
-URxvt.foreground:      FOREGROUND
-URxvt.background:      BACKGROUND
-URxvt.cursorColor:     CURSOR_COLOR
-URxvt.color0:          NORMAL_BLACK
-URxvt.color1:          NORMAL_RED
-URxvt.color2:          NORMAL_YELLOW
-URxvt.color3:          NORMAL_GREEN
-URxvt.color4:          NORMAL_BLUE
-URxvt.color5:          NORMAL_MAGENTA
-URxvt.color6:          NORMAL_CYAN
-URxvt.color7:          NORMAL_WHITE
-URxvt.color8:          BRIGHT_BLACK
-URxvt.color9:          BRIGHT_RED
-URxvt.color10:         BRIGHT_YELLOW
-URxvt.color11:         BRIGHT_GREEN
-URxvt.color12:         BRIGHT_BLUE
-URxvt.color13:         BRIGHT_MAGENTA
-URxvt.color14:         BRIGHT_CYAN
-URxvt.color15:         BRIGHT_WHITE
-URxvt.perl-ext-common:-confirm-paste
-
 !!!! xterm configuration
 
 ! Terminal name.
