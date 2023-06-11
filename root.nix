@@ -359,6 +359,7 @@ in
   services.xserver.desktopManager.pantheon.enable = true;
   services.xserver.displayManager.defaultSession = "none+spectrwm";
   services.xserver.windowManager.spectrwm.enable = true;
+  services.xserver.windowManager.fvwm.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
