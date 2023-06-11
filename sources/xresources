@@ -46,30 +46,6 @@
 #define BRIGHT_CYAN    #75b5aa
 #define BRIGHT_WHITE   #f5f5f5
 
-!!!! st Configuration
-
-st.font:        Terminus:pixelsize=16:antialias=true:autohint=true;
-st.borderpx:    20
-st.foreground:  FOREGROUND
-st.background:  BACKGROUND
-st.cursorColor: CURSOR_COLOR
-st.color0:      NORMAL_BLACK
-st.color1:      NORMAL_RED
-st.color2:      NORMAL_YELLOW
-st.color3:      NORMAL_GREEN
-st.color4:      NORMAL_BLUE
-st.color5:      NORMAL_MAGENTA
-st.color6:      NORMAL_CYAN
-st.color7:      NORMAL_WHITE
-st.color8:      BRIGHT_BLACK
-st.color9:      BRIGHT_RED
-st.color10:     BRIGHT_YELLOW
-st.color11:     BRIGHT_GREEN
-st.color12:     BRIGHT_BLUE
-st.color13:     BRIGHT_MAGENTA
-st.color14:     BRIGHT_CYAN
-st.color15:     BRIGHT_WHITE
-
 !!!! urxvt configuration.
 
 URxvt.font:            -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
