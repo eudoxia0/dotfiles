@@ -57,7 +57,7 @@ in
     packages = with pkgs; [
       # x11 apps
       firefox
-      rxvt-unicode
+      xterm
       keepass
       calibre
       dmenu
@@ -82,7 +82,6 @@ in
       chromium
       foliate
       dbeaver
-      xterm
       # games
       endgame-singularity
       gargoyle
