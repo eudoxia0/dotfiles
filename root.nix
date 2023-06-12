@@ -27,6 +27,7 @@ let
       magit
       graphviz-dot-mode
       plantuml-mode
+      treemacs
     ]));
 in
 {
