@@ -85,6 +85,7 @@ in
       dbeaver
       pavucontrol
       xfontsel
+      lxappearance
       # games
       endgame-singularity
       gargoyle
