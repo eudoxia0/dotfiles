@@ -112,6 +112,7 @@ in
       podman-compose
       fuse-overlayfs # podman perf hack
       guile
+      wrk
       # utils
       file
       whois
