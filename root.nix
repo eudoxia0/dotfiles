@@ -111,6 +111,7 @@ in
       gfortran
       podman-compose
       fuse-overlayfs # podman perf hack
+      guile
       # utils
       file
       whois
