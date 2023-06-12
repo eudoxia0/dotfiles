@@ -20,6 +20,9 @@
 ;;;; User Interface
 ;;;;
 
+(defvar default-cursor-color "#cccccc")
+(defvar modal-cursor-color "#ef5350")
+
 ;; No scroll bar.
 (toggle-scroll-bar -1)
 ;; No tool bar.
@@ -33,7 +36,7 @@
 ;; Make the cursor a box.
 (setq-default cursor-type 'box)
 ;; Set the cursor colour.
-(set-cursor-color "#cccccc")
+(set-cursor-color default-cursor-color)
 ;; Fill paragraphs to 80 columns.
 (setq-default fill-column 80)
 ;; Line numbers everywhere.
@@ -275,7 +278,10 @@
 
 (global-set-key (kbd "C-v") 'e/hydra-windows/body)
 
-(defhydra e/hydra-vi (:foreign-keys warn :hint nil)
+(defhydra e/hydra-vi (:foreign-keys warn
+                      :hint nil
+                      :pre (set-cursor-color modal-cursor-color)
+                      :post (set-cursor-color default-cursor-color))
   "modal editing"
   ("b" backward-char)
   ("n" next-line)
