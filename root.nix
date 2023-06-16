@@ -104,6 +104,7 @@ in
       jekyll
       gcc
       gdb
+      valgrind
       clang
       ocaml
       jdk17
