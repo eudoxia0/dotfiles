@@ -263,6 +263,9 @@ in
       ".config/containers/registries.conf" = {
         source = ./sources/container-registries.conf;
       };
+      ".config/liferea/feedlist.opml" = {
+        source = ./sources/feedlist.opml;
+      };
     };
 
     # Other apps try to configure mimeapps.list. This tells home-manager to
