@@ -86,6 +86,7 @@ in
       pavucontrol
       xfontsel
       lxappearance
+      liferea
       # games
       endgame-singularity
       gargoyle
