@@ -103,6 +103,7 @@ in
       meld
       jekyll
       gcc
+      gdb
       clang
       ocaml
       jdk17
