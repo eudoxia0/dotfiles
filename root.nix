@@ -87,6 +87,7 @@ in
       xfontsel
       lxappearance
       liferea
+      arandr
       # games
       endgame-singularity
       gargoyle
