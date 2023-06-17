@@ -266,6 +266,9 @@ in
       ".config/liferea/feedlist.opml" = {
         source = ./sources/feedlist.opml;
       };
+      ".config/neofetch/nerv.txt" = {
+        source = ./sources/nerv.txt;
+      };
     };
 
     # Other apps try to configure mimeapps.list. This tells home-manager to
