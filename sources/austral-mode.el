@@ -35,7 +35,27 @@
 
 ;;;; Indentation
 
-; etc.
+(defun austral-last-indent ()
+  "Return the indentation of the previous non-blank line."
+  (save-excursion
+    (forward-line -1)
+    (while (and (not (bobp)) (looking-at "^[[:space:]]*$"))
+      (forward-line -1))
+    (if (bobp) 0 (current-indentation))))
+
+(defun austral-indent-line ()
+  "Indent the current line according to Austral syntax rules."
+  (interactive)
+  (beginning-of-line)
+  (let ((prev-indent (austral-last-indent)))
+    (cond
+     ((save-excursion (forward-line -1) (looking-at "^[[:blank:]]*\\(module\\|record\\|union\\|function\\|if\\|for\\|while\\|case\\)"))
+      (if (not (bobp))
+          (indent-line-to (+ prev-indent 4))))
+     ((looking-at "^[[:blank:]]*end")
+      (indent-line-to (- prev-indent austral-default-tab-width)))
+     (t
+      (indent-line-to prev-indent)))))
 
 ;;;; Mode Definition
 
