@@ -1,5 +1,13 @@
 # eudoxia's dotfiles
 
+My dotfiles, using [Nix][nix].
+
+[nix]: https://nixos.org/
+
+Blog post: [_NixOS for the Impatient_][blog].
+
+[blog]: https://borretti.me/article/nixos-for-the-impatient
+
 ## Setup
 
 Run:
