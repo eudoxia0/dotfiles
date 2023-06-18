@@ -1,19 +1,12 @@
 ;;;; austral-mode.el - Major mode for editing Austral source files.
 ;;;;
-;;;; Copyright (C) 2021 Fernando Borretti
+;;;; Copyright (C) 2021-2023 Fernando Borretti
 ;;;;
 ;;;; Author: Fernando Borretti <fernando@borretti.me>
 ;;;; Maintainer: Fernando Borretti <fernando@borretti.me>
 ;;;; Created: 24 July, 2021
 ;;;; Version: 0.0.1
 ;;;; Keywords: languages
-;;;;
-;;;; Structure
-;;;; ---------
-;;;;
-;;;;     1. Constants
-;;;;     1. Syntax Highlighting
-;;;;     1. Mode Definition
 ;;;;
 
 (require 'cl-lib)
@@ -24,7 +17,7 @@
   '("and" "or" "not" "module" "is" "body" "import" "as" "end" "constant" "type"
     "function" "generic" "record" "union" "case" "of" "when" "typeclass"
     "instance" "method" "if" "then" "else" "let" "while" "for" "do" "from"
-    "to" "borrow" "borrow!" "in" "return" "skip" "Free" "Linear" "Type" "Region"
+    "to" "borrow" "return" "skip" "Free" "Linear" "Type" "Region"
     "pragma" "nil" "true" "false"))
 
 (defconst austral-default-tab-width 4)
@@ -39,8 +32,7 @@
    ;; Keywords
    (cons (regexp-opt austral-keywords 'words) font-lock-keyword-face)
    ;; Identifiers
-   (cons "\\<[[:alpha:]][_[:alnum:]]*\\>" font-lock-variable-name-face)
-   ))
+   (cons "\\<[[:alpha:]][_[:alnum:]]*\\>" font-lock-variable-name-face)))
 
 ;;;; Section 1. Indentation
 ;;;;
