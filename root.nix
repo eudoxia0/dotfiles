@@ -98,7 +98,7 @@ in
       xsecurelock
       python3
       redshift
-      xkill
+      xorg.xkill
       # dev
       git
       gnuplot
