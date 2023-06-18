@@ -245,6 +245,9 @@ in
       ".emacs.d/lisp/iy-go-to-char.el" = {
         source = ./sources/iy-go-to-char.el;
       };
+      ".emacs.d/lisp/austral-mode.el" = {
+        source = ./sources/austral-mode.el;
+      };
       ".config/git/config" = {
         source = ./sources/gitconfig.conf;
       };

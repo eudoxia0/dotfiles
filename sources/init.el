@@ -9,6 +9,7 @@
 (push "~/.emacs.d/lisp" load-path)
 
 (require 'iy-go-to-char)
+(require 'austral-mode)
 
 ;;;;
 ;;;; Colour Theme
