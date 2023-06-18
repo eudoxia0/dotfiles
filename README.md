@@ -16,6 +16,12 @@ Run:
 $ ./recrank.sh
 ```
 
+To update the channel:
+
+```bash
+$ sudo nix-channel --update
+```
+
 ## License
 
 Copyright (c) 2013–2023 [Fernando Borretti](https://borretti.me/).
