@@ -257,18 +257,19 @@ in
       ".config/common-lisp/source-registry.conf.d/10-lisp.conf" = {
         source = ./sources/10-lisp.conf;
       };
-      ".local/bin" = {
-        source = ./sources/scripts;
-        recursive = true;
-      };
       ".config/containers/registries.conf" = {
         source = ./sources/container-registries.conf;
       };
       ".config/liferea/feedlist.opml" = {
         source = ./sources/feedlist.opml;
       };
-      ".config/neofetch/nerv.txt" = {
-        source = ./sources/nerv.txt;
+      ".local/bin" = {
+        source = ./sources/scripts;
+        recursive = true;
+      };
+      ".local/share/eudoxia" = {
+        source = ./sources/share;
+        recursive = true;
       };
     };
 
