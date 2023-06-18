@@ -44,6 +44,13 @@
       <outline title="The Orbital Index" text="The Orbital Index" description="The Orbital Index" type="atom" id="lavwqiu" sortColumn="time" xmlUrl="https://orbitalindex.com/feed.xml" htmlUrl="https://orbitalindex.com/" updateInterval="-1" collapsed="true"/>
       <outline title="Tomas Petricek" text="Tomas Petricek" description="Tomas Petricek" type="rss" id="tvojobx" sortColumn="time" xmlUrl="http://tomasp.net/rss.xml" htmlUrl="http://tomasp.net" updateInterval="-1" collapsed="true"/>
     </outline>
+    <outline title="journals" text="journals" description="journals" type="folder" id="journals" sortColumn="time" expanded="true">
+      <outline title="Cortex" text="Cortex" description="Cortex" type="rss" id="mcyycub" sortColumn="time" xmlUrl="https://rss.sciencedirect.com/publication/science/00109452" htmlUrl="https://www.sciencedirect.com/journal/cortex" updateInterval="-1" collapsed="true"/>
+      <outline title="General Psychiatry" text="General Psychiatry" description="General Psychiatry" type="rss" id="pewwrbr" sortColumn="time" xmlUrl="https://gpsych.bmj.com/rss/current.xml" htmlUrl="http://gpsych.bmj.com" updateInterval="-1" collapsed="true"/>
+      <outline title="BMJ Mental Health" text="BMJ Mental Health" description="BMJ Mental Health" type="rss" id="cigjrab" sortColumn="time" xmlUrl="https://mentalhealth.bmj.com/rss/current.xml" htmlUrl="http://mentalhealth.bmj.com" updateInterval="-1" collapsed="true"/>
+      <outline title="Molecular Psychiatry" text="Molecular Psychiatry" description="Molecular Psychiatry" type="rss" id="imgwyuy" sortColumn="time" xmlUrl="https://www.nature.com/mp.rss" htmlUrl="http://feeds.nature.com/mp/rss/current" updateInterval="-1" collapsed="true"/>
+      <outline title="Translational Psychiatry" text="Translational Psychiatry" description="Translational Psychiatry" type="rss" id="rrrbbun" sortColumn="time" xmlUrl="https://www.nature.com/tp.rss" htmlUrl="http://feeds.nature.com/tp/rss/current" updateInterval="-1" collapsed="true"/>
+    </outline>
     <outline title="Unread" text="Unread" description="Unread" type="vfolder" id="qnpcppl" sortColumn="time" matchType="any" unreadOnly="false" collapsed="true">
       <outline type="rule" text="Read status" rule="unread" value="" additive="true"/>
     </outline>
