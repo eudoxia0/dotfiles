@@ -98,6 +98,7 @@ in
       xsecurelock
       python3
       redshift
+      xkill
       # dev
       git
       gnuplot
