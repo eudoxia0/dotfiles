@@ -129,6 +129,7 @@ in
       unzip
       v4l-utils
       fd
+      ripgrep
       aspell
       aspellDicts.en
       graphviz
