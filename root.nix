@@ -49,6 +49,7 @@ in
     extraGroups = [
       "networkmanager"
       "wheel"
+      "docker"
       # "vboxusers" # VirtualBox
     ];
     packages = with pkgs; [
@@ -110,7 +111,6 @@ in
       opam
       sbcl
       gfortran
-      podman-compose
       fuse-overlayfs # podman perf hack
       guile
       wrk
@@ -152,29 +152,20 @@ in
   # Services
   #
 
-  # Podman.
-  virtualisation.podman = {
+  # Docker.
+  virtualisation.docker = {
     enable = true;
-    defaultNetwork.settings = {
-        dns_enabled = true;
+    daemon.settings = {
+      dns = [
+        "8.8.8.8"
+        "8.8.4.4"
+      ];
+    };
+    rootless = {
+      enable = true;
+      setSocketVariable = true;
     };
   };
-
-
-  # # Docker.
-  # virtualisation.docker = {
-  #   enable = true;
-  #   daemon.settings = {
-  #     dns = [
-  #       "8.8.8.8"
-  #       "8.8.4.4"
-  #     ];
-  #   };
-  #   rootless = {
-  #     enable = true;
-  #     setSocketVariable = true;
-  #   };
-  # };
 
   # VirtualBox.
   #virtualisation.virtualbox.host.enable = true;
@@ -353,14 +344,14 @@ in
   # Tell NetworkManager not to write /etc/resolv.conf
   networking.networkmanager.dns = "none";
   # Disable resolvconf.
-  networking.resolvconf.enable = false;
+  networking.resolvconf.enable = true;
   # Disable systemd-resolved
   services.resolved.enable = false;
   # Overwrite /etc/resolv.conf
-  environment.etc."resolv.conf".text = ''
-    nameserver 8.8.8.8
-    nameserver 8.8.4.4
-  '';
+  # environment.etc."resolv.conf".text = ''
+  #   nameserver 8.8.8.8
+  #   nameserver 8.8.4.4
+  # '';
 
   #
   # Sound
@@ -408,6 +399,7 @@ in
   # Syncthing ports
   networking.firewall.allowedTCPPorts = [ 8384 22000 ];
   networking.firewall.allowedUDPPorts = [ 22000 21027 ];
+  networking.firewall.trustedInterfaces = [ "docker0" ];
 
   #
   # Boot
