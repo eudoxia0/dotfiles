@@ -50,7 +50,6 @@ in
       "networkmanager"
       "wheel"
       "docker"
-      # "vboxusers" # VirtualBox
     ];
     packages = with pkgs; [
       # x11 apps
@@ -166,12 +165,6 @@ in
       setSocketVariable = true;
     };
   };
-
-  # VirtualBox.
-  #virtualisation.virtualbox.host.enable = true;
-  #users.extraGroups.vboxusers.members = [ "eudoxia" ];
-  #virtualisation.virtualbox.guest.enable = true;
-  #virtualisation.virtualbox.guest.x11 = true;
 
   # Syncthing.
   services = {
@@ -347,11 +340,6 @@ in
   networking.resolvconf.enable = true;
   # Disable systemd-resolved
   services.resolved.enable = false;
-  # Overwrite /etc/resolv.conf
-  # environment.etc."resolv.conf".text = ''
-  #   nameserver 8.8.8.8
-  #   nameserver 8.8.4.4
-  # '';
 
   #
   # Sound
@@ -399,6 +387,7 @@ in
   # Syncthing ports
   networking.firewall.allowedTCPPorts = [ 8384 22000 ];
   networking.firewall.allowedUDPPorts = [ 22000 21027 ];
+  # Docker networking
   networking.firewall.trustedInterfaces = [ "docker0" ];
 
   #
