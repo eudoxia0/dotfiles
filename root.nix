@@ -110,7 +110,7 @@ in
       opam
       sbcl
       gfortran
-      fuse-overlayfs # podman perf hack
+      fuse-overlayfs # docker perf
       guile
       wrk
       # utils
