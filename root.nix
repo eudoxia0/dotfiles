@@ -1,10 +1,6 @@
 { config, pkgs, lib, ... }:
 
 let
-  home-manager = builtins.fetchTarball {
-    url = "https://github.com/nix-community/home-manager/archive/release-23.05.tar.gz";
-    sha256 = "1ixy1bi21nq0dlfzpn72k1gjdm8aq7h84wvl1ysff7lmqc4gi1jf";
-  };
   customEmacs =
     ((pkgs.emacsPackagesFor pkgs.emacs-gtk).emacsWithPackages (epkgs: with epkgs; [
       olivetti
@@ -32,7 +28,7 @@ let
 in
 {
   imports = [
-    (import "${home-manager}/nixos")
+    <home-manager/nixos>
   ];
 
   #
