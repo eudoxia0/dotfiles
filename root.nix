@@ -286,10 +286,13 @@ in
         defaultApplications = {
           "text/plain" = "emacs.desktop";
           "text/html" = "firefox.desktop";
+          "text/markdown" = "emacs.desktop";
+
           "image/png" = "viewnior.desktop";
           "image/jpeg" = "viewnior.desktop";
           "image/gif" = "viewnior.desktop";
           "image/tiff" = "viewnior.desktop";
+
           "application/pdf" = "org.gnome.Evince.desktop";
           "application/vnd.oasis.opendocument.text" = "writer.desktop";
           "application/epub+zip" = "com.github.johnfactotum.Foliate.desktop";
