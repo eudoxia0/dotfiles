@@ -13,6 +13,8 @@ Blog post: [_NixOS for the Impatient_][blog].
 Run:
 
 ```bash
+$ sudo nix-channel --add https://github.com/nix-community/home-manager/archive/release-23.05.tar.gz home-manager
+$ sudo nix-channel --update
 $ ./recrank.sh
 ```
 
