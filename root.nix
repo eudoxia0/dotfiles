@@ -14,7 +14,6 @@ let
       nix-mode
       rust-mode
       yaml-mode
-      disable-mouse
       tuareg
       merlin
       hydra
