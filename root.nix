@@ -112,6 +112,7 @@ in
       fuse-overlayfs # docker perf
       guile
       wrk
+      rust-analyzer
       # utils
       file
       whois
