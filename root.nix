@@ -23,6 +23,7 @@ let
       graphviz-dot-mode
       plantuml-mode
       treemacs
+      lsp-mode
     ]));
 in
 {
