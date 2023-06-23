@@ -43,6 +43,7 @@
       <outline title="The Digital Antiquarian" text="The Digital Antiquarian" description="The Digital Antiquarian" type="rss" id="rmdsnku" sortColumn="time" xmlUrl="https://www.filfre.net/feed/" htmlUrl="https://www.filfre.net" updateInterval="-1" collapsed="true"/>
       <outline title="The Orbital Index" text="The Orbital Index" description="The Orbital Index" type="atom" id="lavwqiu" sortColumn="time" xmlUrl="https://orbitalindex.com/feed.xml" htmlUrl="https://orbitalindex.com/" updateInterval="-1" collapsed="true"/>
       <outline title="Tomas Petricek" text="Tomas Petricek" description="Tomas Petricek" type="rss" id="tvojobx" sortColumn="time" xmlUrl="http://tomasp.net/rss.xml" htmlUrl="http://tomasp.net" updateInterval="-1" collapsed="true"/>
+      <outline title="LWN.net" text="LWN.net" description="LWN.net" type="rss" id="mrlrpqx" sortColumn="time" xmlUrl="https://lwn.net/headlines/newrss" htmlUrl="https://lwn.net" updateInterval="-1" collapsed="true"/>
     </outline>
     <outline title="journals" text="journals" description="journals" type="folder" id="journals" sortColumn="time" expanded="true">
       <outline title="Cortex" text="Cortex" description="Cortex" type="rss" id="mcyycub" sortColumn="time" xmlUrl="https://rss.sciencedirect.com/publication/science/00109452" htmlUrl="https://www.sciencedirect.com/journal/cortex" updateInterval="-1" collapsed="true"/>
