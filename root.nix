@@ -139,6 +139,7 @@ in
       imagemagick
       sloccount
       killall
+      gnupg
       # fonts
       terminus_font
       terminus_font_ttf
