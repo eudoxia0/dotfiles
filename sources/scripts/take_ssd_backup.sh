@@ -14,4 +14,4 @@ if [ ! -d $BACKUP_DRIVE ]; then
     exit
 fi
 
-rsync --progress --archive --human-readable --perms --executability --times --checksum --delete ~/files/ $BACKUP_DRIVE/files
+time rsync --progress --archive --human-readable --perms --executability --times --checksum --delete ~/files/ $BACKUP_DRIVE/files
