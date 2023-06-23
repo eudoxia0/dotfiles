@@ -202,6 +202,9 @@ in
   # Thumbnail server.
   services.tumbler.enable = true;
 
+  # GnuPG agent.
+  programs.gnupg.agent.enable = true;
+
   #
   # Home Manager
   #
