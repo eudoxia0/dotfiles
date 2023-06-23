@@ -140,6 +140,7 @@ in
       sloccount
       killall
       gnupg
+      pinentry
       # fonts
       terminus_font
       terminus_font_ttf
