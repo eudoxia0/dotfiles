@@ -140,7 +140,6 @@ in
       sloccount
       killall
       gnupg
-      pinentry
       # fonts
       terminus_font
       terminus_font_ttf
@@ -203,7 +202,10 @@ in
   services.tumbler.enable = true;
 
   # GnuPG agent.
-  programs.gnupg.agent.enable = true;
+  programs.gnupg.agent = {
+    enable = true;
+    pinentryFlavor = "curses";
+  };
 
   #
   # Home Manager
