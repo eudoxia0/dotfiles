@@ -24,6 +24,7 @@ let
       plantuml-mode
       treemacs
       lsp-mode
+      projectile
     ]));
 in
 {
