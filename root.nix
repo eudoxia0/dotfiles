@@ -114,6 +114,7 @@ in
       guile
       wrk
       rust-analyzer
+      cargo
       # utils
       file
       whois
