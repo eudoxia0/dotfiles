@@ -61,6 +61,7 @@ in
       dmenu
       customEmacs
       vscode
+      leafpad
       vim
       xfce.thunar
       xfce.xfconf # needed for thunar
