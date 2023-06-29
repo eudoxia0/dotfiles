@@ -143,6 +143,7 @@ in
       sloccount
       killall
       gnupg
+      duplicity
       # fonts
       terminus_font
       terminus_font_ttf
