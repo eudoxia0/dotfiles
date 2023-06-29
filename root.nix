@@ -144,6 +144,8 @@ in
       killall
       gnupg
       duplicity
+      mullvad
+      mullvad-vpn
       # fonts
       terminus_font
       terminus_font_ttf
@@ -156,6 +158,8 @@ in
   #
   # Services
   #
+
+  services.mullvad-vpn.enable = true;
 
   # Docker.
   virtualisation.docker = {
