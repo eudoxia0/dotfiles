@@ -86,6 +86,7 @@ in
       lxappearance
       liferea
       arandr
+      djview
       # games
       endgame-singularity
       gargoyle
