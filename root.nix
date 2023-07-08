@@ -97,6 +97,7 @@ in
       python3
       redshift
       xorg.xkill
+      picom
       # dev
       git
       gnuplot
