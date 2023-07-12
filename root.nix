@@ -86,6 +86,7 @@ in
       lxappearance
       liferea
       arandr
+      djview
       # games
       endgame-singularity
       gargoyle
@@ -97,6 +98,7 @@ in
       python3
       redshift
       xorg.xkill
+      picom
       # dev
       git
       gnuplot
