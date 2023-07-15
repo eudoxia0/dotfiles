@@ -119,8 +119,6 @@ in
       wrk
       rust-analyzer
       cargo
-      swift
-      swiftPackages.swiftpm
       # utils
       file
       whois
