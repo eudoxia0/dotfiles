@@ -145,7 +145,6 @@ in
       sloccount
       killall
       gnupg
-      duplicity
       mullvad
       mullvad-vpn
       lm_sensors
