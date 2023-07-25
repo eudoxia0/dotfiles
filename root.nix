@@ -119,6 +119,7 @@ in
       wrk
       rust-analyzer
       cargo
+      terraform
       # utils
       file
       whois
