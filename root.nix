@@ -146,6 +146,7 @@ in
       sloccount
       killall
       gnupg
+      restic
       mullvad
       mullvad-vpn
       lm_sensors
