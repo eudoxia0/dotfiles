@@ -99,6 +99,7 @@ in
       redshift
       xorg.xkill
       picom
+      gnome3.dconf-editor
       # dev
       git
       gnuplot
