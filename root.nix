@@ -122,6 +122,7 @@ in
       rust-analyzer
       cargo
       clippy
+      rustfmt
       terraform
       # utils
       file
