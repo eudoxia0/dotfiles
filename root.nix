@@ -116,6 +116,7 @@ in
       sbcl
       gfortran
       fuse-overlayfs # docker perf
+      podman-compose
       guile
       wrk
       rust-analyzer
@@ -178,6 +179,14 @@ in
     rootless = {
       enable = true;
       setSocketVariable = true;
+    };
+  };
+
+  # Podman.
+  virtualisation = {
+    podman = {
+      enable = true;
+      defaultNetwork.settings.dns_enabled = true;
     };
   };
 
@@ -333,7 +342,7 @@ in
     fontconfig = {
       enable = true;
       localConf = ''
-        <dir>~/files/4 Resources/4 Fonts</dir>
+        <dir>~/files/4 Resources/4 Fonts/in-use</dir>
       '';
     };
     fonts = with pkgs; [
