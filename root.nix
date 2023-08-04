@@ -121,6 +121,7 @@ in
       wrk
       rust-analyzer
       cargo
+      clippy
       terraform
       # utils
       file
