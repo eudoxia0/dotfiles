@@ -123,7 +123,6 @@ in
       rustup
       clippy
       rustfmt
-      terraform
       # utils
       file
       whois
