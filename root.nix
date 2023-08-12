@@ -120,7 +120,7 @@ in
       guile
       wrk
       rust-analyzer
-      cargo
+      rustup
       clippy
       rustfmt
       terraform
