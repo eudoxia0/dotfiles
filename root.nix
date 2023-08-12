@@ -153,6 +153,7 @@ in
       mullvad
       mullvad-vpn
       lm_sensors
+      pkg-config
       # fonts
       terminus_font
       terminus_font_ttf
