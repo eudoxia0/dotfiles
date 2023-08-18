@@ -57,6 +57,7 @@ in
       firefox
       xterm
       keepass
+      keepassxc
       calibre
       dmenu
       customEmacs
