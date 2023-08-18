@@ -88,6 +88,7 @@ in
       liferea
       arandr
       djview
+      baobab
       # games
       endgame-singularity
       gargoyle
