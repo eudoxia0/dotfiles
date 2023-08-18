@@ -155,6 +155,7 @@ in
       mullvad
       mullvad-vpn
       lm_sensors
+      firejail
       # fonts
       terminus_font
       terminus_font_ttf
@@ -231,6 +232,9 @@ in
     enable = true;
     pinentryFlavor = "curses";
   };
+
+  # Firejail
+  programs.firejail.enable = true;
 
   #
   # Home Manager
