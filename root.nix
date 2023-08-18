@@ -349,7 +349,7 @@ in
     fontconfig = {
       enable = true;
       localConf = ''
-        <dir>~/files/4 Resources/4 Fonts/in-use</dir>
+        <dir>~/files/4-resources/4 Fonts/in-use</dir>
       '';
     };
     fonts = with pkgs; [
