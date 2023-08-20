@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-if [ -d ~/files/4\ Resources/6\ Images/wallpapers/rotation ]; then
+if [ -d ~/files/4-resources/6\ Images/wallpapers/rotation ]; then
     # If the wallpapers directory exists, choose a random wallpaper and switch
     # every 5 minutes.
     while true; do
-        feh --randomize --bg-fill ~/files/4\ Resources/6\ Images/wallpapers/rotation/*
+        feh --randomize --bg-fill ~/files/4-resources/6\ Images/wallpapers/rotation/*
         sleep 120
     done
 else
