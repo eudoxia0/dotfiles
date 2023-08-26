@@ -63,6 +63,7 @@ in
       vscode
       leafpad
       vim
+      mupdf
       xfce.thunar
       xfce.xfconf # needed for thunar
       spectrwm
