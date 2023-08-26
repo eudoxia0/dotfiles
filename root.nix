@@ -56,7 +56,6 @@ in
       # x11 apps
       firefox
       xterm
-      keepass
       keepassxc
       calibre
       dmenu
