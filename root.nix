@@ -348,9 +348,7 @@ in
   fonts = {
     fontconfig = {
       enable = true;
-      localConf = ''
-        <dir>~/files/4-resources/4 Fonts/in-use</dir>
-      '';
+      antialias = true;
     };
     fonts = with pkgs; [
       inconsolata
