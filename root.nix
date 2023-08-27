@@ -162,6 +162,7 @@ in
       inconsolata
       liberation_ttf
       doulos-sil
+      gyre-fonts
     ];
   };
 
@@ -349,9 +350,9 @@ in
     fontconfig = {
       enable = true;
       antialias = true;
-      localConf = ''
-        <dir>~/files/4-resources/4 Fonts/in-use</dir>
-      '';
+      # localConf = ''
+      #  <dir>~/files/4-resources/4 Fonts/in-use</dir>
+      # '';
     };
     fonts = with pkgs; [
       inconsolata
@@ -359,6 +360,7 @@ in
       terminus_font_ttf
       liberation_ttf
       doulos-sil
+      gyre-fonts
     ];
   };
 
