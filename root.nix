@@ -351,7 +351,7 @@ in
       enable = true;
       antialias = true;
       localConf = ''
-       <dir>~/files/4-resources/4 Fonts/in-use</dir>
+       <dir>/home/eudoxia/files/4-resources/4 Fonts/in-use/</dir>
       '';
     };
     fonts = with pkgs; [
