@@ -362,6 +362,7 @@ in
       liberation_ttf
       doulos-sil
       gyre-fonts
+      b612
     ];
   };
 
