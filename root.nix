@@ -89,6 +89,7 @@ in
       arandr
       djview
       baobab
+      sage
       # games
       endgame-singularity
       gargoyle
