@@ -89,6 +89,7 @@ in
       arandr
       djview
       baobab
+      sage
       # games
       endgame-singularity
       gargoyle
@@ -361,6 +362,7 @@ in
       liberation_ttf
       doulos-sil
       gyre-fonts
+      b612
     ];
   };
 
