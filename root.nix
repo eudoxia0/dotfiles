@@ -90,6 +90,7 @@ in
       djview
       baobab
       sage
+      gnucash
       # games
       endgame-singularity
       gargoyle
