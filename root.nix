@@ -158,6 +158,7 @@ in
       mullvad-vpn
       lm_sensors
       firejail
+      poppler_utils
       # fonts
       terminus_font
       terminus_font_ttf
