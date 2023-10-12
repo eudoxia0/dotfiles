@@ -95,6 +95,7 @@ in
       endgame-singularity
       gargoyle
       the-powder-toy
+      gnome.quadrapassel
       # x11
       xcape
       scrot
