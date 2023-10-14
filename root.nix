@@ -160,6 +160,7 @@ in
       lm_sensors
       firejail
       poppler_utils
+      fdupes
       # fonts
       terminus_font
       terminus_font_ttf
