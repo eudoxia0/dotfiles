@@ -80,14 +80,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=auto'
 fi
 
-alias gcam='git commit -a -m'
-alias gco='git checkout'
-alias gu='git push -u origin HEAD'
-alias gd='git pull origin'
-alias gh='git checkout master'
-alias gco='git checkout'
-alias gb='git branch'
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -98,6 +90,20 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+#
+# My stuff below
+#
+
+# Aliases
+alias gcam='git commit -a -m'
+alias gco='git checkout'
+alias gu='git push -u origin HEAD'
+alias gd='git pull origin'
+alias gh='git checkout master'
+alias gco='git checkout'
+alias gb='git branch'
+
 
 #PS1="\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)\$\[\033[01m\][ \[\033[01;34m\]\u@\h \[\033[00m\]\[\033[01m\]] \[\033[01;32m\]\w\[\033[00m\]\n\[\033[01;34m\]$\[\033[00m\]> "
 
