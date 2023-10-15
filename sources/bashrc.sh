@@ -104,10 +104,4 @@ alias gh='git checkout master'
 alias gco='git checkout'
 alias gb='git branch'
 
-
-#PS1="\$(git branch 2>/dev/null | grep '^*' | colrm 1 2)\$\[\033[01m\][ \[\033[01;34m\]\u@\h \[\033[00m\]\[\033[01m\]] \[\033[01;32m\]\w\[\033[00m\]\n\[\033[01;34m\]$\[\033[00m\]> "
-
 PATH="$HOME/.local/bin:$PATH"
-
-# Opam
-test -r ~/.opam/opam-init/init.sh && . ~/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
