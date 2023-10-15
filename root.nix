@@ -95,6 +95,7 @@ in
       endgame-singularity
       gargoyle
       the-powder-toy
+      gnome.quadrapassel
       # x11
       xcape
       scrot
@@ -159,6 +160,7 @@ in
       lm_sensors
       firejail
       poppler_utils
+      fdupes
       # fonts
       terminus_font
       terminus_font_ttf
