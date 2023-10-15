@@ -103,7 +103,7 @@ alias gd='git pull origin'
 alias gh='git checkout master'
 alias gco='git checkout'
 alias gb='git branch'
-alias cf='cargo fmt'
-alias ck='cargo check'
+alias rf='cargo fmt'
+alias rk='cargo check'
 
 PATH="$HOME/.local/bin:$PATH"
