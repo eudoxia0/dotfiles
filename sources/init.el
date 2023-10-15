@@ -15,7 +15,7 @@
 ;;;; Colour Theme
 ;;;;
 
-(load-theme 'aircon t)
+(load-theme 'modus-operandi t)
 
 ;;;;
 ;;;; User Interface
