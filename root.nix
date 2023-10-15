@@ -128,6 +128,7 @@ in
       rustup
       clippy
       rustfmt
+      cargo-tarpaulin
       # utils
       file
       whois
