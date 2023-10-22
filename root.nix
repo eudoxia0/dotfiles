@@ -83,19 +83,15 @@ in
       foliate
       dbeaver
       pavucontrol
-      xfontsel
       lxappearance
       liferea
       arandr
       djview
       baobab
-      sage
       gnucash
       # games
       endgame-singularity
       gargoyle
-      the-powder-toy
-      gnome.quadrapassel
       # x11
       xcape
       scrot
@@ -103,8 +99,6 @@ in
       python3
       redshift
       xorg.xkill
-      picom
-      gnome3.dconf-editor
       # dev
       git
       gnuplot
@@ -114,16 +108,11 @@ in
       gdb
       valgrind
       clang
-      ocaml
       jdk17
       gnumake
-      opam
       sbcl
       gfortran
       fuse-overlayfs # docker perf
-      podman-compose
-      guile
-      wrk
       rust-analyzer
       rustup
       clippy
@@ -136,32 +125,19 @@ in
       curl
       acpi
       libnotify
-      age
       neofetch
       dig
       appimage-run
       zip
       unzip
-      v4l-utils
       fd
       ripgrep
-      aspell
-      aspellDicts.en
       graphviz
       pandoc
       texlive.combined.scheme-full
-      tree
-      imagemagick
-      sloccount
       killall
       gnupg
       restic
-      mullvad
-      mullvad-vpn
-      lm_sensors
-      firejail
-      poppler_utils
-      fdupes
       # fonts
       terminus_font
       terminus_font_ttf
