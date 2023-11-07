@@ -279,6 +279,9 @@ in
         source = ./sources/share;
         recursive = true;
       };
+      ".config/gtk-3.0/bookmarks" = {
+        source = ./sources/bookmarks.txt;
+      };
     };
 
     # Other apps try to configure mimeapps.list. This tells home-manager to
