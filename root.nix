@@ -89,6 +89,7 @@ in
       djview
       baobab
       gnucash
+      mpv
       # games
       endgame-singularity
       gargoyle
