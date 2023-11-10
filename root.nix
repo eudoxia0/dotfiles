@@ -326,6 +326,9 @@ in
           "io.elementary.switchboard.dockitem"
         ];
       };
+      "io/elementary/desktop/wingpanel" = {
+        use-transparency = true;
+      };
     };
   };
 
