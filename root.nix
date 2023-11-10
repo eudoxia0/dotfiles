@@ -155,6 +155,7 @@ in
   #
 
   services.mullvad-vpn.enable = true;
+  programs.dconf.enable = true;
 
   # Docker.
   virtualisation.docker = {
@@ -307,6 +308,23 @@ in
           "application/epub+zip" = "com.github.johnfactotum.Foliate.desktop";
           "application/x-mobipocket-ebook" = "com.github.johnfactotum.Foliate.desktop";
         };
+      };
+    };
+
+    dconf.settings = {
+      "net/launchpad/plank/docks/dock1" = {
+        dock-items = [
+          "firefox.dockitem"
+          "chromium-browser.dockitem"
+          "io.elementary.files.dockitem"
+          "emacs.dockitem"
+          "xterm.dockitem"
+          "calibre-gui.dockitem"
+          "io.elementary.mail.dockitem"
+          "io.elementary.calendar.dockitem"
+          "org.keepassxc.KeePassXC.dockitem"
+          "io.elementary.switchboard.dockitem"
+        ];
       };
     };
   };
