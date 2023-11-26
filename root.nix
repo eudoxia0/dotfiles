@@ -91,6 +91,7 @@ in
       gnucash
       mpv
       gnome.dconf-editor
+      pantheon.elementary-iconbrowser
       # games
       endgame-singularity
       gargoyle
