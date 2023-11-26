@@ -90,7 +90,6 @@ in
       baobab
       gnucash
       mpv
-      ideogram
       # games
       endgame-singularity
       gargoyle
