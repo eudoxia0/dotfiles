@@ -90,6 +90,7 @@ in
       baobab
       gnucash
       mpv
+      gnome.dconf-editor
       # games
       endgame-singularity
       gargoyle
