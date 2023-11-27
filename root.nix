@@ -92,6 +92,7 @@ in
       mpv
       gnome.dconf-editor
       pantheon.elementary-iconbrowser
+      pdfslicer
       # games
       endgame-singularity
       gargoyle
