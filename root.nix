@@ -419,7 +419,7 @@ in
   services.xserver.displayManager.lightdm.greeters.pantheon.enable = true;
   services.xserver.desktopManager.pantheon.enable = true;
   services.xserver.desktopManager.pantheon.extraSwitchboardPlugs = [ pkgs.pantheon-tweaks ];
-  services.xserver.displayManager.defaultSession = "none+spectrwm";
+  services.xserver.displayManager.defaultSession = "pantheon";
   services.xserver.windowManager.spectrwm.enable = true;
   services.xserver.windowManager.fvwm2.enable = true;
 
