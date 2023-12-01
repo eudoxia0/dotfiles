@@ -67,7 +67,6 @@ in
       xfce.thunar
       xfce.xfconf # needed for thunar
       spectrwm
-      fvwm2
       gnome.cheese
       gnome.gnome-sound-recorder
       font-manager
@@ -241,9 +240,6 @@ in
       };
       ".config/x11/autostart.sh" = {
         source = ./sources/autostart.sh;
-      };
-      ".fvwm/config" = {
-        source = ./sources/fvwm.conf;
       };
       ".garglkrc" = {
         source = ./sources/garglkrc.conf;
@@ -421,7 +417,6 @@ in
   services.xserver.desktopManager.pantheon.extraSwitchboardPlugs = [ pkgs.pantheon-tweaks ];
   services.xserver.displayManager.defaultSession = "pantheon";
   services.xserver.windowManager.spectrwm.enable = true;
-  services.xserver.windowManager.fvwm2.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
