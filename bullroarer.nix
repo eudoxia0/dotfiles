@@ -30,8 +30,6 @@
     [ { device = "/dev/disk/by-uuid/cceff8bf-a5dc-4ab7-81c7-3fdc556e75e2"; }
     ];
 
-  hardware.bluetooth.enable = false;
-
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
   # still possible to use this option, but it's recommended to use it in conjunction
@@ -46,6 +44,8 @@
   #
   # CUSTOM
   #
+
+  hardware.bluetooth.enable = false;
 
   # Enable swap on luks
   boot.initrd.luks.devices."luks-e987f8b6-8c32-4bc6-9d01-37ede2713e45".device = "/dev/disk/by-uuid/e987f8b6-8c32-4bc6-9d01-37ede2713e45";
