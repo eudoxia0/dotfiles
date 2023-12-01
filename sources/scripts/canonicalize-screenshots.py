@@ -1,10 +1,15 @@
 #!/usr/bin/env python
 """
-Iterates over all files in a directory. If a file is in Pantheon screenshot
+Iterates over all files in a directory. If a file is in GNOME screenshot
 format, e.g.:
 
 ```
 Screenshot from 2023-11-23 21.16.23.png
+```
+
+Or:
+
+```
 Screenshot from 2023-11-23 21-16-23.png
 ```
 
