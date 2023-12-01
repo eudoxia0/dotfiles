@@ -428,8 +428,6 @@ in
   # Security
   #
 
-  hardware.bluetooth.enable = false;
-
   programs.ssh.startAgent = true;
 
   networking.firewall.enable = true;

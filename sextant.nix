@@ -27,6 +27,8 @@
     [ { device = "/dev/disk/by-uuid/7effe3a1-21d2-4f1e-b4f0-f48fe563fdba"; }
     ];
 
+  hardware.bluetooth.enable = false;
+
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
   # still possible to use this option, but it's recommended to use it in conjunction
