@@ -312,6 +312,9 @@ in
 
     dconf.settings = {
       "net/launchpad/plank/docks/dock1" = {
+        theme = "Transparent";
+        position = "bottom";
+        icon-size = 64;
         dock-items = [
           "firefox.dockitem"
           "chromium-browser.dockitem"
@@ -319,9 +322,8 @@ in
           "emacs.dockitem"
           "xterm.dockitem"
           "calibre-gui.dockitem"
-          "io.elementary.mail.dockitem"
-          "io.elementary.calendar.dockitem"
           "org.keepassxc.KeePassXC.dockitem"
+          "leafpad.dockitem"
           "io.elementary.switchboard.dockitem"
         ];
       };
