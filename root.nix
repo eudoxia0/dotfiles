@@ -282,6 +282,9 @@ in
       ".config/gtk-3.0/bookmarks" = {
         source = ./sources/bookmarks.txt;
       };
+      ".config/plank/dock1/launchers" = {
+        source = ./sources/plank;
+      };
     };
 
     # Other apps try to configure mimeapps.list. This tells home-manager to
