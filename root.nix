@@ -331,6 +331,9 @@ in
       "io/elementary/screenshot" = {
         folder-dir = "/home/eudoxia/files/0 Inbox";
       };
+      "org/gnome/gnome-screenshot" = {
+        auto-save-directory = "file:///home/eudoxia/files/0%20Inbox";
+      };
     };
   };
 
