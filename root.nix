@@ -328,6 +328,9 @@ in
       "io/elementary/desktop/wingpanel" = {
         use-transparency = true;
       };
+      "io/elementary/screenshot" = {
+        folder-dir = "/home/eudoxia/files/0 Inbox";
+      };
     };
   };
 
