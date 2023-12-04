@@ -92,6 +92,7 @@ in
       gnome.dconf-editor
       pantheon.elementary-iconbrowser
       pdfslicer
+      gscan2pdf
       # games
       endgame-singularity
       gargoyle
