@@ -142,6 +142,7 @@ in
       killall
       gnupg
       restic
+      cpufrequtils
       # fonts
       terminus_font
       terminus_font_ttf
