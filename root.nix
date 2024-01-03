@@ -116,14 +116,6 @@ in
       killall
       gnupg
       cpufrequtils
-      # fonts
-      terminus_font
-      terminus_font_ttf
-      inconsolata
-      liberation_ttf
-      doulos-sil
-      gyre-fonts
-      source-sans
     ];
   };
 
