@@ -12,9 +12,9 @@ elif [ "$hostname" == "bullroarer" ]; then
     recrank bullroarer
 else
     if [ -z "$1" ]; then
-	echo "unknown hostname"
-	exit 1
+        echo "unknown hostname"
+	    exit 1
     else
-	recrank $1
+	    recrank $1
     fi
 fi
