@@ -62,38 +62,22 @@ in
       customEmacs
       vscode
       leafpad
-      vim
-      mupdf
       xfce.thunar
       xfce.xfconf # needed for thunar
       spectrwm
-      gnome.cheese
-      gnome.gnome-sound-recorder
       font-manager
       dunst
       viewnior
       feh
       gimp
-      signal-desktop
       libreoffice
       gparted
-      diffpdf
       chromium
-      foliate
-      dbeaver
-      pavucontrol
-      lxappearance
-      liferea
-      arandr
       djview
       baobab
-      gnucash
       mpv
       gnome.dconf-editor
-      pantheon.elementary-iconbrowser
-      pdfslicer
       # games
-      endgame-singularity
       gargoyle
       # x11
       xcape
@@ -102,7 +86,6 @@ in
       python3
       redshift
       xorg.xkill
-      picom
       # dev
       git
       gnuplot
@@ -112,16 +95,9 @@ in
       gdb
       valgrind
       clang
-      jdk17
       gnumake
       sbcl
-      gfortran
       fuse-overlayfs # docker perf
-      rust-analyzer
-      rustup
-      clippy
-      rustfmt
-      cargo-tarpaulin
       # utils
       file
       whois
@@ -131,17 +107,14 @@ in
       libnotify
       neofetch
       dig
-      appimage-run
       zip
       unzip
       fd
       ripgrep
       graphviz
       pandoc
-      texlive.combined.scheme-full
       killall
       gnupg
-      restic
       cpufrequtils
       # fonts
       terminus_font
