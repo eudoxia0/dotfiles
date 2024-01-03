@@ -349,7 +349,7 @@ in
        <dir>/home/eudoxia/files/4 Library/Fonts/in-use/</dir>
       '';
     };
-    fonts = with pkgs; [
+    packages = with pkgs; [
       inconsolata
       terminus_font
       terminus_font_ttf
