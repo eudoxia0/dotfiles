@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
 
-cp sources/zprofile.sh ~/.zprofile
-cp sources/zshrc.sh ~/.zshrc
-cp sources/gitconfig ~/.gitconfig
+cp config/zprofile.sh ~/.zprofile
+cp config/zshrc.sh ~/.zshrc
+cp config/gitconfig ~/.gitconfig
