@@ -2,6 +2,7 @@
 
 # PATH customization.
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+PATH="$HOME/.local/bin:$PATH"
 
 # Git aliases.
 alias gs="git status"
