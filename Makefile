@@ -4,7 +4,8 @@ TARGETS := $(DIR)/hydra \
            $(DIR)/aircon-theme \
            $(DIR)/markdown-mode \
            $(DIR)/treemacs \
-           $(DIR)/s
+           $(DIR)/s \
+           $(DIR)/dash
 
 default: all
 
@@ -33,6 +34,10 @@ $(DIR)/treemacs:
 $(DIR)/s:
 	git clone --depth=1 https://github.com/magnars/s.el.git $(DIR)/s
 	rm -rf $(DIR)/s/.git
+
+$(DIR)/dash:
+	git clone --depth=1 https://github.com/magnars/dash.el.git $(DIR)/dash
+	rm -rf $(DIR)/dash/.git
 
 .PHONY: clean
 clean:
