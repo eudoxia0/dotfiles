@@ -1,7 +1,0 @@
-file:///home/eudoxia/files/0%20Inbox
-file:///home/eudoxia/files/1%20Workspace
-file:///home/eudoxia/files/3%20Areas
-file:///home/eudoxia/files/4%20Library
-file:///home/eudoxia/files/4%20Library/Images
-file:///home/eudoxia/files/4%20Library/Images/Screenshots
-file:///home/eudoxia/files/5%20Attic
