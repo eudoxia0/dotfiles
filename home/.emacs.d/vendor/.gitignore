@@ -26,3 +26,15 @@ markdown-mode/README.md
 markdown-mode/scripts/
 markdown-mode/tests/
 markdown-mode/webpage.sh
+s/.github
+s/.gitignore
+s/.travis.yml
+s/Cask
+s/README.md
+s/ci.sh
+s/create-docs.sh
+s/dev/
+s/pre-commit.sh
+s/readme-template.md
+s/run-tests.sh
+s/watch-tests.watchr
