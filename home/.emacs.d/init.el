@@ -9,6 +9,9 @@
 (let ((default-directory  "~/.emacs.d/vendor/"))
   (normal-top-level-add-subdirs-to-load-path))
 
+(let ((default-directory  "~/.emacs.d/vendor/treemacs/src/"))
+  (normal-top-level-add-subdirs-to-load-path))
+
 (require 'hydra)
 (require 'olivetti)
 (require 'aircon-theme)
