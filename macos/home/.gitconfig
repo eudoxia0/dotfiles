@@ -3,7 +3,8 @@
     email = fernando@borretti.me
 
 [core]
-    excludesFile = ~/.gitignore
+    # The name can't be `.gitignore` because then Stow doesn't work.
+    excludesFile = ~/.global-gitignore
 
 [color]
     ui = auto

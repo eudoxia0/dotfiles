@@ -9,7 +9,7 @@ import re
 from datetime import datetime
 
 # Compile a regular expression pattern to match the original filename format
-pattern = re.compile(r'^Screenshot (\d{4}-\d{2}-\d{2}) at (\d{1,2}).(\d{2}).(\d{2})\s([ap]m)\.png$')
+pattern = re.compile(r'^Screenshot (\d{4}-\d{2}-\d{2}) at (\d{1,2}).(\d{2}).(\d{2})\s([apAP][mM])\.png$')
 
 def convert_filename(filename):
     match = pattern.match(filename)
