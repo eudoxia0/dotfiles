@@ -3,6 +3,7 @@ TARGETS := $(DIR)/hydra \
            $(DIR)/olivetti \
            $(DIR)/aircon-theme \
            $(DIR)/markdown-mode \
+           $(DIR)/treemacs \
            $(DIR)/s
 
 default: all
@@ -24,6 +25,10 @@ home/.emacs.d/vendor/aircon-theme:
 home/.emacs.d/vendor/markdown-mode:
 	git clone --depth=1 https://github.com/jrblevin/markdown-mode.git $(DIR)/markdown-mode
 	rm -rf $(DIR)/markdown-mode/.git
+
+home/.emacs.d/vendor/treemacs:
+	git clone --depth=1 https://github.com/Alexander-Miller/treemacs.git $(DIR)/treemacs
+	rm -rf $(DIR)/treemacs/.git
 
 home/.emacs.d/vendor/s:
 	git clone --depth=1 https://github.com/magnars/s.el.git $(DIR)/s

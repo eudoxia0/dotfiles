@@ -38,3 +38,16 @@ s/pre-commit.sh
 s/readme-template.md
 s/run-tests.sh
 s/watch-tests.watchr
+treemacs/.dir-locals.el
+treemacs/.github/
+treemacs/.gitignore
+treemacs/.travis.yml
+treemacs/Cask
+treemacs/Changelog.org
+treemacs/Extensions.org
+treemacs/Makefile
+treemacs/README.org
+treemacs/icons/
+treemacs/screenshots/
+treemacs/src/scripts/
+treemacs/test/
