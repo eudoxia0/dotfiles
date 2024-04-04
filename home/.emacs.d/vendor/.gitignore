@@ -16,3 +16,13 @@ hydra/hydra-examples.el
 hydra/hydra-ox.el
 hydra/hydra-test.el
 hydra/targets
+markdown-mode/.dir-locals.el
+markdown-mode/.github/
+markdown-mode/.gitignore
+markdown-mode/CHANGES.md
+markdown-mode/CONTRIBUTING.md
+markdown-mode/Makefile
+markdown-mode/README.md
+markdown-mode/scripts/
+markdown-mode/tests/
+markdown-mode/webpage.sh

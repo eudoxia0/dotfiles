@@ -12,6 +12,7 @@
 (require 'hydra)
 (require 'olivetti)
 (require 'aircon-theme)
+(require 'markdown-mode)
 
 ;;;;
 ;;;; Colour Theme

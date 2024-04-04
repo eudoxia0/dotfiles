@@ -1,7 +1,8 @@
 DIR := home/.emacs.d/vendor
 TARGETS := $(DIR)/hydra \
            $(DIR)/olivetti \
-           $(DIR)/aircon-theme
+           $(DIR)/aircon-theme \
+           $(DIR)/markdown-mode
 
 default: all
 
@@ -18,6 +19,10 @@ home/.emacs.d/vendor/olivetti:
 home/.emacs.d/vendor/aircon-theme:
 	git clone --depth=1 https://git.sr.ht/~chambln/aircon-theme.el $(DIR)/aircon-theme
 	rm -rf $(DIR)/aircon-theme/.git
+
+home/.emacs.d/vendor/markdown-mode:
+	git clone --depth=1 https://github.com/jrblevin/markdown-mode.git $(DIR)/markdown-mode
+	rm -rf $(DIR)/markdown-mode/.git
 
 .PHONY: clean
 clean:
