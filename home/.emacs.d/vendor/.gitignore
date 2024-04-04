@@ -66,3 +66,10 @@ dash/dev/
 dash/doc/
 dash/rainbow-dash.png
 dash/readme-template.md
+ht/.github/
+ht/.gitignore
+ht/CHANGELOG.md
+ht/Cask
+ht/Makefile
+ht/README.md
+ht/test/

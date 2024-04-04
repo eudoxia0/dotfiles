@@ -5,7 +5,8 @@ TARGETS := $(DIR)/hydra \
            $(DIR)/markdown-mode \
            $(DIR)/treemacs \
            $(DIR)/s \
-           $(DIR)/dash
+           $(DIR)/dash \
+           $(DIR)/ht
 
 default: all
 
@@ -38,6 +39,10 @@ $(DIR)/s:
 $(DIR)/dash:
 	git clone --depth=1 https://github.com/magnars/dash.el.git $(DIR)/dash
 	rm -rf $(DIR)/dash/.git
+
+$(DIR)/ht:
+	git clone --depth=1 https://github.com/Wilfred/ht.el.git $(DIR)/ht
+	rm -rf $(DIR)/ht/.git
 
 .PHONY: clean
 clean:
