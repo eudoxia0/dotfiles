@@ -6,7 +6,8 @@ TARGETS := $(DIR)/hydra \
            $(DIR)/treemacs \
            $(DIR)/s \
            $(DIR)/dash \
-           $(DIR)/ht
+           $(DIR)/ht \
+           $(DIR)/pfuture
 
 default: all
 
@@ -43,6 +44,10 @@ $(DIR)/dash:
 $(DIR)/ht:
 	git clone --depth=1 https://github.com/Wilfred/ht.el.git $(DIR)/ht
 	rm -rf $(DIR)/ht/.git
+
+$(DIR)/pfuture:
+	git clone --depth=1 https://github.com/Alexander-Miller/pfuture.git $(DIR)/pfuture
+	rm -rf $(DIR)/pfuture/.git
 
 .PHONY: clean
 clean:

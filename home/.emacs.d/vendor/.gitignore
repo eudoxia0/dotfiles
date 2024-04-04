@@ -73,3 +73,5 @@ ht/Cask
 ht/Makefile
 ht/README.md
 ht/test/
+pfuture/.gitignore
+README.org
