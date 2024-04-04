@@ -10,27 +10,27 @@ default: all
 
 all: $(TARGETS)
 
-home/.emacs.d/vendor/hydra:
+$(DIR)/hydra:
 	git clone --depth=1 https://github.com/abo-abo/hydra.git $(DIR)/hydra
 	rm -rf $(DIR)/hydra/.git
 
-home/.emacs.d/vendor/olivetti:
+$(DIR)/olivetti:
 	git clone --depth=1 https://github.com/rnkn/olivetti.git $(DIR)/olivetti
 	rm -rf $(DIR)/olivetti/.git
 
-home/.emacs.d/vendor/aircon-theme:
+$(DIR)/aircon-theme:
 	git clone --depth=1 https://git.sr.ht/~chambln/aircon-theme.el $(DIR)/aircon-theme
 	rm -rf $(DIR)/aircon-theme/.git
 
-home/.emacs.d/vendor/markdown-mode:
+$(DIR)/markdown-mode:
 	git clone --depth=1 https://github.com/jrblevin/markdown-mode.git $(DIR)/markdown-mode
 	rm -rf $(DIR)/markdown-mode/.git
 
-home/.emacs.d/vendor/treemacs:
+$(DIR)/treemacs:
 	git clone --depth=1 https://github.com/Alexander-Miller/treemacs.git $(DIR)/treemacs
 	rm -rf $(DIR)/treemacs/.git
 
-home/.emacs.d/vendor/s:
+$(DIR)/s:
 	git clone --depth=1 https://github.com/magnars/s.el.git $(DIR)/s
 	rm -rf $(DIR)/s/.git
 
