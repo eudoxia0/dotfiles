@@ -77,3 +77,6 @@ pfuture/.gitignore
 README.org
 cfrs/.gitignore
 cfrs/cfrs.png
+posframe/.gitignore
+posframe/posframe-benchmark.el
+posframe/snapshots

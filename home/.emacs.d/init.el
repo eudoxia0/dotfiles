@@ -17,6 +17,7 @@
 (require 'aircon-theme)
 (require 'markdown-mode)
 (require 'cfrs)
+(require 'posframe)
 (require 'treemacs)
 (require 'treemacs-mouse-interface)
 

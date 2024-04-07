@@ -5,6 +5,7 @@ TARGETS := $(DIR)/hydra \
            $(DIR)/markdown-mode \
            $(DIR)/treemacs \
 		   $(DIR)/cfrs \
+		   $(DIR)/posframe \
            $(DIR)/s \
            $(DIR)/dash \
            $(DIR)/ht \
@@ -37,6 +38,10 @@ $(DIR)/treemacs:
 $(DIR)/cfrs:
 	git clone --depth=1 https://github.com/Alexander-Miller/cfrs.git $(DIR)/cfrs
 	rm -rf $(DIR)/cfrs/.git
+
+$(DIR)/posframe:
+	git clone --depth=1 https://github.com/tumashu/posframe.git $(DIR)/posframe
+	rm -rf $(DIR)/posframe/.git
 
 $(DIR)/s:
 	git clone --depth=1 https://github.com/magnars/s.el.git $(DIR)/s
