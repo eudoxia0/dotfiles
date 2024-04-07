@@ -4,6 +4,7 @@ TARGETS := $(DIR)/hydra \
            $(DIR)/aircon-theme \
            $(DIR)/markdown-mode \
            $(DIR)/treemacs \
+		   $(DIR)/cfrs \
            $(DIR)/s \
            $(DIR)/dash \
            $(DIR)/ht \
@@ -32,6 +33,10 @@ $(DIR)/markdown-mode:
 $(DIR)/treemacs:
 	git clone --depth=1 https://github.com/Alexander-Miller/treemacs.git $(DIR)/treemacs
 	rm -rf $(DIR)/treemacs/.git
+
+$(DIR)/cfrs:
+	git clone --depth=1 https://github.com/Alexander-Miller/cfrs.git $(DIR)/cfrs
+	rm -rf $(DIR)/cfrs/.git
 
 $(DIR)/s:
 	git clone --depth=1 https://github.com/magnars/s.el.git $(DIR)/s

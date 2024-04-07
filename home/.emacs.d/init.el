@@ -16,6 +16,7 @@
 (require 'olivetti)
 (require 'aircon-theme)
 (require 'markdown-mode)
+(require 'cfrs)
 (require 'treemacs)
 (require 'treemacs-mouse-interface)
 

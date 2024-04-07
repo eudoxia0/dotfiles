@@ -75,3 +75,5 @@ ht/README.md
 ht/test/
 pfuture/.gitignore
 README.org
+cfrs/.gitignore
+cfrs/cfrs.png
