@@ -1,8 +1,9 @@
 // Reference: https://zed.dev/docs/configuring-zed
 {
-  "buffer_font_family": "Monaco",
-  "buffer_font_size": 15,
-  "soft_wrap": "none",
   "theme": "Atelier Seaside Light",
-  "ui_font_size": 15
+  "buffer_font_family": "Zed Mono",
+  "buffer_font_size": 14,
+  "soft_wrap": "editor_width",
+  "ui_font_family": "Zed Mono",
+  "ui_font_size": 14
 }
