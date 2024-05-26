@@ -63,6 +63,9 @@
 (global-hl-line-mode +1)
 (set-face-background 'hl-line "#eeeeee")
 
+;; Do not discretize the window size. Permits smooth resizing.
+(setq frame-resize-pixelwise t)
+
 ;;;;
 ;;;; Splash Screen
 ;;;;
