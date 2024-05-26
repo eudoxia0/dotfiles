@@ -55,8 +55,8 @@
 ;; Get rid of overwrite mode because sometimes I enable it by accident.
 (put 'overwrite-mode 'disabled t)
 ;; Default fonts.
-(set-face-attribute 'default nil :font "Monaco-15")
-(set-face-attribute 'mode-line nil :font "Monaco-15")
+(set-face-attribute 'default nil :font "Monaco-13")
+(set-face-attribute 'mode-line nil :font "Monaco-13")
 ;; Show trailing whitespace.
 (setq-default show-trailing-whitespace t)
 ;; Highlight the current line.
