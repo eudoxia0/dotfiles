@@ -1,2 +1,4 @@
+# The name can't be `.gitignore` because then Stow doesn't work.
+
 .DS_Store
 *~
