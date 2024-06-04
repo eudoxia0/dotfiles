@@ -153,18 +153,14 @@
 ;;; Olivetti
 ;;;
 
-;; Set the buffer font to Times New Roman.
 (add-hook 'olivetti-mode-hook
 	  (lambda ()
-	    (set-frame-font "Times New Roman 18" t)))
-
-(custom-set-faces
- '(olivetti-fringe ((t (:background "gray91" :inherit default)))))
-
-(custom-set-variables
- '(olivetti-body-width 70)
- '(olivetti-style 'fancy))
-
+			;; Set the buffer font to Times New Roman.
+	    (set-frame-font "Times New Roman 18" t)
+			;; Background colour.
+      (set-face-attribute 'olivetti-fringe nil :background "gray91" :inherit 'default)
+      (setq olivetti-body-width 70
+            olivetti-style 'fancy)))
 ;;;
 ;;; NXML
 ;;;
