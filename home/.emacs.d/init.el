@@ -2,24 +2,28 @@
 ;;;;                                        Bogdan Maryniuk
 ;;;;
 
-;;;;
-;;;; Vendored Packages
-;;;;
+;;;; Packages
 
-(let ((default-directory  "~/.emacs.d/vendor/"))
-  (normal-top-level-add-subdirs-to-load-path))
+(require 'package)
 
-(let ((default-directory  "~/.emacs.d/vendor/treemacs/src/"))
-  (normal-top-level-add-subdirs-to-load-path))
+(setq package-archives '(("melpa" . "https://melpa.org/packages/")
+                         ("elpa"  . "https://elpa.gnu.org/packages/")))
 
-(require 'hydra)
-(require 'olivetti)
-(require 'aircon-theme)
-(require 'markdown-mode)
-(require 'cfrs)
-(require 'posframe)
-(require 'treemacs)
-(require 'treemacs-mouse-interface)
+(package-initialize)
+
+(unless package-archive-contents
+  (package-refresh-contents))
+
+(defvar eudoxia-package-list
+  '(hydra
+    olivetti
+    aircon-theme
+    markdown-mode
+    treemacs))
+
+(dolist (package eudoxia-package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
 
 ;;;;
 ;;;; Colour Theme
@@ -155,15 +159,11 @@
 	    (set-frame-font "Times New Roman 18" t)))
 
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  '(olivetti-fringe ((t (:background "gray91" :inherit default)))))
 
 (custom-set-variables
- '(olivetti-style 'fancy)
- '(olivetti-body-width 70))
+ '(olivetti-body-width 70)
+ '(olivetti-style 'fancy))
 
 ;;;
 ;;; NXML
