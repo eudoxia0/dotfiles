@@ -2,10 +2,7 @@
 
 My system configuration.
 
-```bash
-$ ./stow.sh   # apply
-$ ./unstow.sh # unapply
-```
+
 
 ## License
 
