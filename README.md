@@ -1,6 +1,6 @@
 # eudoxia's dotfiles
 
-My system configurations.
+My system configuration.
 
 ## License
 
