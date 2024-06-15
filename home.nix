@@ -11,6 +11,11 @@
             neofetch
             curl
         ];
+
+        file = {
+            ".gitconfig".source = ./home/.gitconfig;
+            ".gitignore".source = ./home/.global-gitignore;
+        };
     };
 
     programs = {
