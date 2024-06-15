@@ -18,6 +18,10 @@
             ".config/zed/settings.json".source = ./home/.config/zed/settings.json;
             ".emacs.d/init.el".source = ./home/.emacs.d/init.el;
             ".hushlogin".text = "";
+            ".local/bin/" = {
+                source = ./home/.local/bin;
+                recursive = true;
+            };
         };
     };
 
