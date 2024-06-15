@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # Stop all running containers.
 docker kill $(docker ps -q)
