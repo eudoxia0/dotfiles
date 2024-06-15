@@ -3,7 +3,7 @@
     email = fernando@borretti.me
 
 [core]
-    excludesFile = ~/.global-gitignore
+    excludesFile = ~/.gitignore
 
 [color]
     ui = auto
