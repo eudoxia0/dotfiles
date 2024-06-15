@@ -7,7 +7,9 @@
         stateVersion = "24.05";
 
         packages = with pkgs; [
+            coreutils
             neofetch
+            curl
         ];
     };
 
