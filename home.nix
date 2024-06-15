@@ -12,6 +12,7 @@
             curl
             python3
             rsync
+            cargo
         ];
 
         file = {
