@@ -15,6 +15,7 @@
         file = {
             ".gitconfig".source = ./home/.gitconfig;
             ".gitignore".source = ./home/.global-gitignore;
+            ".hushlogin".text = "";
         };
     };
 
