@@ -8,6 +8,7 @@
 (require 'eudoxia-persian)
 (require 'eudoxia-special)
 (require 'eudoxia-splash)
+(require 'eudoxia-treemacs)
 (require 'eudoxia-ui)
 (require 'eudoxia-xml)
 
