@@ -38,23 +38,6 @@
         (message "Not a shorthand: %s" input))))
 
 ;;;;
-;;;; Interaction
-;;;;
-
-;; Disable the arrow keys.
-(global-unset-key (kbd "<left>"))
-(global-unset-key (kbd "<right>"))
-(global-unset-key (kbd "<up>"))
-(global-unset-key (kbd "<down>"))
-(global-unset-key (kbd "<home>"))
-(global-unset-key (kbd "<end>"))
-
-;; Disable things I often invoke by mistake.
-(global-unset-key (kbd "C-v"))
-(global-unset-key (kbd "M-v"))
-(global-unset-key (kbd "C-l"))
-
-;;;;
 ;;;; Hydras
 ;;;;
 
