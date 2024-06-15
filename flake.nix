@@ -2,7 +2,7 @@
   description = "dotfiles";
 
   inputs = {
-    nixpkgs {
+    nixpkgs = {
       url = "github:nixos/nixpkgs/nixos-unstable";
     };
     nix-darwin = {
