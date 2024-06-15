@@ -26,7 +26,7 @@
                     {
                         home-manager.useGlobalPkgs = true;
                         home-manager.useUserPackages = true;
-                        # home-manager.users.eudoxia = import ./home.nix;
+                        home-manager.users.eudoxia = import ./home.nix;
                     }
                 ];
             };
