@@ -9,6 +9,10 @@
        extra-platforms = aarch64-darwin
     '';
 
+    environment.systemPackages = [
+        pkgs.neofetch
+    ];
+
     users.users.eudoxia = {
         home = "/Users/eudoxia";
     };
