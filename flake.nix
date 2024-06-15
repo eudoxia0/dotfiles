@@ -13,14 +13,26 @@
             url = "github:nix-community/home-manager/release-24.05";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+        nix-homebrew = {
+            url = "github:zhaofengli/nix-homebrew";
+        };
+        # homebrew-core = {
+        #   url = "github:homebrew/homebrew-core";
+        #   flake = false;
+        # };
+        # homebrew-cask = {
+        #   url = "github:homebrew/homebrew-cask";
+        #   flake = false;
+        # };
     };
 
-    outputs = inputs @ { self, nixpkgs, nix-darwin, home-manager }: {
+    outputs = inputs @ { self, nixpkgs, nix-darwin, home-manager,   }: {
         darwinConfigurations = {
             metauro = nix-darwin.lib.darwinSystem {
                 system = "aarch64-darwin";
                 specialArgs = { inherit inputs; };
                 modules = [
+                    # nix-homebrew
                     ./darwin.nix
                     home-manager.darwinModules.home-manager
                     {
