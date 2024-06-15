@@ -27,8 +27,8 @@
     homebrew = {
         enable = true;
 
-        # casks = [
-        #     "emacs"
-        # ];
+        casks = [
+            "emacs"
+        ];
     };
 }
