@@ -5,6 +5,7 @@
 (require 'eudoxia-markdown)
 (require 'eudoxia-mode-line)
 (require 'eudoxia-olivetti)
+(require 'eudoxia-persian)
 (require 'eudoxia-splash)
 (require 'eudoxia-ui)
 (require 'eudoxia-xml)
