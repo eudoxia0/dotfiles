@@ -20,6 +20,7 @@
             ".gitignore".source = ./home/.global-gitignore;
             ".config/zed/settings.json".source = ./home/.config/zed/settings.json;
             ".emacs.d/init.el".source = ./home/.emacs.d/init.el;
+            ".emacs.d/eudoxia/eudoxia-general.el".source = ./home/.emacs.d/eudoxia/eudoxia-general.el;
             ".emacs.d/eudoxia/eudoxia-lisp.el".source = ./home/.emacs.d/eudoxia/eudoxia-lisp.el;
             ".emacs.d/eudoxia/eudoxia-markdown.el".source = ./home/.emacs.d/eudoxia/eudoxia-markdown.el;
             ".emacs.d/eudoxia/eudoxia-mode-line.el".source = ./home/.emacs.d/eudoxia/eudoxia-mode-line.el;
