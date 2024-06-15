@@ -11,6 +11,7 @@
             neofetch
             curl
             python3
+            rsync
         ];
 
         file = {
