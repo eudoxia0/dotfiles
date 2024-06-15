@@ -15,7 +15,8 @@
     aircon-theme
     markdown-mode
     treemacs
-    magit))
+    magit
+    nix-mode))
 
 (dolist (package eudoxia-package-list)
   (unless (package-installed-p package)
