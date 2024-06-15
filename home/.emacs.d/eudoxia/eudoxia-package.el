@@ -14,7 +14,8 @@
   '(olivetti
     aircon-theme
     markdown-mode
-    treemacs))
+    treemacs
+    magit))
 
 (dolist (package eudoxia-package-list)
   (unless (package-installed-p package)
