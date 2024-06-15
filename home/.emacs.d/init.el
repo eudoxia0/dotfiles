@@ -146,6 +146,7 @@
       (set-face-attribute 'olivetti-fringe nil :background "gray91" :inherit 'default)
       (setq olivetti-body-width 70
             olivetti-style 'fancy)))
+
 ;;;
 ;;; NXML
 ;;;
@@ -203,17 +204,6 @@
 
 ;; Disable following links.
 (setq markdown-mouse-follow-link nil)
-
-;;;
-;;; OCaml
-;;;
-
-(add-hook 'tuareg-mode-hook #'merlin-mode)
-(add-hook 'caml-mode-hook #'merlin-mode)
-;; ## added by OPAM user-setup for emacs / base ## 56ab50dc8996d2bb95e7856a6eddb17b ## you can edit, but keep this line
-(when (file-exists-p "~/.emacs.d/opam-user-setup.el")
-  (require 'opam-user-setup "~/.emacs.d/opam-user-setup.el"))
-;; ## end of OPAM user-setup addition for emacs / base ## keep this line
 
 ;;;;
 ;;;; Custom Commands
