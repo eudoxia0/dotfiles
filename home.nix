@@ -23,7 +23,7 @@
             ".local/bin/backup.sh".source = ./home/.local/bin/backup.sh;
             ".local/bin/canonicalize-screenshots.py".source = ./home/.local/bin/canonicalize-screenshots.py;
             ".local/bin/docker-blow-away.sh".source = ./home/.local/bin/docker-blow-away.sh;
-            ".local/bin/timestamp.py".source = ./home/.local/bin/timestamp.sh;
+            ".local/bin/timestamp.py".source = ./home/.local/bin/timestamp.py;
         };
     };
 
