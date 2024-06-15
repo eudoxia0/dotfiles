@@ -2,7 +2,9 @@
 
 My system configuration.
 
-
+```bash
+$ ./apply.sh
+```
 
 ## License
 
