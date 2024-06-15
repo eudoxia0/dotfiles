@@ -9,12 +9,6 @@
        extra-platforms = aarch64-darwin
     '';
 
-    environment.systemPackages = [
-        pkgs.neofetch
-    ];
-
-    programs.zsh.enable = true;
-
     nixpkgs.hostPlatform = "aarch64-darwin";
 
     users.users.eudoxia = {
