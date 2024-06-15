@@ -20,6 +20,7 @@
             ".gitignore".source = ./home/.global-gitignore;
             ".config/zed/settings.json".source = ./home/.config/zed/settings.json;
             ".emacs.d/init.el".source = ./home/.emacs.d/init.el;
+            ".emacs.d/eudoxia/eudoxia.el".source = ./home/.emacs.d/eudoxia/eudoxia.el;
             ".hushlogin".text = "";
             ".local/bin/backup.sh".source = ./home/.local/bin/backup.sh;
             ".local/bin/canonicalize-screenshots.py".source = ./home/.local/bin/canonicalize-screenshots.py;
