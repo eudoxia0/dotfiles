@@ -3,10 +3,6 @@
 {
     services.nix-daemon.enable = true;
 
-    # imports = [
-    #   ./homebrew.nix
-    # ];
-
     nix.extraOptions = ''
         auto-optimise-store = true
         experimental-features = nix-command flakes
@@ -31,8 +27,8 @@
     homebrew = {
         enable = true;
 
-        casks = [
-            "emacs"
-        ];
+        # casks = [
+        #     "emacs"
+        # ];
     };
 }
