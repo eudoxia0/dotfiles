@@ -1,7 +1,3 @@
-;;;;     "Show me your ~/.emacs and I will tell you who you are."
-;;;;                                        Bogdan Maryniuk
-;;;;
-
 ;;;; Packages
 
 (require 'package)
