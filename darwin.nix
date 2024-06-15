@@ -20,7 +20,7 @@
     system.defaults = {
         dock = {
             autohide = false;
-            orientation = "left";
+            orientation = "bottom";
         };
     };
 }
