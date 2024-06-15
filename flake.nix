@@ -16,23 +16,35 @@
         nix-homebrew = {
             url = "github:zhaofengli/nix-homebrew";
         };
-        # homebrew-core = {
-        #   url = "github:homebrew/homebrew-core";
-        #   flake = false;
-        # };
-        # homebrew-cask = {
-        #   url = "github:homebrew/homebrew-cask";
-        #   flake = false;
-        # };
+        homebrew-core = {
+          url = "github:homebrew/homebrew-core";
+          flake = false;
+        };
+        homebrew-cask = {
+          url = "github:homebrew/homebrew-cask";
+          flake = false;
+        };
     };
 
-    outputs = inputs @ { self, nixpkgs, nix-darwin, home-manager,   }: {
+    outputs = inputs @ { self, nixpkgs, nix-darwin, home-manager, nix-homebrew, homebrew-core, homebrew-cask }: {
         darwinConfigurations = {
             metauro = nix-darwin.lib.darwinSystem {
                 system = "aarch64-darwin";
                 specialArgs = { inherit inputs; };
                 modules = [
-                    # nix-homebrew
+                    nix-homebrew.darwinModules.nix-homebrew
+                    {
+                        nix-homebrew = {
+                            enable = true;
+                            enableRosetta = true;
+                            user = "eudoxia";
+                            taps = {
+                                "homebrew/homebrew-core" = homebrew-core;
+                                "homebrew/homebrew-cask" = homebrew-cask;
+                            };
+                            mutableTaps = false;
+                        };
+                    }
                     ./darwin.nix
                     home-manager.darwinModules.home-manager
                     {
