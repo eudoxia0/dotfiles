@@ -2,8 +2,16 @@
 
 My system configuration.
 
+Build and apply flake:
+
 ```bash
 $ ./apply.sh
+```
+
+Install Nix on macOS:
+
+```bash
+$ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
 ```
 
 ## License
