@@ -5,7 +5,7 @@ My system configuration.
 Build and apply flake:
 
 ```bash
-$ ./apply.sh
+$ ./recrank.sh
 ```
 
 Install Nix on macOS:
