@@ -29,6 +29,9 @@
                 cf   = "cargo fmt";
                 ck   = "cargo check";
             };
+            sessionVariables = {
+              PATH = "$HOME/.local/bin:$PATH";
+            };
         };
         home-manager = {
             enable = true;
