@@ -5,6 +5,10 @@
         username = "eudoxia";
         homeDirectory = "/Users/eudoxia";
         stateVersion = "24.05";
+
+        packages = with pkgs; [
+            neofetch
+        ];
     };
 
     programs = {
