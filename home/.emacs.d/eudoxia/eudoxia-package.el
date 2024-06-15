@@ -11,8 +11,7 @@
   (package-refresh-contents))
 
 (defvar eudoxia-package-list
-  '(hydra
-    olivetti
+  '(olivetti
     aircon-theme
     markdown-mode
     treemacs))
