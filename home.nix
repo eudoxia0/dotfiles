@@ -15,6 +15,8 @@
         file = {
             ".gitconfig".source = ./home/.gitconfig;
             ".gitignore".source = ./home/.global-gitignore;
+            ".config/zed/settings.json".source = ./home/.config/zed/settings.json;
+            ".emacs.d/init.el".source = ./home/.emacs.d/init.el;
             ".hushlogin".text = "";
         };
     };
