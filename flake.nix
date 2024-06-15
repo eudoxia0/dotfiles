@@ -15,11 +15,7 @@
     };
   };
 
-  outputs = inputs @ { self, nixpkgs, nix-darwin, home-manager }: let
-    nixpkgsConfig = {
-    config.allowUnfree = true;
-    };
-  in {
+  outputs = inputs @ { self, nixpkgs, nix-darwin, home-manager }: {
     darwinConfigurations = {
         metauro = nix-darwin.lib.darwinSystem {
             system = "aarch64-darwin";
