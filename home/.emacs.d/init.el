@@ -70,10 +70,6 @@
 ;;;; Splash Screen
 ;;;;
 
-;; Disable the messages buffer.
-;(setq-default message-log-max nil)
-;(kill-buffer "*Messages*")
-
 ;; Set the contents of the scratch buffer.
 (setq initial-scratch-message "")
 
