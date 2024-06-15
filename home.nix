@@ -10,6 +10,7 @@
             coreutils
             neofetch
             curl
+            python3
         ];
 
         file = {
