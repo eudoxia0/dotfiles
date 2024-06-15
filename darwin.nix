@@ -15,6 +15,8 @@
 
     programs.zsh.enable = true;
 
+    nixpkgs.hostPlatform = "aarch64-darwin";
+
     users.users.eudoxia = {
         home = "/Users/eudoxia";
     };
