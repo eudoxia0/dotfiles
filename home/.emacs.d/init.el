@@ -133,13 +133,6 @@
 ;;;
 
 (setq inferior-lisp-program "sbcl")
-;; When compilation fails, don't ask me whether to load the fasl file
-;; anyways. Emacs is very fucky with modeline prompts and this always blocks the
-;; rest of the UI and somehow breaks the window layout.
-; (setq slime-load-failed-fasl 'never)
-
-; (require 'slime-autoloads)
-; (slime-setup '(slime-fancy slime-banner))
 
 ;;;
 ;;; Olivetti
