@@ -16,4 +16,11 @@
     users.users.eudoxia = {
         home = "/Users/eudoxia";
     };
+
+    system.defaults = {
+        dock = {
+            autohide = false;
+            orientation = "left";
+        };
+    };
 }
