@@ -16,4 +16,11 @@
     users.users.eudoxia = {
         home = "/Users/eudoxia";
     };
+
+    homebrew = {
+        enable = true;
+        casks = [
+            "emacs"
+        ];
+    };
 }
