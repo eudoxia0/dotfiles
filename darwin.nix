@@ -9,6 +9,10 @@
         extra-platforms = x86_64-darwin aarch64-darwin
     '';
 
+    nix.nixPath = [
+      "nixpkgs=${pkgs.path}"
+    ];
+
     nixpkgs.hostPlatform = "aarch64-darwin";
 
     programs.zsh.enable = true;
