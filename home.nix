@@ -47,6 +47,7 @@
         gd   = "git pull origin";
         cf   = "cargo fmt";
         ck   = "cargo check";
+        rc   = "./recrank.sh";
       };
       sessionVariables = {
         PATH = "$HOME/.local/bin:$PATH";
