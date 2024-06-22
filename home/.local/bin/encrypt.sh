@@ -6,14 +6,17 @@ if [ $# -ne 2 ]; then
     exit 1
 fi
 
-if [ ! -f "$1" ]; then
+input=$1
+output=$2
+
+if [ ! -f "$input" ]; then
     echo "Input file does not exist."
     exit 1
 fi
 
-if [ -e "$2" ]; then
-    echo "Output file exists."
+if [ -e "$output" ]; then
+    echo "Output file exists: $output"
     exit 1
 fi
 
-age -p $1 > $2
+age -p -o $output $input
