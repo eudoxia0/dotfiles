@@ -13,6 +13,7 @@
       python3
       rsync
       cargo
+      age
     ];
 
     file = {
