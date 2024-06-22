@@ -33,6 +33,7 @@
 
     casks = [
       "emacs"
+      "1password-cli"
     ];
   };
 }
