@@ -31,8 +31,8 @@
 (global-display-line-numbers-mode 1)
 
 ;; Default fonts.
-(set-face-attribute 'default nil :font "Monaco-16")
-(set-face-attribute 'mode-line nil :font "Monaco-16")
+(set-face-attribute 'default nil :font "Monaco-15")
+(set-face-attribute 'mode-line nil :font "Monaco-15")
 
 ;; Show trailing whitespace.
 (setq-default show-trailing-whitespace t)
