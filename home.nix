@@ -50,7 +50,7 @@
         rc   = "./recrank.sh";
       };
       sessionVariables = {
-        PATH = "$HOME/.local/bin:$PATH";
+        PATH = "/opt/homebrew/bin:$HOME/.local/bin:$PATH";
       };
     };
     home-manager = {
