@@ -19,4 +19,4 @@ if [ -e "$output" ]; then
     exit 1
 fi
 
-age -p -o $output $input
+age --passphrase --output=$output $input
