@@ -16,7 +16,8 @@
     markdown-mode
     treemacs
     magit
-    nix-mode))
+    nix-mode
+    rust-mode))
 
 (dolist (package eudoxia-package-list)
   (unless (package-installed-p package)
