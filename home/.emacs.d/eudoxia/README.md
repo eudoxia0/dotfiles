@@ -50,3 +50,9 @@ Undo:
 | Key   | Action |
 |-------|--------|
 | `C-/` | Undo   |
+
+Treemacs:
+
+| Key         | Action              |
+| `F8`        | Toggle Treemacs     |
+| `C-c C-w e` | Edit workspace list |
