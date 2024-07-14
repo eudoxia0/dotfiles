@@ -11,5 +11,6 @@ rsync --progress \
       --executability \
       --times \
       --checksum \
+      --delete \
       ~/Root/ \
       /Volumes/$1/Root
