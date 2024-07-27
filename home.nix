@@ -14,6 +14,7 @@
       rsync
       cargo
       age
+      graphviz
     ];
 
     file = {
