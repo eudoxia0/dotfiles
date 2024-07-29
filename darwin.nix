@@ -35,6 +35,7 @@
       "emacs"
       "1password-cli"
       "zed"
+      "visual-studio-code"
     ];
   };
 }
