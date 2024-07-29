@@ -36,6 +36,7 @@
       "1password-cli"
       "zed"
       "visual-studio-code"
+      "todoist"
     ];
   };
 }
