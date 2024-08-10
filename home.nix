@@ -15,6 +15,7 @@
       cargo
       age
       graphviz
+      sbcl
     ];
 
     file = {
