@@ -17,7 +17,8 @@
     treemacs
     magit
     nix-mode
-    rust-mode))
+    rust-mode
+    sly))
 
 (dolist (package eudoxia-package-list)
   (unless (package-installed-p package)
