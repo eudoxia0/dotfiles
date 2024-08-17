@@ -2,6 +2,11 @@
 
 My system configuration.
 
+```bash
+$ just install
+$ just apply
+```
+
 ## License
 
 Copyright (c) 2013–2024 [Fernando Borretti](https://borretti.me/).
