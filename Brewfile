@@ -1,4 +1,5 @@
 brew "git"
+brew "just"
 cask "1password-cli"
 cask "calibre"
 cask "emacs"
