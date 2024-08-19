@@ -1,3 +1,9 @@
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Variables
+export PATH="$PATH:$HOME/.local/bin"
+
 # Aliases
 alias -- 'cf'='cargo fmt'
 alias -- 'ck'='cargo check'
