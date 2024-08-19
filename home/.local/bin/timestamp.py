@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """
 Prefix every file in the current directory with its creation or modification
 timestamp, whichever is oldest.
