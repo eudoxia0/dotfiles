@@ -1,91 +1,5 @@
 {
   "entries": {
-    "cask": {
-      "1password-cli": {
-        "version": "2.30.0",
-        "options": {
-          "full_name": "1password-cli"
-        }
-      },
-      "emacs": {
-        "version": "29.4-1",
-        "options": {
-          "full_name": "emacs"
-        }
-      },
-      "todoist": {
-        "version": "9.7.2",
-        "options": {
-          "full_name": "todoist"
-        }
-      },
-      "zed": {
-        "version": "0.149.5",
-        "options": {
-          "full_name": "zed"
-        }
-      },
-      "visual-studio-code": {
-        "version": "1.92.2",
-        "options": {
-          "full_name": "visual-studio-code"
-        }
-      },
-      "alacritty": {
-        "version": "0.13.2",
-        "options": {
-          "full_name": "alacritty"
-        }
-      },
-      "wezterm": {
-        "version": "20240203-110809,5046fc22",
-        "options": {
-          "full_name": "wezterm"
-        }
-      },
-      "font-iosevka": {
-        "version": "31.4.0",
-        "options": {
-          "full_name": "font-iosevka"
-        }
-      },
-      "calibre": {
-        "version": "7.17.0",
-        "options": {
-          "full_name": "calibre"
-        }
-      },
-      "linear-linear": {
-        "version": "1.27.0,2408152uraifa26",
-        "options": {
-          "full_name": "linear-linear"
-        }
-      },
-      "mochi": {
-        "version": "1.17.9",
-        "options": {
-          "full_name": "mochi"
-        }
-      },
-      "netnewswire": {
-        "version": "6.1.4",
-        "options": {
-          "full_name": "netnewswire"
-        }
-      },
-      "protonmail-bridge": {
-        "version": "3.12.0",
-        "options": {
-          "full_name": "protonmail-bridge"
-        }
-      },
-      "firefox@nightly": {
-        "version": "latest",
-        "options": {
-          "full_name": "firefox@nightly"
-        }
-      }
-    },
     "brew": {
       "git": {
         "version": "2.46.0",
@@ -173,6 +87,86 @@
               "sha256": "862a0cd86046e074127bab8be0f4db48e2e5c328847e3bc662848a310fb87459"
             }
           }
+        }
+      }
+    },
+    "cask": {
+      "1password-cli": {
+        "version": "2.30.0",
+        "options": {
+          "full_name": "1password-cli"
+        }
+      },
+      "calibre": {
+        "version": "7.17.0",
+        "options": {
+          "full_name": "calibre"
+        }
+      },
+      "emacs": {
+        "version": "29.4-1",
+        "options": {
+          "full_name": "emacs"
+        }
+      },
+      "firefox@nightly": {
+        "version": "latest",
+        "options": {
+          "full_name": "firefox@nightly"
+        }
+      },
+      "font-iosevka": {
+        "version": "31.4.0",
+        "options": {
+          "full_name": "font-iosevka"
+        }
+      },
+      "linear-linear": {
+        "version": "1.27.0,2408152uraifa26",
+        "options": {
+          "full_name": "linear-linear"
+        }
+      },
+      "mochi": {
+        "version": "1.17.9",
+        "options": {
+          "full_name": "mochi"
+        }
+      },
+      "netnewswire": {
+        "version": "6.1.4",
+        "options": {
+          "full_name": "netnewswire"
+        }
+      },
+      "protonmail-bridge": {
+        "version": "3.12.0",
+        "options": {
+          "full_name": "protonmail-bridge"
+        }
+      },
+      "todoist": {
+        "version": "9.7.2",
+        "options": {
+          "full_name": "todoist"
+        }
+      },
+      "visual-studio-code": {
+        "version": "1.92.2",
+        "options": {
+          "full_name": "visual-studio-code"
+        }
+      },
+      "wezterm": {
+        "version": "20240203-110809,5046fc22",
+        "options": {
+          "full_name": "wezterm"
+        }
+      },
+      "zed": {
+        "version": "0.149.5",
+        "options": {
+          "full_name": "zed"
         }
       }
     }
