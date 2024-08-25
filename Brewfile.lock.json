@@ -20,7 +20,7 @@
         }
       },
       "zed": {
-        "version": "0.148.1",
+        "version": "0.149.5",
         "options": {
           "full_name": "zed"
         }
@@ -44,13 +44,13 @@
         }
       },
       "font-iosevka": {
-        "version": "31.2.0",
+        "version": "31.4.0",
         "options": {
           "full_name": "font-iosevka"
         }
       },
       "calibre": {
-        "version": "7.16.0",
+        "version": "7.17.0",
         "options": {
           "full_name": "calibre"
         }
@@ -77,6 +77,12 @@
         "version": "3.12.0",
         "options": {
           "full_name": "protonmail-bridge"
+        }
+      },
+      "firefox@nightly": {
+        "version": "latest",
+        "options": {
+          "full_name": "firefox@nightly"
         }
       }
     },
@@ -174,7 +180,7 @@
   "system": {
     "macos": {
       "sonoma": {
-        "HOMEBREW_VERSION": "4.3.16",
+        "HOMEBREW_VERSION": "4.3.17",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "15.3.0.0.1.1708646388",
