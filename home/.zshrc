@@ -4,6 +4,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 
 # Variables
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:/usr/sbin:/sbin"
 
 # Aliases
 alias -- 'cf'='cargo fmt'
