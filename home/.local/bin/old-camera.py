@@ -19,7 +19,7 @@ def match(filename):
         return None
 
 def rename(groups):
-    type, y, m, d, h, min, s = groups
+    y, m, d, h, min, s = groups
     return f'{y}-{m}-{d}-{h}{min}{s}.jpg'
 
 def tests():
