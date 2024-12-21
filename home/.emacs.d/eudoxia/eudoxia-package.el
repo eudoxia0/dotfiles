@@ -18,6 +18,7 @@
     magit
     nix-mode
     rust-mode
+    unfill
     sly))
 
 (dolist (package eudoxia-package-list)
