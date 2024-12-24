@@ -5,6 +5,7 @@ install:
 
 apply:
     # Link files
+    ln -sf "{{PWD}}/home/.config/kitty/kitty.conf" ~/.config/kitty/kitty.conf
     ln -sf "{{PWD}}/home/.config/zed/settings.json" ~/.config/zed/settings.json
     ln -sf "{{PWD}}/home/.emacs.d/init.el" ~/.emacs.d/init.el
     ln -sf "{{PWD}}/home/.gitconfig" ~/.gitconfig
