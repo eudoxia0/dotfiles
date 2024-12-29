@@ -5,11 +5,13 @@ install:
 
 apply:
     # Ensure directories exist
+    mkdir -p ~/.config/ghostty
     mkdir -p ~/.config/zed
     mkdir -p ~/.emacs.d/eudoxia
     mkdir -p ~/.local/bin
 
     # Copy files
+    cp "{{PWD}}/home/.config/ghostty/config" ~/.config/ghostty/config
     cp "{{PWD}}/home/.config/zed/settings.json" ~/.config/zed/settings.json
     cp "{{PWD}}/home/.emacs.d/init.el" ~/.emacs.d/init.el
     cp "{{PWD}}/home/.gitconfig" ~/.gitconfig
