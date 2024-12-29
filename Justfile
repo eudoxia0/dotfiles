@@ -4,26 +4,30 @@ install:
     brew bundle
 
 apply:
-    # Link files
-    ln -sf "{{PWD}}/home/.config/kitty/kitty.conf" ~/.config/kitty/kitty.conf
-    ln -sf "{{PWD}}/home/.config/zed/settings.json" ~/.config/zed/settings.json
-    ln -sf "{{PWD}}/home/.emacs.d/init.el" ~/.emacs.d/init.el
-    ln -sf "{{PWD}}/home/.gitconfig" ~/.gitconfig
-    ln -sf "{{PWD}}/home/.global-gitignore" ~/.global-gitignore
-    ln -sf "{{PWD}}/home/.zprofile" ~/.zprofile
-    ln -sf "{{PWD}}/home/.zshrc" ~/.zshrc
-    # Link directories
-    ln -sf "{{PWD}}/home/.emacs.d/eudoxia/" ~/.emacs.d/eudoxia
-    ln -sf "{{PWD}}/home/.local/bin/" ~/.local/bin
+    # Ensure directories exist
+    mkdir -p ~/.config/zed
+    mkdir -p ~/.emacs.d/eudoxia
+    mkdir -p ~/.local/bin
+
+    # Copy files
+    cp "{{PWD}}/home/.config/zed/settings.json" ~/.config/zed/settings.json
+    cp "{{PWD}}/home/.emacs.d/init.el" ~/.emacs.d/init.el
+    cp "{{PWD}}/home/.gitconfig" ~/.gitconfig
+    cp "{{PWD}}/home/.global-gitignore" ~/.global-gitignore
+    cp "{{PWD}}/home/.zshrc" ~/.zshrc
+
+    # Copy directory contents
+    cp -a "{{PWD}}/home/.emacs.d/eudoxia" ~/.emacs.d
+    cp -a "{{PWD}}/home/.local/bin" ~/.local
 
 clean:
-    # Unlink files
+    # Delete files
     rm -f ~/.config/zed/settings.json
     rm -f ~/.emacs.d/init.el
     rm -f ~/.gitconfig
     rm -f ~/.global-gitignore
-    rm -f ~/.zprofile
     rm -f ~/.zshrc
-    # Unlink directories
-    rm -f ~/.emacs.d/eudoxia
-    rm -f ~/.local/bin
+
+    # Delete directories
+    rm -rf ~/.emacs.d/eudoxia
+    rm -rf ~/.local/bin
