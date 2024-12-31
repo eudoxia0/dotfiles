@@ -1,12 +1,12 @@
 // Reference: https://zed.dev/docs/configuring-zed
 {
-  "theme": "Atelier Seaside Light",
   "buffer_font_family": "Inconsolata",
   "buffer_font_size": 16,
-  "soft_wrap": "editor_width",
-  "ui_font_family": "Inconsolata",
-  "ui_font_size": 16,
   "project_panel": {
     "auto_fold_dirs": false
-  }
+  },
+  "soft_wrap": "editor_width",
+  "theme": "Atelier Seaside Light",
+  "ui_font_family": "Inconsolata",
+  "ui_font_size": 16
 }
