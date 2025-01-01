@@ -24,6 +24,7 @@ apply:
 
 clean:
     # Delete files
+    rm -f ~/.config/ghostty/config
     rm -f ~/.config/zed/settings.json
     rm -f ~/.emacs.d/init.el
     rm -f ~/.gitconfig
