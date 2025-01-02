@@ -11,5 +11,6 @@
 (require 'eudoxia-treemacs)
 (require 'eudoxia-ui)
 (require 'eudoxia-xml)
+(require 'eudoxia-unfill)
 
 (provide 'eudoxia)
