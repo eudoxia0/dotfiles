@@ -1,3 +1,4 @@
 quit-after-last-window-closed = true
 font-size = 14
 font-family = Monaco
+scrollback-limit = 1073741824 # 1 GiB
