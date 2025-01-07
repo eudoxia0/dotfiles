@@ -2,7 +2,7 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export HOMEBREW_NO_AUTO_UPDATE=1
 
-# Variables
+# PATH
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/sbin:/sbin"
 export PATH="$PATH:/opt/homebrew/lib/ruby/gems/3.3.0/bin"
