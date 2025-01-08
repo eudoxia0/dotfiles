@@ -1,4 +1,5 @@
 brew "git"
+brew "graphviz"
 brew "just"
 brew "ruby"
 cask "1password-cli"
