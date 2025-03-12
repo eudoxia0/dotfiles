@@ -10,18 +10,13 @@ local appBindings = {
         mods = { "alt" }
     },
     {
-        app = "Calendar",
+        app = "Ghostty",
         key = "3",
         mods = { "alt" }
     },
     {
-        app = "Obsidian",
-        key = "4",
-        mods = { "alt" }
-    },
-    {
         app = "Zed",
-        key = "5",
+        key = "4",
         mods = { "alt" }
     }
 }
