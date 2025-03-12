@@ -1,11 +1,11 @@
 local appBindings = {
     {
-        app = "Firefox",
+        app = "Todoist",
         key = "1",
         mods = { "alt" }
     },
     {
-        app = "Todoist",
+        app = "Firefox",
         key = "2",
         mods = { "alt" }
     },
