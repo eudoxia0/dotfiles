@@ -6,7 +6,12 @@
     "auto_fold_dirs": false
   },
   "soft_wrap": "editor_width",
-  "theme": "Zed Legacy: Atelier Dune Light",
+  "theme": "Zed Legacy: Atelier Seaside Light",
   "ui_font_family": "Inconsolata",
-  "ui_font_size": 16
+  "ui_font_size": 16,
+  "languages": {
+    "Markdown": {
+      "show_completions_on_input": false
+    }
+  }
 }
