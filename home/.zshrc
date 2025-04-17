@@ -7,6 +7,7 @@ export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/sbin:/sbin"
 export PATH="$PATH:/opt/homebrew/lib/ruby/gems/3.3.0/bin"
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 # Aliases
 alias -- 'cf'='cargo fmt'
