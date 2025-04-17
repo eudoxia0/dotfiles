@@ -1,5 +1,14 @@
 // Reference: https://zed.dev/docs/configuring-zed
 {
+  "edit_predictions": {
+    "disabled_globs": ["*.md"],
+    "mode": "eager",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null
+    },
+    "enabled_in_assistant": false
+  },
   "buffer_font_family": "Inconsolata",
   "buffer_font_size": 16,
   "project_panel": {
