@@ -8,7 +8,6 @@ rsync --progress \
       --archive \
       --human-readable \
       --executability \
-      --times \
       --checksum \
       --delete \
       ~/Root/ \
