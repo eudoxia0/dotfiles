@@ -7,7 +7,6 @@
 rsync --progress \
       --archive \
       --human-readable \
-      --checksum \
       --delete \
       ~/Root/ \
       /Volumes/$1/Root
