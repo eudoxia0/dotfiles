@@ -7,7 +7,6 @@
 rsync --progress \
       --archive \
       --human-readable \
-      --perms \
       --executability \
       --times \
       --checksum \
