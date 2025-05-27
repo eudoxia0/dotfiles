@@ -7,7 +7,7 @@
       "proxy": null,
       "proxy_no_verify": null
     },
-    "enabled_in_assistant": false
+    "enabled_in_text_threads": false
   },
   "buffer_font_family": "Inconsolata",
   "buffer_font_size": 16,
