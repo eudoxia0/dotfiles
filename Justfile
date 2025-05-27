@@ -1,8 +1,5 @@
 PWD := `pwd`
 
-install:
-    brew bundle
-
 apply:
     # Ensure directories exist
     mkdir -p ~/.config/ghostty
