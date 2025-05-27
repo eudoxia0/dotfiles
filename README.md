@@ -3,8 +3,8 @@
 My system configuration.
 
 ```bash
-$ just install
-$ just apply
+$ ./dotfiles.py apply
+$ ./dotfiles.py clean
 ```
 
 ## License
