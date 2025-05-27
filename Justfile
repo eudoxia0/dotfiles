@@ -4,7 +4,7 @@ apply:
     # Ensure directories exist
     mkdir -p ~/.config/ghostty
     mkdir -p ~/.config/zed
-    mkdir -p ~/.emacs.d/eudoxia
+    mkdir -p ~/.emacs.d
     mkdir -p ~/.local/bin
 
     # Copy files
@@ -16,7 +16,6 @@ apply:
     cp "{{PWD}}/home/.zshrc" ~/.zshrc
 
     # Copy directory contents
-    cp -a "{{PWD}}/home/.emacs.d/eudoxia" ~/.emacs.d
     cp -a "{{PWD}}/home/.local/bin" ~/.local
 
 clean:
@@ -29,5 +28,4 @@ clean:
     rm -f ~/.zshrc
 
     # Delete directories
-    rm -rf ~/.emacs.d/eudoxia
     rm -rf ~/.local/bin
