@@ -2,9 +2,7 @@
   '(;; Punctuation
     ("--" . "–")
     ("---" . "—")
-    ("..." . "…")
-    ;; Spanish
-    ("n~" . "ñ"))
+    ("..." . "…"))
   "Map of shorthand to special characters.")
 
 (defun eudoxia-special ()
