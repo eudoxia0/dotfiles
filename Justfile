@@ -5,7 +5,6 @@ apply:
     mkdir -p ~/.config/ghostty
     mkdir -p ~/.config/zed
     mkdir -p ~/.emacs.d/eudoxia
-    mkdir -p ~/.hammerspoon
     mkdir -p ~/.local/bin
 
     # Copy files
@@ -14,7 +13,6 @@ apply:
     cp "{{PWD}}/home/.emacs.d/init.el" ~/.emacs.d/init.el
     cp "{{PWD}}/home/.gitconfig" ~/.gitconfig
     cp "{{PWD}}/home/.global-gitignore" ~/.global-gitignore
-    cp "{{PWD}}/home/.hammerspoon/init.lua" ~/.hammerspoon/init.lua
     cp "{{PWD}}/home/.zshrc" ~/.zshrc
 
     # Copy directory contents
@@ -28,7 +26,6 @@ clean:
     rm -f ~/.emacs.d/init.el
     rm -f ~/.gitconfig
     rm -f ~/.global-gitignore
-    rm -f ~/.hammerspoon
     rm -f ~/.zshrc
 
     # Delete directories
