@@ -168,7 +168,7 @@
 ;;;;
 
 ;; Colour theme.
-(load-theme 'aircon t)
+;(load-theme 'aircon t)
 
 ;; No scroll bar.
 (toggle-scroll-bar -1)
@@ -269,3 +269,16 @@
 ;;;;
 
 (global-set-key (kbd "<f9>") 'unfill-region)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   '("e7ce09ff7426c9a290d06531edc4934dd05d9ea29713f9aabff834217dbb08e4" default)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
