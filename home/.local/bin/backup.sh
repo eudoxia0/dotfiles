@@ -8,5 +8,5 @@ rsync --progress \
       --archive \
       --human-readable \
       --delete \
-      ~/Root/ \
+      /Volumes/Asterion/Root/ \
       /Volumes/$1/Root
