@@ -37,6 +37,10 @@ def prefix_with_timestamp(directory: str) -> None:
         if os.path.isdir(file_path):
             continue
 
+        # Skip .DS_Store files
+        if filename == ".DS_Store":
+            continue
+
         if not is_prefixed(filename):
             oldest_timestamp = get_oldest_timestamp(file_path)
             new_filename = f"{oldest_timestamp} {filename}"
