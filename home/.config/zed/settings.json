@@ -1,5 +1,9 @@
 // Reference: https://zed.dev/docs/configuring-zed
 {
+  "show_edit_predictions": false,
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
   "edit_predictions": {
     "disabled_globs": ["*.md"],
     "mode": "eager",
@@ -15,10 +19,31 @@
     "auto_fold_dirs": false
   },
   "soft_wrap": "editor_width",
-  "theme": "Xcode Bare",
+  "theme": "Ayu Light",
   "ui_font_family": "Inconsolata",
   "ui_font_size": 16,
   "languages": {
+    "CSS": {
+      "show_edit_predictions": true
+    },
+    "YAML": {
+      "show_edit_predictions": true
+    },
+    "TypeScript": {
+      "show_edit_predictions": true
+    },
+    "Vue.js": {
+      "show_edit_predictions": true
+    },
+    "Python": {
+      "show_edit_predictions": true
+    },
+    "JavaScript": {
+      "show_edit_predictions": true
+    },
+    "Rust": {
+      "show_edit_predictions": true
+    },
     "Markdown": {
       "show_completions_on_input": false
     }
