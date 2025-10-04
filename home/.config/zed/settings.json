@@ -23,6 +23,9 @@
   "ui_font_family": "Inconsolata",
   "ui_font_size": 16,
   "languages": {
+    "Make": {
+      "show_edit_predictions": true
+    },
     "CSS": {
       "show_edit_predictions": true
     },
