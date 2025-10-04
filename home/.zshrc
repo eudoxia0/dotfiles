@@ -2,6 +2,13 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export HOMEBREW_NO_AUTO_UPDATE=1
 
+# pnpm
+export PNPM_HOME="/Users/eudoxia/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
 # PATH
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/sbin:/sbin"
@@ -21,10 +28,3 @@ alias -- 'gu'='git push -u origin HEAD'
 alias -- 'ls'='ls -1 --color'
 alias -- 'ci'='cd "/Volumes/Asterion/Root/0 Inbox/"'
 alias -- 'cdd'='cd "~/Desktop/"'
-
-# pnpm
-export PNPM_HOME="/Users/eudoxia/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
