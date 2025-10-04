@@ -21,3 +21,10 @@ alias -- 'gu'='git push -u origin HEAD'
 alias -- 'ls'='ls -1 --color'
 alias -- 'ci'='cd "/Volumes/Asterion/Root/0 Inbox/"'
 alias -- 'cdd'='cd "~/Desktop/"'
+
+# pnpm
+export PNPM_HOME="/Users/eudoxia/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
