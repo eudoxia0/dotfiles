@@ -10,5 +10,55 @@ matches:
         params:
           format: "%m/%d/%Y"
 
-  - trigger: ":admin"
-    replace: "📝"
+  # Emojis
+  - { trigger: ":admin", replace: "📝" }
+  - { trigger: ":alarm", replace: "⏰" }
+  - { trigger: ":art", replace: "🎨" }
+  - { trigger: ":ask", replace: "💬" }
+  - { trigger: ":basket", replace: "🧺" }
+  - { trigger: ":bed", replace: "🛏️" }
+  - { trigger: ":bento", replace: "🍱" }
+  - { trigger: ":bird", replace: "🐦" }
+  - { trigger: ":block", replace: "💹" }
+  - { trigger: ":blush", replace: "😊" }
+  - { trigger: ":books", replace: "📚" }
+  - { trigger: ":box", replace: "📦" }
+  - { trigger: ":cal", replace: "📆" }
+  - { trigger: ":cart", replace: "🛒" }
+  - { trigger: ":chore", replace: "🔧" }
+  - { trigger: ":coffee", replace: "☕" }
+  - { trigger: ":cook", replace: "🍳" }
+  - { trigger: ":dash", replace: "💨" }
+  - { trigger: ":disc", replace: "💿" }
+  - { trigger: ":down", replace: "⬇️" }
+  - { trigger: ":drop", replace: "💧" }
+  - { trigger: ":dry", replace: "💨" }
+  - { trigger: ":env", replace: "✉️" }
+  - { trigger: ":feat", replace: "🌿" }
+  - { trigger: ":folder", replace: "📁" }
+  - { trigger: ":heart", replace: "❤️" }
+  - { trigger: ":iron", replace: "♨️" }
+  - { trigger: ":laptop", replace: "💻" }
+  - { trigger: ":log", replace: "📝" }
+  - { trigger: ":milk", replace: "🥛" }
+  - { trigger: ":muscle", replace: "💪" }
+  - { trigger: ":phone", replace: "☎️" }
+  - { trigger: ":pill", replace: "💊" }
+  - { trigger: ":read", replace: "📖" }
+  - { trigger: ":shake", replace: "🥛" }
+  - { trigger: ":shirt", replace: "👕" }
+  - { trigger: ":shop", replace: "🛍️" }
+  - { trigger: ":shower", replace: "🚿" }
+  - { trigger: ":soap", replace: "🧼" }
+  - { trigger: ":steam", replace: "♨️" }
+  - { trigger: ":talk", replace: "💬" }
+  - { trigger: ":tea", replace: "🍵" }
+  - { trigger: ":tp", replace: "🧻" }
+  - { trigger: ":train", replace: "🚄" }
+  - { trigger: ":tram", replace: "🚊" }
+  - { trigger: ":trash", replace: "🗑️" }
+  - { trigger: ":walk", replace: "🚶‍♂️" }
+  - { trigger: ":wash", replace: "💦" }
+  - { trigger: ":water", replace: "💧" }
+  - { trigger: ":wolf", replace: "🐺" }
+  - { trigger: ":write", replace: "✍️" }
