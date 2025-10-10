@@ -3,6 +3,8 @@ import sys
 from pathlib import Path
 
 DOTFILES = [
+    ".config/espanso/config/default.yml",
+    ".config/espanso/match/base.yml",
     ".config/ghostty/config",
     ".config/zed/settings.json",
     ".emacs.d/init.el",
@@ -19,6 +21,7 @@ DOTFILES = [
 
 REPO_DIR = Path(__file__).parent.resolve()
 HOME_DIR = Path.home()
+
 
 def apply():
     for file in DOTFILES:
@@ -38,9 +41,11 @@ def clean():
             dst.unlink()
             print(f"✓ {file}")
 
+
 def usage():
     print("Usage: ./dotfiles.py <apply|clean>")
     sys.exit(1)
+
 
 def main():
     if len(sys.argv) != 2:
@@ -52,6 +57,7 @@ def main():
         clean()
     else:
         usage()
+
 
 if __name__ == "__main__":
     main()
