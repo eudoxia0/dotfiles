@@ -78,6 +78,11 @@ def main():
         entry = f'{{ on = 1; replace = "{replace}"; with = "{encoded}"; }}'
         cmd.append(entry)
     _ = subprocess.run(cmd, check=True)
+    _ = subprocess.run(
+        ["killall", "-9", "TextInputMenuAgent"],
+        stderr=subprocess.DEVNULL,
+        check=True,
+    )
 
 
 if __name__ == "__main__":
