@@ -15,7 +15,7 @@ pattern = re.compile(
 )
 
 
-def convert_filename(filename):
+def convert_filename(filename: str):
     match = pattern.match(filename)
     if match:
         date, hour, minute, second, meridiem = match.groups()
