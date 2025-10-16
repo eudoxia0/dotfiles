@@ -23,6 +23,7 @@ matches:
   - { trigger: ":blush", replace: "😊" }
   - { trigger: ":books", replace: "📚" }
   - { trigger: ":box", replace: "📦" }
+  - { trigger: ":brush", replace: "🪥" }
   - { trigger: ":cal", replace: "📆" }
   - { trigger: ":cart", replace: "🛒" }
   - { trigger: ":chore", replace: "🔧" }
