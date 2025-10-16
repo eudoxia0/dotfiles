@@ -56,6 +56,7 @@ matches:
   - { trigger: ":steam", replace: "♨️" }
   - { trigger: ":talk", replace: "💬" }
   - { trigger: ":tea", replace: "🍵" }
+  - { trigger: ":tooth", replace: "🦷" }
   - { trigger: ":tp", replace: "🧻" }
   - { trigger: ":train", replace: "🚄" }
   - { trigger: ":tram", replace: "🚊" }
