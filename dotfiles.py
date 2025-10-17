@@ -13,6 +13,7 @@ DOTFILES = [
     ".local/bin/backup.sh",
     ".local/bin/canonicalize-screenshots.py",
     ".local/bin/decrypt.sh",
+    ".local/bin/disktemp.py",
     ".local/bin/encrypt.sh",
     ".local/bin/probe-port.sh",
     ".local/bin/timestamp.py",
