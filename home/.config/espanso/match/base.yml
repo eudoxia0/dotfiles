@@ -8,7 +8,7 @@ matches:
       - name: mydate
         type: date
         params:
-          format: "%m/%d/%Y"
+          format: "%Y-%m-%d"
 
   # Emojis
   - { trigger: ":admin", replace: "📝" }
