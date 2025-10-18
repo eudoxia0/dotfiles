@@ -54,6 +54,7 @@ matches:
   - { trigger: ":shirt", replace: "👕" }
   - { trigger: ":shop", replace: "🛍️" }
   - { trigger: ":shower", replace: "🚿" }
+  - { trigger: ":sleep", replace: "😪" }
   - { trigger: ":soap", replace: "🧼" }
   - { trigger: ":steam", replace: "♨️" }
   - { trigger: ":talk", replace: "💬" }
