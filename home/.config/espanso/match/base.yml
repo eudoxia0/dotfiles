@@ -16,6 +16,7 @@ matches:
   - { trigger: ":art", replace: "🎨" }
   - { trigger: ":ask", replace: "💬" }
   - { trigger: ":basket", replace: "🧺" }
+  - { trigger: ":battery", replace: "🔋" }
   - { trigger: ":bed", replace: "🛏️" }
   - { trigger: ":bento", replace: "🍱" }
   - { trigger: ":bird", replace: "🐦" }
@@ -26,6 +27,7 @@ matches:
   - { trigger: ":brush", replace: "🪥" }
   - { trigger: ":cal", replace: "📆" }
   - { trigger: ":cart", replace: "🛒" }
+  - { trigger: ":charge", replace: "🔋" }
   - { trigger: ":chore", replace: "🔧" }
   - { trigger: ":coffee", replace: "☕" }
   - { trigger: ":cook", replace: "🍳" }
