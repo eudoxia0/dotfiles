@@ -43,6 +43,7 @@ matches:
   - { trigger: ":iron", replace: "♨️" }
   - { trigger: ":laptop", replace: "💻" }
   - { trigger: ":log", replace: "📝" }
+  - { trigger: ":mag", replace: "🔍" }
   - { trigger: ":milk", replace: "🥛" }
   - { trigger: ":muscle", replace: "💪" }
   - { trigger: ":phone", replace: "☎️" }
