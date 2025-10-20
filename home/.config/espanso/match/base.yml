@@ -59,6 +59,7 @@ matches:
   - { trigger: ":sleep", replace: "😪" }
   - { trigger: ":soap", replace: "🧼" }
   - { trigger: ":steam", replace: "♨️" }
+  - { trigger: ":tag", replace: "🔖" }
   - { trigger: ":talk", replace: "💬" }
   - { trigger: ":tea", replace: "🍵" }
   - { trigger: ":tooth", replace: "🦷" }
