@@ -163,7 +163,23 @@
 ;;;; Mode: Treemacs
 ;;;;
 
+;; Command-B to toggle Treemacs.
 (global-set-key (kbd "s-b") 'treemacs)
+
+;; Disable persistence file
+(setq treemacs-persist-file nil)
+
+;; Workspace projects.
+(defvar eudoxia-treemacs-workspace
+  '(("~/dotfiles" "dotfiles")
+    ("/Volumes/Asterion/Root/Flashcards" "flashcards")
+    ("/Volumes/Asterion/Root/1 Workspace/eudoxia0.github.io" "eudoxia0.github.io")
+    ("/Volumes/Asterion/Root/1 Workspace/hashcards" "hashcards")))
+
+;; Add projects to Treemacs workspace.
+(with-eval-after-load 'treemacs
+  (dolist (p eudoxia-treemacs-workspace)
+    (treemacs-add-project-to-workspace (car p) (cadr p))))
 
 ;; Turn on Treemacs by default.
 (treemacs)

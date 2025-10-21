@@ -7,7 +7,6 @@ DOTFILES = [
     ".config/espanso/match/base.yml",
     ".config/ghostty/config",
     ".config/zed/settings.json",
-    ".emacs.d/.cache/treemacs-persist",
     ".emacs.d/init.el",
     ".gitconfig",
     ".global-gitignore",
