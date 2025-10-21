@@ -3,6 +3,7 @@ import sys
 from pathlib import Path
 
 DOTFILES = [
+    ".aerospace.toml",
     ".config/espanso/config/default.yml",
     ".config/espanso/match/base.yml",
     ".config/ghostty/config",
