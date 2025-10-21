@@ -163,7 +163,7 @@
 ;;;; Mode: Treemacs
 ;;;;
 
-(global-set-key (kbd "<f8>") 'treemacs)
+(global-set-key (kbd "s-b") 'treemacs)
 
 ;;;;
 ;;;; UI
