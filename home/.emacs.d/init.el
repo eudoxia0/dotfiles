@@ -22,6 +22,7 @@
     magit
     nix-mode
     rust-mode
+    toml-mode
     unfill
     yaml-mode
     sly))
