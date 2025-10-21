@@ -12,29 +12,20 @@ automatically-unhide-macos-hidden-apps = true
     preset = 'qwerty'
 
 [gaps]
-    inner.horizontal = 25
-    inner.vertical =   25
+    inner.horizontal = 100
+    inner.vertical =   100
 
-    outer.left =       25
-    outer.bottom =     25
-    outer.top =        25
-    outer.right =      25
+    outer.left =       100
+    outer.bottom =     100
+    outer.top =        100
+    outer.right =      100
 
 [mode.main.binding]
-    alt-slash = 'layout tiles horizontal vertical'
-    alt-comma = 'layout accordion horizontal vertical'
-    alt-h = 'focus left'
-    alt-j = 'focus down'
-    alt-k = 'focus up'
-    alt-l = 'focus right'
+    cmd-ctrl-slash = 'layout tiles horizontal vertical'
+    cmd-ctrl-comma = 'layout accordion horizontal vertical'
 
-    alt-shift-h = 'move left'
-    alt-shift-j = 'move down'
-    alt-shift-k = 'move up'
-    alt-shift-l = 'move right'
-
-    alt-minus = 'resize smart -50'
-    alt-equal = 'resize smart +50'
+    cmd-ctrl-minus = 'resize smart -50'
+    cmd-ctrl-equal = 'resize smart +50'
 
     alt-1 = 'workspace todo'
     alt-2 = 'workspace www'
@@ -45,3 +36,13 @@ automatically-unhide-macos-hidden-apps = true
     alt-shift-2 = 'move-node-to-workspace www'
     alt-shift-3 = 'move-node-to-workspace term'
     alt-shift-4 = 'move-node-to-workspace edit'
+
+    cmd-ctrl-r = 'reload-config'
+
+    cmd-ctrl-c = 'exec-and-forget open -a Calendar'
+    cmd-ctrl-e = 'exec-and-forget open -a Zed'
+    cmd-ctrl-f = 'exec-and-forget open -a Finder'
+    cmd-ctrl-g = 'exec-and-forget open -a Ghostty'
+    cmd-ctrl-o = 'exec-and-forget open -a Obsidian'
+    cmd-ctrl-t = 'exec-and-forget open -a Todoist'
+    cmd-ctrl-w = 'exec-and-forget open -a Firefox'
