@@ -165,6 +165,9 @@
 
 (global-set-key (kbd "s-b") 'treemacs)
 
+;; Turn on Treemacs by default.
+(treemacs)
+
 ;;;;
 ;;;; UI
 ;;;;

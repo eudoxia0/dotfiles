@@ -23,6 +23,9 @@
   "ui_font_family": "Inconsolata",
   "ui_font_size": 16,
   "languages": {
+    "Elisp": {
+      "show_edit_predictions": true
+    },
     "Make": {
       "show_edit_predictions": true
     },
