@@ -85,3 +85,8 @@ matches:
   - { trigger: "^7", replace: "⁷" }
   - { trigger: "^8", replace: "⁸" }
   - { trigger: "^9", replace: "⁹" }
+
+  - { trigger: ":lq", replace: "‘" }
+  - { trigger: ":rq", replace: "’" }
+  - { trigger: ":ldq", replace: "“" }
+  - { trigger: ":rdq", replace: "”" }
