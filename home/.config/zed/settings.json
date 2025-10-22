@@ -22,6 +22,9 @@
   "ui_font_family": ".ZedMono",
   "ui_font_size": 14,
   "languages": {
+    "LaTeX": {
+      "show_edit_predictions": true
+    },
     "Elisp": {
       "show_edit_predictions": true
     },
