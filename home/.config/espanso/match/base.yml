@@ -86,7 +86,7 @@ matches:
   - { trigger: "^8", replace: "⁸" }
   - { trigger: "^9", replace: "⁹" }
 
-  - { trigger: ":lq", replace: "‘" }
-  - { trigger: ":rq", replace: "’" }
-  - { trigger: ":ldq", replace: "“" }
-  - { trigger: ":rdq", replace: "”" }
+  - { trigger: "`lq", replace: "‘" }
+  - { trigger: "`rq", replace: "’" }
+  - { trigger: "`ldq", replace: "“" }
+  - { trigger: "`rdq", replace: "”" }
