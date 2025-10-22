@@ -73,3 +73,15 @@ matches:
   - { trigger: ":water", replace: "💧" }
   - { trigger: ":wolf", replace: "🐺" }
   - { trigger: ":write", replace: "✍️" }
+
+  # Typography
+  - { trigger: "^0", replace: "⁰" }
+  - { trigger: "^1", replace: "¹" }
+  - { trigger: "^2", replace: "²" }
+  - { trigger: "^3", replace: "³" }
+  - { trigger: "^4", replace: "⁴" }
+  - { trigger: "^5", replace: "⁵" }
+  - { trigger: "^6", replace: "⁶" }
+  - { trigger: "^7", replace: "⁷" }
+  - { trigger: "^8", replace: "⁸" }
+  - { trigger: "^9", replace: "⁹" }
