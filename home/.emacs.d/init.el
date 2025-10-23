@@ -15,17 +15,17 @@
   (package-refresh-contents))
 
 (defvar eudoxia-package-list
-  '(olivetti
+  '(magit
     markdown-mode
-    treemacs
-    magit
+    nano-theme
     nix-mode
     rust-mode
+    sly
     toml-mode
-    nano-theme
+    treemacs
     unfill
     yaml-mode
-    sly))
+    olivetti))
 
 (dolist (package eudoxia-package-list)
   (unless (package-installed-p package)
