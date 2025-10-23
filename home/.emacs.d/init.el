@@ -16,7 +16,6 @@
 
 (defvar eudoxia-package-list
   '(olivetti
-    aircon-theme
     markdown-mode
     treemacs
     magit
