@@ -9,6 +9,9 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
+# rbenv
+eval "$(rbenv init - --no-rehash zsh)"
+
 # PATH
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/sbin:/sbin"
