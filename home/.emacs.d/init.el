@@ -180,7 +180,8 @@
 ;; Add projects to Treemacs workspace.
 (with-eval-after-load 'treemacs
   (dolist (p eudoxia-treemacs-workspace)
-    (treemacs-add-project-to-workspace (car p) (cadr p))))
+    (treemacs-add-project-to-workspace (car p) (cadr p)))
+  (treemacs-resize-icons 20))
 
 ;; Turn on Treemacs by default.
 (treemacs)
