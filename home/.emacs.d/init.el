@@ -23,6 +23,7 @@
     nix-mode
     rust-mode
     toml-mode
+    nano-theme
     unfill
     yaml-mode
     sly))
