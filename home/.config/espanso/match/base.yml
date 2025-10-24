@@ -74,3 +74,4 @@ matches:
   - { trigger: ":water", replace: "💧" }
   - { trigger: ":wolf", replace: "🐺" }
   - { trigger: ":write", replace: "✍️" }
+  - { trigger: ":zzz", replace: "💤" }
