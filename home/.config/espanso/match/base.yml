@@ -38,6 +38,7 @@ matches:
   - { trigger: ":dry", replace: "💨" }
   - { trigger: ":env", replace: "✉️" }
   - { trigger: ":feat", replace: "🌿" }
+  - { trigger: ":fence", replace: "🚧" }
   - { trigger: ":film", replace: "🎬" }
   - { trigger: ":folder", replace: "📁" }
   - { trigger: ":heart", replace: "❤️" }
