@@ -22,6 +22,9 @@ matches:
   - { trigger: ":bird", replace: "🐦" }
   - { trigger: ":block", replace: "💹" }
   - { trigger: ":blush", replace: "😊" }
+  - { trigger: ":bookblue", replace: "📘" }
+  - { trigger: ":bookgreen", replace: "📗" }
+  - { trigger: ":bookred", replace: "📕" }
   - { trigger: ":books", replace: "📚" }
   - { trigger: ":box", replace: "📦" }
   - { trigger: ":brush", replace: "🪥" }
