@@ -35,6 +35,7 @@ matches:
   - { trigger: ":coffee", replace: "☕" }
   - { trigger: ":cook", replace: "🍳" }
   - { trigger: ":dash", replace: "💨" }
+  - { trigger: ":desktop", replace: "🖥️" }
   - { trigger: ":disc", replace: "💿" }
   - { trigger: ":down", replace: "⬇️" }
   - { trigger: ":drop", replace: "💧" }
@@ -50,7 +51,9 @@ matches:
   - { trigger: ":log", replace: "📝" }
   - { trigger: ":mag", replace: "🔍" }
   - { trigger: ":milk", replace: "🥛" }
+  - { trigger: ":monitor", replace: "🖥️" }
   - { trigger: ":muscle", replace: "💪" }
+  - { trigger: ":orange", replace: "🍊" }
   - { trigger: ":phone", replace: "☎️" }
   - { trigger: ":pill", replace: "💊" }
   - { trigger: ":razor", replace: "🪒" }
