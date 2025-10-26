@@ -256,3 +256,5 @@ HEIGHT are subtracted."
  "gnew 5"
  "gselect 1"
  "toggle-gaps-on")
+
+(run-shell-command "polybar")
