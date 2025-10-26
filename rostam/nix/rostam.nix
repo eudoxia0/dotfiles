@@ -90,34 +90,34 @@ in
 
   # packages
   environment.systemPackages = with pkgs; [
+    age
     alacritty
     arandr
+    calibre
     chromium
     curl
     emacs-gtk
-    age
-    imagemagick
-    signal-desktop
-    calibre
+    feh
+    flowtime
     foot
+    gimp3
     git
     grim # screenshot functionality
+    ideogram
+    imagemagick
+    libreoffice
     mako # notification system developed by swaywm maintainer
     mate.caja
+    neofetch
     pciutils # lspci
-    polybar
     pcmanfm
+    polybar
     rox-filer
-    feh
+    signal-desktop
     slurp # screenshot functionality
     todoist-electron
-    libreoffice
-    neofetch
     usbutils # lsusb
-    ideogram
-    gimp3
     vim
-    flowtime
     wdisplays
     wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
     xfce.thunar
