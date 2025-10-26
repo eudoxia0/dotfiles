@@ -34,7 +34,7 @@
 (defkey "s-n" "pull-hidden-next")
 (defkey "s-p" "pull-hidden-previous")
 (defkey "s-r" "exec")
-(defkey "s-q" "kill")
+(defkey "s-q" "delete-window")
 (defkey "C-s-w" "exec firefox")
 (defkey "C-s-e" "exec emacs")
 (defkey "C-s-f" "exec caja")
