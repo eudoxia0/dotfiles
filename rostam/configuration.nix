@@ -190,7 +190,7 @@ in
   # END CUSTOM
 
   # HOME MANAGER
-  home-manager.users.eve = { pkgs, ... }: {
+  home-manager.users.eudoxia = { pkgs, ... }: {
     home.packages = [ ];
     programs.bash.enable = true;
 
