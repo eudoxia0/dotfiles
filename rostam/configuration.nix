@@ -192,12 +192,16 @@ in
   # HOME MANAGER
   home-manager.users.eudoxia = { pkgs, ... }: {
     nixpkgs.config.allowUnfree = true;
-    home.packages = [ ];
-    programs.bash.enable = true;
 
-    # The state version is required and should stay at the version you
-    # originally installed.
-    home.stateVersion = "25.05";
+    home = {
+      stateVersion = "25.05"; # DO NOT CHANGE
+      shellAliases = {
+        gs = "git status";
+        gcam = "git commit -a -m";
+      };
+    };
+
+    programs.bash.enable = true;
 
     programs.git = {
       enable = true;
