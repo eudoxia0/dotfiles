@@ -203,8 +203,9 @@ in
       enable = true;
       extraConfig = {
         user = {
-          "name" = "Fernando Borretti";
-          "email" = "fernando@borretti.me";
+          name = "Fernando Borretti";
+          email = "fernando@borretti.me";
+          signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINWGraQs2xjwtUVuOB/CtNJPjWKtbFpkh3EvANIR9Ld1";
         };
         color = {
           ui = "auto";
@@ -217,9 +218,6 @@ in
         };
         commit = {
           gpgsign = true;
-        };
-        user = {
-          signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINWGraQs2xjwtUVuOB/CtNJPjWKtbFpkh3EvANIR9Ld1";
         };
       };
     };
