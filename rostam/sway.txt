@@ -1,81 +1,27 @@
-# Logo key. Use Mod1 for Alt.
+# variables
 set $mod Mod4
-# Home row direction keys, like vim
 set $left h
 set $down j
 set $up k
 set $right l
-# Your preferred terminal emulator
 set $term foot
-# Your preferred application launcher
-set $menu wmenu-run
+set $launcher wmenu-run
 
-### Output configuration
-#
-# Default wallpaper (more resolutions are available in /run/current-system/sw/share/backgrounds/sway/)
+# wallpaper
 output * bg /run/current-system/sw/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-#
-# Example configuration:
-#
-output HDMI-A-1 resolution 3200x1800
-#
-# You can get the names of your outputs by running: swaymsg -t get_outputs
 
-### Idle configuration
-#
-# Example configuration:
-#
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
+# gaps
+gaps inner 10
+gaps outer 20
 
-### Input configuration
-#
-# Example configuration:
-#
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
-#
-# You can get the names of your inputs by running: swaymsg -t get_inputs
-# Read `man 5 sway-input` for more information about this section.
+# keybindings
+bindsym $mod+Return exec $term
+bindsym $mod+q kill
+bindsym $mod+r exec $launcher
+floating_modifier $mod normal
+bindsym $mod+Shift+r reload
+bindsym $mod+Shift+q exec swaymsg exit
 
-### Key bindings
-#
-# Basics:
-#
-    # Start a terminal
-    bindsym $mod+Return exec $term
-
-    # Kill focused window
-    bindsym $mod+q kill
-
-    # Start your launcher
-    bindsym $mod+r exec $menu
-
-    # Drag floating windows by holding down $mod and left mouse button.
-    # Resize them with right mouse button + $mod.
-    # Despite the name, also works for non-floating windows.
-    # Change normal to inverse to use left mouse button for resizing and right
-    # mouse button for dragging.
-    floating_modifier $mod normal
-
-    # Reload the configuration file
-    bindsym $mod+Shift+r reload
-
-    # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+q exec swaymsg exit
-#
-# Moving around:
-#
     # Move your focus around
     bindsym $mod+$left focus left
     bindsym $mod+$down focus down

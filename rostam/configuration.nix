@@ -9,7 +9,6 @@ in
       (import "${home-manager}/nixos")
     ];
 
-  # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -123,9 +122,6 @@ in
 
 
   services.xserver.enable = true;
-  # services.xserver.displayManager.sessionCommands = ''
-  #   xrandr --output HDMI-1 --mode 2560x1440
-  # '';
 
   programs.ssh = {
     extraConfig = ''
