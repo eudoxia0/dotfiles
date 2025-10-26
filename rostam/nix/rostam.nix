@@ -107,6 +107,7 @@ in
     libreoffice
     neofetch
     usbutils # lsusb
+    ideogram
     gimp3
     vim
     flowtime
