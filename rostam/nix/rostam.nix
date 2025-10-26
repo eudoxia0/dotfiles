@@ -89,7 +89,6 @@ in
     foot
     git
     grim # screenshot functionality
-    lxrandr
     mako # notification system developed by swaywm maintainer
     mate.caja
     nemo
