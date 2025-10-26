@@ -92,6 +92,11 @@ in
     slurp # screenshot functionality
     spaceFM
     todoist-electron
+    neofetch
+    screenfetch
+    afetch
+    hayabusa
+    bunnyfetch
     usbutils # lsusb
     vim
     wdisplays
