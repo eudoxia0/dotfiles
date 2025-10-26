@@ -23,6 +23,7 @@
   "ui_font_size": 14,
   "languages": {
     "LaTeX": {
+      "tab_size": 2,
       "show_edit_predictions": true
     },
     "Elisp": {
