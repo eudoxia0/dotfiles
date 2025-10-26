@@ -54,6 +54,10 @@
 (defprefixkey "Down" "move-focus down")
 (defprefixkey "Left" "move-focus left")
 (defprefixkey "Right" "move-focus right")
+(defprefixkey "M-Up" "move-window up")
+(defprefixkey "M-Down" "move-window down")
+(defprefixkey "M-Left" "move-window left")
+(defprefixkey "M-Right" "move-window right")
 (defprefixkey "w" "windows")
 (defprefixkey "m" "mode-line")
 
