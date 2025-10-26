@@ -78,7 +78,7 @@ in
     chromium
     cosmic-files
     curl
-    emacs
+    emacs-pgtk
     foot
     ghostty
     git
