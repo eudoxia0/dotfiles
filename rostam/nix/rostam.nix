@@ -12,6 +12,7 @@ in
   system.stateVersion = "25.05"; # DO NOT CHANGE
   nixpkgs.config.allowUnfree = true;
 
+  # basic config
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
@@ -33,6 +34,8 @@ in
     LC_TELEPHONE = "en_US.UTF-8";
     LC_TIME = "en_US.UTF-8";
   };
+
+  powerManagement.cpuFreqGovernor = "performance";
 
   # users
   users.users.eudoxia = {
@@ -65,7 +68,7 @@ in
     variant = "";
   };
 
-  # programs  
+  # programs
   programs.firefox.enable = true;
   programs.sway = {
     enable = true;
@@ -116,10 +119,6 @@ in
     xfce.thunar
     zed-editor
   ];
-
-  # hardware config
-
-  powerManagement.cpuFreqGovernor = "performance";
 
   # home manager
   home-manager.users.eudoxia = { pkgs, ... }: {
