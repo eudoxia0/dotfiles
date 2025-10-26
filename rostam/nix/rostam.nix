@@ -96,6 +96,7 @@ in
     curl
     emacs-gtk
     age
+    calibre
     foot
     git
     grim # screenshot functionality
