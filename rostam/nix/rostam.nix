@@ -103,6 +103,7 @@ in
     slurp # screenshot functionality
     spaceFM
     todoist-electron
+    libreoffice
     neofetch
     usbutils # lsusb
     vim
