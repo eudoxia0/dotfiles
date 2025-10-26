@@ -26,13 +26,11 @@
 (defkey "s-3" "gselect 3")
 (defkey "s-4" "gselect 4")
 (defkey "s-5" "gselect 5")
-(defkey "s-6" "gselect 6")
 (defkey "s-!" "gmove 1")
 (defkey "s-@" "gselect 2")
 (defkey "s-#" "gselect 3")
 (defkey "s-$" "gselect 4")
 (defkey "s-%" "gselect 5")
-(defkey "s-^" "gselect 6")
 (defkey "s-n" "pull-hidden-next")
 (defkey "s-p" "pull-hidden-previous")
 (defkey "s-r" "exec")
@@ -256,7 +254,6 @@ HEIGHT are subtracted."
  "gnew 3"
  "gnew 4"
  "gnew 5"
- "gnew 6"
  "gselect 1"
  "mode-line"
  "toggle-gaps-on")
