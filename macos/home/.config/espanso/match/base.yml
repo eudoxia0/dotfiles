@@ -78,6 +78,7 @@ matches:
   - { trigger: ":train", replace: "🚄" }
   - { trigger: ":tram", replace: "🚊" }
   - { trigger: ":trash", replace: "🗑️" }
+  - { trigger: ":veg", replace: "🥗" }
   - { trigger: ":wait", replace: "⏳" }
   - { trigger: ":walk", replace: "🚶‍♂️" }
   - { trigger: ":wash", replace: "💦" }
