@@ -60,9 +60,11 @@ in
   services.displayManager.ly.enable = true;
   services.displayManager.ly.settings = {
     animation = "doom";
+    doom_fire_height = 8;
+    doom_fire_spread = 4;
     default_input = "password";
     clear_password = true;
-    bigclock = true;
+    bigclock = "en";
   };
   services.xserver.enable = true;
   services.xserver.windowManager.stumpwm.enable = true;
