@@ -84,7 +84,6 @@ in
     alacritty
     arandr
     chromium
-    cosmic-files
     curl
     emacs-gtk
     foot
