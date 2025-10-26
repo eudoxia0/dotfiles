@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-sudo nixos-rebuild switch -I nixos-config=rostam.nix
+sudo nixos-rebuild switch -I nixos-config=nix/rostam.nix
