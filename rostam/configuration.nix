@@ -129,6 +129,8 @@ in
   };
 
   # END CUSTOM
+    
+  powerManagement.cpuFreqGovernor = "performance";
 
   # HOME MANAGER
   home-manager.users.eudoxia = { pkgs, ... }: {
