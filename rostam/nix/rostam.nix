@@ -109,6 +109,7 @@ in
     usbutils # lsusb
     gimp3
     vim
+    flowtime
     wdisplays
     wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
     xfce.thunar
