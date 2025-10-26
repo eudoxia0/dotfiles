@@ -78,6 +78,7 @@ matches:
   - { trigger: ":walk", replace: "🚶‍♂️" }
   - { trigger: ":wash", replace: "💦" }
   - { trigger: ":water", replace: "💧" }
+  - { trigger: ":wave", replace: "🌊" }
   - { trigger: ":wolf", replace: "🐺" }
   - { trigger: ":write", replace: "✍️" }
   - { trigger: ":zzz", replace: "💤" }
