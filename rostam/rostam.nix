@@ -5,7 +5,7 @@ let
 in
 {
   imports =
-    [ ./hardware-configuration.nix
+    [ ./hw.nix
       (import "${home-manager}/nixos")
     ];
 
@@ -79,7 +79,7 @@ in
         '';
   };
 
-  # environment
+  # packages
   environment.systemPackages = with pkgs; [
     alacritty
     arandr
