@@ -8,7 +8,7 @@ set $term foot
 set $launcher wmenu-run
 
 # wallpaper
-output * bg /run/current-system/sw/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /home/eudoxia/.local/share/panther.jpg fill
 
 # gaps
 gaps inner 10
