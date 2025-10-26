@@ -134,6 +134,7 @@ in
         ".stumpwmrc".source = ../config/stumpwmrc.lisp;
         ".config/sway/config".source = ../config/sway.txt;
         ".config/polybar/config.ini".source = ../config/polybar.ini;
+        ".local/share/panther.jpg".source = ../panther.jpg;
       };
     };
 

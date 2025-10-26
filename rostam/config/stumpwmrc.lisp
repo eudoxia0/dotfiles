@@ -263,4 +263,4 @@ HEIGHT are subtracted."
 
 (run-shell-command "polybar")
 
-(run-shell-command "feh --bg-fill ~/dotfiles/rostam/panther.jpg")
+(run-shell-command "feh --bg-fill ~/.local/share/panther.jpg")
