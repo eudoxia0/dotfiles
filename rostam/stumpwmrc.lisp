@@ -255,5 +255,4 @@ HEIGHT are subtracted."
  "gnew 4"
  "gnew 5"
  "gselect 1"
- "mode-line"
  "toggle-gaps-on")
