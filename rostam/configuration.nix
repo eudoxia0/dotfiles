@@ -153,6 +153,7 @@ in
       file = {
         ".stumpwmrc".source = ./stumpwmrc.lisp;
         ".config/sway/config".source = ./sway.txt;
+        ".config/polybar/config.ini".source = ./polybar.ini;
       };
     };
 
