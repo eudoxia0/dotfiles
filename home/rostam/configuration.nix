@@ -150,7 +150,7 @@
     arandr
     kitty
     alacritty
-    zed
+    zed-editor
     wdisplays
     pciutils # lspci
     usbutils # lsusb
@@ -160,7 +160,7 @@
     enable = true;
     wrapperFeatures.gtk = true;
   };
- 
+
   programs._1password.enable = true;
   programs._1password-gui = {
     enable = true;
@@ -175,7 +175,7 @@
     NIXOS_OZONE_WL = "1";
   };
 
-  
+
   services.xserver.enable = true;
   # services.xserver.displayManager.sessionCommands = ''
   #   xrandr --output HDMI-1 --mode 2560x1440
@@ -187,6 +187,6 @@
           IdentityAgent ~/.1password/agent.sock
     '';
   };
-  
+
   # END CUSTOM
 }
