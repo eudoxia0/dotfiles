@@ -101,7 +101,6 @@ in
     pcmanfm
     rox-filer
     slurp # screenshot functionality
-    spaceFM
     todoist-electron
     libreoffice
     neofetch
