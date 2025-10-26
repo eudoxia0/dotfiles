@@ -153,6 +153,10 @@ in
         gu = "git push -u origin HEAD";
         ls = "ls -1 --color";
       };
+      file = {
+        ".stumpwmrc".source = ./stumpwmrc.lisp;
+        ".config/sway/config".source = ./sway.txt;
+      };
     };
 
     programs.bash.enable = true;
