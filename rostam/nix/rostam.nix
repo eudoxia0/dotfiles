@@ -146,10 +146,11 @@ in
         ls = "ls -1 --color";
       };
       file = {
-        ".stumpwmrc".source = ../config/stumpwmrc.lisp;
-        ".config/sway/config".source = ../config/sway.txt;
         ".config/polybar/config.ini".source = ../config/polybar.ini;
+        ".config/sway/config".source = ../config/sway.txt;
+        ".emacs.d/init.el".source = ../config/init.el;
         ".local/share/panther.jpg".source = ../panther.jpg;
+        ".stumpwmrc".source = ../config/stumpwmrc.lisp;
       };
     };
 
