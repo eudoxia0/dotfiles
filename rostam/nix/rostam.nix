@@ -96,6 +96,7 @@ in
     curl
     emacs-gtk
     age
+    imagemagick
     calibre
     foot
     git
