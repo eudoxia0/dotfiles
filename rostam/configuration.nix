@@ -86,6 +86,7 @@ in
     mate.caja
     nemo
     pciutils # lspci
+    polybar
     pcmanfm
     rox-filer
     slurp # screenshot functionality
