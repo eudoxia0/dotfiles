@@ -28,6 +28,7 @@ matches:
   - { trigger: ":books", replace: "📚" }
   - { trigger: ":box", replace: "📦" }
   - { trigger: ":brush", replace: "🪥" }
+  - { trigger: ":bug", replace: "🐞" }
   - { trigger: ":cal", replace: "📆" }
   - { trigger: ":cart", replace: "🛒" }
   - { trigger: ":charge", replace: "🔋" }
