@@ -95,6 +95,7 @@ in
     chromium
     curl
     emacs-gtk
+    age
     foot
     git
     grim # screenshot functionality
