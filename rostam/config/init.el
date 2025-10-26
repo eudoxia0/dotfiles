@@ -24,3 +24,15 @@
 
 ;; Line numbers everywhere.
 (global-display-line-numbers-mode 1)
+
+;; Default fonts.
+(set-frame-font "Fira Code-15" nil t)
+
+;; No tool bar.
+(tool-bar-mode -1)
+
+;; No menu bar.
+(menu-bar-mode -1)
+
+;; Do not discretize the window size. Permits smooth resizing.
+(setq frame-resize-pixelwise t)
