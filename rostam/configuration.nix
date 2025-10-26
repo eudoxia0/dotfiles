@@ -68,7 +68,6 @@ in
   networking.hostName = "rostam";
   nixpkgs.config.allowUnfree = true;
   services.displayManager.ly.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
   services.xserver.windowManager.stumpwm.enable = true;
   environment.systemPackages = with pkgs; [
     alacritty
