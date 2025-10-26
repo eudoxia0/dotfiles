@@ -52,6 +52,10 @@ in
     pulse.enable = true;
   };
   services.displayManager.ly.enable = true;
+  services.displayManager.ly.settings = {
+    animation = "doom";
+    #blank_password = "true";
+  };
   services.xserver.enable = true;
   services.xserver.windowManager.stumpwm.enable = true;
   services.xserver.xkb = {
@@ -110,6 +114,8 @@ in
     xfce.thunar
     zed-editor
   ];
+
+  # hardware config
 
   powerManagement.cpuFreqGovernor = "performance";
 
