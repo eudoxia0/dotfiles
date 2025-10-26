@@ -54,8 +54,6 @@ in
   services.displayManager.ly.enable = true;
   services.displayManager.ly.settings = {
     animation = "doom";
-    bigclock = "farsi";
-    clear_password = "true";
     default_input = "password";
   };
   services.xserver.enable = true;
