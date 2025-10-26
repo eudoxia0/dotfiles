@@ -156,9 +156,9 @@ in
         ls = "ls -1 --color";
       };
       file = {
-        ".stumpwmrc".source = ./stumpwmrc.lisp;
-        ".config/sway/config".source = ./sway.txt;
-        ".config/polybar/config.ini".source = ./polybar.ini;
+        ".stumpwmrc".source = ./config/stumpwmrc.lisp;
+        ".config/sway/config".source = ./config/sway.txt;
+        ".config/polybar/config.ini".source = ./config/polybar.ini;
       };
     };
 
