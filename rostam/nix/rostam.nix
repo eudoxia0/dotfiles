@@ -87,7 +87,6 @@ in
     curl
     emacs-gtk
     foot
-    ghostty
     git
     grim # screenshot functionality
     kitty
