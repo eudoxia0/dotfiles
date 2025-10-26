@@ -124,7 +124,17 @@ in
     wdisplays
     wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
     xfce.thunar
+    font-manager
+    gnome-font-viewer
     zed-editor
+  ];
+
+  # fonts
+  fonts.packages = with pkgs; [
+    inconsolata
+    liberation_ttf
+    fira-code
+    jetbrains-mono
   ];
 
   # home manager
