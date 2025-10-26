@@ -91,7 +91,6 @@ in
     grim # screenshot functionality
     mako # notification system developed by swaywm maintainer
     mate.caja
-    nemo
     pciutils # lspci
     polybar
     pcmanfm
