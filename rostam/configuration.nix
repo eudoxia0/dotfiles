@@ -143,8 +143,15 @@ in
     home = {
       stateVersion = "25.05"; # DO NOT CHANGE
       shellAliases = {
-        gs = "git status";
+        cf = "cargo fmt";
+        ck = "cargo check";
+        gb = "git branch";
         gcam = "git commit -a -m";
+        gco = "git checkout";
+        gd = "git pull origin";
+        gs = "git status";
+        gu = "git push -u origin HEAD";
+        ls = "ls -1 --color";
       };
     };
 
@@ -169,6 +176,10 @@ in
         };
         commit = {
           gpgsign = true;
+        };
+        alias = {
+          undo = "reset --soft HEAD~1";
+          tree = "log --pretty='%Cgreen%h%Creset [%ai] %s %Cred<%Creset%an%Cred>' --decorate --graph";
         };
       };
     };
