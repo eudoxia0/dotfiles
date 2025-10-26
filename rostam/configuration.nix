@@ -191,11 +191,37 @@ in
 
   # HOME MANAGER
   home-manager.users.eudoxia = { pkgs, ... }: {
+    nixpkgs.config.allowUnfree = true;
     home.packages = [ ];
     programs.bash.enable = true;
 
     # The state version is required and should stay at the version you
     # originally installed.
     home.stateVersion = "25.05";
+
+    programs.git = {
+      enable = true;
+      extraConfig = {
+        user = {
+          "name" = "Fernando Borretti";
+          "email" = "fernando@borretti.me";
+        };
+        color = {
+          ui = "auto";
+        };
+        gpg = {
+          format = "ssh";
+        };
+        "gpg \"ssh\"" = {
+          program = "${lib.getExe' pkgs._1password-gui "op-ssh-sign"}";
+        };
+        commit = {
+          gpgsign = true;
+        };
+        user = {
+          signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINWGraQs2xjwtUVuOB/CtNJPjWKtbFpkh3EvANIR9Ld1";
+        };
+      };
+    };
   };
 }
