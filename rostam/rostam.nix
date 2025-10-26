@@ -93,10 +93,6 @@ in
     spaceFM
     todoist-electron
     neofetch
-    screenfetch
-    afetch
-    hayabusa
-    bunnyfetch
     usbutils # lsusb
     vim
     wdisplays
