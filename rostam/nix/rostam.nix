@@ -1,7 +1,10 @@
 { config, pkgs, lib, ... }:
 
 let
-  home-manager = builtins.fetchTarball https://github.com/nix-community/home-manager/archive/release-25.05.tar.gz;
+  home-manager = builtins.fetchTarball {
+    url = "https://github.com/nix-community/home-manager/archive/64020f453bdf3634bf88a6bbce7f3e56183c8b2b.tar.gz";
+    sha256 = "10g1br51g2d2d80k2z41nzz45rkdwaikmf0gppp6mpria6102w24";
+  };
 in
 {
   imports =
@@ -93,7 +96,6 @@ in
     age
     alacritty
     arandr
-    calibre
     chromium
     curl
     emacs-gtk
