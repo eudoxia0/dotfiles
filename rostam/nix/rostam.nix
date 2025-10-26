@@ -97,6 +97,7 @@ in
     emacs-gtk
     age
     imagemagick
+    signal-desktop
     calibre
     foot
     git
