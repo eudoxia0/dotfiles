@@ -107,7 +107,7 @@ in
     libreoffice
     neofetch
     usbutils # lsusb
-    gimp
+    gimp3
     vim
     wdisplays
     wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
