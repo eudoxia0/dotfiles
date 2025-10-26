@@ -45,6 +45,7 @@ matches:
   - { trigger: ":feat", replace: "🌿" }
   - { trigger: ":fence", replace: "🚧" }
   - { trigger: ":film", replace: "🎬" }
+  - { trigger: ":fish", replace: "🐟" }
   - { trigger: ":folder", replace: "📁" }
   - { trigger: ":heart", replace: "❤️" }
   - { trigger: ":iron", replace: "♨️" }
