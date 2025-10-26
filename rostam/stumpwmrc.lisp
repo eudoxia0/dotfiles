@@ -249,7 +249,7 @@ HEIGHT are subtracted."
 ;; start
 
 (stumpwm::run-commands
- "gnew 1"
+ "grename 1"
  "gnew 2"
  "gnew 3"
  "gnew 4"
