@@ -9,6 +9,9 @@ in
       (import "${home-manager}/nixos")
     ];
 
+  system.stateVersion = "25.05"; # DO NOT CHANGE
+  nixpkgs.config.allowUnfree = true;
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
@@ -31,13 +34,15 @@ in
     LC_TIME = "en_US.UTF-8";
   };
 
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
+  # users
+  users.users.eudoxia = {
+    isNormalUser = true;
+    description = "eudoxia";
+    extraGroups = [ "networkmanager" "wheel" ];
   };
 
+  # services
   services.printing.enable = true;
-
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -46,24 +51,35 @@ in
     alsa.support32Bit = true;
     pulse.enable = true;
   };
-
-  users.users.eudoxia = {
-    isNormalUser = true;
-    description = "eudoxia";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      #  thunderbird
-    ];
+  services.displayManager.ly.enable = true;
+  services.xserver.enable = true;
+  services.xserver.windowManager.stumpwm.enable = true;
+  services.xserver.xkb = {
+    layout = "us";
+    variant = "";
   };
 
+  # programs  
   programs.firefox.enable = true;
+  programs.sway = {
+    enable = true;
+    wrapperFeatures.gtk = true;
+  };
+  programs._1password.enable = true;
+  programs._1password-gui = {
+    enable = true;
+    # Certain features, including CLI integration and system authentication support,
+    # require enabling PolKit integration on some desktop environments (e.g. Plasma).
+    polkitPolicyOwners = [ "eudoxia" ];
+  };
+  programs.ssh = {
+    extraConfig = ''
+          Host *
+          IdentityAgent ~/.1password/agent.sock
+        '';
+  };
 
-  system.stateVersion = "25.05"; # DO NOT CHANGE
-
-  # CUSTOM
-  nixpkgs.config.allowUnfree = true;
-  services.displayManager.ly.enable = true;
-  services.xserver.windowManager.stumpwm.enable = true;
+  # environment
   environment.systemPackages = with pkgs; [
     alacritty
     arandr
@@ -96,33 +112,10 @@ in
     xfe
     zed-editor
   ];
-  programs.sway = {
-    enable = true;
-    wrapperFeatures.gtk = true;
-  };
-
-  programs._1password.enable = true;
-  programs._1password-gui = {
-    enable = true;
-    # Certain features, including CLI integration and system authentication support,
-    # require enabling PolKit integration on some desktop environments (e.g. Plasma).
-    polkitPolicyOwners = [ "eudoxia" ];
-  };
-
-  services.xserver.enable = true;
-
-  programs.ssh = {
-    extraConfig = ''
-          Host *
-          IdentityAgent ~/.1password/agent.sock
-        '';
-  };
-
-  # END CUSTOM
 
   powerManagement.cpuFreqGovernor = "performance";
 
-  # HOME MANAGER
+  # home manager
   home-manager.users.eudoxia = { pkgs, ... }: {
     nixpkgs.config.allowUnfree = true;
 
