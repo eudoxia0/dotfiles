@@ -95,6 +95,7 @@ in
     polybar
     pcmanfm
     rox-filer
+    feh
     slurp # screenshot functionality
     todoist-electron
     libreoffice
