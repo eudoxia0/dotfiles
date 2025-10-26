@@ -100,7 +100,6 @@ in
     arandr
     chromium
     curl
-    emacs-gtk
     feh
     flowtime
     foot
@@ -181,6 +180,24 @@ in
           tree = "log --pretty='%Cgreen%h%Creset [%ai] %s %Cred<%Creset%an%Cred>' --decorate --graph";
         };
       };
+    };
+
+
+
+    programs.emacs = {
+      enable = true;
+      package = pkgs.emacs-gtk;
+      extraPackages = epkgs: with epkgs; [
+        olivetti
+        aircon-theme
+        markdown-mode
+        treemacs
+        magit
+        nix-mode
+        rust-mode
+        unfill
+        sly
+      ];
     };
   };
 }
