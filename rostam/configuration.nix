@@ -73,34 +73,34 @@ in
   services.xserver.windowManager.stumpwm.enable = true;
   services.xserver.windowManager.awesome.enable = true;
   environment.systemPackages = with pkgs; [
-    grim # screenshot functionality
-    slurp # screenshot functionality
-    wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
-    mako # notification system developed by swaywm maintainer
-    curl
-    vim
-    foot
-    emacs
-    chromium
-    pcmanfm
-    xfce.thunar
-    rox-filer
-    mate.caja
-    spaceFM
-    nemo
-    xfe
-    cosmic-files
-    ghostty
-    lxrandr
-    git
-    arandr
-    kitty
     alacritty
-    zed-editor
-    wdisplays
+    arandr
+    chromium
+    cosmic-files
+    curl
+    emacs
+    foot
+    ghostty
+    git
+    grim # screenshot functionality
+    kitty
+    lxrandr
+    mako # notification system developed by swaywm maintainer
+    mate.caja
+    nemo
     pciutils # lspci
-    usbutils # lsusb
+    pcmanfm
+    rox-filer
+    slurp # screenshot functionality
+    spaceFM
     todoist-electron
+    usbutils # lsusb
+    vim
+    wdisplays
+    wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
+    xfce.thunar
+    xfe
+    zed-editor
   ];
   programs.sway = {
     enable = true;
