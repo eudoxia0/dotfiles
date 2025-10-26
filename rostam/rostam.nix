@@ -114,13 +114,6 @@ in
     polkitPolicyOwners = [ "eudoxia" ];
   };
 
-  environment.sessionVariables = {
-    GDK_SCALE = "";
-    GDK_DPI_SCALE = "";
-    NIXOS_OZONE_WL = "1";
-  };
-
-
   services.xserver.enable = true;
 
   programs.ssh = {
