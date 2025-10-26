@@ -135,7 +135,7 @@ in
   };
 
   # END CUSTOM
-    
+
   powerManagement.cpuFreqGovernor = "performance";
 
   # HOME MANAGER
