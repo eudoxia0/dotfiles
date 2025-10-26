@@ -54,6 +54,7 @@ matches:
   - { trigger: ":monitor", replace: "🖥️" }
   - { trigger: ":muscle", replace: "💪" }
   - { trigger: ":orange", replace: "🍊" }
+  - { trigger: ":pancake", replace: "🥞" }
   - { trigger: ":paper", replace: "📄" }
   - { trigger: ":phone", replace: "☎️" }
   - { trigger: ":pill", replace: "💊" }
