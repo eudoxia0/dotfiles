@@ -262,3 +262,5 @@ HEIGHT are subtracted."
  "toggle-gaps-on")
 
 (run-shell-command "polybar")
+
+(run-shell-command "feh --bg-fill ~/dotfiles/rostam/panther.jpg")
