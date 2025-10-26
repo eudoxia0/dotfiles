@@ -54,7 +54,9 @@ in
   services.displayManager.ly.enable = true;
   services.displayManager.ly.settings = {
     animation = "doom";
-    #blank_password = "true";
+    bigclock = "farsi";
+    clear_password = "true";
+    default_input = "password";
   };
   services.xserver.enable = true;
   services.xserver.windowManager.stumpwm.enable = true;
