@@ -6,7 +6,7 @@ My dotfiles repository.
 
 Screenshots and information about the various hosts.
 
-### Antigone
+### [Antigone](https://github.com/eudoxia0/dotfiles/tree/master/antigone)
 
 ![Screenshot of a macOS desktop, showing a centered terminal window, displaying system information output by the fastfetch program.](images/antigone.webp)
 
