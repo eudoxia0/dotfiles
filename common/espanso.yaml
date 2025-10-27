@@ -87,5 +87,6 @@ matches:
   - { trigger: ":water", replace: "💧" }
   - { trigger: ":wave", replace: "🌊" }
   - { trigger: ":wolf", replace: "🐺" }
+  - { trigger: ":wrench", replace: "🔧" }
   - { trigger: ":write", replace: "✍️" }
   - { trigger: ":zzz", replace: "💤" }
