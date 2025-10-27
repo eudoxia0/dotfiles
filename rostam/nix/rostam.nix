@@ -130,6 +130,7 @@ in
     font-manager
     gnome-font-viewer
     zed-editor
+    calibre
   ];
 
   # fonts
