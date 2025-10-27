@@ -126,6 +126,7 @@ in
     pcmanfm
     polybar
     rox-filer
+    ruby
     signal-desktop
     todoist-electron
     usbutils # lsusb
