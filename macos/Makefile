@@ -25,7 +25,7 @@ $(HOME)/.aerospace.toml: config/aerospace.toml
 	ln -sfn $(PWD)/config/aerospace.toml $(HOME)/.aerospace.toml
 
 $(HOME)/.zshrc: config/zshrc.sh
-	ln -sfn $(PWD)/config/zshrc.sh $(HOME)/.zshrc
+	cp $(PWD)/config/zshrc.sh $(HOME)/.zshrc
 
 $(HOME)/.gitconfig: config/gitconfig.txt
 	ln -sfn $(PWD)/config/gitconfig.txt $(HOME)/.gitconfig
