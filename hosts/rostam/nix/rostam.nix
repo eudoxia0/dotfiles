@@ -118,6 +118,7 @@ in
     gnome-font-viewer
     ideogram
     imagemagick
+    just
     libreoffice
     mate.caja
     meld
