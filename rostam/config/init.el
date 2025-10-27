@@ -45,6 +45,6 @@
 (setq frame-resize-pixelwise t)
 
 ;; Font.
-(let ((font "Inconsolata-16"))
+(let ((font "Fira Code-17"))
   (set-face-attribute 'default nil :font font)
   (set-face-attribute 'mode-line nil :font font))
