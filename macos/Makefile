@@ -36,7 +36,7 @@ all: $(TARGETS)
 
 /Users/eudoxia/.config/espanso/match/base.yml: ../common/espanso.yaml
 	mkdir -p /Users/eudoxia/.config/espanso/match
-	ln -sfn $(PWD)/config/espanso/match/base.yml /Users/eudoxia/.config/espanso/match/base.yml
+	ln -sfn /Users/eudoxia/dotfiles/common/espanso.yaml /Users/eudoxia/.config/espanso/match/base.yml
 
 /Users/eudoxia/.config/ghostty/config: config/ghostty.txt
 	mkdir -p /Users/eudoxia/.config/ghostty
