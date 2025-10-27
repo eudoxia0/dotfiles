@@ -22,16 +22,16 @@ TARGETS := $(HOME)/.aerospace.toml \
 all: $(TARGETS)
 
 $(HOME)/.aerospace.toml: config/aerospace.toml
-	cp config/aerospace.toml $@
+	cp $< $@
 
 $(HOME)/.zshrc: config/zshrc.sh
-	cp config/zshrc.sh $@
+	cp $< $@
 
 $(HOME)/.gitconfig: config/gitconfig.txt
-	cp config/gitconfig.txt $@
+	cp $< $@
 
 $(HOME)/.global-gitignore: config/global-gitignore.txt
-	cp config/global-gitignore.txt $@
+	cp $< $@
 
 $(HOME)/.config/espanso/config/default.yml:
 	mkdir -p $(HOME)/.config/espanso/config
@@ -39,47 +39,47 @@ $(HOME)/.config/espanso/config/default.yml:
 
 $(HOME)/.config/espanso/match/base.yml: ../common/espanso.yaml
 	mkdir -p $(HOME)/.config/espanso/match
-	cp $(HOME)/dotfiles/common/espanso.yaml $@
+	cp $< $@
 
 $(HOME)/.config/ghostty/config: config/ghostty.txt
 	mkdir -p $(HOME)/.config/ghostty
-	cp config/ghostty.txt $@
+	cp $< $@
 
 $(HOME)/.config/zed/settings.json: config/zed.json
 	mkdir -p $(HOME)/.config/zed
-	cp config/zed.json $@
+	cp $< $@
 
 $(HOME)/.emacs.d/init.el: config/init.el
 	mkdir -p $(HOME)/.emacs.d
-	cp config/init.el $@
+	cp $< $@
 
 $(HOME)/.local/bin/backup.sh: config/bin/backup.sh
 	mkdir -p $(HOME)/.local/bin
-	cp config/bin/backup.sh $@
+	cp $< $@
 
 $(HOME)/.local/bin/canonicalize-screenshots.py: config/bin/canonicalize-screenshots.py
 	mkdir -p $(HOME)/.local/bin
-	cp config/bin/canonicalize-screenshots.py $@
+	cp $< $@
 
 $(HOME)/.local/bin/decrypt.sh: config/bin/decrypt.sh
 	mkdir -p $(HOME)/.local/bin
-	cp config/bin/decrypt.sh $@
+	cp $< $@
 
 $(HOME)/.local/bin/disktemp.py: config/bin/disktemp.py
 	mkdir -p $(HOME)/.local/bin
-	cp config/bin/disktemp.py $@
+	cp $< $@
 
 $(HOME)/.local/bin/encrypt.sh: config/bin/encrypt.sh
 	mkdir -p $(HOME)/.local/bin
-	cp config/bin/encrypt.sh $@
+	cp $< $@
 
 $(HOME)/.local/bin/probe-port.sh: config/bin/probe-port.sh
 	mkdir -p $(HOME)/.local/bin
-	cp config/bin/probe-port.sh $@
+	cp $< $@
 
 $(HOME)/.local/bin/timestamp.py: config/bin/timestamp.py
 	mkdir -p $(HOME)/.local/bin
-	cp config/bin/timestamp.py $@
+	cp $< $@
 
 clean:
 	rm -f $(TARGETS)
