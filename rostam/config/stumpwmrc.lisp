@@ -18,7 +18,7 @@
 (defmacro defprefixkey (k c)
   `(define-key *root-map* (kbd ,k) ,c))
 
-;; top map
+;; unprefixed (top-map)
 (defkey "s-Q" "quit")
 (defkey "s-R" "loadrc")
 (defkey "s-1" "gselect 1")
@@ -40,7 +40,7 @@
 (defkey "C-s-f" "exec caja")
 (defkey "C-s-c" "exec alacritty")
 
-;; prefix map
+;; prefixed (root map)
 (defprefixkey "a" "time")
 (defprefixkey ";" "colon")
 (defprefixkey ":" "eval")
