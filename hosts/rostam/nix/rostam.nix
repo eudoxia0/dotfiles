@@ -270,4 +270,10 @@ in
 
   # Enable TRIM for the SSD.
   services.fstrim.enable = true;
+
+  # Speed up compilation.
+  nix.settings = {
+    max-jobs = "auto";  # use all cores
+    cores = 16;         # thread count
+  };
 }
