@@ -118,6 +118,7 @@ in
     imagemagick
     libreoffice
     mate.caja
+    meld
     neofetch
     pciutils # lspci
     pcmanfm
