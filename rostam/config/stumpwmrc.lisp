@@ -62,6 +62,14 @@
 (defprefixkey "m" "mode-line")
 (defprefixkey "x" "exec xscreensaver-command --lock")
 
+(defparameter *config-map* 
+  (let ((m (stumpwm:make-sparse-keymap)))
+    (define-key m (kbd "s") "exec emacs ~/dotfiles/rostam/config/stumpwmrc.lisp")
+    (define-key m (kbd "n") "exec emacs ~/dotfiles/rostam/nix/rostam.nix")
+    m))
+
+(define-key *root-map* (kbd "c") '*config-map*)
+
 (defpackage #:swm-gaps
   (:use #:cl :stumpwm))
 (in-package #:swm-gaps)
