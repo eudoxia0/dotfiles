@@ -132,6 +132,7 @@ in
     ruby
     rustup
     signal-desktop
+    sqlite
     todoist-electron
     usbutils # lsusb
     vim
