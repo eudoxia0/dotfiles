@@ -78,6 +78,12 @@ in
   programs.sway = {
     enable = true;
     wrapperFeatures.gtk = true;
+    extraPackages = with pkgs; [
+      mako # notification system developed by swaywm maintainer
+      grim # screenshot functionality
+      slurp # screenshot functionality
+      wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
+    ];
   };
   programs._1password.enable = true;
   programs._1password-gui = {
@@ -105,12 +111,10 @@ in
     foot
     gimp3
     git
-    grim # screenshot functionality
     ideogram
     xcape
     imagemagick
     libreoffice
-    mako # notification system developed by swaywm maintainer
     mate.caja
     neofetch
     pciutils # lspci
@@ -118,12 +122,10 @@ in
     polybar
     rox-filer
     signal-desktop
-    slurp # screenshot functionality
     todoist-electron
     usbutils # lsusb
     vim
     wdisplays
-    wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
     xfce.thunar
     font-manager
     gnome-font-viewer
