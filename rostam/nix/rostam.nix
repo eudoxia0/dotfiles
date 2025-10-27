@@ -72,6 +72,7 @@ in
     layout = "us";
     variant = "";
   };
+  services.xscreensaver.enable = true;
 
   # programs
   programs.firefox.enable = true;
@@ -117,6 +118,7 @@ in
     ideogram
     imagemagick
     libreoffice
+    xscreensaver
     mate.caja
     meld
     neofetch
