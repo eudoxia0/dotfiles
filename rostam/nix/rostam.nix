@@ -170,7 +170,7 @@ in
 
     programs.git = {
       enable = true;
-      extraConfig = {
+      settings = {
         user = {
           name = "Fernando Borretti";
           email = "fernando@borretti.me";
