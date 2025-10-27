@@ -222,6 +222,7 @@ in
         olivetti
         rust-mode
         sly
+        sublime-themes
         treemacs
         unfill
       ];
