@@ -219,6 +219,7 @@ in
         aircon-theme
         magit
         markdown-mode
+        nano-theme
         nix-mode
         olivetti
         rust-mode
