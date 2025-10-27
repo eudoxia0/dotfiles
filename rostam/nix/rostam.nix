@@ -215,15 +215,15 @@ in
       enable = true;
       package = pkgs.emacs-gtk;
       extraPackages = epkgs: with epkgs; [
-        olivetti
         aircon-theme
-        markdown-mode
-        treemacs
         magit
+        markdown-mode
         nix-mode
+        olivetti
         rust-mode
-        unfill
         sly
+        treemacs
+        unfill
       ];
     };
 
