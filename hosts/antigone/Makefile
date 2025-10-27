@@ -37,7 +37,7 @@ $(HOME)/.config/espanso/config/default.yml:
 	mkdir -p $(HOME)/.config/espanso/config
 	touch $@
 
-$(HOME)/.config/espanso/match/base.yml: ../common/espanso.yaml
+$(HOME)/.config/espanso/match/base.yml: ../../common/espanso.yaml
 	mkdir -p $(HOME)/.config/espanso/match
 	cp $< $@
 
