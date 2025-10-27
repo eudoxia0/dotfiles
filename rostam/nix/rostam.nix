@@ -104,15 +104,17 @@ in
     age
     alacritty
     arandr
+    calibre
     chromium
     curl
     feh
     flowtime
+    font-manager
     foot
     gimp3
     git
+    gnome-font-viewer
     ideogram
-    xcape
     imagemagick
     libreoffice
     mate.caja
@@ -126,11 +128,9 @@ in
     usbutils # lsusb
     vim
     wdisplays
+    xcape
     xfce.thunar
-    font-manager
-    gnome-font-viewer
     zed-editor
-    calibre
   ];
 
   # fonts
