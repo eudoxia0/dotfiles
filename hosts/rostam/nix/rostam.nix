@@ -107,6 +107,7 @@ in
     arandr
     calibre
     chromium
+    clang
     curl
     fastfetch
     feh
