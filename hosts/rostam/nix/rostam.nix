@@ -116,6 +116,7 @@ in
     gimp3
     git
     gnome-font-viewer
+    gnumake
     ideogram
     imagemagick
     just
