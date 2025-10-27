@@ -261,4 +261,13 @@ in
 
   # performance
   boot.kernelPackages = pkgs.linuxPackages_zen;
+
+  # Zen kernel tweaks.
+  boot.kernel.sysctl = {
+    "vm.swappiness" = 10;
+    "kernel.sched_autogroup_enabled" = 0;
+  };
+
+  # Enable TRIM for the SSD.
+  services.fstrim.enable = true;
 }
