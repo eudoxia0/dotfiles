@@ -108,6 +108,7 @@ in
     calibre
     chromium
     curl
+    fastfetch
     feh
     flowtime
     font-manager
@@ -118,7 +119,6 @@ in
     ideogram
     imagemagick
     libreoffice
-    xscreensaver
     mate.caja
     meld
     pciutils # lspci
@@ -132,6 +132,7 @@ in
     wdisplays
     xcape
     xfce.thunar
+    xscreensaver
     zed-editor
   ];
 
