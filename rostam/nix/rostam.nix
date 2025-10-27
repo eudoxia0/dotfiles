@@ -107,6 +107,7 @@ in
     git
     grim # screenshot functionality
     ideogram
+    xcape
     imagemagick
     libreoffice
     mako # notification system developed by swaywm maintainer
