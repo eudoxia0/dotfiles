@@ -127,6 +127,7 @@ in
     polybar
     rox-filer
     ruby
+    rustup
     signal-desktop
     todoist-electron
     usbutils # lsusb
