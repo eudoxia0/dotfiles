@@ -135,10 +135,10 @@ in
 
   # fonts
   fonts.packages = with pkgs; [
-    inconsolata
-    liberation_ttf
     fira-code
+    inconsolata
     jetbrains-mono
+    liberation_ttf
   ];
 
   # home manager
