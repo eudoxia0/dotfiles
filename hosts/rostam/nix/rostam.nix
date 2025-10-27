@@ -143,6 +143,7 @@ in
     inconsolata
     jetbrains-mono
     liberation_ttf
+    terminus_font_ttf
   ];
 
   # home manager
