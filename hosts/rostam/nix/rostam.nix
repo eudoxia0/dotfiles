@@ -18,7 +18,6 @@ in
   # basic config
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.initrd.luks.devices."luks-5e2a0183-ed29-499d-8741-ea27e08caf28".device = "/dev/disk/by-uuid/5e2a0183-ed29-499d-8741-ea27e08caf28";
 
   networking.networkmanager.enable = true;
@@ -259,4 +258,7 @@ in
       '';
     };
   })];
+
+  # performance
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 }
