@@ -53,31 +53,7 @@ $(HOME)/.emacs.d/init.el: config/init.el
 	mkdir -p $(HOME)/.emacs.d
 	cp $< $@
 
-$(HOME)/.local/bin/backup.sh: config/bin/backup.sh
-	mkdir -p $(HOME)/.local/bin
-	cp $< $@
-
-$(HOME)/.local/bin/canonicalize-screenshots.py: config/bin/canonicalize-screenshots.py
-	mkdir -p $(HOME)/.local/bin
-	cp $< $@
-
-$(HOME)/.local/bin/decrypt.sh: config/bin/decrypt.sh
-	mkdir -p $(HOME)/.local/bin
-	cp $< $@
-
-$(HOME)/.local/bin/disktemp.py: config/bin/disktemp.py
-	mkdir -p $(HOME)/.local/bin
-	cp $< $@
-
-$(HOME)/.local/bin/encrypt.sh: config/bin/encrypt.sh
-	mkdir -p $(HOME)/.local/bin
-	cp $< $@
-
-$(HOME)/.local/bin/probe-port.sh: config/bin/probe-port.sh
-	mkdir -p $(HOME)/.local/bin
-	cp $< $@
-
-$(HOME)/.local/bin/timestamp.py: config/bin/timestamp.py
+$(HOME)/.local/bin/%: config/bin/%
 	mkdir -p $(HOME)/.local/bin
 	cp $< $@
 
