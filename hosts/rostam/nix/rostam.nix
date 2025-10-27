@@ -276,4 +276,7 @@ in
     max-jobs = "auto";  # use all cores
     cores = 16;         # thread count
   };
+
+  # Better for development with lots of file watching
+  boot.kernel.sysctl."fs.inotify.max_user_watches" = 524288;
 }
