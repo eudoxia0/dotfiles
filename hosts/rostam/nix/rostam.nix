@@ -117,6 +117,7 @@ in
     git
     gnome-font-viewer
     gnumake
+    guile
     ideogram
     imagemagick
     just
