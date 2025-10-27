@@ -19,6 +19,16 @@
 (global-unset-key (kbd "C-l"))
 
 ;;;
+;;; Splash Screen
+;;;
+
+;; Set the contents of the scratch buffer.
+(setq initial-scratch-message "")
+
+;; No splash screen.
+(setq inhibit-startup-screen t)
+
+;;;
 ;;; UI
 ;;;
 
