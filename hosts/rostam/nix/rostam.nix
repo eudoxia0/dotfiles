@@ -160,6 +160,7 @@ in
         gs = "git status";
         gu = "git push -u origin HEAD";
         ls = "ls -1 --color";
+        cdt = "cd ~/dotfiles/hosts/rostam";
       };
       file = {
         ".config/polybar/config.ini".source = ../config/polybar.ini;
