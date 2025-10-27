@@ -32,9 +32,6 @@
 ;;; UI
 ;;;
 
-;; Theme.
-(load-theme 'modus-vivendi t)
-
 ;; Line numbers everywhere.
 (global-display-line-numbers-mode 1)
 
