@@ -121,7 +121,6 @@ in
     xscreensaver
     mate.caja
     meld
-    neofetch
     pciutils # lspci
     pcmanfm
     polybar
