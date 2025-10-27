@@ -181,6 +181,20 @@ in
         color = {
           ui = "auto";
         };
+        diff = {
+          tool = "meld";
+        };
+        difftool = {
+          prompt = false;
+        };
+        "difftool \"meld\"" = {
+          cmd = "meld \"$LOCAL\" \"$REMOTE\"";
+        };
+        "mergetool \"meld\"" = {
+          prompt = false;
+          cmd = "meld \"$LOCAL\" \"$BASE\" \"$REMOTE\" --output=\"$MERGED\"";
+          trustExitCode = "true";
+        };
         gpg = {
           format = "ssh";
         };
