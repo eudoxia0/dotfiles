@@ -279,4 +279,7 @@ in
 
   # Better for development with lots of file watching
   boot.kernel.sysctl."fs.inotify.max_user_watches" = 524288;
+
+  # AMD-specific.
+  hardware.cpu.amd.updateMicrocode = true;
 }
