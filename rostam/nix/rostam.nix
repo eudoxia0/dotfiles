@@ -165,6 +165,7 @@ in
         ".emacs.d/init.el".source = ../config/init.el;
         ".local/share/panther.jpg".source = ../panther.jpg;
         ".stumpwmrc".source = ../config/stumpwmrc.lisp;
+        ".config/espanso/match/base.yml".source = ../../common/espanso.yaml;
       };
     };
 
@@ -230,16 +231,6 @@ in
 
     services.espanso = {
       enable = true;
-      matches = {
-        base = {
-          matches = [
-            {
-              trigger = ":espanso";
-              replace = "Hi there!";
-            }
-          ];
-        };
-      };
     };
   };
 }
