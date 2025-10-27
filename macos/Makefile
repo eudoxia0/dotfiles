@@ -1,3 +1,5 @@
+# $< = first dep
+# $@ = target
 HOME    := /Users/eudoxia
 TARGETS := $(HOME)/.aerospace.toml \
 		$(HOME)/.zshrc \
