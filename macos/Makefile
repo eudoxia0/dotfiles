@@ -52,31 +52,31 @@ all: $(TARGETS)
 
 /Users/eudoxia/.local/bin/backup.sh: config/bin/backup.sh
 	mkdir -p /Users/eudoxia/.local/bin
-	ln -sfn $(PWD)/config/backup.sh /Users/eudoxia/.local/bin/backup.sh
+	ln -sfn $(PWD)/config/bin/backup.sh /Users/eudoxia/.local/bin/backup.sh
 
 /Users/eudoxia/.local/bin/canonicalize-screenshots.py: config/bin/canonicalize-screenshots.py
 	mkdir -p /Users/eudoxia/.local/bin
-	ln -sfn $(PWD)/config/canonicalize-screenshots.py /Users/eudoxia/.local/bin/canonicalize-screenshots.py
+	ln -sfn $(PWD)/config/bin/canonicalize-screenshots.py /Users/eudoxia/.local/bin/canonicalize-screenshots.py
 
 /Users/eudoxia/.local/bin/decrypt.sh: config/bin/decrypt.sh
 	mkdir -p /Users/eudoxia/.local/bin
-	ln -sfn $(PWD)/config/decrypt.sh /Users/eudoxia/.local/bin/decrypt.sh
+	ln -sfn $(PWD)/config/bin/decrypt.sh /Users/eudoxia/.local/bin/decrypt.sh
 
 /Users/eudoxia/.local/bin/disktemp.py: config/bin/disktemp.py
 	mkdir -p /Users/eudoxia/.local/bin
-	ln -sfn $(PWD)/config/disktemp.py /Users/eudoxia/.local/bin/disktemp.py
+	ln -sfn $(PWD)/config/bin/disktemp.py /Users/eudoxia/.local/bin/disktemp.py
 
 /Users/eudoxia/.local/bin/encrypt.sh: config/bin/encrypt.sh
 	mkdir -p /Users/eudoxia/.local/bin
-	ln -sfn $(PWD)/config/encrypt.sh /Users/eudoxia/.local/bin/encrypt.sh
+	ln -sfn $(PWD)/config/bin/encrypt.sh /Users/eudoxia/.local/bin/encrypt.sh
 
 /Users/eudoxia/.local/bin/probe-port.sh: config/bin/probe-port.sh
 	mkdir -p /Users/eudoxia/.local/bin
-	ln -sfn $(PWD)/config/probe-port.sh /Users/eudoxia/.local/bin/probe-port.sh
+	ln -sfn $(PWD)/config/bin/probe-port.sh /Users/eudoxia/.local/bin/probe-port.sh
 
 /Users/eudoxia/.local/bin/timestamp.py: config/bin/timestamp.py
 	mkdir -p /Users/eudoxia/.local/bin
-	ln -sfn $(PWD)/config/timestamp.py /Users/eudoxia/.local/bin/timestamp.py
+	ln -sfn $(PWD)/config/bin/timestamp.py /Users/eudoxia/.local/bin/timestamp.py
 
 clean:
 	rm -f $(TARGETS)
