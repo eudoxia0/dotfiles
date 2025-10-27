@@ -23,13 +23,10 @@
 ;;;
 
 ;; Theme.
-(load-theme 'modus-vivendi t)
+;(load-theme 'modus-vivendi t)
 
 ;; Line numbers everywhere.
 (global-display-line-numbers-mode 1)
-
-;; Default fonts.
-(set-frame-font "Fira Code-15" nil t)
 
 ;; No tool bar.
 (tool-bar-mode -1)
@@ -39,3 +36,8 @@
 
 ;; Do not discretize the window size. Permits smooth resizing.
 (setq frame-resize-pixelwise t)
+
+;; Font.
+(let ((font "Inconsolata-16"))
+  (set-face-attribute 'default nil :font font)
+  (set-face-attribute 'mode-line nil :font font))
