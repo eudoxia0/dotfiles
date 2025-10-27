@@ -49,6 +49,7 @@ matches:
   - { trigger: ":folder", replace: "📁" }
   - { trigger: ":frog", replace: "🐸" }
   - { trigger: ":heart", replace: "❤️" }
+  - { trigger: ":inbox", replace: "📨" }
   - { trigger: ":iron", replace: "♨️" }
   - { trigger: ":laptop", replace: "💻" }
   - { trigger: ":log", replace: "📝" }
