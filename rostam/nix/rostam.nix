@@ -207,5 +207,19 @@ in
         sly
       ];
     };
+
+    services.espanso = {
+      enable = true;
+      matches = {
+        base = {
+          matches = [
+            {
+              trigger = ":espanso";
+              replace = "Hi there!";
+            }
+          ];
+        };
+      };
+    };
   };
 }
