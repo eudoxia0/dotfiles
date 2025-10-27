@@ -70,6 +70,21 @@
 
 (define-key *root-map* (kbd "c") '*config-map*)
 
+;;; custom commands
+
+(defun toggle-mode-line* ()
+  (toggle-mode-line (current-screen)
+                    (current-head)))
+
+
+(defcommand polybar-restart () ()
+  "Restart Polybar."
+  (toggle-mode-line*)
+  (run-shell-command "polybar-msg cmd restart")
+  (toggle-mode-line*))
+
+;;; gaps
+
 (defpackage #:swm-gaps
   (:use #:cl :stumpwm))
 (in-package #:swm-gaps)
