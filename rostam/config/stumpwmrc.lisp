@@ -60,6 +60,7 @@
 (defprefixkey "M-Right" "move-window right")
 (defprefixkey "w" "windows")
 (defprefixkey "m" "mode-line")
+(defprefixkey "x" "exec xscreensaver --lock")
 
 (defpackage #:swm-gaps
   (:use #:cl :stumpwm))
