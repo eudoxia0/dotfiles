@@ -26,22 +26,22 @@ $(HOME)/.config/polybar/config.ini: config/polybar.ini
 	mkdir -p $(HOME)/.config/polybar
 	cp $< $@
 
-$(HOME)/.config/sway/config: config/sway.config
+$(HOME)/.config/sway/config: config/sway.txt
 	mkdir -p $(HOME)/.config/sway
-    cp $< $@
+	cp $< $@
 
 $(HOME)/.emacs.d/init.el: config/init.el
 	mkdir -p $(HOME)/.emacs.d
 	cp $< $@
 
-$(HOME)/.local/share/panther.jpg: ../../common/panther.jpg
+$(HOME)/.local/share/panther.jpg: panther.jpg
 	mkdir -p $(HOME)/.local/share
 	cp $< $@
 
 $(HOME)/.stumpwm.d/init.lisp: config/stumpwmrc.lisp
 	cp $< $@
 
-$(HOME)/.xscreensaver: config/xscreensaver
+$(HOME)/.xscreensaver: config/xscreensaver.txt
 	cp $< $@
 
 clean:
