@@ -32,6 +32,9 @@
 ;;; UI
 ;;;
 
+;; Theme.
+(load-theme 'wheatgrass t)
+
 ;; Line numbers everywhere.
 (global-display-line-numbers-mode 1)
 
