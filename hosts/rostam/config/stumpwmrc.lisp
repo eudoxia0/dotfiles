@@ -88,7 +88,6 @@
 (defkey "C-s-c" "exec alacritty")
 
 ;; prefixed (root map)
-(defprefixkey "a" "time")
 (defprefixkey ";" "colon")
 (defprefixkey ":" "eval")
 (defprefixkey "v" "version")
