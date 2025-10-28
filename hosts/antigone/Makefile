@@ -2,14 +2,13 @@
 # $@ = target
 HOME    := /Users/eudoxia
 TARGETS := $(HOME)/.aerospace.toml \
-		$(HOME)/.zshrc \
-		$(HOME)/.gitconfig \
-		$(HOME)/.global-gitignore \
 		$(HOME)/.config/espanso/config/default.yml \
 		$(HOME)/.config/espanso/match/base.yml \
 		$(HOME)/.config/ghostty/config \
 		$(HOME)/.config/zed/settings.json \
 		$(HOME)/.emacs.d/init.el \
+		$(HOME)/.gitconfig \
+		$(HOME)/.global-gitignore \
 		$(HOME)/.local/bin/backup.sh \
 		$(HOME)/.local/bin/canonicalize-screenshots.py \
 		$(HOME)/.local/bin/decrypt.sh \
@@ -17,6 +16,7 @@ TARGETS := $(HOME)/.aerospace.toml \
 		$(HOME)/.local/bin/encrypt.sh \
 		$(HOME)/.local/bin/probe-port.sh \
 		$(HOME)/.local/bin/timestamp.py
+		$(HOME)/.zshrc \
 .PHONY: all clean
 
 all: $(TARGETS)
