@@ -1,4 +1,11 @@
-;; -*- mode: Lisp -*-
+;;;; -*- mode: Lisp -*-
+;;;;
+;;;; stumpwm is cool as hell and if you disagree get the fuck out of here
+;;;;
+
+;;;
+;;; General Configuration
+;;;
 
 (in-package :stumpwm)
 
@@ -70,11 +77,12 @@
 
 (define-key *root-map* (kbd "c") '*config-map*)
 
-;;; custom commands
+;;;
+;;; Custom Commands
+;;;
 
 (defun toggle-mode-line* ()
-  (toggle-mode-line (current-screen)
-                    (current-head)))
+  (toggle-mode-line (current-screen) (current-head)))
 
 
 (defcommand polybar-restart () ()
@@ -83,7 +91,11 @@
   (run-shell-command "polybar-msg cmd restart")
   (toggle-mode-line*))
 
-;;; gaps
+;;;
+;;; Useless Gaps
+;;;
+;;; Based on: https://github.com/stumpwm/stumpwm-contrib/tree/326725802fcedc2f8f28df91d4b548743da9e7bc/util/swm-gaps
+;;;
 
 (defpackage #:swm-gaps
   (:use #:cl :stumpwm))
