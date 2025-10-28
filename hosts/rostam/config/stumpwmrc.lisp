@@ -87,33 +87,60 @@
 ;; Launch the terminal.
 (defkey "C-s-c" "exec alacritty")
 
-;; prefixed (root map)
+;; Prompt for a stumpwm command to run.
 (defprefixkey ";" "colon")
+
+;; Prompt for a Lisp sexp to evaluate.
 (defprefixkey ":" "eval")
+
+;; Print the stumpwm version.
 (defprefixkey "v" "version")
+
+;; Split current frame vertically.
 (defprefixkey "s" "vsplit")
+
+;; Split current frame horizontally.
 (defprefixkey "S" "hsplit")
+
+;; Interactively resize the current frame.
 (defprefixkey "r" "iresize")
+
+;; Maximize the current frame to fill the screen.
 (defprefixkey "Q" "only")
+
+;; Rebalance frames.
 (defprefixkey "=" "balance-frames")
+
+;; Switch focus to the frame in the given direction.
 (defprefixkey "Up" "move-focus up")
 (defprefixkey "Down" "move-focus down")
 (defprefixkey "Left" "move-focus left")
 (defprefixkey "Right" "move-focus right")
+
+;; Move the current window to the frame in the given direction.
 (defprefixkey "M-Up" "move-window up")
 (defprefixkey "M-Down" "move-window down")
 (defprefixkey "M-Left" "move-window left")
 (defprefixkey "M-Right" "move-window right")
+
+;; Print the list of windows in this [frame?group?].
 (defprefixkey "w" "windows")
+
+;; Toggle the modeline on/off.
 (defprefixkey "m" "mode-line")
+
+;; Lock the screen with xscreensaver.
 (defprefixkey "x" "exec xscreensaver-command --lock")
 
 (defparameter *config-map*
   (let ((m (make-sparse-keymap)))
+    ;; Open Emacs to the stumpwmrc configuration.
     (define-key m (kbd "s") "exec emacs ~/dotfiles/hosts/rostam/config/stumpwmrc.lisp")
+    ;; Open Emacs to the Nix configuration for rostam.
     (define-key m (kbd "n") "exec emacs ~/dotfiles/hosts/rostam/rostam.nix")
     m))
 
+;; Prefix key of the config map.
 (define-key *root-map* (kbd "c") '*config-map*)
 
 ;;;
