@@ -15,6 +15,9 @@ Screenshots and information about the various hosts.
 - **Window Manager:** [AeroSpace](https://github.com/nikitabobko/AeroSpace)
 - **Text Shortcuts:** [Espanso](https://espanso.org/)
 - **Terminal:** [ghostty](https://ghostty.org/)
+- **RSS Reader:** [NetNewsWire](https://netnewswire.com/)
+- **Diet Tracker:** [FoodNoms](https://foodnoms.com/)
+- **Password Manager:** [1Password](https://1password.com/)
 - **dotfiles management:** [make](https://github.com/eudoxia0/dotfiles/blob/master/hosts/antigone/Makefile)
 
 ### [Rostam](https://github.com/eudoxia0/dotfiles/tree/master/hosts/rostam)
@@ -24,4 +27,5 @@ Screenshots and information about the various hosts.
 - **Window Manager:** [stumpwm](https://stumpwm.github.io/), [Sway](https://swaywm.org/)
 - **Text Shortcuts:** [Espanso](https://espanso.org/)
 - **Terminal:** [alacritty](https://github.com/alacritty/alacritty)
+- **Password Manager:** [1Password](https://1password.com/)
 - **dotfiles management:** [make](https://github.com/eudoxia0/dotfiles/blob/master/hosts/rostam/Makefile)
