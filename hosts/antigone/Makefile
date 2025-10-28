@@ -1,7 +1,7 @@
 # $< = first dep
 # $@ = target
 HOME    := /Users/eudoxia
-TARGETS := $(HOME)/.aerospace.toml \
+TARGETS := $(HOME)/.config/aerospace/aerospace.toml \
 		$(HOME)/.config/espanso/config/default.yml \
 		$(HOME)/.config/espanso/match/base.yml \
 		$(HOME)/.config/ghostty/config \
@@ -15,13 +15,14 @@ TARGETS := $(HOME)/.aerospace.toml \
 		$(HOME)/.local/bin/disktemp.py \
 		$(HOME)/.local/bin/encrypt.sh \
 		$(HOME)/.local/bin/probe-port.sh \
-		$(HOME)/.local/bin/timestamp.py
-		$(HOME)/.zshrc \
+		$(HOME)/.local/bin/timestamp.py \
+		$(HOME)/.zshrc
 .PHONY: all clean
 
 all: $(TARGETS)
 
-$(HOME)/.aerospace.toml: config/aerospace.toml
+$(HOME)/.config/aerospace/aerospace.toml: config/aerospace.toml
+	mkdir -p $(HOME)/.config/aerospace
 	cp $< $@
 
 $(HOME)/.zshrc: config/zshrc.sh
