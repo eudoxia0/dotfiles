@@ -151,6 +151,7 @@ in
     terminus_font_ttf
     noto-fonts
     noto-fonts-emoji
+    iosevka
   ];
 
   # home manager
