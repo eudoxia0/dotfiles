@@ -2,12 +2,11 @@
 ;;;;
 ;;;; stumpwm is cool as hell and if you disagree get the fuck out of here
 ;;;;
+(in-package :stumpwm)
 
 ;;;
 ;;; General Configuration
 ;;;
-
-(in-package :stumpwm)
 
 (setf *mouse-focus-policy* :sloppy)
 
