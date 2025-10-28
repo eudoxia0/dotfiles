@@ -7,7 +7,7 @@ TARGETS := $(HOME)/.config/alacritty/alacritty.toml \
 		$(HOME)/.config/sway/config \
 		$(HOME)/.emacs.d/init.el \
 		$(HOME)/.local/share/panther.jpg \
-		$(HOME)/.stumpwmrc \
+		$(HOME)/.stumpwm.d/init.lisp \
 		$(HOME)/.xscreensaver
 
 .PHONY: all recrank upgrade clean clean-nix
@@ -38,7 +38,7 @@ $(HOME)/.local/share/panther.jpg: ../../common/panther.jpg
 	mkdir -p $(HOME)/.local/share
 	cp $< $@
 
-$(HOME)/.stumpwmrc: config/stumpwmrc
+$(HOME)/.stumpwm.d/init.lisp: config/stumpwmrc.lisp
 	cp $< $@
 
 $(HOME)/.xscreensaver: config/xscreensaver
