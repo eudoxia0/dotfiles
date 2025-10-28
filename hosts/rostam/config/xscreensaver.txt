@@ -300,6 +300,6 @@ programs:								      \
 - GL: 				platonicfolding --root			    \n\
 
 
-pointerHysteresis:  10
+pointerHysteresis:  0
 authWarningSlack:   20
 
