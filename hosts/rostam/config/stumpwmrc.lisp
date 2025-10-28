@@ -62,10 +62,10 @@
 (defprefixkey "m" "mode-line")
 (defprefixkey "x" "exec xscreensaver-command --lock")
 
-(defparameter *config-map* 
+(defparameter *config-map*
   (let ((m (stumpwm:make-sparse-keymap)))
     (define-key m (kbd "s") "exec emacs ~/dotfiles/hosts/rostam/config/stumpwmrc.lisp")
-    (define-key m (kbd "n") "exec emacs ~/dotfiles/hosts/rostam/nix/rostam.nix")
+    (define-key m (kbd "n") "exec emacs ~/dotfiles/hosts/rostam/rostam.nix")
     m))
 
 (define-key *root-map* (kbd "c") '*config-map*)
