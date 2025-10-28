@@ -37,8 +37,6 @@ in
     LC_TIME = "en_US.UTF-8";
   };
 
-  powerManagement.cpuFreqGovernor = "performance";
-
   # users
   users.users.eudoxia = {
     isNormalUser = true;
@@ -257,6 +255,8 @@ in
   })];
 
   # performance
+  powerManagement.cpuFreqGovernor = "performance";
+  
   boot.kernelPackages = pkgs.linuxPackages_zen;
 
   # Zen kernel tweaks.
