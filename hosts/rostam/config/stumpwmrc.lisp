@@ -138,6 +138,8 @@
     (define-key m (kbd "s") "exec emacs ~/dotfiles/hosts/rostam/config/init.lisp")
     ;; Open Emacs to the Nix configuration for rostam.
     (define-key m (kbd "n") "exec emacs ~/dotfiles/hosts/rostam/rostam.nix")
+    ;; Open Emacs to the Emacs init.el.
+    (define-key m (kbd "e") "exec emacs ~/dotfiles/hosts/rostam/config/init.el")
     m))
 
 ;; Prefix key of the config map.
