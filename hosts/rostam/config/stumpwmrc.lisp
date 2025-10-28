@@ -86,7 +86,7 @@
 (defprefixkey "x" "exec xscreensaver-command --lock")
 
 (defparameter *config-map*
-  (let ((m (stumpwm:make-sparse-keymap)))
+  (let ((m (make-sparse-keymap)))
     (define-key m (kbd "s") "exec emacs ~/dotfiles/hosts/rostam/config/stumpwmrc.lisp")
     (define-key m (kbd "n") "exec emacs ~/dotfiles/hosts/rostam/rostam.nix")
     m))
@@ -207,7 +207,7 @@ HEIGHT are subtracted."
 (defun reset-all-windows ()
   "Reset the size for all tiled windows"
   (mapcar #'stumpwm::maximize-window
-          (stumpwm::only-tile-windows (stumpwm:screen-windows (current-screen)))))
+          (stumpwm::only-tile-windows (screen-windows (current-screen)))))
 
 ;; Redefined neighbour for working with head gaps
 (defun stumpwm::neighbour (direction frame frameset)
@@ -287,7 +287,7 @@ HEIGHT are subtracted."
 (defcommand toggle-gaps-off () ()
   "Turn gaps off"
   (setf *gaps-on* nil)
-  (stumpwm:refresh-heads))
+  (refresh-heads))
 
 ;;;
 ;;; Startup
