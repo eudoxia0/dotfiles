@@ -109,6 +109,7 @@ in
     clang
     curl
     fastfetch
+    fd
     feh
     flowtime
     font-manager
