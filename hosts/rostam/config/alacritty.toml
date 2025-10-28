@@ -1,0 +1,5 @@
+[window]
+decorations = "None"
+
+[scrolling]
+history = 100000
