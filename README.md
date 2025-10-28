@@ -14,6 +14,7 @@ Screenshots and information about the various hosts.
 - **Package Manager:** [Homebrew](https://brew.sh/)
 - **Window Manager:** [AeroSpace](https://github.com/nikitabobko/AeroSpace)
 - **Text Shortcuts:** [Espanso](https://espanso.org/)
+- **Terminal:** [ghostty](https://ghostty.org/)
 - **dotfiles management:** [make](https://github.com/eudoxia0/dotfiles/blob/master/hosts/antigone/Makefile)
 
 ### [Rostam](https://github.com/eudoxia0/dotfiles/tree/master/hosts/rostam)
@@ -22,4 +23,5 @@ Screenshots and information about the various hosts.
 - **Package Manager:** [Nix](https://nixos.org/)
 - **Window Manager:** [stumpwm](https://stumpwm.github.io/), [Sway](https://swaywm.org/)
 - **Text Shortcuts:** [Espanso](https://espanso.org/)
+- **Terminal:** [alacritty](https://github.com/alacritty/alacritty)
 - **dotfiles management:** [home-manager](https://nix-community.github.io/home-manager/)
