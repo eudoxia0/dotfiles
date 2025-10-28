@@ -48,7 +48,7 @@ clean:
 	rm -f $(TARGETS)
 
 recrank:
-	sudo nixos-rebuild switch -I nixos-config=drostam.nix
+	sudo nixos-rebuild switch -I nixos-config=rostam.nix
 
 upgrade:
 	sudo nix-channel --update
