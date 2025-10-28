@@ -135,7 +135,7 @@
 (defparameter *config-map*
   (let ((m (make-sparse-keymap)))
     ;; Open Emacs to the stumpwmrc configuration.
-    (define-key m (kbd "s") "exec emacs ~/dotfiles/hosts/rostam/config/stumpwmrc.lisp")
+    (define-key m (kbd "s") "exec emacs ~/dotfiles/hosts/rostam/config/init.lisp")
     ;; Open Emacs to the Nix configuration for rostam.
     (define-key m (kbd "n") "exec emacs ~/dotfiles/hosts/rostam/rostam.nix")
     m))
