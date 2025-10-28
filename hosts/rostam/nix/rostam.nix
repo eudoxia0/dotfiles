@@ -174,14 +174,14 @@ in
         cdt = "cd ~/dotfiles/hosts/rostam";
       };
       file = {
+        ".config/alacritty/alacritty.toml".source = ../config/alacritty.toml;
+        ".config/espanso/match/base.yml".source = ../../../common/espanso.yaml;
         ".config/polybar/config.ini".source = ../config/polybar.ini;
         ".config/sway/config".source = ../config/sway.txt;
         ".emacs.d/init.el".source = ../config/init.el;
         ".local/share/panther.jpg".source = ../panther.jpg;
         ".stumpwmrc".source = ../config/stumpwmrc.lisp;
-        ".config/espanso/match/base.yml".source = ../../../common/espanso.yaml;
         ".xscreensaver".source = ../config/xscreensaver.txt;
-        ".config/alacritty/alacritty.toml".source = ../config/alacritty.toml;
       };
     };
 
