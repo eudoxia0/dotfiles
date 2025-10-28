@@ -149,6 +149,7 @@ in
     jetbrains-mono
     liberation_ttf
     terminus_font_ttf
+    terminus_font
     noto-fonts
     noto-fonts-emoji
     iosevka
