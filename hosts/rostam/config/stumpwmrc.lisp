@@ -97,15 +97,16 @@
 ;;; Based on: https://github.com/stumpwm/stumpwm-contrib/tree/326725802fcedc2f8f28df91d4b548743da9e7bc/util/swm-gaps
 ;;;
 
-(defpackage #:swm-gaps
-  (:use #:cl :stumpwm))
-(in-package #:swm-gaps)
-
-(export '(*inner-gaps-size* *outer-gaps-size* *head-gaps-size* *gaps-on* toggle-gaps toggle-gaps-on toggle-gaps-off))
-
-(defparameter *inner-gaps-size* 15)
-(defparameter *outer-gaps-size* 15)
+;; Head gaps run along the 4 borders of the monitor(s).
 (defparameter *head-gaps-size* 0)
+
+;; Inner gaps run along all the 4 borders of a window.
+(defparameter *inner-gaps-size* 15)
+
+;; Outer gaps add more padding to the outermost borders of a window (touching the screen border).
+(defparameter *outer-gaps-size* 15)
+
+;; Whether or not gaps are on.
 (defparameter *gaps-on* nil)
 
 (defun apply-gaps-p (win)
@@ -286,7 +287,9 @@ HEIGHT are subtracted."
   (setf *gaps-on* nil)
   (stumpwm:refresh-heads))
 
-;; start
+;;;
+;;; Startup
+;;;
 
 (stumpwm::run-commands
  "grename 1"
