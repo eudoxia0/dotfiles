@@ -181,6 +181,7 @@ in
         ".stumpwmrc".source = ../config/stumpwmrc.lisp;
         ".config/espanso/match/base.yml".source = ../../../common/espanso.yaml;
         ".xscreensaver".source = ../config/xscreensaver.txt;
+        ".config/alacritty/alacritty.toml".source = ../config/alacritty.toml;
       };
     };
 
