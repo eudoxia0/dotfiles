@@ -149,6 +149,8 @@ in
     jetbrains-mono
     liberation_ttf
     terminus_font_ttf
+    noto-fonts
+    noto-fonts-emoji
   ];
 
   # home manager
