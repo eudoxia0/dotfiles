@@ -10,7 +10,7 @@ Screenshots and information about the various hosts.
 
 ![Screenshot of a macOS desktop, showing a centered terminal window, displaying system information output by the fastfetch program.](images/antigone.webp)
 
-- Hardware: 2024 Mac mini.
+- Hardware: [2024 Mac mini](https://support.apple.com/en-au/121555)
 - Package manager: [Homebrew](https://brew.sh/)
 - Window manager: [AeroSpace](https://github.com/nikitabobko/AeroSpace)
 - Text shortcuts: [Espanso](https://espanso.org/)
