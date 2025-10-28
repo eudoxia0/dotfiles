@@ -27,40 +27,64 @@
 ;;; Keybindings
 ;;;
 
+;; Prefix key: logo+w.
 (set-prefix-key (kbd "s-w"))
 
-;; wipe the prefix map
+;; Wipe the prefix map. Start from a clean slate.
 (setf *root-map* (make-sparse-keymap))
 (setf *tile-group-root-map* (make-sparse-keymap))
 (setf *group-root-map* (make-sparse-keymap))
 (setf *float-group-root-map* (make-sparse-keymap))
 
+;; Utilities.
 (defmacro defkey (k c)
   `(define-key *top-map* (kbd ,k) ,c))
 
 (defmacro defprefixkey (k c)
   `(define-key *root-map* (kbd ,k) ,c))
 
-;; unprefixed (top-map)
+;; Quit.
 (defkey "s-Q" "quit")
+
+;; Reload the configuration.
 (defkey "s-R" "loadrc")
+
+;; Switch workspaces.
 (defkey "s-1" "gselect 1")
 (defkey "s-2" "gselect 2")
 (defkey "s-3" "gselect 3")
 (defkey "s-4" "gselect 4")
 (defkey "s-5" "gselect 5")
+
+;; Move the current window to another workspace.
 (defkey "s-!" "gmove 1")
 (defkey "s-@" "gmove 2")
 (defkey "s-#" "gmove 3")
 (defkey "s-$" "gmove 4")
 (defkey "s-%" "gmove 5")
+
+;; Switch to the next window in the current frame.
 (defkey "s-n" "pull-hidden-next")
+
+;; Switch to the previous window in the current frame.
 (defkey "s-p" "pull-hidden-previous")
+
+;; Prompt for a shell command to run.
 (defkey "s-r" "exec")
+
+;; Close the current window.
 (defkey "s-q" "delete-window")
+
+;; Launch Firefox.
 (defkey "C-s-w" "exec firefox")
+
+;; Launch Emacs.
 (defkey "C-s-e" "exec emacs")
+
+;; Launch the file manager.
 (defkey "C-s-f" "exec caja")
+
+;; Launch the terminal.
 (defkey "C-s-c" "exec alacritty")
 
 ;; prefixed (root map)
