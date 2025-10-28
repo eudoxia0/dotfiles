@@ -123,7 +123,7 @@
 (defprefixkey "M-Left" "move-window left")
 (defprefixkey "M-Right" "move-window right")
 
-;; Print the list of windows in this [frame?group?].
+;; Print the list of windows in this group.
 (defprefixkey "w" "windows")
 
 ;; Toggle the modeline on/off.
