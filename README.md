@@ -24,4 +24,4 @@ Screenshots and information about the various hosts.
 - **Window Manager:** [stumpwm](https://stumpwm.github.io/), [Sway](https://swaywm.org/)
 - **Text Shortcuts:** [Espanso](https://espanso.org/)
 - **Terminal:** [alacritty](https://github.com/alacritty/alacritty)
-- **dotfiles management:** [home-manager](https://nix-community.github.io/home-manager/)
+- **dotfiles management:** [make](https://github.com/eudoxia0/dotfiles/blob/master/hosts/rostam/Makefile)
