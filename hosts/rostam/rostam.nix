@@ -173,6 +173,7 @@ in
         gu = "git push -u origin HEAD";
         ls = "ls -1 --color";
         cdt = "cd ~/dotfiles/hosts/rostam";
+        find = "echo 'use fd instead'";
       };
     };
 
