@@ -11,6 +11,23 @@
 
 (setf *mouse-focus-policy* :sloppy)
 
+;;;
+;;; Custom Commands
+;;;
+
+(defun toggle-mode-line* ()
+  (toggle-mode-line (current-screen) (current-head)))
+
+(defcommand polybar-restart () ()
+  "Restart Polybar."
+  (toggle-mode-line*)
+  (run-shell-command "polybar-msg cmd restart")
+  (toggle-mode-line*))
+
+;;;
+;;; Keybindings
+;;;
+
 (set-prefix-key (kbd "s-w"))
 
 ;; wipe the prefix map
@@ -76,20 +93,6 @@
     m))
 
 (define-key *root-map* (kbd "c") '*config-map*)
-
-;;;
-;;; Custom Commands
-;;;
-
-(defun toggle-mode-line* ()
-  (toggle-mode-line (current-screen) (current-head)))
-
-
-(defcommand polybar-restart () ()
-  "Restart Polybar."
-  (toggle-mode-line*)
-  (run-shell-command "polybar-msg cmd restart")
-  (toggle-mode-line*))
 
 ;;;
 ;;; Useless Gaps
