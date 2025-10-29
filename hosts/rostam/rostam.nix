@@ -58,10 +58,13 @@ in
   services.displayManager.ly.settings = {
     animation = "doom";
     bigclock = "en";
+    brightness_down_key = "null";
+    brightness_up_key = "null";
     clear_password = true;
     default_input = "password";
     doom_fire_height = 8;
     doom_fire_spread = 4;
+    hide_version_string = true;
   };
   services.xserver.enable = true;
   services.xserver.windowManager.stumpwm.enable = true;
