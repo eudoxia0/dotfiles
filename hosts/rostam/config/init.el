@@ -51,3 +51,10 @@
 (let ((font "Fira Code-11"))
   (set-face-attribute 'default nil :font font)
   (set-face-attribute 'mode-line nil :font font))
+
+;;;
+;;; etc.
+;;;
+
+(add-to-list 'load-path "~/.emacs.d/eudoxia/")
+(require 'inform7)
