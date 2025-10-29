@@ -102,6 +102,7 @@ in
     age
     alacritty
     arandr
+    btop
     calibre
     chromium
     clang
