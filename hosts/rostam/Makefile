@@ -5,7 +5,7 @@ TARGETS := $(HOME)/.config/alacritty/alacritty.toml \
 		$(HOME)/.config/espanso/match/base.yml \
 		$(HOME)/.config/polybar/config.ini \
 		$(HOME)/.config/sway/config \
-		$(HOME)/.emacs.d/inform7.el \
+		$(HOME)/.emacs.d/eudoxia/inform7.el \
 		$(HOME)/.emacs.d/init.el \
 		$(HOME)/.local/share/panther.jpg \
 		$(HOME)/.stumpwm.d/init.lisp \
@@ -32,8 +32,8 @@ $(HOME)/.config/sway/config: config/sway.txt
 	mkdir -p $(HOME)/.config/sway
 	cp $< $@
 
-$(HOME)/.emacs.d/inform7.el: config/inform7.el
-	mkdir -p $(HOME)/.emacs.d
+$(HOME)/.emacs.d/eudoxia/inform7.el: config/inform7.el
+	mkdir -p $(HOME)/.emacs.d/eudoxia
 	cp $< $@
 
 config/inform7.el:
