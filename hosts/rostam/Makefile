@@ -47,7 +47,7 @@ $(HOME)/.xscreensaver: config/xscreensaver.txt
 
 $(HOME)/.local/bin/restart-display-manager: scripts/restart-display-manager.sh
 	mkdir -p $(HOME)/.local/bin
-    cp $< $@
+	cp $< $@
 
 clean:
 	rm -f $(TARGETS)
