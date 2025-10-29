@@ -133,6 +133,7 @@ in
     signal-desktop
     sqlite
     todoist-electron
+    typst
     usbutils # lsusb
     vim
     wdisplays
