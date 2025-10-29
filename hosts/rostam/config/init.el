@@ -66,9 +66,31 @@
     granger
     hickey
     junio
+    leuven
+    leuven-dark
+    manoj-dark
+    mccarthy
+    misterioso
+    modus-operandi
+    modus-vivendi
+    nano
+    nano-dark
+    nano-light
+    odersky
+    ritchie
+    spolsky
+    tango
+    tango-dark
+    tsdh-dark
+    tsdh-light
+    whiteboard
+    wilson
+    wombat
     wheatgrass))
 
-(defvar my-current-theme 'wheatgrass)
+(defvar my-default-theme 'wheatgrass)
+
+(defvar my-current-theme my-default-theme)
 
 (load-theme my-current-theme t)
 
@@ -96,12 +118,17 @@
 
 (defun theme-prev ()
   (interactive)
-  (theme-cycle :prev))  
+  (theme-cycle :prev))
+
+(defun theme-reset ()
+  (interactive)
+  (setq my-current-theme my-default-theme)
+  (load-theme my-current-theme t)
+  (message "Theme: %s" my-current-theme))  
 
 (keymap-global-set "<f10>"   'theme-next)
 (keymap-global-set "S-<f10>" 'theme-prev)
-
-  
+(keymap-global-set "C-<f10>" 'theme-reset)  
 
 ;;;
 ;;; etc.
