@@ -142,6 +142,7 @@ in
     rustup
     signal-desktop
     sqlite
+    stow
     todoist-electron
     typst
     usbutils # lsusb
@@ -149,8 +150,8 @@ in
     wdisplays
     xcape
     xfce.thunar
-    xscreensaver
     xorg.xev
+    xscreensaver
     zed-editor
   ];
 
