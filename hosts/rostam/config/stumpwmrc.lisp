@@ -50,6 +50,16 @@
 ;; Reload the configuration.
 (defkey "s-R" "loadrc")
 
+;; Define a new set of workspaces.
+
+(stumpwm::run-commands
+ "grename 1"
+ "gnew 2"
+ "gnew 3"
+ "gnew 4"
+ "gnew 5"
+ "gselect 1")
+
 ;; Switch workspaces.
 (defkey "s-1" "gselect 1")
 (defkey "s-2" "gselect 2")
@@ -350,14 +360,7 @@ HEIGHT are subtracted."
 ;;; Startup
 ;;;
 
-(stumpwm::run-commands
- "grename 1"
- "gnew 2"
- "gnew 3"
- "gnew 4"
- "gnew 5"
- "gselect 1"
- "toggle-gaps-on")
+(stumpwm::run-commands "toggle-gaps-on")
 
 (run-shell-command "polybar")
 (run-shell-command "feh --no-fehbg --bg-fill ~/.local/share/panther.jpg")
