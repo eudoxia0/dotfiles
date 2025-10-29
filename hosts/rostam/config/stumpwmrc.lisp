@@ -152,13 +152,13 @@
 ;;;
 
 ;; Head gaps run along the 4 borders of the monitor(s).
-(defparameter *head-gaps-size* 10)
+(defparameter *head-gaps-size* 0)
 
 ;; Inner gaps run along all the 4 borders of a window.
 (defparameter *inner-gaps-size* 10)
 
 ;; Outer gaps add more padding to the outermost borders of a window (touching the screen border).
-(defparameter *outer-gaps-size* 0)
+(defparameter *outer-gaps-size* 10)
 
 ;; Whether or not gaps are on.
 (defparameter *gaps-on* nil)
