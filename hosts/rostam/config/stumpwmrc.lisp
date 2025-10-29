@@ -355,4 +355,4 @@ HEIGHT are subtracted."
  "toggle-gaps-on")
 
 (run-shell-command "polybar")
-(run-shell-command "feh --bg-fill ~/.local/share/panther.jpg")
+(run-shell-command "feh --no-fehbg --bg-fill ~/.local/share/panther.jpg")
