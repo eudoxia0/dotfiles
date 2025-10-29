@@ -167,9 +167,7 @@ in
   ];
 
   # home manager
-  home-manager.users.eudoxia = { pkgs, ... }: {
-    nixpkgs.config.allowUnfree = true;
-
+  home-manager.users.eudoxia = {
     home = {
       stateVersion = "25.05"; # DO NOT CHANGE
       shellAliases = {
