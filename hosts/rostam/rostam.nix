@@ -161,8 +161,11 @@ in
     home = {
       stateVersion = "25.05"; # DO NOT CHANGE
       shellAliases = {
+        cdt = "cd ~/dotfiles/hosts/rostam";
         cf = "cargo fmt";
         ck = "cargo check";
+        fd = "fd -HI";
+        find = "echo 'use fd instead'";
         gb = "git branch";
         gcam = "git commit -a -m";
         gco = "git checkout";
@@ -170,8 +173,6 @@ in
         gs = "git status";
         gu = "git push -u origin HEAD";
         ls = "ls -1 --color";
-        cdt = "cd ~/dotfiles/hosts/rostam";
-        find = "echo 'use fd instead'";
       };
     };
 
@@ -256,7 +257,7 @@ in
 
   # performance
   powerManagement.cpuFreqGovernor = "performance";
-  
+
   boot.kernelPackages = pkgs.linuxPackages_zen;
 
   # Zen kernel tweaks.
