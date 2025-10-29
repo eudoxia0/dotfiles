@@ -53,26 +53,26 @@
 ;; Define a new set of workspaces.
 
 (stumpwm::run-commands
- "grename 1"
- "gnew 2"
- "gnew 3"
- "gnew 4"
- "gnew 5"
- "gselect 1")
+ "grename α"
+ "gnew β"
+ "gnew γ"
+ "gnew δ"
+ "gnew ε"
+ "gselect α")
 
 ;; Switch workspaces.
-(defkey "s-1" "gselect 1")
-(defkey "s-2" "gselect 2")
-(defkey "s-3" "gselect 3")
-(defkey "s-4" "gselect 4")
-(defkey "s-5" "gselect 5")
+(defkey "s-1" "gselect α")
+(defkey "s-2" "gselect β")
+(defkey "s-3" "gselect γ")
+(defkey "s-4" "gselect δ")
+(defkey "s-5" "gselect ε")
 
 ;; Move the current window to another workspace.
-(defkey "s-!" "gmove 1")
-(defkey "s-@" "gmove 2")
-(defkey "s-#" "gmove 3")
-(defkey "s-$" "gmove 4")
-(defkey "s-%" "gmove 5")
+(defkey "s-!" "gmove α")
+(defkey "s-@" "gmove β")
+(defkey "s-#" "gmove γ")
+(defkey "s-$" "gmove δ")
+(defkey "s-%" "gmove ε")
 
 ;; Switch to the next window in the current frame.
 (defkey "s-n" "pull-hidden-next")
