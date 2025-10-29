@@ -125,7 +125,7 @@ in
     gimp3
     git
     gnome-font-viewer
-    gnome-inform-7
+    gnome-inform7
     gnumake
     guile
     ideogram
