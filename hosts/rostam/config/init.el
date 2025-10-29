@@ -126,8 +126,8 @@
   (load-theme my-current-theme t)
   (message "Theme: %s" my-current-theme))  
 
+(keymap-global-set "<f9>"    'theme-prev)
 (keymap-global-set "<f10>"   'theme-next)
-(keymap-global-set "S-<f10>" 'theme-prev)
 (keymap-global-set "C-<f10>" 'theme-reset)  
 
 ;;;
