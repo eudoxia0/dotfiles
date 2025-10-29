@@ -241,6 +241,7 @@ in
         olivetti
         rust-mode
         sly
+        kaolin-themes
         sublime-themes
         treemacs
         unfill
