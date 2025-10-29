@@ -150,6 +150,7 @@ in
     xcape
     xfce.thunar
     xscreensaver
+    xorg.xev
     zed-editor
   ];
 
