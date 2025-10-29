@@ -32,9 +32,6 @@
 ;;; UI
 ;;;
 
-;; Theme.
-(load-theme 'wheatgrass t)
-
 ;; Line numbers everywhere.
 (global-display-line-numbers-mode 1)
 
@@ -51,6 +48,60 @@
 (let ((font "Fira Code-11"))
   (set-face-attribute 'default nil :font font)
   (set-face-attribute 'mode-line nil :font font))
+
+;;;
+;;; Themes
+;;;
+
+(require 'cl-lib)
+
+(defvar my-themes
+  '(adwaita
+    brin
+    deeper-blue
+    dichromacy
+    dorsey
+    fogus
+    graham
+    granger
+    hickey
+    junio
+    wheatgrass))
+
+(defvar my-current-theme 'wheatgrass)
+
+(load-theme my-current-theme t)
+
+(defun theme-cycle (direction)
+  "Cycle through `my-themes` in DIRECTION (:next or :prev)."
+  (interactive (list (intern (completing-read "Direction: " '(:next :prev) nil t))))
+  (let* ((len (length my-themes))
+         (delta (if (eq direction :prev) -1 1))
+         (cur-idx (or (cl-position my-current-theme my-themes :test #'eq) -1))
+         (start-idx (if (= cur-idx -1) 0 cur-idx))
+         (next-idx (mod (+ start-idx delta) len))
+         (next (nth next-idx my-themes)))
+    (mapc #'disable-theme custom-enabled-themes)
+    (condition-case err
+        (progn
+          (load-theme next t)
+          (setq my-current-theme next)
+          (message "Theme: %s" next))
+      (error
+       (message "Failed to load theme %S: %s" next (error-message-string err))))))
+
+(defun theme-next ()
+  (interactive)
+  (theme-cycle :next))
+
+(defun theme-prev ()
+  (interactive)
+  (theme-cycle :prev))  
+
+(keymap-global-set "<f10>"   'theme-next)
+(keymap-global-set "S-<f10>" 'theme-prev)
+
+  
 
 ;;;
 ;;; etc.
