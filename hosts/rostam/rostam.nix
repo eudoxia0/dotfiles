@@ -242,6 +242,7 @@ in
         rust-mode
         sly
         kaolin-themes
+        moe-theme
         sublime-themes
         treemacs
         unfill
