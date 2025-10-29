@@ -26,6 +26,7 @@ matches:
   - { trigger: ":bookgreen", replace: "📗" }
   - { trigger: ":bookred", replace: "📕" }
   - { trigger: ":books", replace: "📚" }
+  - { trigger: ":bowl", replace: "🥣" }
   - { trigger: ":box", replace: "📦" }
   - { trigger: ":brush", replace: "🪥" }
   - { trigger: ":bug", replace: "🐞" }
@@ -35,6 +36,7 @@ matches:
   - { trigger: ":chore", replace: "🔧" }
   - { trigger: ":coffee", replace: "☕" }
   - { trigger: ":cook", replace: "🍳" }
+  - { trigger: ":cream", replace: "🧴" }
   - { trigger: ":dash", replace: "💨" }
   - { trigger: ":desktop", replace: "🖥️" }
   - { trigger: ":disc", replace: "💿" }
@@ -53,6 +55,7 @@ matches:
   - { trigger: ":iron", replace: "♨️" }
   - { trigger: ":laptop", replace: "💻" }
   - { trigger: ":log", replace: "📝" }
+  - { trigger: ":lotion", replace: "🧴" }
   - { trigger: ":mag", replace: "🔍" }
   - { trigger: ":milk", replace: "🥛" }
   - { trigger: ":monitor", replace: "🖥️" }
