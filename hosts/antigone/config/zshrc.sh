@@ -17,7 +17,7 @@ export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/sbin:/sbin"
 
 # Aliases
-alias -- 'cf'='cargo fmt'
+alias -- 'cf'='cargo +nightly fmt'
 alias -- 'ck'='cargo check'
 alias -- 'gb'='git branch'
 alias -- 'gcam'='git commit -a -m'

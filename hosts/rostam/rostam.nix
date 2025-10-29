@@ -162,7 +162,7 @@ in
       stateVersion = "25.05"; # DO NOT CHANGE
       shellAliases = {
         cdt = "cd ~/dotfiles/hosts/rostam";
-        cf = "cargo fmt";
+        cf = "cargo +nightly fmt";
         ck = "cargo check";
         fd = "fd -HI";
         find = "echo 'use fd instead'";
