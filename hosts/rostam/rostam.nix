@@ -124,10 +124,12 @@ in
     gimp3
     git
     gnome-font-viewer
+    gnome-inform-7
     gnumake
     guile
     ideogram
     imagemagick
+    inform7
     just
     libreoffice
     mate.caja
