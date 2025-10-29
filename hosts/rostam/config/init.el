@@ -85,10 +85,25 @@
     tsdh-light
     whiteboard
     wilson
+    kaolin-aurora
+    kaolin-blossom
+    kaolin-breeze
+    kaolin-bubblegum
+    kaolin-dark
+    kaolin-eclipse
+    kaolin-galaxy
+    kaolin-light
+    kaolin-mono-dark
+    kaolin-mono-light
+    kaolin-ocean
+    kaolin-shiva
+    kaolin-temple
+    kaolin-valley-dark
+    kaolin-valley-light
     wombat
     wheatgrass))
 
-(defvar my-default-theme 'wheatgrass)
+(defvar my-default-theme 'kaolin-galaxy)
 
 (defvar my-current-theme my-default-theme)
 
