@@ -107,6 +107,7 @@ in
 
   # packages
   environment.systemPackages = with pkgs; [
+    agda
     age
     alacritty
     arandr
