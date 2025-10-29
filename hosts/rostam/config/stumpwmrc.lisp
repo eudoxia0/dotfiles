@@ -1,6 +1,7 @@
 ;;;; -*- mode: Lisp -*-
 ;;;;
-;;;; stumpwm is cool as hell and if you disagree get the fuck out of here
+;;;; stumpwm is cool as hell and if you disagree get the fuck out of
+;;;; here
 ;;;;
 (in-package :stumpwm)
 
@@ -159,7 +160,8 @@
 ;; Inner gaps run along all the 4 borders of a window.
 (defparameter *inner-gaps-size* 10)
 
-;; Outer gaps add more padding to the outermost borders of a window (touching the screen border).
+;; Outer gaps add more padding to the outermost borders of a window
+;; (touching the screen border).
 (defparameter *outer-gaps-size* 10)
 
 ;; Whether or not gaps are on.
@@ -213,9 +215,10 @@ HEIGHT are subtracted."
       (if (apply-gaps-p win)
           (multiple-value-setq (ox oy ow oh) (gaps-offsets win)))
 
-      ;; Only do width or height subtraction if result will be positive,
-      ;; otherwise stumpwm will crash. Also, only modify window dimensions
-      ;; if needed (i.e. window at least fills frame minus gap).
+      ;; Only do width or height subtraction if result will be
+      ;; positive, otherwise stumpwm will crash. Also, only modify
+      ;; window dimensions if needed (i.e. window at least fills frame
+      ;; minus gap).
       (when (and (< ow width)
                  (>= width (- (frame-width frame) ow)))
         (setf width (- width ow)))
