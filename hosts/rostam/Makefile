@@ -8,6 +8,7 @@ TARGETS := $(HOME)/.config/alacritty/alacritty.toml \
 		$(HOME)/.emacs.d/init.el \
 		$(HOME)/.local/share/panther.jpg \
 		$(HOME)/.stumpwm.d/init.lisp \
+		$(HOME)/.local/bin/restart-display-manager \
 		$(HOME)/.xscreensaver
 
 .PHONY: all recrank upgrade clean clean-nix
@@ -43,6 +44,10 @@ $(HOME)/.stumpwm.d/init.lisp: config/stumpwmrc.lisp
 
 $(HOME)/.xscreensaver: config/xscreensaver.txt
 	cp $< $@
+
+$(HOME)/.local/bin/restart-display-manager: scripts/restart-display-manager.sh
+	mkdir -p $(HOME)/.local/bin
+    cp $< $@
 
 clean:
 	rm -f $(TARGETS)
