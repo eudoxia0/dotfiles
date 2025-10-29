@@ -234,7 +234,6 @@ in
       enable = true;
       package = pkgs.emacs-gtk;
       extraPackages = epkgs: with epkgs; [
-        aircon-theme
         magit
         markdown-mode
         nano-theme
