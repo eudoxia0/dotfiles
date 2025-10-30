@@ -44,7 +44,7 @@ in
   users.users.eudoxia = {
     isNormalUser = true;
     description = "eudoxia";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "i2c" ];
   };
 
   # services
@@ -119,6 +119,7 @@ in
     chromium
     clang
     curl
+    ddcutil
     fastfetch
     fd
     feh
@@ -301,4 +302,8 @@ in
 
   # Ensure I have GPU drivers.
   hardware.graphics.enable = true;
+
+  # Add i2c to control monitor brightness from the terminal. Needed by
+  # ddcutil.
+  boot.kernelModules = [ "i2c-dev" ];
 }
