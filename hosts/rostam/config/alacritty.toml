@@ -1,6 +1,6 @@
 [window]
 decorations = "None"
-padding = { x = 10, y = 10 }
+padding = { x = 3, y = 3 }
 
 [scrolling]
 history = 100000
