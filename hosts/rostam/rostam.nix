@@ -157,6 +157,7 @@ in
     xscreensaver
     zed-editor
   ];
+  environment.localBinInPath = true;
 
   # fonts
   fonts.packages = with pkgs; [
