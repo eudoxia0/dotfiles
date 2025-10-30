@@ -37,6 +37,9 @@ in
     LC_TIME = "en_US.UTF-8";
   };
 
+  # Nix settings.
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   # users
   users.users.eudoxia = {
     isNormalUser = true;
