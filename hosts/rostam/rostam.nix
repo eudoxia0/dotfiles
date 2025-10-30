@@ -168,17 +168,28 @@ in
   environment.localBinInPath = true;
 
   # fonts
-  fonts.packages = with pkgs; [
-    fira-code
-    inconsolata
-    iosevka
-    jetbrains-mono
-    liberation_ttf
-    noto-fonts
-    noto-fonts-emoji
-    terminus_font
-    terminus_font_ttf
-  ];
+  fonts = {
+    enableDefaultPackages = true;
+    enableGhostscriptFonts = true;
+    packages = with pkgs; [
+      fira-code
+      inconsolata
+      iosevka
+      jetbrains-mono
+      noto-fonts
+      # noto-fonts-emoji
+      gyre-fonts
+      liberation_ttf
+      terminus_font
+      terminus_font_ttf
+    ];
+    fontconfig = {
+      defaultFonts = {
+        emoji = ["Apple Color Emoji"];
+        # emoji = ["Noto Color Emoji"];
+      };
+    };
+  };
 
   # home manager
   home-manager.users.eudoxia = {
