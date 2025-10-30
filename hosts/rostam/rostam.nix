@@ -152,6 +152,7 @@ in
     signal-desktop
     sqlite
     stow
+    taskwarrior-tui
     taskwarrior3
     todoist-electron
     typst
