@@ -169,13 +169,13 @@ in
   fonts.packages = with pkgs; [
     fira-code
     inconsolata
+    iosevka
     jetbrains-mono
     liberation_ttf
-    terminus_font_ttf
-    terminus_font
     noto-fonts
     noto-fonts-emoji
-    iosevka
+    terminus_font
+    terminus_font_ttf
   ];
 
   # home manager
