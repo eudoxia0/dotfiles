@@ -139,9 +139,13 @@ in
     mate.caja
     meld
     neofetch
+    pavucontrol
     pciutils # lspci
     pcmanfm
-    polybar
+    (polybar.override {
+      pulseSupport = true;
+    })
+    pulsemixer
     rox-filer
     ruby
     rustup
