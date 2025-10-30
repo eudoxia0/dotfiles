@@ -152,6 +152,7 @@ in
     signal-desktop
     sqlite
     stow
+    taskwarrior3
     todoist-electron
     typst
     usbutils # lsusb
