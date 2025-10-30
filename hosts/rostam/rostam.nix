@@ -169,12 +169,13 @@ in
 
   # fonts
   fonts = {
-    enableDefaultPackages = true;
+    enableDefaultPackages = false;
     enableGhostscriptFonts = true;
     packages = with pkgs; [
       fira-code
       inconsolata
       iosevka
+      dejavu_fonts
       jetbrains-mono
       noto-fonts
       # noto-fonts-emoji
