@@ -99,14 +99,15 @@ in
     enable = true;
     # Certain features, including CLI integration and system authentication support,
     # require enabling PolKit integration on some desktop environments (e.g. Plasma).
-    polkitPolicyOwners = [ "eudoxia" ];
+    # polkitPolicyOwners = [ "eudoxia" ];
   };
-  programs.ssh = {
-    extraConfig = ''
-          Host *
-          IdentityAgent ~/.1password/agent.sock
-        '';
-  };
+  # programs.ssh = {
+  #   extraConfig = ''
+  #         Host *
+  #         IdentityAgent ~/.1password/agent.sock
+  #       '';
+  # };
+  programs.ssh.startAgent = true;
 
   # packages
   environment.systemPackages = with pkgs; [
@@ -220,7 +221,7 @@ in
         user = {
           name = "Fernando Borretti";
           email = "fernando@borretti.me";
-          signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINWGraQs2xjwtUVuOB/CtNJPjWKtbFpkh3EvANIR9Ld1";
+          signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHUS90fzTDy7mfwQIpDBFg1zjBPsL0eWrEN/kgeSl6eW";
         };
         color = {
           ui = "auto";
@@ -239,15 +240,15 @@ in
           cmd = "meld \"$LOCAL\" \"$BASE\" \"$REMOTE\" --output=\"$MERGED\"";
           trustExitCode = "true";
         };
-        gpg = {
-          format = "ssh";
-        };
-        "gpg \"ssh\"" = {
-          program = "${lib.getExe' pkgs._1password-gui "op-ssh-sign"}";
-        };
-        commit = {
-          gpgsign = true;
-        };
+        # gpg = {
+        #   format = "ssh";
+        # };
+        # "gpg \"ssh\"" = {
+        #   program = "${lib.getExe' pkgs._1password-gui "op-ssh-sign"}";
+        # };
+        # commit = {
+        #   gpgsign = true;
+        # };
         alias = {
           undo = "reset --soft HEAD~1";
           tree = "log --pretty='%Cgreen%h%Creset [%ai] %s %Cred<%Creset%an%Cred>' --decorate --graph";
