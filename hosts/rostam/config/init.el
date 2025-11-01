@@ -91,12 +91,6 @@
 (setq column-number-mode t)
 
 ;;;
-;;; Mode: Markdown
-;;;
-
-(setq markdown-mouse-follow-link nil)
-
-;;;
 ;;; Themes
 ;;;
 
@@ -193,7 +187,21 @@
 (keymap-global-set "C-<f10>" 'theme-reset)
 
 ;;;
-;;; etc.
+;;; Mode: Markdown
+;;;
+
+(setq markdown-mouse-follow-link nil)
+
+;;;
+;;; Mode: ido
+;;;
+
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode 1)
+
+;;;
+;;; Mode: Inform7
 ;;;
 
 (add-to-list 'load-path "~/.emacs.d/eudoxia/")
