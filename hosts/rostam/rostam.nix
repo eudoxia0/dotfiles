@@ -102,12 +102,12 @@ in
     # require enabling PolKit integration on some desktop environments (e.g. Plasma).
     # polkitPolicyOwners = [ "eudoxia" ];
   };
-  # programs.ssh = {
-  #   extraConfig = ''
-  #         Host *
-  #         IdentityAgent ~/.1password/agent.sock
-  #       '';
-  # };
+  programs.ssh = {
+    extraConfig = ''
+      Host *
+        AddKeysToAgent yes
+    '';
+  };
   programs.ssh.startAgent = true;
   services.gnome.gcr-ssh-agent.enable = false;
 
