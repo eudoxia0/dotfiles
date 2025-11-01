@@ -10,6 +10,9 @@
 ;; No #autosave# files.
 (setq auto-save-default nil)
 
+;; Delete trailing whitespace on save.
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 ;; Get rid of overwrite mode because sometimes I enable it by accident.
 (put 'overwrite-mode 'disabled t)
 
