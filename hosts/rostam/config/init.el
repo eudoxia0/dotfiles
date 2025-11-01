@@ -69,6 +69,12 @@
 ;; Do not discretize the window size. Permits smooth resizing.
 (setq frame-resize-pixelwise t)
 
+;; Don't blink the cursor.
+(blink-cursor-mode 0)
+
+;; Fill paragraphs to 80 columns.
+(setq-default fill-column 80)
+
 ;; Font.
 (let ((font "Fira Code-11"))
   (set-face-attribute 'default nil :font font)
