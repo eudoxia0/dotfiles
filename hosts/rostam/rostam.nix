@@ -81,6 +81,7 @@ in
     latitude = -33.8;
     longitude = 151.2;
   };
+  services.gnome.gnome-keyring.enable = true;
 
   # programs
   programs.firefox.enable = true;
@@ -108,6 +109,9 @@ in
   #       '';
   # };
   programs.ssh.startAgent = true;
+  services.gnome.gcr-ssh-agent.enable = false;
+
+  security.pam.services.login.enableGnomeKeyring = true;
 
   # packages
   environment.systemPackages = with pkgs; [
@@ -136,7 +140,6 @@ in
     imagemagick
     inform7
     just
-    keychain
     libreoffice
     mate.caja
     meld
@@ -151,12 +154,14 @@ in
     rox-filer
     ruby
     rustup
+    seahorse
     signal-desktop
     sqlite
     stow
     taskwarrior-tui
     taskwarrior3
     todoist-electron
+    gcr
     typst
     usbutils # lsusb
     vim
@@ -211,6 +216,9 @@ in
         gs = "git status";
         gu = "git push -u origin HEAD";
         ls = "ls -1 --color";
+      };
+      sessionVariables = {
+        SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent";
       };
     };
 
