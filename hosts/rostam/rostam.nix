@@ -82,6 +82,16 @@ in
     longitude = 151.2;
   };
 
+  # cagebreak
+  environment.etc."xdg/wayland-sessions/my-custom-session.desktop".text = ''
+      [Desktop Entry]
+      Name=My Custom Wayland Session
+      Comment=Launch my custom Wayland compositor
+      Exec=${pkgs.cagebreak}/bin/cagebreak
+      Type=Application
+      Keywords=Wayland;Compositor;
+  '';
+
   # programs
   programs.firefox.enable = true;
   programs.sway = {
@@ -109,6 +119,7 @@ in
     arandr
     btop
     calibre
+    cagebreak
     chromium
     clang
     curl
