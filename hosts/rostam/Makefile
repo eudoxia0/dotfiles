@@ -10,11 +10,15 @@ TARGETS := $(HOME)/.config/alacritty/alacritty.toml \
 		$(HOME)/.local/share/panther.jpg \
 		$(HOME)/.stumpwm.d/init.lisp \
 		$(HOME)/.local/bin/restart-display-manager \
+		$(HOME)/.cagebreak \
 		$(HOME)/.xscreensaver
 
 .PHONY: all recrank upgrade clean clean-nix
 
 all: $(TARGETS)
+
+$(HOME)/.cagebreak: config/cagebreak.conf
+	cp $< $@
 
 $(HOME)/.config/alacritty/alacritty.toml: config/alacritty.toml
 	mkdir -p $(HOME)/.config/alacritty
