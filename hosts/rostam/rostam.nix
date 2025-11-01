@@ -64,6 +64,7 @@ in
     brightness_down_key = "null";
     brightness_up_key = "null";
     clear_password = true;
+    custom_sessions = "/etc/xdg/wayland-sessions/";
     default_input = "password";
     doom_fire_height = 8;
     doom_fire_spread = 4;
@@ -87,7 +88,7 @@ in
       [Desktop Entry]
       Name=My Custom Wayland Session
       Comment=Launch my custom Wayland compositor
-      Exec=${pkgs.cagebreak}/bin/cagebreak
+      Exec=${pkgs.cagebreak}/bin/cagebreak -c /home/eudoxia/cagebreak.conf
       Type=Application
       Keywords=Wayland;Compositor;
   '';
