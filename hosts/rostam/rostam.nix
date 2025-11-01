@@ -88,7 +88,7 @@ in
       [Desktop Entry]
       Name=My Custom Wayland Session
       Comment=Launch my custom Wayland compositor
-      Exec=${pkgs.cagebreak}/bin/cagebreak -c /home/eudoxia/cagebreak.conf
+      Exec=${pkgs.cagebreak}/bin/cagebreak -c /home/eudoxia/.cagebreak
       Type=Application
       Keywords=Wayland;Compositor;
   '';
