@@ -80,6 +80,9 @@
   (set-face-attribute 'default nil :font font)
   (set-face-attribute 'mode-line nil :font font))
 
+;; Show trailing whitespace.
+(setq-default show-trailing-whitespace t)
+
 ;;;
 ;;; Mode Line
 ;;;
