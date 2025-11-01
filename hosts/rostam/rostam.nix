@@ -225,7 +225,7 @@ in
         user = {
           name = "Fernando Borretti";
           email = "fernando@borretti.me";
-          signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHUS90fzTDy7mfwQIpDBFg1zjBPsL0eWrEN/kgeSl6eW";
+          signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIELrqPWqe1qDaTvYXyM3fw0+ToGRN6R+1qqt3QN5vWCR fernando@borretti.me";
         };
         color = {
           ui = "auto";
@@ -244,15 +244,12 @@ in
           cmd = "meld \"$LOCAL\" \"$BASE\" \"$REMOTE\" --output=\"$MERGED\"";
           trustExitCode = "true";
         };
-        # gpg = {
-        #   format = "ssh";
-        # };
-        # "gpg \"ssh\"" = {
-        #   program = "${lib.getExe' pkgs._1password-gui "op-ssh-sign"}";
-        # };
-        # commit = {
-        #   gpgsign = true;
-        # };
+        gpg = {
+          format = "ssh";
+        };
+        commit = {
+          gpgsign = true;
+        };
         alias = {
           undo = "reset --soft HEAD~1";
           tree = "log --pretty='%Cgreen%h%Creset [%ai] %s %Cred<%Creset%an%Cred>' --decorate --graph";
