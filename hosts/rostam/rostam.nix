@@ -252,15 +252,15 @@ in
       enable = true;
       package = pkgs.emacs-gtk;
       extraPackages = epkgs: with epkgs; [
+        kaolin-themes
         magit
         markdown-mode
+        moe-theme
         nano-theme
         nix-mode
         olivetti
         rust-mode
         sly
-        kaolin-themes
-        moe-theme
         sublime-themes
         treemacs
         unfill
