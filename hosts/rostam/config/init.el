@@ -53,6 +53,13 @@
   (set-face-attribute 'mode-line nil :font font))
 
 ;;;
+;;; Mode Line
+;;;
+
+;; Track the column number.
+(setq column-number-mode t)
+
+;;;
 ;;; Mode: Markdown
 ;;;
 
