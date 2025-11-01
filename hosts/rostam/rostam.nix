@@ -185,7 +185,6 @@ in
       dejavu_fonts
       jetbrains-mono
       noto-fonts
-      # noto-fonts-emoji
       gyre-fonts
       liberation_ttf
       terminus_font
@@ -194,7 +193,6 @@ in
     fontconfig = {
       defaultFonts = {
         emoji = ["Apple Color Emoji"];
-        # emoji = ["Noto Color Emoji"];
       };
     };
   };
