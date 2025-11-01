@@ -84,10 +84,10 @@ in
   };
 
   # cagebreak
-  environment.etc."xdg/wayland-sessions/my-custom-session.desktop".text = ''
+  environment.etc."xdg/wayland-sessions/cagebreak.desktop".text = ''
       [Desktop Entry]
-      Name=My Custom Wayland Session
-      Comment=Launch my custom Wayland compositor
+      Name=cagebreak
+      Comment=Launch cagebreak
       Exec=${pkgs.cagebreak}/bin/cagebreak -c /home/eudoxia/.cagebreak
       Type=Application
       Keywords=Wayland;Compositor;
