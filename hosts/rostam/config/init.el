@@ -52,6 +52,12 @@
   (set-face-attribute 'default nil :font font)
   (set-face-attribute 'mode-line nil :font font))
 
+;;;;
+;;;; Mode: Markdown
+;;;;
+
+(setq markdown-mouse-follow-link nil)
+
 ;;;
 ;;; Themes
 ;;;
