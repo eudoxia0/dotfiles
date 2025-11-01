@@ -10,7 +10,6 @@ TARGETS := $(HOME)/.config/alacritty/alacritty.toml \
 		$(HOME)/.local/share/panther.jpg \
 		$(HOME)/.stumpwm.d/init.lisp \
 		$(HOME)/.local/bin/restart-display-manager \
-		$(HOME)/.xinitrc \
 		$(HOME)/.xscreensaver
 
 .PHONY: all recrank upgrade clean clean-nix
@@ -49,9 +48,6 @@ $(HOME)/.local/share/panther.jpg: panther.jpg
 	cp $< $@
 
 $(HOME)/.stumpwm.d/init.lisp: config/stumpwmrc.lisp
-	cp $< $@
-
-$(HOME)/.xinitrc: config/xinitrc.sh
 	cp $< $@
 
 $(HOME)/.xscreensaver: config/xscreensaver.txt
