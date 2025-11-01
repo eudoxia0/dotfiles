@@ -179,14 +179,15 @@ in
     enableDefaultPackages = false;
     enableGhostscriptFonts = true;
     packages = with pkgs; [
+      dejavu_fonts
       fira-code
+      gyre-fonts
       inconsolata
       iosevka
-      dejavu_fonts
       jetbrains-mono
-      noto-fonts
-      gyre-fonts
       liberation_ttf
+      noto-fonts
+      noto-fonts-cjk-sans
       terminus_font
       terminus_font_ttf
     ];
