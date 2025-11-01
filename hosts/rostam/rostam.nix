@@ -136,6 +136,7 @@ in
     imagemagick
     inform7
     just
+    keychain
     libreoffice
     mate.caja
     meld
