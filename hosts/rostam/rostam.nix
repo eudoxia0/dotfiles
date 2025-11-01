@@ -1,3 +1,4 @@
+
 { config, pkgs, lib, ... }:
 
 let
@@ -318,7 +319,7 @@ in
   # ddcutil.
   boot.kernelModules = [ "i2c-dev" ];
 
-  # SSH
+  # SSH config
 
   programs.ssh.startAgent = false;
   programs.ssh.extraConfig = ''
