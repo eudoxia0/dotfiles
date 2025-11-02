@@ -29,6 +29,7 @@
     flowtime
     foot
     gimp3
+    gargoyle
     guile
     ideogram
     imagemagick
