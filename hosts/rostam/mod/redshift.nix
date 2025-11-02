@@ -8,7 +8,7 @@
 {
   services.redshift.enable = true;
   services.redshift.temperature = {
-    day   = 6500;
+    day = 6500;
     night = 3000;
   };
   location = {
