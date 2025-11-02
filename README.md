@@ -29,3 +29,9 @@ Screenshots and information about the various hosts.
 - **Terminal:** [alacritty](https://github.com/alacritty/alacritty)
 - **Password Manager:** [1Password](https://1password.com/)
 - **dotfiles management:** [home-manager](https://github.com/nix-community/home-manager)
+
+## License
+
+© 2013-2025 by [Fernando Borretti][fb]. Licensed under the MIT license.
+
+[fb]: https://borretti.me/
