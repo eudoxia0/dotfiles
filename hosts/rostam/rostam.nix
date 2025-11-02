@@ -145,10 +145,6 @@ in
     meld
     neofetch
     nwg-look
-    # Popular GTK themes
-    adwaita-qt
-    materia-theme
-    arc-theme
     pavucontrol
     pciutils # lspci
     pcmanfm
@@ -226,6 +222,10 @@ in
 
     gtk = {
       enable = true;
+      theme = {
+        name = "Arc";
+        package = pkgs.arc-theme;
+      };
       iconTheme = {
         name = "WhiteSur";
         package = pkgs.whitesur-icon-theme;
