@@ -374,4 +374,7 @@
 
   # Idk Claude says this will make things build faster.
   nix.settings.auto-optimise-store = true;
+
+  # Take up less space.
+  boot.loader.systemd-boot.configurationLimit = 10;
 }
