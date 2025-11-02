@@ -1,5 +1,9 @@
-{ config, pkgs, lib, ... }:
-
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   home-manager.users.eudoxia.home.stateVersion = "25.05"; # DO NOT CHANGE
@@ -9,14 +13,22 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.initrd.luks.devices."luks-5e2a0183-ed29-499d-8741-ea27e08caf28".device = "/dev/disk/by-uuid/5e2a0183-ed29-499d-8741-ea27e08caf28";
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  boot.initrd.luks.devices."luks-5e2a0183-ed29-499d-8741-ea27e08caf28".device =
+    "/dev/disk/by-uuid/5e2a0183-ed29-499d-8741-ea27e08caf28";
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # users
   users.users.eudoxia = {
     isNormalUser = true;
     description = "eudoxia";
-    extraGroups = [ "networkmanager" "wheel" "i2c" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "i2c"
+    ];
   };
 
   # services
@@ -29,17 +41,19 @@
   };
 
   # Fix a bug where `todoist-electron` thinks the timezone is `undefined` for some reason. Instead we explicitly set `TZ`.
-  nixpkgs.overlays = [(self: super: {
-    todoist-electron = super.symlinkJoin {
-      name = "todoist-electron";
-      paths = [ super.todoist-electron ];
-      buildInputs = [ super.makeWrapper ];
-      postBuild = ''
-        wrapProgram $out/bin/todoist-electron \
-          --set TZ "Australia/Sydney"
-      '';
-    };
-  })];
+  nixpkgs.overlays = [
+    (self: super: {
+      todoist-electron = super.symlinkJoin {
+        name = "todoist-electron";
+        paths = [ super.todoist-electron ];
+        buildInputs = [ super.makeWrapper ];
+        postBuild = ''
+          wrapProgram $out/bin/todoist-electron \
+            --set TZ "Australia/Sydney"
+        '';
+      };
+    })
+  ];
 
   # AMD-specific.
   hardware.cpu.amd.updateMicrocode = true;

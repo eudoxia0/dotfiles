@@ -1,24 +1,30 @@
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   home-manager.users.eudoxia = {
     programs.emacs = {
       enable = true;
       package = pkgs.emacs-gtk;
-      extraPackages = epkgs: with epkgs; [
-        kaolin-themes
-        magit
-        markdown-mode
-        moe-theme
-        nano-theme
-        nix-mode
-        olivetti
-        rust-mode
-        sly
-        sublime-themes
-        treemacs
-        unfill
-      ];
+      extraPackages =
+        epkgs: with epkgs; [
+          kaolin-themes
+          magit
+          markdown-mode
+          moe-theme
+          nano-theme
+          nix-mode
+          olivetti
+          rust-mode
+          sly
+          sublime-themes
+          treemacs
+          unfill
+        ];
     };
 
     # Copy Emacs Lisp files.

@@ -1,4 +1,9 @@
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   environment.systemPackages = with pkgs; [
@@ -18,6 +23,6 @@
   security.pam.services.login.enableGnomeKeyring = true;
 
   home-manager.users.eudoxia.home.sessionVariables = {
-    SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh";
+    SSH_AUTH_SOCK = "$XDG_RUNTIME_DIR/gcr/ssh";
   };
 }

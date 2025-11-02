@@ -1,4 +1,9 @@
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   # Don't enable the default NixOS fonts. Mostly because this includes Noto
@@ -26,7 +31,7 @@
   # fontconfig settings
   fonts.fontconfig = {
     defaultFonts = {
-      emoji = ["Apple Color Emoji"];
+      emoji = [ "Apple Color Emoji" ];
     };
     antialias = true;
     hinting = {
