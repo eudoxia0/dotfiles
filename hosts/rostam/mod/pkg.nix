@@ -8,7 +8,6 @@
     curl
     gnumake
     pciutils # lspci
-    pulsemixer
     ruby
     rustup
     sqlite
@@ -43,7 +42,6 @@
     mate.caja
     neofetch
     nwg-look
-    pavucontrol
     pcmanfm
     rox-filer
     seahorse

@@ -1,6 +1,14 @@
 { config, pkgs, lib, ... }:
 
 {
+  environment.systemPackages = with pkgs; [
+    pulsemixer
+  ];
+
+  home-manager.users.eudoxia.home.packages = with pkgs; [
+    pavucontrol
+  ];
+
   # Disable PulseAudio in favor of PipeWire
   services.pulseaudio.enable = false;
 
