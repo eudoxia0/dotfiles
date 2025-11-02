@@ -1,8 +1,7 @@
 # $< = first dep
 # $@ = target
 HOME    := /home/eudoxia
-TARGETS := $(HOME)/.config/espanso/match/base.yml \
-		$(HOME)/.config/polybar/config.ini \
+TARGETS := $(HOME)/.config/polybar/config.ini \
 		$(HOME)/.local/share/panther.jpg \
 		$(HOME)/.stumpwm.d/init.lisp \
 		$(HOME)/.local/bin/restart-display-manager \
@@ -14,10 +13,6 @@ TARGETS := $(HOME)/.config/espanso/match/base.yml \
 all: $(TARGETS)
 
 $(HOME)/.cagebreak: config/cagebreak.conf
-	cp $< $@
-
-$(HOME)/.config/espanso/match/base.yml: ../../common/espanso.yaml
-	mkdir -p $(HOME)/.config/espanso/match
 	cp $< $@
 
 $(HOME)/.config/polybar/config.ini: config/polybar.ini
@@ -40,10 +35,6 @@ $(HOME)/.xscreensaver: config/xscreensaver.txt
 $(HOME)/.local/bin/restart-display-manager: scripts/restart-display-manager.sh
 	mkdir -p $(HOME)/.local/bin
 	cp $< $@
-
-clean:
-	rm -f $(TARGETS)
-	rm -f config/inform7.el
 
 recrank:
 	sudo nixos-rebuild switch --flake .#rostam

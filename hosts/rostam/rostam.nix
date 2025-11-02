@@ -56,10 +56,6 @@
     home = {
       stateVersion = "25.05"; # DO NOT CHANGE
     };
-
-    services.espanso = {
-      enable = true;
-    };
   };
 
   # Fix a bug where `todoist-electron` thinks the timezone is `undefined` for some reason. Instead we explicitly set `TZ`.
