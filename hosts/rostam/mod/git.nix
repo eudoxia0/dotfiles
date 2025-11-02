@@ -5,6 +5,15 @@
     meld
   ];
 
+  home-manager.users.eudoxia.home.shellAliases = {
+    gb = "git branch";
+    gcam = "git commit -a -m";
+    gco = "git checkout";
+    gd = "git pull origin";
+    gs = "git status";
+    gu = "git push -u origin HEAD";
+  };
+
   home-manager.users.eudoxia.programs.git = {
     enable = true;
     settings = {
