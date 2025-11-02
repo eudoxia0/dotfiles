@@ -1,7 +1,6 @@
 { config, pkgs, lib, ... }:
 
 {
-  # Ly display manager configuration
   services.displayManager.ly.enable = true;
   services.displayManager.ly.settings = {
     animation = "doom";
