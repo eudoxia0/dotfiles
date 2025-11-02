@@ -21,7 +21,7 @@
       ];
     };
 
-    # Copyt Emacs Lisp files.
+    # Copy Emacs Lisp files.
     home.file.".emacs.d/init.el".source = ./init.el;
     home.file.".emacs.d/eudoxia/inform7.el".source = ./inform7.el;
   };
