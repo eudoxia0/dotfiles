@@ -31,6 +31,7 @@
             ./mod/espanso
             ./mod/firefox.nix
             ./mod/font.nix
+            ./mod/gh.nix
             ./mod/git.nix
             ./mod/gtk.nix
             ./mod/locale.nix
