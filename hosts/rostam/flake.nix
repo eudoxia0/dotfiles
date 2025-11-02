@@ -29,6 +29,7 @@
           ./mod/sway
           ./mod/locale.nix
           ./mod/network.nix
+          ./mod/gtk.nix
 
           # Make home-manager use system pkgs
           home-manager.nixosModules.home-manager
