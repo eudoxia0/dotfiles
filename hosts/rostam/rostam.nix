@@ -379,4 +379,7 @@ in
     info.enable = false;
     nixos.enable = false;
   };
+
+  # Idk Claude says this will make things build faster.
+  nix.settings.auto-optimise-store = true;
 }
