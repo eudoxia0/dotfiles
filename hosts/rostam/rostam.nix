@@ -20,6 +20,9 @@
     "flakes"
   ];
 
+  # Speed up the boot process.
+  boot.loader.timeout = 2;
+
   # users
   users.users.eudoxia = {
     isNormalUser = true;
