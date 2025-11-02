@@ -21,6 +21,7 @@
           ./mod/ssh.nix
           ./mod/emacs
           ./mod/alacritty
+          ./mod/git
 
           # Make home-manager use system pkgs
           home-manager.nixosModules.home-manager
