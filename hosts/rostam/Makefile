@@ -73,5 +73,4 @@ upgrade:
 	sudo nixos-rebuild switch --flake .#rostam
 
 clean-nix:
-	sudo nix-env --delete-generations old
 	sudo nix-collect-garbage -d
