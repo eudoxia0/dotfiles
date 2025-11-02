@@ -1,22 +1,11 @@
-name: Rostam Integrity Check
-
-on:
-  push:
-    branches: ["*"]
-    paths:
-      - "hosts/rostam/**/*.nix"
-      - ".github/workflows/rostam-integrity.yml"
-  pull_request:
-    branches: ["*"]
-    paths:
-      - "hosts/rostam/**/*.nix"
-      - ".github/workflows/rostam-integrity.yml"
+name: check
+on: push
 
 jobs:
-  nix-format-check:
+  # Ensure .nix files are formatted.
+  format:
     name: Check Nix Formatting
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
