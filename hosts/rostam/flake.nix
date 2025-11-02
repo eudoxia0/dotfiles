@@ -32,6 +32,7 @@
           ./mod/sway
           ./mod/espanso
           ./mod/stumpwm
+          ./mod/polybar
           ./rostam.nix
 
           # Make home-manager use system pkgs

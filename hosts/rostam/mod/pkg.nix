@@ -8,9 +8,6 @@
     curl
     gnumake
     pciutils # lspci
-    (polybar.override {
-      pulseSupport = true;
-    })
     pulsemixer
     ruby
     rustup

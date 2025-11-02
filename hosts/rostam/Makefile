@@ -1,8 +1,7 @@
 # $< = first dep
 # $@ = target
 HOME    := /home/eudoxia
-TARGETS := $(HOME)/.config/polybar/config.ini \
-		$(HOME)/.local/share/panther.jpg \
+TARGETS := $(HOME)/.local/share/panther.jpg \
 		$(HOME)/.stumpwm.d/init.lisp \
 		$(HOME)/.local/bin/restart-display-manager \
 		$(HOME)/.cagebreak \
@@ -13,10 +12,6 @@ TARGETS := $(HOME)/.config/polybar/config.ini \
 all: $(TARGETS)
 
 $(HOME)/.cagebreak: config/cagebreak.conf
-	cp $< $@
-
-$(HOME)/.config/polybar/config.ini: config/polybar.ini
-	mkdir -p $(HOME)/.config/polybar
 	cp $< $@
 
 config/inform7.el:
