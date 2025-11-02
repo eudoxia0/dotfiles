@@ -19,6 +19,7 @@
           ./mod/perf.nix
           ./mod/font.nix
           ./mod/ssh.nix
+          ./mod/emacs
 
           # Make home-manager use system pkgs
           home-manager.nixosModules.home-manager
