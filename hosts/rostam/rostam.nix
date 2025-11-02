@@ -12,22 +12,6 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.initrd.luks.devices."luks-5e2a0183-ed29-499d-8741-ea27e08caf28".device = "/dev/disk/by-uuid/5e2a0183-ed29-499d-8741-ea27e08caf28";
 
-  networking.networkmanager.enable = true;
-  networking.hostName = "rostam";
-  time.timeZone = "Australia/Sydney";
-
-  i18n.defaultLocale = "en_US.UTF-8";
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_US.UTF-8";
-    LC_IDENTIFICATION = "en_US.UTF-8";
-    LC_MEASUREMENT = "en_US.UTF-8";
-    LC_MONETARY = "en_US.UTF-8";
-    LC_NAME = "en_US.UTF-8";
-    LC_NUMERIC = "en_US.UTF-8";
-    LC_PAPER = "en_US.UTF-8";
-    LC_TELEPHONE = "en_US.UTF-8";
-    LC_TIME = "en_US.UTF-8";
-  };
 
   # Nix settings.
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -41,27 +25,6 @@
 
   # services
   services.printing.enable = true;
-  services.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-  };
-  services.displayManager.ly.enable = true;
-  services.displayManager.ly.settings = {
-    animation = "doom";
-    bigclock = "en";
-    brightness_down_key = "null";
-    brightness_up_key = "null";
-    clear_password = true;
-    custom_sessions = "/etc/xdg/wayland-sessions/";
-    default_input = "password";
-    doom_fire_height = 8;
-    doom_fire_spread = 4;
-    hide_version_string = true;
-  };
   services.xserver.enable = true;
   services.xserver.windowManager.stumpwm.enable = true;
   services.xserver.xkb = {
@@ -81,23 +44,8 @@
       Keywords=Wayland;Compositor;
   '';
 
-  # Enable the firewall.
-  networking.firewall.enable = true;
-
   # programs
   programs.firefox.enable = true;
-  programs.sway = {
-    enable = true;
-    wrapperFeatures.gtk = true;
-    extraPackages = with pkgs; [
-      mako # notification system developed by swaywm maintainer
-      grim # screenshot functionality
-      slurp # screenshot functionality
-      wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
-      waybar
-      wmenu
-    ];
-  };
   programs._1password.enable = true;
   programs._1password-gui = {
     enable = true;

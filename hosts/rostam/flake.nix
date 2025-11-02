@@ -24,6 +24,11 @@
           ./mod/git.nix
           ./mod/pkg.nix
           ./mod/redshift.nix
+          ./mod/audio.nix
+          ./mod/ly.nix
+          ./mod/sway
+          ./mod/locale.nix
+          ./mod/network.nix
 
           # Make home-manager use system pkgs
           home-manager.nixosModules.home-manager
