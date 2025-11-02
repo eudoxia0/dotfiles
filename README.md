@@ -1,5 +1,7 @@
 # eudoxia's dotfiles
 
+[![check](https://github.com/eudoxia0/dotfiles/actions/workflows/check.yaml/badge.svg?branch=master)](https://github.com/eudoxia0/dotfiles/actions/workflows/check.yaml)
+
 My dotfiles repository.
 
 ## Boxen
