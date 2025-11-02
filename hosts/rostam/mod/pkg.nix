@@ -8,7 +8,6 @@
     gnumake
     pciutils # lspci
     ruby
-    rustup
     sqlite
     stow
     usbutils # lsusb

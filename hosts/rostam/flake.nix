@@ -33,6 +33,7 @@
           ./mod/pkg.nix
           ./mod/polybar
           ./mod/redshift.nix
+          ./mod/rust.nix
           ./mod/shell.nix
           ./mod/ssh.nix
           ./mod/stumpwm
