@@ -2,7 +2,9 @@
 
 
 {
+  home-manager.users.eudoxia.home.stateVersion = "25.05"; # DO NOT CHANGE
   system.stateVersion = "25.05"; # DO NOT CHANGE
+
   nixpkgs.config.allowUnfree = true;
 
   boot.loader.systemd-boot.enable = true;
@@ -25,13 +27,6 @@
   programs._1password.enable = true;
   programs._1password-gui = {
     enable = true;
-  };
-
-  # home manager
-  home-manager.users.eudoxia = {
-    home = {
-      stateVersion = "25.05"; # DO NOT CHANGE
-    };
   };
 
   # Fix a bug where `todoist-electron` thinks the timezone is `undefined` for some reason. Instead we explicitly set `TZ`.
