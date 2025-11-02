@@ -94,6 +94,9 @@ in
       Keywords=Wayland;Compositor;
   '';
 
+  # Enable the firewall.
+  networking.firewall.enable = true;
+
   # programs
   programs.firefox.enable = true;
   programs.sway = {
