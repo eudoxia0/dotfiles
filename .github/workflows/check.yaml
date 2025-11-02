@@ -3,8 +3,7 @@ on: push
 
 jobs:
   # Ensure .nix files are formatted.
-  format:
-    name: Check Nix Formatting
+  nixfmt:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
