@@ -154,7 +154,6 @@
       packages = with pkgs; [
         agda
         age
-        alacritty
         arandr
         btop
         calibre

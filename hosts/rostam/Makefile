@@ -1,8 +1,7 @@
 # $< = first dep
 # $@ = target
 HOME    := /home/eudoxia
-TARGETS := $(HOME)/.config/alacritty/alacritty.toml \
-		$(HOME)/.config/espanso/match/base.yml \
+TARGETS := $(HOME)/.config/espanso/match/base.yml \
 		$(HOME)/.config/polybar/config.ini \
 		$(HOME)/.config/sway/config \
 		$(HOME)/.local/share/panther.jpg \
@@ -16,10 +15,6 @@ TARGETS := $(HOME)/.config/alacritty/alacritty.toml \
 all: $(TARGETS)
 
 $(HOME)/.cagebreak: config/cagebreak.conf
-	cp $< $@
-
-$(HOME)/.config/alacritty/alacritty.toml: config/alacritty.toml
-	mkdir -p $(HOME)/.config/alacritty
 	cp $< $@
 
 $(HOME)/.config/espanso/match/base.yml: ../../common/espanso.yaml

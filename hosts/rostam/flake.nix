@@ -20,6 +20,7 @@
           ./mod/font.nix
           ./mod/ssh.nix
           ./mod/emacs
+          ./mod/alacritty
 
           # Make home-manager use system pkgs
           home-manager.nixosModules.home-manager
