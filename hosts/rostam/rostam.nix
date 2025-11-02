@@ -365,4 +365,12 @@ in
   home-manager.users.eudoxia.home.sessionVariables = {
     SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh";
   };
+
+  documentation = {
+    enable = true;
+    man.enable = true;
+    doc.enable = false;
+    info.enable = false;
+    nixos.enable = false;
+  };
 }
