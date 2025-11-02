@@ -1,0 +1,63 @@
+name: Rostam Integrity Check
+
+on:
+  push:
+    branches: ["*"]
+    paths:
+      - "hosts/rostam/**/*.nix"
+      - ".github/workflows/rostam-integrity.yml"
+  pull_request:
+    branches: ["*"]
+    paths:
+      - "hosts/rostam/**/*.nix"
+      - ".github/workflows/rostam-integrity.yml"
+
+jobs:
+  nix-format-check:
+    name: Check Nix Formatting
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v26
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+
+      - name: Check Nix file formatting
+        run: |
+          echo "Checking Nix file formatting in hosts/rostam/..."
+
+          # Find all .nix files in hosts/rostam/
+          NIX_FILES=$(find hosts/rostam -name "*.nix" -type f)
+
+          if [ -z "$NIX_FILES" ]; then
+            echo "No .nix files found in hosts/rostam/"
+            exit 1
+          fi
+
+          echo "Found $(echo "$NIX_FILES" | wc -l) .nix files to check"
+
+          # Install nixpkgs-fmt
+          nix-env -iA nixpkgs.nixpkgs-fmt
+
+          # Check formatting
+          FAILED=0
+          for file in $NIX_FILES; do
+            echo "Checking $file..."
+            if ! nixpkgs-fmt --check "$file"; then
+              echo "❌ $file is not properly formatted"
+              FAILED=1
+            fi
+          done
+
+          if [ $FAILED -eq 1 ]; then
+            echo ""
+            echo "Formatting check failed! Please run 'nixpkgs-fmt' on the files above."
+            echo "You can format all files with: find hosts/rostam -name '*.nix' -exec nixpkgs-fmt {} +"
+            exit 1
+          fi
+
+          echo "✅ All Nix files are properly formatted!"
