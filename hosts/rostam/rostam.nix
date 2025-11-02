@@ -19,12 +19,6 @@
 
   # services
   services.printing.enable = true;
-  services.xserver.enable = true;
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
-  services.xserver.dpi = 168;
 
   # programs
   programs.firefox.enable = true;
