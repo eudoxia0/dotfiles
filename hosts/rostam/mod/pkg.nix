@@ -3,7 +3,6 @@
 {
   # System packages.
   environment.systemPackages = with pkgs; [
-    cagebreak
     clang
     curl
     gnumake
