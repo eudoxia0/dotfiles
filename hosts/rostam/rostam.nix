@@ -124,7 +124,6 @@
     rustup
     sqlite
     stow
-    gcr
     usbutils # lsusb
     vim
     xorg.xev
@@ -293,18 +292,4 @@
   # Add i2c to control monitor brightness from the terminal. Needed by
   # ddcutil.
   boot.kernelModules = [ "i2c-dev" ];
-
-  # SSH config
-
-  programs.ssh.startAgent = false;
-  programs.ssh.extraConfig = ''
-    Host *
-      AddKeysToAgent yes
-  '';
-  services.gnome.gcr-ssh-agent.enable = true;
-  services.gnome.gnome-keyring.enable = true;
-  security.pam.services.login.enableGnomeKeyring = true;
-  home-manager.users.eudoxia.home.sessionVariables = {
-    SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh";
-  };
 }
