@@ -14,7 +14,6 @@
     ruby
     sqlite
     vim
-    xorg.xev
   ];
   environment.localBinInPath = true;
 
@@ -22,7 +21,6 @@
   home-manager.users.eudoxia.home.packages = with pkgs; [
     agda
     age
-    arandr
     btop
     calibre
     chromium
@@ -37,13 +35,10 @@
     inform7
     just
     libreoffice
-    mate.caja
     neofetch
     nixfmt-tree
     nwg-look
     pciutils # lspci
-    pcmanfm
-    rox-filer
     seahorse
     signal-desktop
     taskwarrior-tui
@@ -53,7 +48,6 @@
     typst
     usbutils # lsusb
     wdisplays
-    xfce.thunar
     zed-editor
   ];
 }
