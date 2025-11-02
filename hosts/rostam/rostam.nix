@@ -70,11 +70,6 @@
   };
   services.xserver.dpi = 168;
   services.xscreensaver.enable = true;
-  services.redshift.enable = true;
-  location = {
-    latitude = -33.8;
-    longitude = 151.2;
-  };
 
   # cagebreak
   environment.etc."xdg/wayland-sessions/cagebreak.desktop".text = ''
