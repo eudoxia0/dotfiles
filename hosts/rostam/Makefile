@@ -66,12 +66,11 @@ clean:
 	rm -f config/inform7.el
 
 recrank:
-	sudo nixos-rebuild switch -I nixos-config=rostam.nix
+	sudo nixos-rebuild switch --flake .#rostam
 
 upgrade:
-	sudo nix-channel --update
-	sudo nixos-rebuild switch -I nixos-config=rostam.nix --upgrade
+	nix flake update
+	sudo nixos-rebuild switch --flake .#rostam
 
 clean-nix:
-	sudo nix-env --delete-generations old
-	sudo nix-collect-garbage -d
+	sudo nix-collect-garbage --delete-older-than 7d
