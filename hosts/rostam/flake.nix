@@ -17,6 +17,7 @@
         modules = [
           ./rostam.nix
           ./mod/perf.nix
+          ./mod/font.nix
 
           # Make home-manager use system pkgs
           home-manager.nixosModules.home-manager
