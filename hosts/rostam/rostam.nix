@@ -197,6 +197,15 @@ in
       defaultFonts = {
         emoji = ["Apple Color Emoji"];
       };
+      antialias = true;
+      hinting = {
+        enable = true;
+        style = "slight";
+      };
+      subpixel = {
+        rgba = "rgb";
+        lcdfilter = "default";
+      };
     };
   };
 
