@@ -115,64 +115,25 @@ in
 
   # packages
   environment.systemPackages = with pkgs; [
-    agda
-    age
-    alacritty
-    arandr
-    btop
-    calibre
     cagebreak
-    chromium
     clang
     curl
-    ddcutil
-    fastfetch
-    fd
-    feh
-    flowtime
-    font-manager
-    foot
-    gimp3
     git
-    gnome-font-viewer
     gnumake
-    guile
-    ideogram
-    imagemagick
-    inform7
-    just
-    libreoffice
-    mate.caja
-    meld
-    neofetch
-    nwg-look
-    pavucontrol
     pciutils # lspci
-    pcmanfm
     (polybar.override {
       pulseSupport = true;
     })
     pulsemixer
-    rox-filer
     ruby
     rustup
-    seahorse
-    signal-desktop
     sqlite
     stow
-    taskwarrior-tui
-    taskwarrior3
-    todoist-electron
     gcr
-    typst
     usbutils # lsusb
     vim
-    wdisplays
-    xcape
-    xfce.thunar
     xorg.xev
     xscreensaver
-    zed-editor
   ];
   environment.localBinInPath = true;
 
@@ -228,6 +189,49 @@ in
         gu = "git push -u origin HEAD";
         ls = "ls -1 --color";
       };
+
+      packages = with pkgs; [
+        agda
+        age
+        alacritty
+        arandr
+        btop
+        calibre
+        chromium
+        ddcutil
+        fastfetch
+        fd
+        feh
+        flowtime
+        font-manager
+        foot
+        gimp3
+        gnome-font-viewer
+        guile
+        ideogram
+        imagemagick
+        inform7
+        just
+        libreoffice
+        mate.caja
+        meld
+        neofetch
+        nwg-look
+        pavucontrol
+        pcmanfm
+        rox-filer
+        seahorse
+        signal-desktop
+        taskwarrior-tui
+        taskwarrior3
+        todoist-electron
+        typst
+        wdisplays
+        xcape
+        xcape
+        xfce.thunar
+        zed-editor
+      ];
     };
 
     gtk = {
