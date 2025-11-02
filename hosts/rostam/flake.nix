@@ -27,6 +27,7 @@
           ./mod/perf.nix
           ./mod/pkg.nix
           ./mod/redshift.nix
+          ./mod/shell.nix
           ./mod/ssh.nix
           ./mod/sway
           ./rostam.nix

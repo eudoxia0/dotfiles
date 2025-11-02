@@ -55,24 +55,7 @@
   home-manager.users.eudoxia = {
     home = {
       stateVersion = "25.05"; # DO NOT CHANGE
-      shellAliases = {
-        cdt = "cd ~/dotfiles/hosts/rostam";
-        cf = "cargo +nightly fmt";
-        ck = "cargo check";
-        cl= "cargo clippy --all-targets -- -D warnings";
-        fd = "fd -HI";
-        find = "echo 'use fd instead'";
-        gb = "git branch";
-        gcam = "git commit -a -m";
-        gco = "git checkout";
-        gd = "git pull origin";
-        gs = "git status";
-        gu = "git push -u origin HEAD";
-        ls = "ls -1 --color";
-      };
     };
-
-    programs.bash.enable = true;
 
     services.espanso = {
       enable = true;
