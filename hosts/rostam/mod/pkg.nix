@@ -16,7 +16,6 @@
     usbutils # lsusb
     vim
     xorg.xev
-    xscreensaver
   ];
   environment.localBinInPath = true;
 

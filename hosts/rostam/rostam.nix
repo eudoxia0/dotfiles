@@ -31,7 +31,6 @@
     variant = "";
   };
   services.xserver.dpi = 168;
-  services.xscreensaver.enable = true;
 
   # cagebreak
   environment.etc."xdg/wayland-sessions/cagebreak.desktop".text = ''
