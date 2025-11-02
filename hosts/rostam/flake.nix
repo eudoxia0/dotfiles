@@ -16,6 +16,7 @@
         system = "x86_64-linux";
         modules = [
           ./rostam.nix
+          ./mod/perf.nix
 
           # Make home-manager use system pkgs
           home-manager.nixosModules.home-manager
