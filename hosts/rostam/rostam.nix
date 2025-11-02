@@ -145,6 +145,12 @@ in
     meld
     neofetch
     nwg-look
+    # Popular GTK themes
+    adwaita-qt
+    materia-theme
+    arc-theme
+    papirus-icon-theme
+    numix-icon-theme
     pavucontrol
     pciutils # lspci
     pcmanfm
