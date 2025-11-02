@@ -39,7 +39,7 @@
     libreoffice
     mate.caja
     neofetch
-    nixfmt
+    nixfmt-tree
     nwg-look
     pciutils # lspci
     pcmanfm
