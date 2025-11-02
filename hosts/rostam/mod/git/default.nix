@@ -1,6 +1,10 @@
 { config, pkgs, lib, ... }:
 
 {
+  home-manager.users.eudoxia.home.packages = with pkgs; [
+    meld
+  ];
+
   home-manager.users.eudoxia.programs.git = {
     enable = true;
     settings = {

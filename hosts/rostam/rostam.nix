@@ -113,7 +113,6 @@
     cagebreak
     clang
     curl
-    git
     gnumake
     pciutils # lspci
     (polybar.override {
@@ -174,7 +173,6 @@
         just
         libreoffice
         mate.caja
-        meld
         neofetch
         nwg-look
         pavucontrol
