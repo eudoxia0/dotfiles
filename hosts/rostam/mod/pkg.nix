@@ -24,7 +24,6 @@
     chromium
     fastfetch
     fd
-    feh
     flowtime
     foot
     gimp3
