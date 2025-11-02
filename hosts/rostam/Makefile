@@ -3,7 +3,6 @@
 HOME    := /home/eudoxia
 TARGETS := $(HOME)/.config/espanso/match/base.yml \
 		$(HOME)/.config/polybar/config.ini \
-		$(HOME)/.config/sway/config \
 		$(HOME)/.local/share/panther.jpg \
 		$(HOME)/.stumpwm.d/init.lisp \
 		$(HOME)/.local/bin/restart-display-manager \
@@ -23,10 +22,6 @@ $(HOME)/.config/espanso/match/base.yml: ../../common/espanso.yaml
 
 $(HOME)/.config/polybar/config.ini: config/polybar.ini
 	mkdir -p $(HOME)/.config/polybar
-	cp $< $@
-
-$(HOME)/.config/sway/config: config/sway.txt
-	mkdir -p $(HOME)/.config/sway
 	cp $< $@
 
 config/inform7.el:
