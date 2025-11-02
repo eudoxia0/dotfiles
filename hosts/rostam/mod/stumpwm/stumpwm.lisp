@@ -356,6 +356,9 @@ HEIGHT are subtracted."
   (setf *gaps-on* nil)
   (refresh-heads))
 
+;; Toggle gaps on/off.
+(defprefixkey "g" "toggle-gaps")
+
 ;;;
 ;;; Startup
 ;;;
