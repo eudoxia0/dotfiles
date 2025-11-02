@@ -20,7 +20,6 @@
           # Make home-manager use system pkgs
           home-manager.nixosModules.home-manager
           {
-            # Make home-manager use system pkgs
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
           }
