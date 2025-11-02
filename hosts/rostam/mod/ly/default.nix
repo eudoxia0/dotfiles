@@ -19,4 +19,7 @@
     doom_fire_spread = 4;
     hide_version_string = true;
   };
+  home-manager.users.eudoxia.home.file = {
+    ".local/bin/restart-ly".source = ./restart-ly.sh;
+  };
 }

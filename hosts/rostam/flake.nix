@@ -35,7 +35,7 @@
             ./mod/git.nix
             ./mod/gtk.nix
             ./mod/locale.nix
-            ./mod/ly.nix
+            ./mod/ly
             ./mod/network.nix
             ./mod/perf.nix
             ./mod/pkg.nix
