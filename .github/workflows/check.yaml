@@ -13,6 +13,6 @@ jobs:
         uses: DeterminateSystems/nix-installer-action@v20
 
       - name: install nixfmt
-        run: nix profile add nixpkgs#nixfmt
+        run: nix profile add nixpkgs#nixfmt-tree
 
-      - run: nixfmt --check .
+      - run: nixfmt-tree --check .
