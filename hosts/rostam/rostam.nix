@@ -32,16 +32,6 @@
   };
   services.xserver.dpi = 168;
 
-  # cagebreak
-  environment.etc."xdg/wayland-sessions/cagebreak.desktop".text = ''
-      [Desktop Entry]
-      Name=cagebreak
-      Comment=Launch cagebreak
-      Exec=${pkgs.cagebreak}/bin/cagebreak -c /home/eudoxia/.cagebreak
-      Type=Application
-      Keywords=Wayland;Compositor;
-  '';
-
   # programs
   programs.firefox.enable = true;
   programs._1password.enable = true;
