@@ -14,4 +14,7 @@
   # Add i2c to control monitor brightness from the terminal. Needed by
   # ddcutil.
   boot.kernelModules = [ "i2c-dev" ];
+
+  # Add eudoxia to the i2c group.
+  users.users.eudoxia.extraGroups = [ "i2c" ];
 }
