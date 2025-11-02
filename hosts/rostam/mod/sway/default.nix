@@ -15,5 +15,5 @@
     ];
   };
 
-  home.file.".config/sway/config".source = ./sway.conf;
+  home-manager.users.eudoxia.home.file.".config/sway/config".source = ./sway.conf;
 }
