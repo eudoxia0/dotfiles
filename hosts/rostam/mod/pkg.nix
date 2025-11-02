@@ -13,7 +13,6 @@
     gnumake
     ruby
     sqlite
-    stow
     vim
     xorg.xev
   ];
