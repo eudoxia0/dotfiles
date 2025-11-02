@@ -144,6 +144,7 @@ in
     mate.caja
     meld
     neofetch
+    nwg-look
     pavucontrol
     pciutils # lspci
     pcmanfm
