@@ -46,6 +46,7 @@
             ./mod/ssh.nix
             ./mod/stumpwm
             ./mod/sway
+            ./mod/todoist.nix
             ./mod/wallpaper
             ./mod/x11.nix
             ./mod/xcape.nix

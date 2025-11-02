@@ -44,7 +44,6 @@
     signal-desktop
     taskwarrior-tui
     taskwarrior3
-    todoist-electron
     tokei
     typst
     usbutils # lsusb
