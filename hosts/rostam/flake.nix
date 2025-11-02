@@ -15,21 +15,21 @@
       rostam = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./rostam.nix
-          ./mod/perf.nix
-          ./mod/font.nix
-          ./mod/ssh.nix
-          ./mod/emacs
           ./mod/alacritty
+          ./mod/audio.nix
+          ./mod/emacs
+          ./mod/font.nix
           ./mod/git.nix
+          ./mod/gtk.nix
+          ./mod/locale.nix
+          ./mod/ly.nix
+          ./mod/network.nix
+          ./mod/perf.nix
           ./mod/pkg.nix
           ./mod/redshift.nix
-          ./mod/audio.nix
-          ./mod/ly.nix
+          ./mod/ssh.nix
           ./mod/sway
-          ./mod/locale.nix
-          ./mod/network.nix
-          ./mod/gtk.nix
+          ./rostam.nix
 
           # Make home-manager use system pkgs
           home-manager.nixosModules.home-manager
