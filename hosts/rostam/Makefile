@@ -5,5 +5,5 @@ upgrade:
 	nix flake update
 	sudo nixos-rebuild switch --flake .#rostam
 
-clean-nix:
+clean:
 	sudo nix-collect-garbage --delete-older-than 7d
