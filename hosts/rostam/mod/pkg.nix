@@ -48,7 +48,6 @@
     todoist-electron
     typst
     wdisplays
-    xcape
     xfce.thunar
     zed-editor
   ];
