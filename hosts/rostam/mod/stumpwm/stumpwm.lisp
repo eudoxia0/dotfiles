@@ -148,6 +148,7 @@
 
 ;; Lock the screen with xscreensaver.
 (defprefixkey "x" "exec xscreensaver-command --lock")
+(defkey "Pause" "exec xscreensaver-command --lock")
 
 (defparameter *config-map*
   (let ((m (make-sparse-keymap)))
