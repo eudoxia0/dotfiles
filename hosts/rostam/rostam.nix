@@ -336,7 +336,7 @@ in
   # Speed up compilation.
   nix.settings = {
     max-jobs = "auto";  # use all cores
-    cores = 16;         # thread count
+    cores = 0;          # use all available cores
   };
 
   # Better for development with lots of file watching
