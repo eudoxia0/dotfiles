@@ -73,4 +73,4 @@ upgrade:
 	sudo nixos-rebuild switch --flake .#rostam
 
 clean-nix:
-	sudo nix-collect-garbage -d
+	sudo nix-collect-garbage --delete-older-than 7d
