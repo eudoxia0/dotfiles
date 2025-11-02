@@ -38,5 +38,4 @@
       lcdfilter = "default";
     };
   };
-};
 }
