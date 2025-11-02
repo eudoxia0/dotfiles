@@ -18,4 +18,7 @@
     QT_AUTO_SCREEN_SCALE_FACTOR = "1";
     QT_SCALE_FACTOR = "2";
   };
+  home-manager.users.eudoxia.home.packages = with pkgs; [
+    scrot
+  ];
 }
