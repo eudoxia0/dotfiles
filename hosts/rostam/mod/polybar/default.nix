@@ -1,8 +1,6 @@
 { config, pkgs, lib, ... }:
 
 {
-  services.xserver.windowManager.stumpwm.enable = true;
-
   environment.systemPackages = with pkgs; [
     (polybar.override {
       pulseSupport = true;
