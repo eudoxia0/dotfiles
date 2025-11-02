@@ -35,6 +35,7 @@
           ./mod/stumpwm
           ./mod/sway
           ./mod/xscreensaver
+          ./hw.nix
           ./rostam.nix
 
           # Make home-manager use system pkgs

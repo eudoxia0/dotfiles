@@ -2,8 +2,6 @@
 
 
 {
-  imports = [ ./hw.nix ];
-
   system.stateVersion = "25.05"; # DO NOT CHANGE
   nixpkgs.config.allowUnfree = true;
 
