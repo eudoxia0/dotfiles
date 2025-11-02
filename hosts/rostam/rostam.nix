@@ -149,8 +149,6 @@ in
     adwaita-qt
     materia-theme
     arc-theme
-    papirus-icon-theme
-    numix-icon-theme
     pavucontrol
     pciutils # lspci
     pcmanfm
@@ -223,6 +221,14 @@ in
         gs = "git status";
         gu = "git push -u origin HEAD";
         ls = "ls -1 --color";
+      };
+    };
+
+    gtk = {
+      enable = true;
+      iconTheme = {
+        name = "WhiteSur";
+        package = pkgs.whitesur-icon-theme;
       };
     };
 
