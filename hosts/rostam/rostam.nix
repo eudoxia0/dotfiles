@@ -76,6 +76,7 @@ in
     layout = "us";
     variant = "";
   };
+  services.xserver.dpi = 192;
   services.xscreensaver.enable = true;
   services.redshift.enable = true;
   location = {
