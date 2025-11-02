@@ -162,10 +162,8 @@
         fd
         feh
         flowtime
-        font-manager
         foot
         gimp3
-        gnome-font-viewer
         guile
         ideogram
         imagemagick

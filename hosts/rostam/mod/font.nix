@@ -38,4 +38,10 @@
       lcdfilter = "default";
     };
   };
+
+  # font-related programs.
+  home-manager.users.eudoxia.home.packages = with pkgs; [
+    font-manager
+    gnome-font-viewer
+  ];
 }
