@@ -44,4 +44,7 @@
 
   # Take up less space.
   boot.loader.systemd-boot.configurationLimit = 10;
+
+  # Use ccache for faster rebuilds.
+  programs.ccache.enable = true;
 }
