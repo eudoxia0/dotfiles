@@ -36,6 +36,7 @@
           ./mod/ssh.nix
           ./mod/stumpwm
           ./mod/sway
+          ./mod/x11.nix
           ./mod/xscreensaver
           ./rostam.nix
 
