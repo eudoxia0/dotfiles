@@ -228,7 +228,6 @@ in
         typst
         wdisplays
         xcape
-        xcape
         xfce.thunar
         zed-editor
       ];
