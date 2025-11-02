@@ -31,6 +31,7 @@
           ./mod/ssh.nix
           ./mod/sway
           ./mod/espanso
+          ./mod/stumpwm
           ./rostam.nix
 
           # Make home-manager use system pkgs

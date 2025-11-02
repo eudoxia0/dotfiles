@@ -26,7 +26,6 @@
   # services
   services.printing.enable = true;
   services.xserver.enable = true;
-  services.xserver.windowManager.stumpwm.enable = true;
   services.xserver.xkb = {
     layout = "us";
     variant = "";
