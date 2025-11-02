@@ -18,6 +18,7 @@
           ./mod/alacritty
           ./mod/audio.nix
           ./mod/emacs
+          ./mod/espanso
           ./mod/font.nix
           ./mod/git.nix
           ./mod/gtk.nix
@@ -26,13 +27,12 @@
           ./mod/network.nix
           ./mod/perf.nix
           ./mod/pkg.nix
+          ./mod/polybar
           ./mod/redshift.nix
           ./mod/shell.nix
           ./mod/ssh.nix
-          ./mod/sway
-          ./mod/espanso
           ./mod/stumpwm
-          ./mod/polybar
+          ./mod/sway
           ./rostam.nix
 
           # Make home-manager use system pkgs
