@@ -1,16 +1,8 @@
 { config, pkgs, lib, ... }:
 
-let
-  home-manager = builtins.fetchTarball {
-    url = "https://github.com/nix-community/home-manager/archive/64020f453bdf3634bf88a6bbce7f3e56183c8b2b.tar.gz";
-    sha256 = "10g1br51g2d2d80k2z41nzz45rkdwaikmf0gppp6mpria6102w24";
-  };
-in
+
 {
-  imports =
-    [ ./hw.nix
-      (import "${home-manager}/nixos")
-    ];
+  imports = [ ./hw.nix ];
 
   system.stateVersion = "25.05"; # DO NOT CHANGE
   nixpkgs.config.allowUnfree = true;
