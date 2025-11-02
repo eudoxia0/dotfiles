@@ -28,4 +28,4 @@ Screenshots and information about the various hosts.
 - **Text Shortcuts:** [Espanso](https://espanso.org/)
 - **Terminal:** [alacritty](https://github.com/alacritty/alacritty)
 - **Password Manager:** [1Password](https://1password.com/)
-- **dotfiles management:** [make](https://github.com/eudoxia0/dotfiles/blob/master/hosts/rostam/Makefile)
+- **dotfiles management:** [home-manager](https://github.com/nix-community/home-manager)
