@@ -1,5 +1,8 @@
 { config, pkgs, lib, ... }:
 
 {
-  # home-manager.users.eudoxia.home.packages = with pkgs; [ rust ];
+  home-manager.users.eudoxia.home.packages = with pkgs; [
+    cargo
+    rustc
+  ];
 }
