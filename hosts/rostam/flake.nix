@@ -38,6 +38,7 @@
           ./mod/stumpwm
           ./mod/sway
           ./mod/x11.nix
+          ./mod/xcape.nix
           ./mod/xscreensaver
           ./rostam.nix
 
