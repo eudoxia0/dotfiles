@@ -28,8 +28,8 @@
     fd
     flowtime
     foot
-    gimp3
     gargoyle
+    gimp3
     guile
     ideogram
     imagemagick
