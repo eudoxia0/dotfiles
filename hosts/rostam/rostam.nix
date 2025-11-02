@@ -62,8 +62,4 @@
 
   # Ensure I have GPU drivers.
   hardware.graphics.enable = true;
-
-  # Add i2c to control monitor brightness from the terminal. Needed by
-  # ddcutil.
-  boot.kernelModules = [ "i2c-dev" ];
 }

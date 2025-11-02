@@ -25,7 +25,6 @@
     btop
     calibre
     chromium
-    ddcutil
     fastfetch
     fd
     feh
