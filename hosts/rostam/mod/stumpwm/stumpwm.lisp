@@ -98,6 +98,9 @@
 ;; Launch the terminal.
 (defkey "C-s-c" "exec alacritty")
 
+;; Take a screenshot of the whole screen.
+(defkey "Print" "exec scrot")
+
 ;; Prompt for a stumpwm command to run.
 (defprefixkey ";" "colon")
 
