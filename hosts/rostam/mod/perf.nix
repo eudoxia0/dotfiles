@@ -39,7 +39,7 @@
     nixos.enable = false;
   };
 
-  # Idk Claude says this will make things build faster.
+  # Use hard links for identical paths.
   nix.settings.auto-optimise-store = true;
 
   # Take up less space.
