@@ -17,6 +17,7 @@
         modules = [
           ./mod/alacritty
           ./mod/audio.nix
+          ./mod/cagebreak
           ./mod/emacs
           ./mod/espanso
           ./mod/font.nix
