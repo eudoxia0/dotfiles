@@ -6,11 +6,9 @@
     clang
     curl
     gnumake
-    pciutils # lspci
     ruby
     sqlite
     stow
-    usbutils # lsusb
     vim
     xorg.xev
   ];
@@ -39,6 +37,7 @@
     mate.caja
     neofetch
     nwg-look
+    pciutils # lspci
     pcmanfm
     rox-filer
     seahorse
@@ -47,6 +46,7 @@
     taskwarrior3
     todoist-electron
     typst
+    usbutils # lsusb
     wdisplays
     xfce.thunar
     zed-editor
