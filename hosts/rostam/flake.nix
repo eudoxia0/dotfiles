@@ -22,41 +22,41 @@
         rostam = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
-            ./hw.nix
-            ./mod/alacritty
-            ./mod/audio.nix
-            ./mod/bright.nix
-            ./mod/cagebreak
-            ./mod/cli.nix
-            ./mod/desktop.nix
-            ./mod/dev.nix
-            ./mod/emacs
-            ./mod/espanso
-            ./mod/firefox
-            ./mod/font.nix
-            ./mod/gh.nix
-            ./mod/git.nix
-            ./mod/gtk.nix
-            ./mod/locale.nix
-            ./mod/ly
-            ./mod/network.nix
-            ./mod/perf.nix
-            ./mod/polybar
-            ./mod/python.nix
-            ./mod/redshift.nix
-            ./mod/rust.nix
-            ./mod/shell.nix
-            ./mod/ssh.nix
-            ./mod/stumpwm
-            ./mod/sway
-            ./mod/todoist.nix
-            ./mod/typst.nix
-            ./mod/wallpaper
-            ./mod/x11.nix
-            ./mod/xcape.nix
-            ./mod/xscreensaver
-            ./mod/zed
-            ./rostam.nix
+            ./modules/alacritty
+            ./modules/audio.nix
+            ./modules/bright.nix
+            ./modules/cagebreak
+            ./modules/cli.nix
+            ./modules/desktop.nix
+            ./modules/dev.nix
+            ./modules/emacs
+            ./modules/espanso
+            ./modules/firefox
+            ./modules/font.nix
+            ./modules/gh.nix
+            ./modules/git.nix
+            ./modules/gtk.nix
+            ./modules/locale.nix
+            ./modules/ly
+            ./modules/network.nix
+            ./modules/perf.nix
+            ./modules/polybar
+            ./modules/python.nix
+            ./modules/redshift.nix
+            ./modules/rust.nix
+            ./modules/shell.nix
+            ./modules/ssh.nix
+            ./modules/stumpwm
+            ./modules/sway
+            ./modules/todoist.nix
+            ./modules/typst.nix
+            ./modules/wallpaper
+            ./modules/x11.nix
+            ./modules/xcape.nix
+            ./modules/xscreensaver
+            ./modules/zed
+            ./nixos/hardware-configuration.nix
+            ./nixos/rostam.nix
 
             # Make home-manager use system pkgs
             home-manager.nixosModules.home-manager
