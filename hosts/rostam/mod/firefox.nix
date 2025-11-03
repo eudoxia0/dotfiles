@@ -25,6 +25,8 @@
         DisableSetDesktopBackground = true;
 
         DisableTelemetry = true;
+
+        DontCheckDefaultBrowser = true;
       };
 
       # about:config
