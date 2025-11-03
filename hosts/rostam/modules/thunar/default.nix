@@ -20,6 +20,11 @@
   # thumbnails service
   services.tumbler.enable = true;
 
+  # Configure custom Thunar actions.
+  home-manager.users.eudoxia.home.file = {
+    ".config/Thunar/uca.xml".source = ./actions.xml;
+  };
+
   # xfconf
   home-manager.users.eudoxia.xfconf.settings = {
     thunar = {

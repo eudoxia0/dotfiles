@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+  <action>
+    <icon>utilities-terminal</icon>
+    <name>Open Terminal Here</name>
+    <submenu></submenu>
+    <unique-id>1761373093619485-1</unique-id>
+    <command>alacritty --working-directory=%f</command>
+    <description>Open a terminal window in this directory.</description>
+    <range></range>
+    <patterns>*</patterns>
+    <startup-notify/>
+    <directories/>
+  </action>
+  <action>
+    <icon>edit-copy</icon>
+    <name>Copy Path</name>
+    <submenu></submenu>
+    <unique-id>1762163798297568-1</unique-id>
+    <command>echo -n %f | xclip -selection clipboard</command>
+    <description>Copy the absolute path to this file.</description>
+    <range>*</range>
+    <patterns>*</patterns>
+    <audio-files/>
+    <image-files/>
+    <other-files/>
+    <text-files/>
+    <video-files/>
+  </action>
+</actions>
