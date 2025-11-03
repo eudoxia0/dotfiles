@@ -67,6 +67,11 @@
                 name = "";
                 url = "https://mail.google.com/";
                 keyword = "";
+              },
+              {
+                name = "";
+                url = "https://mail.proton.me/";
+                keyword = "";
               }
             ];
           }
