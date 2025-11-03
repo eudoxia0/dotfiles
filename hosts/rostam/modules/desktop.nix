@@ -24,5 +24,6 @@
     file-roller
     djview
     evince
+    gnucash
   ];
 }
