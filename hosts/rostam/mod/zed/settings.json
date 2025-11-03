@@ -8,5 +8,7 @@
   },
   "project_panel": {
     "auto_fold_dirs": false
-  }
+  },
+  "buffer_font_family": ".ZedMono",
+  "ui_font_family": ".ZedMono"
 }
