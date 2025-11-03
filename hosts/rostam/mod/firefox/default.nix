@@ -62,18 +62,7 @@
           {
             name = "toolbar";
             toolbar = true;
-            bookmarks = [
-              {
-                name = "";
-                url = "https://mail.google.com/";
-                keyword = "";
-              },
-              {
-                name = "";
-                url = "https://mail.proton.me/";
-                keyword = "";
-              }
-            ];
+            bookmarks = builtins.fromJSON (builtins.readFile ./bookmarks.json);
           }
         ];
       };
