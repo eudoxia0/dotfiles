@@ -36,6 +36,7 @@
     inform7
     just
     libreoffice
+    mupdf
     neofetch
     nixfmt-tree
     nwg-look
