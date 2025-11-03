@@ -17,6 +17,7 @@
     foot
     gargoyle
     gimp3
+    gnucash
     gnumeric
     ideogram
     imv
