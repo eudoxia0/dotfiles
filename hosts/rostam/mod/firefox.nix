@@ -19,9 +19,16 @@
       # on an image.
       DisableSetDesktopBackground = true;
 
+      # Turn off telemetry.
       DisableTelemetry = true;
 
+      # Disable checking whether Firefox is the default browser.
       DontCheckDefaultBrowser = true;
+
+      # Disable Generative AI features..
+      GenerativeAI = {
+        Enabled = false;
+      };
     };
 
     profiles.default = {
