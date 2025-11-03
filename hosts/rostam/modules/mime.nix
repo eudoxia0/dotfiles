@@ -12,7 +12,7 @@
 }:
 
 {
-  home.xdg.mimeApps = {
+  home-manager.users.eudoxia.home.xdg.mimeApps = {
     enable = true;
     defaultApplications = {
       "application/pdf" = ["evince.desktop"];
