@@ -22,6 +22,7 @@
     settings.folders = {
       "/home/eudoxia/Root" = {
         id = "root";
+        label = "Root";
         devices = [ "antigone" ];
       };
     };
