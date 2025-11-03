@@ -39,6 +39,7 @@
             ./modules/guile
             ./modules/locale.nix
             ./modules/ly
+            ./modules/mime.nix
             ./modules/network.nix
             ./modules/perf.nix
             ./modules/polybar
@@ -56,8 +57,8 @@
             ./modules/xcape.nix
             ./modules/xscreensaver
             ./modules/zed
-            ./nixos/hardware-configuration.nix
             ./nixos/configuration.nix
+            ./nixos/hardware-configuration.nix
 
             # Make home-manager use system pkgs
             home-manager.nixosModules.home-manager
