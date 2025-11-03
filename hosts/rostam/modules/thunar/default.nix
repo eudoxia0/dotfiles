@@ -23,12 +23,12 @@
   home-manager.users.eudoxia.home.packages = with pkgs; [
     ffmpegthumbnailer # video thumbnails
     libgsf # odf thumbnails
-    poppler # pdf thumbnails
     libraw # RAW thumbnails
-    webp-pixbuf-loader # webp thumbnail
-    xfce.xfconf # query xfce config
-    xclip # to implement the "copy path" custom action
     mate.engrampa # open archive files
+    poppler # pdf thumbnails
+    webp-pixbuf-loader # webp thumbnail
+    xclip # to implement the "copy path" custom action
+    xfce.xfconf # query xfce config
   ];
 
   home-manager.users.eudoxia.home.file = {
