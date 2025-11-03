@@ -12,7 +12,7 @@
       pkgs.xfce.thunar-archive-plugin
       pkgs.xfce.thunar-volman
     ];
-  }
+  };
 
   # mount etc.
   services.gvfs.enable = true;
