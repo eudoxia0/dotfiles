@@ -12,6 +12,7 @@
     neofetch
     pciutils # lspci
     taskwarrior-tui
+    file
     taskwarrior3
     usbutils # lsusb
   ];
