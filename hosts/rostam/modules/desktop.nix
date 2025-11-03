@@ -20,5 +20,7 @@
     seahorse
     signal-desktop
     wdisplays
+    gnumeric
+    file-roller
   ];
 }
