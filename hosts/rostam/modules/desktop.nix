@@ -31,5 +31,6 @@
     mpv
     obsidian
     sxiv
+    viewnior
   ];
 }
