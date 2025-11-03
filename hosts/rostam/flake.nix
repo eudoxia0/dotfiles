@@ -51,7 +51,7 @@
             ./modules/stumpwm
             ./modules/sway
             ./modules/syncthing.nix
-            ./modules/thunar.nix
+            ./modules/thunar
             ./modules/todoist.nix
             ./modules/typst.nix
             ./modules/wallpaper
