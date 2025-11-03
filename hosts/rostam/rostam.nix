@@ -23,6 +23,8 @@
   # Speed up the boot process.
   boot.loader.timeout = 2;
 
+  environment.localBinInPath = true;
+
   # users
   users.users.eudoxia = {
     isNormalUser = true;
