@@ -23,5 +23,6 @@
     gnumeric
     file-roller
     djview
+    evince
   ];
 }
