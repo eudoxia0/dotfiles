@@ -49,6 +49,9 @@
 
       # Do not offer to save logins.
       OfferToSaveLogins = false;
+
+      # Do not prompt for a download location.
+      PromptForDownloadLocation = false;
     };
 
     profiles.default = {
