@@ -1,5 +1,1 @@
-file:///home/eudoxia/Music
-file:///home/eudoxia/Public
-file:///home/eudoxia/Pictures
-file:///home/eudoxia/Templates
-file:///home/eudoxia/Videos
+file:///home/eudoxia/Root
