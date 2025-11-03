@@ -52,6 +52,9 @@
 
       # Do not prompt for a download location.
       PromptForDownloadLocation = false;
+
+      # Managed bookmarks.
+      ManagedBookmarks = ./bookmarks.json;
     };
 
     profiles.default = {

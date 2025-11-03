@@ -32,7 +32,7 @@
             ./mod/dev.nix
             ./mod/emacs
             ./mod/espanso
-            ./mod/firefox.nix
+            ./mod/firefox
             ./mod/font.nix
             ./mod/gh.nix
             ./mod/git.nix
