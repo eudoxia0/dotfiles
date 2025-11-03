@@ -372,5 +372,4 @@ HEIGHT are subtracted."
 
 (stumpwm::run-commands "toggle-gaps-on")
 
-(run-shell-command "polybar 2> ~/.polybar.log")
 (run-shell-command "feh --no-fehbg --bg-fill ~/.local/share/eudoxia/panther.jpg")
