@@ -51,6 +51,14 @@
 
       # Disable search suggestions.
       SearchSuggestEnabled = false;
+
+      # Install extensions.
+      ExtensionSettings = {
+        "uBlock0@raymondhill.net" = {
+          "installation_mode" = "normal_installed";
+          "install_url" = "https://addons.mozilla.org/firefox/downloads/latest/uBlock0@raymondhill.net/latest.xpi";
+        };
+      };
     };
 
     profiles.default = {
