@@ -12,11 +12,11 @@
     settings.devices = {
       rostam = {
         name = "rostam";
-        id   = "H6XRBBB-7WXJPGN-GVMFX3T-BANURMZ-B5CYCIZ-ZMVNFEB-HQWGIXE-3AZ5EQ4";
+        id = "H6XRBBB-7WXJPGN-GVMFX3T-BANURMZ-B5CYCIZ-ZMVNFEB-HQWGIXE-3AZ5EQ4";
       };
       antigone = {
         name = "antigone";
-        id   = "SZYNWMU-QR6FOET-AZ6UYIV-S4J7YZN-KQIEA5Q-N3BRPBT-VQGIAOR-3MSZTA7";
+        id = "SZYNWMU-QR6FOET-AZ6UYIV-S4J7YZN-KQIEA5Q-N3BRPBT-VQGIAOR-3MSZTA7";
       };
     };
     settings.folders = {
