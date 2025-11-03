@@ -51,6 +51,10 @@
     "name": "",
     "url": "https://www.goodreads.com/"
   },
+  {
+    "name": "",
+    "url": "https://plausible.io"
+  },
   "separator",
   {
     "name": "nixpkg",
