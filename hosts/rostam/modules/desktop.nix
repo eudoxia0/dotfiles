@@ -21,7 +21,6 @@
     libreoffice
     mupdf
     nwg-look # like a modern lxappearance
-    okular
     seahorse
     signal-desktop
     sxiv
