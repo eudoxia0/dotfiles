@@ -23,7 +23,7 @@
     inform7
     just
     nixfmt-tree
-    tokei
     tree
+    tokei
   ];
 }
