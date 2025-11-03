@@ -9,6 +9,7 @@
   home-manager.users.eudoxia.home.packages = with pkgs; [
     calibre
     chromium
+    djview
     eog
     evince
     file-roller
@@ -27,6 +28,5 @@
     viewnior
     wdisplays
     zathura
-    djview
   ];
 }
