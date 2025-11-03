@@ -28,5 +28,6 @@
     gnumeric
     imv
     koreader
+    mpv
   ];
 }
