@@ -40,6 +40,7 @@
             ./mod/perf.nix
             ./mod/pkg.nix
             ./mod/polybar
+            ./mod/python.nix
             ./mod/redshift.nix
             ./mod/rust.nix
             ./mod/shell.nix
