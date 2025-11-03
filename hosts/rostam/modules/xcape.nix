@@ -9,8 +9,8 @@
   home-manager.users.eudoxia.services.xcape = {
     enable = true;
     mapExpression = {
-      Shift_L = "(";
-      Shift_R = ")";
+      Shift_L = "parenleft";
+      Shift_R = "parenright";
     };
   };
 }
