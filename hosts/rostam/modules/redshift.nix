@@ -9,7 +9,7 @@
   services.redshift.enable = true;
   services.redshift.temperature = {
     day = 6500;
-    night = 3000;
+    night = 2500;
   };
   location = {
     latitude = -33.8;
