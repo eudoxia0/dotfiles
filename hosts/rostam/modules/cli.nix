@@ -15,5 +15,6 @@
     taskwarrior3
     usbutils # lsusb
     file
+    djvu2pdf
   ];
 }
