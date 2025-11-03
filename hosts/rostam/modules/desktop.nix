@@ -27,5 +27,6 @@
     gnucash
     gnumeric
     imv
+    koreader
   ];
 }
