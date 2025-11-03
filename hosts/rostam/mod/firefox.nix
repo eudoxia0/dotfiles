@@ -36,6 +36,9 @@
 
       # Only allow HTTPS.
       HttpsOnlyMode = "force_enabled";
+
+      # Disable DNS prefetching.
+      NetworkPrediction = false;
     };
 
     profiles.default = {
