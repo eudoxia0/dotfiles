@@ -36,6 +36,7 @@
             ./modules/gh.nix
             ./modules/git.nix
             ./modules/gtk.nix
+            ./modules/guile
             ./modules/locale.nix
             ./modules/ly
             ./modules/network.nix

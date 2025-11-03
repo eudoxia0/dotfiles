@@ -20,7 +20,6 @@
     btop
     fd
     just
-    guile
     imagemagick
     inform7
     nixfmt-tree
