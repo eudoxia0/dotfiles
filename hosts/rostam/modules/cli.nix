@@ -14,5 +14,6 @@
     taskwarrior-tui
     taskwarrior3
     usbutils # lsusb
+    file
   ];
 }
