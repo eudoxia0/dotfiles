@@ -12,7 +12,6 @@
     djview
     eog
     evince
-    file-roller
     flowtime
     foot
     gargoyle
