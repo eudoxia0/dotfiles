@@ -11,6 +11,7 @@
     djvu2pdf
     fastfetch
     file
+    monolith
     neofetch
     pciutils # lspci
     taskwarrior-tui
