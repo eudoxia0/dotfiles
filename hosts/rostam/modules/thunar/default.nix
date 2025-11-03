@@ -40,6 +40,17 @@
 
     xclip # to implement the "copy path" custom action
     xfce.xfconf # query xfce config
+
+    bzip2
+    gnutar
+    gzip
+    lz4
+    mate.engrampa # open archive files
+    unrar
+    unzip
+    xz
+    zip
+    zstd
   ];
 
   # xfconf
