@@ -20,7 +20,7 @@
       "image/gif" = [ "viewnior.desktop" ];
       "image/jpeg" = [ "viewnior.desktop" ];
       "image/png" = [ "viewnior.desktop" ];
-      "image/svg+xml" =  "viewnior.desktop" ];
+      "image/svg+xml" = [ "viewnior.desktop" ];
       "image/vnd.microsoft.icon" = [ "viewnior.desktop" ];
       "image/webp" = [ "viewnior.desktop" ];
       "image/x-icon" = [ "viewnior.desktop" ];
