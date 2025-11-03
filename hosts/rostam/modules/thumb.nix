@@ -11,7 +11,7 @@
     ffmpegthumbnailer
     poppler
     libraw
-    gnome.sushi
+    sushi
     webp-pixbuf-loader
     xfce.tumbler
   ];
