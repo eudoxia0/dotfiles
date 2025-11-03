@@ -50,6 +50,7 @@
             ./modules/stumpwm
             ./modules/sway
             ./modules/syncthing.nix
+            ./modules/thumb.nix
             ./modules/todoist.nix
             ./modules/typst.nix
             ./modules/wallpaper
