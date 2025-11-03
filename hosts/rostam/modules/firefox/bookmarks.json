@@ -74,6 +74,11 @@
   },
   "separator",
   {
+    "name": "",
+    "url": "http://127.0.0.1:8384/"
+  },
+  "separator",
+  {
     "name": "nixpkg",
     "url": "https://search.nixos.org/packages"
   },
