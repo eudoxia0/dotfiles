@@ -16,7 +16,7 @@
     ".stumpwm.d/init.lisp".source = ./stumpwm.lisp;
   };
 
-    home-manager.users.eudoxia.home.file = {
-      ".xinitrc".source = ./xinitrc.sh;
-    };
+  home-manager.users.eudoxia.home.file = {
+    ".xinitrc".source = ./xinitrc.sh;
+  };
 }
