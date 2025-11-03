@@ -25,5 +25,6 @@
     just
     nixfmt-tree
     tokei
+    tree
   ];
 }
