@@ -48,6 +48,9 @@
 
       # Do not prompt for a download location.
       PromptForDownloadLocation = false;
+
+      # Disable search suggestions.
+      SearchSuggestEnabled = false;
     };
 
     profiles.default = {
