@@ -27,6 +27,7 @@
             ./mod/audio.nix
             ./mod/bright.nix
             ./mod/cagebreak
+            ./mod/cli.nix
             ./mod/desktop.nix
             ./mod/dev.nix
             ./mod/emacs
@@ -40,7 +41,6 @@
             ./mod/ly
             ./mod/network.nix
             ./mod/perf.nix
-            ./mod/pkg.nix
             ./mod/polybar
             ./mod/python.nix
             ./mod/redshift.nix
@@ -50,6 +50,7 @@
             ./mod/stumpwm
             ./mod/sway
             ./mod/todoist.nix
+            ./mod/typst.nix
             ./mod/wallpaper
             ./mod/x11.nix
             ./mod/xcape.nix
