@@ -52,9 +52,6 @@
 
       # Do not prompt for a download location.
       PromptForDownloadLocation = false;
-
-      # Managed bookmarks.
-      ManagedBookmarks = ./bookmarks.json;
     };
 
     profiles.default = {
@@ -79,6 +76,21 @@
         # Don't show the welcome page.
         "trailhead.firstrun.didSeeAboutWelcome" = true;
       };
+
+      # managed bookmarks
+      bookmarks = [
+        {
+          name = "toolbar";
+          toolbar = true;
+          bookmarks = [
+            {
+              name = "example";
+              url = "https://example.com";
+              keyword = "";
+            }
+          ];
+        }
+      ];
     };
   };
 }
