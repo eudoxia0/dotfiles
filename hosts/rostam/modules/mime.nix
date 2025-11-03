@@ -27,8 +27,8 @@
       "text/html" = [ "emacs.desktop" ];
       "text/markdown" = [ "emacs.desktop" ];
       "text/plain" = [ "emacs.desktop" ];
-      "x-scheme-handler/http" = ["firefox.desktop"];
-      "x-scheme-handler/https" = ["firefox.desktop"];
+      "x-scheme-handler/http" = [ "firefox.desktop" ];
+      "x-scheme-handler/https" = [ "firefox.desktop" ];
     };
   };
 }
