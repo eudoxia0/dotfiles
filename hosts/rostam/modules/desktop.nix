@@ -19,15 +19,15 @@
     gimp3
     gnumeric
     ideogram
+    imv
     libreoffice
+    mpv
     mupdf
     nwg-look # like a modern lxappearance
     obsidian
     seahorse
     signal-desktop
     sxiv
-    mpv
-    imv
     viewnior
     wdisplays
     zathura
