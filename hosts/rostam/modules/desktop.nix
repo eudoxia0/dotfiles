@@ -27,5 +27,6 @@
     viewnior
     wdisplays
     zathura
+    djview
   ];
 }
