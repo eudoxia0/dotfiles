@@ -29,7 +29,6 @@
     xfce.xfconf # query xfce config
   ];
 
-
   home-manager.users.eudoxia.home.file = {
     ".config/Thunar/uca.xml".source = ./actions.xml;
   };
