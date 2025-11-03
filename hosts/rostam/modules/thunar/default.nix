@@ -13,4 +13,10 @@
       thunar-volman
     ];
   };
+
+  # mount etc.
+  services.gvfs.enable = true;
+
+  # thumbnails service
+  services.tumbler.enable = true;
 }
