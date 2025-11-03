@@ -23,6 +23,8 @@
         # Disable the option to "Set as Desktop Background" when right-clicking
         # on an image.
         DisableSetDesktopBackground = true;
+
+        DisableTelemetry = true;
       };
 
       # about:config
