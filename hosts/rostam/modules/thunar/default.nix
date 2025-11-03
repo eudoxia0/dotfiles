@@ -28,6 +28,7 @@
     webp-pixbuf-loader # webp thumbnail
     xfce.xfconf # query xfce config
     xclip # to implement the "copy path" custom action
+    mate.engrampa # open archive files
   ];
 
   home-manager.users.eudoxia.home.file = {
