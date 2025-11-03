@@ -23,8 +23,9 @@
       "image/vnd.microsoft.icon" = [ "viewnior.desktop" ];
       "image/webp" = [ "viewnior.desktop" ];
       "image/x-icon" = [ "viewnior.desktop" ];
-      "text/plain" = [ "emacs.desktop" ];
+      "text/html" = [ "emacs.desktop" ];
       "text/markdown" = [ "emacs.desktop" ];
+      "text/plain" = [ "emacs.desktop" ];
     };
   };
 }
