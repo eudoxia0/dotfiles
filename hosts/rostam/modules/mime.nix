@@ -16,6 +16,14 @@
     enable = true;
     defaultApplications = {
       "application/pdf" = ["org.gnome.Evince.desktop"];
+      "image/avif" = ["viewnior.desktop"];
+      "image/gif" = ["viewnior.desktop"];
+      "image/jpeg" = ["viewnior.desktop"];
+      "image/png" = ["viewnior.desktop"];
+      "image/vnd.microsoft.icon" = ["viewnior.desktop"];
+      "image/webp" = ["viewnior.desktop"];
+      "image/x-icon" = ["viewnior.desktop"];
+      "text/plain" = ["emacs.desktop"];
     };
   };
 }
