@@ -14,5 +14,10 @@
     libraw # RAW thumbnails
     webp-pixbuf-loader # webp thumbnail
     xfce.tumbler # xfce thumbnail service
+    xfce.xfconf # query xfce config
   ];
+
+  home-manager.users.eudoxia.xfconf.settings = {
+
+  };
 }
