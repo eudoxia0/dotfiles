@@ -18,6 +18,9 @@
       settings = {
         # Disable "match whole words" in find bar.
         "findbar.entireword" = false;
+
+        # Don't warn me before opening `about:config`.
+        "browser.aboutConfig.showWarning" = false;
       };
     };
   };
