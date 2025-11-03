@@ -32,5 +32,6 @@
     obsidian
     sxiv
     viewnior
+    zathura
   ];
 }
