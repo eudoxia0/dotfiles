@@ -9,19 +9,24 @@
   home-manager.users.eudoxia.home.packages = with pkgs; [
     calibre
     chromium
+    eog
+    evince
+    file-roller
     flowtime
     foot
     gargoyle
     gimp3
+    gnumeric
     ideogram
     libreoffice
     mupdf
     nwg-look # like a modern lxappearance
+    okular
     seahorse
     signal-desktop
+    sxiv
+    viewnior
     wdisplays
-    gnumeric
-    file-roller
     zathura
   ];
 }
