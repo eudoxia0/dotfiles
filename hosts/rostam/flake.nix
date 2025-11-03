@@ -49,6 +49,7 @@
             ./modules/ssh.nix
             ./modules/stumpwm
             ./modules/sway
+            ./modules/syncthing.nix
             ./modules/todoist.nix
             ./modules/typst.nix
             ./modules/wallpaper
@@ -56,8 +57,8 @@
             ./modules/xcape.nix
             ./modules/xscreensaver
             ./modules/zed
-            ./nixos/hardware-configuration.nix
             ./nixos/configuration.nix
+            ./nixos/hardware-configuration.nix
 
             # Make home-manager use system pkgs
             home-manager.nixosModules.home-manager
