@@ -19,5 +19,11 @@
         id   = "SZYNWMU-QR6FOET-AZ6UYIV-S4J7YZN-KQIEA5Q-N3BRPBT-VQGIAOR-3MSZTA7";
       };
     };
+    settings.folders = {
+      "/home/eudoxia/Root" = {
+        id = "root";
+        devices = [ "antigone" ];
+      };
+    };
   };
 }
