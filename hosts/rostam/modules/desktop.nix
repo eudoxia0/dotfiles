@@ -26,6 +26,8 @@
     seahorse
     signal-desktop
     sxiv
+    mpv
+    imv
     viewnior
     wdisplays
     zathura
