@@ -30,5 +30,6 @@
     koreader
     mpv
     obsidian
+    sxiv
   ];
 }
