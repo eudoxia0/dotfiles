@@ -64,8 +64,8 @@
             toolbar = true;
             bookmarks = [
               {
-                name = "example";
-                url = "https://example.com";
+                name = "";
+                url = "https://mail.google.com/";
                 keyword = "";
               }
             ];
