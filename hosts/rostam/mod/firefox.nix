@@ -33,6 +33,9 @@
         TabGroups = false;
         Locked = false;
       };
+
+      # Only allow HTTPS.
+      HttpsOnlyMode = "force_enabled";
     };
 
     profiles.default = {
