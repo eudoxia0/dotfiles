@@ -27,6 +27,7 @@
             ./mod/audio.nix
             ./mod/bright.nix
             ./mod/cagebreak
+            ./mod/desktop.nix
             ./mod/dev.nix
             ./mod/emacs
             ./mod/espanso
