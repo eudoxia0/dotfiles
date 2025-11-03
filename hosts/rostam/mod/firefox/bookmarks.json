@@ -80,6 +80,18 @@
       {
         "name": "eudoxia0",
         "url": "https://github.com/eudoxia0"
+      },
+      {
+        "name": "dotfiles",
+        "url": "https://github.com/eudoxia0/dotfiles"
+      },
+      {
+        "name": "hashcards",
+        "url": "https://github.com/eudoxia0/hashcards"
+      },
+      {
+        "name": "flashcards",
+        "url": "https://github.com/eudoxia0/flashcards"
       }
     ]
   }
