@@ -16,7 +16,7 @@
   boot.kernelModules = [ "i2c-dev" ];
 
   # Create the i2c group.
-  users.groups.i2c = {};
+  users.groups.i2c = { };
 
   # Add eudoxia to the i2c group.
   users.users.eudoxia.extraGroups = [ "i2c" ];
