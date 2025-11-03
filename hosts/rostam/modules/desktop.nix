@@ -25,5 +25,6 @@
     djview
     evince
     gnucash
+    gnumeric
   ];
 }
