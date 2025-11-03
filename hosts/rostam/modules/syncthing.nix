@@ -9,5 +9,11 @@
   home-manager.users.eudoxia.services.syncthing = {
     enable = true;
     guiAddress = "127.0.0.1:8384";
+    settings.devices = {
+      rostam = {
+        name = "rostam";
+        id   = "H6XRBBB-7WXJPGN-GVMFX3T-BANURMZ-B5CYCIZ-ZMVNFEB-HQWGIXE-3AZ5EQ4";
+      };
+    };
   };
 }
