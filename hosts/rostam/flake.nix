@@ -56,7 +56,7 @@
             ./modules/xscreensaver
             ./modules/zed
             ./nixos/hardware-configuration.nix
-            ./nixos/rostam.nix
+            ./nixos/configuration.nix
 
             # Make home-manager use system pkgs
             home-manager.nixosModules.home-manager
