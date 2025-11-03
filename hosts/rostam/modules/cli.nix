@@ -13,6 +13,7 @@
     pciutils # lspci
     taskwarrior-tui
     file
+    djvu2pdf
     taskwarrior3
     usbutils # lsusb
   ];
