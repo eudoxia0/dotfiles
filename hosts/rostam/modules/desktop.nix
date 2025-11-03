@@ -22,5 +22,6 @@
     wdisplays
     gnumeric
     file-roller
+    djview
   ];
 }
