@@ -19,6 +19,7 @@
     agda
     btop
     fd
+    just
     guile
     imagemagick
     inform7

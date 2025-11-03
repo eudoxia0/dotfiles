@@ -17,7 +17,6 @@
     gargoyle
     gimp3
     ideogram
-    just
     libreoffice
     mupdf
     neofetch
