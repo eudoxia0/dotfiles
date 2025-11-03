@@ -78,6 +78,7 @@ matches:
   - { trigger: ":tag", replace: "🔖" }
   - { trigger: ":talk", replace: "💬" }
   - { trigger: ":tea", replace: "🍵" }
+  - { trigger: ":tools", replace: "🛠️" }
   - { trigger: ":tooth", replace: "🦷" }
   - { trigger: ":tp", replace: "🧻" }
   - { trigger: ":train", replace: "🚄" }
