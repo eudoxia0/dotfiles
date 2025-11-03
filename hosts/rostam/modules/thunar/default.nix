@@ -27,6 +27,7 @@
     libraw # RAW thumbnails
     webp-pixbuf-loader # webp thumbnail
     xfce.xfconf # query xfce config
+    xclip # to implement the "copy path" custom action
   ];
 
   home-manager.users.eudoxia.home.file = {

@@ -12,4 +12,19 @@
     <startup-notify/>
     <directories/>
   </action>
+  <action>
+    <icon>edit-copy</icon>
+    <name>Copy Path</name>
+    <submenu></submenu>
+    <unique-id>1762163798297568-1</unique-id>
+    <command>echo -n %f | xclip -selection clipboard</command>
+    <description>Copy the absolute path to this file.</description>
+    <range>*</range>
+    <patterns>*</patterns>
+    <audio-files/>
+    <image-files/>
+    <other-files/>
+    <text-files/>
+    <video-files/>
+  </action>
 </actions>
