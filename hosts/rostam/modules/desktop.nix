@@ -30,6 +30,7 @@
     sxiv
     viewnior
     wdisplays
+    koreader
     zathura
   ];
 }
