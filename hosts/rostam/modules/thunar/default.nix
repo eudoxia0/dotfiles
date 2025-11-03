@@ -21,20 +21,20 @@
   services.tumbler.enable = true;
 
   home-manager.users.eudoxia.home.packages = with pkgs; [
+    bzip2
     ffmpegthumbnailer # video thumbnails
+    gnutar
+    gzip
     libgsf # odf thumbnails
     libraw # RAW thumbnails
+    lz4
     mate.engrampa # open archive files
     poppler # pdf thumbnails
+    unrar
+    unzip
     webp-pixbuf-loader # webp thumbnail
     xclip # to implement the "copy path" custom action
     xfce.xfconf # query xfce config
-    bzip2
-    gnutar
-    gzip
-    lz4
-    unrar
-    unzip
     xz
     zip
     zstd
