@@ -39,6 +39,7 @@
             ./modules/guile
             ./modules/locale.nix
             ./modules/ly
+            ./modules/mime.nix
             ./modules/network.nix
             ./modules/perf.nix
             ./modules/polybar
