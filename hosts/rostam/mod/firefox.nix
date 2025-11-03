@@ -39,6 +39,9 @@
 
       # Disable DNS prefetching.
       NetworkPrediction = false;
+
+      # Disable the new tab page.
+      NewTabPage = false;
     };
 
     profiles.default = {
