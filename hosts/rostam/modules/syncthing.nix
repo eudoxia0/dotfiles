@@ -20,10 +20,10 @@
       };
     };
     settings.folders = {
-      "sync" = {
-        id = "sync";
-        label = "Sync";
-        path = "/home/eudoxia/sync";
+      "root" = {
+        id = "root";
+        label = "Root";
+        path = "/home/eudoxia/Root";
         devices = [ "antigone" ];
       };
     };
