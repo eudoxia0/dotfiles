@@ -31,7 +31,7 @@
         Chatbot = false;
         LinkPreviews = false;
         TabGroups = false;
-        Locked = false;
+        Locked = true;
       };
 
       # Only allow HTTPS.
