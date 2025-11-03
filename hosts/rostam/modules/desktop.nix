@@ -26,5 +26,6 @@
     evince
     gnucash
     gnumeric
+    imv
   ];
 }
