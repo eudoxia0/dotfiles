@@ -22,6 +22,9 @@
         # Highlight all search results.
         "findbar.highlightAll" = true;
 
+        # Always show the bookmark bar.
+        "browser.toolbars.bookmarks.visibility" = "always";
+
         # Don't warn me before opening `about:config`.
         "browser.aboutConfig.showWarning" = false;
       };
