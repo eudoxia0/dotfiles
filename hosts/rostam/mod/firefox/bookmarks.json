@@ -50,5 +50,14 @@
   {
     "name": "",
     "url": "https://www.goodreads.com/"
+  },
+  "separator",
+  {
+    "name": "nixpkg",
+    "url": "https://search.nixos.org/packages"
+  },
+  {
+    "name": "nixopt",
+    "url": "https://search.nixos.org/options"
   }
 ]
