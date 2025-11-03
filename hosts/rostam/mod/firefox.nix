@@ -19,6 +19,9 @@
         # Disable "match whole words" in find bar.
         "findbar.entireword" = false;
 
+        # Highlight all search results.
+        "findbar.highlightAll" = true;
+
         # Don't warn me before opening `about:config`.
         "browser.aboutConfig.showWarning" = false;
       };
