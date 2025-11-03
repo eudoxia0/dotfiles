@@ -24,6 +24,7 @@
       "image/webp" = ["viewnior.desktop"];
       "image/x-icon" = ["viewnior.desktop"];
       "text/plain" = ["emacs.desktop"];
+      "text/markdown" = ["emacs.desktop"];
     };
   };
 }
