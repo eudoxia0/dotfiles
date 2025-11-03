@@ -22,7 +22,6 @@
     scrot
     arandr
     mate.caja
-    pcmanfm
     rox-filer
     xfce.thunar
     xorg.xev
