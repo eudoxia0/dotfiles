@@ -140,7 +140,7 @@ programs:								      \
 - GL: 				flipscreen3d --root			    \n\
 - GL: 				gltext --root				    \n\
   GL: 				menger --root				    \n\
-  GL: 				molecule --root				    \n\
+- GL: 				molecule --root				    \n\
 -				rotzoomer --root			    \n\
 				scooter --root				    \n\
 -				speedmine --root			    \n\
