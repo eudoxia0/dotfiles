@@ -19,10 +19,11 @@
     agda
     btop
     fd
-    just
     imagemagick
     inform7
+    just
     nixfmt-tree
     tokei
+    tree
   ];
 }
