@@ -72,5 +72,15 @@
   {
     "name": "nixopt",
     "url": "https://search.nixos.org/options"
+  },
+  "separator",
+  {
+    "name": "GitHub",
+    "bookmarks": [
+      {
+        "name": "eudoxia0",
+        "url": "https://github.com/eudoxia0"
+      }
+    ]
   }
 ]
