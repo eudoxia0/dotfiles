@@ -20,6 +20,5 @@
     seahorse
     signal-desktop
     wdisplays
-    zed-editor
   ];
 }

@@ -55,6 +55,7 @@
             ./mod/x11.nix
             ./mod/xcape.nix
             ./mod/xscreensaver
+            ./mod/zed
             ./rostam.nix
 
             # Make home-manager use system pkgs
