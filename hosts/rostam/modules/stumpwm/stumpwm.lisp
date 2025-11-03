@@ -25,6 +25,55 @@
   (toggle-mode-line*))
 
 ;;;
+;;; Brightness Control
+;;;
+
+(defun get-brightness ()
+  "Get the current brightness value from the external monitor using ddcutil."
+  (let* ((output (run-shell-command "ddcutil getvcp 10" t))
+         ;; Parse output like "VCP code 0x10 (Brightness): current value = 50, max value = 100"
+         (current-pos (search "current value =" output)))
+    (if current-pos
+        (let ((start (+ current-pos (length "current value ="))))
+          (multiple-value-bind (value end)
+              (parse-integer output :start start :junk-allowed t)
+            (or value 50)))
+        50))) ; Default to 50 if parsing fails
+
+(defun set-brightness (value)
+  "Set the brightness value for the external monitor using ddcutil."
+  (let ((clamped-value (max 0 (min 100 value))))
+    (run-shell-command (format nil "ddcutil setvcp 10 ~d" clamped-value))
+    clamped-value))
+
+(defun adjust-brightness (delta)
+  "Adjust brightness by delta and return the new value."
+  (let* ((current (get-brightness))
+         (new-value (+ current delta)))
+    (set-brightness new-value)))
+
+(defcommand brightness-mode () ()
+  "Enter interactive brightness control mode."
+  (message "Brightness mode (=:up, -:down, ESC:exit)")
+  (labels ((brightness-loop ()
+             (let ((ch (read-one-char (current-screen))))
+               (cond
+                 ((or (eql ch #\Escape) (eql ch #\escape))
+                  (message "Exited brightness mode"))
+                 ((eql ch #\=)
+                  (let ((new-brightness (adjust-brightness 5)))
+                    (message "Brightness: ~d%" new-brightness)
+                    (brightness-loop)))
+                 ((eql ch #\-)
+                  (let ((new-brightness (adjust-brightness -5)))
+                    (message "Brightness: ~d%" new-brightness)
+                    (brightness-loop)))
+                 (t
+                  (message "Unknown key '~a'. Use =, -, or ESC" ch)
+                  (brightness-loop))))))
+    (brightness-loop)))
+
+;;;
 ;;; Keybindings
 ;;;
 
@@ -365,6 +414,9 @@ HEIGHT are subtracted."
 
 ;; Toggle gaps on/off.
 (defprefixkey "g" "toggle-gaps")
+
+;; Enter interactive brightness control mode.
+(defprefixkey "b" "brightness-mode")
 
 ;;;
 ;;; Startup
