@@ -25,6 +25,11 @@
     ".config/Thunar/uca.xml".source = ./actions.xml;
   };
 
+  # Configure the bookmarks on the left pane.
+  home-manager.users.eudoxia.home.file = {
+    ".config/gtk-3.0/bookmarks".source = ./bookmarks.txt;
+  };
+
   # xfconf
   home-manager.users.eudoxia.xfconf.settings = {
     thunar = {
