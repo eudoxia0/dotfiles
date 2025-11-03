@@ -22,6 +22,7 @@
     libreoffice
     mupdf
     nwg-look # like a modern lxappearance
+    obsidian
     seahorse
     signal-desktop
     sxiv
