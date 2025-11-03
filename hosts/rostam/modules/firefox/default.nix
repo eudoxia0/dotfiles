@@ -105,7 +105,10 @@
         "trailhead.firstrun.didSeeAboutWelcome" = true;
 
         # Enable userContent.css.
-        "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+        "toolkit.legacyUserProfileCustomizations.stylesheets" = true;        # Don't show the top sites (Facebook etc.) in the new tab page.
+
+        # Don't show the top sites (Facebook etc.) in the new tab page.
+        "browser.newtabpage.activity-stream.feeds.topsites" = false;
       };
     };
   };
