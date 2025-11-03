@@ -20,6 +20,7 @@
     gnumeric
     ideogram
     imv
+    koreader
     libreoffice
     mpv
     mupdf
@@ -30,7 +31,6 @@
     sxiv
     viewnior
     wdisplays
-    koreader
     zathura
   ];
 }
