@@ -14,5 +14,9 @@
 
   home-manager.users.eudoxia.home.file = {
     ".config/polybar/config.ini".source = ./polybar.ini;
+    ".config/polybar/world-clock.sh" = {
+      source = ./world-clock.sh;
+      executable = true;
+    };
   };
 }
