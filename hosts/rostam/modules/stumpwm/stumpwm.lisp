@@ -102,7 +102,7 @@
 (defkey "Print" "exec scrot")
 
 ;; Take a screenshot of a selected region.
-(defkey "C-Print" "exec scrot -s")
+(defkey "C-Print" "exec scrot -f -s")
 
 ;; Prompt for a stumpwm command to run.
 (defprefixkey ";" "colon")
