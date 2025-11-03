@@ -10,7 +10,7 @@ Screenshots and information about the various hosts.
 
 ### [Antigone](https://github.com/eudoxia0/dotfiles/tree/master/hosts/antigone)
 
-![Screenshot of a macOS desktop, showing a centered terminal window, displaying system information output by the fastfetch program.](images/antigone.webp)
+![Screenshot of a macOS desktop, showing a centered terminal window, displaying system information output by the fastfetch program.](.github/screenshots/antigone.webp)
 
 - **Hardware:** [2024 Mac mini](https://support.apple.com/en-au/121555)
 - **Package Manager:** [Homebrew](https://brew.sh/)
