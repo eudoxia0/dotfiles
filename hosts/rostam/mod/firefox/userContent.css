@@ -1,8 +1,10 @@
-@-moz-document domain(wikipedia.org) {
-    p {
-        text-align: justify !important;
-    }
+@-moz-document domain("wikipedia.org") {
     body {
         font-family: serif !important;
+    }
+
+    p {
+        text-align: justify !important;
+        text-justify: inter-word;
     }
 }

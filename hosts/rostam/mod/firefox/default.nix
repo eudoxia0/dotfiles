@@ -87,6 +87,9 @@
 
         # Don't show the welcome page.
         "trailhead.firstrun.didSeeAboutWelcome" = true;
+
+        # Enable userContent.css.
+        "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
       };
     };
   };
