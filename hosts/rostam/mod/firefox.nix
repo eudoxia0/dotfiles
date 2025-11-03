@@ -15,6 +15,16 @@
       name = "eudoxia";
       isDefault = true;
 
+      # about:policies
+      policies = {
+        # Disable Firefox Sync.
+        DisableFirefoxAccounts = true;
+
+        # Disable the option to "Set as Desktop Background" when right-clicking
+        # on an image.
+        DisableSetDesktopBackground = true;
+      };
+
       # about:config
       settings = {
         # Disable "match whole words" in find bar.
