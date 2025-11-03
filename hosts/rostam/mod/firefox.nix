@@ -8,6 +8,7 @@
 {
   home-manager.users.eudoxia.programs.firefox = {
     enable = true;
+    languagePacks = [ "en-US" ];
 
     profiles.default = {
       id = 0;
