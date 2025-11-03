@@ -54,6 +54,7 @@
       id = 0;
       name = "eudoxia";
       isDefault = true;
+      userContent = ./userContent.css;
 
       # managed bookmarks
       bookmarks = {
