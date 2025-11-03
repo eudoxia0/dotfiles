@@ -50,6 +50,7 @@
             ./modules/ssh.nix
             ./modules/stumpwm
             ./modules/sway
+            ./modules/thunar
             ./modules/todoist.nix
             ./modules/typst.nix
             ./modules/wallpaper
