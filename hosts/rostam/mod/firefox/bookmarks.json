@@ -57,11 +57,11 @@
   },
   "separator",
   {
-    "name": "nixpkg",
+    "name": "",
     "url": "https://news.ycombinator.com/"
   },
   {
-    "name": "nixopt",
+    "name": "",
     "url": "https://lobste.rs/"
   },
   "separator",
