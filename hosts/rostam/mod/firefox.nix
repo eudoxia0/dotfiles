@@ -11,7 +11,7 @@
 
     profiles.default = {
       id = 0;
-      name = "default";
+      name = "eudoxia";
       isDefault = true;
 
       # Firefox preferences (about:config settings)
