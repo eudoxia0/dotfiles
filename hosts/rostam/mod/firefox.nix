@@ -27,7 +27,11 @@
 
       # Disable Generative AI features..
       GenerativeAI = {
-        Enabled = false;
+        Enabled: false;
+        Chatbot: false;
+        LinkPreviews: false;
+        TabGroups: false;
+        Locked: false;
       };
     };
 
