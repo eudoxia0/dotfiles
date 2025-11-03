@@ -6,11 +6,8 @@
 }:
 
 {
-  environment.systemPackages = with pkgs; [
-    pulsemixer
-  ];
-
   home-manager.users.eudoxia.home.packages = with pkgs; [
+    pulsemixer
     pavucontrol
   ];
 
