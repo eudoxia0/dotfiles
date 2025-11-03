@@ -27,6 +27,9 @@
 
         # Don't warn me before opening `about:config`.
         "browser.aboutConfig.showWarning" = false;
+
+        # Don't show the welcome page.
+        "trailhead.firstrun.didSeeAboutWelcome" = true;
       };
     };
   };
