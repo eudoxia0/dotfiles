@@ -10,24 +10,24 @@
     enable = true;
     languagePacks = [ "en-US" ];
 
+    # about:policies
+    policies = {
+      # Disable Firefox Sync.
+      DisableFirefoxAccounts = true;
+
+      # Disable the option to "Set as Desktop Background" when right-clicking
+      # on an image.
+      DisableSetDesktopBackground = true;
+
+      DisableTelemetry = true;
+
+      DontCheckDefaultBrowser = true;
+    };
+
     profiles.default = {
       id = 0;
       name = "eudoxia";
       isDefault = true;
-
-      # about:policies
-      policies = {
-        # Disable Firefox Sync.
-        DisableFirefoxAccounts = true;
-
-        # Disable the option to "Set as Desktop Background" when right-clicking
-        # on an image.
-        DisableSetDesktopBackground = true;
-
-        DisableTelemetry = true;
-
-        DontCheckDefaultBrowser = true;
-      };
 
       # about:config
       settings = {
