@@ -21,7 +21,7 @@
     libreoffice
     mupdf
     neofetch
-    nwg-look
+    nwg-look # like a modern lxappearance
     pciutils # lspci
     seahorse
     signal-desktop
