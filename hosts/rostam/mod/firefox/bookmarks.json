@@ -58,6 +58,15 @@
   "separator",
   {
     "name": "nixpkg",
+    "url": "https://news.ycombinator.com/"
+  },
+  {
+    "name": "nixopt",
+    "url": "https://lobste.rs/"
+  },
+  "separator",
+  {
+    "name": "nixpkg",
     "url": "https://search.nixos.org/packages"
   },
   {
