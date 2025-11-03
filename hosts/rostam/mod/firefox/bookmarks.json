@@ -1,26 +1,26 @@
 [
-    {
-        "name": "",
-        "url": "https://mail.google.com/"
-    },
-    {
-        "name": "",
-        "url": "https://mail.proton.me/"
-    },
-    {
-	"name": "",
-	"url": "https://translate.google.com/"
-    },
-    {
-	"name": "",
-	"url": "https://discord.com/channels/@me"
-    },
-    {
-	"name": "",
-	"url": "https://x.com/home"
-    },
-    {
-	"name": "",
-	"url": "https://bsky.app/"
-    }
+  {
+    "name": "",
+    "url": "https://mail.google.com/"
+  },
+  {
+    "name": "",
+    "url": "https://mail.proton.me/"
+  },
+  {
+    "name": "",
+    "url": "https://translate.google.com/"
+  },
+  {
+    "name": "",
+    "url": "https://discord.com/channels/@me"
+  },
+  {
+    "name": "",
+    "url": "https://x.com/home"
+  },
+  {
+    "name": "",
+    "url": "https://bsky.app/"
+  }
 ]
