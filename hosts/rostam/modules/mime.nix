@@ -15,7 +15,7 @@
   home-manager.users.eudoxia.xdg.mimeApps = {
     enable = true;
     defaultApplications = {
-      "application/pdf" = ["evince.desktop"];
+      "application/pdf" = ["org.gnome.Evince.desktop"];
     };
   };
 }
