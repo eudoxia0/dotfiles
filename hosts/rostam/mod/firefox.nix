@@ -14,15 +14,10 @@
       name = "eudoxia";
       isDefault = true;
 
-      # Firefox preferences (about:config settings)
+      # about:config
       settings = {
-        # Disable "match whole words" in find bar by default
+        # Disable "match whole words" in find bar.
         "findbar.entireword" = false;
-
-        # Other useful preferences you might want to configure:
-        # "browser.startup.homepage" = "about:blank";
-        # "privacy.trackingprotection.enabled" = true;
-        # "browser.disableResetPrompt" = true;
       };
     };
   };
