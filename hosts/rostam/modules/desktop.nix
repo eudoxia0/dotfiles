@@ -27,6 +27,7 @@
     signal-desktop
     sxiv
     viewnior
+    pantheon.elementary-files
     wdisplays
     zathura
   ];
