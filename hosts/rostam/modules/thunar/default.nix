@@ -30,6 +30,18 @@
     ".config/gtk-3.0/bookmarks".source = ./bookmarks.txt;
   };
 
+  # Other packages needed by Thunar.
+  home-manager.users.eudoxia.home.packages = with pkgs; [
+    ffmpegthumbnailer # video thumbnails
+    libgsf # odf thumbnails
+    libraw # RAW thumbnails
+    poppler # pdf thumbnails
+    webp-pixbuf-loader # webp thumbnail
+
+    xclip # to implement the "copy path" custom action
+    xfce.xfconf # query xfce config
+  ];
+
   # xfconf
   home-manager.users.eudoxia.xfconf.settings = {
     thunar = {
