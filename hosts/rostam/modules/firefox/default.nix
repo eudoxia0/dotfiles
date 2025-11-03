@@ -110,5 +110,6 @@
     };
   };
 
-  home-manager.users.eudoxia.home.file.".mozilla/firefox/your-profile/persdict.dat".source = ./words.txt;
+  home-manager.users.eudoxia.home.file.".mozilla/firefox/your-profile/persdict.dat".source =
+    ./words.txt;
 }
