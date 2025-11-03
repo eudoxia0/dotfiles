@@ -29,8 +29,18 @@
     webp-pixbuf-loader # webp thumbnail
     xclip # to implement the "copy path" custom action
     xfce.xfconf # query xfce config
+    bzip2
+    gnutar
+    gzip
+    lz4
+    unrar
+    unzip
+    xz
+    zip
+    zstd
   ];
 
+  # Configure custom Thunar actions.
   home-manager.users.eudoxia.home.file = {
     ".config/Thunar/uca.xml".source = ./actions.xml;
   };
