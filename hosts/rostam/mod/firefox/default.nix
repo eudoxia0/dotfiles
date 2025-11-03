@@ -43,10 +43,6 @@
       # Disable the new tab page.
       NewTabPage = false;
 
-      # When the profile is created for the first time, do not create default
-      # bookmarks.
-      NoDefaultBookmarks = true;
-
       # Do not offer to save logins.
       OfferToSaveLogins = false;
 
