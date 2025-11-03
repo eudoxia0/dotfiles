@@ -93,7 +93,7 @@
 (defkey "C-s-e" "exec emacs")
 
 ;; Launch the file manager.
-(defkey "C-s-f" "exec caja")
+(defkey "C-s-f" "exec thunar")
 
 ;; Launch the terminal.
 (defkey "C-s-c" "exec alacritty")
