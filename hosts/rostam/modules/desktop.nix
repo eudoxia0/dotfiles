@@ -9,29 +9,29 @@
   home-manager.users.eudoxia.home.packages = with pkgs; [
     calibre
     chromium
+    djview
+    evince
+    file-roller
     flowtime
     foot
     gargoyle
     gimp3
-    ideogram
-    libreoffice
-    mupdf
-    nwg-look # like a modern lxappearance
-    seahorse
-    signal-desktop
-    wdisplays
-    gnumeric
-    file-roller
-    djview
-    evince
     gnucash
     gnumeric
+    gnumeric
+    ideogram
     imv
     koreader
+    libreoffice
     mpv
+    mupdf
+    nwg-look # like a modern lxappearance
     obsidian
+    seahorse
+    signal-desktop
     sxiv
     viewnior
+    wdisplays
     zathura
   ];
 }
