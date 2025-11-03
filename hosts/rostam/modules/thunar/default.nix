@@ -40,13 +40,9 @@
     zstd
   ];
 
-  # Configure custom Thunar actions.
+  # Configure custom Thunar actions and bookmarks for the side pane.
   home-manager.users.eudoxia.home.file = {
     ".config/Thunar/uca.xml".source = ./actions.xml;
-  };
-
-  # Bookmarks for the side pane.
-  home-manager.users.eudoxia.home.file = {
     ".config/gtk-3.0/bookmarks".source = ./bookmarks.txt;
   };
 
