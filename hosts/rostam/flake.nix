@@ -70,6 +70,21 @@
             }
           ];
         };
+
+        ismene = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          modules = [
+            ./hosts/ismene/configuration.nix
+            ./hosts/ismene/hardware-configuration.nix
+
+            # Make home-manager use system pkgs
+            home-manager.nixosModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+            }
+          ];
+        };
       };
     };
 }
