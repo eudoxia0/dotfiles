@@ -115,6 +115,7 @@
         "browser.newtabpage.activity-stream.feeds.topsites" = false;
 
         # Set the default download directory.
+        "browser.download.useDownloadDir" = false;
         "browser.download.dir" = "/home/eudoxia/Root/0 Inbox";
       };
     };
