@@ -35,7 +35,6 @@
         ./modules/gtk.nix
         ./modules/guile
         ./modules/locale.nix
-        ./modules/ly
         ./modules/mime.nix
         ./modules/network.nix
         ./modules/nixconf.nix
@@ -74,6 +73,7 @@
             ./hosts/rostam/hardware-configuration.nix
             ./modules/bright.nix
             ./modules/cagebreak
+            ./modules/ly
             ./modules/sway
             ./modules/syncthing.nix
           ];
@@ -84,6 +84,7 @@
           modules = shared ++ [
             ./hosts/ismene/configuration.nix
             ./hosts/ismene/hardware-configuration.nix
+            ./modules/sddm.nix
           ];
         };
       };
