@@ -22,6 +22,7 @@
         ./modules/1password.nix
         ./modules/emacs
         ./modules/espanso
+        ./modules/firefox
         ./modules/locale.nix
         ./modules/python.nix
         ./modules/rust.nix
@@ -49,7 +50,6 @@
             ./modules/cli.nix
             ./modules/desktop.nix
             ./modules/dev.nix
-            ./modules/firefox
             ./modules/font.nix
             ./modules/gh.nix
             ./modules/git.nix
