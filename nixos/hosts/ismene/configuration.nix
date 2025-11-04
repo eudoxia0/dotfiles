@@ -32,15 +32,6 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  users.users.eudoxia = {
-    isNormalUser = true;
-    description = "eudoxia";
-    extraGroups = [
-      "networkmanager"
-      "wheel"
-    ];
-  };
-
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [

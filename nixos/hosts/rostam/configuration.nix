@@ -21,16 +21,6 @@
 
   environment.localBinInPath = true;
 
-  # users
-  users.users.eudoxia = {
-    isNormalUser = true;
-    description = "eudoxia";
-    extraGroups = [
-      "networkmanager"
-      "wheel"
-    ];
-  };
-
   # services
   services.printing.enable = true;
 

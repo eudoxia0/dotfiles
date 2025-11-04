@@ -23,6 +23,7 @@
         ./modules/dev.nix
         ./modules/emacs
         ./modules/espanso
+        ./modules/eudoxia.nix
         ./modules/firefox
         ./modules/guile
         ./modules/locale.nix
