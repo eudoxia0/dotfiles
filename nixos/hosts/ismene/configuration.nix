@@ -54,6 +54,6 @@
     gnumake
     git
   ];
-
+  home-manager.users.eudoxia.home.stateVersion = "25.05"; # DO NOT CHANGE
   system.stateVersion = "25.05"; # DO NOT CHANGE
 }
