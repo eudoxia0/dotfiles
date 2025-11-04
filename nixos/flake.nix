@@ -26,6 +26,7 @@
         ./modules/desktop.nix
         ./modules/dev.nix
         ./modules/emacs
+        ./modules/env.nix
         ./modules/espanso
         ./modules/eudoxia.nix
         ./modules/firefox

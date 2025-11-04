@@ -1,30 +1,25 @@
 { config, pkgs, ... }:
 
 {
+  networking.hostName = "ismene";
+
+  home-manager.users.eudoxia.home.stateVersion = "25.05"; # DO NOT CHANGE
+  system.stateVersion = "25.05"; # DO NOT CHANGE
+
+  nixpkgs.config.allowUnfree = true;
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
   boot.initrd.luks.devices."luks-8a7825d3-550f-44be-a8a2-47ddcee57bb8".device =
     "/dev/disk/by-uuid/8a7825d3-550f-44be-a8a2-47ddcee57bb8";
-  networking.hostName = "ismene";
+
   programs.dconf.enable = true;
 
   # Tell the CPU governor to keep the CPU at the lowest frequency.
   powerManagement.cpuFreqGovernor = "powersave";
 
-  nixpkgs.config.allowUnfree = true;
-
-  environment.systemPackages = with pkgs; [
-    curl
-    git
-    acpi
-    gnumake
-  ];
   hardware.bluetooth.enable = true;
   hardware.cpu.intel.updateMicrocode = true;
-
-  home-manager.users.eudoxia.home.stateVersion = "25.05"; # DO NOT CHANGE
-  system.stateVersion = "25.05"; # DO NOT CHANGE
 
   fonts.packages = [ pkgs.noto-fonts-color-emoji ];
   fonts.fontconfig.defaultFonts.emoji = [ "Noto Color Emoji" ];
