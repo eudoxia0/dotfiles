@@ -86,6 +86,9 @@
 ;; Close the current window.
 (defkey "s-q" "delete-window")
 
+;; Launch Firefox.
+(defkey "C-s-w" "exec firefox")
+
 ;; Launch Emacs.
 (defkey "C-s-e" "exec emacs")
 
