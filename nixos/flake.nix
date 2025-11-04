@@ -37,6 +37,7 @@
         ./modules/ly
         ./modules/mime.nix
         ./modules/nixconf.nix
+        ./modules/perf.nix
         ./modules/polybar
         ./modules/python.nix
         ./modules/redshift.nix
@@ -71,7 +72,6 @@
             ./modules/bright.nix
             ./modules/cagebreak
             ./modules/network.nix
-            ./modules/perf.nix
             ./modules/sway
             ./modules/syncthing.nix
             ./modules/x11.nix

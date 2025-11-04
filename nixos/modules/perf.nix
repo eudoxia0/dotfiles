@@ -6,9 +6,6 @@
 }:
 
 {
-  # Tell the CPU governor to keep the CPU at the highest frequency.
-  powerManagement.cpuFreqGovernor = "performance";
-
   # Use a performance-oriented kernel.
   boot.kernelPackages = pkgs.linuxPackages_zen;
 

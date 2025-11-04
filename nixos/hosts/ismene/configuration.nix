@@ -31,7 +31,10 @@
     pulse.enable = true;
   };
 
+
+  # Tell the CPU governor to keep the CPU at the lowest frequency.
   powerManagement.cpuFreqGovernor = "powersave";
+
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
