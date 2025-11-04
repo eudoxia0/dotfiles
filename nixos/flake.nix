@@ -21,6 +21,7 @@
       shared = [
         ./modules/1password.nix
         ./modules/alacritty
+        ./modules/audio.nix
         ./modules/cli.nix
         ./modules/desktop.nix
         ./modules/dev.nix
@@ -69,7 +70,6 @@
           modules = shared ++ [
             ./hosts/rostam/configuration.nix
             ./hosts/rostam/hardware-configuration.nix
-            ./modules/audio.nix
             ./modules/bright.nix
             ./modules/cagebreak
             ./modules/sway
