@@ -35,6 +35,10 @@ Screenshots and information about the various hosts.
 ### [Ismene](https://github.com/eudoxia0/dotfiles/tree/master/nixos/hosts/ismene)
 
 - **Hardware:** [Fujitsu Lifebook U729](https://www.fujitsu.com/my/products/computing/pc/ap/notebooks/lifebook-u729/)
+- **Package Manager:** [Nix](https://nixos.org/)
+- **Text Shortcuts:** [Espanso](https://espanso.org/)
+- **Password Manager:** [1Password](https://1password.com/)
+- **dotfiles management:** [home-manager](https://github.com/nix-community/home-manager)
 
 ## License
 
