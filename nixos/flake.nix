@@ -28,8 +28,10 @@
         ./modules/guile
         ./modules/locale.nix
         ./modules/nixconf.nix
+        ./modules/polybar
         ./modules/python.nix
         ./modules/rust.nix
+        ./modules/stumpwm
         ./modules/typst.nix
         ./modules/zed
 
@@ -62,11 +64,9 @@
             ./modules/mime.nix
             ./modules/network.nix
             ./modules/perf.nix
-            ./modules/polybar
             ./modules/redshift.nix
             ./modules/shell.nix
             ./modules/ssh.nix
-            ./modules/stumpwm
             ./modules/sway
             ./modules/syncthing.nix
             ./modules/thunar
