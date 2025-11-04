@@ -57,6 +57,7 @@
 
   environment.systemPackages = with pkgs; [
     curl
+    gnumake
     git
   ];
 
