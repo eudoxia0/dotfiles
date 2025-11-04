@@ -38,9 +38,6 @@
       AutofillAddressEnabled = false;
       AutofillCreditCardEnabled = false;
 
-      # Set the default download directory.
-      DefaultDownloadDirectory = "/home/eudoxia/Root/0 Inbox";
-
       # Only allow HTTPS.
       HttpsOnlyMode = "force_enabled";
 
@@ -116,6 +113,9 @@
 
         # Don't show the top sites (Facebook etc.) in the new tab page.
         "browser.newtabpage.activity-stream.feeds.topsites" = false;
+
+        # Set the default download directory.
+        "browser.download.dir" = "/home/eudoxia/Root/0 Inbox";
       };
     };
   };
