@@ -35,8 +35,9 @@
 
   environment.systemPackages = with pkgs; [
     curl
-    gnumake
     git
+    gnome-calendar
+    gnumake
   ];
   hardware.bluetooth.enable = true;
   hardware.cpu.intel.updateMicrocode = true;
