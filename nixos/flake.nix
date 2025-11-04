@@ -47,6 +47,7 @@
         ./modules/shell.nix
         ./modules/ssh.nix
         ./modules/stumpwm
+        ./modules/syncthing.nix
         ./modules/thunar
         ./modules/todoist.nix
         ./modules/typst.nix
@@ -75,7 +76,6 @@
             ./modules/cagebreak
             ./modules/ly
             ./modules/sway
-            ./modules/syncthing.nix
           ];
         };
 
