@@ -31,6 +31,7 @@
         ./modules/python.nix
         ./modules/rust.nix
         ./modules/typst.nix
+        ./modules/zed
 
         # Make home-manager use system pkgs
         home-manager.nixosModules.home-manager
@@ -75,7 +76,6 @@
             ./modules/x11.nix
             ./modules/xcape.nix
             ./modules/xscreensaver
-            ./modules/zed
           ];
         };
 
