@@ -14,7 +14,6 @@ in
   powerManagement.cpuFreqGovernor = "powersave";
 
   hardware.bluetooth.enable = true;
-  hardware.cpu.intel.updateMicrocode = true;
 
   fonts.packages = [ pkgs.noto-fonts-color-emoji ];
   fonts.fontconfig.defaultFonts.emoji = [ "Noto Color Emoji" ];
