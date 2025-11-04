@@ -73,9 +73,9 @@ in
   # Syncthing config.
   home-manager.users.eudoxia.services.syncthing = {
     settings.devices = {
-      rostam = {
-        name = "rostam";
-        id = "H6XRBBB-7WXJPGN-GVMFX3T-BANURMZ-B5CYCIZ-ZMVNFEB-HQWGIXE-3AZ5EQ4";
+      ismene = {
+        name = "ismene";
+        id = "5H3EV2X-SOOZJKN-RHNNJUQ-I6HGKQS-WBT5EE2-N5O7L6O-PGEVWLF-WZB3CQO";
       };
     };
     settings.folders = {
