@@ -16,9 +16,6 @@
   boot.initrd.luks.devices."luks-5e2a0183-ed29-499d-8741-ea27e08caf28".device =
     "/dev/disk/by-uuid/5e2a0183-ed29-499d-8741-ea27e08caf28";
 
-  # Speed up the boot process.
-  boot.loader.timeout = 2;
-
   environment.localBinInPath = true;
 
   # AMD-specific.
