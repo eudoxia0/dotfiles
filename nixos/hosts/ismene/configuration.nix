@@ -24,6 +24,10 @@
     layout = "us";
     variant = "";
   };
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   services.printing.enable = true;
   services.pulseaudio.enable = false;
