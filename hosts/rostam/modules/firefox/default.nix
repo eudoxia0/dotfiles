@@ -38,6 +38,9 @@
       AutofillAddressEnabled = false;
       AutofillCreditCardEnabled = false;
 
+      # Set the default download directory.
+      DefaultDownloadDirectory = "/home/eudoxia/Root/0 Inbox";
+
       # Only allow HTTPS.
       HttpsOnlyMode = "force_enabled";
 
