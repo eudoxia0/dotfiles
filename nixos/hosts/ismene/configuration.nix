@@ -7,8 +7,6 @@
   boot.initrd.luks.devices."luks-8a7825d3-550f-44be-a8a2-47ddcee57bb8".device =
     "/dev/disk/by-uuid/8a7825d3-550f-44be-a8a2-47ddcee57bb8";
   networking.hostName = "ismene";
-  networking.networkmanager.enable = true;
-  programs.nm-applet.enable = true;
   programs.dconf.enable = true;
 
   services.xserver.enable = true;

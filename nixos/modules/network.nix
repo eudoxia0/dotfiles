@@ -6,9 +6,7 @@
 }:
 
 {
-  # Network configuration
   networking.networkmanager.enable = true;
-
-  # Enable the firewall
   networking.firewall.enable = true;
+  programs.nm-applet.enable = true;
 }

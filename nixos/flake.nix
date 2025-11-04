@@ -36,6 +36,7 @@
         ./modules/locale.nix
         ./modules/ly
         ./modules/mime.nix
+        ./modules/network.nix
         ./modules/nixconf.nix
         ./modules/perf.nix
         ./modules/polybar
@@ -71,7 +72,6 @@
             ./modules/audio.nix
             ./modules/bright.nix
             ./modules/cagebreak
-            ./modules/network.nix
             ./modules/sway
             ./modules/syncthing.nix
             ./modules/x11.nix
