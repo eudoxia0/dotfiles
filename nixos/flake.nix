@@ -72,6 +72,7 @@
             ./hosts/rostam/hardware-configuration.nix
             ./modules/bright.nix
             ./modules/cagebreak
+            ./modules/cpu-amd.nix
             ./modules/ly
             ./modules/sway
             ./modules/syncthing.nix
@@ -83,6 +84,7 @@
           modules = shared ++ [
             ./hosts/ismene/configuration.nix
             ./hosts/ismene/hardware-configuration.nix
+            ./modules/cpu-intel.nix
             ./modules/sddm.nix
           ];
         };
