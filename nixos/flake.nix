@@ -23,6 +23,7 @@
         ./modules/locale.nix
         ./modules/python.nix
         ./modules/rust.nix
+        ./modules/typst.nix
 
         # Make home-manager use system pkgs
         home-manager.nixosModules.home-manager
