@@ -9,12 +9,6 @@
   networking.hostName = "ismene";
   programs.dconf.enable = true;
 
-  services.xserver.enable = true;
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
-
   # Tell the CPU governor to keep the CPU at the lowest frequency.
   powerManagement.cpuFreqGovernor = "powersave";
 

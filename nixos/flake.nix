@@ -51,6 +51,7 @@
         ./modules/todoist.nix
         ./modules/typst.nix
         ./modules/wallpaper
+        ./modules/x11.nix
         ./modules/xcape.nix
         ./modules/xscreensaver
         ./modules/zed
@@ -74,7 +75,6 @@
             ./modules/cagebreak
             ./modules/sway
             ./modules/syncthing.nix
-            ./modules/x11.nix
           ];
         };
 
