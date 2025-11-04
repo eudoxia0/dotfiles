@@ -25,7 +25,7 @@
       # Disable checking whether Firefox is the default browser.
       DontCheckDefaultBrowser = true;
 
-      # Disable Generative AI features..
+      # Disable Generative AI features.
       GenerativeAI = {
         Enabled = false;
         Chatbot = false;
