@@ -19,6 +19,7 @@
     gnucash
     gnumeric
     gnumeric
+    gparted
     ideogram
     imv
     koreader
