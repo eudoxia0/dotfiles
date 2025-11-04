@@ -1,10 +1,12 @@
 { config, pkgs, ... }:
 
+let
+  deviceUuid = "5e2a0183-ed29-499d-8741-ea27e08caf28";
+in
 {
   networking.hostName = "rostam";
 
-  boot.initrd.luks.devices."luks-5e2a0183-ed29-499d-8741-ea27e08caf28".device =
-    "/dev/disk/by-uuid/5e2a0183-ed29-499d-8741-ea27e08caf28";
+  boot.initrd.luks.devices."luks-${deviceUuid}".device = "/dev/disk/by-uuid/${deviceUuid}";
 
   # AMD-specific.
   hardware.cpu.amd.updateMicrocode = true;
