@@ -64,6 +64,7 @@ matches:
   - { trigger: ":pancake", replace: "🥞" }
   - { trigger: ":paper", replace: "📄" }
   - { trigger: ":phone", replace: "☎️" }
+  - { trigger: ":photo", replace: "📸" }
   - { trigger: ":pill", replace: "💊" }
   - { trigger: ":razor", replace: "🪒" }
   - { trigger: ":read", replace: "📖" }
