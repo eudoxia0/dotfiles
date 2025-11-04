@@ -1,3 +1,5 @@
+# Do not change. Created by `nixos-generate-config`.
+
 {
   config,
   lib,
