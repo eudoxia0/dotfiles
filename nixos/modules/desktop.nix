@@ -18,7 +18,7 @@
     gimp3
     gnucash
     gnumeric
-    gnumeric
+    gparted
     ideogram
     imv
     koreader
