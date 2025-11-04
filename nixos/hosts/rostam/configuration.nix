@@ -20,7 +20,4 @@
 
   # AMD-specific.
   hardware.cpu.amd.updateMicrocode = true;
-
-  # Ensure I have GPU drivers.
-  hardware.graphics.enable = true;
 }
