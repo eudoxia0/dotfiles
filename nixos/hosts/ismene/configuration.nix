@@ -3,13 +3,6 @@
 {
   networking.hostName = "ismene";
 
-  home-manager.users.eudoxia.home.stateVersion = "25.05"; # DO NOT CHANGE
-  system.stateVersion = "25.05"; # DO NOT CHANGE
-
-  nixpkgs.config.allowUnfree = true;
-
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
   boot.initrd.luks.devices."luks-8a7825d3-550f-44be-a8a2-47ddcee57bb8".device =
     "/dev/disk/by-uuid/8a7825d3-550f-44be-a8a2-47ddcee57bb8";
 

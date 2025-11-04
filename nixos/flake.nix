@@ -26,7 +26,6 @@
         ./modules/desktop.nix
         ./modules/dev.nix
         ./modules/emacs
-        ./modules/env.nix
         ./modules/espanso
         ./modules/eudoxia.nix
         ./modules/firefox
@@ -45,6 +44,7 @@
         ./modules/python.nix
         ./modules/redshift.nix
         ./modules/rust.nix
+        ./modules/shared.nix
         ./modules/shell.nix
         ./modules/ssh.nix
         ./modules/stumpwm
