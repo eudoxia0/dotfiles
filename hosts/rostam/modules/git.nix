@@ -21,6 +21,10 @@
 
   home-manager.users.eudoxia.programs.git = {
     enable = true;
+    ignores = [
+      ".DS_Store"
+      "*~"
+    ];
     settings = {
       user = {
         name = "Fernando Borretti";
