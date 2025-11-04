@@ -21,7 +21,6 @@
   home-manager.users.eudoxia.home.packages = with pkgs; [
     scrot
     arandr
-    xfce.thunar
     xorg.xev
   ];
 }
