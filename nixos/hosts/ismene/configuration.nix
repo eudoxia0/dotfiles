@@ -31,7 +31,6 @@
     pulse.enable = true;
   };
 
-
   # Tell the CPU governor to keep the CPU at the lowest frequency.
   powerManagement.cpuFreqGovernor = "powersave";
 
