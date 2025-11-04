@@ -9,13 +9,9 @@
   networking.hostName = "ismene";
   networking.networkmanager.enable = true;
   programs.nm-applet.enable = true;
-
   programs.dconf.enable = true;
 
   services.xserver.enable = true;
-  # services.displayManager.sddm.enable = true;
-  # services.xserver.desktopManager.xfce.enable = true;
-
   services.xserver.xkb = {
     layout = "us";
     variant = "";
