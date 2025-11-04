@@ -23,6 +23,7 @@
         ./modules/emacs
         ./modules/espanso
         ./modules/firefox
+        ./modules/guile
         ./modules/locale.nix
         ./modules/python.nix
         ./modules/rust.nix
@@ -54,7 +55,6 @@
             ./modules/gh.nix
             ./modules/git.nix
             ./modules/gtk.nix
-            ./modules/guile
             ./modules/ly
             ./modules/mime.nix
             ./modules/network.nix
