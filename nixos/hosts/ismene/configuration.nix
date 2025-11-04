@@ -49,7 +49,7 @@
   home-manager.users.eudoxia.home.stateVersion = "25.05"; # DO NOT CHANGE
   system.stateVersion = "25.05"; # DO NOT CHANGE
 
-  fonts.packages = [ noto-color-emoji ];
+  fonts.packages = [ pkgs.noto-color-emoji ];
   fonts.fontconfig.defaultFonts.emoji = [ "Noto Color Emoji" ];
 
   home-manager.users.eudoxia.programs.git.settings.user = {
