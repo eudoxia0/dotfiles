@@ -26,4 +26,14 @@
     tokei
     tree
   ];
+
+  home-manager.users.eudoxia = {
+    programs.bash.enable = true;
+    home = {
+      shellAliases = {
+        fd = "fd -HI";
+        find = "echo 'use fd instead'";
+      };
+    };
+  };
 }
