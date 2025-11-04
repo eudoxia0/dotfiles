@@ -21,6 +21,7 @@
       shared = [
         ./modules/1password.nix
         ./modules/locale.nix
+        ./modules/rust.nix
 
         # Make home-manager use system pkgs
         home-manager.nixosModules.home-manager
@@ -59,7 +60,6 @@
             ./modules/polybar
             ./modules/python.nix
             ./modules/redshift.nix
-            ./modules/rust.nix
             ./modules/shell.nix
             ./modules/ssh.nix
             ./modules/stumpwm
