@@ -20,6 +20,7 @@
     let
       shared = [
         ./modules/1password.nix
+        ./modules/dev.nix
         ./modules/emacs
         ./modules/espanso
         ./modules/firefox
@@ -50,7 +51,6 @@
             ./modules/cagebreak
             ./modules/cli.nix
             ./modules/desktop.nix
-            ./modules/dev.nix
             ./modules/font.nix
             ./modules/gh.nix
             ./modules/git.nix
