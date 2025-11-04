@@ -96,4 +96,5 @@ matches:
   - { trigger: ":wolf", replace: "🐺" }
   - { trigger: ":wrench", replace: "🔧" }
   - { trigger: ":write", replace: "✍️" }
+  - { trigger: ":zap", replace: "⚡" }
   - { trigger: ":zzz", replace: "💤" }
