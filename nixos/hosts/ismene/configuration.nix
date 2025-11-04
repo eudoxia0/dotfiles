@@ -12,8 +12,9 @@
   programs.nm-applet.enable = true;
 
   services.xserver.enable = true;
-  services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.desktopManager.mate.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
+  services.xserver.desktopManager.xfce.enable = true;
+
   services.xserver.xkb = {
     layout = "us";
     variant = "";
@@ -28,16 +29,15 @@
     pulse.enable = true;
   };
 
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
-
+  powerManagement.cpuFreqGovernor = "powersave";
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
     curl
     git
-    gnome-calendar
+    acpi
     gnumake
+    todoist-electron
   ];
   hardware.bluetooth.enable = true;
   hardware.cpu.intel.updateMicrocode = true;
