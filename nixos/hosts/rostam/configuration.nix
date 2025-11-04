@@ -38,12 +38,6 @@
   # services
   services.printing.enable = true;
 
-  # programs
-  programs._1password.enable = true;
-  programs._1password-gui = {
-    enable = true;
-  };
-
   # AMD-specific.
   hardware.cpu.amd.updateMicrocode = true;
 

@@ -70,10 +70,4 @@
   ];
 
   system.stateVersion = "25.05"; # DO NOT CHANGE
-
-  # programs
-  programs._1password.enable = true;
-  programs._1password-gui = {
-    enable = true;
-  };
 }

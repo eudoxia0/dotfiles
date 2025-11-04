@@ -22,6 +22,9 @@
         rostam = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
+            ./hosts/rostam/configuration.nix
+            ./hosts/rostam/hardware-configuration.nix
+            ./modules/1password.nix
             ./modules/alacritty
             ./modules/audio.nix
             ./modules/bright.nix
@@ -59,8 +62,6 @@
             ./modules/xcape.nix
             ./modules/xscreensaver
             ./modules/zed
-            ./hosts/rostam/configuration.nix
-            ./hosts/rostam/hardware-configuration.nix
 
             # Make home-manager use system pkgs
             home-manager.nixosModules.home-manager
@@ -76,6 +77,7 @@
           modules = [
             ./hosts/ismene/configuration.nix
             ./hosts/ismene/hardware-configuration.nix
+            ./modules/x11.nix
 
             home-manager.nixosModules.home-manager
             {
