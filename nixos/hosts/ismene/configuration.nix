@@ -53,7 +53,7 @@ in
         id = "root";
         label = "Root";
         path = "/home/eudoxia/Root";
-        devices = [];
+        devices = [ "rostam" ];
       };
     };
   };
