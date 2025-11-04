@@ -8,7 +8,7 @@ My dotfiles repository.
 
 Screenshots and information about the various hosts.
 
-### [Antigone](https://github.com/eudoxia0/dotfiles/tree/master/hosts/antigone)
+### [Antigone](https://github.com/eudoxia0/dotfiles/tree/master/antigone)
 
 ![Screenshot of a macOS desktop, showing a centered terminal window, displaying system information output by the fastfetch program.](.github/screenshots/antigone.webp)
 
@@ -20,9 +20,9 @@ Screenshots and information about the various hosts.
 - **RSS Reader:** [NetNewsWire](https://netnewswire.com/)
 - **Diet Tracker:** [FoodNoms](https://foodnoms.com/)
 - **Password Manager:** [1Password](https://1password.com/)
-- **dotfiles management:** [make](https://github.com/eudoxia0/dotfiles/blob/master/hosts/antigone/Makefile)
+- **dotfiles management:** [make](https://github.com/eudoxia0/dotfiles/blob/master/antigone/Makefile)
 
-### [Rostam](https://github.com/eudoxia0/dotfiles/tree/master/hosts/rostam)
+### [Rostam](https://github.com/eudoxia0/dotfiles/tree/master/nixos/hosts/rostam)
 
 - **Hardware:** misc.
 - **Package Manager:** [Nix](https://nixos.org/)
