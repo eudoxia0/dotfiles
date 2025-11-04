@@ -6,10 +6,10 @@
 }:
 
 {
-  # Timezone configuration
+  # Timezone configuration.
   time.timeZone = "Australia/Sydney";
 
-  # Locale settings
+  # Locale settings.
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "en_US.UTF-8";

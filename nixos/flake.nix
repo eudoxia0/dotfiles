@@ -20,6 +20,7 @@
     let
       shared = [
         ./modules/1password.nix
+        ./modules/locale.nix
 
         # Make home-manager use system pkgs
         home-manager.nixosModules.home-manager
@@ -51,7 +52,6 @@
             ./modules/git.nix
             ./modules/gtk.nix
             ./modules/guile
-            ./modules/locale.nix
             ./modules/ly
             ./modules/mime.nix
             ./modules/network.nix
