@@ -8,12 +8,6 @@
   boot.initrd.luks.devices."luks-8a7825d3-550f-44be-a8a2-47ddcee57bb8".device =
     "/dev/disk/by-uuid/8a7825d3-550f-44be-a8a2-47ddcee57bb8";
   networking.hostName = "ismene";
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
   networking.networkmanager.enable = true;
   programs.nm-applet.enable = true;
 
