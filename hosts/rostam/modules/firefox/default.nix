@@ -34,6 +34,10 @@
         Locked = true;
       };
 
+      # Disable autofill.
+      AutofillAddressEnabled = false;
+      AutofillCreditCardEnabled = false;
+
       # Only allow HTTPS.
       HttpsOnlyMode = "force_enabled";
 
