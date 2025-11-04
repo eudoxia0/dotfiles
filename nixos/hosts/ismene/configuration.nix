@@ -70,4 +70,8 @@
       lcdfilter = "default";
     };
   };
+
+  home-manager.users.eudoxia.programs.git.settings.user = {
+    signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIcjDwuJ2FcXmZ7RQihS65HIJQbLqjqRkzRttdLUDhrs fernando@borretti.me";
+  };
 }

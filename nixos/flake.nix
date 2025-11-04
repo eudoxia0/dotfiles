@@ -28,6 +28,9 @@
         ./modules/espanso
         ./modules/eudoxia.nix
         ./modules/firefox
+        ./modules/gh.nix
+        ./modules/git.nix
+        ./modules/gtk.nix
         ./modules/guile
         ./modules/locale.nix
         ./modules/ly
@@ -35,8 +38,10 @@
         ./modules/nixconf.nix
         ./modules/polybar
         ./modules/python.nix
+        ./modules/redshift.nix
         ./modules/rust.nix
         ./modules/shell.nix
+        ./modules/ssh.nix
         ./modules/stumpwm
         ./modules/thunar
         ./modules/todoist.nix
@@ -65,13 +70,8 @@
             ./modules/bright.nix
             ./modules/cagebreak
             ./modules/font.nix
-            ./modules/gh.nix
-            ./modules/git.nix
-            ./modules/gtk.nix
             ./modules/network.nix
             ./modules/perf.nix
-            ./modules/redshift.nix
-            ./modules/ssh.nix
             ./modules/sway
             ./modules/syncthing.nix
             ./modules/x11.nix
