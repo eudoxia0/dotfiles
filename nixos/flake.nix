@@ -26,6 +26,7 @@
         ./modules/firefox
         ./modules/guile
         ./modules/locale.nix
+        ./modules/nixconf.nix
         ./modules/python.nix
         ./modules/rust.nix
         ./modules/typst.nix

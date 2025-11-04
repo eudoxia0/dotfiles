@@ -21,12 +21,6 @@
   # Enable TRIM for the SSD.
   services.fstrim.enable = true;
 
-  # Speed up compilation.
-  nix.settings = {
-    max-jobs = "auto";
-    cores = 0;
-  };
-
   # Better for development with lots of file watching
   boot.kernel.sysctl."fs.inotify.max_user_watches" = 524288;
 
@@ -38,9 +32,6 @@
     info.enable = false;
     nixos.enable = false;
   };
-
-  # Use hard links for identical paths.
-  nix.settings.auto-optimise-store = true;
 
   # Take up less space.
   boot.loader.systemd-boot.configurationLimit = 10;
