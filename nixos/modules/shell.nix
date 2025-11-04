@@ -10,7 +10,7 @@
     programs.bash.enable = true;
     home = {
       shellAliases = {
-        cdt = "cd ~/dotfiles/hosts/rostam";
+        cdt = "cd ~/dotfiles/nixos/";
         ls = "ls -1 --color";
       };
     };

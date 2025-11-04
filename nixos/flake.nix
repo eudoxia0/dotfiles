@@ -22,6 +22,7 @@
         ./modules/1password.nix
         ./modules/alacritty
         ./modules/cli.nix
+        ./modules/desktop.nix
         ./modules/dev.nix
         ./modules/emacs
         ./modules/espanso
@@ -29,12 +30,20 @@
         ./modules/firefox
         ./modules/guile
         ./modules/locale.nix
+        ./modules/ly
+        ./modules/mime.nix
         ./modules/nixconf.nix
         ./modules/polybar
         ./modules/python.nix
         ./modules/rust.nix
+        ./modules/shell.nix
         ./modules/stumpwm
+        ./modules/thunar
+        ./modules/todoist.nix
         ./modules/typst.nix
+        ./modules/wallpaper
+        ./modules/xcape.nix
+        ./modules/xscreensaver
         ./modules/zed
 
         # Make home-manager use system pkgs
@@ -55,27 +64,17 @@
             ./modules/audio.nix
             ./modules/bright.nix
             ./modules/cagebreak
-            ./modules/desktop.nix
             ./modules/font.nix
             ./modules/gh.nix
             ./modules/git.nix
             ./modules/gtk.nix
-            ./modules/ly
-            ./modules/mime.nix
             ./modules/network.nix
             ./modules/perf.nix
             ./modules/redshift.nix
-            ./modules/shell.nix
             ./modules/ssh.nix
             ./modules/sway
             ./modules/syncthing.nix
-            ./modules/thunar
-            ./modules/todoist.nix
-            ./modules/typst.nix
-            ./modules/wallpaper
             ./modules/x11.nix
-            ./modules/xcape.nix
-            ./modules/xscreensaver
           ];
         };
 
