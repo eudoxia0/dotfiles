@@ -24,7 +24,6 @@
         ./modules/audio.nix
         ./modules/cli.nix
         ./modules/desktop.nix
-        ./modules/dev.nix
         ./modules/emacs
         ./modules/espanso
         ./modules/eudoxia.nix
