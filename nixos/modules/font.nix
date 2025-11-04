@@ -30,9 +30,6 @@
 
   # fontconfig settings
   fonts.fontconfig = {
-    defaultFonts = {
-      emoji = [ "Apple Color Emoji" ];
-    };
     antialias = true;
     hinting = {
       enable = true;

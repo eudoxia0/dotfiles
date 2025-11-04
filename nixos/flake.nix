@@ -28,6 +28,7 @@
         ./modules/espanso
         ./modules/eudoxia.nix
         ./modules/firefox
+        ./modules/font.nix
         ./modules/gh.nix
         ./modules/git.nix
         ./modules/gtk.nix
@@ -69,7 +70,6 @@
             ./modules/audio.nix
             ./modules/bright.nix
             ./modules/cagebreak
-            ./modules/font.nix
             ./modules/network.nix
             ./modules/perf.nix
             ./modules/sway

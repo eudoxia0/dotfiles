@@ -46,32 +46,8 @@
   home-manager.users.eudoxia.home.stateVersion = "25.05"; # DO NOT CHANGE
   system.stateVersion = "25.05"; # DO NOT CHANGE
 
-  # Custom fonts.
-  fonts.packages = with pkgs; [
-    dejavu_fonts
-    fira-code
-    gyre-fonts
-    inconsolata
-    iosevka
-    jetbrains-mono
-    liberation_ttf
-    noto-fonts
-    noto-fonts-cjk-sans
-    terminus_font
-    terminus_font_ttf
-  ];
-
-  fonts.fontconfig = {
-    antialias = true;
-    hinting = {
-      enable = true;
-      style = "slight";
-    };
-    subpixel = {
-      rgba = "rgb";
-      lcdfilter = "default";
-    };
-  };
+  fonts.packages = [ noto-color-emoji ];
+  fonts.fontconfig.defaultFonts.emoji = [ "Noto Color Emoji" ];
 
   home-manager.users.eudoxia.programs.git.settings.user = {
     signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIcjDwuJ2FcXmZ7RQihS65HIJQbLqjqRkzRttdLUDhrs fernando@borretti.me";
