@@ -32,6 +32,10 @@ Screenshots and information about the various hosts.
 - **Password Manager:** [1Password](https://1password.com/)
 - **dotfiles management:** [home-manager](https://github.com/nix-community/home-manager)
 
+### [Ismene](https://github.com/eudoxia0/dotfiles/tree/master/nixos/hosts/ismene)
+
+- **Hardware:** [Fujitsu Lifebook U729](https://www.fujitsu.com/my/products/computing/pc/ap/notebooks/lifebook-u729/)
+
 ## License
 
 © 2013-2025 by [Fernando Borretti][fb]. Licensed under the MIT license.
