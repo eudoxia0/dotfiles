@@ -28,7 +28,7 @@
           home-manager.useUserPackages = true;
         }
       ];
-      in
+    in
     {
       nixosConfigurations = {
         rostam = nixpkgs.lib.nixosSystem {
