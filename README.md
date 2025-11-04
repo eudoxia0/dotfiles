@@ -24,6 +24,8 @@ Screenshots and information about the various hosts.
 
 ### [Rostam](https://github.com/eudoxia0/dotfiles/tree/master/nixos/hosts/rostam)
 
+![Screenshot of the Rostam host.](.github/screenshots/rostam.png)
+
 - **Hardware:** misc.
 - **Package Manager:** [Nix](https://nixos.org/)
 - **Window Manager:** [stumpwm](https://stumpwm.github.io/), [Sway](https://swaywm.org/)
