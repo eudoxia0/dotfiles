@@ -13,7 +13,6 @@
     pciutils # lspci
     taskwarrior-tui
     taskwarrior3
-    typst
     usbutils # lsusb
   ];
 }
