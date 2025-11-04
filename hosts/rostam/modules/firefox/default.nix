@@ -53,6 +53,9 @@
       # Do not prompt for a download location.
       PromptForDownloadLocation = false;
 
+      # Set the default download directory.
+      DownloadDirectory = "/home/eudoxia/Root/0 Inbox";
+
       # Disable search suggestions.
       SearchSuggestEnabled = false;
 
@@ -113,10 +116,6 @@
 
         # Don't show the top sites (Facebook etc.) in the new tab page.
         "browser.newtabpage.activity-stream.feeds.topsites" = false;
-
-        # Set the default download directory.
-        "browser.download.useDownloadDir" = false;
-        "browser.download.dir" = "/home/eudoxia/Root/0 Inbox";
       };
     };
   };
