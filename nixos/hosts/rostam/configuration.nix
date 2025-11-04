@@ -60,7 +60,7 @@ in
         buildInputs = [ super.makeWrapper ];
         postBuild = ''
           wrapProgram $out/bin/todoist-electron \
-            --add-flags "--force-device-scale-factor=1.5"
+            --add-flags "--force-device-scale-factor=1.5" \
             --set TZ "Australia/Sydney"
         '';
       };
