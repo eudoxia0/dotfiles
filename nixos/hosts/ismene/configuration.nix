@@ -53,6 +53,7 @@
 
   environment.systemPackages = with pkgs; [
     curl
+    git
   ];
 
   system.stateVersion = "25.05"; # DO NOT CHANGE
