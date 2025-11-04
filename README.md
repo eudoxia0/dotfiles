@@ -34,6 +34,8 @@ Screenshots and information about the various hosts.
 
 ### [Ismene](https://github.com/eudoxia0/dotfiles/tree/master/nixos/hosts/ismene)
 
+![Screenshot of the Ismene host, the window manager is StumpWM. Two windows are visible: an alacritty terminal showing fastfetch output, and an Emacs instance on the terminal showing Lisp code.](.github/screenshots/ismene.png)
+
 - **Hardware:** [Fujitsu Lifebook U729](https://www.fujitsu.com/my/products/computing/pc/ap/notebooks/lifebook-u729/)
 - **Package Manager:** [Nix](https://nixos.org/)
 - **Text Shortcuts:** [Espanso](https://espanso.org/)
