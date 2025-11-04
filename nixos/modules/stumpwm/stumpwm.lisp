@@ -31,12 +31,6 @@
 ;; Prefix key: logo+w.
 (set-prefix-key (kbd "s-w"))
 
-;; Wipe the prefix map. Start from a clean slate.
-(setf *root-map* (make-sparse-keymap))
-(setf *tile-group-root-map* (make-sparse-keymap))
-(setf *group-root-map* (make-sparse-keymap))
-(setf *float-group-root-map* (make-sparse-keymap))
-
 ;; Utilities.
 (defmacro defkey (k c)
   `(define-key *top-map* (kbd ,k) ,c))
@@ -74,12 +68,6 @@
 (defkey "s-$" "gmove δ")
 (defkey "s-%" "gmove ε")
 
-;; Switch to the next window in the current frame.
-(defkey "s-n" "pull-hidden-next")
-
-;; Switch to the previous window in the current frame.
-(defkey "s-p" "pull-hidden-previous")
-
 ;; Prompt for a shell command to run.
 (defkey "s-r" "exec")
 
@@ -103,45 +91,6 @@
 
 ;; Take a screenshot of a selected region.
 (defkey "C-Print" "exec scrot -f -s")
-
-;; Prompt for a stumpwm command to run.
-(defprefixkey ";" "colon")
-
-;; Prompt for a Lisp sexp to evaluate.
-(defprefixkey ":" "eval")
-
-;; Print the stumpwm version.
-(defprefixkey "v" "version")
-
-;; Split current frame vertically.
-(defprefixkey "s" "vsplit")
-
-;; Split current frame horizontally.
-(defprefixkey "S" "hsplit")
-
-;; Interactively resize the current frame.
-(defprefixkey "r" "iresize")
-
-;; Maximize the current frame to fill the screen.
-(defprefixkey "Q" "only")
-
-;; Rebalance frames.
-(defprefixkey "=" "balance-frames")
-
-;; Switch focus to the frame in the given direction.
-(defprefixkey "Up" "move-focus up")
-(defprefixkey "Down" "move-focus down")
-(defprefixkey "Left" "move-focus left")
-(defprefixkey "Right" "move-focus right")
-
-;; Move the current window to the frame in the given direction.
-(defprefixkey "M-Up" "move-window up")
-(defprefixkey "M-Down" "move-window down")
-(defprefixkey "M-Left" "move-window left")
-(defprefixkey "M-Right" "move-window right")
-
-;; Print the list of windows in this group.
-(defprefixkey "w" "windows")
 
 ;; Toggle the modeline on/off.
 (defprefixkey "m" "mode-line")
