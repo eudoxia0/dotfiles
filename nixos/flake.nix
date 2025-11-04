@@ -20,6 +20,8 @@
     let
       shared = [
         ./modules/1password.nix
+        ./modules/alacritty
+        ./modules/cli.nix
         ./modules/dev.nix
         ./modules/emacs
         ./modules/espanso
@@ -50,11 +52,9 @@
           modules = shared ++ [
             ./hosts/rostam/configuration.nix
             ./hosts/rostam/hardware-configuration.nix
-            ./modules/alacritty
             ./modules/audio.nix
             ./modules/bright.nix
             ./modules/cagebreak
-            ./modules/cli.nix
             ./modules/desktop.nix
             ./modules/font.nix
             ./modules/gh.nix
