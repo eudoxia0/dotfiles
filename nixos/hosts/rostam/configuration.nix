@@ -21,9 +21,6 @@
 
   environment.localBinInPath = true;
 
-  # services
-  services.printing.enable = true;
-
   # AMD-specific.
   hardware.cpu.amd.updateMicrocode = true;
 
