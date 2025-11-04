@@ -17,14 +17,25 @@
       home-manager,
       ...
     }:
+    let
+      shared = [
+        ./modules/1password.nix
+
+        # Make home-manager use system pkgs
+        home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+        }
+      ];
+      in
     {
       nixosConfigurations = {
         rostam = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
-          modules = [
+          modules = shared ++ [
             ./hosts/rostam/configuration.nix
             ./hosts/rostam/hardware-configuration.nix
-            ./modules/1password.nix
             ./modules/alacritty
             ./modules/audio.nix
             ./modules/bright.nix
@@ -62,28 +73,14 @@
             ./modules/xcape.nix
             ./modules/xscreensaver
             ./modules/zed
-
-            # Make home-manager use system pkgs
-            home-manager.nixosModules.home-manager
-            {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-            }
           ];
         };
 
         ismene = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
-          modules = [
+          modules = shared ++ [
             ./hosts/ismene/configuration.nix
             ./hosts/ismene/hardware-configuration.nix
-            ./modules/x11.nix
-
-            home-manager.nixosModules.home-manager
-            {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-            }
           ];
         };
       };
