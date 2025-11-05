@@ -54,6 +54,7 @@ matches:
   - { trigger: ":inbox", replace: "📨" }
   - { trigger: ":iron", replace: "♨️" }
   - { trigger: ":laptop", replace: "💻" }
+  - { trigger: ":link", replace: "🔗" }
   - { trigger: ":log", replace: "📝" }
   - { trigger: ":lotion", replace: "🧴" }
   - { trigger: ":mag", replace: "🔍" }
