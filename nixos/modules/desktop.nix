@@ -27,6 +27,7 @@
     mupdf
     nwg-look # like a modern lxappearance
     obsidian
+    protonmail-desktop
     seahorse
     signal-desktop
     sxiv
