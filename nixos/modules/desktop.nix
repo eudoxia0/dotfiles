@@ -29,6 +29,7 @@
     obsidian
     protonmail-desktop
     seahorse
+    thunderbird
     signal-desktop
     sxiv
     viewnior
