@@ -14,6 +14,7 @@
     monolith
     neofetch
     pciutils # lspci
+    restic
     taskwarrior-tui
     taskwarrior3
     usbutils # lsusb
