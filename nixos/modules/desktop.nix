@@ -30,6 +30,7 @@
     protonmail-desktop
     seahorse
     thunderbird
+    gnome-feeds
     signal-desktop
     sxiv
     viewnior
