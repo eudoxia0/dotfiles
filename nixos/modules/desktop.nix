@@ -16,6 +16,7 @@
     foot
     gargoyle
     gimp3
+    gnome-disk-utility
     gnome-feeds
     gnucash
     gnumeric
