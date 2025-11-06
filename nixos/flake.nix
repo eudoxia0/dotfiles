@@ -22,6 +22,7 @@
         ./modules/1password.nix
         ./modules/alacritty
         ./modules/audio.nix
+        ./modules/backup
         ./modules/cli.nix
         ./modules/desktop.nix
         ./modules/dev.nix
