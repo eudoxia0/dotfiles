@@ -8,8 +8,6 @@ in
 
   boot.initrd.luks.devices."luks-${deviceUuid}".device = "/dev/disk/by-uuid/${deviceUuid}";
 
-  programs.dconf.enable = true;
-
   # Tell the CPU governor to keep the CPU at the lowest frequency.
   powerManagement.cpuFreqGovernor = "powersave";
 

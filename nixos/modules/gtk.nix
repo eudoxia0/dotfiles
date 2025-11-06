@@ -6,6 +6,8 @@
 }:
 
 {
+  programs.dconf.enable = true;
+
   home-manager.users.eudoxia.gtk = {
     enable = true;
     theme = {

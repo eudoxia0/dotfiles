@@ -13,8 +13,6 @@ in
   home-manager.users.eudoxia.programs.git.settings.user = {
     signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIELrqPWqe1qDaTvYXyM3fw0+ToGRN6R+1qqt3QN5vWCR fernando@borretti.me";
   };
-  programs.dconf.enable = true;
-
 
   # Tell the CPU governor to keep the CPU at the highest frequency.
   powerManagement.cpuFreqGovernor = "performance";
