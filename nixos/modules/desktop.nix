@@ -16,6 +16,7 @@
     foot
     gargoyle
     gimp3
+    gnome-feeds
     gnucash
     gnumeric
     gparted
@@ -29,10 +30,9 @@
     obsidian
     protonmail-desktop
     seahorse
-    thunderbird
-    gnome-feeds
     signal-desktop
     sxiv
+    thunderbird
     viewnior
     wdisplays
     zathura
