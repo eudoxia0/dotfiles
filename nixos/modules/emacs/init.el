@@ -76,7 +76,7 @@
 (setq-default fill-column 80)
 
 ;; Font.
-(let ((font "Fira Code-10"))
+(let ((font "Fira Code-15"))
   (set-face-attribute 'default nil :font font)
   (set-face-attribute 'mode-line nil :font font))
 
