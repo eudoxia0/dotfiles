@@ -4,5 +4,14 @@
 
 include "%L"
 
-# Em dash: Compose + - + -
-<Multi_key> <minus> <minus> : "—"   # EM DASH
+# Dashes
+<Multi_key> <minus> <period>        : "–"   # EN DASH
+<Multi_key> <minus> <minus>         : "—"   # EM DASH
+
+# Smart quotes - single
+<Multi_key> <less> <apostrophe>     : "'"   # LEFT SINGLE QUOTATION MARK
+<Multi_key> <greater> <apostrophe>  : "'"   # RIGHT SINGLE QUOTATION MARK
+
+# Smart quotes - double
+<Multi_key> <less> <quotedbl>       : """   # LEFT DOUBLE QUOTATION MARK
+<Multi_key> <greater> <quotedbl>    : """   # RIGHT DOUBLE QUOTATION MARK
