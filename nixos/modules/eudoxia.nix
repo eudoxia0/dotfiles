@@ -14,4 +14,10 @@
       "wheel"
     ];
   };
+
+  # Disable automatic creation of XDG user directories
+  home-manager.users.eudoxia.xdg.userDirs = {
+    enable = false;
+    createDirectories = false;
+  };
 }
