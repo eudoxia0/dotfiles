@@ -20,6 +20,7 @@
     iosevka
     jetbrains-mono
     liberation_ttf
+    nika-fonts
     noto-fonts
     noto-fonts-cjk-sans
     terminus_font
