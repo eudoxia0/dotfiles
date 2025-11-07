@@ -75,10 +75,23 @@
 ;; Fill paragraphs to 80 columns.
 (setq-default fill-column 80)
 
+;; Host predicates.
+(defun rostam-p ()
+  "Return t if running on rostam."
+  (string= (system-name) "rostam"))
+
+(defun ismene-p ()
+  "Return t if running on ismene."
+  (string= (system-name) "ismene"))
+
 ;; Font.
-(let ((font "Fira Code-15"))
-  (set-face-attribute 'default nil :font font)
-  (set-face-attribute 'mode-line nil :font font))
+(let ((font-size (cond
+                  ((rostam-p) "20")  ; 4K monitor
+                  ((ismene-p) "13")  ; 1080p laptop
+                  (t "15"))))        ; default
+  (let ((font (format "Fira Code-%s" font-size)))
+    (set-face-attribute 'default nil :font font)
+    (set-face-attribute 'mode-line nil :font font)))
 
 ;; Show trailing whitespace.
 (setq-default show-trailing-whitespace t)
