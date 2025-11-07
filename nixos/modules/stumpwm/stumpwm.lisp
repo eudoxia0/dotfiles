@@ -397,6 +397,9 @@ HEIGHT are subtracted."
 (if (rostamp)
     (stumpwm::run-commands "toggle-gaps-on"))
 
+;; Ensure xscreensaver is started.
+(run-shell-command "systemctl --user start xscreensaver")
+
 ;; Start polybar.
 (run-shell-command "polybar 2> ~/.polybar.log")
 
