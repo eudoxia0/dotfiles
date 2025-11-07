@@ -1,7 +1,3 @@
-# X Compose Key Sequences
-# This file defines custom character compositions using the compose key
-# Usage: Press Compose (Right Alt), then the sequence of keys defined below
-
 include "%L"
 
 # dashes
