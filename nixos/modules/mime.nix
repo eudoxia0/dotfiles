@@ -24,7 +24,7 @@
       "image/vnd.microsoft.icon" = [ "viewnior.desktop" ];
       "image/webp" = [ "viewnior.desktop" ];
       "image/x-icon" = [ "viewnior.desktop" ];
-      "text/html" = [ "emacs.desktop" ];
+      "text/html" = [ "firefox.desktop" ];
       "text/markdown" = [ "emacs.desktop" ];
       "text/plain" = [ "emacs.desktop" ];
       "x-scheme-handler/http" = [ "firefox.desktop" ];
