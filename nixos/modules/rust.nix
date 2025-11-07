@@ -7,8 +7,7 @@
 
 {
   home-manager.users.eudoxia.home.packages = with pkgs; [
-    cargo
-    rustc
+    rustup
   ];
 
   home-manager.users.eudoxia.home.shellAliases = {
