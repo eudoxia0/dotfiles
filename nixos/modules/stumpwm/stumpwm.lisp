@@ -359,6 +359,27 @@ HEIGHT are subtracted."
 (defprefixkey "b" "ibrightness")
 
 ;;;
+;;; Volume Control (PipeWire)
+;;;
+
+(defcommand volume-up () ()
+  "Increase volume."
+  (run-shell-command "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"))
+
+(defcommand volume-down () ()
+  "Decrease volume."
+  (run-shell-command "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"))
+
+(defcommand volume-mute () ()
+  "Toggle mute."
+  (run-shell-command "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"))
+
+;; Media key bindings for volume control.
+(defkey "XF86AudioRaiseVolume" "volume-up")
+(defkey "XF86AudioLowerVolume" "volume-down")
+(defkey "XF86AudioMute" "volume-mute")
+
+;;;
 ;;; Startup
 ;;;
 
