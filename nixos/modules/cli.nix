@@ -11,6 +11,7 @@
     djvu2pdf
     fastfetch
     file
+    inxi
     monolith
     neofetch
     pciutils # lspci
