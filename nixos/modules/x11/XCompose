@@ -1,0 +1,17 @@
+# X Compose Key Sequences
+# This file defines custom character compositions using the compose key
+# Usage: Press Compose (Right Alt), then the sequence of keys defined below
+
+include "%L"
+
+# Dashes
+<Multi_key> <minus> <period>        : "–"   # EN DASH
+<Multi_key> <minus> <minus>         : "—"   # EM DASH
+
+# Smart quotes - single
+<Multi_key> <less> <apostrophe>     : "'"   # LEFT SINGLE QUOTATION MARK
+<Multi_key> <greater> <apostrophe>  : "'"   # RIGHT SINGLE QUOTATION MARK
+
+# Smart quotes - double
+<Multi_key> <less> <quotedbl>       : """   # LEFT DOUBLE QUOTATION MARK
+<Multi_key> <greater> <quotedbl>    : """   # RIGHT DOUBLE QUOTATION MARK
