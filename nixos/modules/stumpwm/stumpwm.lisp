@@ -87,10 +87,10 @@
 (defkey "C-s-c" "exec alacritty")
 
 ;; Take a screenshot of the whole screen.
-(defkey "Print" "exec scrot")
+(defkey "Print" "exec scrot-screenshot")
 
 ;; Take a screenshot of a selected region.
-(defkey "C-Print" "exec scrot -f -s")
+(defkey "C-Print" "exec scrot-screenshot -f -s")
 
 ;; Toggle the modeline on/off.
 (defprefixkey "m" "mode-line")
