@@ -16,7 +16,7 @@ let
     mkdir -p "$SCREENSHOT_DIR"
 
     # Generate filename with timestamp
-    FILENAME="screenshot-$(date +%Y%m%d-%H%M%S).png"
+    FILENAME="$(date +%Y-%m-%d-%H%M%S)_scrot.png"
 
     # Call scrot with the full path and pass through any arguments
     ${pkgs.scrot}/bin/scrot "$@" "$SCREENSHOT_DIR/$FILENAME"
