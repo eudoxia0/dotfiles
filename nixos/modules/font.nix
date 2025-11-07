@@ -26,6 +26,7 @@
     noto-fonts-cjk-sans
     terminus_font
     terminus_font_ttf
+    texlivePackages.times
   ];
 
   # fontconfig settings
