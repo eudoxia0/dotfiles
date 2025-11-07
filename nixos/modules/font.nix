@@ -10,13 +10,11 @@
   # emojis.
   fonts.enableDefaultPackages = false;
 
-  # But do enable GS fonts.
-  fonts.enableGhostscriptFonts = true;
-
   # Custom fonts.
   fonts.packages = with pkgs; [
     dejavu_fonts
     fira-code
+    freefont_ttf
     gyre-fonts
     inconsolata
     iosevka
@@ -27,6 +25,7 @@
     terminus_font
     terminus_font_ttf
     texlivePackages.times
+    unifont
   ];
 
   # fontconfig settings
