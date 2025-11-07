@@ -98,6 +98,10 @@
     "name": "nixopt",
     "url": "https://search.nixos.org/options"
   },
+  {
+    "name": "hm",
+    "url": "https://home-manager-options.extranix.com/"
+  },
   "separator",
   {
     "name": "GitHub",
