@@ -157,7 +157,7 @@
     wombat
     wheatgrass))
 
-(defvar my-default-theme 'kaolin-galaxy)
+(defvar my-default-theme 'modus-operandi)
 
 (defvar my-current-theme my-default-theme)
 
