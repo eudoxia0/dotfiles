@@ -1,5 +1,3 @@
-include "%L"
-
 # dashes
 <Multi_key> <minus> <minus> <space> : "–" # en dash
 <Multi_key> <minus> <minus> <minus> : "—" # em dash
