@@ -44,7 +44,6 @@
   # font-related programs.
   home-manager.users.eudoxia.home.packages = with pkgs; [
     font-manager
-    ghostscript
     gnome-font-viewer
   ];
 }
