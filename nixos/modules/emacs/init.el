@@ -224,6 +224,12 @@
 (require 'inform7)
 
 ;;;
+;;; Mode: XCompose
+;;;
+
+(require 'xcompose-mode)
+
+;;;
 ;;; Quick Commit
 ;;;
 

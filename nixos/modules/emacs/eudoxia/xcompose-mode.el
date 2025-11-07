@@ -271,3 +271,4 @@ a comment at the end of the line."
   (auto-fill-mode 0)
   )
 
+(provide 'xcompose-mode)
