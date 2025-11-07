@@ -19,6 +19,7 @@
     gimp3
     gnome-disk-utility
     gnome-feeds
+    gnome-solanum
     gnucash
     gnumeric
     gparted
