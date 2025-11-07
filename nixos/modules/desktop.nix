@@ -10,7 +10,6 @@
     calibre
     chromium
     djview
-    emote
     evince
     file-roller
     flowtime
