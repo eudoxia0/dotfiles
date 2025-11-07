@@ -21,6 +21,9 @@
 (global-unset-key (kbd "M-v"))
 (global-unset-key (kbd "C-l"))
 
+;; Directory for custom modules.
+(add-to-list 'load-path "~/.emacs.d/eudoxia/")
+
 ;;;
 ;;; Splash Screen
 ;;;
@@ -218,7 +221,6 @@
 ;;; Mode: Inform7
 ;;;
 
-(add-to-list 'load-path "~/.emacs.d/eudoxia/")
 (require 'inform7)
 
 ;;;
