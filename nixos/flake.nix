@@ -27,6 +27,7 @@
         ./modules/desktop.nix
         ./modules/dev.nix
         ./modules/emacs
+        ./modules/emote
         ./modules/espanso
         ./modules/eudoxia.nix
         ./modules/firefox
