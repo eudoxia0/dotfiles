@@ -232,12 +232,9 @@
                   (shell-command-to-string
                    "git rev-parse --abbrev-ref HEAD")))
          (commit-msg (read-string "Commit message: ")))
-    ;; Stage all tracked files with changes
     (shell-command "git add -u")
-    ;; Commit with the message
     (shell-command (format "git commit -m %s"
                            (shell-quote-argument commit-msg)))
-    ;; Push to origin using current branch name
     (shell-command (format "git push origin %s" branch))
     (message "Committed and pushed to origin/%s" branch)))
 
