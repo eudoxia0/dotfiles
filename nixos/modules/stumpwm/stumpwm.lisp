@@ -397,5 +397,8 @@ HEIGHT are subtracted."
 (if (rostamp)
     (stumpwm::run-commands "toggle-gaps-on"))
 
+;; Start polybar.
 (run-shell-command "polybar 2> ~/.polybar.log")
+
+;; Set the wallpaper.
 (run-shell-command "feh --no-fehbg --bg-fill ~/.local/share/eudoxia/panther.jpg")
