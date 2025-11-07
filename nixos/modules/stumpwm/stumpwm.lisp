@@ -380,10 +380,22 @@ HEIGHT are subtracted."
 (defkey "XF86AudioMute" "volume-mute")
 
 ;;;
+;;; Host-Specific Config
+;;;
+
+(defun rostamp ()
+  (string= (uiop:hostname) "rostam"))
+
+(defun ismenep ()
+  (string= (uiop:hostname) "rostam"))
+
+;;;
 ;;; Startup
 ;;;
 
-(stumpwm::run-commands "toggle-gaps-on")
+; We only want gaps in rostam, since ismene is too small.
+(if (rostamp)
+    (stumpwm::run-commands "toggle-gaps-on"))
 
 (run-shell-command "polybar 2> ~/.polybar.log")
 (run-shell-command "feh --no-fehbg --bg-fill ~/.local/share/eudoxia/panther.jpg")
