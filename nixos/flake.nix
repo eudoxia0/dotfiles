@@ -53,7 +53,7 @@
         ./modules/todoist.nix
         ./modules/typst.nix
         ./modules/wallpaper
-        ./modules/x11.nix
+        ./modules/x11
         ./modules/xcape.nix
         ./modules/xscreensaver
         ./modules/zed
