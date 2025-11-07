@@ -43,6 +43,7 @@ matches:
   - { trigger: ":down", replace: "⬇️" }
   - { trigger: ":drop", replace: "💧" }
   - { trigger: ":dry", replace: "💨" }
+  - { trigger: ":dvd", replace: "📀" }
   - { trigger: ":env", replace: "✉️" }
   - { trigger: ":feat", replace: "🌿" }
   - { trigger: ":fence", replace: "🚧" }
