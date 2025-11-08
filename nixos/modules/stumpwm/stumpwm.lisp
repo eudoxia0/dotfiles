@@ -403,5 +403,8 @@ HEIGHT are subtracted."
 ;; Start polybar.
 (run-shell-command "polybar 2> ~/.polybar.log")
 
+;; Something something SSH.
+(run-shell-command "dbus-update-activation-environment --systemd DISPLAY XAUTHORITY")
+
 ;; Set the wallpaper.
 (run-shell-command "feh --no-fehbg --bg-fill ~/.local/share/eudoxia/panther.jpg")
