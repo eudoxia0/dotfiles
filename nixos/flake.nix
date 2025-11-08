@@ -78,7 +78,7 @@
             ./hosts/rostam/hardware-configuration.nix
             ./modules/bright.nix
             ./modules/cagebreak
-            ./modules/ly
+            ./modules/sddm.nix
             ./modules/sway
           ];
         };
