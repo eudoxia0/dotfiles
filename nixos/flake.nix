@@ -30,6 +30,7 @@
         ./modules/emote
         ./modules/espanso
         ./modules/eudoxia.nix
+        ./modules/fastfetch
         ./modules/firefox
         ./modules/font.nix
         ./modules/gh.nix
