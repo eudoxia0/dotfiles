@@ -15,4 +15,4 @@ alias ck = cargo check
 alias cl = cargo clippy --all-targets -- -D warnings
 
 # Other aliases.
-alias cdt = cd ~/dotfiles/nixos/
+alias cdt = cd ~/Root/1-Workspace/dotfiles/nixos/
