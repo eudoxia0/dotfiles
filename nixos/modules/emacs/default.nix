@@ -19,6 +19,7 @@
           moe-theme
           nano-theme
           nix-mode
+          nushell-mode
           olivetti
           rust-mode
           sly

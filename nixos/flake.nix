@@ -41,6 +41,7 @@
         ./modules/mime.nix
         ./modules/network.nix
         ./modules/nixconf.nix
+        ./modules/nushell
         ./modules/perf.nix
         ./modules/polybar
         ./modules/python.nix

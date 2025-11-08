@@ -9,3 +9,6 @@ history = 100000
 normal = { family = "Terminus", style = "Regular" }
 size = 10.0
 offset = { x = 0, y = 0 }
+
+[terminal]
+shell = "nu"
