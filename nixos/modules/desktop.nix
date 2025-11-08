@@ -7,6 +7,7 @@
 
 {
   home-manager.users.eudoxia.home.packages = with pkgs; [
+    baobab
     calibre
     chromium
     djview
