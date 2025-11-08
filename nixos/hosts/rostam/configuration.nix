@@ -48,7 +48,10 @@ in
   ];
 
   # Add your user to the necessary groups
-  users.users.eudoxia.extraGroups = [ "video" "render" ];
+  users.users.eudoxia.extraGroups = [
+    "video"
+    "render"
+  ];
 
   # Install ROCm and related packages.
   environment.systemPackages = with pkgs; [
