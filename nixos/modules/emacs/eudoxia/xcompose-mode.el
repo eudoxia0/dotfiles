@@ -1,3 +1,5 @@
+;;;; from: https://raw.githubusercontent.com/kragen/xcompose/refs/heads/master/xcompose-mode.el
+
 ;;; xcompose.el --- major mode for editing .XCompose files
 ;; Copyright (C) 2019 Mark Shoulson
 

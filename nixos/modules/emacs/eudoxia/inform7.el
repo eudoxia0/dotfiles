@@ -1,3 +1,5 @@
+;;;; from: https://raw.githubusercontent.com/alexispurslane/inform7-mode/refs/heads/master/inform7.el
+
 ;;; inform7.el --- Major mode for working with Inform 7 files
 
 ;; Copyright (C) 2020 Ben Moon
