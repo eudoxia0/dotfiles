@@ -42,7 +42,27 @@ in
     GDK_DPI_SCALE = "1.5";
   };
 
+  # Radeon inspector.
   home-manager.users.eudoxia.home.packages = with pkgs; [
     radeontop
+  ];
+
+  # Enable ROCm.
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+    extraPackages = with pkgs; [
+      rocmPackages.clr.icd
+    ];
+  };
+
+  # Add your user to the necessary groups
+  users.users.eudoxia.extraGroups = [ "video" "render" ];
+
+  # Install ROCm and related packages.
+  environment.systemPackages = with pkgs; [
+    rocmPackages.rocm-smi
+    rocmPackages.rocminfo
   ];
 }
