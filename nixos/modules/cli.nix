@@ -12,7 +12,6 @@
     file
     inxi
     monolith
-    neofetch
     pciutils # lspci
     restic
     taskwarrior-tui
