@@ -41,4 +41,8 @@ in
   environment.variables = {
     GDK_DPI_SCALE = "1.5";
   };
+
+  home-manager.users.eudoxia.home.packages = with pkgs; [
+    radeontop
+  ];
 }
