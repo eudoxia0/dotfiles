@@ -47,16 +47,6 @@ in
     radeontop
   ];
 
-  # Enable ROCm.
-  hardware.opengl = {
-    enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
-    extraPackages = with pkgs; [
-      rocmPackages.clr.icd
-    ];
-  };
-
   # Add your user to the necessary groups
   users.users.eudoxia.extraGroups = [ "video" "render" ];
 
@@ -64,5 +54,6 @@ in
   environment.systemPackages = with pkgs; [
     rocmPackages.rocm-smi
     rocmPackages.rocminfo
+    rocmPackages.clr.icd
   ];
 }
