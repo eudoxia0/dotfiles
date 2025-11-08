@@ -122,6 +122,12 @@
 
         # Don't show the top sites (Facebook etc.) in the new tab page.
         "browser.newtabpage.activity-stream.feeds.topsites" = false;
+
+        # Configure fonts.
+        "font.name.serif.x-western" = "TeX Gyre Termes";
+        "font.name.sans-serif.x-western" = "TeX Gyre Heros";
+        "font.name.monospace.x-western" = "Fira Code";
+        "font.size.variable.x-western" = 16;
       };
     };
   };
