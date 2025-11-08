@@ -1,6 +1,6 @@
 file:///home/eudoxia/Root
 file:///home/eudoxia/Root/0%20Inbox
-file:///home/eudoxia/Root/1%20Workspace
+file:///home/eudoxia/Root/1-Workspace
 file:///home/eudoxia/Root/2%20Treasure
 file:///home/eudoxia/Root/3%20Areas
 file:///home/eudoxia/Root/4%20Library
