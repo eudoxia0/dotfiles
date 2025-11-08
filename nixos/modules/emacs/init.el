@@ -230,6 +230,7 @@
 (require 'xcompose-mode)
 
 (add-to-list 'auto-mode-alist '("\\.XCompose\\'" . xcompose-mode))
+(add-to-list 'auto-mode-alist '("\\.xcm\\'" . xcompose-mode))
 
 ;;;
 ;;; Quick Commit

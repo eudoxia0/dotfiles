@@ -18,6 +18,6 @@
     xorg.xev
   ];
   home-manager.users.eudoxia.home.file = {
-    ".XCompose".source = ./XCompose;
+    ".XCompose".source = ./xcompose.xcm;
   };
 }
