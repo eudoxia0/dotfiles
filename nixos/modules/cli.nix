@@ -9,7 +9,6 @@
   home-manager.users.eudoxia.home.packages = with pkgs; [
     age
     djvu2pdf
-    fastfetch
     file
     inxi
     monolith
