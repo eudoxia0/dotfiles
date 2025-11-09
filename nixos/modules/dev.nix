@@ -15,6 +15,7 @@
     gnumake
     imagemagick
     inform7
+    jekyll
     just
     nixfmt-tree
     sqlite
