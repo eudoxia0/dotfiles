@@ -7,7 +7,6 @@
 
 {
   home-manager.users.eudoxia.home.packages = with pkgs; [
-    agda
     btop
     clang
     curl

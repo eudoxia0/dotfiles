@@ -20,6 +20,7 @@
     let
       shared = [
         ./modules/1password.nix
+        ./modules/agda.nix
         ./modules/alacritty
         ./modules/audio.nix
         ./modules/backup
