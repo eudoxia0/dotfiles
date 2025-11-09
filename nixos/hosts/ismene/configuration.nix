@@ -8,9 +8,6 @@ in
 
   boot.initrd.luks.devices."luks-${deviceUuid}".device = "/dev/disk/by-uuid/${deviceUuid}";
 
-  # Tell the CPU governor to keep the CPU at the lowest frequency.
-  powerManagement.cpuFreqGovernor = "powersave";
-
   hardware.bluetooth.enable = true;
 
   fonts.packages = [ pkgs.noto-fonts-color-emoji ];
@@ -62,4 +59,17 @@ in
   ];
 
   services.thermald.enable = true;
+
+  # Power management.
+  services.auto-cpufreq.enable = true;
+  services.auto-cpufreq.settings = {
+    battery = {
+      governor = "powersave";
+      turbo = "never";
+    };
+    charger = {
+      governor = "performance";
+      turbo = "auto";
+    };
+  };
 }
