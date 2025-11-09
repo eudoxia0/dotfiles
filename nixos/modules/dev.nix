@@ -1,6 +1,7 @@
 {
   config,
-  pkgs,
+  pkg
+    s,
   lib,
   ...
 }:
@@ -17,6 +18,7 @@
     inform7
     jekyll
     just
+    lean
     nixfmt-tree
     sqlite
     tokei
