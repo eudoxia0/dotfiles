@@ -8,5 +8,6 @@
 {
   home-manager.users.eudoxia.home.packages = with pkgs; [
     agda
+    agdaPackages.standard-library
   ];
 }
