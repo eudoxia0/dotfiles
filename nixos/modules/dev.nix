@@ -18,7 +18,7 @@
     inform7
     jekyll
     just
-    lean
+    lean4
     nixfmt-tree
     sqlite
     tokei
