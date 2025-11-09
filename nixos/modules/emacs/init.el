@@ -90,7 +90,7 @@
 ;; Font.
 (let ((font-size (cond
                   ((rostam-p) "16")  ; 4K monitor
-                  ((ismene-p) "10")  ; 1080p laptop
+                  ((ismene-p) "12")  ; 1080p laptop
                   (t "15"))))        ; default
   (let ((font (format "Fira Code-%s" font-size)))
     (set-face-attribute 'default nil :font font)
