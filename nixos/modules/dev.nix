@@ -10,7 +10,6 @@
     clang
     curl
     gnumake
-    ruby
     sqlite
     vim
   ];
