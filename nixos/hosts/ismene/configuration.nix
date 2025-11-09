@@ -55,4 +55,8 @@ in
       };
     };
   };
+
+  environment.systemPackages = with pkgs; [
+    brightnessctl
+  ];
 }
