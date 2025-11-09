@@ -7,7 +7,8 @@
 
 {
   home-manager.users.eudoxia.home.packages = with pkgs; [
-    agda
-    agdaPackages.standard-library
+    (agda.withPackages (p: [
+      p.standard-library
+    ]))
   ];
 }
