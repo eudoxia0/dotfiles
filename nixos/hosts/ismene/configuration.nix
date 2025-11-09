@@ -60,4 +60,6 @@ in
     brightnessctl
     acpi
   ];
+
+  services.thermald.enable = true;
 }
