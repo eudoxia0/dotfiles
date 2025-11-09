@@ -22,5 +22,6 @@
     tokei
     tree
     vim
+    zola
   ];
 }
