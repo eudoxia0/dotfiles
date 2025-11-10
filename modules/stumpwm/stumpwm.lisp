@@ -102,11 +102,11 @@
 (defparameter *config-map*
   (let ((m (make-sparse-keymap)))
     ;; Open Emacs to the stumpwmrc configuration.
-    (define-key m (kbd "s") "exec emacs ~/dotfiles/hosts/rostam/mod/stumpwm/stumpwm.lisp")
-    ;; Open Emacs to the Nix configuration for rostam.
-    (define-key m (kbd "n") "exec emacs ~/dotfiles/hosts/rostam/rostam.nix")
+    (define-key m (kbd "s") "exec emacs ~/dotfiles/modules/stumpwm/stumpwm.lisp")
+    ;; Open Emacs to the dotfiles flake.
+    (define-key m (kbd "n") "exec emacs ~/dotfiles/flake.nix")
     ;; Open Emacs to the Emacs init.el.
-    (define-key m (kbd "e") "exec emacs ~/dotfiles/hosts/rostam/mod/emacs/init.el")
+    (define-key m (kbd "e") "exec emacs ~/dotfiles/modules/emacs/init.el")
     m))
 
 ;; Prefix key of the config map.
