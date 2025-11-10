@@ -10,7 +10,7 @@
     fastfetch
   ];
 
-  home-manager.users.eudoxia.home.file.".local/share/eudoxia/nerv-color.txt".source =
+  home-manager.users.eudoxia.home.file.".eudoxia.d/data/nerv/nerv-color.txt".source =
     ./nerv/nerv-color.txt;
-  home-manager.users.eudoxia.home.file.".local/bin/nervfetch".source = ./nerv/nervfetch.sh;
+  home-manager.users.eudoxia.home.file.".eudoxia.d/bin/nervfetch".source = ./nerv/nervfetch.sh;
 }

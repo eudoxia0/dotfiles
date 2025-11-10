@@ -6,5 +6,5 @@
 }:
 
 {
-  home-manager.users.eudoxia.home.file.".local/share/eudoxia/panther.jpg".source = ./panther.jpg;
+  home-manager.users.eudoxia.home.file.".eudoxia.d/data/wallpaper/panther.jpg".source = ./panther.jpg;
 }
