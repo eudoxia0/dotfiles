@@ -109,6 +109,19 @@
     (define-key m (kbd "e") "exec emacs ~/dotfiles/modules/emacs/init.el")
     m))
 
+;; Shortcut to open the journal to today's date.
+(defcommand open-journal-today () ()
+  "Open journal to today's date."
+  (let ((year  (stumpwm::time-year))
+	(month (stumpwm::time-month))
+	(day   (stumpwm::time-day-of-month)))
+    (let ((date (format nil "~a-~a-~a.md" year month day)))
+      (let ((path (format nil "~~/Root/2 Treasure/Journal/Daily/~a/~a/~a" year month date)))
+	(let ((cmd (format nil "exec emacs ~s" path)))
+	  (run-shell-command cmd))))))
+
+(define-key *root-map* (kbd "j") "open-journal-today")
+
 ;; Prefix key of the config map.
 (define-key *root-map* (kbd "c") '*config-map*)
 
