@@ -25,6 +25,7 @@
     gparted
     ideogram
     imv
+    keepassxc
     koreader
     libreoffice
     mpv
