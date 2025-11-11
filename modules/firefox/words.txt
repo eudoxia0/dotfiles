@@ -10,6 +10,7 @@ Waterhouse
 cloze
 combinatorial
 declaratively
+equational
 frontmatter
 hashcards
 ligand
