@@ -9,6 +9,7 @@
   home-manager.users.eudoxia.home.packages = with pkgs; [
     btop
     clang
+    claude-code
     curl
     fd
     gnumake
