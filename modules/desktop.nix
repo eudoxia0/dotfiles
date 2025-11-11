@@ -40,6 +40,7 @@
     thunderbird
     viewnior
     wdisplays
+    webcamoid
     zathura
   ];
 }
