@@ -55,6 +55,7 @@
         ./modules/syncthing.nix
         ./modules/thunar
         ./modules/todoist.nix
+        ./modules/tools
         ./modules/typst.nix
         ./modules/wallpaper
         ./modules/x11
