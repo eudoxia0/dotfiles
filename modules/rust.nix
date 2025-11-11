@@ -8,6 +8,5 @@
 {
   home-manager.users.eudoxia.home.packages = with pkgs; [
     rustup
-    rust-analyzer
   ];
 }
