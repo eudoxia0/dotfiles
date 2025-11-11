@@ -16,6 +16,8 @@
           agda2-mode
           i3wm-config-mode
           kaolin-themes
+          lsp-mode
+          lsp-ui
           magit
           markdown-mode
           moe-theme
