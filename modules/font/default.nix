@@ -47,4 +47,12 @@
     font-manager
     gnome-font-viewer
   ];
+
+  # script to reload the font cache
+  home-manager.users.eudoxia.home.file = {
+    ".eudoxia.d/bin/font-cache-update" = {
+      source = ./font-cache-update.sh;
+      executable = true;
+    };
+  };
 }

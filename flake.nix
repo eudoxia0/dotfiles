@@ -33,7 +33,7 @@
         ./modules/eudoxia.nix
         ./modules/fastfetch
         ./modules/firefox
-        ./modules/font.nix
+        ./modules/font
         ./modules/gh.nix
         ./modules/git.nix
         ./modules/gtk.nix
