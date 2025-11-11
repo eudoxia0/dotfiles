@@ -221,8 +221,6 @@
 ;;; Mode: Projectile
 ;;;
 
-(use-package ag)
-
 (use-package projectile
   :init
   (projectile-mode +1)
