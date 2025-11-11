@@ -217,7 +217,6 @@
   :init
   (vertico-mode))
 
-
 ;;;
 ;;; Mode: Inform7
 ;;;
