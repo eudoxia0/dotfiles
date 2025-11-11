@@ -226,6 +226,11 @@
 (use-package projectile
   :init
   (projectile-mode +1)
+  :config
+  ;; Use ag (The Silver Searcher) for finding files and grepping
+  (setq projectile-indexing-method 'alien)
+  (setq projectile-generic-command "ag -0 -l --nocolor --hidden --ignore .git")
+  (setq projectile-grep-command "ag --nocolor --nogroup")
   :bind (:map projectile-mode-map
               ("C-c p" . projectile-command-map)))
 
