@@ -56,6 +56,7 @@ in
   environment.systemPackages = with pkgs; [
     brightnessctl
     acpi
+    bluetui
   ];
 
   services.thermald.enable = true;
