@@ -27,6 +27,7 @@
           sublime-themes
           treemacs
           unfill
+          vertico
         ];
     };
 

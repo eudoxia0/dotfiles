@@ -210,12 +210,13 @@
 (setq markdown-mouse-follow-link nil)
 
 ;;;
-;;; Mode: ido
+;;; Vertico
 ;;;
 
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
-(ido-mode 1)
+(use-package vertico
+  :init
+  (vertico-mode))
+
 
 ;;;
 ;;; Mode: Inform7
