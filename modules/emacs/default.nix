@@ -22,6 +22,7 @@
           nix-mode
           nushell-mode
           olivetti
+          projectile
           rust-mode
           sly
           sublime-themes
