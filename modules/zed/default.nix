@@ -22,20 +22,19 @@ in
       zed-editor
     ];
 
-    home-manager.users.eudoxia.home.file.".config/zed/settings.json".text =
-      builtins.toJSON {
-        ui_font_size = cfg.fontSize;
-        buffer_font_size = cfg.fontSize;
-        theme = {
-          mode = "system";
-          light = "macOS Classic Light";
-          dark = "macOS Classic Light";
-        };
-        project_panel = {
-          auto_fold_dirs = false;
-        };
-        buffer_font_family = ".ZedMono";
-        ui_font_family = ".ZedMono";
+    home-manager.users.eudoxia.home.file.".config/zed/settings.json".text = builtins.toJSON {
+      ui_font_size = cfg.fontSize;
+      buffer_font_size = cfg.fontSize;
+      theme = {
+        mode = "system";
+        light = "macOS Classic Light";
+        dark = "macOS Classic Light";
       };
+      project_panel = {
+        auto_fold_dirs = false;
+      };
+      buffer_font_family = ".ZedMono";
+      ui_font_family = ".ZedMono";
+    };
   };
 }
