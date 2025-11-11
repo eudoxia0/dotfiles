@@ -11,11 +11,11 @@ in
 
   boot.initrd.luks.devices."luks-${deviceUuid}".device = "/dev/disk/by-uuid/${deviceUuid}";
 
-  fonts.fontconfig.defaultFonts.emoji = [ "Apple Color Emoji" ];
+  # fonts.fontconfig.defaultFonts.emoji = [ "Apple Color Emoji" ];
 
-  home-manager.users.eudoxia.programs.git.settings.user = {
-    signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIELrqPWqe1qDaTvYXyM3fw0+ToGRN6R+1qqt3QN5vWCR fernando@borretti.me";
-  };
+  # home-manager.users.eudoxia.programs.git.settings.user = {
+  #   signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIELrqPWqe1qDaTvYXyM3fw0+ToGRN6R+1qqt3QN5vWCR fernando@borretti.me";
+  # };
 
   # Tell the CPU governor to keep the CPU at the highest frequency.
   powerManagement.cpuFreqGovernor = "performance";
@@ -24,26 +24,26 @@ in
   hardware.cpu.amd.updateMicrocode = true;
 
   # Syncthing config.
-  home-manager.users.eudoxia.services.syncthing = {
-    settings.devices = {
-      ismene = {
-        name = "ismene";
-        id = "5H3EV2X-SOOZJKN-RHNNJUQ-I6HGKQS-WBT5EE2-N5O7L6O-PGEVWLF-WZB3CQO";
-      };
-    };
-    settings.folders = {
-      "root" = {
-        id = "root";
-        label = "Root";
-        path = "/home/eudoxia/Root";
-        devices = [ "ismene" ];
-      };
-    };
-  };
+  # home-manager.users.eudoxia.services.syncthing = {
+  #   settings.devices = {
+  #     ismene = {
+  #       name = "ismene";
+  #       id = "5H3EV2X-SOOZJKN-RHNNJUQ-I6HGKQS-WBT5EE2-N5O7L6O-PGEVWLF-WZB3CQO";
+  #     };
+  #   };
+  #   settings.folders = {
+  #     "root" = {
+  #       id = "root";
+  #       label = "Root";
+  #       path = "/home/eudoxia/Root";
+  #       devices = [ "ismene" ];
+  #     };
+  #   };
+  # };
 
-  environment.variables = {
-    GDK_DPI_SCALE = "1.5";
-  };
+  # environment.variables = {
+  #   GDK_DPI_SCALE = "1.5";
+  # };
 
   # Radeon inspector.
   home-manager.users.eudoxia.home.packages = with pkgs; [

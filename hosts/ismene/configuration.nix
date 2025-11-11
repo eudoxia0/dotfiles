@@ -39,22 +39,22 @@ in
   ];
 
   # Syncthing config.
-  home-manager.users.eudoxia.services.syncthing = {
-    settings.devices = {
-      rostam = {
-        name = "rostam";
-        id = "H6XRBBB-7WXJPGN-GVMFX3T-BANURMZ-B5CYCIZ-ZMVNFEB-HQWGIXE-3AZ5EQ4";
-      };
-    };
-    settings.folders = {
-      "root" = {
-        id = "root";
-        label = "Root";
-        path = "/home/eudoxia/Root";
-        devices = [ "rostam" ];
-      };
-    };
-  };
+  # home-manager.users.eudoxia.services.syncthing = {
+  #   settings.devices = {
+  #     rostam = {
+  #       name = "rostam";
+  #       id = "H6XRBBB-7WXJPGN-GVMFX3T-BANURMZ-B5CYCIZ-ZMVNFEB-HQWGIXE-3AZ5EQ4";
+  #     };
+  #   };
+  #   settings.folders = {
+  #     "root" = {
+  #       id = "root";
+  #       label = "Root";
+  #       path = "/home/eudoxia/Root";
+  #       devices = [ "rostam" ];
+  #     };
+  #   };
+  # };
 
   environment.systemPackages = with pkgs; [
     brightnessctl
