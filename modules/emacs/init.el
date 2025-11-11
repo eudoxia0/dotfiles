@@ -225,7 +225,7 @@
   :init
   (projectile-mode +1)
   :config
-  ;; Use ag (The Silver Searcher) for finding files and grepping
+  ;; use ag for grep
   (setq projectile-indexing-method 'alien)
   (setq projectile-generic-command "ag -0 -l --nocolor --hidden --ignore .git")
   (setq projectile-grep-command "ag --nocolor --nogroup")
