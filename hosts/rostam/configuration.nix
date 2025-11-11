@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 let
-  deviceUuid = "5e2a0183-ed29-499d-8741-ea27e08caf28";
+  deviceUuid = "74e2a22c-c0d3-4bfd-ac1f-3cb889b6e1ff";
 in
 {
   networking.hostName = "rostam";
