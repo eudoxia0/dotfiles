@@ -7,7 +7,6 @@
 
 {
   home-manager.users.eudoxia.home.packages = with pkgs; [
-    ag
     age
     djvu2pdf
     file
@@ -15,6 +14,7 @@
     monolith
     pciutils # lspci
     restic
+    silver-searcher
     taskwarrior-tui
     taskwarrior3
     termdown
