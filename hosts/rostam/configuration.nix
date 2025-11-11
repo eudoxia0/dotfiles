@@ -6,6 +6,9 @@ in
 {
   networking.hostName = "rostam";
 
+  # Zed editor configuration.
+  custom.zed.fontSize = 16;
+
   boot.initrd.luks.devices."luks-${deviceUuid}".device = "/dev/disk/by-uuid/${deviceUuid}";
 
   fonts.fontconfig.defaultFonts.emoji = [ "Apple Color Emoji" ];
