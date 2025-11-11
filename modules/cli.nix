@@ -7,6 +7,7 @@
 
 {
   home-manager.users.eudoxia.home.packages = with pkgs; [
+    ag
     age
     djvu2pdf
     file
