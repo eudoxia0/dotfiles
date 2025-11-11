@@ -12,6 +12,7 @@
       package = pkgs.emacs-gtk;
       extraPackages =
         epkgs: with epkgs; [
+          ag
           agda2-mode
           i3wm-config-mode
           kaolin-themes
