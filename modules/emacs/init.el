@@ -215,7 +215,11 @@
 
 (use-package vertico
   :init
-  (vertico-mode))
+  (vertico-mode)
+  :config
+  (require 'vertico-directory)
+  :bind (:map vertico-map
+              ("DEL" . vertico-directory-delete-char)))
 
 ;;;
 ;;; Mode: Projectile
