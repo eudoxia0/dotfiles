@@ -46,14 +46,14 @@ in
         id = "C7BIL55-GT5ILGN-7IOEBXJ-S3GURF2-V6JASA3-XBY3VKH-LK7GCIR-TJZ5GAH";
       };
     };
-    # settings.folders = {
-    #   "root" = {
-    #     id = "root";
-    #     label = "Root";
-    #     path = "/home/eudoxia/Root";
-    #     devices = [ "rostam" ];
-    #   };
-    # };
+    settings.folders = {
+      "root" = {
+        id = "root";
+        label = "Root";
+        path = "/home/eudoxia/Root";
+        devices = [ "rostam" ];
+      };
+    };
   };
 
   environment.systemPackages = with pkgs; [
