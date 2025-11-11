@@ -52,7 +52,7 @@
         ./modules/shell.nix
         ./modules/ssh.nix
         ./modules/stumpwm
-        ./modules/syncthing.nix
+        # ./modules/syncthing.nix
         ./modules/thunar
         ./modules/todoist.nix
         ./modules/typst.nix
