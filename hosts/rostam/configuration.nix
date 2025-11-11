@@ -31,14 +31,14 @@ in
         id = "5H3EV2X-SOOZJKN-RHNNJUQ-I6HGKQS-WBT5EE2-N5O7L6O-PGEVWLF-WZB3CQO";
       };
     };
-    # settings.folders = {
-    #   "root" = {
-    #     id = "root";
-    #     label = "Root";
-    #     path = "/home/eudoxia/Root";
-    #     devices = [ "ismene" ];
-    #   };
-    # };
+    settings.folders = {
+      "root" = {
+        id = "root";
+        label = "Root";
+        path = "/home/eudoxia/Root";
+        devices = [ "ismene" ];
+      };
+    };
   };
 
   environment.variables = {
