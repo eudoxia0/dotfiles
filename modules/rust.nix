@@ -7,6 +7,7 @@
 
 {
   home-manager.users.eudoxia.home.packages = with pkgs; [
+    cargo-deny
     cargo-machete
     rustup
   ];
