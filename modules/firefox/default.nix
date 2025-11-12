@@ -85,6 +85,24 @@
             "https://github.com/eudoxia0/double-click-image-downloader/releases/download/v1.0/double-click-image-downloader.xpi";
         };
       };
+
+      # Disable user messaging.
+      UserMessaging = {
+        # Don't recommend extensions.
+        ExtensionRecommendations = false;
+        # Don't recommend browser features.
+        FeatureRecommendations = false;
+        # Don't show "Firefox Labs" section in preferences.
+        FirefoxLabs = false;
+        # Allow me to change these preferences.
+        Locked = false;
+        # Don't show the “More from Mozilla” section in preferences
+        MoreFromMozilla = false;
+        # Skip new tab page onboarding.
+        SkipOnboarding = true;
+        # Don't offer Firefox-specific suggestions in the address bar.
+        UrlbarInterventions = false;
+      };
     };
 
     profiles.default = {
