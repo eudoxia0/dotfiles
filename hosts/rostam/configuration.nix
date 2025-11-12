@@ -62,4 +62,6 @@ in
     rocmPackages.rocminfo
     rocmPackages.clr.icd
   ];
+
+  services.displayManager.ly.settings.box_title = "rostam";
 }
