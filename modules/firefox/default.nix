@@ -52,6 +52,9 @@
       # Do not offer to save logins.
       OfferToSaveLogins = false;
 
+      # Disable the Firefox password manager.
+      PasswordManagerEnabled = false;
+
       # Do not prompt for a download location.
       PromptForDownloadLocation = false;
 
