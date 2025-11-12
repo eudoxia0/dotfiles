@@ -103,3 +103,6 @@ matches:
   - { trigger: ":write", replace: "✍️" }
   - { trigger: ":zap", replace: "⚡" }
   - { trigger: ":zzz", replace: "💤" }
+
+  # Kaomoji
+  - { trigger: ":ganbatte", replace: "٩( 'ω' )و" }
