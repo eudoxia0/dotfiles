@@ -27,4 +27,7 @@
     dates = "daily";
     options = "--delete-older-than 7f";
   };
+
+  # Stop warning about dirty trees.
+  nix.settings.warn-dirty = false;
 }
