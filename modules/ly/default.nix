@@ -18,6 +18,6 @@
     hide_version_string = true;
   };
   home-manager.users.eudoxia.home.file = {
-    ".eudoxia.d/bin/restart-ly".source = ./restart-ly.sh;
+    ".eudoxia.d/bin/e-restart-ly".source = ./restart-ly.sh;
   };
 }
