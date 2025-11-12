@@ -4,6 +4,16 @@
 ;;;;
 (in-package :stumpwm)
 
+;; Prefix key: logo+w.
+(set-prefix-key (kbd "s-w"))
+
+;; Utilities.
+(defmacro defkey (k c)
+  `(define-key *top-map* (kbd ,k) ,c))
+
+(defmacro defprefixkey (k c)
+  `(define-key *root-map* (kbd ,k) ,c))
+
 ;;;
 ;;; Modules
 ;;;
@@ -33,16 +43,6 @@
 ;;;
 ;;; Keybindings
 ;;;
-
-;; Prefix key: logo+w.
-(set-prefix-key (kbd "s-w"))
-
-;; Utilities.
-(defmacro defkey (k c)
-  `(define-key *top-map* (kbd ,k) ,c))
-
-(defmacro defprefixkey (k c)
-  `(define-key *root-map* (kbd ,k) ,c))
 
 ;; Quit.
 (defkey "s-Q" "quit")
