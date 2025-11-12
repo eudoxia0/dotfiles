@@ -13,7 +13,6 @@
     inxi
     monolith
     pciutils # lspci
-    restic
     silver-searcher
     taskwarrior-tui
     taskwarrior3
