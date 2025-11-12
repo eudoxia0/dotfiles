@@ -1,4 +1,3 @@
-;;;; -*- mode: Lisp -*-
 ;;;;
 ;;;; stumpwm is cool as hell and if you disagree get the fuck out of
 ;;;; here
