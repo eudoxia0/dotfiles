@@ -9,7 +9,7 @@
 ;;; Modules
 ;;;
 
-;(load "~/.stumpwm.d/gaps.lisp")
+(load "~/.stumpwm.d/gaps.lisp")
 
 ;;;
 ;;; General Configuration
