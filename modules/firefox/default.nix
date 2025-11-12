@@ -15,6 +15,8 @@
       # Disable Firefox Sync.
       DisableFirefoxAccounts = true;
 
+      DisableFirefoxStudies = true;
+
       # Disable the option to "Set as Desktop Background" when right-clicking
       # on an image.
       DisableSetDesktopBackground = true;
