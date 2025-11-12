@@ -32,6 +32,7 @@
           treemacs
           unfill
           vertico
+          yaml-mode
         ];
     };
 
