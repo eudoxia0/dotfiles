@@ -9,7 +9,7 @@
   services.displayManager.ly.enable = true;
   services.displayManager.ly.settings = {
     animation = "matrix";
-    bigclock = "en";
+    bigclock = "none";
     brightness_down_key = "null";
     brightness_up_key = "null";
     clear_password = true;
