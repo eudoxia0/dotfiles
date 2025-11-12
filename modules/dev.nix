@@ -18,6 +18,7 @@
     jekyll
     just
     lean4
+    libxml2 # xmllint
     nixfmt-tree
     sqlite
     tokei
