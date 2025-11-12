@@ -20,4 +20,11 @@
 
   # Use hard links for identical paths.
   nix.settings.auto-optimise-store = true;
+
+  # Automatic GC.
+  nix.gc = {
+    automatic = true;
+    dates = "daily";
+    options = "--delete-older-than 7f";
+  };
 }
