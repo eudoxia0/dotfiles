@@ -23,21 +23,6 @@ in
   # Keep Intel microcode up to date.
   hardware.cpu.intel.updateMicrocode = true;
 
-  # Todoist overlay.
-  nixpkgs.overlays = [
-    (self: super: {
-      todoist-electron = super.symlinkJoin {
-        name = "todoist-electron";
-        paths = [ super.todoist-electron ];
-        buildInputs = [ super.makeWrapper ];
-        postBuild = ''
-          wrapProgram $out/bin/todoist-electron \
-            --set TZ "Australia/Sydney"
-        '';
-      };
-    })
-  ];
-
   # Syncthing config.
   home-manager.users.eudoxia.services.syncthing = {
     settings.devices = {
