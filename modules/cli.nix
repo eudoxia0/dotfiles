@@ -17,6 +17,7 @@
     taskwarrior-tui
     taskwarrior3
     termdown
+    tt
     usbutils # lsusb
   ];
 }
