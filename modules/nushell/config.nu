@@ -16,3 +16,4 @@ alias cl = cargo clippy --all-targets -- -D warnings
 
 # Other aliases.
 alias cdt = cd ~/dotfiles
+alias cdf = cd ~/Root/1-Workspace/flashcards
