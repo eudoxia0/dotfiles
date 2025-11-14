@@ -15,6 +15,7 @@
           ag
           agda2-mode
           i3wm-config-mode
+          just-mode
           kaolin-themes
           lsp-mode
           lsp-ui
