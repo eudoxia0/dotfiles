@@ -18,6 +18,7 @@ https://danluu.com/atom.xml
 https://diminishedcapacity.substack.com/feed
 https://dresdencodak.com/feed/
 https://dynomight.net/feed.xml
+https://dz4k.com/feed.xml
 https://eli.thegreenplace.net/feeds/all.atom.xml
 https://entropicthoughts.com/feed
 https://fabiensanglard.net/rss.xml
