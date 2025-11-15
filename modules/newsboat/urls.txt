@@ -48,6 +48,7 @@ https://osmarks.net/rss.xml
 https://ponnekanti.net/rss.xml
 https://qntm.org/rss.php
 https://raw.githubusercontent.com/asnewman/asnewman.github.io/main/rss.xml
+https://rkirov.github.io/index.xml
 https://ryjo.codes/feed.rss
 https://sdomi.pl/weblog/atom/
 https://sifter.org/~simon/journal/rss.xml
