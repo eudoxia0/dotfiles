@@ -31,6 +31,7 @@ https://somas.is/notes/index.xml
 https://t6e.dev/feed/
 https://thorstenball.com/atom.xml
 https://toughsf.blogspot.com/feeds/posts/default?alt=rss
+https://tymoon.eu/api/reader/rss
 https://utcc.utoronto.ca/~cks/space/blog/?atom
 https://vgel.me/feed.xml
 https://www.agwa.name/blog/feed
