@@ -4,6 +4,7 @@ https://alarmingdevelopment.org/?feed=rss2
 https://aleph.se/andart2/feed
 https://alicemaz.substack.com/feed
 https://alistapart.com/main/feed/
+https://apenwarr.ca/log/rss.php
 https://azdavis.net/posts/feed.xml
 https://blog.adamchalmers.com/atom.xml
 https://borretti.me/feed.xml
