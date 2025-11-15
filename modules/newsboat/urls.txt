@@ -65,6 +65,7 @@ https://thephd.dev/feed.xml
 https://thesephist.com/index.xml
 https://thorstenball.com/atom.xml
 https://throneofsalt.blogspot.com/feeds/posts/default
+https://tinkerings.org/feed/
 https://tomasp.net/rss.xml
 https://tomcritchlow.com/feed
 https://tomorrowfoundry.substack.com/feed
