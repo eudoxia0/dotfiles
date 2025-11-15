@@ -56,5 +56,6 @@ https://www.ethansmith2000.com/blog-feed.xml
 https://www.filfre.net/feed/
 https://www.gleech.org/feed.xml
 https://www.julian.ac/feeds/all.atom.xml
+https://www.marginalia.nu/log/index.xml
 https://www.redblobgames.com/blog/posts.xml
 https://www.scottsmitelli.com/articles/index.xml
