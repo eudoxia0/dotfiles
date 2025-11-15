@@ -73,6 +73,7 @@ https://tymoon.eu/api/reader/rss
 https://utcc.utoronto.ca/~cks/space/blog/?atom
 https://v5.chriskrycho.com/feed.xml
 https://vgel.me/feed.xml
+https://vincent.bernat.ch/en/blog/atom.xml
 https://world-playground-deceit.net/global.xml
 https://www.agwa.name/blog/feed
 https://www.benkuhn.net/index.xml
