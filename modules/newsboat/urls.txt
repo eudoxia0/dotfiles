@@ -52,6 +52,7 @@ https://www.benkuhn.net/index.xml
 https://www.benlandautaylor.com/feed
 https://www.bitsaboutmoney.com/archive/rss/
 https://www.ethansmith2000.com/blog-feed.xml
+https://www.filfre.net/feed/
 https://www.gleech.org/feed.xml
 https://www.julian.ac/feeds/all.atom.xml
 https://www.redblobgames.com/blog/posts.xml
