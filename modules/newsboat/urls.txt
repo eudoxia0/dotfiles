@@ -39,5 +39,6 @@ https://vgel.me/feed.xml
 https://www.agwa.name/blog/feed
 https://www.benkuhn.net/index.xml
 https://www.benlandautaylor.com/feed
+https://www.gleech.org/feed.xml
 https://www.redblobgames.com/blog/posts.xml
 https://www.scottsmitelli.com/articles/index.xml
