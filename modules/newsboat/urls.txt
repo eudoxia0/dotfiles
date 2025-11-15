@@ -36,6 +36,7 @@ https://kokoscript.com/rss.xml
 https://malloc.dog/rss.xml
 https://matklad.github.io/feed.xml
 https://newyork.substack.com/feed
+https://osmarks.net/rss.xml
 https://qntm.org/rss.php
 https://raw.githubusercontent.com/asnewman/asnewman.github.io/main/rss.xml
 https://ryjo.codes/feed.rss
