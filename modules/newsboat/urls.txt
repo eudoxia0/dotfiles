@@ -7,3 +7,4 @@ https://somas.is/notes/index.xml
 https://www.agwa.name/blog/feed
 https://commoncog.com/rss/
 https://dynomight.net/feed.xml
+https://fabiensanglard.net/rss.xml
