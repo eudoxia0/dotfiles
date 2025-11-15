@@ -34,3 +34,4 @@ https://www.benkuhn.net/index.xml
 https://www.benlandautaylor.com/feed
 https://www.redblobgames.com/blog/posts.xml
 https://www.scottsmitelli.com/articles/index.xml
+https://jyn.dev/atom.xml
