@@ -13,6 +13,7 @@ https://caseyhandmer.wordpress.com/feed/
 https://chreke.com/feed.rss
 https://commoncog.com/rss/
 https://cybermonk.substack.com/feed
+https://danluu.com/atom.xml
 https://dynomight.net/feed.xml
 https://fabiensanglard.net/rss.xml
 https://fantasticanachronism.com/atom.xml
