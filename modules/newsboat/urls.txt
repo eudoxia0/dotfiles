@@ -37,6 +37,7 @@ https://jordankaye.dev/index.xml
 https://jyn.dev/atom.xml
 https://kevinlynagh.com/feed.xml
 https://kokoscript.com/rss.xml
+https://lukasschwab.me/blog/feed.xml
 https://malloc.dog/rss.xml
 https://matklad.github.io/feed.xml
 https://newyork.substack.com/feed
