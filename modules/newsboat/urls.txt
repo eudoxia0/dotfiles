@@ -37,3 +37,4 @@ https://www.scottsmitelli.com/articles/index.xml
 https://jyn.dev/atom.xml
 https://t6e.dev/feed/
 https://vgel.me/feed.xml
+https://thorstenball.com/atom.xml
