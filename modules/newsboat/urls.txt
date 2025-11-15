@@ -5,3 +5,4 @@ https://hakibenita.com/feeds/all.atom.xml
 https://sdomi.pl/weblog/atom/
 https://somas.is/notes/index.xml
 https://www.agwa.name/blog/feed
+https://commoncog.com/rss/
