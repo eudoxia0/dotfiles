@@ -58,6 +58,7 @@ https://sdomi.pl/weblog/atom/
 https://sifter.org/~simon/journal/rss.xml
 https://slightknack.dev/atom.xml
 https://somas.is/notes/index.xml
+https://subpixel.space/feed.xml
 https://t6e.dev/feed/
 https://thephd.dev/feed.xml
 https://thesephist.com/index.xml
