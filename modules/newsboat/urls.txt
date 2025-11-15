@@ -1,6 +1,7 @@
 https://alistapart.com/main/feed/
 https://borretti.me/feed.xml
 https://commoncog.com/rss/
+https://cybermonk.substack.com/feed
 https://dynomight.net/feed.xml
 https://fabiensanglard.net/rss.xml
 https://fi-le.net/feed.xml
