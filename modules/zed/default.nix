@@ -30,6 +30,11 @@ in
         light = "macOS Classic Light";
         dark = "Gruvbox Dark Hard";
       };
+      terminal = {
+        shell = {
+          program = "nu";
+        };
+      };
       project_panel = {
         auto_fold_dirs = false;
       };
