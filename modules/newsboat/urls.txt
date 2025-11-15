@@ -22,5 +22,7 @@ https://ryjo.codes/feed.rss
 https://sdomi.pl/weblog/atom/
 https://somas.is/notes/index.xml
 https://toughsf.blogspot.com/feeds/posts/default?alt=rss
+https://utcc.utoronto.ca/~cks/space/blog/?atom
 https://www.agwa.name/blog/feed
 https://www.redblobgames.com/blog/posts.xml
+https://www.scottsmitelli.com/articles/index.xml
