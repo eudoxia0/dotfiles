@@ -7,6 +7,7 @@ https://alistapart.com/main/feed/
 https://apenwarr.ca/log/rss.php
 https://azdavis.net/posts/feed.xml
 https://blog.adamchalmers.com/atom.xml
+https://blog.benjojo.co.uk/rss.xml
 https://borretti.me/feed.xml
 https://commoncog.com/rss/
 https://cybermonk.substack.com/feed
