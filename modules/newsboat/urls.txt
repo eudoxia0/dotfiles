@@ -1,1 +1,5 @@
+https://alistapart.com/main/feed/
 https://borretti.me/feed.xml
+https://hakibenita.com/feeds/all.atom.xml
+https://somas.is/notes/index.xml
+https://www.agwa.name/blog/feed
