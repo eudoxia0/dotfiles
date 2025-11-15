@@ -6,6 +6,11 @@ https://dynomight.net/feed.xml
 https://fabiensanglard.net/rss.xml
 https://fi-le.net/feed.xml
 https://hakibenita.com/feeds/all.atom.xml
+https://kevinlynagh.com/feed.xml
+https://newyork.substack.com/feed
+https://ryjo.codes/feed.rss
 https://sdomi.pl/weblog/atom/
 https://somas.is/notes/index.xml
+https://toughsf.blogspot.com/feeds/posts/default?alt=rss
 https://www.agwa.name/blog/feed
+https://www.redblobgames.com/blog/posts.xml
