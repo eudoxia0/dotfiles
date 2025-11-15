@@ -51,6 +51,7 @@ https://raw.githubusercontent.com/asnewman/asnewman.github.io/main/rss.xml
 https://richiejp.com/atom.xml
 https://rkirov.github.io/index.xml
 https://ryjo.codes/feed.rss
+https://scholars-stage.org/feed/
 https://schpet.com/feed.xml
 https://sdomi.pl/weblog/atom/
 https://sifter.org/~simon/journal/rss.xml
