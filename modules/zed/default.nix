@@ -26,9 +26,9 @@ in
       ui_font_size = cfg.fontSize;
       buffer_font_size = cfg.fontSize;
       theme = {
-        mode = "system";
+        mode = "dark";
         light = "macOS Classic Light";
-        dark = "macOS Classic Light";
+        dark = "Gruvbox Dark Hard";
       };
       project_panel = {
         auto_fold_dirs = false;
