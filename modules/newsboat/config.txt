@@ -1,0 +1,2 @@
+# Reload all feeds on startup.
+auto-reload yes
