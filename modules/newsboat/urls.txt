@@ -42,6 +42,7 @@ https://qntm.org/rss.php
 https://raw.githubusercontent.com/asnewman/asnewman.github.io/main/rss.xml
 https://ryjo.codes/feed.rss
 https://sdomi.pl/weblog/atom/
+https://sifter.org/~simon/journal/rss.xml
 https://slightknack.dev/atom.xml
 https://somas.is/notes/index.xml
 https://t6e.dev/feed/
