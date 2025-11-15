@@ -16,6 +16,7 @@ https://cybermonk.substack.com/feed
 https://danluu.com/atom.xml
 https://dresdencodak.com/feed/
 https://dynomight.net/feed.xml
+https://eli.thegreenplace.net/feeds/all.atom.xml
 https://fabiensanglard.net/rss.xml
 https://fantasticanachronism.com/atom.xml
 https://faultlore.com/blah/rss.xml
