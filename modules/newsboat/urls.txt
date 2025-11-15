@@ -9,6 +9,7 @@ https://azdavis.net/posts/feed.xml
 https://blog.adamchalmers.com/atom.xml
 https://blog.benjojo.co.uk/rss.xml
 https://borretti.me/feed.xml
+https://caseyhandmer.wordpress.com/feed/
 https://commoncog.com/rss/
 https://cybermonk.substack.com/feed
 https://dynomight.net/feed.xml
