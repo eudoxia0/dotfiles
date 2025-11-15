@@ -22,6 +22,7 @@ https://faultlore.com/blah/rss.xml
 https://fi-le.net/feed.xml
 https://fredkozlowski.com/feed/
 https://hakibenita.com/feeds/all.atom.xml
+https://hirrolot.github.io/rss.xml
 https://jyn.dev/atom.xml
 https://kevinlynagh.com/feed.xml
 https://newyork.substack.com/feed
