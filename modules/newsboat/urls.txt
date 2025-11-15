@@ -65,6 +65,7 @@ https://thesephist.com/index.xml
 https://thorstenball.com/atom.xml
 https://throneofsalt.blogspot.com/feeds/posts/default
 https://tomorrowfoundry.substack.com/feed
+https://totalhealthoptimization.com/feed/
 https://toughsf.blogspot.com/feeds/posts/default?alt=rss
 https://tymoon.eu/api/reader/rss
 https://utcc.utoronto.ca/~cks/space/blog/?atom
