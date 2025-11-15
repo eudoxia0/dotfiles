@@ -32,6 +32,7 @@ https://hirrolot.github.io/rss.xml
 https://hypercritical.co/feeds/main
 https://jyn.dev/atom.xml
 https://kevinlynagh.com/feed.xml
+https://kokoscript.com/rss.xml
 https://malloc.dog/rss.xml
 https://newyork.substack.com/feed
 https://qntm.org/rss.php
