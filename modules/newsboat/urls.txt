@@ -41,6 +41,7 @@ https://kokoscript.com/rss.xml
 https://lukasschwab.me/blog/feed.xml
 https://malloc.dog/rss.xml
 https://matklad.github.io/feed.xml
+https://mihaiolteanu.me/rss.xml
 https://newyork.substack.com/feed
 https://osmarks.net/rss.xml
 https://ponnekanti.net/rss.xml
