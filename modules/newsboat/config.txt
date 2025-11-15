@@ -1,4 +1,2 @@
-# Reload all feeds on startup.
-auto-reload yes
 # Open articles in Firefox.
 browser "firefox %u"
