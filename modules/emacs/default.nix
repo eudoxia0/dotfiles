@@ -41,7 +41,11 @@ let
         rev = "1388f9d1429e38a39ab913c6daae55f6ce799479";
         sha256 = "sha256-6XFcyqSTx1CwNWqQvIc25cuQMwh3YXnbgr5cDiOCxBk=";
       };
-      packageRequires = with pkgs.emacsPackages; [ dash lsp-mode magit-section ];
+      packageRequires = with pkgs.emacsPackages; [
+        dash
+        lsp-mode
+        magit-section
+      ];
     };
   };
 in
