@@ -204,10 +204,21 @@
   (load-theme my-current-theme t)
   (message "Theme: %s" my-current-theme))
 
+(defun sort-buffer-lines ()
+  "Sort all lines in the current buffer."
+  (interactive)
+  (save-excursion
+    (save-restriction
+      (widen)
+      (goto-char (point-min))
+      (sort-lines nil (point-min) (point-max))))
+  (message "Buffer lines sorted"))
+
 (keymap-global-set "<f9>"    'theme-prev)
 (keymap-global-set "<f10>"   'theme-next)
 (keymap-global-set "C-<f10>" 'theme-reset)
 (keymap-global-set "C-c s"   'sort-lines)
+(keymap-global-set "C-c S"   'sort-buffer-lines)
 
 ;;;
 ;;; Mode: Markdown

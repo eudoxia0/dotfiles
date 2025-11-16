@@ -14,6 +14,7 @@
     monolith
     pciutils # lspci
     silver-searcher
+    smartmontools
     taskwarrior-tui
     taskwarrior3
     termdown
