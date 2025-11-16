@@ -254,6 +254,14 @@
               ("C-c p" . projectile-command-map)))
 
 ;;;
+;;; Mode: Treemacs
+;;;
+
+;; When you switch to a buffer, Treemacs displays only the directory for that
+;; buffer's Projectile project.
+(setq treemacs-project-follow-mode t)
+
+;;;
 ;;; Mode: LSP
 ;;;
 
