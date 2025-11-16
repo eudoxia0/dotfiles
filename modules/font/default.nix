@@ -50,7 +50,7 @@
 
   # script to reload the font cache
   home-manager.users.eudoxia.home.file = {
-    ".eudoxia.d/bin/e-font-cache-update" = {
+    ".eudoxia.d/bin/font-cache-update" = {
       source = ./font-cache-update.sh;
       executable = true;
     };

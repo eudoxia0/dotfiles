@@ -12,6 +12,6 @@
   ];
 
   home-manager.users.eudoxia.home.file = {
-    ".eudoxia.d/bin/e-backup".source = ./backup.sh;
+    ".eudoxia.d/bin/backup".source = ./backup.sh;
   };
 }
