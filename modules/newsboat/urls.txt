@@ -41,6 +41,7 @@ https://jyn.dev/atom.xml
 https://kevinlynagh.com/feed.xml
 https://kokoscript.com/rss.xml
 https://lukasschwab.me/blog/feed.xml
+https://magnus.therning.org/feed.xml
 https://malloc.dog/rss.xml
 https://matklad.github.io/feed.xml
 https://mihaiolteanu.me/rss.xml
