@@ -29,6 +29,7 @@ Screenshots and information about the various hosts.
 - **Password Manager:** [1Password](https://1password.com/)
 - **Dotfiles management:** [home-manager](https://github.com/nix-community/home-manager)
 - **Editor:** [GNU Emacs](https://www.gnu.org/software/emacs/)
+- **Shell:** [nushell](https://www.nushell.sh/)
 
 ## License
 
