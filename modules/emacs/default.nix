@@ -31,6 +31,18 @@ let
       };
       packageRequires = [];
     };
+
+    lean4-mode = pkgs.emacsPackages.trivialBuild {
+      pname = "lean4-mode";
+      version = "unstable";
+      src = pkgs.fetchFromGitHub {
+        owner = "leanprover-community";
+        repo = "lean4-mode";
+        rev = "1388f9d1429e38a39ab913c6daae55f6ce799479";
+        sha256 = "sha256-6XFcyqSTx1CwNWqQvIc25cuQMwh3YXnbgr5cDiOCxBk=";
+      };
+      packageRequires = with pkgs.emacsPackages; [ dash lsp-mode magit-section ];
+    };
   };
 in
 {
@@ -43,6 +55,7 @@ in
           ag
           agda2-mode
           customPackages.inform7-mode
+          customPackages.lean4-mode
           customPackages.xcompose-mode
           i3wm-config-mode
           just-mode
