@@ -34,17 +34,6 @@ let
       ];
     };
 
-    xcompose-mode = pkgs.emacsPackages.trivialBuild {
-      pname = "xcompose-mode";
-      version = "unstable";
-      src = pkgs.fetchgit {
-        url = "git://git.thomasvoss.com/xcompose-mode.git";
-        rev = "aeb03f9144e39c882ca6c5c61b9ed1300a2a12ee";
-        sha256 = "sha256-lPapwSJKG+noINmT1G5jNyUZs5VykMOSKJIbQxBWLEA=";
-      };
-      packageRequires = [ ];
-    };
-
     lean4-mode = pkgs.emacsPackages.melpaBuild {
       pname = "lean4-mode";
       version = "1.1.2";
@@ -60,6 +49,17 @@ let
         magit-section
       ];
       files = ''("*.el" "data")'';
+    };
+
+    xcompose-mode = pkgs.emacsPackages.trivialBuild {
+      pname = "xcompose-mode";
+      version = "unstable";
+      src = pkgs.fetchgit {
+        url = "git://git.thomasvoss.com/xcompose-mode.git";
+        rev = "aeb03f9144e39c882ca6c5c61b9ed1300a2a12ee";
+        sha256 = "sha256-lPapwSJKG+noINmT1G5jNyUZs5VykMOSKJIbQxBWLEA=";
+      };
+      packageRequires = [ ];
     };
   };
 in
