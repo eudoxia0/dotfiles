@@ -304,6 +304,12 @@
 (add-to-list 'auto-mode-alist '("\\.xcm\\'" . xcompose-mode))
 
 ;;;
+;;; Mode: Lean4
+;;;
+
+(require 'lean4-mode)
+
+;;;
 ;;; Mode: nXML
 ;;;
 
