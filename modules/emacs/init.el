@@ -217,7 +217,8 @@
 (keymap-global-set "<f9>"    'theme-prev)
 (keymap-global-set "<f10>"   'theme-next)
 (keymap-global-set "C-<f10>" 'theme-reset)
-(keymap-global-set "C-c s"   'sort-buffer-lines)
+(keymap-global-set "C-c s"   'sort-lines)
+(keymap-global-set "C-c S"   'sort-buffer-lines)
 
 ;;;
 ;;; Mode: Markdown
