@@ -38,6 +38,7 @@
         ./modules/git.nix
         ./modules/gtk.nix
         ./modules/guile
+        ./modules/haskell.nix
         ./modules/heic
         ./modules/locale.nix
         ./modules/mime.nix
