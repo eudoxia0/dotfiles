@@ -34,6 +34,7 @@ https://hakibenita.com/feeds/all.atom.xml
 https://hallofdreams.org/feed.xml
 https://hirrolot.github.io/rss.xml
 https://hypercritical.co/feeds/main
+https://irreal.org/blog/?feed=rss2
 https://jasonbrownlee.me/blog/index.xml(
 https://jazzatlas.com/index.xml
 https://jordankaye.dev/index.xml
