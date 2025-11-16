@@ -38,6 +38,7 @@
         ./modules/git.nix
         ./modules/gtk.nix
         ./modules/guile
+        ./modules/haskell.nix
         ./modules/heic
         ./modules/locale.nix
         ./modules/mime.nix
@@ -63,7 +64,7 @@
         ./modules/x11
         ./modules/xcape.nix
         ./modules/xscreensaver
-        ./modules/zed
+        ./modules/zed.nix
 
         # Make home-manager use system pkgs
         home-manager.nixosModules.home-manager
