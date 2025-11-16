@@ -32,9 +32,9 @@ let
       packageRequires = [ ];
     };
 
-    lean4-mode = pkgs.emacsPackages.trivialBuild {
+    lean4-mode = pkgs.emacsPackages.melpaBuild {
       pname = "lean4-mode";
-      version = "unstable";
+      version = "1.1.2";
       src = pkgs.fetchFromGitHub {
         owner = "leanprover-community";
         repo = "lean4-mode";
@@ -46,10 +46,7 @@ let
         lsp-mode
         magit-section
       ];
-      postInstall = ''
-        install -d $out/share/emacs/site-lisp/elpa
-        cp -r data $out/share/emacs/site-lisp/elpa/
-      '';
+      files = ''("*.el" "data")'';
     };
   };
 in
