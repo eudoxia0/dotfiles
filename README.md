@@ -23,6 +23,7 @@ Screenshots and information about the various hosts.
 ## Stack
 
 - **Configuration Management:** [home-manager](https://github.com/nix-community/home-manager)
+- **Distro:** [NixOS](https://en.wikipedia.org/wiki/NixOS)
 - **Editor:** [GNU Emacs](https://www.gnu.org/software/emacs/)
 - **File Manager:** [Thunar](https://en.wikipedia.org/wiki/Thunar)
 - **Package Manager:** [Nix](https://nixos.org/)
