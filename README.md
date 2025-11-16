@@ -31,6 +31,7 @@ Screenshots and information about the various hosts.
 - **Editor:** [GNU Emacs](https://www.gnu.org/software/emacs/)
 - **Shell:** [nushell](https://www.nushell.sh/)
 - **Web Browser:** [Firefox](https://www.firefox.com/en-US/)
+- **File Manager:** [Thunar](https://en.wikipedia.org/wiki/Thunar)
 
 ## License
 
