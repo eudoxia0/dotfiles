@@ -361,6 +361,21 @@
 (setq nxml-child-indent 4 nxml-attribute-indent 4)
 
 ;;;
+;;; Mode: eat
+;;;
+
+(use-package eat
+  :ensure t
+  :config
+  ;; Set nu as the default shell.
+  (setq eat-shell "/usr/bin/env nu")
+
+  ;; Disable trailing whitespace highlighting in eat.
+  (add-hook 'eat-mode-hook
+            (lambda ()
+              (setq show-trailing-whitespace nil))))
+
+;;;
 ;;; Quick Commit
 ;;;
 
