@@ -28,6 +28,7 @@ Screenshots and information about the various hosts.
 - **Terminal:** [alacritty](https://github.com/alacritty/alacritty)
 - **Password Manager:** [1Password](https://1password.com/)
 - **Dotfiles management:** [home-manager](https://github.com/nix-community/home-manager)
+- **Editor:** [GNU Emacs](https://www.gnu.org/software/emacs/)
 
 ## License
 
