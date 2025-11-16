@@ -62,6 +62,7 @@ in
           customPackages.inform7-mode
           customPackages.lean4-mode
           customPackages.xcompose-mode
+          eat
           i3wm-config-mode
           just-mode
           kaolin-themes
