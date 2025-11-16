@@ -63,7 +63,7 @@
         ./modules/x11
         ./modules/xcape.nix
         ./modules/xscreensaver
-        ./modules/zed
+        ./modules/zed.nix
 
         # Make home-manager use system pkgs
         home-manager.nixosModules.home-manager
