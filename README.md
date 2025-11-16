@@ -29,6 +29,7 @@ Screenshots and information about the various hosts.
 - **Package Manager:** [Nix](https://nixos.org/)
 - **Password Manager:** [1Password](https://1password.com/)
 - **Shell:** [nushell](https://www.nushell.sh/)
+- **Status Bar:** [polybar](https://github.com/polybar/polybar)
 - **Terminal:** [alacritty](https://github.com/alacritty/alacritty)
 - **Text Shortcuts:** [Espanso](https://espanso.org/)
 - **Web Browser:** [Firefox](https://www.firefox.com/en-US/)
