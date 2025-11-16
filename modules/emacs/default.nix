@@ -20,6 +20,17 @@ let
         s
       ];
     };
+
+    xcompose-mode = pkgs.emacsPackages.trivialBuild {
+      pname = "xcompose-mode";
+      version = "unstable";
+      src = pkgs.fetchgit {
+        url = "git://git.thomasvoss.com/xcompose-mode.git";
+        rev = "aeb03f9144e39c882ca6c5c61b9ed1300a2a12ee";
+        sha256 = "sha256-lPapwSJKG+noINmT1G5jNyUZs5VykMOSKJIbQxBWLEA=";
+      };
+      packageRequires = [];
+    };
   };
 in
 {
@@ -31,6 +42,8 @@ in
         epkgs: with epkgs; [
           ag
           agda2-mode
+          customPackages.inform7-mode
+          customPackages.xcompose-mode
           i3wm-config-mode
           just-mode
           kaolin-themes
@@ -51,15 +64,10 @@ in
           unfill
           vertico
           yaml-mode
-          customPackages.inform7-mode
         ];
     };
 
-    # Copy Emacs Lisp files.
+    # Copy init.el.
     home.file.".emacs.d/init.el".source = ./init.el;
-    home.file.".emacs.d/eudoxia" = {
-      source = ./eudoxia;
-      recursive = true;
-    };
   };
 }

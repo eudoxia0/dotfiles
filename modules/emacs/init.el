@@ -21,9 +21,6 @@
 (global-unset-key (kbd "M-v"))
 (global-unset-key (kbd "C-l"))
 
-;; Directory for custom modules.
-(add-to-list 'load-path "~/.emacs.d/eudoxia/")
-
 ;; Use spaces instead of tabs.
 (setq-default indent-tabs-mode nil)
 
