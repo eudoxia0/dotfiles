@@ -375,6 +375,12 @@
               (setq show-trailing-whitespace nil))))
 
 ;;;
+;;; Mode: cabal
+;;;
+
+(require 'cabal-mode)
+
+;;;
 ;;; Quick Commit
 ;;;
 
