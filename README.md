@@ -23,7 +23,7 @@ Screenshots and information about the various hosts.
 ## Stack
 
 - **Package Manager:** [Nix](https://nixos.org/)
-- **Window Manager:** [stumpwm](https://stumpwm.github.io/), [Sway](https://swaywm.org/)
+- **Window Manager:** [stumpwm](https://stumpwm.github.io/)
 - **Text Shortcuts:** [Espanso](https://espanso.org/)
 - **Terminal:** [alacritty](https://github.com/alacritty/alacritty)
 - **Password Manager:** [1Password](https://1password.com/)
