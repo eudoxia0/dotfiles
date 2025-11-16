@@ -46,6 +46,10 @@ let
         lsp-mode
         magit-section
       ];
+      postInstall = ''
+        install -d $out/share/emacs/site-lisp/elpa
+        cp -r data $out/share/emacs/site-lisp/elpa/
+      '';
     };
   };
 in
