@@ -16,7 +16,7 @@ let
         rev = "083a777e09bdb5a8d8d69862d44f13078664091f";
         sha256 = "sha256-c5dUsnEx+0uXFzxQLMnhiP8Gvwedzvq0F0BA+beBkmI=";
       };
-      packageRequires = [];
+      packageRequires = [ ];
     };
 
     eat = pkgs.emacsPackages.trivialBuild {
@@ -71,7 +71,7 @@ let
         rev = "aeb03f9144e39c882ca6c5c61b9ed1300a2a12ee";
         sha256 = "sha256-lPapwSJKG+noINmT1G5jNyUZs5VykMOSKJIbQxBWLEA=";
       };
-      packageRequires = [];
+      packageRequires = [ ];
     };
   };
 in
