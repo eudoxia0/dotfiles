@@ -30,6 +30,7 @@ Screenshots and information about the various hosts.
 - **Dotfiles management:** [home-manager](https://github.com/nix-community/home-manager)
 - **Editor:** [GNU Emacs](https://www.gnu.org/software/emacs/)
 - **Shell:** [nushell](https://www.nushell.sh/)
+- **Web Browser:** [Firefox](https://www.firefox.com/en-US/)
 
 ## License
 
