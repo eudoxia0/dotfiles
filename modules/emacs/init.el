@@ -365,7 +365,6 @@
 ;;;
 
 (use-package eat
-  :ensure t
   :config
   ;; Set nu as the default shell.
   (setq eat-shell "/usr/bin/env nu")
