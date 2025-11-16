@@ -21,9 +21,6 @@
 (global-unset-key (kbd "M-v"))
 (global-unset-key (kbd "C-l"))
 
-;; Directory for custom modules.
-(add-to-list 'load-path "~/.emacs.d/eudoxia/")
-
 ;; Use spaces instead of tabs.
 (setq-default indent-tabs-mode nil)
 
@@ -294,6 +291,12 @@
 
 (add-to-list 'auto-mode-alist '("\\.XCompose\\'" . xcompose-mode))
 (add-to-list 'auto-mode-alist '("\\.xcm\\'" . xcompose-mode))
+
+;;;
+;;; Mode: Lean4
+;;;
+
+(require 'lean4-mode)
 
 ;;;
 ;;; Quick Commit
