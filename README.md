@@ -8,13 +8,13 @@ My dotfiles repository.
 
 Screenshots and information about the various hosts.
 
-### [Rostam](https://github.com/eudoxia0/dotfiles/tree/master/nixos/hosts/rostam)
+### [Rostam](https://github.com/eudoxia0/dotfiles/tree/master/hosts/rostam)
 
 ![Screenshot of the Rostam host.](.github/screenshots/rostam.png)
 
 - **Hardware:** misc.
 
-### [Ismene](https://github.com/eudoxia0/dotfiles/tree/master/nixos/hosts/ismene)
+### [Ismene](https://github.com/eudoxia0/dotfiles/tree/master/hosts/ismene)
 
 ![Screenshot of the Ismene host, the window manager is StumpWM. Two windows are visible: an alacritty terminal showing fastfetch output, and an Emacs instance on the terminal showing Lisp code.](.github/screenshots/ismene.png)
 
