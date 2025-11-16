@@ -29,7 +29,7 @@ let
         rev = "aeb03f9144e39c882ca6c5c61b9ed1300a2a12ee";
         sha256 = "sha256-lPapwSJKG+noINmT1G5jNyUZs5VykMOSKJIbQxBWLEA=";
       };
-      packageRequires = [];
+      packageRequires = [ ];
     };
 
     lean4-mode = pkgs.emacsPackages.trivialBuild {
