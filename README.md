@@ -27,7 +27,7 @@ Screenshots and information about the various hosts.
 - **Text Shortcuts:** [Espanso](https://espanso.org/)
 - **Terminal:** [alacritty](https://github.com/alacritty/alacritty)
 - **Password Manager:** [1Password](https://1password.com/)
-- **Dotfiles management:** [home-manager](https://github.com/nix-community/home-manager)
+- **Dotfiles Management:** [home-manager](https://github.com/nix-community/home-manager)
 - **Editor:** [GNU Emacs](https://www.gnu.org/software/emacs/)
 - **Shell:** [nushell](https://www.nushell.sh/)
 - **Web Browser:** [Firefox](https://www.firefox.com/en-US/)
