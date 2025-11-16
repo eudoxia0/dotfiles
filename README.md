@@ -22,16 +22,16 @@ Screenshots and information about the various hosts.
 
 ## Stack
 
-- **Package Manager:** [Nix](https://nixos.org/)
-- **Window Manager:** [stumpwm](https://stumpwm.github.io/)
-- **Text Shortcuts:** [Espanso](https://espanso.org/)
-- **Terminal:** [alacritty](https://github.com/alacritty/alacritty)
-- **Password Manager:** [1Password](https://1password.com/)
-- **Dotfiles Management:** [home-manager](https://github.com/nix-community/home-manager)
+- **Configuration Management:** [home-manager](https://github.com/nix-community/home-manager)
 - **Editor:** [GNU Emacs](https://www.gnu.org/software/emacs/)
-- **Shell:** [nushell](https://www.nushell.sh/)
-- **Web Browser:** [Firefox](https://www.firefox.com/en-US/)
 - **File Manager:** [Thunar](https://en.wikipedia.org/wiki/Thunar)
+- **Package Manager:** [Nix](https://nixos.org/)
+- **Password Manager:** [1Password](https://1password.com/)
+- **Shell:** [nushell](https://www.nushell.sh/)
+- **Terminal:** [alacritty](https://github.com/alacritty/alacritty)
+- **Text Shortcuts:** [Espanso](https://espanso.org/)
+- **Web Browser:** [Firefox](https://www.firefox.com/en-US/)
+- **Window Manager:** [stumpwm](https://stumpwm.github.io/)
 
 ## License
 
