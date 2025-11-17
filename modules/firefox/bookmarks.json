@@ -108,6 +108,11 @@
   },
   "separator",
   {
+    "name": "zetanom",
+    "url": "http://localhost:12001/"
+  },
+  "separator",
+  {
     "name": "GitHub",
     "bookmarks": [
       {
