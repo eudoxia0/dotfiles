@@ -108,11 +108,6 @@
   },
   "separator",
   {
-    "name": "zetanom",
-    "url": "http://localhost:12001/"
-  },
-  "separator",
-  {
     "name": "GitHub",
     "bookmarks": [
       {
@@ -136,5 +131,14 @@
         "url": "https://github.com/eudoxia0/flashcards"
       }
     ]
+  },
+  {
+    "name": "Local",
+    "bookmarks": [
+      {
+        "name": "zetanom",
+        "url": "http://localhost:12001/"
+        },
+    ]
   }
-]
+}
