@@ -25,6 +25,9 @@ in
     home-manager.users.eudoxia.home.file.".config/zed/settings.json".text = builtins.toJSON {
       ui_font_size = cfg.fontSize;
       buffer_font_size = cfg.fontSize;
+      features = {
+        edit_prediction_provider = "copilot";
+      };
       theme = {
         mode = "dark";
         light = "macOS Classic Light";
