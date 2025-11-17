@@ -1,144 +1,144 @@
 [
-  {
-    "name": "",
-    "url": "https://linear.app/"
-  },
-  {
-    "name": "",
-    "url": "https://mail.google.com/"
-  },
-  {
-    "name": "",
-    "url": "https://mail.proton.me/"
-  },
-  {
-    "name": "",
-    "url": "https://calendar.notion.so/"
-  },
-  {
-    "name": "",
-    "url": "https://translate.google.com/"
-  },
-  {
-    "name": "",
-    "url": "https://discord.com/channels/@me"
-  },
-  {
-    "name": "",
-    "url": "https://x.com/home"
-  },
-  {
-    "name": "",
-    "url": "https://bsky.app/"
-  },
-  {
-    "name": "",
-    "url": "https://en.wiktionary.org/wiki/Wiktionary:Main_Page"
-  },
-  {
-    "name": "",
-    "url": "https://en.wikipedia.org/wiki/Main_Page"
-  },
-  {
-    "name": "",
-    "url": "https://github.com/"
-  },
-  {
-    "name": "",
-    "url": "https://claude.ai/chats"
-  },
-  {
-    "name": "",
-    "url": "https://claude.ai/code"
-  },
-  {
-    "name": "",
-    "url": "https://partiful.com/events"
-  },
-  {
-    "name": "",
-    "url": "https://www.wolframalpha.com/"
-  },
-  {
-    "name": "",
-    "url": "https://www.google.com/maps"
-  },
-  {
-    "name": "",
-    "url": "https://www.goodreads.com/"
-  },
-  {
-    "name": "",
-    "url": "https://plausible.io"
-  },
-  {
-    "name": "",
-    "url": "https://www.patreon.com/home"
-  },
-  {
-    "name": "",
-    "url": "https://www.linkedin.com/"
-  },
-  "separator",
-  {
-    "name": "",
-    "url": "https://news.ycombinator.com/"
-  },
-  {
-    "name": "",
-    "url": "https://lobste.rs/"
-  },
-  "separator",
-  {
-    "name": "",
-    "url": "http://127.0.0.1:8384/"
-  },
-  "separator",
-  {
-    "name": "nixpkg",
-    "url": "https://search.nixos.org/packages"
-  },
-  {
-    "name": "nixopt",
-    "url": "https://search.nixos.org/options"
-  },
-  {
-    "name": "hm",
-    "url": "https://home-manager-options.extranix.com/"
-  },
-  "separator",
-  {
-    "name": "GitHub",
-    "bookmarks": [
-      {
-        "name": "eudoxia0",
-        "url": "https://github.com/eudoxia0"
-      },
-      {
-        "name": "dotfiles",
-        "url": "https://github.com/eudoxia0/dotfiles"
-      },
-      {
-        "name": "eudoxia0.github.io",
-        "url": "https://github.com/eudoxia0/eudoxia0.github.io"
-      },
-      {
-        "name": "hashcards",
-        "url": "https://github.com/eudoxia0/hashcards"
-      },
-      {
-        "name": "flashcards",
-        "url": "https://github.com/eudoxia0/flashcards"
-      }
-    ]
-  },
-  {
-    "name": "Local",
-    "bookmarks": [
-      {
-        "name": "zetanom",
-        "url": "http://localhost:12001/"
-        },
-    ]
-  }
+    {
+        "name": "",
+        "url": "https://linear.app/"
+    },
+    {
+        "name": "",
+        "url": "https://mail.google.com/"
+    },
+    {
+        "name": "",
+        "url": "https://mail.proton.me/"
+    },
+    {
+        "name": "",
+        "url": "https://calendar.notion.so/"
+    },
+    {
+        "name": "",
+        "url": "https://translate.google.com/"
+    },
+    {
+        "name": "",
+        "url": "https://discord.com/channels/@me"
+    },
+    {
+        "name": "",
+        "url": "https://x.com/home"
+    },
+    {
+        "name": "",
+        "url": "https://bsky.app/"
+    },
+    {
+        "name": "",
+        "url": "https://en.wiktionary.org/wiki/Wiktionary:Main_Page"
+    },
+    {
+        "name": "",
+        "url": "https://en.wikipedia.org/wiki/Main_Page"
+    },
+    {
+        "name": "",
+        "url": "https://github.com/"
+    },
+    {
+        "name": "",
+        "url": "https://claude.ai/chats"
+    },
+    {
+        "name": "",
+        "url": "https://claude.ai/code"
+    },
+    {
+        "name": "",
+        "url": "https://partiful.com/events"
+    },
+    {
+        "name": "",
+        "url": "https://www.wolframalpha.com/"
+    },
+    {
+        "name": "",
+        "url": "https://www.google.com/maps"
+    },
+    {
+        "name": "",
+        "url": "https://www.goodreads.com/"
+    },
+    {
+        "name": "",
+        "url": "https://plausible.io"
+    },
+    {
+        "name": "",
+        "url": "https://www.patreon.com/home"
+    },
+    {
+        "name": "",
+        "url": "https://www.linkedin.com/"
+    },
+    "separator",
+    {
+        "name": "",
+        "url": "https://news.ycombinator.com/"
+    },
+    {
+        "name": "",
+        "url": "https://lobste.rs/"
+    },
+    "separator",
+    {
+        "name": "",
+        "url": "http://127.0.0.1:8384/"
+    },
+    "separator",
+    {
+        "name": "nixpkg",
+        "url": "https://search.nixos.org/packages"
+    },
+    {
+        "name": "nixopt",
+        "url": "https://search.nixos.org/options"
+    },
+    {
+        "name": "hm",
+        "url": "https://home-manager-options.extranix.com/"
+    },
+    "separator",
+    {
+        "name": "GitHub",
+        "bookmarks": [
+            {
+                "name": "eudoxia0",
+                "url": "https://github.com/eudoxia0"
+            },
+            {
+                "name": "dotfiles",
+                "url": "https://github.com/eudoxia0/dotfiles"
+            },
+            {
+                "name": "eudoxia0.github.io",
+                "url": "https://github.com/eudoxia0/eudoxia0.github.io"
+            },
+            {
+                "name": "hashcards",
+                "url": "https://github.com/eudoxia0/hashcards"
+            },
+            {
+                "name": "flashcards",
+                "url": "https://github.com/eudoxia0/flashcards"
+            }
+        ]
+    },
+    {
+        "name": "Local",
+        "bookmarks": [
+            {
+                "name": "zetanom",
+                "url": "http://localhost:12001/"
+            },
+        ]
+    }
 }
