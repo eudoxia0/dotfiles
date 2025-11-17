@@ -51,7 +51,7 @@
         ./modules/python.nix
         ./modules/redshift.nix
         ./modules/rust.nix
-        ./modules/selfhosted.nix
+        ./modules/selfhosted
         ./modules/shared.nix
         ./modules/shell.nix
         ./modules/ssh.nix
