@@ -20,6 +20,7 @@
 (global-unset-key (kbd "C-v"))
 (global-unset-key (kbd "M-v"))
 (global-unset-key (kbd "C-l"))
+(global-unset-key (kbd "C-t"))
 
 ;; Use spaces instead of tabs.
 (setq-default indent-tabs-mode nil)
