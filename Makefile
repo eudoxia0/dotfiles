@@ -1,9 +1,6 @@
 recrank:
 	nh os switch .
 
-home:
-	nh home switch
-
 upgrade:
 	nix flake update
 
