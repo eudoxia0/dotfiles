@@ -42,8 +42,13 @@ let
       '';
 
       nativeBuildInputs = [
+        pkgs.pkg-config
         pkgs.gnutar
         pkgs.gzip
+      ];
+
+      buildInputs = [
+        pkgs.openssl
       ];
     };
   };
