@@ -108,6 +108,7 @@ in
           treemacs
           unfill
           vertico
+          web-mode
           yaml-mode
         ];
     };
