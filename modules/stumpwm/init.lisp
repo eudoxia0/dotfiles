@@ -108,7 +108,7 @@
 (defparameter *config-map*
   (let ((m (make-sparse-keymap)))
     ;; Open Emacs to the stumpwmrc configuration.
-    (define-key m (kbd "s") "exec emacs ~/dotfiles/modules/stumpwm/stumpwm.lisp")
+    (define-key m (kbd "s") "exec emacs ~/dotfiles/modules/stumpwm/init.lisp")
     ;; Open Emacs to the dotfiles flake.
     (define-key m (kbd "n") "exec emacs ~/dotfiles/flake.nix")
     ;; Open Emacs to the Emacs init.el.
@@ -166,7 +166,7 @@
   (string= (uiop:hostname) "rostam"))
 
 (defun ismenep ()
-  (string= (uiop:hostname) "rostam"))
+  (string= (uiop:hostname) "ismene"))
 
 ;;;
 ;;; Startup
