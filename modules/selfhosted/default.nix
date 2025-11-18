@@ -41,7 +41,10 @@ let
           --replace 'fonts/' '/katex/fonts/'
       '';
 
-      nativeBuildInputs = [ pkgs.gnutar pkgs.gzip ];
+      nativeBuildInputs = [
+        pkgs.gnutar
+        pkgs.gzip
+      ];
     };
   };
 in
