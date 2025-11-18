@@ -262,6 +262,8 @@
 ;; buffer's Projectile project.
 (treemacs-project-follow-mode t)
 
+(setq treemacs-collapse-dirs 0)
+
 ;;;
 ;;; Mode: LSP
 ;;;
