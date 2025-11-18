@@ -1,7 +1,7 @@
 HOSTNAME := $(shell hostname)
 
 recrank:
-	nh os switch
+	nh os switch .#$(HOSTNAME)
 
 home:
 	nh home switch
