@@ -1,10 +1,13 @@
 HOSTNAME := $(shell hostname)
 
 recrank:
-	sudo nixos-rebuild switch --flake .#$(HOSTNAME)
+	nh os switch
+
+home:
+	nh home switch
 
 upgrade:
 	nix flake update
 
 clean:
-	sudo nix-collect-garbage --delete-older-than 7d
+	nh clean all --keep 5
