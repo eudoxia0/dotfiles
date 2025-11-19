@@ -1,5 +1,5 @@
 recrank:
-	sudo nixos-rebuild switch --flake .#$(HOSTNAME)
+	sudo nixos-rebuild switch --flake .#$(shell hostname)
 
 upgrade:
 	nix flake update
