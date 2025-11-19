@@ -13,7 +13,7 @@
     inxi
     monolith
     pciutils # lspci
-    silver-searcher
+    ripgrep
     smartmontools
     taskwarrior-tui
     taskwarrior3

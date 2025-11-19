@@ -82,7 +82,6 @@ in
       package = pkgs.emacs-gtk;
       extraPackages =
         epkgs: with epkgs; [
-          ag
           agda2-mode
           customPackages.cabal-mode
           customPackages.eat
@@ -102,6 +101,7 @@ in
           nushell-mode
           olivetti
           projectile
+          ripgrep
           rust-mode
           sly
           sublime-themes
