@@ -259,6 +259,8 @@
 
 (setq treemacs-collapse-dirs 0)
 
+(keymap-global-set "C-c t" 'treemacs)
+
 ;;;
 ;;; Mode: LSP
 ;;;
