@@ -205,6 +205,14 @@
   (load-theme my-current-theme t)
   (message "Theme: %s" my-current-theme))
 
+(keymap-global-set "<f9>"    'theme-prev)
+(keymap-global-set "<f10>"   'theme-next)
+(keymap-global-set "C-<f10>" 'theme-reset)
+
+;;;
+;;; Sorting
+;;;
+
 (defun sort-buffer-lines ()
   "Sort all lines in the current buffer."
   (interactive)
@@ -215,9 +223,6 @@
       (sort-lines nil (point-min) (point-max))))
   (message "Buffer lines sorted"))
 
-(keymap-global-set "<f9>"    'theme-prev)
-(keymap-global-set "<f10>"   'theme-next)
-(keymap-global-set "C-<f10>" 'theme-reset)
 (keymap-global-set "C-c s"   'sort-lines)
 (keymap-global-set "C-c S"   'sort-buffer-lines)
 
