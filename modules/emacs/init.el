@@ -270,28 +270,28 @@
 ;;; Mode: LSP
 ;;;
 
-(use-package lsp-mode
-  :commands lsp
-  :config
-  ;; Performance tuning
-  (setq lsp-idle-delay 0.500)
-  (setq lsp-log-io nil)
-  ;; Enable which-key integration
-  (setq lsp-keymap-prefix "C-c l")
-  ;; Disable intrusive UI elements
-  (setq lsp-headerline-breadcrumb-enable nil)
-  (setq lsp-lens-enable nil)
-  :hook ((rust-mode . lsp)
-         (lsp-mode . lsp-enable-which-key-integration)))
+;; (use-package lsp-mode
+;;   :commands lsp
+;;   :config
+;;   ;; Performance tuning
+;;   (setq lsp-idle-delay 0.500)
+;;   (setq lsp-log-io nil)
+;;   ;; Enable which-key integration
+;;   (setq lsp-keymap-prefix "C-c l")
+;;   ;; Disable intrusive UI elements
+;;   (setq lsp-headerline-breadcrumb-enable nil)
+;;   (setq lsp-lens-enable nil)
+;;   :hook ((rust-mode . lsp)
+;;          (lsp-mode . lsp-enable-which-key-integration)))
 
-(use-package lsp-ui
-  :commands lsp-ui-mode
-  :config
-  ;; Configure UI elements
-  (setq lsp-ui-sideline-enable t)
-  (setq lsp-ui-sideline-show-hover nil)
-  (setq lsp-ui-doc-enable t)
-  (setq lsp-ui-doc-position 'at-point))
+;; (use-package lsp-ui
+;;   :commands lsp-ui-mode
+;;   :config
+;;   ;; Configure UI elements
+;;   (setq lsp-ui-sideline-enable t)
+;;   (setq lsp-ui-sideline-show-hover nil)
+;;   (setq lsp-ui-doc-enable t)
+;;   (setq lsp-ui-doc-position 'at-point))
 
 ;;;
 ;;; Mode: Inform7
