@@ -1,8 +1,8 @@
 recrank:
-	nh os switch .
+	sudo nixos-rebuild switch --flake .#$(HOSTNAME)
 
 upgrade:
 	nix flake update
 
 clean:
-	nh clean all --keep 5
+	sudo nix-collect-garbage --delete-older-than 7d
