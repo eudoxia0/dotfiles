@@ -28,10 +28,10 @@ let
       version = "unstable";
       src = pkgs.fetchgit {
         url = "https://github.com/eudoxia0/hashcards.git";
-        rev = "HEAD";
-        sha256 = "sha256-uxGUMWSRAMaLow6X0MvHIEd1dz8+gw6D5lV5WnDkOs0=";
+        rev = "843fd70d6386dc154612524023e7026f449ab52f";
+        sha256 = "sha256-GuhQ57D7cZvNojEYuDwxVS0kwvrZCTKpqoMLEv6d5iQ=";
       };
-      cargoHash = "sha256-1HBTL/MLhH9fL/G7tDgAO+nTY5IBsFhZylK51sxuvjI=";
+      cargoHash = "sha256-4I6XL/YPz3pneM1diy9cVzwjxQaOShRiFLzaJAM0M00=";
 
       preBuild = ''
         mkdir -p vendor
@@ -61,7 +61,7 @@ in
 
     home.packages = [
       customPackages.koboexport
-      # customPackages.hashcards
+      customPackages.hashcards
     ];
 
     systemd.user.services.zetanom = {
