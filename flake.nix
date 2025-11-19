@@ -44,7 +44,6 @@
         ./modules/mime.nix
         ./modules/network.nix
         ./modules/newsboat
-        ./modules/nh.nix
         ./modules/nixconf.nix
         ./modules/nushell
         ./modules/perf.nix
