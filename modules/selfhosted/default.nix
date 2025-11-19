@@ -25,7 +25,7 @@ let
 
     hashcards = pkgs.rustPlatform.buildRustPackage {
       pname = "hashcards";
-      version = "unstable";
+      version = "0.2.1";
       src = pkgs.fetchgit {
         url = "https://github.com/eudoxia0/hashcards.git";
         rev = "843fd70d6386dc154612524023e7026f449ab52f";
