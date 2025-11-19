@@ -31,7 +31,7 @@ let
         rev = "HEAD";
         sha256 = "sha256-uxGUMWSRAMaLow6X0MvHIEd1dz8+gw6D5lV5WnDkOs0=";
       };
-      cargoHash = "sha256-c2RWugFHzgiVmVuwGlgOILJo/Y1QysLs9jU4GCWgxjc=";
+      cargoHash = "sha256-1HBTL/MLhH9fL/G7tDgAO+nTY5IBsFhZylK51sxuvjI=";
 
       preBuild = ''
         mkdir -p vendor
