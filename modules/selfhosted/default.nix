@@ -61,7 +61,7 @@ in
 
     home.packages = [
       customPackages.koboexport
-      customPackages.hashcards
+      # customPackages.hashcards
     ];
 
     systemd.user.services.zetanom = {
