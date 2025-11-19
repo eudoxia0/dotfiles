@@ -60,7 +60,7 @@ in
     };
 
     home.packages = [
-      # customPackages.koboexport
+      customPackages.koboexport
       # customPackages.hashcards
     ];
 
