@@ -29,7 +29,7 @@ let
       src = pkgs.fetchgit {
         url = "https://github.com/eudoxia0/hashcards.git";
         rev = "HEAD";
-        sha256 = "sha256-WaduFfG05aZFjKogO8Q65Doj7RkPtILoYhJKBdNiLOM=";
+        sha256 = "sha256-uxGUMWSRAMaLow6X0MvHIEd1dz8+gw6D5lV5WnDkOs0=";
       };
       cargoHash = "sha256-c2RWugFHzgiVmVuwGlgOILJo/Y1QysLs9jU4GCWgxjc=";
 
