@@ -5,6 +5,7 @@ KaTeX
 LaTeX
 Makefile
 NixOS
+Postgres
 TOML
 Waterhouse
 cloze
