@@ -82,6 +82,7 @@ https://vgel.me/feed.xml
 https://vincent.bernat.ch/en/blog/atom.xml
 https://world-playground-deceit.net/global.xml
 https://www.agwa.name/blog/feed
+https://www.amoses.dev/rss.xml
 https://www.benkuhn.net/index.xml
 https://www.benlandautaylor.com/feed
 https://www.bitsaboutmoney.com/archive/rss/
