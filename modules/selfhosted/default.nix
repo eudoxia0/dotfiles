@@ -51,6 +51,30 @@ let
         pkgs.openssl
       ];
     };
+
+    xbrzscale = pkgs.stdenv.mkDerivation {
+      pname = "xbrzscale";
+      version = "unstable-2020-05-30";
+
+      src = pkgs.fetchFromGitHub {
+        owner = "atheros";
+        repo = "xbrzscale";
+        rev = "a2d8dce723e8fab548bf8460b46eeebfc64abca6";
+        sha256 = "sha256-DQbwU7ZnaWqqoeUrfuRCkej/gVAWbSlEI62CJReLK2A=";
+      };
+
+      buildInputs = with pkgs; [ SDL2 SDL2_image ];
+      nativeBuildInputs = with pkgs; [ pkg-config ];
+
+      buildPhase = ''
+        make
+      '';
+
+      installPhase = ''
+        mkdir -p $out/bin
+        cp xbrzscale $out/bin/
+      '';
+    };
   };
 in
 {
@@ -62,6 +86,7 @@ in
     home.packages = [
       customPackages.koboexport
       customPackages.hashcards
+      customPackages.xbrzscale
     ];
 
     systemd.user.services.zetanom = {
