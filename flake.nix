@@ -38,8 +38,10 @@
         ./modules/git.nix
         ./modules/gtk.nix
         ./modules/guile
+        ./modules/hashcards.nix
         ./modules/haskell.nix
         ./modules/heic
+        ./modules/koboexport.nix
         ./modules/locale.nix
         ./modules/mime.nix
         ./modules/network.nix
@@ -51,7 +53,6 @@
         ./modules/python.nix
         ./modules/redshift.nix
         ./modules/rust.nix
-        ./modules/selfhosted
         ./modules/shared.nix
         ./modules/shell.nix
         ./modules/ssh.nix
@@ -63,9 +64,11 @@
         ./modules/typst.nix
         ./modules/wallpaper
         ./modules/x11
+        ./modules/xbrzscale.nix
         ./modules/xcape.nix
         ./modules/xscreensaver
         ./modules/zed.nix
+        ./modules/zetanom
 
         # Make home-manager use system pkgs
         home-manager.nixosModules.home-manager
