@@ -103,9 +103,6 @@
 ;; Show trailing whitespace.
 (setq-default show-trailing-whitespace t)
 
-;; Highlight the current line.
-(global-hl-line-mode +1)
-
 ;;;
 ;;; Mode Line
 ;;;
