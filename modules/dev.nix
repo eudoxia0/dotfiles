@@ -14,7 +14,6 @@
     fd
     gnumake
     imagemagick
-    inform7
     jekyll
     just
     lean4
