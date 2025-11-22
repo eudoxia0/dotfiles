@@ -127,25 +127,6 @@
     granger
     hickey
     junio
-    leuven
-    leuven-dark
-    manoj-dark
-    mccarthy
-    misterioso
-    modus-operandi
-    modus-vivendi
-    nano
-    nano-dark
-    nano-light
-    odersky
-    ritchie
-    spolsky
-    tango
-    tango-dark
-    tsdh-dark
-    tsdh-light
-    whiteboard
-    wilson
     kaolin-aurora
     kaolin-blossom
     kaolin-breeze
@@ -161,6 +142,27 @@
     kaolin-temple
     kaolin-valley-dark
     kaolin-valley-light
+    leuven
+    leuven-dark
+    manoj-dark
+    mccarthy
+    misterioso
+    modus-operandi
+    modus-vivendi
+    moe-dark
+    moe-light
+    nano
+    nano-dark
+    nano-light
+    odersky
+    ritchie
+    spolsky
+    tango
+    tango-dark
+    tsdh-dark
+    tsdh-light
+    whiteboard
+    wilson
     wombat
     wheatgrass))
 
