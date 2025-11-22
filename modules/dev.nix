@@ -17,6 +17,7 @@
     jekyll
     just
     lean4
+    inform6
     libxml2 # xmllint
     nixfmt-tree
     sqlite
