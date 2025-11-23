@@ -15,9 +15,9 @@
     ];
   };
 
-  # Disable automatic creation of XDG user directories
+  # Disable automatic creation of XDG user directories.
   home-manager.users.eudoxia.xdg.userDirs = {
-    enable = false;
+    enable = true;
     createDirectories = false;
   };
 }
