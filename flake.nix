@@ -27,6 +27,7 @@
         ./modules/cli.nix
         ./modules/desktop.nix
         ./modules/dev.nix
+        ./modules/docker.nix
         ./modules/emacs
         ./modules/emote
         ./modules/espanso
