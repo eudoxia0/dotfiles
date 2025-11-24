@@ -30,7 +30,7 @@ in
       };
       theme = {
         mode = "system";
-        light = "macOS Classic Light";
+        light = "One Light";
         dark = "Gruvbox Dark Hard";
       };
       terminal = {
