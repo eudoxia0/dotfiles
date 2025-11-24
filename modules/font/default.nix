@@ -13,6 +13,7 @@
   # Custom fonts.
   fonts.packages = with pkgs; [
     dejavu_fonts
+    doulos-sil
     fira-code
     freefont_ttf
     gyre-fonts
