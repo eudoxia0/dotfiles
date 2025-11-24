@@ -29,7 +29,7 @@ in
         edit_prediction_provider = "copilot";
       };
       theme = {
-        mode = "dark";
+        mode = "system";
         light = "macOS Classic Light";
         dark = "Gruvbox Dark Hard";
       };
