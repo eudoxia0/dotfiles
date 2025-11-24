@@ -385,11 +385,10 @@
 (require 'cabal-mode)
 
 ;;;
-;;; Mode: web
+;;; Mode: web-mode
 ;;;
 
 (use-package web-mode
-  :ensure t
   :mode
   (("\\.jinja2\\'" . web-mode))
   :config
