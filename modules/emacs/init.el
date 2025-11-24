@@ -388,11 +388,12 @@
 ;;; Mode: web
 ;;;
 
-;; Open `.jinja2` files in web-mode.
-(add-to-list 'auto-mode-alist '("\\.jinja2\\'" . web-mode))
-
-;; Use the `django` template engine for Jinja2 files.
-(add-to-list 'web-mode-engines-alist '("django" . "\\.jinja2\\'"))
+(use-package web-mode
+  :init
+  ;; Open `.jinja2` files in web-mode.
+  (add-to-list 'auto-mode-alist '("\\.jinja2\\'" . web-mode))
+  ;; Use the `django` template engine for Jinja2 files.
+  (add-to-list 'web-mode-engines-alist '("django" . "\\.jinja2\\'")))
 
 ;;;
 ;;; Quick Commit
