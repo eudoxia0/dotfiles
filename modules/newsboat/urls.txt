@@ -97,3 +97,4 @@ https://www.raphkoster.com/feed/
 https://www.redblobgames.com/blog/posts.xml
 https://www.scottsmitelli.com/articles/index.xml
 https://xorshammer.com/feed/
+https://マリウス.com/index.xml
