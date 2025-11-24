@@ -393,7 +393,7 @@
   (("\\.jinja2\\'" . web-mode))
   :config
   (setq web-mode-engines-alist
-        '(("php"    . "\\.jinja2\\'"))))
+        '(("django" . "\\.jinja2\\'"))))
 
 ;;;
 ;;; Quick Commit
