@@ -87,7 +87,6 @@
             ./modules/bright.nix
             ./modules/cagebreak
             ./modules/ly
-            ./modules/sway
           ];
         };
 
