@@ -85,7 +85,6 @@
             ./hosts/rostam/configuration.nix
             ./hosts/rostam/hardware-configuration.nix
             ./modules/bright.nix
-            ./modules/cagebreak
             ./modules/ly
           ];
         };
