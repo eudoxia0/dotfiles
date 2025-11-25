@@ -42,7 +42,6 @@
         ./modules/guile
         ./modules/haskell.nix
         ./modules/heic
-        ./modules/koboexport.nix
         ./modules/locale.nix
         ./modules/mime.nix
         ./modules/network.nix
