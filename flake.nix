@@ -52,7 +52,6 @@
         ./modules/python.nix
         ./modules/redshift.nix
         ./modules/rust.nix
-        ./modules/shared.nix
         ./modules/shell.nix
         ./modules/ssh.nix
         ./modules/stumpwm
