@@ -16,7 +16,6 @@
     file-roller
     flowtime
     foot
-    gargoyle
     gimp3
     gnome-disk-utility
     gnome-feeds
