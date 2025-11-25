@@ -40,7 +40,6 @@
         ./modules/git.nix
         ./modules/gtk.nix
         ./modules/guile
-        ./modules/hashcards.nix
         ./modules/haskell.nix
         ./modules/heic
         ./modules/koboexport.nix
