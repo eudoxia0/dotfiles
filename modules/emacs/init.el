@@ -1,18 +1,6 @@
 ;;;; -*- lexical-binding: t -*-
 
 ;;;
-;;; Startup
-;;;
-
-;; Defer GC during startup.
-(setq gc-cons-threshold most-positive-fixnum)
-
-;; Reset after startup:
-(add-hook 'emacs-startup-hook
-          (lambda ()
-            (setq gc-cons-threshold (* 2 1000 1000))))
-
-;;;
 ;;; General
 ;;;
 
@@ -78,15 +66,6 @@
 
 ;; Line numbers everywhere.
 (global-display-line-numbers-mode 1)
-
-;; No tool bar.
-(tool-bar-mode -1)
-
-;; No menu bar.
-(menu-bar-mode -1)
-
-;; Do not discretize the window size. Permits smooth resizing.
-(setq frame-resize-pixelwise t)
 
 ;; Don't blink the cursor.
 (blink-cursor-mode 0)
