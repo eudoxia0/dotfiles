@@ -279,7 +279,7 @@
 ;;; Mode: Lean4
 ;;;
 
-(use-package lean4-mode)
+;; (use-package lean4-mode)
 
 ;;;
 ;;; Mode: nXML
@@ -337,15 +337,15 @@
 ;;; Mode: eat
 ;;;
 
-(use-package eat
-  :config
-  ;; Set nu as the default shell.
-  (setq eat-shell "/usr/bin/env nu")
+;; (use-package eat
+;;   :config
+;;   ;; Set nu as the default shell.
+;;   (setq eat-shell "/usr/bin/env nu")
 
-  ;; Disable trailing whitespace highlighting in eat.
-  (add-hook 'eat-mode-hook
-            (lambda ()
-              (setq show-trailing-whitespace nil))))
+;;   ;; Disable trailing whitespace highlighting in eat.
+;;   (add-hook 'eat-mode-hook
+;;             (lambda ()
+;;               (setq show-trailing-whitespace nil))))
 
 ;;;
 ;;; Mode: cabal
