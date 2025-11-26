@@ -1,5 +1,7 @@
 ;;;; -*- lexical-binding: t -*-
 
+(setq use-package-compute-statistics t)
+
 ;;;
 ;;; General
 ;;;
