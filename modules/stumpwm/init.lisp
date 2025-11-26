@@ -40,6 +40,13 @@
   (run-shell-command "polybar-msg cmd restart")
   (toggle-mode-line*))
 
+(defcommand add-firefox-word () ()
+  "Add a word to the Firefox dictionary."
+  (let ((word (read-one-line (current-screen) "Word: ")))
+    (when word
+      (run-shell-command (format nil "echo ~s >> ~~/dotfiles/modules/firefox/words.txt" word))
+      (message "Added '~a' to Firefox dictionary" word))))
+
 ;;;
 ;;; Keybindings
 ;;;
@@ -91,6 +98,9 @@
 
 ;; Launch the terminal.
 (defkey "C-s-c" "exec alacritty")
+
+;; Add a word to the Firefox dictionary.
+(defkey "s-d" "add-firefox-word")
 
 ;; Take a screenshot of the whole screen.
 (defkey "Print" "exec scrot-screenshot")
