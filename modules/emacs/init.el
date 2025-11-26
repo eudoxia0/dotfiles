@@ -220,7 +220,9 @@
 ;;; Mode: Markdown
 ;;;
 
-(setq markdown-mouse-follow-link nil)
+(use-package markdown-mode
+  :config
+  (setq markdown-mouse-follow-link nil))
 
 ;;;
 ;;; Mode: Vertico
@@ -248,85 +250,86 @@
 ;;; Mode: Treemacs
 ;;;
 
-;; When you switch to a buffer, Treemacs displays only the directory for that
-;; buffer's Projectile project.
-(treemacs-project-follow-mode t)
-
-(setq treemacs-collapse-dirs 0)
-
-(keymap-global-set "C-c t" 'treemacs)
+(use-package treemacs
+  :config
+  ;; When you switch to a buffer, Treemacs displays only the directory for that
+  ;; buffer's Projectile project.
+  (treemacs-project-follow-mode t)
+  (setq treemacs-collapse-dirs 0)
+  :bind
+  ("C-c t" . treemacs))
 
 ;;;
 ;;; Mode: Inform7
 ;;;
 
-(require 'inform7)
+(use-package inform7)
 
 ;;;
 ;;; Mode: XCompose
 ;;;
 
-(require 'xcompose-mode)
-
-(add-to-list 'auto-mode-alist '("\\.XCompose\\'" . xcompose-mode))
-(add-to-list 'auto-mode-alist '("\\.xcm\\'" . xcompose-mode))
+(use-package xcompose-mode
+  :mode (("\\.XCompose\\'" . xcompose-mode)
+         ("\\.xcm\\'" . xcompose-mode)))
 
 ;;;
 ;;; Mode: Lean4
 ;;;
 
-(require 'lean4-mode)
+(use-package lean4-mode)
 
 ;;;
 ;;; Mode: nXML
 ;;;
 
-(require 'nxml-mode)
+(use-package nxml-mode
+  :config
+  (defun e/in-start-tag-p ()
+    ;; Check that we're at the end of a start tag. From the source code of
+    ;; `nxml-balanced-close-start-tag`.
+    (let ((token-end (nxml-token-before))
+	      (pos (1+ (point)))
+	      (token-start xmltok-start))
+      (or (eq xmltok-type 'partial-start-tag)
+		  (and (memq xmltok-type '(start-tag
+					               empty-element
+					               partial-empty-element))
+		       (>= token-end pos)))))
 
-(defun e/in-start-tag-p ()
-  ;; Check that we're at the end of a start tag. From the source code of
-  ;; `nxml-balanced-close-start-tag`.
-  (let ((token-end (nxml-token-before))
-	    (pos (1+ (point)))
-	    (token-start xmltok-start))
-    (or (eq xmltok-type 'partial-start-tag)
-		(and (memq xmltok-type '(start-tag
-					             empty-element
-					             partial-empty-element))
-		     (>= token-end pos)))))
+  (defun e/finish-element ()
+    (interactive)
+    (if (e/in-start-tag-p)
+        ;; If we're at the end of a start tag like `<foo`, complete this to
+        ;; `<foo></foo>`, then move the point between the start and end tags.
+        (nxml-balanced-close-start-tag-inline)
+        ;; Otherwise insert an angle bracket.
+        (insert ">")))
 
-(defun e/finish-element ()
-  (interactive)
-  (if (e/in-start-tag-p)
-      ;; If we're at the end of a start tag like `<foo`, complete this to
-      ;; `<foo></foo>`, then move the point between the start and end tags.
-      (nxml-balanced-close-start-tag-inline)
-      ;; Otherwise insert an angle bracket.
-      (insert ">")))
+  (defun e/nxml-newline ()
+    "Insert a newline, indenting the current line and the newline appropriately in nxml-mode."
+    (interactive)
+    ;; Are we between an open and closing tag?
+    (if (and (char-before) (char-after)
+             (char-equal (char-before) ?>)
+             (char-equal (char-after) ?<))
+        ;; If so, indent it properly.
+        (let ((indentation (current-indentation)))
+          (newline)
+          (indent-line-to (+ indentation 4))
+          (newline)
+          (indent-line-to indentation)
+          (previous-line)
+          (end-of-line))
+      ;; Otherwise just insert a regular newline.
+      (newline)))
 
-(define-key nxml-mode-map (kbd ">") 'e/finish-element)
+  (setq nxml-child-indent 4
+        nxml-attribute-indent 4)
 
-(defun e/nxml-newline ()
-  "Insert a newline, indenting the current line and the newline appropriately in nxml-mode."
-  (interactive)
-  ;; Are we between an open and closing tag?
-  (if (and (char-before) (char-after)
-           (char-equal (char-before) ?>)
-           (char-equal (char-after) ?<))
-      ;; If so, indent it properly.
-      (let ((indentation (current-indentation)))
-        (newline)
-        (indent-line-to (+ indentation 4))
-        (newline)
-        (indent-line-to indentation)
-        (previous-line)
-        (end-of-line))
-    ;; Otherwise just insert a regular newline.
-    (newline)))
-
-(define-key nxml-mode-map (kbd "RET") 'e/nxml-newline)
-
-(setq nxml-child-indent 4 nxml-attribute-indent 4)
+  :bind (:map nxml-mode-map
+              (">" . e/finish-element)
+              ("RET" . e/nxml-newline)))
 
 ;;;
 ;;; Mode: eat
@@ -346,7 +349,7 @@
 ;;; Mode: cabal
 ;;;
 
-(require 'cabal-mode)
+(use-package cabal-mode)
 
 ;;;
 ;;; Mode: web-mode
