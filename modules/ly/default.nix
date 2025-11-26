@@ -21,7 +21,7 @@
   environment.etc."xdg/custom-sessions/tty.desktop".text = ''
     [Desktop Entry]
     Name=tty
-    Exec=${pkgs.nushell}/bin/nu --login
+    Exec=${pkgs.util-linux}/bin/setsid ${pkgs.nushell}/bin/nu --login
     Type=Application
   '';
 
