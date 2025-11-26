@@ -1,6 +1,18 @@
 ;;;; -*- lexical-binding: t -*-
 
 ;;;
+;;; Startup
+;;;
+
+;; Defer GC during startup.
+(setq gc-cons-threshold most-positive-fixnum)
+
+;; Reset after startup:
+(add-hook 'emacs-startup-hook
+          (lambda ()
+            (setq gc-cons-threshold (* 2 1000 1000))))
+
+;;;
 ;;; General
 ;;;
 
