@@ -7,7 +7,7 @@ in
   networking.hostName = "rostam";
 
   # Zed editor configuration.
-  custom.zed.fontSize = 16;
+  custom.zed.fontSize = 14;
 
   boot.initrd.luks.devices."luks-${deviceUuid}".device = "/dev/disk/by-uuid/${deviceUuid}";
 
