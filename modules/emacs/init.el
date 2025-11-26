@@ -1,6 +1,7 @@
 ;;;; -*- lexical-binding: t -*-
 
-(setq use-package-compute-statistics t)
+;; Uncomment to compile startup time stats.
+;; (setq use-package-compute-statistics t)
 
 ;;;
 ;;; General
