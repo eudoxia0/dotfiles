@@ -2,6 +2,7 @@ Anki
 Borretti
 FSRS
 KaTeX
+LLM
 LaTeX
 Makefile
 NixOS
@@ -12,6 +13,7 @@ cloze
 combinatorial
 declaratively
 disjunction
+dually
 equational
 frontmatter
 hashcards
