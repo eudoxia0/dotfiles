@@ -385,4 +385,4 @@
     (shell-command (format "git push origin %s" branch))
     (message "Committed and pushed to origin/%s" branch)))
 
-(global-set-key (kbd "C-c .") 'quick-commit)
+(keymap-global-set "C-c ." 'quick-commit)
