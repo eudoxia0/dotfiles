@@ -94,7 +94,7 @@
           modules = shared ++ [
             ./hosts/ismene/configuration.nix
             ./hosts/ismene/hardware-configuration.nix
-            ./modules/sddm.nix
+            ./modules/ly
           ];
         };
       };
