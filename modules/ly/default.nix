@@ -21,9 +21,8 @@
   environment.etc."xdg/custom-sessions/tty.desktop".text = ''
     [Desktop Entry]
     Name=tty
-    Exec=${pkgs.nushell}/bin/nu
-    DesktopNames=null
-    Terminal=true
+    Exec=${pkgs.nushell}/bin/nu --login
+    Type=Application
   '';
 
   home-manager.users.eudoxia.home.file = {
