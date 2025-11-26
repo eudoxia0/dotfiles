@@ -11,10 +11,11 @@
     djvu2pdf
     file
     inxi
+    ispell
     monolith
+    ocrmypdf
     pciutils # lspci
     ripgrep
-    ocrmypdf
     smartmontools
     taskwarrior-tui
     taskwarrior3
