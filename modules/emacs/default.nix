@@ -84,7 +84,9 @@ in
         epkgs: with epkgs; [
           agda2-mode
           customPackages.cabal-mode
+          consult
           customPackages.eat
+          embark
           customPackages.inform7-mode
           customPackages.lean4-mode
           customPackages.xcompose-mode
@@ -94,12 +96,14 @@ in
           lsp-mode
           lsp-ui
           magit
+          marginalia
           markdown-mode
           moe-theme
           nano-theme
           nix-mode
           nushell-mode
           olivetti
+          orderless
           projectile
           ripgrep
           rust-mode

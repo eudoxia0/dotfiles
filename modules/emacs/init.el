@@ -240,6 +240,91 @@
               ("DEL" . vertico-directory-delete-char)))
 
 ;;;
+;;; Mode: Orderless
+;;;
+
+(use-package orderless
+  :custom
+  ;; Use orderless for completion styles.
+  (completion-styles '(orderless basic))
+  (completion-category-defaults nil)
+  (completion-category-overrides '((file (styles partial-completion)))))
+
+;;;
+;;; Mode: Marginalia
+;;;
+
+(use-package marginalia
+  :init
+  (marginalia-mode))
+
+;;;
+;;; Mode: Consult
+;;;
+
+(use-package consult
+  :bind (;; C-c bindings (mode-specific-map)
+         ("C-c h" . consult-history)
+         ("C-c m" . consult-mode-command)
+         ("C-c k" . consult-kmacro)
+         ;; C-x bindings (ctl-x-map)
+         ("C-x M-:" . consult-complex-command)
+         ("C-x b" . consult-buffer)
+         ("C-x 4 b" . consult-buffer-other-window)
+         ("C-x 5 b" . consult-buffer-other-frame)
+         ("C-x r b" . consult-bookmark)
+         ;; M-g bindings (goto-map)
+         ("M-g e" . consult-compile-error)
+         ("M-g f" . consult-flymake)
+         ("M-g g" . consult-goto-line)
+         ("M-g M-g" . consult-goto-line)
+         ("M-g o" . consult-outline)
+         ("M-g m" . consult-mark)
+         ("M-g k" . consult-global-mark)
+         ("M-g i" . consult-imenu)
+         ("M-g I" . consult-imenu-multi)
+         ;; M-s bindings (search-map)
+         ("M-s d" . consult-find)
+         ("M-s D" . consult-locate)
+         ("M-s g" . consult-grep)
+         ("M-s G" . consult-git-grep)
+         ("M-s r" . consult-ripgrep)
+         ("M-s l" . consult-line)
+         ("M-s L" . consult-line-multi)
+         ("M-s k" . consult-keep-lines)
+         ("M-s u" . consult-focus-lines)
+         ;; Isearch integration
+         ("M-s e" . consult-isearch-history)
+         :map isearch-mode-map
+         ("M-e" . consult-isearch-history)
+         ("M-s e" . consult-isearch-history)
+         ("M-s l" . consult-line)
+         ("M-s L" . consult-line-multi)
+         ;; Minibuffer history
+         :map minibuffer-local-map
+         ("M-s" . consult-history)
+         ("M-r" . consult-history))
+  :config
+  ;; Use ripgrep for consult-grep.
+  (setq consult-ripgrep-args "rg --null --line-buffered --color=never --max-columns=1000 --path-separator / --smart-case --no-heading --with-filename --line-number --search-zip"))
+
+;;;
+;;; Mode: Embark
+;;;
+
+(use-package embark
+  :bind
+  (("C-." . embark-act)
+   ("C-;" . embark-dwim)
+   ("C-h B" . embark-bindings))
+  :config
+  ;; Hide the mode line of the Embark live/completions buffers.
+  (add-to-list 'display-buffer-alist
+               '("\\`\\*Embark Collect \\(Live\\|Completions\\)\\*"
+                 nil
+                 (window-parameters (mode-line-format . none)))))
+
+;;;
 ;;; Mode: Projectile
 ;;;
 
