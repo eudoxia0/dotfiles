@@ -40,6 +40,9 @@
 ;; Remember recently opened files.
 (recentf-mode 1)
 
+;; Reload externally changed files.
+(global-auto-revert-mode 1)
+
 ;;;
 ;;; Splash Screen
 ;;;
