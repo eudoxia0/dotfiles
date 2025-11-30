@@ -20,6 +20,7 @@
 
 (load "~/.stumpwm.d/gaps.lisp")
 (load "~/.stumpwm.d/bright.lisp")
+(load "~/.stumpwm.d/tray.lisp")
 
 ;;;
 ;;; General Configuration

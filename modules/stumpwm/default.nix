@@ -34,5 +34,6 @@ in
     ".stumpwm.d/init.lisp".source = ./init.lisp;
     ".stumpwm.d/gaps.lisp".source = ./gaps.lisp;
     ".stumpwm.d/bright.lisp".source = ./bright.lisp;
+    ".stumpwm.d/tray.lisp".source = ./tray.lisp;
   };
 }
