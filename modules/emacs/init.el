@@ -34,6 +34,9 @@
 ;; Persist minibuffer history.
 (savehist-mode 1)
 
+;; Remember cursor positions.
+(save-place-mode 1)
+
 ;;;
 ;;; Splash Screen
 ;;;
