@@ -20,7 +20,9 @@
       "application/vnd.amazon.ebook" = [ "koreader.desktop" ];
       "application/x-fictionbook+xml" = [ "koreader.desktop" ];
       "application/x-mobipocket-ebook" = [ "koreader.desktop" ];
-      "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = [ "libreoffice-writer.desktop" ];
+      "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = [
+        "libreoffice-writer.desktop"
+      ];
       "image/avif" = [ "viewnior.desktop" ];
       "image/gif" = [ "viewnior.desktop" ];
       "image/jpeg" = [ "viewnior.desktop" ];
