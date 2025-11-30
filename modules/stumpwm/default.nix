@@ -24,7 +24,7 @@ let
 
   customStump = pkgs.stumpwm.override {
     sbcl = pkgs.sbcl.withPackages (ps: [ ps.xembed ]);
-  }
+  };
 in
 {
   services.xserver.windowManager.stumpwm = {
