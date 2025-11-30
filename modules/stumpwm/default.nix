@@ -23,7 +23,9 @@ let
   '';
 in
 {
-  services.xserver.windowManager.stumpwm.enable = true;
+  services.xserver.windowManager.stumpwm = {
+    enable = true;
+  };
 
   home-manager.users.eudoxia.home.packages = with pkgs; [
     feh
