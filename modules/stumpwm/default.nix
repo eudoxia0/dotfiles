@@ -29,6 +29,7 @@ let
       ps.cl-ppcre
       ps.dynamic-mixins-swm
       ps.clx
+      ps.fiasco
     ]);
   };
 in
