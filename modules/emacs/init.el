@@ -37,6 +37,9 @@
 ;; Remember cursor positions.
 (save-place-mode 1)
 
+;; Remember recently opened files.
+(recentf-mode 1)
+
 ;;;
 ;;; Splash Screen
 ;;;
