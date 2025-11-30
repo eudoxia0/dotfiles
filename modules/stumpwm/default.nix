@@ -23,7 +23,7 @@ let
   '';
 
   customStump = pkgs.stumpwm.override {
-    sbcl = pkgs.sbcl.withPackages (ps: [ ps.xembed ]);
+    sbcl = pkgs.sbcl.withPackages (ps: [ ps.alexandria ps.xembed ]);
   };
 in
 {
