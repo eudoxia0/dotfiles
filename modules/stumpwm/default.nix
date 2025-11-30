@@ -26,6 +26,9 @@ let
     sbcl = pkgs.sbcl.withPackages (ps: [
       ps.alexandria
       ps.xembed
+      ps.cl-ppcre
+      ps.dynamic-mixins-swm
+      ps.clx
     ]);
   };
 in
