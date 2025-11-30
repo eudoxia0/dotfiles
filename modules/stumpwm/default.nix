@@ -21,10 +21,15 @@ let
     # Call scrot with the full path and pass through any arguments
     ${pkgs.scrot}/bin/scrot "$@" "$SCREENSHOT_DIR/$FILENAME"
   '';
+
+  customStump = pkgs.stumpwm.override {
+    sbcl = pkgs.sbcl.withPackages (ps: [ ps.xembed ]);
+  }
 in
 {
   services.xserver.windowManager.stumpwm = {
     enable = true;
+    package = customStump;
   };
 
   home-manager.users.eudoxia.home.packages = with pkgs; [
