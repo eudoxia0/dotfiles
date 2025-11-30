@@ -4,7 +4,7 @@
 ;;;; from: https://github.com/stumpwm/stumpwm-contrib/tree/master/modeline/stumptray
 ;;;;
 (require 'asdf)
-(require 'xembed)
+(asdf:load-system :xembed)
 
 (defpackage #:stumptray
   (:use #:cl #:alexandria)
