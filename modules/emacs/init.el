@@ -31,6 +31,9 @@
 ;; Set the default tab width to 4.
 (setq-default tab-width 4)
 
+;; Persist minibuffer history.
+(savehist-mode 1)
+
 ;;;
 ;;; Splash Screen
 ;;;
