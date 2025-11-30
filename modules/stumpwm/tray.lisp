@@ -3,7 +3,7 @@
 ;;;;
 ;;;; from: https://github.com/stumpwm/stumpwm-contrib/tree/master/modeline/stumptray
 ;;;;
-(require 'xembed)
+(asdf:load-system :xembed)
 
 (defpackage #:stumptray
   (:use #:cl #:alexandria)
