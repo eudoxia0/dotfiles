@@ -46,6 +46,9 @@
 ;; Use Y or N instead of yes or no prompts.
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+;; Experimenting with this.
+(setq scroll-conservatively 101)
+
 ;;;
 ;;; Splash Screen
 ;;;
