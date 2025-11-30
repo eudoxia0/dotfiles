@@ -20,7 +20,6 @@
 
 (load "~/.stumpwm.d/gaps.lisp")
 (load "~/.stumpwm.d/bright.lisp")
-(load "~/.stumpwm.d/tray.lisp")
 
 ;;;
 ;;; General Configuration
@@ -220,3 +219,5 @@
 
 ;; Better default pointer style.
 (run-shell-command "xsetroot -cursor_name left_ptr")
+
+(load "~/.stumpwm.d/tray.lisp")
