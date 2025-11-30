@@ -55,7 +55,6 @@
         ./modules/rust.nix
         ./modules/shell.nix
         ./modules/ssh.nix
-        ./modules/steam.nix
         ./modules/stumpwm
         ./modules/syncthing.nix
         ./modules/thunar
