@@ -21,22 +21,10 @@ let
     # Call scrot with the full path and pass through any arguments
     ${pkgs.scrot}/bin/scrot "$@" "$SCREENSHOT_DIR/$FILENAME"
   '';
-
-  customStump = pkgs.stumpwm.override {
-    sbcl = pkgs.sbcl.withPackages (ps: [
-      ps.alexandria
-      ps.xembed
-      ps.cl-ppcre
-      ps.dynamic-mixins-swm
-      ps.clx
-      ps.fiasco
-    ]);
-  };
 in
 {
   services.xserver.windowManager.stumpwm = {
     enable = true;
-    package = customStump;
   };
 
   home-manager.users.eudoxia.home.packages = with pkgs; [
@@ -48,6 +36,5 @@ in
     ".stumpwm.d/init.lisp".source = ./init.lisp;
     ".stumpwm.d/gaps.lisp".source = ./gaps.lisp;
     ".stumpwm.d/bright.lisp".source = ./bright.lisp;
-    ".stumpwm.d/tray.lisp".source = ./tray.lisp;
   };
 }
