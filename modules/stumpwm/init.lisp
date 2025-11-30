@@ -211,3 +211,6 @@
 
 ;; Set the wallpaper.
 (run-shell-command "feh --no-fehbg --bg-fill ~/.eudoxia.d/data/wallpaper/panther.jpg")
+
+;; Better default pointer style.
+(run-shell-command "xsetroot -cursor_name left_ptr")
