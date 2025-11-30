@@ -213,7 +213,7 @@
 (run-shell-command "systemctl --user start xscreensaver")
 
 ;; Start polybar.
-(run-shell-command "polybar 2> ~/.polybar.log")
+;(run-shell-command "polybar 2> ~/.polybar.log")
 
 ;; Set the wallpaper.
 (run-shell-command "feh --no-fehbg --bg-fill ~/.eudoxia.d/data/wallpaper/panther.jpg")
