@@ -43,6 +43,9 @@
 ;; Reload externally changed files.
 (global-auto-revert-mode 1)
 
+;; Use Y or N instead of yes or no prompts.
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 ;;;
 ;;; Splash Screen
 ;;;
