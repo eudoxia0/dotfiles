@@ -203,6 +203,11 @@
 (if (rostamp)
     (stumpwm::run-commands "toggle-gaps-on"))
 
+; Laptop brightness control keys for ismene only.
+(when (ismenep)
+  (defkey "XF86MonBrightnessUp" "laptop-brightness-up")
+  (defkey "XF86MonBrightnessDown" "laptop-brightness-down"))
+
 ;; Ensure xscreensaver is started.
 (run-shell-command "systemctl --user start xscreensaver")
 

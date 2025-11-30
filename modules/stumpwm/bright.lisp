@@ -41,3 +41,15 @@
 
 ;; Interactively adjust brightness.
 (defprefixkey "b" "ibrightness")
+
+;;;
+;;; Laptop Brightness Control (brightnessctl)
+;;;
+
+(defcommand laptop-brightness-up () ()
+  "Increase laptop brightness using brightnessctl."
+  (run-shell-command "brightnessctl set +5%"))
+
+(defcommand laptop-brightness-down () ()
+  "Decrease laptop brightness using brightnessctl."
+  (run-shell-command "brightnessctl set 5%-"))
