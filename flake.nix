@@ -54,6 +54,7 @@
         ./modules/python.nix
         ./modules/redshift.nix
         ./modules/rust.nix
+        ./modules/scripts
         ./modules/shell.nix
         ./modules/ssh.nix
         ./modules/stumpwm
