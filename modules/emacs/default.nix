@@ -83,13 +83,14 @@ in
       extraPackages =
         epkgs: with epkgs; [
           agda2-mode
-          customPackages.cabal-mode
           consult
+          customPackages.cabal-mode
           customPackages.eat
-          embark
           customPackages.inform7-mode
           customPackages.lean4-mode
           customPackages.xcompose-mode
+          embark
+          graphviz-dot-mode
           i3wm-config-mode
           just-mode
           kaolin-themes
