@@ -21,6 +21,7 @@
     iosevka
     jetbrains-mono
     liberation_ttf
+    libertinus
     nika-fonts
     noto-fonts
     noto-fonts-cjk-sans
