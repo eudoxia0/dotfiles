@@ -40,27 +40,6 @@
   (run-shell-command "polybar-msg cmd restart")
   (toggle-mode-line*))
 
-(defcommand add-firefox-word () ()
-  "Add a word to the Firefox dictionary."
-  (let ((word (read-one-line (current-screen) "Word: ")))
-    (when word
-      (run-shell-command (format nil "echo ~s >> ~~/dotfiles/modules/firefox/words.txt" word))
-      (message "Added '~a' to Firefox dictionary" word))))
-
-(defcommand add-flashcard () ()
-  "Add a flashcard to the inbox."
-  (let ((line (read-one-line (current-screen) "Flashcard: ")))
-    (when line
-      (let* ((home (user-homedir-pathname))
-             (file-path (merge-pathnames "Root/1-Workspace/flashcards/inbox.txt" home)))
-        (ensure-directories-exist file-path)
-        (with-open-file (stream file-path
-                               :direction :output
-                               :if-exists :append
-                               :if-does-not-exist :create)
-          (format stream "~a~%" line))
-        (message "Added flashcard to inbox")))))
-
 ;;;
 ;;; Keybindings
 ;;;
@@ -112,12 +91,6 @@
 
 ;; Launch the terminal.
 (defkey "C-s-c" "exec alacritty")
-
-;; Add a word to the Firefox dictionary.
-(defkey "s-d" "add-firefox-word")
-
-;; Add a flashcard to the inbox.
-(defkey "s-a" "add-flashcard")
 
 ;; Take a screenshot of the whole screen.
 (defkey "Print" "exec scrot-screenshot")
