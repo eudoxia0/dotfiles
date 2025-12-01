@@ -22,5 +22,6 @@
     termdown
     tt
     usbutils # lsusb
+    yt-dlp
   ];
 }
