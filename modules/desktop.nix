@@ -36,6 +36,7 @@
     quodlibet
     seahorse
     signal-desktop
+    strawberry
     sxiv
     thunderbird
     viewnior
