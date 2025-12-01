@@ -22,6 +22,7 @@
     jetbrains-mono
     liberation_ttf
     libertinus
+    newcomputermodern
     nika-fonts
     noto-fonts
     noto-fonts-cjk-sans
