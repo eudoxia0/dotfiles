@@ -120,7 +120,7 @@
   "Open journal to today's date."
   (let ((year  (stumpwm::time-year))
 	(month (stumpwm::time-month))
-	(day   (stumpwm::time-day-of-month)))
+	(day   (stumpwm::time-day-of-month-zero)))
     (let ((date (format nil "~a-~a-~a.md" year month day)))
       (let ((path (format nil "~~/Root/2 Treasure/Journal/Daily/~a/~a/~a"
 			  year
