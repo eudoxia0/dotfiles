@@ -33,6 +33,7 @@
     nwg-look # like a modern lxappearance
     obsidian
     protonmail-desktop
+    quodlibet
     seahorse
     signal-desktop
     sxiv
