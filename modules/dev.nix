@@ -24,7 +24,11 @@
     sqlite
     tokei
     tree
+    vagrant
     vim
     zola
   ];
+
+  virtualisation.virtualbox.host.enable = true;
+  users.users.eudoxia.extraGroups = [ "vboxusers" ];
 }
