@@ -13,6 +13,7 @@
     file
     inxi
     ispell
+    lsof
     monolith
     ocrmypdf
     pciutils # lspci
