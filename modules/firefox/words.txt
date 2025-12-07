@@ -1,7 +1,9 @@
 Anki
 Borretti
+Brouwer
 FSRS
 Innsmouth
+Intuitionism
 KaTeX
 LLM
 LaTeX
