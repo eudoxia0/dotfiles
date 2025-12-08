@@ -9,6 +9,7 @@ LLM
 LaTeX
 Makefile
 NixOS
+OCaml
 Postgres
 TOML
 Waterhouse
@@ -19,7 +20,9 @@ denialism
 disjunction
 dually
 equational
+expressivity
 frontmatter
+growable
 hashcards
 ligand
 repo
