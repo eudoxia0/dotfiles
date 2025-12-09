@@ -8,6 +8,7 @@
       # home-manager should track the same nixpkgs as the system
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    inform7.url = "github:mbrock/inform7-nix";
   };
 
   outputs =
@@ -15,6 +16,7 @@
       self,
       nixpkgs,
       home-manager,
+      inform7,
       ...
     }:
     let
@@ -42,6 +44,7 @@
         ./modules/guile
         ./modules/haskell.nix
         ./modules/heic
+        ./modules/inform7.nix
         ./modules/heroic.nix
         ./modules/locale.nix
         ./modules/mime.nix
@@ -84,6 +87,7 @@
       nixosConfigurations = {
         rostam = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
+          specialArgs = { inherit inform7; };
           modules = shared ++ [
             ./hosts/rostam/configuration.nix
             ./hosts/rostam/hardware-configuration.nix
@@ -94,6 +98,7 @@
 
         ismene = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
+          specialArgs = { inherit inform7; };
           modules = shared ++ [
             ./hosts/ismene/configuration.nix
             ./hosts/ismene/hardware-configuration.nix
