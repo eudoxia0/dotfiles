@@ -1,4 +1,9 @@
-{ pkgs, config, inform7, ... }:
+{
+  pkgs,
+  config,
+  inform7,
+  ...
+}:
 
 {
   home-manager.users.eudoxia = {
