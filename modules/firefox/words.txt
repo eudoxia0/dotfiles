@@ -25,6 +25,7 @@ frontmatter
 growable
 hashcards
 ligand
+qubit
 repo
 stderr
 stdin
