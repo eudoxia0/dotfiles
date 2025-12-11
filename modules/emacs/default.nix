@@ -111,7 +111,7 @@ in
           sly
           sublime-themes
           treemacs
-          typst-mode
+          typst-ts-mode
           unfill
           vertico
           web-mode
