@@ -39,6 +39,7 @@
     strawberry
     sxiv
     thunderbird
+    transmission_4-gtk
     viewnior
     wdisplays
     webcamoid
