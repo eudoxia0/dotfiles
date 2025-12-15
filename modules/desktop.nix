@@ -41,6 +41,7 @@
     thunderbird
     transmission_4-gtk
     viewnior
+    vlc
     wdisplays
     webcamoid
     zathura
