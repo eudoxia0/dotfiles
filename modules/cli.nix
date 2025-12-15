@@ -16,6 +16,7 @@
     lsof
     monolith
     ocrmypdf
+    pandoc
     pciutils # lspci
     ripgrep
     smartmontools
