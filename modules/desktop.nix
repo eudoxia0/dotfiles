@@ -10,7 +10,6 @@
     appimage-run
     baobab
     calibre
-    cameractrls-gtk4
     cheese
     chromium
     djview
