@@ -10,6 +10,7 @@
     appimage-run
     baobab
     calibre
+    cheese
     chromium
     djview
     evince
