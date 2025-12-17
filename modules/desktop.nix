@@ -42,6 +42,7 @@
     sxiv
     thunderbird
     transmission_4-gtk
+    v4l-utils
     viewnior
     vlc
     wdisplays
