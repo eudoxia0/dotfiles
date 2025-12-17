@@ -43,7 +43,6 @@
     viewnior
     vlc
     wdisplays
-    webcamoid
     zathura
   ];
 }
