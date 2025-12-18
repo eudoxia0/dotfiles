@@ -30,4 +30,7 @@
 
   # Stop warning about dirty trees.
   nix.settings.warn-dirty = false;
+
+  # Enable the nix-ld shim.
+  programs.nix-ld.enable = true;
 }
