@@ -12,6 +12,7 @@
     calibre
     cheese
     chromium
+    dbeaver-bin
     djview
     evince
     file-roller
