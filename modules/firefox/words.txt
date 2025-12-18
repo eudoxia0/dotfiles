@@ -1,7 +1,10 @@
 Anki
 Borretti
 Brouwer
+CLI
+CloudFormation
 FSRS
+IaC
 Innsmouth
 Intuitionism
 KaTeX
@@ -12,7 +15,9 @@ Nastaliq
 NixOS
 OCaml
 Postgres
+Pulumi
 TOML
+Terraform
 Waterhouse
 antisymmetry
 cloze
