@@ -6,7 +6,7 @@ Add a new word to the Firefox dictionary.
 import sys
 from pathlib import Path
 
-PATH: Path = Path.home() / "dotfiles" / "modules" / "firefox" / "words.txt"
+PATH: Path = Path.home() / "Root" / "1-Workspace" / "dotfiles" / "modules" / "firefox" / "words.txt"
 
 
 def main():
