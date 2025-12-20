@@ -24,6 +24,7 @@
         ./modules/alacritty
         ./modules/audio.nix
         ./modules/backup
+        ./modules/bluetooth.nix
         ./modules/cli.nix
         ./modules/desktop.nix
         ./modules/dev.nix

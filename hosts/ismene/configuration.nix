@@ -11,7 +11,6 @@ in
 
   boot.initrd.luks.devices."luks-${deviceUuid}".device = "/dev/disk/by-uuid/${deviceUuid}";
 
-  hardware.bluetooth.enable = true;
 
   fonts.packages = [ pkgs.noto-fonts-color-emoji ];
   fonts.fontconfig.defaultFonts.emoji = [ "Noto Color Emoji" ];

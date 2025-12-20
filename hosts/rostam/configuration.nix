@@ -11,8 +11,6 @@ in
 
   boot.initrd.luks.devices."luks-${deviceUuid}".device = "/dev/disk/by-uuid/${deviceUuid}";
 
-  hardware.bluetooth.enable = true;
-
   fonts.fontconfig.defaultFonts.emoji = [ "Apple Color Emoji" ];
 
   home-manager.users.eudoxia.programs.git.settings.user = {
