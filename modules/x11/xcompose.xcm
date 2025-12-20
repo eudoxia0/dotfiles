@@ -7,3 +7,6 @@
 <Multi_key> <apostrophe> <space>      : "’" # right single quote
 <Multi_key> <grave>      <grave>      : "“" # left double quote
 <Multi_key> <apostrophe> <apostrophe> : "”" # right double quote
+
+# other typography
+<Multi_key> <period> <period> <period> : "…" # ellipsis
