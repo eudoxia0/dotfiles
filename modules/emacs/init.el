@@ -178,7 +178,7 @@
     wombat
     wheatgrass))
 
-(defvar my-default-theme 'kaolin-ocean)
+(defvar my-default-theme 'kaolin-mono-light)
 
 (defvar my-current-theme my-default-theme)
 
