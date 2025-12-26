@@ -59,6 +59,7 @@
         ./modules/shell.nix
         ./modules/ssh.nix
         ./modules/stumpwm
+        ./modules/sway
         ./modules/syncthing.nix
         ./modules/thunar
         ./modules/todoist.nix
