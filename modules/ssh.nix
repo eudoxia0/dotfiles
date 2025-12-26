@@ -22,6 +22,7 @@
   services.gnome.gnome-keyring.enable = true;
 
   security.pam.services.login.enableGnomeKeyring = true;
+  security.pam.services.ly.enableGnomeKeyring = true;
 
   home-manager.users.eudoxia.home.sessionVariables = {
     SSH_AUTH_SOCK = "$XDG_RUNTIME_DIR/gcr/ssh";
