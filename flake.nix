@@ -55,6 +55,7 @@
         ./modules/python.nix
         ./modules/redshift.nix
         ./modules/rust.nix
+        ./modules/scanner.nix
         ./modules/scripts
         ./modules/shell.nix
         ./modules/ssh.nix
