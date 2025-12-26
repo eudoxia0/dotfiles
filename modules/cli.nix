@@ -11,6 +11,7 @@
     beets
     djvu2pdf
     file
+    gnuplot
     inxi
     ispell
     lsof
