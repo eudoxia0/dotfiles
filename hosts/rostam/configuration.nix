@@ -43,6 +43,7 @@ in
 
   environment.variables = {
     GDK_DPI_SCALE = "1.5";
+    QT_SCALE_FACTOR = "1.5";
   };
 
   # Radeon inspector.
