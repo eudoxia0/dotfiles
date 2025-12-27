@@ -75,6 +75,7 @@
         ./modules/xcape.nix
         ./modules/xscreensaver
         ./modules/zed.nix
+        ./modules/zellij
         ./modules/zetanom
 
         # Make home-manager use system pkgs
