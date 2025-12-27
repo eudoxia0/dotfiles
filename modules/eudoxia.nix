@@ -18,10 +18,11 @@ let
     for dir in Desktop Documents Downloads; do
       if [ -d "$dir" ]; then
         echo "Attempting to remove $dir"
-        if rmdir "$dir" 2>&1; then
+        error_output=$(${pkgs.coreutils}/bin/rmdir "$dir" 2>&1)
+        if [ $? -eq 0 ]; then
           echo "Successfully removed $dir"
         else
-          echo "Failed to remove $dir (not empty or permission denied)"
+          echo "Failed to remove $dir: $error_output"
         fi
       else
         echo "$dir does not exist"
