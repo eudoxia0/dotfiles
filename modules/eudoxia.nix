@@ -5,6 +5,16 @@
   ...
 }:
 
+let
+  cleanupXdgScript = pkgs.writeShellScript "cleanup-xdg-dirs" ''
+    # Remove unwanted XDG user directories that applications recreate
+    cd "$HOME" || exit 1
+
+    rmdir Desktop 2>/dev/null || true
+    rmdir Documents 2>/dev/null || true
+    rmdir Downloads 2>/dev/null || true
+  '';
+in
 {
   users.users.eudoxia = {
     isNormalUser = true;
@@ -28,7 +38,7 @@
     };
     Service = {
       Type = "oneshot";
-      ExecStart = "${pkgs.bash}/bin/bash -c 'cd ~ && rmdir Desktop Documents Downloads 2>/dev/null || true'";
+      ExecStart = "${cleanupXdgScript}";
     };
   };
 
