@@ -138,6 +138,10 @@
             {
                 "name": "zetanom",
                 "url": "http://localhost:12001/"
+            },
+            {
+                "name": "thetis",
+                "url": "http://localhost:12002/"
             }
         ]
     }
