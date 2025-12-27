@@ -1,2 +1,3 @@
 default_shell "nushell"
 show_startup_tips false
+theme "tokyo-night"
