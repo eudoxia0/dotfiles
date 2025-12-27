@@ -62,6 +62,7 @@
         ./modules/stumpwm
         ./modules/sway
         ./modules/syncthing.nix
+        ./modules/thetis.nix
         ./modules/thunar
         ./modules/todoist.nix
         ./modules/tools
