@@ -17,6 +17,7 @@
     imagemagick
     inform6
     jekyll
+    jq
     just
     lean4
     libxml2 # xmllint
