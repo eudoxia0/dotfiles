@@ -29,6 +29,7 @@ deduplication
 definability
 denialism
 desaturate
+discretize
 disjunction
 dually
 equational
