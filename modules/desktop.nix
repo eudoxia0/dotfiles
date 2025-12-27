@@ -45,6 +45,7 @@
     v4l-utils
     viewnior
     vlc
+    vscode
     wdisplays
     zathura
   ];
