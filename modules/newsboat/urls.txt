@@ -47,6 +47,7 @@ https://lukasschwab.me/blog/feed.xml
 https://magnus.therning.org/feed.xml
 https://malloc.dog/rss.xml
 https://matklad.github.io/feed.xml
+https://maurimo.dev/feed.xml
 https://mihaiolteanu.me/rss.xml
 https://mmapped.blog/feed.xml
 https://nesbitt.io/feed.xml
