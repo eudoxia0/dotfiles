@@ -10,7 +10,10 @@
   hardware.sane.enable = true;
 
   # Add myself to the scanner and printer groups.
-  users.users.eudoxia.extraGroups = [ "scanner" "lp" ];
+  users.users.eudoxia.extraGroups = [
+    "scanner"
+    "lp"
+  ];
 
   # Add support for Brother scanners.
   hardware.sane.brscan5.enable = true;
