@@ -38,7 +38,7 @@
     };
     Timer = {
       OnBootSec = "5m";
-      OnUnitActiveSec = "5m";
+      OnUnitActiveSec = "1m";
     };
     Install = {
       WantedBy = [ "timers.target" ];
