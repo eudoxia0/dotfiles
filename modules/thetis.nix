@@ -7,7 +7,7 @@
 
 {
   home-manager.users.eudoxia = {
-    systemd.user.services.zetanom = {
+    systemd.user.services.thetis = {
       Unit = {
         Description = "thetis";
         After = [ "graphical-session.target" ];
