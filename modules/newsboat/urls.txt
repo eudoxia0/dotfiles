@@ -31,6 +31,7 @@ https://fantasticanachronism.com/atom.xml
 https://faultlore.com/blah/rss.xml
 https://fi-le.net/feed.xml
 https://fredkozlowski.com/feed/
+https://gluer.org/atom/
 https://graydon2.dreamwidth.org/data/rss
 https://hakibenita.com/feeds/all.atom.xml
 https://hallofdreams.org/feed.xml
