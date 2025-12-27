@@ -21,6 +21,7 @@
     lean4
     libxml2 # xmllint
     nixfmt-tree
+    sass
     sqlite
     tokei
     tree
