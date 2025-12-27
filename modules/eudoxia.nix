@@ -8,11 +8,27 @@
 let
   cleanupXdgScript = pkgs.writeShellScript "cleanup-xdg-dirs" ''
     # Remove unwanted XDG user directories that applications recreate
-    cd "$HOME" || exit 1
+    echo "Starting cleanup, HOME=$HOME, PWD=$PWD"
 
-    rmdir Desktop 2>/dev/null || true
-    rmdir Documents 2>/dev/null || true
-    rmdir Downloads 2>/dev/null || true
+    cd "$HOME" || {
+      echo "ERROR: Failed to cd to HOME"
+      exit 1
+    }
+
+    for dir in Desktop Documents Downloads; do
+      if [ -d "$dir" ]; then
+        echo "Attempting to remove $dir"
+        if rmdir "$dir" 2>&1; then
+          echo "Successfully removed $dir"
+        else
+          echo "Failed to remove $dir (not empty or permission denied)"
+        fi
+      else
+        echo "$dir does not exist"
+      fi
+    done
+
+    echo "Cleanup complete"
   '';
 in
 {
