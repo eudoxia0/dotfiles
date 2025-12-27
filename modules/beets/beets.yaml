@@ -1,0 +1,7 @@
+directory: ~/Root/music
+library: ~/Root/Databases/beets/musiclibrary.db
+import:
+  move: yes
+plugins:
+  - musicbrainz
+  - fetchart
