@@ -1,1 +1,2 @@
 default_shell "nushell"
+show_startup_tips false
