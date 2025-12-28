@@ -17,6 +17,10 @@
       name = "elementary";
       package = pkgs.pantheon.elementary-icon-theme;
     };
+    cursorTheme = {
+      name = "elementary";
+      package = pkgs.pantheon.elementary-icon-theme;
+    };
   };
 
   # Install other themes so we can preview them.
