@@ -20,6 +20,7 @@
     cursorTheme = {
       name = "elementary";
       package = pkgs.pantheon.elementary-icon-theme;
+      size = 16;
     };
   };
 
