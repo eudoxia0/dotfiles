@@ -44,6 +44,7 @@ https://jordankaye.dev/index.xml
 https://jyn.dev/atom.xml
 https://kevinlynagh.com/feed.xml
 https://kokoscript.com/rss.xml
+https://lr0.org/blog/index.xml
 https://lukasschwab.me/blog/feed.xml
 https://magnus.therning.org/feed.xml
 https://malloc.dog/rss.xml
