@@ -38,10 +38,13 @@ frontmatter
 growable
 hashcards
 ligand
+nanofabrication
 qubit
 repo
 stderr
 stdin
 stdout
 sudo
+transhumanism
+transhumanist
 uncountably
