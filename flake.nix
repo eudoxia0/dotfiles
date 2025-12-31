@@ -50,6 +50,7 @@
         ./modules/haskell.nix
         ./modules/heic
         ./modules/heroic.nix
+        ./modules/inform7.nix
         ./modules/locale.nix
         ./modules/mime.nix
         ./modules/network.nix

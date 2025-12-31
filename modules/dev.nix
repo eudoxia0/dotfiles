@@ -17,9 +17,6 @@
     graphviz
     imagemagick
     inform6
-    inform7-nix.packages.${pkgs.stdenv.hostPlatform.system}.inform
-    inform7-nix.packages.${pkgs.stdenv.hostPlatform.system}.inweb
-    inform7-nix.packages.${pkgs.stdenv.hostPlatform.system}.intest
     jekyll
     jq
     just
