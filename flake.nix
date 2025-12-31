@@ -55,6 +55,7 @@
         ./modules/polybar
         ./modules/python.nix
         ./modules/redshift.nix
+        ./modules/rm-xdg-dirs.nix
         ./modules/rust.nix
         ./modules/scanner.nix
         ./modules/scripts
