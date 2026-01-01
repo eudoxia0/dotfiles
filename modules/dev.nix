@@ -13,6 +13,7 @@
     claude-code
     curl
     fd
+    ghostscript
     gnumake
     graphviz
     imagemagick
