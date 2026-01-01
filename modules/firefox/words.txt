@@ -1,4 +1,5 @@
 AST
+AUD
 Anki
 Borretti
 Brouwer
@@ -9,6 +10,7 @@ IaC
 Innsmouth
 Intuitionism
 KaTeX
+Kobo
 LLM
 LaTeX
 Makefile
