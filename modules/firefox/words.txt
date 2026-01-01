@@ -17,6 +17,7 @@ NixOS
 OCaml
 Postgres
 Pulumi
+Syncthing
 TOML
 Terraform
 Waterhouse
