@@ -58,9 +58,6 @@
       # Do not prompt for a download location.
       PromptForDownloadLocation = false;
 
-      # Set the default download directory.
-      # DownloadDirectory = "/home/eudoxia/Root/0 Inbox";
-
       # Disable search suggestions.
       SearchSuggestEnabled = false;
 
