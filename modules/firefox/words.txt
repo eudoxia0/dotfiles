@@ -35,6 +35,7 @@ desaturate
 discretize
 disjunction
 dually
+epitaxy
 equational
 expressivity
 frontmatter
