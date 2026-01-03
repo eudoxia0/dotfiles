@@ -8,3 +8,11 @@
         text-justify: inter-word;
     }
 }
+
+@-moz-document domain("substack.com") {
+    .single-post {
+        text-align: justify;
+        text-justify: inter-word;
+        font-family: "Doulos SIL", "TeX Gyre Termes", serif;
+    }
+}
