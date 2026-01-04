@@ -15,4 +15,9 @@
         text-justify: inter-word;
         font-family: "Doulos SIL", "TeX Gyre Termes", serif;
     }
+
+    .post-title,
+    .subtitle {
+        font-family: "Doulos SIL", "TeX Gyre Termes", serif;
+    }
 }
