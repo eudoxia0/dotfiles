@@ -46,6 +46,7 @@ ligand
 nanofabrication
 prodromal
 qubit
+qubits
 repo
 stderr
 stdin
