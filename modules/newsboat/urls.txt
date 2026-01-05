@@ -87,6 +87,7 @@ https://v5.chriskrycho.com/feed.xml
 https://venam.net/blog/feed.xml
 https://vgel.me/feed.xml
 https://vincent.bernat.ch/en/blog/atom.xml
+https://wareya.wordpress.com/feed/
 https://world-playground-deceit.net/global.xml
 https://www.agwa.name/blog/feed
 https://www.amoses.dev/rss.xml
