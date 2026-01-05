@@ -24,6 +24,7 @@ Syncthing
 TOML
 Terraform
 Waterhouse
+Weyl
 antisymmetry
 cloze
 combinatorial
@@ -44,6 +45,7 @@ growable
 hashcards
 ligand
 nanofabrication
+neurotypical
 prodromal
 qubit
 qubits
