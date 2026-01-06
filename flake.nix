@@ -50,7 +50,6 @@
         ./modules/haskell.nix
         ./modules/heic
         ./modules/heroic.nix
-        ./modules/inform7.nix
         ./modules/locale.nix
         ./modules/mime.nix
         ./modules/network.nix
@@ -103,13 +102,14 @@
             ./hosts/rostam/configuration.nix
             ./hosts/rostam/hardware-configuration.nix
             ./modules/bright.nix
+            ./modules/inform7.nix
             ./modules/ly
           ];
         };
 
         ismene = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
-          specialArgs = { inherit inform7-nix; };
+          # specialArgs = { inherit inform7-nix; };
           modules = shared ++ [
             ./hosts/ismene/configuration.nix
             ./hosts/ismene/hardware-configuration.nix
