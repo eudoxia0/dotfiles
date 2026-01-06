@@ -15,7 +15,6 @@
     dbeaver-bin
     djview
     evince
-    evolution
     file-roller
     flowtime
     foot
