@@ -87,7 +87,7 @@
 (defkey "C-s-e" "exec emacs")
 
 ;; Launch the file manager.
-(defkey "C-s-f" "exec thunar")
+(defkey "C-s-f" "exec thunar /home/eudoxia/root")
 
 ;; Launch the terminal.
 (defkey "C-s-c" "exec alacritty")
