@@ -19,5 +19,9 @@
       source = ./timestamp.py;
       executable = true;
     };
+    ".eudoxia.d/bin/find-syncthing-conflicts" = {
+      source = ./find-syncthing-conflicts.py;
+      executable = true;
+    };
   };
 }
