@@ -1,12 +1,17 @@
 AST
 AUD
 Anki
+Bitwarden
 Borretti
 Brouwer
 CLI
+ChatGPT
+ClickOps
 CloudFormation
 DM
 FSRS
+HCL
+IAM
 IaC
 Innsmouth
 Intuitionism
@@ -26,6 +31,7 @@ Terraform
 Waterhouse
 Weyl
 antisymmetry
+cloneable
 cloze
 combinatorial
 deanonymizing
@@ -50,6 +56,7 @@ prodromal
 qubit
 qubits
 repo
+repos
 stderr
 stdin
 stdout
