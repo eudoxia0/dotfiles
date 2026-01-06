@@ -59,6 +59,7 @@
         ./modules/nushell
         ./modules/perf.nix
         ./modules/polybar
+        ./modules/pulumi.nix
         ./modules/python.nix
         ./modules/redshift.nix
         ./modules/rm-xdg-dirs.nix
