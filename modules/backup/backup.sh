@@ -8,5 +8,5 @@ rsync --progress \
       --archive \
       --human-readable \
       --delete \
-      /home/eudoxia/Root/ \
-      /run/media/eudoxia/$1/Root
+      /home/eudoxia/root/ \
+      /run/media/eudoxia/$1/root

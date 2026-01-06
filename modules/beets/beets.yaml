@@ -1,5 +1,5 @@
-directory: ~/Root/music
-library: ~/Root/Databases/beets/musiclibrary.db
+directory: ~/root/music
+library: ~/root/Databases/beets/musiclibrary.db
 import:
   move: yes
 plugins:

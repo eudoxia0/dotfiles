@@ -1,8 +1,8 @@
-file:///home/eudoxia/Root
-file:///home/eudoxia/Root/0%20Inbox
-file:///home/eudoxia/Root/1-Workspace
-file:///home/eudoxia/Root/2%20Treasure
-file:///home/eudoxia/Root/3%20Areas
-file:///home/eudoxia/Root/4%20Library
-file:///home/eudoxia/Root/4%20Library/Images
-file:///home/eudoxia/Root/5%20Attic
+file:///home/eudoxia/root
+file:///home/eudoxia/root/0%20Inbox
+file:///home/eudoxia/root/1-Workspace
+file:///home/eudoxia/root/2%20Treasure
+file:///home/eudoxia/root/3%20Areas
+file:///home/eudoxia/root/4%20Library
+file:///home/eudoxia/root/4%20Library/Images
+file:///home/eudoxia/root/5%20Attic

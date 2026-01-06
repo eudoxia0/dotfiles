@@ -122,7 +122,7 @@
 	(month (stumpwm::time-month))
 	(day   (stumpwm::time-day-of-month-zero)))
     (let ((date (format nil "~a-~a-~a.md" year month day)))
-      (let ((path (format nil "~~/Root/2 Treasure/Journal/Daily/~a/~a/~a"
+      (let ((path (format nil "~~/root/2 Treasure/Journal/Daily/~a/~a/~a"
 			  year
 			  month
 			  date)))

@@ -32,8 +32,8 @@ in
     settings.folders = {
       "root" = {
         id = "root";
-        label = "Root";
-        path = "/home/eudoxia/Root";
+        label = "root";
+        path = "/home/eudoxia/root";
         devices = [ "rostam" ];
       };
     };
