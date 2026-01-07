@@ -23,7 +23,7 @@
 }
 
 @-moz-document domain("plfa.github.io") {
-    body {
+    article {
         font-family: "Doulos SIL";
         text-align: justify;
     }
