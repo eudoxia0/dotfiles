@@ -1,5 +1,6 @@
 AST
 AUD
+Agda
 Anki
 Bitwarden
 Borretti
@@ -10,6 +11,7 @@ ClickOps
 CloudFormation
 DM
 FSRS
+Gentzen
 HCL
 IAM
 IaC
@@ -49,6 +51,7 @@ expressivity
 frontmatter
 growable
 hashcards
+homomorphism
 ligand
 nanofabrication
 neurotypical
@@ -57,6 +60,7 @@ qubit
 qubits
 repo
 repos
+sequent
 stderr
 stdin
 stdout
