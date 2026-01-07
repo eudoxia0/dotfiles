@@ -21,3 +21,10 @@
         font-family: "Doulos SIL", "TeX Gyre Termes", serif;
     }
 }
+
+@-moz-document domain("plfa.github.io") {
+    body {
+        font-family: "Doulos SIL";
+        text-align: justify;
+    }
+}
