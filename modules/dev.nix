@@ -8,7 +8,6 @@
 
 {
   home-manager.users.eudoxia.home.packages = with pkgs; [
-    awscli2
     btop
     clang
     claude-code
