@@ -89,6 +89,14 @@
         "name": "",
         "url": "http://127.0.0.1:8384/"
     },
+    {
+        "name": "zetanom",
+        "url": "http://localhost:12001/"
+    },
+    {
+        "name": "thetis",
+        "url": "http://localhost:12002/"
+    },
     "separator",
     {
         "name": "nixpkg",
@@ -125,19 +133,6 @@
             {
                 "name": "flashcards",
                 "url": "https://github.com/eudoxia0/flashcards"
-            }
-        ]
-    },
-    {
-        "name": "Local",
-        "bookmarks": [
-            {
-                "name": "zetanom",
-                "url": "http://localhost:12001/"
-            },
-            {
-                "name": "thetis",
-                "url": "http://localhost:12002/"
             }
         ]
     }
