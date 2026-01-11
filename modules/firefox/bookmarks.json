@@ -90,11 +90,11 @@
         "url": "http://127.0.0.1:8384/"
     },
     {
-        "name": "zetanom",
+        "name": "",
         "url": "http://localhost:12001/"
     },
     {
-        "name": "thetis",
+        "name": "",
         "url": "http://localhost:12002/"
     },
     "separator",
