@@ -79,7 +79,6 @@
         ./modules/xscreensaver
         # ./modules/zed.nix
         ./modules/zellij
-        ./modules/zetanom
 
         # Make home-manager use system pkgs
         home-manager.nixosModules.home-manager
@@ -100,6 +99,7 @@
             ./modules/newsboat
             ./modules/backup
             ./modules/beets
+            ./modules/zetanom
             ./modules/ly
           ];
         };
