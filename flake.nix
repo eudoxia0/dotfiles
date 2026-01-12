@@ -81,7 +81,7 @@
         ./modules/xbrzscale.nix
         ./modules/xcape.nix
         ./modules/xscreensaver
-        ./modules/zed.nix
+        # ./modules/zed.nix
         ./modules/zellij
         ./modules/zetanom
 
