@@ -53,7 +53,6 @@
         ./modules/locale.nix
         ./modules/mime.nix
         ./modules/network.nix
-        ./modules/newsboat
         ./modules/nixconf.nix
         ./modules/nushell
         ./modules/perf.nix
@@ -100,6 +99,7 @@
             ./hosts/rostam/configuration.nix
             ./hosts/rostam/hardware-configuration.nix
             ./modules/bright.nix
+            ./modules/newsboat
             ./modules/ly
           ];
         };
