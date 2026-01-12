@@ -69,7 +69,6 @@
         ./modules/ssh.nix
         ./modules/stumpwm
         ./modules/sway
-        ./modules/syncthing
         ./modules/thetis.nix
         ./modules/thunar
         ./modules/todoist.nix
