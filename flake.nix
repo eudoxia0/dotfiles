@@ -77,7 +77,6 @@
         ./modules/xbrzscale.nix
         ./modules/xcape.nix
         ./modules/xscreensaver
-        # ./modules/zed.nix
         ./modules/zellij
 
         # Make home-manager use system pkgs
