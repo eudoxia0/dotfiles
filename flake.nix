@@ -93,13 +93,13 @@
           modules = shared ++ [
             ./hosts/rostam/configuration.nix
             ./hosts/rostam/hardware-configuration.nix
-            ./modules/bright.nix
-            ./modules/newsboat
             ./modules/backup
             ./modules/beets
-            ./modules/zetanom
-            ./modules/thetis.nix
+            ./modules/bright.nix
             ./modules/ly
+            ./modules/newsboat
+            ./modules/thetis.nix
+            ./modules/zetanom
           ];
         };
 
