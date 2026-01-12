@@ -87,10 +87,6 @@
     "separator",
     {
         "name": "",
-        "url": "http://127.0.0.1:8384/"
-    },
-    {
-        "name": "",
         "url": "http://localhost:12001/"
     },
     {
