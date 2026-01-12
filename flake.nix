@@ -66,7 +66,6 @@
         ./modules/ssh.nix
         ./modules/stumpwm
         ./modules/sway
-        ./modules/thetis.nix
         ./modules/thunar
         ./modules/todoist.nix
         ./modules/tools
@@ -99,6 +98,7 @@
             ./modules/backup
             ./modules/beets
             ./modules/zetanom
+            ./modules/thetis.nix
             ./modules/ly
           ];
         };
