@@ -28,8 +28,6 @@
         ./modules/agda.nix
         ./modules/alacritty
         ./modules/audio.nix
-        ./modules/backup
-        ./modules/beets
         ./modules/bluetooth.nix
         ./modules/cli.nix
         ./modules/desktop.nix
@@ -100,6 +98,8 @@
             ./hosts/rostam/hardware-configuration.nix
             ./modules/bright.nix
             ./modules/newsboat
+            ./modules/backup
+            ./modules/beets
             ./modules/ly
           ];
         };
