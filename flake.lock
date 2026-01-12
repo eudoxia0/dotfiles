@@ -1,23 +1,5 @@
 {
   "nodes": {
-    "flake-utils": {
-      "inputs": {
-        "systems": "systems"
-      },
-      "locked": {
-        "lastModified": 1731533236,
-        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -36,44 +18,6 @@
         "owner": "nix-community",
         "ref": "release-25.11",
         "repo": "home-manager",
-        "type": "github"
-      }
-    },
-    "inform7-nix": {
-      "inputs": {
-        "flake-utils": "flake-utils",
-        "inweb-src": "inweb-src",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1763952530,
-        "narHash": "sha256-AIFys4yz1hGXnZus0amRobln9p4t/ToDaPYAmj0A8vE=",
-        "owner": "mbrock",
-        "repo": "inform7-nix",
-        "rev": "ddd261991d2f68956068d7ad53fb4ba2993666ce",
-        "type": "github"
-      },
-      "original": {
-        "owner": "mbrock",
-        "repo": "inform7-nix",
-        "type": "github"
-      }
-    },
-    "inweb-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1760093261,
-        "narHash": "sha256-9kJT8YO3mDCfZe1ZlstC7tlBeY5KuDL4TVXSAQ8V3Zg=",
-        "owner": "ganelson",
-        "repo": "inweb",
-        "rev": "147001c346e6959a1f4801a6af3c3f522dd7db52",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ganelson",
-        "repo": "inweb",
         "type": "github"
       }
     },
@@ -96,23 +40,7 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "inform7-nix": "inform7-nix",
         "nixpkgs": "nixpkgs"
-      }
-    },
-    "systems": {
-      "locked": {
-        "lastModified": 1681028828,
-        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
-        "owner": "nix-systems",
-        "repo": "default",
-        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-systems",
-        "repo": "default",
-        "type": "github"
       }
     }
   },
