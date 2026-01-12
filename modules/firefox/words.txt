@@ -27,10 +27,12 @@ NixOS
 OCaml
 Postgres
 Pulumi
+Rothmaler
 Schmittian
 Syncthing
 TOML
 Terraform
+UUID
 Waterhouse
 Weyl
 antisymmetry
@@ -51,6 +53,7 @@ epitaxy
 equational
 expressivity
 frontmatter
+functors
 growable
 hashcards
 homomorphism
