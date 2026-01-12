@@ -97,12 +97,10 @@
       nixosConfigurations = {
         rostam = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
-          specialArgs = { inherit inform7-nix; };
           modules = shared ++ [
             ./hosts/rostam/configuration.nix
             ./hosts/rostam/hardware-configuration.nix
             ./modules/bright.nix
-            ./modules/inform7.nix
             ./modules/ly
           ];
         };
