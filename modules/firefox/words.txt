@@ -21,6 +21,7 @@ KaTeX
 Kobo
 LLM
 LaTeX
+Lenovo
 Makefile
 Nastaliq
 NixOS
