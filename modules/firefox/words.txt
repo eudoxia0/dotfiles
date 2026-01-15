@@ -9,6 +9,7 @@ CLI
 ChatGPT
 ClickOps
 CloudFormation
+CloudWatch
 DM
 FSRS
 Gentzen
