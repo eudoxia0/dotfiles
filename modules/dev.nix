@@ -29,6 +29,7 @@
     tokei
     tree
     vim
+    zed-editor
     zola
   ];
 }
