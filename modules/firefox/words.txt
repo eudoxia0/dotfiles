@@ -42,6 +42,7 @@ Waterhouse
 Weyl
 antisymmetry
 audiobook
+checkpointing
 cloneable
 cloze
 combinatorial
