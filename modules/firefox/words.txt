@@ -11,6 +11,7 @@ ClickOps
 CloudFormation
 CloudWatch
 DM
+Dockerfile
 FSRS
 Gentzen
 HCL
