@@ -12,6 +12,7 @@ CloudFormation
 CloudWatch
 DM
 Dockerfile
+ECR
 FSRS
 Gentzen
 HCL
