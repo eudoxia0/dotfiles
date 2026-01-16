@@ -11,7 +11,9 @@ in
 
   boot.initrd.luks.devices."luks-${deviceUuid}".device = "/dev/disk/by-uuid/${deviceUuid}";
 
-  fonts.fontconfig.defaultFonts.emoji = [ "Apple Color Emoji" ];
+  # fonts.fontconfig.defaultFonts.emoji = [ "Apple Color Emoji" ];
+  fonts.packages = [ pkgs.noto-fonts-color-emoji ];
+  fonts.fontconfig.defaultFonts.emoji = [ "Noto Color Emoji" ];
 
   home-manager.users.eudoxia.programs.git.settings.user = {
     signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILdw0/4AIQ4oAlhsFVTOix5ke+7iBgql2xHUEZxoPa3U fernando@borretti.me";
