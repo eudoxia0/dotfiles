@@ -37,6 +37,7 @@ Schmittian
 Syncthing
 TOML
 Terraform
+Todoist
 UUID
 Waterhouse
 Weyl
