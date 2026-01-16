@@ -37,6 +37,6 @@ Screenshots and information about the various hosts.
 
 ## License
 
-© 2013-2025 by [Fernando Borretti][fb]. Licensed under the MIT license.
+© 2013-2026 by [Fernando Borretti][fb]. Licensed under the MIT license.
 
 [fb]: https://borretti.me/
