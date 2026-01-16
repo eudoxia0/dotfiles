@@ -76,6 +76,7 @@ stderr
 stdin
 stdout
 sudo
+systemd
 todo
 transhumanism
 transhumanist
