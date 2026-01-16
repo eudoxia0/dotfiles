@@ -11,9 +11,6 @@ in
 
   boot.initrd.luks.devices."luks-${deviceUuid}".device = "/dev/disk/by-uuid/${deviceUuid}";
 
-  fonts.packages = [ pkgs.noto-fonts-color-emoji ];
-  fonts.fontconfig.defaultFonts.emoji = [ "Noto Color Emoji" ];
-
   home-manager.users.eudoxia.programs.git.settings.user = {
     signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIcjDwuJ2FcXmZ7RQihS65HIJQbLqjqRkzRttdLUDhrs fernando@borretti.me";
   };
