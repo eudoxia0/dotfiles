@@ -6,8 +6,6 @@
 }:
 
 {
-  # Don't enable the default NixOS fonts. Mostly because this includes Noto
-  # emojis.
   fonts.enableDefaultPackages = true;
 
   # Custom fonts.
