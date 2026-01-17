@@ -93,6 +93,10 @@
         "name": "",
         "url": "http://localhost:12002/"
     },
+    {
+        "name": "",
+        "url": "http://localhost:12003/"
+    },
     "separator",
     {
         "name": "nixpkg",
