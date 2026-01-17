@@ -41,6 +41,8 @@ Todoist
 UUID
 Waterhouse
 Weyl
+Yudkowsky
+actionability
 antisymmetry
 audiobook
 checkpointing
