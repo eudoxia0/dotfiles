@@ -36,6 +36,17 @@
     enable = true;
     libraries = with pkgs; [
       libGLU
+      libGL
+      xorg.libX11
+      xorg.libXcursor
+      xorg.libXrandr
+      xorg.libXi
+      xorg.libXext
+      xorg.libXxf86vm
+      openal
+      libpulseaudio
+      alsa-lib
+      stdenv.cc.cc.lib
     ];
   };
 }
