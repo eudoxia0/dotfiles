@@ -32,5 +32,10 @@
   nix.settings.warn-dirty = false;
 
   # Enable the nix-ld shim.
-  programs.nix-ld.enable = true;
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      libGLU
+    ];
+  };
 }
