@@ -36,6 +36,8 @@
       "text/html" = [ "firefox.desktop" ];
       "text/markdown" = [ "emacs.desktop" ];
       "text/plain" = [ "emacs.desktop" ];
+      "text/xml" = [ "emacs.desktop" ];
+      "application/xml" = [ "emacs.desktop" ];
       "x-scheme-handler/http" = [ "firefox.desktop" ];
       "x-scheme-handler/https" = [ "firefox.desktop" ];
     };
