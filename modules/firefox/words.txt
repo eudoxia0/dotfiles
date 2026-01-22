@@ -32,6 +32,7 @@ NixOS
 OCaml
 Postgres
 Pulumi
+ReadEra
 Rothmaler
 Schmittian
 Syncthing
