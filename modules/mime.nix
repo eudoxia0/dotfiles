@@ -16,7 +16,7 @@
     enable = true;
     defaultApplications = {
       "application/epub+zip" = [ "koreader.desktop" ];
-      "application/pdf" = [ "org.pwmt.zathura.desktop" ];
+      "application/pdf" = [ "org.gnome.Evince.desktop" ];
       "application/vnd.amazon.ebook" = [ "koreader.desktop" ];
       "application/x-fictionbook+xml" = [ "koreader.desktop" ];
       "application/x-mobipocket-ebook" = [ "koreader.desktop" ];
