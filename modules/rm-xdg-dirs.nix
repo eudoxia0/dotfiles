@@ -42,8 +42,8 @@ in
       Description = "Timer for cleaning up unwanted XDG user directories";
     };
     Timer = {
-      OnBootSec = "5m";
-      OnUnitActiveSec = "10m";
+      OnBootSec = "3m";
+      OnUnitActiveSec = "3m";
     };
     Install = {
       WantedBy = [ "timers.target" ];
