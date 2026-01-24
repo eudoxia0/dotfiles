@@ -71,6 +71,7 @@ frontmatter
 functors
 growable
 hashcards
+headshots
 homomorphism
 ligand
 matcha
