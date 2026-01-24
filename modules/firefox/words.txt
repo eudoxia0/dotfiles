@@ -86,6 +86,7 @@ stdout
 sudo
 systemd
 todo
+transhuman
 transhumanism
 transhumanist
 uncountably
