@@ -66,6 +66,7 @@ dually
 epitaxy
 equational
 expressivity
+frontend
 frontmatter
 functors
 growable
