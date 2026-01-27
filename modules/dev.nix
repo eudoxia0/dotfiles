@@ -26,6 +26,7 @@
     nixfmt-tree
     sass
     sqlite
+    texliveSmall
     tokei
     tree
     vim

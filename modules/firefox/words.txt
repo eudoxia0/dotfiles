@@ -1,3 +1,4 @@
+ADHD
 AST
 AUD
 Agda
@@ -30,8 +31,10 @@ Makefile
 Nastaliq
 NixOS
 OCaml
+OSS
 Postgres
 Pulumi
+Rahul
 ReadEra
 Rothmaler
 Schmittian
@@ -63,10 +66,13 @@ dually
 epitaxy
 equational
 expressivity
+fluvoxamine
+frontend
 frontmatter
 functors
 growable
 hashcards
+headshots
 homomorphism
 ligand
 matcha
@@ -85,6 +91,7 @@ sudo
 symplectic
 systemd
 todo
+transhuman
 transhumanism
 transhumanist
 uncountably
