@@ -82,6 +82,7 @@ stderr
 stdin
 stdout
 sudo
+symplectic
 systemd
 todo
 transhumanism
