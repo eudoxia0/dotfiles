@@ -28,6 +28,7 @@ LLM
 LaTeX
 Lenovo
 Makefile
+Methylphenidate
 Nastaliq
 NixOS
 OCaml
