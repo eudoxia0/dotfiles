@@ -98,6 +98,8 @@ in
           lsp-ui
           magit
           marginalia
+          zerodark-theme
+          zenburn-theme
           markdown-mode
           moe-theme
           nano-theme

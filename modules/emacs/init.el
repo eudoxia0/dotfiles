@@ -176,7 +176,9 @@
     whiteboard
     wilson
     wombat
-    wheatgrass))
+    wheatgrass
+    zenburn
+    zerodark))
 
 (defvar my-default-theme 'kaolin-mono-light)
 
