@@ -92,6 +92,7 @@ stdout
 sudo
 symplectic
 systemd
+theatre
 todo
 transhuman
 transhumanism
