@@ -11,6 +11,7 @@
     btop
     clang
     claude-code
+    codex
     curl
     fd
     ghostscript
