@@ -21,4 +21,8 @@
   };
 
   home-manager.users.eudoxia.home.file.".config/sway/config".source = ./sway.conf;
+
+  environment.variables = {
+    MOZ_ENABLE_WAYLAND = "1";
+  };
 }
