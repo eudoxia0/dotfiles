@@ -2,14 +2,6 @@ matches:
   - trigger: ":espanso"
     replace: "Hi there!"
 
-  - trigger: ":date"
-    replace: "{{mydate}}"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%Y-%m-%d"
-
   # Emojis
   - { trigger: ":admin", replace: "📝" }
   - { trigger: ":alarm", replace: "⏰" }
