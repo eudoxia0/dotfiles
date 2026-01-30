@@ -21,7 +21,6 @@
         postBuild = ''
           wrapProgram $out/bin/todoist-electron \
             --set TZ "Australia/Sydney" \
-            --add-flags "--enable-features=UseOzonePlatform --ozone-platform=wayland"
         '';
       };
     })
