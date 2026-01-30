@@ -37,7 +37,6 @@
     protonmail-desktop
     quodlibet
     seahorse
-    signal-desktop
     strawberry
     sxiv
     transmission_4-gtk
@@ -48,5 +47,19 @@
     wdisplays
     wev
     zathura
+  ];
+
+  nixpkgs.overlays = [
+    (self: super: {
+      signal-desktop = super.symlinkJoin {
+        name = "signal-desktop";
+        paths = [ super.signal-desktop ];
+        buildInputs = [ super.makeWrapper ];
+        postBuild = ''
+          wrapProgram $out/bin/signal-desktop \
+            --add-flags "--enable-features=UseOzonePlatform --ozone-platform=wayland"
+        '';
+      };
+    })
   ];
 }
