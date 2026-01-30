@@ -36,6 +36,7 @@
     protonmail-desktop
     quodlibet
     seahorse
+    signal-desktop
     strawberry
     sxiv
     transmission_4-gtk
