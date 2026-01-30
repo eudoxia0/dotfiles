@@ -220,6 +220,7 @@ binds {
     Super+Shift+Slash { show-hotkey-overlay; }
     Super+Ctrl+C { spawn "alacritty"; }
     Super+Ctrl+W { spawn "firefox"; }
+    Super+Ctrl+F { spawn "thunar" "~/root" }
     Super+R { spawn "fuzzel"; }
     Pause { spawn "swaylock"; }
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
