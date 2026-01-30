@@ -94,7 +94,7 @@
             ./modules/backup
             ./modules/beets
             ./modules/bright.nix
-            ./modules/sddm.nix
+            ./modules/ly
             ./modules/newsboat
             ./modules/thetis.nix
             ./modules/zetanom
