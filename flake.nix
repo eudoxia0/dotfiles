@@ -36,6 +36,7 @@
         ./modules/fastfetch
         ./modules/firefox
         ./modules/font
+        ./modules/foot.nix
         ./modules/gargoyle
         ./modules/gh.nix
         ./modules/git.nix

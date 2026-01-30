@@ -17,7 +17,6 @@
     evince
     file-roller
     flowtime
-    foot
     gimp3
     gnome-disk-utility
     gnome-feeds
