@@ -20,7 +20,7 @@
         buildInputs = [ super.makeWrapper ];
         postBuild = ''
           wrapProgram $out/bin/todoist-electron \
-            --set TZ "Australia/Sydney"
+            --set TZ "Australia/Sydney" --ozone-platform-hint=auto
         '';
       };
     })

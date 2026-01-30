@@ -230,7 +230,7 @@ binds {
     Mod+Ctrl+Down  { move-window-down; }
     Mod+Ctrl+E { spawn "emacs"; }
     Mod+Ctrl+End  { move-column-to-last; }
-    Mod+Ctrl+F { spawn "thunar" "~/root"; }
+    Mod+Ctrl+F { spawn "thunar" "/home/eudoxia/root"; }
     Mod+Ctrl+Home { move-column-to-first; }
     Mod+Ctrl+Left  { move-column-left; }
     Mod+Ctrl+Right { move-column-right; }
