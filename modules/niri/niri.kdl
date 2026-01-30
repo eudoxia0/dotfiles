@@ -216,18 +216,6 @@ window-rule {
     open-floating true
 }
 
-// Example: block out two password managers from screen capture.
-// (This example rule is commented out with a "/-" in front.)
-/-window-rule {
-    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
-    match app-id=r#"^org\.gnome\.World\.Secrets$"#
-
-    block-out-from "screen-capture"
-
-    // Use this instead if you want them visible on third-party screenshot tools.
-    // block-out-from "screencast"
-}
-
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
