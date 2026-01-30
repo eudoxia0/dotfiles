@@ -46,6 +46,7 @@
     vlc
     vscode
     wdisplays
+    wev
     zathura
   ];
 }
