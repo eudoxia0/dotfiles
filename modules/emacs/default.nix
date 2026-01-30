@@ -98,8 +98,6 @@ in
           lsp-ui
           magit
           marginalia
-          zerodark-theme
-          zenburn-theme
           markdown-mode
           moe-theme
           nano-theme
@@ -119,6 +117,8 @@ in
           vertico
           web-mode
           yaml-mode
+          zenburn-theme
+          zerodark-theme
         ];
     };
 
