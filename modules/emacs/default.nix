@@ -79,7 +79,7 @@ in
   home-manager.users.eudoxia = {
     programs.emacs = {
       enable = true;
-      package = pkgs.emacs-gtk;
+      package = pkgs.emacs-pgtk;
       extraPackages =
         epkgs: with epkgs; [
           agda2-mode
