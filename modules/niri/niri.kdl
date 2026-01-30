@@ -218,7 +218,6 @@ window-rule {
 
 binds {
     Super+Shift+Slash { show-hotkey-overlay; }
-    Super+Ctrl+C
     Super+Ctrl+C { spawn "alacritty"; }
     Super+Ctrl+W { spawn "firefox"; }
     Super+R { spawn "fuzzel"; }
