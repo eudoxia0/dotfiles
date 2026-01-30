@@ -23,5 +23,9 @@
       source = ./find-syncthing-conflicts.py;
       executable = true;
     };
+    ".eudoxia.d/bin/compress-pdf" = {
+      source = ./compress-pdf.sh;
+      executable = true;
+    };
   };
 }
