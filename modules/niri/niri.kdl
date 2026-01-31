@@ -302,4 +302,4 @@ hotkey-overlay {
 }
 
 spawn-at-startup "waybar"
-spawn-at-startup "swaybg --image=/home/eudoxia/.eudoxia.d/data/wallpaper/panther.jpg --mode=fill"
+spawn-at-startup "swaybg" "--image=/home/eudoxia/.eudoxia.d/data/wallpaper/panther.jpg" "--mode=fill"
