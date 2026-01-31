@@ -1,6 +1,5 @@
 // -*- mode: jsonc -*-
 {
-  "layer": "top", // Waybar at top layer
   "position": "top",
   "height": 30,
   "spacing": 4,
