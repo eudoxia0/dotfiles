@@ -258,7 +258,6 @@ binds {
     Mod+Shift+8 { move-column-to-workspace 8; }
     Mod+Shift+9 { move-column-to-workspace 9; }
     Mod+Shift+Q { quit; }
-    Mod+Shift+Slash { show-hotkey-overlay; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
     Mod+Up    { focus-window-up; }
     Mod+V       { toggle-window-floating; }
