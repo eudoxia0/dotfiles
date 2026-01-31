@@ -228,6 +228,7 @@ binds {
     Mod+7 { focus-workspace 7; }
     Mod+8 { focus-workspace 8; }
     Mod+9 { focus-workspace 9; }
+    Mod+C { switch-preset-column-width; }
     Mod+Ctrl+C { spawn "alacritty"; }
     Mod+Ctrl+Down  { move-window-down; }
     Mod+Ctrl+E { spawn "emacs"; }
