@@ -70,6 +70,7 @@
         ./modules/typst.nix
         ./modules/vagrant.nix
         ./modules/wallpaper
+        ./modules/waybar
         ./modules/x11
         ./modules/xbrzscale.nix
         ./modules/xcape.nix
