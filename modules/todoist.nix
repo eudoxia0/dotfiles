@@ -20,8 +20,7 @@
         buildInputs = [ super.makeWrapper ];
         postBuild = ''
           wrapProgram $out/bin/todoist-electron \
-            --set TZ "Australia/Sydney" \
-            --add-flags "--enable-features=UseOzonePlatform"
+            --set TZ "Australia/Sydney"
         '';
       };
     })
