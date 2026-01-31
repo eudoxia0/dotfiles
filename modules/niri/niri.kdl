@@ -30,7 +30,7 @@ output "DP-1" {
 
 layout {
     // Gaps around windows.
-    gaps 16
+    gaps 32
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
