@@ -24,7 +24,7 @@ output "DP-1" {
     // If the mode is omitted altogether or is invalid, niri will pick one automatically.
     // Run `niri msg outputs` while inside a niri instance to list all outputs and their modes.
     mode "3840x2160@59.997"
-    scale 1.5
+    scale 1.3
     transform "normal"
 }
 
