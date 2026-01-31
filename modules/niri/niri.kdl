@@ -181,9 +181,6 @@ layout {
     }
 }
 
-// This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "waybar"
-
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 
@@ -299,3 +296,6 @@ binds {
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
     XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
 }
+
+spawn-at-startup "waybar"
+spawn-at-startup "swaybg --image=/home/eudoxia/.eudoxia.d/data/wallpaper/panther.jpg --mode=fill"
