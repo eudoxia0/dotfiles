@@ -11,6 +11,9 @@
   ...
 }:
 
+let
+  image-viewer = "org.xfce.ristretto.desktop"
+in
 {
   home-manager.users.eudoxia.xdg.mimeApps = {
     enable = true;
@@ -23,16 +26,16 @@
       "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = [
         "writer.desktop"
       ];
-      "image/avif" = [ "viewnior.desktop" ];
-      "image/gif" = [ "viewnior.desktop" ];
-      "image/jpeg" = [ "viewnior.desktop" ];
-      "image/png" = [ "viewnior.desktop" ];
-      "image/svg+xml" = [ "viewnior.desktop" ];
+      "image/avif" = [ image-viewer ];
+      "image/gif" = [ image-viewer ];
+      "image/jpeg" = [ image-viewer ];
+      "image/png" = [ image-viewer ];
+      "image/svg+xml" = [ image-viewer ];
       "image/vnd.djvu" = [ "djvulibre-djview4.desktop" ];
-      "image/vnd.microsoft.icon" = [ "viewnior.desktop" ];
-      "image/webp" = [ "viewnior.desktop" ];
+      "image/vnd.microsoft.icon" = [ image-viewer ];
+      "image/webp" = [ image-viewer ];
       "image/x-djvu" = [ "djvulibre-djview4.desktop" ];
-      "image/x-icon" = [ "viewnior.desktop" ];
+      "image/x-icon" = [ image-viewer ];
       "text/html" = [ "firefox.desktop" ];
       "text/markdown" = [ "emacs.desktop" ];
       "text/plain" = [ "emacs.desktop" ];
