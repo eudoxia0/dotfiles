@@ -24,6 +24,7 @@
     nika-fonts
     noto-fonts
     noto-fonts-cjk-sans
+    font-awesome
     terminus_font
     terminus_font_ttf
     texlivePackages.times
