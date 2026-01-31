@@ -168,3 +168,6 @@
 (run-shell-command "systemctl --user start nm-applet")
 (run-shell-command "systemctl --user start xcape")
 (run-shell-command "systemctl --user start xdg-desktop-portal-gtk")
+
+(setf (getenv "GDK_DPI_SCALE") "1.5")
+(setf (getenv "QT_SCALE_FACTOR") "1.5")
