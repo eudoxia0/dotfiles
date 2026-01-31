@@ -13,6 +13,21 @@ input {
     focus-follows-mouse max-scroll-amount="0%"
 }
 
+output "DP-1" {
+    // Uncomment this line to disable this output.
+    // off
+
+    // Resolution and, optionally, refresh rate of the output.
+    // The format is "<width>x<height>" or "<width>x<height>@<refresh rate>".
+    // If the refresh rate is omitted, niri will pick the highest refresh rate
+    // for the resolution.
+    // If the mode is omitted altogether or is invalid, niri will pick one automatically.
+    // Run `niri msg outputs` while inside a niri instance to list all outputs and their modes.
+    mode "3840x2160@59.997"
+    scale 1
+    transform "normal"
+}
+
 layout {
     // Gaps around windows.
     gaps 16
