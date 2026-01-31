@@ -57,7 +57,7 @@
         buildInputs = [ super.makeWrapper ];
         postBuild = ''
           wrapProgram $out/bin/signal-desktop \
-            --add-flags "--enable-features=UseOzonePlatform"
+            --add-flags "--enable-features=UseOzonePlatform --ozone-platform-hint=auto"
         '';
       };
     })
