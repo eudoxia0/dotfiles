@@ -57,7 +57,7 @@ layout {
     // preset-window-heights { }
 
     // You can change the default width of the new windows.
-    default-column-width { proportion 0.5; }
+    default-column-width { proportion 1; }
     // If you leave the brackets empty, the windows themselves will decide their initial width.
     // default-column-width {}
 
