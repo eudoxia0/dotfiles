@@ -42,6 +42,7 @@
     transmission_4-gtk
     v4l-utils
     viewnior
+    xfce.ristretto
     vlc
     vscode
     wdisplays
