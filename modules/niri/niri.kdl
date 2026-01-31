@@ -1,6 +1,8 @@
 input {
     keyboard {
-        // Enable numlock on startup.
+        xkb {
+            layout "us"
+        }
         numlock
     }
 
