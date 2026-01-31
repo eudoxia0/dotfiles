@@ -244,6 +244,7 @@ binds {
     Mod+Ctrl+U         { move-column-to-workspace-down; }
     Mod+Ctrl+Up    { move-window-up; }
     Mod+Ctrl+W { spawn "firefox"; }
+    Mod+Ctrl+A { spawn "todoist-electron" "--enable-features=UseOzonePlatform" "--ozone-platform=wayland"; }
     Mod+Down  { focus-window-down; }
     Mod+End  { focus-column-last; }
     Mod+Equal { set-column-width "+10%"; }
