@@ -12,7 +12,8 @@
 }:
 
 let
-  image-viewer = "org.xfce.ristretto.desktop";
+  # image-viewer = "org.xfce.ristretto.desktop";
+  image-viewer = "viewnior.desktop";
 in
 {
   home-manager.users.eudoxia.xdg.mimeApps = {
