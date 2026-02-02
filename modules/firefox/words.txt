@@ -17,6 +17,7 @@ ECR
 ECS
 FSRS
 Gentzen
+Gliese
 HCL
 IAM
 IaC
