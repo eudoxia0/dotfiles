@@ -23,6 +23,7 @@
         ./modules/agda.nix
         ./modules/alacritty
         ./modules/audio.nix
+        ./modules/backup
         ./modules/bluetooth.nix
         ./modules/cli.nix
         ./modules/desktop.nix
@@ -92,7 +93,6 @@
           modules = shared ++ [
             ./hosts/rostam/configuration.nix
             ./hosts/rostam/hardware-configuration.nix
-            ./modules/backup
             ./modules/beets
             ./modules/bright.nix
             ./modules/ly
