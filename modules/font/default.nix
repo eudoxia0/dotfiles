@@ -13,7 +13,6 @@
     dejavu_fonts
     doulos-sil
     fira-code
-    freefont_ttf
     gyre-fonts
     inconsolata
     iosevka
