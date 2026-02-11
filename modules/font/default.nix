@@ -24,7 +24,6 @@
     noto-fonts-cjk-serif
     terminus_font
     terminus_font_ttf
-    texlivePackages.times
     u001-font
     unifont
   ];
