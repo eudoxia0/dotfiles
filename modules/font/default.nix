@@ -13,6 +13,7 @@
     dejavu_fonts
     doulos-sil
     fira-code
+    font-awesome
     freefont_ttf
     gyre-fonts
     inconsolata
@@ -22,9 +23,9 @@
     libertinus
     newcomputermodern
     nika-fonts
-    noto-fonts
+    noto-fonts-color-emoji
     noto-fonts-cjk-sans
-    font-awesome
+    noto-fonts-cjk-serif
     terminus_font
     terminus_font_ttf
     texlivePackages.times
