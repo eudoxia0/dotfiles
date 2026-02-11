@@ -15,7 +15,6 @@
     fira-code
     gyre-fonts
     inconsolata
-    iosevka
     jetbrains-mono
     liberation_ttf
     libertinus
