@@ -25,7 +25,6 @@
     terminus_font
     terminus_font_ttf
     u001-font
-    unifont
   ];
 
   # fontconfig settings
