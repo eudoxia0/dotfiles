@@ -49,6 +49,7 @@ Uber
 Waterhouse
 Weyl
 Yudkowsky
+Zindell
 actionability
 antisymmetry
 audiobook
