@@ -19,9 +19,10 @@
     libertinus
     newcomputermodern
     nika-fonts
-    noto-fonts-color-emoji
+    noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-cjk-serif
+    noto-fonts-color-emoji
     terminus_font
     terminus_font_ttf
     u001-font
