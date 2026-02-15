@@ -20,6 +20,10 @@ window#waybar {
     background-color: #333333;
 }
 
+#workspaces button:hover {
+    background: black;
+}
+
 #clock,
 #tray {
     padding: 0 10px;
