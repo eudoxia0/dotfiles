@@ -5,24 +5,11 @@
   "spacing": 4,
   "modules-left": [],
   "modules-center": [],
-  "modules-right": ["network", "tray", "clock"],
+  "modules-right": ["tray", "clock"],
   "tray": {
-    // "icon-size": 21,
     "spacing": 10,
-    // "icons": {
-    //   "blueman": "bluetooth",
-    //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
-    // }
   },
   "clock": {
     "format": "{:%a, %d %b %Y, %I:%M%p}",
-  },
-  "network": {
-    "format-wifi": "{essid} ({signalStrength}%) ",
-    "format-ethernet": "{ipaddr}/{cidr} ",
-    "tooltip-format": "{ifname} via {gwaddr} ",
-    "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "Disconnected ⚠",
-    "format-alt": "{ifname}: {ipaddr}/{cidr}",
   },
 }
