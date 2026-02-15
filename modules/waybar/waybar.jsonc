@@ -5,7 +5,7 @@
   "spacing": 4,
   "modules-left": [],
   "modules-center": [],
-  "modules-right": ["pulseaudio", "network", "clock", "tray"],
+  "modules-right": ["pulseaudio", "network", "tray", "clock"],
   "tray": {
     // "icon-size": 21,
     "spacing": 10,
