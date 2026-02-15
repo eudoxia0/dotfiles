@@ -18,6 +18,7 @@
   },
   "tray": {
     "spacing": 10,
+    "icon-size": 21,
   },
   "clock": {
     "format": "{:%a, %d %b %Y, %I:%M%p}",
