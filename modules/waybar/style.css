@@ -22,7 +22,6 @@ window#waybar {
 
 #workspaces button.focused {
     background-color: #333333;
-    font-weight: bold;
 }
 
 #workspaces button:hover {
