@@ -13,7 +13,6 @@
     dejavu_fonts
     doulos-sil
     fira-code
-    font-awesome
     gyre-fonts
     inconsolata
     liberation_ttf
