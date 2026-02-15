@@ -16,6 +16,10 @@ window#waybar {
     border-radius: 0;
 }
 
+#workspaces button:not(.empty) {
+    font-weight: bold;
+}
+
 #workspaces button.focused {
     background-color: #333333;
     font-weight: bold;
