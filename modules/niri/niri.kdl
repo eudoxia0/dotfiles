@@ -257,7 +257,7 @@ binds {
     Mod+Page_Down      { focus-workspace-down; }
     Mod+Page_Up        { focus-workspace-up; }
     Mod+Q repeat=false { close-window; }
-    Mod+R { spawn "fuzzel"; }
+    Mod+R { spawn "wmenu-run"; }
     Mod+Right { focus-column-right; }
     Mod+Shift+1 { move-column-to-workspace 1; }
     Mod+Shift+2 { move-column-to-workspace 2; }

@@ -9,7 +9,6 @@
   programs.niri.enable = true;
 
   home-manager.users.eudoxia.home.packages = with pkgs; [
-    fuzzel
     swaylock
     swaybg
   ];
