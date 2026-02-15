@@ -1,26 +1,26 @@
 * {
-  font-family: monospace;
-  font-size: 14px;
+    font-family: monospace;
+    font-size: 14px;
 }
 
 window#waybar {
-  background-color: #000000;
-  color: #ffffff;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 #workspaces button {
-  color: #ffffff;
-  background-color: transparent;
-  padding: 0 5px;
-  border: none;
-  border-radius: 0;
+    color: #ffffff;
+    background-color: transparent;
+    padding: 0 5px;
+    border: none;
+    border-radius: 0;
 }
 
 #workspaces button.focused {
-  background-color: #333333;
+    background-color: #333333;
 }
 
 #clock,
 #tray {
-  padding: 0 10px;
+    padding: 0 10px;
 }
