@@ -3,9 +3,18 @@
   "position": "top",
   "height": 30,
   "spacing": 4,
-  "modules-left": [],
+  "modules-left": ["sway/workspaces"],
   "modules-center": [],
   "modules-right": ["tray", "clock"],
+  "sway/workspaces": {
+    "persistent-workspaces": {
+      "α": [],
+      "β": [],
+      "γ": [],
+      "δ": [],
+      "ε": [],
+    },
+  },
   "tray": {
     "spacing": 10,
   },
