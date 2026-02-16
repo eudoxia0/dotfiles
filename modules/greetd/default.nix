@@ -11,7 +11,7 @@
     settings = {
       background = {
         path = "${../wallpaper/panther.jpg}";
-        fit = "Contain";
+        fit = "Cover";
       };
     };
   };
