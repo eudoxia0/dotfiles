@@ -42,6 +42,7 @@
         ./modules/gargoyle
         ./modules/gh.nix
         ./modules/git.nix
+        ./modules/greetd.nix
         ./modules/gtk.nix
         ./modules/guile
         ./modules/haskell.nix
@@ -96,7 +97,6 @@
             ./hosts/rostam/hardware-configuration.nix
             ./modules/beets
             ./modules/bright.nix
-            ./modules/greetd.nix
             ./modules/newsboat
             ./modules/thetis.nix
             ./modules/zetanom
@@ -108,7 +108,6 @@
           modules = shared ++ [
             ./hosts/ismene/configuration.nix
             ./hosts/ismene/hardware-configuration.nix
-            ./modules/ly
           ];
         };
       };
