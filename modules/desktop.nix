@@ -5,16 +5,11 @@
   ...
 }:
 
-let
-  bemoji-ydotool = pkgs.writeShellScriptBin "bemoji-ydotool" ''
-    export BEMOJI_TYPE_CMD='ydotool type --file -'
-    exec bemoji -t "$@"
-  '';
-in
 {
   home-manager.users.eudoxia.home.packages = with pkgs; [
     appimage-run
     baobab
+    bemoji
     calibre
     cheese
     chromium
@@ -43,14 +38,12 @@ in
     transmission_4-gtk
     v4l-utils
     viewnior
-    xfce.ristretto
     vlc
     vscode
     wdisplays
     wev
-    bemoji
-    ydotool
-    bemoji-ydotool
+    wtype
+    xfce.ristretto
     zathura
   ];
 
