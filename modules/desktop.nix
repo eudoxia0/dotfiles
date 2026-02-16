@@ -18,7 +18,6 @@
     file-roller
     gimp3
     gnome-disk-utility
-    gnome-solanum
     gnucash
     gnumeric
     gparted
