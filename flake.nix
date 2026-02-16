@@ -70,7 +70,6 @@
         ./modules/wallpaper
         ./modules/waybar
         ./modules/x11
-        ./modules/xcape.nix
         ./modules/xscreensaver
 
         # Make home-manager use system pkgs
