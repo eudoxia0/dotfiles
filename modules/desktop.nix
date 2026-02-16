@@ -45,7 +45,6 @@
     vscode
     wdisplays
     wev
-    wtype
     xfce.ristretto
     zathura
   ];
