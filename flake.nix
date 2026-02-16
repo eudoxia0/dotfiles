@@ -73,7 +73,6 @@
         ./modules/wallpaper
         ./modules/waybar
         ./modules/x11
-        ./modules/xbrzscale.nix
         ./modules/xcape.nix
         ./modules/xscreensaver
         ./modules/zellij
