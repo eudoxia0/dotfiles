@@ -10,8 +10,8 @@
     enable = true;
     settings = {
       background = {
-        path = "/home/eudoxia/.eudoxia.d/data/wallpaper/panther.jpg";
-        fit = "Fill";
+        path = "${../wallpaper/panther.jpg}";
+        fit = "Contain";
       };
     };
   };
