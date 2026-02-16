@@ -10,7 +10,7 @@
     enable = true;
     settings = {
       background = {
-        path = "${../wallpaper/panther.jpg}";
+        path = "${./wallpaper/panther.jpg}";
         fit = "Cover";
       };
     };
