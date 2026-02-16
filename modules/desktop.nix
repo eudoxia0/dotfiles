@@ -16,7 +16,6 @@
     djview
     evince
     file-roller
-    flowtime
     gimp3
     gnome-disk-utility
     gnome-feeds
