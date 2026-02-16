@@ -5,7 +5,7 @@
   "spacing": 4,
   "modules-left": ["sway/workspaces"],
   "modules-center": [],
-  "modules-right": ["tray", "battery", "clock"],
+  "modules-right": ["tray", "wireplumber", "battery", "clock"],
   "sway/workspaces": {
     "persistent-workspaces": {
       "α": [],
@@ -19,6 +19,11 @@
   "tray": {
     "spacing": 10,
     "icon-size": 21,
+  },
+  "wireplumber": {
+    "format": "VOL {volume}%",
+    "format-muted": "MUTE",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
   },
   "battery": {
     "states": {
