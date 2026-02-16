@@ -5,6 +5,12 @@
   ...
 }:
 
+let
+  bemoji-ydotool = pkgs.writeShellScriptBin "bemoji-ydotool" ''
+    export BEMOJI_TYPE_CMD='ydotool type --file -'
+    exec bemoji -t "$@"
+  '';
+in
 {
   home-manager.users.eudoxia.home.packages = with pkgs; [
     appimage-run
@@ -42,7 +48,9 @@
     vscode
     wdisplays
     wev
-    wofi-emoji
+    bemoji
+    ydotool
+    bemoji-ydotool
     zathura
   ];
 
