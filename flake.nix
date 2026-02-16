@@ -69,7 +69,6 @@
         ./modules/todoist.nix
         ./modules/tools
         ./modules/typst.nix
-        ./modules/vagrant.nix
         ./modules/wallpaper
         ./modules/waybar
         ./modules/x11
