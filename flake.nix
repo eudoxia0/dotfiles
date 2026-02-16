@@ -29,6 +29,7 @@
         ./modules/dev.nix
         ./modules/docker.nix
         ./modules/emacs
+        ./modules/emote.nix
         ./modules/epoch.nix
         # ./modules/espanso
         ./modules/eudoxia.nix
