@@ -47,6 +47,7 @@
     vscode
     wdisplays
     wev
+    wofi-emoji
     zathura
   ];
 
