@@ -23,7 +23,7 @@ in
     enable = true;
     settings = {
       background = {
-        path = /home/eudoxia/.eudoxia.d/data/wallpaper/panther.jpg;
+        path = "/home/eudoxia/.eudoxia.d/data/wallpaper/panther.jpg";
         fit = "Cover";
       };
       GTK = {
