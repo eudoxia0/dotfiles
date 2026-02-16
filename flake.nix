@@ -30,7 +30,7 @@
         ./modules/docker.nix
         ./modules/emacs
         ./modules/epoch.nix
-        ./modules/espanso
+        # ./modules/espanso
         ./modules/eudoxia.nix
         ./modules/fastfetch
         ./modules/firefox
