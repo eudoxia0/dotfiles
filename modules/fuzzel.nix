@@ -13,7 +13,7 @@ let
       "Calibre") calibre ;;
       "Journal") chromium-browser --app=http://localhost:12003/ ;;
       "Todoist") todoist-wayland ;;
-      "Zed") zed ;;
+      "Zed") zeditor ;;
     esac
   '';
 in
