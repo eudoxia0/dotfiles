@@ -5,20 +5,7 @@
   ...
 }:
 
-let
-  swayGreetdConfig = pkgs.writeText "sway-greetd.conf" (builtins.readFile ./sway-greetd.conf);
-in
 {
-  services.greetd = {
-    enable = true;
-    settings = {
-      default_session = {
-        command = "${pkgs.sway}/bin/sway --config ${swayGreetdConfig}";
-        user = "greeter";
-      };
-    };
-  };
-
   programs.regreet = {
     enable = true;
     settings = {
