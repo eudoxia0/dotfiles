@@ -96,7 +96,7 @@
             ./hosts/rostam/hardware-configuration.nix
             ./modules/beets
             ./modules/bright.nix
-            ./modules/greetd
+            ./modules/greetd.nix
             ./modules/newsboat
             ./modules/thetis.nix
             ./modules/zetanom
