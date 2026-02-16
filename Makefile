@@ -1,6 +1,9 @@
 recrank:
 	sudo nixos-rebuild switch --flake .#$(shell hostname)
 
+boot:
+	sudo nixos-rebuild boot --flake .#$(shell hostname)
+
 upgrade:
 	nix flake update
 
