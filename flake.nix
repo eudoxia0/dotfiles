@@ -38,6 +38,7 @@
         ./modules/firefox
         ./modules/font
         ./modules/foot.nix
+        ./modules/fuzzel.nix
         ./modules/gargoyle
         ./modules/gh.nix
         ./modules/git.nix
