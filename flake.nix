@@ -64,7 +64,6 @@
         ./modules/scripts
         ./modules/shell.nix
         ./modules/ssh.nix
-        ./modules/stumpwm
         ./modules/sway
         ./modules/thunar
         ./modules/todoist.nix
