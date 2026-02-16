@@ -30,7 +30,6 @@
         ./modules/dev.nix
         ./modules/docker.nix
         ./modules/emacs
-        ./modules/emote
         ./modules/epoch.nix
         ./modules/espanso
         ./modules/eudoxia.nix
