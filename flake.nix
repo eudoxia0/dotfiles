@@ -95,7 +95,7 @@
             ./hosts/rostam/hardware-configuration.nix
             ./modules/beets
             ./modules/bright.nix
-            ./modules/ly
+            ./modules/sddm.nix
             ./modules/newsboat
             ./modules/thetis.nix
             ./modules/zetanom
