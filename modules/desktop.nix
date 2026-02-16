@@ -6,6 +6,9 @@
 }:
 
 {
+  programs.ydotool.enable = true;
+  users.users.eudoxia.extraGroups = [ "ydotool" ];
+
   home-manager.users.eudoxia.home.packages = with pkgs; [
     appimage-run
     baobab
