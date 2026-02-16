@@ -12,7 +12,6 @@
   home-manager.users.eudoxia.home.packages = with pkgs; [
     appimage-run
     baobab
-    bemoji
     calibre
     cheese
     chromium
