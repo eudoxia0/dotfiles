@@ -20,8 +20,4 @@
   home-manager.users.eudoxia.home.file = {
     ".XCompose".source = ./xcompose.xcm;
   };
-  home-manager.users.eudoxia.home.file.".xinitrc" = {
-    source = ./xinitrc.sh;
-    executable = true;
-  };
 }
