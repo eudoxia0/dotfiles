@@ -7,11 +7,13 @@
 
 let
   fuzzel-launcher = pkgs.writeShellScriptBin "fuzzel-launcher" ''
-    choice=$(printf "1Password\nZed\nCalibre" | fuzzel --dmenu)
+    choice=$(printf "1Password\nCalibre\nJournal\nTodoist\nZed" | fuzzel --dmenu)
     case "$choice" in
       "1Password") 1password ;;
-      "Zed") zed ;;
       "Calibre") calibre ;;
+      "Journal") chromium-browser --app=http://localhost:12003/ ;;
+      "Todoist") todoist-wayland ;;
+      "Zed") zed ;;
     esac
   '';
 in
