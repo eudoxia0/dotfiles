@@ -5,7 +5,7 @@
   "spacing": 4,
   "modules-left": ["sway/workspaces"],
   "modules-center": [],
-  "modules-right": ["tray", "clock"],
+  "modules-right": ["tray", "battery", "clock"],
   "sway/workspaces": {
     "persistent-workspaces": {
       "α": [],
@@ -19,6 +19,15 @@
   "tray": {
     "spacing": 10,
     "icon-size": 21,
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15,
+    },
+    "format": "BAT {capacity}%",
+    "format-charging": "CHG {capacity}%",
+    "format-plugged": "PLG {capacity}%",
   },
   "clock": {
     "format": "{:%a, %d %b %Y, %I:%M%p}",
