@@ -11,10 +11,7 @@
     settings = {
       background = {
         path = "/home/eudoxia/.eudoxia.d/data/wallpaper/panther.jpg";
-        fit = "Cover";
-      };
-      GTK = {
-        application_prefer_dark_theme = true;
+        fit = "Fill";
       };
     };
   };
