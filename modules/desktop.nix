@@ -18,7 +18,6 @@
     file-roller
     gimp3
     gnome-disk-utility
-    gnucash
     gnumeric
     gparted
     ideogram
