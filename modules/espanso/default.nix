@@ -26,6 +26,5 @@
 
   home-manager.users.eudoxia.home.file = {
     ".config/espanso/match/base.yml".source = ./espanso.yaml;
-    ".config/espanso/config/default.yml".source = ./config.yaml;
   };
 }
