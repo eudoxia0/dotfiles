@@ -45,7 +45,6 @@
         ./modules/haskell.nix
         ./modules/heic
         ./modules/heroic.nix
-        ./modules/keyd.nix
         ./modules/locale.nix
         ./modules/mime.nix
         ./modules/network.nix
@@ -70,6 +69,10 @@
         ./modules/wallpaper
         ./modules/waybar
         ./modules/xcompose
+        ./modules/x11
+        ./modules/x11/stumpwm
+        ./modules/x11/polybar
+        ./modules/x11/alacritty
 
         # Make home-manager use system pkgs
         home-manager.nixosModules.home-manager
