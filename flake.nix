@@ -77,6 +77,7 @@
         ./modules/x11/stumpwm
         ./modules/x11/xcape
         ./modules/x11/xcompose
+        ./modules/x11/xscreensaver
 
         # Make home-manager use system pkgs
         home-manager.nixosModules.home-manager
