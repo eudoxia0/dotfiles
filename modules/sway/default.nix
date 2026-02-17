@@ -18,6 +18,7 @@
       wmenu
       wlsunset
       swaylock
+      wofi-emoji
     ];
   };
 
