@@ -29,7 +29,6 @@
         ./modules/dev.nix
         ./modules/docker.nix
         ./modules/emacs
-        ./modules/x11/emote.nix
         ./modules/espanso
         ./modules/eudoxia.nix
         ./modules/fastfetch
@@ -53,7 +52,6 @@
         ./modules/perf.nix
         ./modules/pulumi.nix
         ./modules/python.nix
-        ./modules/redshift.nix
         ./modules/rm-xdg-dirs.nix
         ./modules/rust.nix
         ./modules/scanner.nix
@@ -74,8 +72,10 @@
         ./modules/x11/alacritty
         ./modules/x11/awesome
         ./modules/x11/bspwm
+        ./modules/x11/emote.nix
         ./modules/x11/espanso
         ./modules/x11/polybar
+        ./modules/x11/redshift.nix
         ./modules/x11/spectrwm
         ./modules/x11/stumpwm
         ./modules/x11/xcape
