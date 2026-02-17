@@ -67,7 +67,6 @@
         ./modules/wayland/waybar
         ./modules/x11
         ./modules/x11/alacritty
-        ./modules/x11/awesome
         ./modules/x11/bspwm
         ./modules/x11/emote
         ./modules/x11/espanso
