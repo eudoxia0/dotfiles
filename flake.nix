@@ -34,8 +34,6 @@
         ./modules/fastfetch
         ./modules/firefox
         ./modules/font
-        ./modules/foot.nix
-        ./modules/fuzzel.nix
         ./modules/gargoyle
         ./modules/git.nix
         ./modules/gtk.nix
@@ -63,6 +61,8 @@
         ./modules/typst.nix
         ./modules/wallpaper
         ./modules/wayland
+        ./modules/wayland/foot.nix
+        ./modules/wayland/fuzzel.nix
         ./modules/wayland/sway
         ./modules/wayland/swaylock
         ./modules/wayland/waybar
