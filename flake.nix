@@ -71,6 +71,7 @@
         ./modules/x11
         ./modules/x11/alacritty
         ./modules/x11/awesome
+        ./modules/x11/espanso
         ./modules/x11/polybar
         ./modules/x11/spectrwm
         ./modules/x11/stumpwm
