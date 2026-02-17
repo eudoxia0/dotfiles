@@ -50,7 +50,6 @@
         ./modules/nixconf.nix
         ./modules/nushell
         ./modules/perf.nix
-        ./modules/pulumi.nix
         ./modules/python.nix
         ./modules/rm-xdg-dirs.nix
         ./modules/rust.nix
