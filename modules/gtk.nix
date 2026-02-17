@@ -12,23 +12,17 @@
     enable = true;
     theme = {
       name = "Adwaita";
+      package = pkgs.gnome-themes-extra;
     };
     iconTheme = {
-      name = "elementary";
-      package = pkgs.pantheon.elementary-icon-theme;
-    };
-    cursorTheme = {
-      name = "elementary";
-      package = pkgs.pantheon.elementary-icon-theme;
-      size = 16;
+      package = pkgs.adwaita-icon-theme;
+      name = "Adwaita";
     };
   };
 
   # Install other themes so we can preview them.
   home-manager.users.eudoxia.home.packages = with pkgs; [
-    pantheon.elementary-gtk-theme
-    pantheon.elementary-icon-theme
     adwaita-icon-theme-legacy
-    arc-theme
+    adwaita-icon-theme
   ];
 }
