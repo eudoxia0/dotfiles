@@ -11,10 +11,6 @@
     sxhkd.package = pkgs.sxhkd;
   };
 
-  home-manager.users.eudoxia.home.packages = with pkgs; [
-    feh
-  ];
-
   home-manager.users.eudoxia.home.file = {
     ".config/bspwm/bspwmrc" = {
       source = ./bspwmrc;

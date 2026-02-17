@@ -26,7 +26,7 @@ bspc rule -a Emacs state=tiled
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 # Set the wallpaper
-feh --no-fehbg --bg-fill ~/.eudoxia.d/data/wallpaper/semiramis.jpg &
+feh --no-fehbg --bg-fill ~/.eudoxia.d/data/wallpaper/panther.jpg &
 
 # Better default pointer style
 xsetroot -cursor_name left_ptr
@@ -43,10 +43,3 @@ systemctl --user start xscreensaver
 systemctl --user start nm-applet
 systemctl --user start xcape
 systemctl --user start xdg-desktop-portal-gtk
-
-# Host-specific config
-HOSTNAME=$(hostname)
-if [ "$HOSTNAME" = "rostam" ]; then
-    export GDK_DPI_SCALE=1.5
-    export QT_SCALE_FACTOR=1.5
-fi
