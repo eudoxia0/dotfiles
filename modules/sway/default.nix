@@ -9,6 +9,9 @@ let
   take-screenshot = pkgs.writeShellScriptBin "take-screenshot" ''
     grim -g "$(slurp)" ~/screenshot.png
   '';
+  wofi-emoji-and-paste = pkgs.writeShellScriptBin "wofi-emoji-and-paste" ''
+      wofi-emoji && wl-paste
+  '';
 in
 {
   # Sway window manager configuration
@@ -24,6 +27,7 @@ in
       swaylock
       wofi-emoji
       take-screenshot
+      wofi-emoji-and-paste
     ];
   };
 
