@@ -26,5 +26,6 @@
     tt
     usbutils # lsusb
     yt-dlp
+    xlsclients
   ];
 }
