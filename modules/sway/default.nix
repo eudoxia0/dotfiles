@@ -10,12 +10,9 @@ let
     grim -g "$(slurp)" ~/screenshot.png
   '';
 
-  # Emoji picker using bemoji with ydotool backend (works with Chromium)
   emoji-picker = pkgs.writeShellScriptBin "emoji-picker" ''
-    export BEMOJI_PICKER_CMD="${pkgs.wofi}/bin/wofi -d -i -p emoji"
-    export BEMOJI_TYPE_CMD="ydotool type --"
-    export BEMOJI_CLIP_CMD="${pkgs.wl-clipboard}/bin/wl-copy"
-    exec ${pkgs.bemoji}/bin/bemoji -t
+    rofimoji --action copy
+    ydotool key 29:1 47:1 47:0 29:0
   '';
 in
 {
@@ -27,10 +24,10 @@ in
       mako
       slurp
       grim
+      rofimoji
       wl-clipboard
       wlsunset
       swaylock
-      bemoji
       emoji-picker
       take-screenshot
     ];
