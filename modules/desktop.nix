@@ -22,7 +22,6 @@
     gimp3
     gnome-disk-utility
     gparted
-    ideogram
     imv
     keepassxc
     koreader
