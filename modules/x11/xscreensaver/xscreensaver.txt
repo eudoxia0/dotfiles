@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-settings 6.12 for eudoxia on Wed Feb 18 10:51:27 2026.
+# Written by xscreensaver-settings 6.12 for eudoxia on Wed Feb 18 10:52:11 2026.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:30:00
@@ -37,7 +37,7 @@ textFile:
 textProgram:	fortune
 textURL:	https://en.wikipedia.org/w/index.php?title=Special:NewPages&feed=rss
 dialogTheme:	blue
-settingsGeom:	2011,62 3820,68
+settingsGeom:	30,62 3820,68
 
 programs:								      \
 -				maze --root				    \n\
@@ -101,7 +101,7 @@ programs:								      \
 -				flow --root				    \n\
 - GL: 				glplanet --root				    \n\
 -				interference --root			    \n\
-				kumppa --root				    \n\
+-				kumppa --root				    \n\
 - GL: 				lament --root				    \n\
 -				moire2 --root				    \n\
 - GL: 				sonar --root				    \n\
