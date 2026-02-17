@@ -52,8 +52,8 @@ in
       turbo = "never";
     };
     charger = {
-      governor = "performance";
-      turbo = "auto";
+      governor = "powersave";
+      turbo = "never";
     };
   };
 
