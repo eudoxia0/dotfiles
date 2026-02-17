@@ -10,7 +10,7 @@ let
     grim -g "$(slurp)" ~/screenshot.png
   '';
   wofi-emoji-and-paste = pkgs.writeShellScriptBin "wofi-emoji-and-paste" ''
-      wofi-emoji && wl-paste -t TEXT
+      wofi-emoji && wl-paste -t UTF8_STRING
   '';
 in
 {
@@ -19,10 +19,10 @@ in
     enable = true;
     wrapperFeatures.gtk = true;
     extraPackages = with pkgs; [
-      mako # notification system developed by swaywm maintainer
+      mako
       slurp
       grim
-      wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
+      wl-clipboard
       wlsunset
       swaylock
       wofi-emoji
