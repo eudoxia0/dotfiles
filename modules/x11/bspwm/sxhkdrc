@@ -1,0 +1,137 @@
+#
+# bspwm hotkeys
+#
+
+# Quit bspwm
+super + shift + q
+    bspc quit
+
+# Reload config
+super + shift + r
+    bspc wm -r
+
+# Close window
+super + q
+    bspc node -c
+
+# Toggle monocle layout
+super + m
+    bspc desktop -l next
+
+# Toggle floating/tiled
+super + t
+    bspc node -t ~floating
+
+# Toggle fullscreen
+super + f
+    bspc node -t ~fullscreen
+
+#
+# Focus/swap
+#
+
+# Focus window in direction
+super + {h,j,k,l}
+    bspc node -f {west,south,north,east}
+
+# Swap window in direction
+super + shift + {h,j,k,l}
+    bspc node -s {west,south,north,east}
+
+#
+# Workspaces
+#
+
+# Switch to workspace
+super + {1,2,3,4,5}
+    bspc desktop -f '^{1,2,3,4,5}'
+
+# Move window to workspace
+super + shift + {1,2,3,4,5}
+    bspc node -d '^{1,2,3,4,5}'
+
+#
+# Resize
+#
+
+# Expand window
+super + alt + {h,j,k,l}
+    bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# Contract window
+super + alt + shift + {h,j,k,l}
+    bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+#
+# Gaps
+#
+
+# Toggle gaps
+super + g
+    if [ "$(bspc config window_gap)" -eq 0 ]; then \
+        bspc config window_gap 30; \
+    else \
+        bspc config window_gap 0; \
+    fi
+
+#
+# Applications
+#
+
+# Run launcher
+super + r
+    dmenu_run
+
+# Terminal
+super + ctrl + c
+    alacritty
+
+# Emacs
+super + ctrl + e
+    emacs
+
+# File manager
+super + ctrl + f
+    thunar /home/eudoxia/root
+
+# Firefox
+super + ctrl + w
+    firefox
+
+# Lock screen
+super + x
+    xscreensaver-command --lock
+
+Pause
+    xscreensaver-command --lock
+
+# Screenshot (full)
+Print
+    scrot
+
+# Screenshot (selection)
+ctrl + Print
+    scrot -f -s
+
+#
+# Volume control (PipeWire)
+#
+
+XF86AudioRaiseVolume
+    wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+
+XF86AudioLowerVolume
+    wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+
+XF86AudioMute
+    wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+
+#
+# Brightness control (for laptops)
+#
+
+XF86MonBrightnessUp
+    brightnessctl set 5%+
+
+XF86MonBrightnessDown
+    brightnessctl set 5%-
