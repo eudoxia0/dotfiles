@@ -29,7 +29,6 @@
         ./modules/dev.nix
         ./modules/docker.nix
         ./modules/emacs
-        ./modules/espanso
         ./modules/eudoxia.nix
         ./modules/fastfetch
         ./modules/firefox
