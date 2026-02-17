@@ -68,11 +68,14 @@
         ./modules/typst.nix
         ./modules/wallpaper
         ./modules/waybar
-        ./modules/xcompose
         ./modules/x11
-        ./modules/x11/stumpwm
-        ./modules/x11/polybar
         ./modules/x11/alacritty
+        ./modules/x11/awesome
+        ./modules/x11/polybar
+        ./modules/x11/spectrwm
+        ./modules/x11/stumpwm
+        ./modules/x11/xcape
+        ./modules/x11/xcompose
 
         # Make home-manager use system pkgs
         home-manager.nixosModules.home-manager
