@@ -18,7 +18,7 @@ let
       "Signal") signal-desktop --ozone-platform-hint=auto ;;
       "Sound Settings") pavucontrol ;;
       "Todoist") todoist-wayland ;;
-      "Zed") zeditor ;;
+      "Zed") WAYLAND_DISPLAY= zeditor ;;
     esac
   '';
 in
