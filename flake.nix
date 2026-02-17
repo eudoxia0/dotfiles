@@ -69,7 +69,7 @@
         ./modules/typst.nix
         ./modules/wallpaper
         ./modules/waybar
-        ./modules/x11
+        ./modules/xcompose
 
         # Make home-manager use system pkgs
         home-manager.nixosModules.home-manager
