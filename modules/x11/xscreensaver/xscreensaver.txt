@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-settings 6.12 for eudoxia on Tue Dec  2 22:50:46 2025.
+# Written by xscreensaver-settings 6.12 for eudoxia on Wed Feb 18 10:48:53 2026.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:30:00
@@ -26,18 +26,18 @@ dpmsOff:	4:00:00
 grabDesktopImages:  False
 grabVideoFrames:    False
 chooseRandomImages: False
-imageDirectory:
+imageDirectory:	
 
 mode:		random
 selected:	-1
 
 textMode:	date
 textLiteral:	XScreenSaver
-textFile:
+textFile:	
 textProgram:	fortune
 textURL:	https://en.wikipedia.org/w/index.php?title=Special:NewPages&feed=rss
 dialogTheme:	blue
-settingsGeom:	0,32 -1,-1
+settingsGeom:	32,64 3820,68
 
 programs:								      \
 -				maze --root				    \n\
@@ -60,14 +60,14 @@ programs:								      \
 -				pedal --root				    \n\
 -				bouboule --root				    \n\
 -				braid --root				    \n\
-				coral --root				    \n\
+-				coral --root				    \n\
 -				deco --root				    \n\
 -				drift --root				    \n\
 -				fadeplot --root				    \n\
 -				galaxy --root				    \n\
 -				goop --root				    \n\
 -				grav --root				    \n\
-				ifs --root				    \n\
+-				ifs --root				    \n\
 - GL: 				jigsaw --root				    \n\
 -				julia --root				    \n\
 -				kaleidescope --root			    \n\
@@ -76,7 +76,7 @@ programs:								      \
 - GL: 				morph3d --root				    \n\
 -				mountain --root				    \n\
 -				munch --root				    \n\
-				penrose --root				    \n\
+-				penrose --root				    \n\
 - GL: 				pipes --root				    \n\
 -				rdbomb --root				    \n\
 - GL: 				rubik --root				    \n\
@@ -111,10 +111,10 @@ programs:								      \
 -				webcollage --root			    \n\
 -				blaster --root				    \n\
 -				bumps --root				    \n\
-				ccurve --root				    \n\
+-				ccurve --root				    \n\
 -				compass --root				    \n\
 -				deluxe --root				    \n\
-				demon --root				    \n\
+-				demon --root				    \n\
 - GL: 				extrusion --root			    \n\
 -				loop --root				    \n\
 -				penetrate --root			    \n\
@@ -126,9 +126,9 @@ programs:								      \
 - GL: 				sierpinski3d --root			    \n\
 -				spotlight --root			    \n\
 -				squiral --root				    \n\
-				wander --root				    \n\
+-				wander --root				    \n\
 -				xflame --root				    \n\
-				xmatrix --root				    \n\
+-				xmatrix --root				    \n\
 - GL: 				gflux --root				    \n\
 -				nerverot --root				    \n\
 -				xrayswarm --root			    \n\
@@ -150,7 +150,7 @@ programs:								      \
 -				whirlwindwarp --root			    \n\
 -				zoom --root				    \n\
 -				anemone --root				    \n\
--				apollonian --root			    \n\
+				apollonian --root			    \n\
 - GL: 				boxed --root				    \n\
 - GL: 				cubenetic --root			    \n\
 - GL: 				endgame --root				    \n\
@@ -162,7 +162,7 @@ programs:								      \
 -				halftone --root				    \n\
 - GL: 				juggler3d --root			    \n\
 - GL: 				lavalite --root				    \n\
-				polyominoes --root			    \n\
+-				polyominoes --root			    \n\
 - GL: 				queens --root				    \n\
 - GL: 				sballs --root				    \n\
 - GL: 				spheremonics --root			    \n\
@@ -182,14 +182,14 @@ programs:								      \
 -				fontglide --root			    \n\
 - GL: 				gleidescope --root			    \n\
 - GL: 				glknots --root				    \n\
-  GL: 				glmatrix --root				    \n\
+- GL: 				glmatrix --root				    \n\
 - GL: 				glslideshow --root			    \n\
 - GL: 				hypertorus --root			    \n\
 - GL: 				jigglypuff --root			    \n\
 -				metaballs --root			    \n\
 - GL: 				mirrorblob --root			    \n\
 -				piecewise --root			    \n\
-  GL: 				polytopes --root			    \n\
+- GL: 				polytopes --root			    \n\
 -				pong --root				    \n\
 -				popsquares --root			    \n\
 - GL: 				surfaces --root				    \n\
@@ -206,7 +206,7 @@ programs:								      \
 -				pacman --root				    \n\
 - GL: 				pinion --root				    \n\
 - GL: 				polyhedra --root			    \n\
-  GL: 				providence --root			    \n\
+- GL: 				providence --root			    \n\
 -				substrate --root			    \n\
 -				wormhole --root				    \n\
 - GL: 				antmaze --root				    \n\
@@ -278,7 +278,7 @@ programs:								      \
 - GL: 				beats --root				    \n\
 - GL: 				covid19 --root				    \n\
 - GL: 				etruscanvenus --root			    \n\
-  GL: 				gibson --root				    \n\
+- GL: 				gibson --root				    \n\
 - GL: 				headroom --root				    \n\
   GL: 				sphereeversion --root			    \n\
 -				binaryhorizon --root			    \n\
@@ -302,3 +302,4 @@ programs:								      \
 
 pointerHysteresis:  0
 authWarningSlack:   20
+
