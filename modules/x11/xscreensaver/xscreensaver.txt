@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-settings 6.12 for eudoxia on Wed Feb 18 10:48:53 2026.
+# Written by xscreensaver-settings 6.12 for eudoxia on Wed Feb 18 10:51:27 2026.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:30:00
@@ -16,7 +16,7 @@ demoCommand:	xscreensaver-settings
 nice:		10
 fade:		False
 unfade:		False
-fadeSeconds:	0:00:03
+fadeSeconds:	0:00:01
 ignoreUninstalledPrograms:False
 dpmsEnabled:	False
 dpmsQuickOff:	False
@@ -37,7 +37,7 @@ textFile:
 textProgram:	fortune
 textURL:	https://en.wikipedia.org/w/index.php?title=Special:NewPages&feed=rss
 dialogTheme:	blue
-settingsGeom:	32,64 3820,68
+settingsGeom:	2011,62 3820,68
 
 programs:								      \
 -				maze --root				    \n\
