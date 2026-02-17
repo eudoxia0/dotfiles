@@ -28,7 +28,7 @@
     libreoffice
     mpv
     mupdf
-    nwg-look # like a modern lxappearance
+    nwg-look
     obsidian
     protonmail-desktop
     quodlibet
