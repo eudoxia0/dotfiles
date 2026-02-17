@@ -5,6 +5,11 @@
   ...
 }:
 
+let
+  take-screenshot = pkgs.writeShellScriptBin "take-screenshot" ''
+    grim -g "$(slurp)" ~/screenshot.png
+  '';
+in
 {
   # Sway window manager configuration
   programs.sway = {
@@ -18,6 +23,7 @@
       wlsunset
       swaylock
       wofi-emoji
+      take-screenshot
     ];
   };
 
