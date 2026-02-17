@@ -29,6 +29,9 @@ window#waybar {
 }
 
 #clock,
-#tray {
+#tray,
+#wireplumber,
+#battery {
     padding: 0 10px;
+    border-left: 1px solid #ffffff;
 }
