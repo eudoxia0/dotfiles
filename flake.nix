@@ -61,8 +61,8 @@
         ./modules/typst.nix
         ./modules/wallpaper
         ./modules/wayland
-        ./modules/wayland/foot.nix
-        ./modules/wayland/fuzzel.nix
+        ./modules/wayland/foot
+        ./modules/wayland/fuzzel
         ./modules/wayland/sway
         ./modules/wayland/swaylock
         ./modules/wayland/waybar
@@ -70,10 +70,10 @@
         ./modules/x11/alacritty
         ./modules/x11/awesome
         ./modules/x11/bspwm
-        ./modules/x11/emote.nix
+        ./modules/x11/emote
         ./modules/x11/espanso
         ./modules/x11/polybar
-        ./modules/x11/redshift.nix
+        ./modules/x11/redshift
         ./modules/x11/spectrwm
         ./modules/x11/stumpwm
         ./modules/x11/xcape
