@@ -66,7 +66,9 @@
         ./modules/tools
         ./modules/typst.nix
         ./modules/wallpaper
+        ./modules/wayland
         ./modules/wayland/sway
+        ./modules/wayland/swaylock
         ./modules/wayland/waybar
         ./modules/x11
         ./modules/x11/alacritty
