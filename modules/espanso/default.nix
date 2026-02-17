@@ -18,8 +18,10 @@
   home-manager.users.eudoxia.services.espanso.enable = true;
 
   # kdotool is required for text injection on Wayland
+  # wl-clipboard provides wl-copy/wl-paste for clipboard-based injection
   home-manager.users.eudoxia.home.packages = with pkgs; [
     kdotool
+    wl-clipboard
   ];
 
   home-manager.users.eudoxia.home.file = {
