@@ -13,6 +13,7 @@
     extraPackages = with pkgs; [
       mako # notification system developed by swaywm maintainer
       slurp
+      grim
       wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
       wlsunset
       swaylock
