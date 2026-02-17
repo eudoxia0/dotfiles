@@ -12,7 +12,7 @@
     wrapperFeatures.gtk = true;
     extraPackages = with pkgs; [
       mako # notification system developed by swaywm maintainer
-      grim # screenshot functionality
+      slurp
       wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
       wmenu
       wlsunset
