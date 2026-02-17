@@ -14,7 +14,7 @@
     baobab
     calibre
     cheese
-    chromium
+    # chromium
     dbeaver-bin
     djview
     evince
