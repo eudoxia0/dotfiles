@@ -29,7 +29,7 @@
         ./modules/dev.nix
         ./modules/docker.nix
         ./modules/emacs
-        ./modules/emote.nix
+        ./modules/x11/emote.nix
         ./modules/espanso
         ./modules/eudoxia.nix
         ./modules/fastfetch
