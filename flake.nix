@@ -61,13 +61,13 @@
         ./modules/sddm.nix
         ./modules/shell.nix
         ./modules/ssh.nix
-        ./modules/sway
         ./modules/thunar
         ./modules/todoist.nix
         ./modules/tools
         ./modules/typst.nix
         ./modules/wallpaper
-        ./modules/waybar
+        ./modules/wayland/sway
+        ./modules/wayland/waybar
         ./modules/x11
         ./modules/x11/alacritty
         ./modules/x11/awesome
