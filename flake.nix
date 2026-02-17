@@ -73,7 +73,6 @@
         ./modules/x11/polybar
         ./modules/x11/redshift
         ./modules/x11/spectrwm
-        ./modules/x11/stumpwm
         ./modules/x11/xcape
         ./modules/x11/xcompose
         ./modules/x11/xscreensaver
