@@ -14,7 +14,6 @@
       mako # notification system developed by swaywm maintainer
       slurp
       wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
-      wmenu
       wlsunset
       swaylock
       wofi-emoji
