@@ -10,7 +10,7 @@ let
     grim -g "$(slurp)" ~/screenshot.png
   '';
   wofi-emoji-and-paste = pkgs.writeShellScriptBin "wofi-emoji-and-paste" ''
-      wofi-emoji && wl-paste -t text/plain
+    wofi-emoji && wl-paste -t text/plain
   '';
 in
 {
