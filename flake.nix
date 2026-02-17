@@ -30,7 +30,6 @@
         ./modules/docker.nix
         ./modules/emacs
         ./modules/emote.nix
-        ./modules/epoch.nix
         # ./modules/espanso
         ./modules/eudoxia.nix
         ./modules/fastfetch
@@ -91,6 +90,7 @@
             ./modules/beets
             ./modules/bright.nix
             ./modules/newsboat
+            ./modules/epoch.nix
             ./modules/thetis.nix
             ./modules/zetanom
           ];
