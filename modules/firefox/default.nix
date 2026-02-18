@@ -5,7 +5,16 @@
   ...
 }:
 
+let
+  firefox-big = pkgs.writeShellScriptBin "firefox-big" ''
+    GDK_DPI_SCALE=1.5 firefox
+  '';
+in
 {
+  home-manager.users.eudoxia.home.packages = [
+    firefox-big
+  ];
+
   home-manager.users.eudoxia.programs.firefox = {
     enable = true;
     languagePacks = [ "en-US" ];
