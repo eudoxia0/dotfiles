@@ -5,6 +5,11 @@
   ...
 }:
 
+let
+  thunar-big = pkgs.writeShellScriptBin "thunar-big" ''
+    GDK_DPI_SCALE=1.5 thunar
+  '';
+in
 {
   programs.thunar = {
     enable = true;
@@ -51,6 +56,8 @@
     xz
     zip
     zstd
+
+    thunar-big
   ];
 
   # xfconf
