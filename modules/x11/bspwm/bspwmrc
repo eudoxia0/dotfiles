@@ -5,12 +5,12 @@ bspc monitor -d α β γ δ ε
 
 # Window appearance
 bspc config border_width         2
-bspc config window_gap          30
+bspc config window_gap           60
 bspc config focused_border_color "#ffffff"
 bspc config normal_border_color  "#444444"
 
 # Layout
-bspc config split_ratio          0.52
+bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
@@ -29,17 +29,14 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 feh --no-fehbg --bg-fill ~/.eudoxia.d/data/wallpaper/panther.jpg &
 
 # Better default pointer style
-xsetroot -cursor_name left_ptr
+xsetroot -cursor_name left_ptr &
 
 # Start polybar
-killall -q polybar
-while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
-polybar 2> ~/.polybar.log &
+polybar &
 
-# Ensure xscreensaver is started
-systemctl --user start xscreensaver
-
-# Restart services that are killed by quitting the window manager
-systemctl --user start nm-applet
-systemctl --user start xcape
-systemctl --user start xdg-desktop-portal-gtk
+# These services are killed by exiting the window manager. Ensure they are
+# running on startup.
+systemctl --user start xscreensaver &
+systemctl --user start network-manager-applet &
+systemctl --user start xcape &
+systemctl --user start xdg-desktop-portal-gtk &
