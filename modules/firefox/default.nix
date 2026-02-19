@@ -6,13 +6,17 @@
 }:
 
 let
-  firefox-big = pkgs.writeShellScriptBin "firefox-big" ''
-    GDK_DPI_SCALE=1.5 firefox
+  firefox-scaled = pkgs.writeShellScriptBin "firefox-scaled" ''
+    if [[ `hostname` == "rostam" ]]; then
+      GDK_DPI_SCALE=1.5 firefox
+    else
+      firefox
+    fi
   '';
 in
 {
   home-manager.users.eudoxia.home.packages = [
-    firefox-big
+    firefox-scaled
   ];
 
   home-manager.users.eudoxia.programs.firefox = {

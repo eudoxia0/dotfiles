@@ -35,10 +35,10 @@ super + ctrl + e
     emacs
 
 super + ctrl + f
-    thunar-big /home/eudoxia/root
+    thunar-scaled
 
 super + ctrl + w
-    firefox-big
+    firefox-scaled
 
 # @ = execute on key release, so sxhkd releases its keyboard grab
 # before xscreensaver tries to grab it (avoids 1s delay)

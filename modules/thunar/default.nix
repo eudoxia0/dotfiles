@@ -6,8 +6,12 @@
 }:
 
 let
-  thunar-big = pkgs.writeShellScriptBin "thunar-big" ''
-    GDK_DPI_SCALE=1.5 thunar
+  thunar-scaled = pkgs.writeShellScriptBin "thunar-scaled" ''
+    if [[ `hostname` == "rostam" ]]; then
+      GDK_DPI_SCALE=1.5 thunar
+    else
+      thunar
+    fi
   '';
 in
 {
@@ -57,7 +61,7 @@ in
     zip
     zstd
 
-    thunar-big
+    thunar-scaled
   ];
 
   # xfconf
