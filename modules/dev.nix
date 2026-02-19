@@ -2,7 +2,6 @@
   config,
   pkgs,
   lib,
-  inform7-nix,
   ...
 }:
 
