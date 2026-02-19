@@ -25,6 +25,8 @@
     lean4
     libxml2 # xmllint
     nixfmt-tree
+    pulumi
+    pulumiPackages.pulumi-python
     sass
     sqlite
     texliveSmall
