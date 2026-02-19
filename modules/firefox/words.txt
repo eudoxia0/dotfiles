@@ -36,6 +36,7 @@ OCaml
 OSS
 Postgres
 Pulumi
+RNG
 Rahul
 ReadEra
 Rothmaler
