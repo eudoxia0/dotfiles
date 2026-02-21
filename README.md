@@ -33,7 +33,7 @@ Screenshots and information about the various hosts.
 - **Terminal:** [alacritty](https://github.com/alacritty/alacritty)
 - **Text Shortcuts:** [Espanso](https://espanso.org/)
 - **Web Browser:** [Firefox](https://www.firefox.com/en-US/)
-- **Window Manager:** [stumpwm](https://stumpwm.github.io/)
+- **Window Manager:** [bspwm](https://github.com/baskerville/bspwm)
 
 ## License
 
