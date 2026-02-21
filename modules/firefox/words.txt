@@ -75,6 +75,7 @@ fluvoxamine
 frontend
 frontmatter
 functors
+fursuit
 growable
 hashcards
 headshots
