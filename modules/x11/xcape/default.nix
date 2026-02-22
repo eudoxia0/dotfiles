@@ -10,7 +10,7 @@
     enable = true;
     mapExpression = {
       Shift_L = "parenleft";
-      ShiftQ_R = "parenright";
+      Shift_R = "parenright";
     };
   };
 }
