@@ -72,6 +72,7 @@
         ./modules/x11/espanso
         ./modules/x11/polybar
         ./modules/x11/redshift
+        ./modules/x11/rofi
         ./modules/x11/xcape
         ./modules/x11/xcompose
         ./modules/x11/xscreensaver
