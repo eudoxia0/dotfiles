@@ -7,7 +7,7 @@
 
 let
   rofi-launcher = pkgs.writeShellScriptBin "rofi-launcher" ''
-    choice=$(printf "1Password\nCalibre\nChromium\nDiet Tracker\nJournal\nLock Screen\nScreenshot\nSignal\nSound Settings\nTodoist\nZed" | rofi -dmenu)
+    choice=$(printf "1Password\nCalibre\nChromium\nDiet Tracker\nJournal\nLock Screen\nScreenshot\nSignal\nSound Settings\nTodoist\nZed" | rofi -i -dmenu)
     case "$choice" in
       "1Password") 1password ;;
       "Calibre") calibre ;;
