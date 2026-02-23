@@ -18,7 +18,7 @@ let
       "Screenshot") scrot -f -s ;;
       "Signal") signal-desktop ;;
       "Sound Settings") pavucontrol ;;
-      "Todoist") todoist ;;
+      "Todoist") todoist-x11 ;;
       "Zed") zeditor ;;
     esac
   '';
