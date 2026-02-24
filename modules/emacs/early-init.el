@@ -14,5 +14,8 @@
 ;; No menu bar.
 (menu-bar-mode -1)
 
+;; No scroll bar.
+(scroll-bar-mode -1)
+
 ;; Do not discretize the window size. Permits smooth resizing.
 (setq frame-resize-pixelwise t)
