@@ -26,7 +26,7 @@ super + g
     fi
 
 super + r
-    dmenu_run
+    rofi-launcher
 
 super + ctrl + c
     alacritty
