@@ -94,8 +94,8 @@
             ./hosts/rostam/hardware-configuration.nix
             ./modules/beets
             ./modules/bright.nix
-            ./modules/newsboat
             ./modules/epoch.nix
+            ./modules/newsboat
             ./modules/thetis.nix
             ./modules/zetanom
           ];
