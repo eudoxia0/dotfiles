@@ -20,7 +20,7 @@
         Environment = [
           "RUST_LOG=info"
           "EPOCH_PORT=12003"
-          "EPOCH_DB_PATH=/home/eudoxia/root/Databases/epoch/epoch.db"
+          "EPOCH_DB_PATH=/home/eudoxia/root/6-databases/epoch/epoch.db"
         ];
       };
       Install = {
