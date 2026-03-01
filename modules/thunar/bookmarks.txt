@@ -4,5 +4,5 @@ file:///home/eudoxia/root/1-workspace
 file:///home/eudoxia/root/2-treasure
 file:///home/eudoxia/root/3-areas
 file:///home/eudoxia/root/4-library
-file:///home/eudoxia/root/4-library/Images
+file:///home/eudoxia/root/4-library/images
 file:///home/eudoxia/root/5-attic
