@@ -96,6 +96,7 @@
             ./modules/beets
             ./modules/bright.nix
             ./modules/newsboat
+            ./modules/selfhosted/antenor.nix
             ./modules/selfhosted/epoch.nix
             ./modules/selfhosted/thetis.nix
             ./modules/selfhosted/zetanom
