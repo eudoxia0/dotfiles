@@ -54,6 +54,7 @@
         ./modules/sddm.nix
         ./modules/shell.nix
         ./modules/ssh.nix
+        ./modules/syncthing.nix
         ./modules/thunar
         ./modules/todoist.nix
         ./modules/tools
