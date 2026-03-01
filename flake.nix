@@ -95,10 +95,10 @@
             ./hosts/rostam/hardware-configuration.nix
             ./modules/beets
             ./modules/bright.nix
-            ./modules/epoch.nix
             ./modules/newsboat
-            ./modules/thetis.nix
-            ./modules/zetanom
+            ./modules/selfhosted/epoch.nix
+            ./modules/selfhosted/thetis.nix
+            ./modules/selfhosted/zetanom
           ];
         };
 
