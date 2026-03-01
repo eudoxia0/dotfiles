@@ -7,12 +7,13 @@
 
 let
   rofi-launcher = pkgs.writeShellScriptBin "rofi-launcher" ''
-    choice=$(printf "1Password\nCalibre\nChromium\nDiet Tracker\nJournal\nLock\nMusic Player\nObsidian\nScreenshot\nSignal\nSound Settings\nTodoist\nTransmission\nZed" | rofi -i -dmenu)
+    choice=$(printf "1Password\nCalibre\nChromium\nDiet Tracker\nFonts\nJournal\nLock\nMusic Player\nObsidian\nScreenshot\nSignal\nSound Settings\nTodoist\nTransmission\nZed" | rofi -i -dmenu)
     case "$choice" in
       "1Password") 1password ;;
       "Calibre") calibre ;;
       "Chromium") chromium-browser ;;
       "Diet Tracker") chromium-browser --app=http://localhost:12001/ ;;
+      "Fonts") font-manager ;;
       "Journal") chromium-browser --app=http://localhost:12003/ ;;
       "Lock") xscreensaver-command -lock ;;
       "Music Player") strawberry ;;
