@@ -15,5 +15,5 @@ alias ck = cargo check
 alias cl = cargo clippy --all-targets -- -D warnings
 
 # Other aliases.
-alias cdt = cd ~/root/1-Workspace/dotfiles
-alias cdf = cd ~/root/1-Workspace/flashcards
+alias cdt = cd ~/root/1-workspace/dotfiles
+alias cdf = cd ~/root/1-workspace/flashcards
