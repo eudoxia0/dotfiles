@@ -1,5 +1,6 @@
 https://abevoelker.com/feed.xml
 https://ajxs.me/site.rss
+https://akselmo.dev/feed.xml
 https://alarmingdevelopment.org/?feed=rss2
 https://aleph.se/andart2/feed
 https://alicemaz.substack.com/feed
