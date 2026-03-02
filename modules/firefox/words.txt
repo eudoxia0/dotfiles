@@ -80,6 +80,7 @@ growable
 hashcards
 headshots
 homomorphism
+journalling
 ligand
 malatang
 matcha
