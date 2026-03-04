@@ -52,6 +52,10 @@
         ./modules/scanner.nix
         ./modules/scripts
         ./modules/sddm.nix
+        ./modules/selfhosted/antenor.nix
+        ./modules/selfhosted/epoch.nix
+        ./modules/selfhosted/thetis.nix
+        ./modules/selfhosted/zetanom
         ./modules/shell.nix
         ./modules/ssh.nix
         ./modules/syncthing.nix
@@ -96,10 +100,6 @@
             ./modules/beets
             ./modules/bright.nix
             ./modules/newsboat
-            ./modules/selfhosted/antenor.nix
-            ./modules/selfhosted/epoch.nix
-            ./modules/selfhosted/thetis.nix
-            ./modules/selfhosted/zetanom
           ];
         };
 
