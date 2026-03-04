@@ -18,24 +18,6 @@ in
   # Keep Intel microcode up to date.
   hardware.cpu.intel.updateMicrocode = true;
 
-  # Syncthing config.
-  home-manager.users.eudoxia.services.syncthing = {
-    settings.devices = {
-      rostam = {
-        name = "rostam";
-        id = "C7BIL55-GT5ILGN-7IOEBXJ-S3GURF2-V6JASA3-XBY3VKH-LK7GCIR-TJZ5GAH";
-      };
-    };
-    settings.folders = {
-      "root" = {
-        id = "root";
-        label = "root";
-        path = "/home/eudoxia/root";
-        devices = [ "rostam" ];
-      };
-    };
-  };
-
   environment.systemPackages = with pkgs; [
     brightnessctl
     acpi
