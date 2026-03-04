@@ -42,7 +42,7 @@ in
   # Syncthing config.
   home-manager.users.eudoxia.services.syncthing = {
     settings.devices = {
-      rostam = {
+      ismene = {
         name = "ismene";
         id = "VRJ6ZRO-PIWBKBP-FSW5ARD-J7PXDMH-JV5VVVD-HMQP37B-V65NSA6-HGNWGQH";
       };
