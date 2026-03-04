@@ -39,6 +39,24 @@ in
     };
   };
 
+  # Syncthing config.
+  home-manager.users.eudoxia.services.syncthing = {
+    settings.devices = {
+      rostam = {
+        name = "rostam";
+        id = "ZKS3YYS-KXPNYBH-T24IND2-KQQ2ZGH-65XFTIF-LVPAC5U-VQ2N2MM-4NCKVAZ";
+      };
+    };
+    settings.folders = {
+      "root" = {
+        id = "root";
+        label = "root";
+        path = "/home/eudoxia/root";
+        devices = [ "rostam" ];
+      };
+    };
+  };
+
   home-manager.users.eudoxia.home.stateVersion = "25.05"; # DO NOT CHANGE
   system.stateVersion = "25.05"; # DO NOT CHANGE
   nixpkgs.config.allowUnfree = true;
