@@ -51,6 +51,9 @@ super + @x
 Print
     scrot -f -s
 
+super + s
+    scrot -f -s
+
 XF86AudioRaiseVolume
     wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
 
