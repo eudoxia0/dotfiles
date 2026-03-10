@@ -27,4 +27,15 @@
     <text-files/>
     <video-files/>
   </action>
+  <action>
+    <icon>document-save-as</icon>
+    <name>Convert to PDF</name>
+    <submenu></submenu>
+    <unique-id>1762163798297568-2</unique-id>
+    <command>djvu2pdf %f</command>
+    <description>Convert this DjVu file to PDF.</description>
+    <range></range>
+    <patterns>*.djvu</patterns>
+    <image-files/>
+  </action>
 </actions>
