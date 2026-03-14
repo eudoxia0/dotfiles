@@ -12,7 +12,9 @@ ClickOps
 CloudFormation
 CloudWatch
 DM
+DevOps
 Dockerfile
+Dually
 ECR
 ECS
 FSRS
