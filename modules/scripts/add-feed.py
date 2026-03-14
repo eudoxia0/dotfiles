@@ -9,7 +9,7 @@ from pathlib import Path
 PATH: Path = (
     Path.home()
     / "root"
-    / "1-Workspace"
+    / "1-1orkspace"
     / "dotfiles"
     / "modules"
     / "newsboat"
