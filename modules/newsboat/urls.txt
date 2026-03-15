@@ -20,6 +20,7 @@ https://chreke.com/feed.rss
 https://commoncog.com/rss/
 https://cybermonk.substack.com/feed
 https://danluu.com/atom.xml
+https://david.alvarezrosa.com/index.xml
 https://diminishedcapacity.substack.com/feed
 https://dresdencodak.com/feed/
 https://dynomight.net/feed.xml
