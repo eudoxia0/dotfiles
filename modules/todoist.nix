@@ -7,10 +7,10 @@
 
 let
   todoist-wayland = pkgs.writeShellScriptBin "todoist-wayland" ''
-    TZ=America/Los_Angeles exec ${pkgs.todoist-electron}/bin/todoist-electron --ozone-platform-hint=auto "$@"
+    TZ=Australia/Sydney exec ${pkgs.todoist-electron}/bin/todoist-electron --ozone-platform-hint=auto "$@"
   '';
   todoist-x11 = pkgs.writeShellScriptBin "todoist-x11" ''
-    TZ=America/Los_Angeles exec ${pkgs.todoist-electron}/bin/todoist-electron "$@"
+    TZ=Australia/Sydney exec ${pkgs.todoist-electron}/bin/todoist-electron "$@"
   '';
 in
 {
