@@ -38,7 +38,7 @@ super + ctrl + f
     thunar-scaled
 
 super + ctrl + w
-    chromium-browser
+    firefox
 
 # @ = execute on key release, so sxhkd releases its keyboard grab
 # before xscreensaver tries to grab it (avoids 1s delay)
