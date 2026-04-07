@@ -11,8 +11,8 @@
   ];
   home-manager.users.eudoxia.home.file = {
     ".eudoxia.d/bin/rofi-launcher.py" = {
-        source = ./rofi-launcher.py;
-        executable = true;
+      source = ./rofi-launcher.py;
+      executable = true;
     };
   };
 }
