@@ -83,10 +83,10 @@ in
             "https://addons.mozilla.org/firefox/downloads/latest/uBlock0@raymondhill.net/latest.xpi";
         };
         # Double-Click Image Downloader: https://github.com/eudoxia0/double-click-image-downloader
-        "{5be538ce-6708-4b66-b3ce-81a25d2cbb0d}" = {
+        "{5464b44f-2a5d-4d02-bc8b-fbaf6d17e73c}" = {
           "installation_mode" = "normal_installed";
           "install_url" =
-            "https://github.com/eudoxia0/double-click-image-downloader/releases/download/v1.0/double-click-image-downloader.xpi";
+            "https://github.com/eudoxia0/double-click-image-downloader/releases/download/v1.1/double-click-image-downloader-1.1.xpi";
         };
       };
 
