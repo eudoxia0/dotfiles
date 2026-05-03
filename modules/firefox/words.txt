@@ -83,6 +83,7 @@ hashcards
 headshots
 homeworld
 homomorphism
+jhana
 journalling
 ligand
 malatang
