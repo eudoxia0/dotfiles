@@ -46,12 +46,12 @@
         ./modules/nushell
         ./modules/perf.nix
         ./modules/python.nix
-        ./modules/xdg.nix
         ./modules/rust.nix
         ./modules/scanner.nix
         ./modules/scripts
         ./modules/sddm.nix
         ./modules/services/antenor.nix
+        ./modules/services/cleanup-xdg-dirs.nix
         ./modules/services/epoch.nix
         ./modules/services/thetis.nix
         ./modules/services/zetanom
