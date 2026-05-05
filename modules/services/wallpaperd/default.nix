@@ -5,6 +5,9 @@
   ...
 }:
 
+let
+  wallpaperd = pkgs.writers.writePython3Bin "wallpaperd" {} (builtins.readFile ./wallpaperd.py);
+in
 {
   # Copy the wallpapers directory.
   home-manager.users.eudoxia.home.file.".eudoxia.d/data/wallpaper" = {
@@ -12,9 +15,10 @@
     recursive = true;
   };
 
-  # Install feh.
-  home-manager.users.eudoxia.home.packages = with pkgs; [
-    feh
+  # Install feh and wallpaperd.
+  home-manager.users.eudoxia.home.packages = [
+    pkgs.feh
+    wallpaperd
   ];
 
   # wallpaperd service: cycles through wallpapers every 300s.
@@ -22,20 +26,10 @@
     description = "Wallpaper daemon";
     wantedBy = [ "graphical-session.target" ];
     partOf = [ "graphical-session.target" ];
+    path = [ pkgs.feh ];
     serviceConfig = {
       Type = "simple";
-      ExecStart = let
-        script = pkgs.writeShellScript "wallpaperd" ''
-          WALLPAPER_DIR="$HOME/.eudoxia.d/data/wallpaper"
-          while true; do
-            WALLPAPER=$(${pkgs.findutils}/bin/find "$WALLPAPER_DIR" -type f \( -name '*.jpg' -o -name '*.png' \) | ${pkgs.coreutils}/bin/shuf -n 1)
-            if [ -n "$WALLPAPER" ]; then
-              ${pkgs.feh}/bin/feh --no-fehbg --bg-fill "$WALLPAPER"
-            fi
-            sleep 300
-          done
-        '';
-      in "${script}";
+      ExecStart = "${wallpaperd}/bin/wallpaperd";
       Restart = "on-failure";
     };
   };
