@@ -25,9 +25,6 @@ bspc rule -a Emacs state=tiled
 # Start sxhkd for keybindings
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-# Set the wallpaper
-feh --no-fehbg --bg-fill ~/.eudoxia.d/data/wallpaper/panther.jpg &
-
 # Better default pointer style
 xsetroot -cursor_name left_ptr &
 

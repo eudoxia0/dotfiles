@@ -54,6 +54,7 @@
         ./modules/services/cleanup-xdg-dirs.nix
         ./modules/services/epoch.nix
         ./modules/services/thetis.nix
+        ./modules/services/wallpaperd
         ./modules/services/zetanom.nix
         ./modules/shell.nix
         ./modules/ssh.nix
@@ -62,7 +63,6 @@
         ./modules/todoist.nix
         ./modules/tools
         ./modules/typst.nix
-        ./modules/wallpaper
         ./modules/wayland
         ./modules/wayland/foot
         ./modules/wayland/fuzzel

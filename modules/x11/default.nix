@@ -17,6 +17,5 @@
     dmenu
     kitty
     xsecurelock
-    feh
   ];
 }
