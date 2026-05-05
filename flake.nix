@@ -46,7 +46,7 @@
         ./modules/nushell
         ./modules/perf.nix
         ./modules/python.nix
-        ./modules/rm-xdg-dirs.nix
+        ./modules/xdg.nix
         ./modules/rust.nix
         ./modules/scanner.nix
         ./modules/scripts
