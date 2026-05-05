@@ -25,9 +25,8 @@
     serviceConfig = {
       Type = "simple";
       ExecStart = let
-        wallpaperDir = "%h/.eudoxia.d/data/wallpaper";
         script = pkgs.writeShellScript "wallpaperd" ''
-          WALLPAPER_DIR="${wallpaperDir}"
+          WALLPAPER_DIR="$HOME/.eudoxia.d/data/wallpaper"
           while true; do
             WALLPAPER=$(${pkgs.findutils}/bin/find "$WALLPAPER_DIR" -type f \( -name '*.jpg' -o -name '*.png' \) | ${pkgs.coreutils}/bin/shuf -n 1)
             if [ -n "$WALLPAPER" ]; then
