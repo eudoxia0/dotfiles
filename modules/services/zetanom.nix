@@ -9,7 +9,7 @@
   home-manager.users.eudoxia = {
     home.file = {
       ".config/zetanom/config.toml".source = ''
-        database_path = "/home/eudoxia/root/6-databases/zetanom/zetanom.db"
+        database_path = \"/home/eudoxia/root/6-databases/zetanom/zetanom.db\"
         port = 12001
       '';
     };
