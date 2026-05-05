@@ -8,6 +8,15 @@ WALLPAPER_DIR: str = os.path.expanduser("~/.eudoxia.d/data/wallpaper")
 INTERVAL: int = 300
 
 
+def main() -> None:
+    while True:
+        wallpapers: list[Path] = get_wallpapers(WALLPAPER_DIR)
+        if wallpapers:
+            choice: Path = random.choice(wallpapers)
+            set_wallpaper(choice)
+        time.sleep(INTERVAL)
+
+
 def get_wallpapers(directory: str) -> list[Path]:
     wallpapers: list[Path] = []
     for root, _, files in os.walk(directory):
@@ -21,15 +30,6 @@ def set_wallpaper(path: Path) -> None:
         ["feh", "--no-fehbg", "--bg-fill", path],
         check=True,
     )
-
-
-def main() -> None:
-    while True:
-        wallpapers: list[Path] = get_wallpapers(WALLPAPER_DIR)
-        if wallpapers:
-            choice: Path = random.choice(wallpapers)
-            set_wallpaper(choice)
-        time.sleep(INTERVAL)
 
 
 if __name__ == "__main__":
