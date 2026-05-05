@@ -51,10 +51,10 @@
         ./modules/scanner.nix
         ./modules/scripts
         ./modules/sddm.nix
-        ./modules/selfhosted/antenor.nix
-        ./modules/selfhosted/epoch.nix
-        ./modules/selfhosted/thetis.nix
-        ./modules/selfhosted/zetanom
+        ./modules/services/antenor.nix
+        ./modules/services/epoch.nix
+        ./modules/services/thetis.nix
+        ./modules/services/zetanom
         ./modules/shell.nix
         ./modules/ssh.nix
         ./modules/syncthing.nix
