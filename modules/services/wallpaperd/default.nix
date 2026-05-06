@@ -6,7 +6,7 @@
 }:
 
 let
-  wallpaperd = pkgs.writers.writePython3Bin "wallpaperd" {} (builtins.readFile ./wallpaperd.py);
+  wallpaperd = pkgs.writers.writePython3Bin "wallpaperd" { } (builtins.readFile ./wallpaperd.py);
 in
 {
   # Copy the wallpapers directory.
