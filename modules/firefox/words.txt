@@ -1,4 +1,5 @@
 ADHD
+AIUI
 AST
 AUD
 Agda
@@ -42,6 +43,7 @@ RNG
 Rahul
 ReadEra
 Rothmaler
+SML
 Schmittian
 Syncthing
 TOML
@@ -54,6 +56,7 @@ Weyl
 Yudkowsky
 Zindell
 actionability
+allocator
 antisymmetry
 audiobook
 catastrophizing
@@ -78,6 +81,7 @@ frontend
 frontmatter
 functors
 fursuit
+genericity
 growable
 hashcards
 headshots
@@ -89,6 +93,8 @@ ligand
 malatang
 matcha
 melatonin
+monomorphization
+monomorphized
 nanofabrication
 neurotypical
 norepinephrine
@@ -111,3 +117,4 @@ transhumanism
 transhumanist
 uncountably
 upscaling
+vtable
