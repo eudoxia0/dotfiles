@@ -180,7 +180,7 @@
     zenburn
     zerodark))
 
-(defvar my-default-theme 'kaolin-dark)
+(defvar my-default-theme 'dichromacy)
 
 (defvar my-current-theme my-default-theme)
 
