@@ -53,6 +53,7 @@
         ./modules/services/antenor.nix
         ./modules/services/cleanup-xdg-dirs.nix
         ./modules/services/epoch.nix
+        ./modules/services/metauro.nix
         ./modules/services/thetis.nix
         ./modules/services/wallpaperd
         ./modules/services/zetanom.nix
