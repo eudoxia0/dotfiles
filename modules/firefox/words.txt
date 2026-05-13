@@ -4,6 +4,7 @@ AST
 AUD
 Agda
 Anki
+Anthropic
 Bitwarden
 Borretti
 Brouwer
@@ -101,6 +102,7 @@ norepinephrine
 prodromal
 qubit
 qubits
+radiotelescope
 repo
 repos
 sequent
