@@ -35,6 +35,7 @@ Lenovo
 Makefile
 Methylphenidate
 Nastaliq
+Neumann
 NixOS
 OCaml
 OSS
@@ -60,6 +61,7 @@ actionability
 allocator
 antisymmetry
 audiobook
+bottlenecked
 catastrophizing
 checkpointing
 cloneable
@@ -119,4 +121,5 @@ transhumanism
 transhumanist
 uncountably
 upscaling
+von
 vtable
