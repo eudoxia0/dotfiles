@@ -68,6 +68,7 @@ https://ryjo.codes/feed.rss
 https://scholars-stage.org/feed/
 https://schpet.com/feed.xml
 https://sdomi.pl/weblog/atom/
+https://semantic-domain.blogspot.com/feeds/posts/default
 https://sifter.org/~simon/journal/rss.xml
 https://slightknack.dev/atom.xml
 https://somas.is/notes/index.xml
