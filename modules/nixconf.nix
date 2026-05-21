@@ -47,6 +47,7 @@
       libpulseaudio
       alsa-lib
       stdenv.cc.cc.lib
+      libxkbcommon
     ];
   };
 }
