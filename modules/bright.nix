@@ -6,9 +6,11 @@
 }:
 
 {
-  # Install ddcutil, a cli program to control the monitor's brightness.
+  # Install ddcutil, a cli program to control the monitor's brightness,
+  # and brightnessctl.
   home-manager.users.eudoxia.home.packages = with pkgs; [
     ddcutil
+    brightnessctl
   ];
 
   # Add i2c to control monitor brightness from the terminal. Needed by

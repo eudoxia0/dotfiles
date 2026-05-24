@@ -19,7 +19,6 @@ in
   hardware.cpu.intel.updateMicrocode = true;
 
   environment.systemPackages = with pkgs; [
-    brightnessctl
     acpi
     bluetui
   ];
