@@ -45,6 +45,7 @@
     wev
     xfce.ristretto
     zathura
+    zotero
   ];
 
   nixpkgs.overlays = [
