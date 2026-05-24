@@ -10,6 +10,7 @@
   users.users.eudoxia.extraGroups = [ "ydotool" ];
 
   home-manager.users.eudoxia.home.packages = with pkgs; [
+    anki
     appimage-run
     baobab
     calibre
