@@ -80,6 +80,7 @@ epitaxy
 equational
 expressivity
 fluvoxamine
+formalisms
 frontend
 frontmatter
 functors
@@ -107,6 +108,7 @@ qubits
 radiotelescope
 repo
 repos
+ribosomes
 sequent
 stderr
 stdin
