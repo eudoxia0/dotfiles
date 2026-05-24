@@ -64,12 +64,6 @@
         ./modules/todoist.nix
         ./modules/tools
         ./modules/typst.nix
-        ./modules/wayland
-        ./modules/wayland/foot
-        ./modules/wayland/fuzzel
-        ./modules/wayland/sway
-        ./modules/wayland/swaylock
-        ./modules/wayland/waybar
         ./modules/x11
         ./modules/x11/alacritty
         ./modules/x11/bspwm
