@@ -16,6 +16,7 @@ https://blog.jim-nielsen.com/feed.xml
 https://blog.plover.com/index.rss
 https://blog.xoria.org/atom.xml
 https://borretti.me/feed.xml
+https://brennan.day/feed.xml
 https://caseyhandmer.wordpress.com/feed/
 https://chreke.com/feed.rss
 https://commoncog.com/rss/
