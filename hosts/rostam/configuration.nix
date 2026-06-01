@@ -39,6 +39,11 @@ in
     rocmPackages.clr.icd
   ];
 
+  # Environment variables.
+  home-manager.users.eudoxia.home.sessionVariables = {
+    QT_SCALE_FACTOR = 2;
+  };
+
   # Syncthing config.
   home-manager.users.eudoxia.services.syncthing = {
     settings.devices = {
