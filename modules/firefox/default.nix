@@ -25,9 +25,6 @@ in
 
     # about:policies
     policies = {
-      # Enable Firefox Sync.
-      DisableFirefoxAccounts = false;
-
       DisableFirefoxStudies = true;
 
       # Disable the option to "Set as Desktop Background" when right-clicking
