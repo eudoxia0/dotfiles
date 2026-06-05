@@ -11,8 +11,8 @@
   home-manager.users.eudoxia.gtk = {
     enable = true;
     theme = {
-      name = "Adwaita";
-      package = pkgs.gnome-themes-extra;
+      name = "Clearlooks-Phenix";
+      package = pkgs.clearlooks-phenix;
     };
     iconTheme = {
       # package = pkgs.adwaita-icon-theme;
