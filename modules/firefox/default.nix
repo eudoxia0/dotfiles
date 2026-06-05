@@ -112,18 +112,6 @@ in
       isDefault = true;
       userContent = ./userContent.css;
 
-      # managed bookmarks
-      bookmarks = {
-        force = true;
-        settings = [
-          {
-            name = "toolbar";
-            toolbar = true;
-            bookmarks = builtins.fromJSON (builtins.readFile ./bookmarks.json);
-          }
-        ];
-      };
-
       # about:config
       settings = {
         # Disable "match whole words" in find bar.
