@@ -25,8 +25,8 @@ in
 
     # about:policies
     policies = {
-      # Disable Firefox Sync.
-      DisableFirefoxAccounts = true;
+      # Enable Firefox Sync.
+      DisableFirefoxAccounts = false;
 
       DisableFirefoxStudies = true;
 
