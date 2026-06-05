@@ -15,8 +15,8 @@
       package = pkgs.gnome-themes-extra;
     };
     iconTheme = {
-      package = pkgs.adwaita-icon-theme;
-      name = "Adwaita";
+      # package = pkgs.adwaita-icon-theme;
+      name = "Bluecurve";
     };
   };
 
