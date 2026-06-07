@@ -69,6 +69,7 @@
         ./modules/x11/bspwm
         ./modules/x11/emote
         ./modules/x11/espanso
+        ./modules/x11/fvwm
         ./modules/x11/polybar
         ./modules/x11/redshift
         ./modules/x11/rofi
