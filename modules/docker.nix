@@ -6,9 +6,9 @@
 }:
 
 {
-  virtualisation.docker = {
-    enable = true;
-  };
+  # virtualisation.docker = {
+  #   enable = true;
+  # };
 
   users.users.eudoxia.extraGroups = [ "docker" ];
 }
