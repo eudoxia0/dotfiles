@@ -22,8 +22,6 @@
     ripgrep
     rsync
     smartmontools
-    taskwarrior-tui
-    taskwarrior3
     termdown
     tt
     usbutils # lsusb
