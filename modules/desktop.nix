@@ -18,7 +18,6 @@
     gimp3
     gnome-disk-utility
     gparted
-    imv
     keepassxc
     koreader
     libreoffice
