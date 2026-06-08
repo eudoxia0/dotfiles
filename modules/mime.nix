@@ -12,7 +12,6 @@
 }:
 
 let
-  # image-viewer = "org.xfce.ristretto.desktop";
   image-viewer = "viewnior.desktop";
 in
 {

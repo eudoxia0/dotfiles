@@ -36,7 +36,6 @@
     vlc
     wdisplays
     wev
-    xfce.ristretto
     zathura
   ];
 }
