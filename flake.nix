@@ -62,7 +62,6 @@
         ./modules/syncthing.nix
         ./modules/thunar
         ./modules/todoist.nix
-        ./modules/tools
         ./modules/typst.nix
         ./modules/x11
         ./modules/x11/alacritty
