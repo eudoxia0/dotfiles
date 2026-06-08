@@ -6,9 +6,6 @@ in
 {
   networking.hostName = "ismene";
 
-  # Zed editor configuration.
-  # custom.zed.fontSize = 10;
-
   boot.initrd.luks.devices."luks-${deviceUuid}".device = "/dev/disk/by-uuid/${deviceUuid}";
 
   home-manager.users.eudoxia.programs.git.settings.user = {
