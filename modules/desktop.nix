@@ -34,7 +34,6 @@
     v4l-utils
     viewnior
     vlc
-    wdisplays
     wev
     zathura
   ];
