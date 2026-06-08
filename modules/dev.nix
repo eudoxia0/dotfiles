@@ -30,6 +30,7 @@
     texliveSmall
     tokei
     tree
+    typst
     vim
     zed-editor
     zola

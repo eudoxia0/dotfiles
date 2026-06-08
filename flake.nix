@@ -61,7 +61,6 @@
         ./modules/syncthing.nix
         ./modules/thunar
         ./modules/todoist.nix
-        ./modules/typst.nix
         ./modules/x11
         ./modules/x11/alacritty
         ./modules/x11/bspwm
