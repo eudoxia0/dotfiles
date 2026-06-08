@@ -8,7 +8,6 @@
 {
   home-manager.users.eudoxia.home.packages = with pkgs; [
     btop
-    cabal-install
     cargo-deny
     cargo-machete
     cargo-watch
@@ -16,7 +15,6 @@
     claude-code
     curl
     fd
-    ghc
     ghostscript
     gnumake
     graphviz
