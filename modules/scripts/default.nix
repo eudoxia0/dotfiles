@@ -39,5 +39,9 @@
       source = ./backup.sh;
       executable = true;
     };
+    ".eudoxia.d/bin/heic2jpg" = {
+      source = ./heic2jpg.sh;
+      executable = true;
+    };
   };
 }

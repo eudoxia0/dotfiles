@@ -28,6 +28,7 @@
     jq
     just
     lean4
+    libheif
     libxml2 # xmllint
     nixfmt-tree
     python314
