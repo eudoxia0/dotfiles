@@ -45,18 +45,4 @@
     xfce.ristretto
     zathura
   ];
-
-  nixpkgs.overlays = [
-    (self: super: {
-      signal-desktop = super.symlinkJoin {
-        name = "signal-desktop";
-        paths = [ super.signal-desktop ];
-        buildInputs = [ super.makeWrapper ];
-        postBuild = ''
-          wrapProgram $out/bin/signal-desktop \
-            --add-flags "--enable-features=UseOzonePlatform --ozone-platform-hint=auto"
-        '';
-      };
-    })
-  ];
 }
