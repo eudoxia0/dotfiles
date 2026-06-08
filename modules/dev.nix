@@ -18,7 +18,6 @@
     ghostscript
     gnumake
     graphviz
-    helix
     imagemagick
     jekyll
     jq
