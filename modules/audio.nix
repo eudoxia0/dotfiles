@@ -17,7 +17,7 @@
   # Enable realtime kit for low-latency audio.
   security.rtkit.enable = true;
 
-  # PipeWire configuration
+  # PipeWire configuration.
   services.pipewire = {
     enable = true;
     alsa.enable = true;
