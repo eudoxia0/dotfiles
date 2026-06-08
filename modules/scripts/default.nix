@@ -35,5 +35,9 @@
       source = ./count-inodes-du.py;
       executable = true;
     };
+    ".eudoxia.d/bin/backup" = {
+      source = ./backup.sh;
+      executable = true;
+    };
   };
 }

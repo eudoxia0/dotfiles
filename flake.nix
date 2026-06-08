@@ -21,7 +21,6 @@
       shared = [
         ./modules/1password.nix
         ./modules/audio.nix
-        ./modules/backup
         ./modules/bluetooth.nix
         ./modules/cli.nix
         ./modules/desktop.nix

@@ -18,7 +18,9 @@
     ocrmypdf
     pandoc
     pciutils # lspci
+    restic
     ripgrep
+    rsync
     smartmontools
     taskwarrior-tui
     taskwarrior3
