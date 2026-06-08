@@ -14,7 +14,6 @@
     cargo-watch
     clang
     claude-code
-    codex
     curl
     fd
     ghc
