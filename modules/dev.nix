@@ -22,7 +22,6 @@
     graphviz
     helix
     imagemagick
-    inform6
     jekyll
     jq
     just
