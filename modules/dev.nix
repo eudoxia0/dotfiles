@@ -35,7 +35,6 @@
     tree
     typst
     uv
-    vim
     zed-editor
     zola
   ];
