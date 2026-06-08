@@ -34,7 +34,6 @@
     v4l-utils
     viewnior
     vlc
-    vscode
     wdisplays
     wev
     xfce.ristretto
