@@ -8,11 +8,16 @@
 {
   home-manager.users.eudoxia.home.packages = with pkgs; [
     btop
+    cabal-install
+    cargo-deny
+    cargo-machete
+    cargo-watch
     clang
     claude-code
     codex
     curl
     fd
+    ghc
     ghostscript
     gnumake
     graphviz
@@ -25,12 +30,16 @@
     lean4
     libxml2 # xmllint
     nixfmt-tree
+    python314
+    ruff
+    rustup
     sass
     sqlite
     texliveSmall
     tokei
     tree
     typst
+    uv
     vim
     zed-editor
     zola

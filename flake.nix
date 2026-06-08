@@ -36,7 +36,6 @@
         ./modules/git.nix
         ./modules/gtk.nix
         ./modules/guile
-        ./modules/haskell.nix
         ./modules/heic
         ./modules/locale.nix
         ./modules/mime.nix
@@ -44,8 +43,6 @@
         ./modules/nixconf.nix
         ./modules/nushell
         ./modules/perf.nix
-        ./modules/python.nix
-        ./modules/rust.nix
         ./modules/scanner.nix
         ./modules/scripts
         ./modules/sddm.nix
