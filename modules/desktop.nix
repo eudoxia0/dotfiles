@@ -32,7 +32,6 @@
     strawberry
     transmission_4-gtk
     v4l-utils
-    vassal
     viewnior
     vlc
     vscode
