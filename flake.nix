@@ -49,7 +49,6 @@
         ./modules/services/epoch.nix
         ./modules/services/metauro.nix
         ./modules/services/thetis.nix
-        ./modules/services/wallpaperd
         ./modules/services/zetanom.nix
         ./modules/shell.nix
         ./modules/ssh.nix
