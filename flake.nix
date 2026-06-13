@@ -56,6 +56,7 @@
         ./modules/syncthing.nix
         ./modules/thunar
         ./modules/todoist.nix
+        ./modules/wallpaper
         ./modules/x11
         ./modules/x11/alacritty
         ./modules/x11/bspwm
