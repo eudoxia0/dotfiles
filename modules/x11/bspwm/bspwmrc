@@ -37,3 +37,6 @@ systemctl --user start xscreensaver &
 systemctl --user start network-manager-applet &
 systemctl --user start xcape &
 systemctl --user start xdg-desktop-portal-gtk &
+
+# Set the wallpaper.
+feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/panther.jpg
