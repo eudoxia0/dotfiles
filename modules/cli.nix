@@ -18,7 +18,6 @@
     ocrmypdf
     pandoc
     pciutils # lspci
-    poppler-utils
     restic
     ripgrep
     rsync
