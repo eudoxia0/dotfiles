@@ -407,6 +407,9 @@ Mouse 1 FS   A RaiseMove Resize
 Mouse 4 T    A WindowShade True
 Mouse 5 T    A WindowShade False
 
+# Left click on the root window: nothing.
+Mouse 1 R    A Nop
+
 # Right click on the root window: launch the FVWM menu.
 Mouse 3 R    A Menu MenuFvwmRoot
 
