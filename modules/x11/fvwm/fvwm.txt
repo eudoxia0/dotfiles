@@ -257,7 +257,6 @@ MenuStyle * Font "xft:Sans:Bold:size=8:antialias=True"
 DestroyMenu MenuFvwmRoot
 AddToMenu   MenuFvwmRoot "Fvwm" Title
 + "$[gt.&Programs]%icons/programs.png%" Popup MenuPrograms
-+ "$[gt.XDG &Menu]%icons/apps.png%"     Popup XDGMenu
 + "Terminal%icons/terminal.png%"        Exec exec $[infostore.terminal]
 + "Run Command%icons/run_arrow.png%"    Exec exec $[infostore.runcmd] $[infostore.runcmdopt]
 + "" Nop
@@ -269,9 +268,6 @@ Test (x FvwmPrompt) + "&FvwmPrompt%icons/terminal.png%" Exec exec $[infostore.te
 + "$[gt.Re&fresh]%icons/refresh.png%" Refresh
 + "$[gt.&Restart]%icons/restart.png%" Restart
 + "$[gt.&Quit]%icons/quit.png%"       Module FvwmScript FvwmScript-ConfirmQuit
-
-# Generate XDGMenu
-PipeRead "fvwm-menu-desktop -e"
 
 # Programs Menu
 #
