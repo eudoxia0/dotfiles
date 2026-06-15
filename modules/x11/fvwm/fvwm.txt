@@ -224,21 +224,7 @@ Style FvwmIdent WindowListSkip
 #      13 - FvwmPager Active Page
 #      14 - FvwmIconMan Iconified Button
 ###########
-# Art-Deco theme (Blue)
-Colorset 0  fg #ffffff, bg #2b4e5e, hi, sh, Plain, NoShape
-Colorset 1  fg #000000, bg #88b2b1, hi, sh, Plain, NoShape
-Colorset 2  fg #ffffff, bg #2b4e5e, hi, sh, Plain, NoShape
-Colorset 3  fg black, bg #415554, hi, sh, Plain, NoShape
-Colorset 4  fg black, bg #14252c, hi #24424f, sh #111f26, Plain, NoShape
-Colorset 5  fg #000000, bg #cbdcca, hi, sh, Plain, NoShape
-Colorset 6  fg #ffffff, bg #88b2b1, hi, sh, Plain, NoShape
-Colorset 7  fg #999999, bg #cbdcca, hi, sh, Plain, NoShape
-Colorset 8  fg #ffffff, bg #2b4e5e, hi, sh, Plain, NoShape
-Colorset 10 fg #ffffff, bg #2b4e5e, hi #aaaaaa, sh #999999, Plain, NoShape
-Colorset 11 fg #ffffff, bg #1a6e99, hi #ffffff, sh #ffffff, Plain, NoShape
-Colorset 12 fg #2d2d2d, bg #ffffff, hi, sh, Plain, NoShape
-Colorset 13 fg #ffffff, bg #006c6c, hi, sh, Plain, NoShape
-Colorset 14 fg #a8988f, bg #2b4e5e, hi #aaaaaa, sh #999999, Plain, NoShape
+
 
 #######
 # 4: Menus
@@ -549,12 +535,50 @@ DestroyModuleConfig EventNewDesk:*
 *EventNewDesk: new_desk ChangeDesk
 
 #
+# Theme
+#
+
+#   1 - Inactive Windows
+#   2 - Active Window
+#   3 - Inactive Windows Borders
+#   4 - Active Windows Borders
+Colorset 1 fg white, bg #afbdc07ac200
+Colorset 2 fg white, bg #cc0068006f00
+Colorset 3 fg white, bg #afbdc07ac200
+Colorset 4 fg white, bg #cc0068006f00
+
+AddToDecor CDEDecor
++ TitleStyle    AllInactive -- Raised
++ TitleStyle    AllActive -- Raised
++ ButtonStyle   All Simple -- UseTitleStyle
++ BorderStyle   Simple
++ TitleStyle    Centered -- Raised
++ ButtonStyle   All -- Raised
+
++ AddButtonStyle 1 Vector 3 23x58@0 77x58@0 77x42@0
++ AddButtonStyle 1 Vector 3 23x58@1 23x42@1 77x42@1
+
++ AddButtonStyle 2 Vector 3 21x79@0 79x79@0 79x21@0
++ AddButtonStyle 2 Vector 3 21x79@1 21x21@1 79x21@1
+
++ AddButtonStyle 4 Vector 3 42x58@0 58x58@0 58x42@0
++ AddButtonStyle 4 Vector 3 42x58@1 42x42@1 58x42@1
+
++ TitleStyle Height MinHeight 20
+
+Style * Colorset 1, HilightColorset 2, \
+        BorderColorset 3, HilightBorderColorset 4, \
+        BorderWidth 5, HandleWidth 5, \
+        MWMBorder, DepressableBorder, \
+        MWMButtons, UseDecor CDEDecor
+
+#
 # Taskbar
 #
 
 DestroyModuleConfig TaskBar:*
 *TaskBar: Geometry 128x96+0+0@p
-*TaskBar: Colorset 10
+*TaskBar: Colorset 3
 *TaskBar: Frame 0
 *TaskBar: Font    "xft:Fire Code:Regular:size=12:antialias=True"
 *TaskBar: Columns 4
@@ -567,10 +591,10 @@ DestroyModuleConfig TaskBar:*
 *TaskBar: (4x1, Swallow(NoClose,UseOld) stalonetray 'Exec exec stalonetray', Frame 0)
 
 # Desktop list
-*TaskBar: (1x1, Id desk0, Title "α", Action (Mouse 1) GotoDesk 0 0, Colorset 11, ActiveColorset 12, Frame 0)
-*TaskBar: (1x1, Id desk1, Title "β", Action (Mouse 1) GotoDesk 0 1, ActiveColorset 12, Frame 0)
-*TaskBar: (1x1, Id desk2, Title "γ", Action (Mouse 1) GotoDesk 0 2, ActiveColorset 12, Frame 0)
-*TaskBar: (1x1, Id desk3, Title "δ", Action (Mouse 1) GotoDesk 0 3, ActiveColorset 12, Frame 0)
+*TaskBar: (1x1, Id desk0, Title "α", Action (Mouse 1) GotoDesk 0 0, Colorset 1, ActiveColorset 2, Frame 0)
+*TaskBar: (1x1, Id desk1, Title "β", Action (Mouse 1) GotoDesk 0 1, ActiveColorset 2, Frame 0)
+*TaskBar: (1x1, Id desk2, Title "γ", Action (Mouse 1) GotoDesk 0 2, ActiveColorset 2, Frame 0)
+*TaskBar: (1x1, Id desk3, Title "δ", Action (Mouse 1) GotoDesk 0 3, ActiveColorset 2, Frame 0)
 
 #
 # Keybindings
