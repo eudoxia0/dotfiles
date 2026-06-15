@@ -649,3 +649,16 @@ DestroyModuleConfig FvwmIconMan:*
 DestroyModuleConfig EventNewDesk:*
 *EventNewDesk: PassID
 *EventNewDesk: new_desk ChangeDesk
+
+#
+# Keybindings
+#
+
+# s-r: dmenu_run
+Silent Key r A 4 Exec exec $[infostore.runcmd] $[infostore.runcmdopt]
+
+# s-Q: quit
+Key q A 4S Quit
+
+# s-R: restart
+Key r A 4S Restart
