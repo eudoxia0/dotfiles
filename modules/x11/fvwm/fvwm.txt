@@ -390,11 +390,9 @@ Silent Key Super_R A A Exec exec $[infostore.terminal]
 Test (x $[infostore.runcmd]) Silent Key Space A M Exec exec $[infostore.runcmd] $[infostore.runcmdopt]
 
 # Window Buttons: [1 3 5 7 9  TTTTT  0 8 6 4 2]
-#   1 - Open the WindowOps menu.
 #   2 - Close on single click, Destory on double click.
 #   4 - Maximize (right/middle button will only maximize vertical/horizontal)
 #   6 - Iconify (minimize)
-Mouse 1 1 A Menu MenuWindowOps Delete
 Mouse 1 2 A Close
 Mouse 1 4 A Maximize 100 100
 Mouse 2 4 A Maximize 0 100
