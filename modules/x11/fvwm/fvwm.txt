@@ -31,6 +31,13 @@ AddToFunc   StartFunction
 + I Module FvwmButtons RightPanel
 + I Module FvwmEvent EventNewDesk
 
+# Function: SetBG $0
+#
+# Used to set the desktop wallpaper.
+DestroyFunc SetBG
+AddToFunc   SetBG
++ I Exec exec feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/$0
+
 # Function to set background when fvwm starts
 DestroyFunc InitBackground
 AddToFunc InitBackground
@@ -64,25 +71,6 @@ AddToFunc   ViewManPage
   -n "Manual Page - $0" -T "Manual Page - $0" -e 'man "$0" || \
   (echo "$[gt.Documentation can be found at https://www.fvwm.org]"; \
   read tmp)'
-
-# Function: SetBG $0
-#
-# SetBG is used with the background menu to set the background
-# image and configure it to be loaded the next time fvwm is run.
-# Note, fvwm-root can't use .jpeg or resize images. Use something
-# like display, feh, etc.
-DestroyFunc SetBG
-AddToFunc   SetBG
-+ I Test (f $[FVWM_USERDIR]/images/background/$0) \
-    Exec exec fvwm-root $[FVWM_USERDIR]/images/background/$0
-+ I TestRc (Match) Exec exec ln -fs images/background/$0 \
-    $[FVWM_USERDIR]/.BGdefault
-+ I TestRc (Match) Break
-+ I Test (!f $[FVWM_DATADIR]/default-config/images/background/$0) Break
-+ I Exec exec fvwm-root $[FVWM_DATADIR]/default-config/images/background/$0
-+ I Exec exec ln -fs $[FVWM_DATADIR]/default-config/images/background/$0 \
-    $[FVWM_USERDIR]/.BGdefault
-
 
 # Function: IconManClick
 #
@@ -300,15 +288,11 @@ Test (x emacs) + "Emacs" Exec exec emacs
 Test (x gimp) + "Gimp" Exec exec gimp
 Test (x vlc) + "VLC" Exec exec vlc
 
-# Background Menu
-#
-# Backgrounds are located in ~/.fvwm/images/background/
-# Menu icons are located in ~/.fvwm/images/bgicons/
+# Wallpaper Menu
 DestroyMenu BGMenu
-AddToMenu   BGMenu "$[gt.Wallpapers]" Title
-+ "$[gt.Floral]%bgicons/bg1.png%"  SetBG bg1.png
-+ "$[gt.Circles]%bgicons/bg2.png%" SetBG bg2.png
-+ "$[gt.Space]%bgicons/bg3.png%"   SetBG bg3.png
+AddToMenu   BGMenu "Wallpapers" Title
++ "Panther"  SetBG panther.jpg
++ "Semiramis" SetBG semiramis.jpg
 
 # Window Operations Menus
 DestroyMenu MenuWindowOps
