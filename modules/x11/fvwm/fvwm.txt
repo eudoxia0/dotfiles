@@ -549,6 +549,27 @@ DestroyModuleConfig EventNewDesk:*
 # Taskbar
 #
 
+DestroyModuleConfig FvwmTaskBar: *
+*FvwmTaskBar: Geometry 1200x24+0-0
+*FvwmTaskBar: Colorset 15
+*FvwmTaskBar: Frame 0
+*FvwmTaskBar: Font "xft:Sans:size=10:bold:antialias=True"
+*FvwmTaskBar: Rows 1
+*FvwmTaskBar: Columns 1200
+
+*FvwmTaskBar: (55x1, Title "Fvwm", ActiveColorset 16, Action(Mouse 1) \
+               Menu MenuFvwmRoot Root 0 o100-24p, Frame 2)
+*FvwmTaskBar: (25x1, Icon "icons/mini/xterm.png", ActiveColorset 16, \
+               Action(Mouse 1) "Exec exec xterm")
+*FvwmTaskBar: (25x1, Icon "icons/mini/firefox.png", ActiveColorset 16, \
+               Action(Mouse 1) "Exec exec gimp")
+*FvwmTaskBar: (25x1, Icon "icons/mini/xteddy.png", ActiveColorset 16, \
+               Action(Mouse 1) "Exec exec xteddy")
+*FvwmTaskBar: (895x1, Left, Swallow TaskBarIcons 'Module FvwmIconMan \
+               TaskBarIcons')
+*FvwmTaskBar: (120x1, Swallow(NoClose, UseOld) stalonetray \
+               'Exec exec stalonetray', Frame 0)
+*FvwmTaskBar: (55x1, id "TaskTime", ActiveColorset 16, Title "Time")
 
 
 #
