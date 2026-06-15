@@ -529,8 +529,6 @@ DestroyModuleConfig EventNewDesk:*
 *EventNewDesk: PassID
 *EventNewDesk: new_desk ChangeDesk
 
-
-
 #
 # Decor
 #
