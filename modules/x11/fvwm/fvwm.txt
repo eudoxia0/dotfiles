@@ -18,21 +18,6 @@ InfoStoreAdd runcmdopt "-nb '#2b4e5e'"
 # per host.
 DesktopConfiguration global
 
-###########
-# 1: Functions
-#
-# Fvwm can use custom functions for various tasks.
-# The syntax for defining a function named FunctionName is:
-#
-#   DestroyFunc FunctionName
-#   AddToFunc FunctionName
-#   + I [Action to do Immediately]
-#   + C [Action to do on a Mouse Click]
-#   + D [Action to do on a Mouse Double Click]
-#   + H [Action to do on a Mouse Hold]
-#   + M [Action to do on a Mouse Motion]
-###########
-
 # Start Function
 #
 # The start function is run right after fvwm is done reading
@@ -49,10 +34,7 @@ AddToFunc   StartFunction
 # Function to set background when fvwm starts
 DestroyFunc InitBackground
 AddToFunc InitBackground
-+ I Test (f $[FVWM_USERDIR]/.BGdefault) \
-    Exec exec fvwm-root $[FVWM_USERDIR]/.BGdefault
-+ I TestRc (NoMatch) Exec exec fvwm-root \
-    $[FVWM_DATADIR]/default-config/images/background/bg1.png
++ I Exec exec feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/panther.jpg
 
 # Mouse Bindings Functions
 DestroyFunc RaiseMoveX
