@@ -152,7 +152,7 @@ MoveThreshold 3
 Style * SloppyFocus, MouseFocusClickRaises
 
 # Default Font
-DefaultFont "xft:Sans:Bold:size=8:antialias=True"
+DefaultFont "xft:Fire Code:Regular:size=12:antialias=True"
 
 # Window Placement
 Style * MinOverlapPlacement, GrabFocusOff, !UsePPosition
