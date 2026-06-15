@@ -654,6 +654,9 @@ DestroyModuleConfig EventNewDesk:*
 # Keybindings
 #
 
+# Ignore NumLock as a modifier.
+IgnoreModifiers L2
+
 # s-r: dmenu_run
 Silent Key r A 4 Exec exec $[infostore.runcmd] $[infostore.runcmdopt]
 
