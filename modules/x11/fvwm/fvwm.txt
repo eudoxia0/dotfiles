@@ -258,8 +258,8 @@ DestroyMenu MenuFvwmRoot
 AddToMenu   MenuFvwmRoot "Fvwm" Title
 + "$[gt.&Programs]%icons/programs.png%" Popup MenuPrograms
 + "$[gt.XDG &Menu]%icons/apps.png%"     Popup XDGMenu
-+ "&XTerm%icons/terminal.png%"          Exec exec $[infostore.terminal]
-Test (x $[infostore.runcmd]) + "R&un Command%icons/run_arrow.png%" Exec exec $[infostore.runcmd] $[infostore.runcmdopt]
++ "Terminal%icons/terminal.png%"        Exec exec $[infostore.terminal]
++ "Run Command%icons/run_arrow.png%"    Exec exec $[infostore.runcmd] $[infostore.runcmdopt]
 + "" Nop
 Test (x FvwmPrompt) + "&FvwmPrompt%icons/terminal.png%" Exec exec $[infostore.terminal] -e FvwmPrompt
 + "$[gt.&Wallpapers]%icons/wallpaper.png%" Popup BGMenu
