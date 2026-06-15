@@ -37,19 +37,8 @@ InfoStoreAdd terminal xterm
 InfoStoreAdd runcmd "dmenu_run"
 InfoStoreAdd runcmdopt "-nb '#2b4e5e'"
 
-# DesktopConfiguration sets how fvwm handles desktops:
-#
-# * global -- the default. This means all screens show the same desktops/pages.
-# * per-monitor -- every monitor has its own virtual desktop/pages.
-#     For this mode it's recommended that FvwmPager is configured to
-#     use the monitor configuration option, so that only windows on that
-#     specific monitor are shown.
-# * shared -- the virtual desktops are shared across all monitors and each
-#     monitor shows a single desktop at a time. If one monitor switches to a
-#     desktop currently being viewed by another, the two monitors swap which
-#     desktop they are viewing.  This is similar to how Xmonad or Herbsflutwm
-#     handle desks.  This mode only works with two or more monitors.
-#
+# All screens show the same desktop. Not relevant since I only have one monitor
+# per host.
 DesktopConfiguration global
 
 ###########
@@ -701,11 +690,3 @@ DestroyModuleConfig FvwmIconMan:*
 DestroyModuleConfig EventNewDesk:*
 *EventNewDesk: PassID
 *EventNewDesk: new_desk ChangeDesk
-
-# Local configuration file. For use with the default-config.
-#
-# If $FVWMUSER_DIR/local.config ($HOME/.fvwm/local.config by default)
-# exists, then read it. This allows changes to default-config settings
-# without needing a full copy of the default-config. This will also allow
-# default-config changes to get used after upgrades (if applicable).
-Test (f $[FVWM_USERDIR]/local.config) Read $[FVWM_USERDIR]/local.config
