@@ -409,8 +409,13 @@ Mouse 1 T    A RaiseMoveX Move Maximize
 Mouse 1 FS   A RaiseMove Resize
 Mouse 4 T    A WindowShade True
 Mouse 5 T    A WindowShade False
-Mouse 1 R    A Menu MenuFvwmRoot
+
+# Right click on the root window: launch the FVWM menu.
+Mouse 3 R    A Menu MenuFvwmRoot
+
+# Middle click on the root window: open the window list.
 Mouse 2 R    A WindowList
+
 Mouse 1 I    A RaiseMoveX Move "Iconify off"
 Mouse 3 T    A Menu MenuWindowOps
 Mouse 3 I    A Menu MenuIconOps
@@ -503,10 +508,10 @@ DestroyModuleConfig FvwmScript:*
 #
 # Note - To use the system tray you must have "stalonetray" installed.
 DestroyModuleConfig RightPanel:*
-*RightPanel: Geometry 120x$[monitor.$[monitor.primary].height]-0+0@p
+*RightPanel: Geometry $[monitor.$[monitor.primary].width]x40-0+0@p
 *RightPanel: Colorset 10
-*RightPanel: Rows $[monitor.$[monitor.primary].height]
-*RightPanel: Columns 120
+*RightPanel: Columns$[monitor.$[monitor.primary].width]
+*RightPanel: Rows 40
 *RightPanel: Frame 0
 *RightPanel: Font "xft:Sans:Bold:size=10:antialias=True"
 *RightPanel: (120x45, Icon "fvwm-logo-small.png", Frame 0)
