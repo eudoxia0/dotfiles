@@ -401,8 +401,6 @@ Mouse 1 6 A Iconify
 #   TitleBar: Click to Raise, Move, Double Click to Maximize
 #             Mouse Wheel Up/Down to WindowShade On/Off
 #   Borders: Click to raise, Move to Resize
-#   Root Window: Left Click - Main Menu
-#                Middle Click - Window List Menu
 #   Right click TitleBar/Borders for WindowOps Menu
 Mouse 1 T    A RaiseMoveX Move Maximize
 Mouse 1 FS   A RaiseMove Resize
