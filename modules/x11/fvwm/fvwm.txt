@@ -654,14 +654,45 @@ DestroyModuleConfig EventNewDesk:*
 # Keybindings
 #
 
-# Ignore NumLock as a modifier.
+# Ignore NumLock as a modifier
 IgnoreModifiers L2
 
 # s-r: dmenu_run
 Silent Key r A 4 Exec exec $[infostore.runcmd] $[infostore.runcmdopt]
 
 # s-Q: quit
-Key q A 4S Quit
+Silent Key q A 4S Quit
 
 # s-R: restart
-Key r A 4S Restart
+Silent Key r A 4S Restart
+
+# s-q: close focused window
+Silent Key q A 4 Close
+
+# s-{0,1,2,3,4}: switch virtual desktop
+Silent Key 1 A 4 GotoDesk 0 0
+Silent Key 2 A 4 GotoDesk 0 1
+Silent Key 3 A 4 GotoDesk 0 2
+Silent Key 4 A 4 GotoDesk 0 3
+Silent Key 5 A 4 GotoDesk 0 4
+
+# C-s-c: launch terminal
+Silent Key c A 4C Exec exec alacritty
+
+# C-s-e: launch editor
+Silent Key e A 4C Exec exec emacs
+
+# C-s-w: launch browser
+Silent Key w A 4C Exec exec firefox-scaled
+
+# C-s-f: launch file manager
+Silent Key f A 4C Exec exec thunar-scaled
+
+# s-x: lock the screen
+Silent Key x A 4 Exec exec xscreensaver-command -lock
+
+# Pause: lock the screen
+Silent Key Pause A N Exec exec xscreensaver-command -lock
+
+# Print: take a screenshot of a region
+Silent Key Print A N Exec exec scrot -f -s
