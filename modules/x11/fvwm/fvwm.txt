@@ -60,18 +60,6 @@ AddToFunc MoveToCurrent
 + I ThisWindow MoveToPage
 + I ThisWindow MoveToDesk
 
-# Function: ViewManPage $0
-#
-# This function loads the man page $0 in an terminal
-# and is used with the help menu. If the manual page is
-# not found, point users at fvwm.org and keep terminal open.
-DestroyFunc ViewManPage
-AddToFunc   ViewManPage
-+ I Exec exec $[infostore.terminal] -g 80x40 \
-  -n "Manual Page - $0" -T "Manual Page - $0" -e 'man "$0" || \
-  (echo "$[gt.Documentation can be found at https://www.fvwm.org]"; \
-  read tmp)'
-
 # Function: IconManClick
 #
 # This function is run from FvwmIconMan when the button is clicked.
@@ -97,11 +85,11 @@ AddToFunc   ToggleTitle
 # This function is called by FvwmEvent every time the Desk is changed.
 DestroyFunc ChangeDesk
 AddToFunc   ChangeDesk
-+ I SendToModule TaskBar ChangeButton desk0 Colorset 10
-+ I SendToModule TaskBar ChangeButton desk1 Colorset 10
-+ I SendToModule TaskBar ChangeButton desk2 Colorset 10
-+ I SendToModule TaskBar ChangeButton desk3 Colorset 10
-+ I SendToModule TaskBar ChangeButton desk$0 Colorset 11
++ I SendToModule TaskBar ChangeButton desk0 Colorset  1
++ I SendToModule TaskBar ChangeButton desk1 Colorset  1
++ I SendToModule TaskBar ChangeButton desk2 Colorset  1
++ I SendToModule TaskBar ChangeButton desk3 Colorset  1
++ I SendToModule TaskBar ChangeButton desk$0 Colorset 2
 
 
 #
@@ -578,7 +566,7 @@ Style * Colorset 1, HilightColorset 2, \
 
 DestroyModuleConfig TaskBar:*
 *TaskBar: Geometry 128x96+0+0@p
-*TaskBar: Colorset 3
+*TaskBar: Colorset 1
 *TaskBar: Frame 0
 *TaskBar: Font    "xft:Fire Code:Regular:size=12:antialias=True"
 *TaskBar: Columns 4
@@ -591,7 +579,7 @@ DestroyModuleConfig TaskBar:*
 *TaskBar: (4x1, Swallow(NoClose,UseOld) stalonetray 'Exec exec stalonetray', Frame 0)
 
 # Desktop list
-*TaskBar: (1x1, Id desk0, Title "α", Action (Mouse 1) GotoDesk 0 0, Colorset 1, ActiveColorset 2, Frame 0)
+*TaskBar: (1x1, Id desk0, Title "α", Action (Mouse 1) GotoDesk 0 0, Colorset 2, ActiveColorset 2, Frame 0)
 *TaskBar: (1x1, Id desk1, Title "β", Action (Mouse 1) GotoDesk 0 1, ActiveColorset 2, Frame 0)
 *TaskBar: (1x1, Id desk2, Title "γ", Action (Mouse 1) GotoDesk 0 2, ActiveColorset 2, Frame 0)
 *TaskBar: (1x1, Id desk3, Title "δ", Action (Mouse 1) GotoDesk 0 3, ActiveColorset 2, Frame 0)
@@ -599,9 +587,6 @@ DestroyModuleConfig TaskBar:*
 #
 # Keybindings
 #
-
-# Ignore NumLock as a modifier
-IgnoreModifiers L2
 
 # s-r: dmenu_run
 Silent Key r A 4 Exec exec $[infostore.runcmd] $[infostore.runcmdopt]
