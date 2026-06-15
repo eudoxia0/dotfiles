@@ -463,13 +463,8 @@ DestroyModuleConfig FvwmIdent:*
 *FvwmIdent: Font "xft:Sans:size=10:antialias=True"
 
 # FvwmScript
-#
-# FvwmScript is a module that allows one to write custom desktop
-# widgets and various other tools. This config uses two FvwmScripts.
-#   - Quit - This is a popup that asks for quit confirmation before
-#     quitting fvwm.
 DestroyModuleConfig FvwmScript:*
-*FvwmScript: DefaultColorset 10
+*FvwmScript: DefaultColorset 1
 
 # FvwmPager
 #
@@ -565,12 +560,12 @@ Style * Colorset 1, HilightColorset 2, \
 #
 
 DestroyModuleConfig TaskBar:*
-*TaskBar: Geometry 128x96+0+0@p
+*TaskBar: Geometry 128x448+0+0@p
 *TaskBar: Colorset 1
 *TaskBar: Frame 0
 *TaskBar: Font    "xft:Fire Code:Regular:size=12:antialias=True"
 *TaskBar: Columns 4
-*TaskBar: Rows    3
+*TaskBar: Rows    14
 
 # DateTime
 *TaskBar: (4x1, Swallow DateTime 'Module FvwmScript FvwmScript-DateTime', Frame 0)
@@ -583,6 +578,12 @@ DestroyModuleConfig TaskBar:*
 *TaskBar: (1x1, Id desk1, Title "β", Action (Mouse 1) GotoDesk 0 1, ActiveColorset 2, Frame 0)
 *TaskBar: (1x1, Id desk2, Title "γ", Action (Mouse 1) GotoDesk 0 2, ActiveColorset 2, Frame 0)
 *TaskBar: (1x1, Id desk3, Title "δ", Action (Mouse 1) GotoDesk 0 3, ActiveColorset 2, Frame 0)
+
+# Pager
+*TaskBar: (4x4, Swallow FvwmPager 'Module FvwmPager *', Frame 0)
+
+# IconMan
+*TaskBar: (4x4, Top, Swallow FvwmIconMan 'Module FvwmIconMan', Frame 0)
 
 #
 # Keybindings
