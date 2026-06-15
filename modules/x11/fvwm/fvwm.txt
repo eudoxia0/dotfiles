@@ -250,10 +250,10 @@ MenuStyle * TrianglesSolid, TrianglesUseFore
 MenuStyle * ItemFormat "%s%|%3.1i%5.3l%5l%5r%5.3>%|"
 MenuStyle * Font "xft:Sans:Bold:size=8:antialias=True"
 
+#
 # Root Menu
 #
-# The root menu will PopUp with a click in the root
-# window or using alt-f1 (or menu).
+
 DestroyMenu MenuFvwmRoot
 AddToMenu   MenuFvwmRoot "Fvwm" Title
 + "$[gt.&Programs]%icons/programs.png%" Popup MenuPrograms
@@ -267,23 +267,20 @@ Test (x FvwmPrompt) + "&FvwmPrompt%icons/terminal.png%" Exec exec $[infostore.te
 + "$[gt.&Restart]%icons/restart.png%" Restart
 + "$[gt.&Quit]%icons/quit.png%"       Module FvwmScript FvwmScript-ConfirmQuit
 
-# Programs Menu
-#
-# This test for some common programs and adds them to the menu.
-# When adding programs you don't need to use the Test (x foo)
-# lines as this is only to help make this menu portable.
 DestroyMenu MenuPrograms
 AddToMenu   MenuPrograms "$[gt.Programs]" Title
 + "Firefox" Exec exec firefox-scaled
 + "Emacs" Exec exec emacs
 
-# Wallpaper Menu
 DestroyMenu BGMenu
 AddToMenu   BGMenu "Wallpapers" Title
 + "Panther"  SetBG panther.jpg
 + "Semiramis" SetBG semiramis.jpg
 
+#
 # Window Operations Menus
+#
+
 DestroyMenu MenuWindowOps
 AddToMenu   MenuWindowOps
 + "$[gt.Move]"         Move
@@ -381,7 +378,6 @@ AddToMenu   MenuSendToPage
 ####################
 
 # Ctrl-F1/F2/F3/F4 will switch between the Virtual Desktops.
-# Super_R (windows key) will launch a terminal.
 # Alt-Space to launch dmenu (Note: dmenu must be present in the system)
 #
 # Silent suppresses any errors (such as keyboards with no Menu key).
@@ -409,7 +405,6 @@ Mouse 1 6 A Iconify
 #             Mouse Wheel Up/Down to WindowShade On/Off
 #   Borders: Click to raise, Move to Resize
 #   Root Window: Left Click - Main Menu
-#                Right Click - WindowOps Menu
 #                Middle Click - Window List Menu
 #   Right click TitleBar/Borders for WindowOps Menu
 Mouse 1 T    A RaiseMoveX Move Maximize
@@ -418,7 +413,6 @@ Mouse 4 T    A WindowShade True
 Mouse 5 T    A WindowShade False
 Mouse 1 R    A Menu MenuFvwmRoot
 Mouse 2 R    A WindowList
-Mouse 3 R    A Menu MenuWindowOpsLong
 Mouse 1 I    A RaiseMoveX Move "Iconify off"
 Mouse 3 T    A Menu MenuWindowOps
 Mouse 3 I    A Menu MenuIconOps
@@ -454,7 +448,7 @@ Key Left    WTSF    CSM Maximize True growleft 0
 #   4 - Maximize
 #   6 - Minimize
 ###########
-TitleStyle Centered Height 18 -- Flat
+TitleStyle Centered Height 24 -- Flat
 ButtonStyle All ActiveUp Vector 5 15x15@4 15x85@3 85x85@3 85x15@3 \
                 15x15@3 -- Flat
 ButtonStyle All ToggledActiveUp Vector 5 15x15@4 15x85@3 85x85@3 \
