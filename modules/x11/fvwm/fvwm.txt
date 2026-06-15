@@ -553,7 +553,7 @@ DestroyModuleConfig EventNewDesk:*
 #
 
 DestroyModuleConfig TaskBar:*
-*TaskBar: Geometry $[monitor.$[monitor.primary].width]x40+0-0@p
+*TaskBar: Geometry $[monitor.$[monitor.primary].width]x40+0+0@p
 *TaskBar: Colorset 10
 *TaskBar: Frame 0
 *TaskBar: Font "xft:Fire Code:Regular:size=12:antialias=True"
