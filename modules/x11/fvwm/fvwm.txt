@@ -553,24 +553,24 @@ DestroyModuleConfig EventNewDesk:*
 #
 
 DestroyModuleConfig TaskBar:*
-*TaskBar: Geometry $[monitor.$[monitor.primary].width]x40+0+0@p
+*TaskBar: Geometry 128x96+0+0@p
 *TaskBar: Colorset 10
 *TaskBar: Frame 0
-*TaskBar: Font "xft:Fire Code:Regular:size=12:antialias=True"
-*TaskBar: Rows 40
-*TaskBar: Columns $[monitor.$[monitor.primary].width]
-
-# Desktop list
-*TaskBar: (32x40, Id desk0, Title "α", Action (Mouse 1) GotoDesk 0 0, Colorset 11, ActiveColorset 12, Frame 0)
-*TaskBar: (32x40, Id desk1, Title "β", Action (Mouse 1) GotoDesk 0 1, ActiveColorset 12, Frame 0)
-*TaskBar: (32x40, Id desk2, Title "γ", Action (Mouse 1) GotoDesk 0 2, ActiveColorset 12, Frame 0)
-*TaskBar: (32x40, Id desk3, Title "δ", Action (Mouse 1) GotoDesk 0 3, ActiveColorset 12, Frame 0)
-
-# System tray
-*TaskBar: (120x40, Swallow(NoClose,UseOld) stalonetray 'Exec exec stalonetray', Frame 0)
+*TaskBar: Font    "xft:Fire Code:Regular:size=12:antialias=True"
+*TaskBar: Columns 4
+*TaskBar: Rows    3
 
 # DateTime
-*TaskBar: (120x40, Swallow DateTime 'Module FvwmScript FvwmScript-DateTime', Frame 0)
+*TaskBar: (4x1, Swallow DateTime 'Module FvwmScript FvwmScript-DateTime', Frame 0)
+
+# System tray
+*TaskBar: (4x1, Swallow(NoClose,UseOld) stalonetray 'Exec exec stalonetray', Frame 0)
+
+# Desktop list
+*TaskBar: (1x1, Id desk0, Title "α", Action (Mouse 1) GotoDesk 0 0, Colorset 11, ActiveColorset 12, Frame 0)
+*TaskBar: (1x1, Id desk1, Title "β", Action (Mouse 1) GotoDesk 0 1, ActiveColorset 12, Frame 0)
+*TaskBar: (1x1, Id desk2, Title "γ", Action (Mouse 1) GotoDesk 0 2, ActiveColorset 12, Frame 0)
+*TaskBar: (1x1, Id desk3, Title "δ", Action (Mouse 1) GotoDesk 0 3, ActiveColorset 12, Frame 0)
 
 #
 # Keybindings
