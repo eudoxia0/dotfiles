@@ -1,22 +1,22 @@
-# InfoStoreAdd can be used to store variable data internal to fvwm.
-# The variable can then be used in the configuration as $[infostore.name].
 #
-# You can also use environment variables but for data internal to fvwm
-# use InfoStore variables instead.
+# Variables
 #
-# The following is used in various menus.  Change this to your terminal of
-# choice.
-InfoStoreAdd terminal alacritty
 
-# This is used for "Run Command" and the Meta+Space key-binding.
-# runcmd is the binary name and runcmdopt contains additional
-# command line options.
+InfoStoreAdd terminal alacritty
 InfoStoreAdd runcmd "dmenu_run"
 InfoStoreAdd runcmdopt "-nb '#2b4e5e'"
+
+#
+# Configuration
+#
 
 # All screens show the same desktop. Not relevant since I only have one monitor
 # per host.
 DesktopConfiguration global
+
+#
+# Functions
+#
 
 # Start Function
 #
@@ -104,9 +104,9 @@ AddToFunc   ChangeDesk
 + I SendToModule FvwmButtons ChangeButton desk$0 Colorset 11
 
 
-#############
-# 2: Styles #
-#############
+#
+# Style
+#
 
 # Desktops and Pages
 #
@@ -262,7 +262,6 @@ AddToMenu   MenuFvwmRoot "Fvwm" Title
 + "" Nop
 Test (x FvwmPrompt) + "&FvwmPrompt%icons/terminal.png%" Exec exec $[infostore.terminal] -e FvwmPrompt
 + "$[gt.&Wallpapers]%icons/wallpaper.png%" Popup BGMenu
-+ "$[gt.M&an Pages]%icons/help.png%"       Popup MenuFvwmManPages
 + "$[gt.Cop&y Config]%icons/conf.png%"     FvwmScript FvwmScript-ConfirmCopyConfig
 + "" Nop
 + "$[gt.Re&fresh]%icons/refresh.png%" Refresh
@@ -361,35 +360,6 @@ AddToMenu   MenuSendToPage
 + "$[gt.Page] (0,1)" MoveToPage 0 1
 + "$[gt.Page] (1,0)" MoveToPage 1 0
 + "$[gt.Page] (1,1)" MoveToPage 1 1
-
-
-# Fvwm Man Pages (Help) Menu
-DestroyMenu MenuFvwmManPages
-AddToMenu   MenuFvwmManPages "Help" Title
-+ "fvwm3"         ViewManPage fvwm3
-+ "fvwm3commands" ViewManPage fvwm3commands
-+ "fvwm3styles"   ViewManPage fvwm3styles
-+ "fvwm3menus"    ViewManPage fvwm3menus
-+ "fvwm3all"      ViewManPage fvwm3all
-+ "" Nop
-+ "FvwmAnimate"   ViewManPage FvwmAnimate
-+ "FvwmAuto"      ViewManPage FvwmAuto
-+ "FvwmBacker"    ViewManPage FvwmBacker
-+ "FvwmButtons"   ViewManPage FvwmButtons
-+ "FvwmCommand"   ViewManPage FvwmCommand
-+ "FvwmEvent"     ViewManPage FvwmEvent
-+ "FvwmIconMan"   ViewManPage FvwmIconMan
-+ "FvwmIdent"     ViewManPage FvwmIdent
-+ "FvwmPager"     ViewManPage FvwmPager
-+ "FvwmPerl"      ViewManPage FvwmPerl
-Test (x FvwmPrompt) + "FvwmPrompt" ViewManPage FvwmPrompt
-+ "FvwmRearrange" ViewManPage FvwmRearrange
-+ "FvwmScript"    ViewManPage FvwmScript
-+ "" Nop
-+ "fvwm-root"           ViewManPage fvwm-root
-+ "fvwm-menu-desktop"   ViewManPage fvwm-menu-desktop
-+ "fvwm-menu-directory" ViewManPage fvwm-menu-directory
-+ "fvwm-menu-xlock"     ViewManPage fvwm-menu-xlock
 
 #######
 # 5: Mouse and Key bindings
