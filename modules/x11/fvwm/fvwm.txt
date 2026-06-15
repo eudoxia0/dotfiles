@@ -29,6 +29,7 @@ DestroyFunc StartFunction
 AddToFunc   StartFunction
 + I Test (Init) InitBackground
 + I Module FvwmEvent EventNewDesk
++ I Module FvwmButtons TaskBar
 
 # Function: SetBG $0
 #
@@ -96,11 +97,11 @@ AddToFunc   ToggleTitle
 # This function is called by FvwmEvent every time the Desk is changed.
 DestroyFunc ChangeDesk
 AddToFunc   ChangeDesk
-+ I SendToModule FvwmButtons ChangeButton desk0 Colorset 10
-+ I SendToModule FvwmButtons ChangeButton desk1 Colorset 10
-+ I SendToModule FvwmButtons ChangeButton desk2 Colorset 10
-+ I SendToModule FvwmButtons ChangeButton desk3 Colorset 10
-+ I SendToModule FvwmButtons ChangeButton desk$0 Colorset 11
++ I SendToModule TaskBar ChangeButton desk0 Colorset 10
++ I SendToModule TaskBar ChangeButton desk1 Colorset 10
++ I SendToModule TaskBar ChangeButton desk2 Colorset 10
++ I SendToModule TaskBar ChangeButton desk3 Colorset 10
++ I SendToModule TaskBar ChangeButton desk$0 Colorset 11
 
 
 #
@@ -139,7 +140,7 @@ Style * EdgeMoveDelay 350, EdgeMoveResistance 350
 # EwmhBaseStruts [screen name] [left] [right] [top] [bottom]
 # Reserves space along the edge(s) of the Screen that will not
 # be covered when maximizing or placing windows.
-EwmhBaseStruts screen $[monitor.primary] 0 120 0 0
+EwmhBaseStruts screen $[monitor.primary] 0 0 0 36
 
 # This sets the ClickTime and MoveThreshold used to determine
 # Double Clicks, Hold and Move for the mouse.
@@ -194,6 +195,7 @@ Style * !Icon
 Style * Lenience
 
 # Window Specific Styles
+Style TaskBar !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
 Style ConfirmQuit !Title, PositionPlacement Center, WindowListSkip, Layer 6
 Style FvwmIdent WindowListSkip
 
@@ -548,28 +550,36 @@ DestroyModuleConfig EventNewDesk:*
 #
 # Taskbar
 #
+# A horizontal panel pinned to the bottom of the primary monitor.
+# Layout: desktop list | spacer | systray | datetime
+DestroyModuleConfig TaskBar:*
+*TaskBar: Geometry $[monitor.$[monitor.primary].width]x36+0-0@p
+*TaskBar: Colorset 10
+*TaskBar: Frame 0
+*TaskBar: Font "xft:Sans:Bold:size=8:antialias=True"
+*TaskBar: Rows 1
+*TaskBar: Columns $[monitor.$[monitor.primary].width]
 
-DestroyModuleConfig FvwmTaskBar: *
-*FvwmTaskBar: Geometry 1200x24+0-0
-*FvwmTaskBar: Colorset 15
-*FvwmTaskBar: Frame 0
-*FvwmTaskBar: Font "xft:Sans:size=10:bold:antialias=True"
-*FvwmTaskBar: Rows 1
-*FvwmTaskBar: Columns 1200
+# Desktop list
+*TaskBar: (32x36, Id desk0, Title "1", Action (Mouse 1) GotoDesk 0 0, \
+    Colorset 11, ActiveColorset 12, Frame 0)
+*TaskBar: (32x36, Id desk1, Title "2", Action (Mouse 1) GotoDesk 0 1, \
+    ActiveColorset 12, Frame 0)
+*TaskBar: (32x36, Id desk2, Title "3", Action (Mouse 1) GotoDesk 0 2, \
+    ActiveColorset 12, Frame 0)
+*TaskBar: (32x36, Id desk3, Title "4", Action (Mouse 1) GotoDesk 0 3, \
+    ActiveColorset 12, Frame 0)
 
-*FvwmTaskBar: (55x1, Title "Fvwm", ActiveColorset 16, Action(Mouse 1) \
-               Menu MenuFvwmRoot Root 0 o100-24p, Frame 2)
-*FvwmTaskBar: (25x1, Icon "icons/mini/xterm.png", ActiveColorset 16, \
-               Action(Mouse 1) "Exec exec xterm")
-*FvwmTaskBar: (25x1, Icon "icons/mini/firefox.png", ActiveColorset 16, \
-               Action(Mouse 1) "Exec exec gimp")
-*FvwmTaskBar: (25x1, Icon "icons/mini/xteddy.png", ActiveColorset 16, \
-               Action(Mouse 1) "Exec exec xteddy")
-*FvwmTaskBar: (895x1, Left, Swallow TaskBarIcons 'Module FvwmIconMan \
-               TaskBarIcons')
-*FvwmTaskBar: (120x1, Swallow(NoClose, UseOld) stalonetray \
-               'Exec exec stalonetray', Frame 0)
-*FvwmTaskBar: (55x1, id "TaskTime", ActiveColorset 16, Title "Time")
+# Spacer
+*TaskBar: ($[math.-.$[monitor.$[monitor.primary].width],368]x36, Frame 0)
+
+# System tray
+Test (x stalonetray) *TaskBar: (120x36, Swallow(NoClose,UseOld) \
+    stalonetray 'Exec exec stalonetray', Frame 0)
+
+# DateTime
+*TaskBar: (120x36, Swallow DateTime \
+    'Module FvwmScript FvwmScript-DateTime', Frame 0)
 
 
 #
