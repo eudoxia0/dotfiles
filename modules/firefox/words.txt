@@ -66,6 +66,7 @@ aripiprazole
 audiobook
 bioavailability
 bottlenecked
+bupropion
 catastrophizing
 checkpointing
 cloneable
@@ -102,6 +103,7 @@ ligand
 malatang
 matcha
 melatonin
+methylphenidate
 monoamine
 monomorphization
 monomorphized
