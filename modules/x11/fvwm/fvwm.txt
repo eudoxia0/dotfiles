@@ -367,21 +367,8 @@ Silent Key Pause A N Exec exec xscreensaver-command -lock
 # Print: take a screenshot of a region
 Silent Key Print A N Exec exec scrot -f -s
 
-# Ctrl-F1/F2/F3/F4 will switch between the Virtual Desktops.
-# Alt-Space to launch dmenu (Note: dmenu must be present in the system)
-#
-# Silent suppresses any errors (such as keyboards with no Menu key).
+# M-Tab: window list
 Silent Key Tab     A M WindowList Root c c NoDeskSort, NoGeometry, SelectOnRelease Meta_L, CurrentAtEnd
-Silent Key F1      A C GotoDesk 0 0
-Silent Key F2      A C GotoDesk 0 1
-Silent Key F3      A C GotoDesk 0 2
-Silent Key F4      A C GotoDesk 0 3
-Silent Key Super_R A A Exec exec $[infostore.terminal]
-Test (x $[infostore.runcmd]) Silent Key Space A M Exec exec $[infostore.runcmd] $[infostore.runcmdopt]
-Key Up      WTSF    CSM Maximize True 0 growup
-Key Down    WTSF    CSM Maximize True 0 growdown
-Key Right   WTSF    CSM Maximize True growright 0
-Key Left    WTSF    CSM Maximize True growleft 0
 
 #
 # Mouse Bindings
