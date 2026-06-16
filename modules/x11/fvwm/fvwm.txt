@@ -75,7 +75,7 @@ DestroyFunc StartFunction
 AddToFunc   StartFunction
 + I Test (Init) InitBackground
 + I Module FvwmEvent EventNewDesk
-+ I Module FvwmButtons TaskBar
++ I Module FvwmButtons MainPanel
 
 # Function to set background when fvwm starts
 DestroyFunc InitBackground
@@ -216,7 +216,7 @@ Style * !Icon
 Style * Lenience
 
 # Window Specific Styles
-Style TaskBar !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
+Style MainPanel !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
 Style ConfirmQuit !Title, PositionPlacement Center, WindowListSkip, Layer 6
 
 AddToDecor CDEDecor
@@ -245,38 +245,38 @@ Style * Colorset 1, HilightColorset 2, \
         MWMButtons, UseDecor CDEDecor
 
 #
-# Taskbar
+# MainPanel
 #
 
-DestroyModuleConfig TaskBar:*
-*TaskBar: Geometry 128x320+0+0@p
-*TaskBar: Colorset 1
-*TaskBar: ActiveColorset 2
-*TaskBar: Frame    4
-*TaskBar: Columns  4
-*TaskBar: Rows     10
+DestroyModuleConfig MainPanel:*
+*MainPanel: Geometry 128x320+0+0@p
+*MainPanel: Colorset 1
+*MainPanel: ActiveColorset 2
+*MainPanel: Frame    4
+*MainPanel: Columns  4
+*MainPanel: Rows     10
 
 # DateTime
-*TaskBar: (4x1, Swallow DateTime 'Module FvwmScript FvwmScript-DateTime', Frame 0)
+*MainPanel: (4x1, Swallow DateTime 'Module FvwmScript FvwmScript-DateTime', Frame 0)
 
 # System tray
-*TaskBar: (4x1, Swallow(NoClose,UseOld) stalonetray 'Exec exec stalonetray', Frame 0)
+*MainPanel: (4x1, Swallow(NoClose,UseOld) stalonetray 'Exec exec stalonetray', Frame 0)
 
 # Desktop list
-*TaskBar: (1x1, Id desk0, Title "α", Action (Mouse 1) GotoDesk 0 0, Colorset 11, ActiveColorset 12, Frame 0)
-*TaskBar: (1x1, Id desk1, Title "β", Action (Mouse 1) GotoDesk 0 1, ActiveColorset 12, Frame 0)
-*TaskBar: (1x1, Id desk2, Title "γ", Action (Mouse 1) GotoDesk 0 2, ActiveColorset 12, Frame 0)
-*TaskBar: (1x1, Id desk3, Title "δ", Action (Mouse 1) GotoDesk 0 3, ActiveColorset 12, Frame 0)
+*MainPanel: (1x1, Id desk0, Title "α", Action (Mouse 1) GotoDesk 0 0, Colorset 11, ActiveColorset 12, Frame 0)
+*MainPanel: (1x1, Id desk1, Title "β", Action (Mouse 1) GotoDesk 0 1, ActiveColorset 12, Frame 0)
+*MainPanel: (1x1, Id desk2, Title "γ", Action (Mouse 1) GotoDesk 0 2, ActiveColorset 12, Frame 0)
+*MainPanel: (1x1, Id desk3, Title "δ", Action (Mouse 1) GotoDesk 0 3, ActiveColorset 12, Frame 0)
 
 # IconMan
-*TaskBar: (4x4, Top, Swallow FvwmIconMan 'Module FvwmIconMan', Frame 0)
+*MainPanel: (4x4, Top, Swallow FvwmIconMan 'Module FvwmIconMan', Frame 0)
 
 #
 # Fonts
 #
 
 *FvwmIconMan: Font "xft:Fira Code:Regular:size=16:antialias=True"
-*TaskBar: Font     "xft:Fira Code:Regular:size=16:antialias=True"
+*MainPanel: Font     "xft:Fira Code:Regular:size=16:antialias=True"
 MenuStyle * Font   "xft:Fira Code:Regular:size=16:antialias=True"
 DefaultFont        "xft:Fire Code:Regular:size=16:antialias=True"
 
@@ -402,11 +402,11 @@ AddToMenu   BGMenu "Wallpapers" Title
 # Changes which desk number is highlighted when the desk is changed.
 DestroyFunc ChangeDesk
 AddToFunc   ChangeDesk
-+ I SendToModule TaskBar ChangeButton desk0 Colorset  10
-+ I SendToModule TaskBar ChangeButton desk1 Colorset  10
-+ I SendToModule TaskBar ChangeButton desk2 Colorset  10
-+ I SendToModule TaskBar ChangeButton desk3 Colorset  10
-+ I SendToModule TaskBar ChangeButton desk$0 Colorset 11
++ I SendToModule MainPanel ChangeButton desk0 Colorset  10
++ I SendToModule MainPanel ChangeButton desk1 Colorset  10
++ I SendToModule MainPanel ChangeButton desk2 Colorset  10
++ I SendToModule MainPanel ChangeButton desk3 Colorset  10
++ I SendToModule MainPanel ChangeButton desk$0 Colorset 11
 
 DestroyModuleConfig EventNewDesk:*
 *EventNewDesk: PassID
