@@ -317,9 +317,9 @@ DestroyModuleConfig TaskBar:*
 # Fonts
 #
 
-*FvwmIconMan: Font "xft:Fira Code:Bold:size=16:antialias=True"
+*FvwmIconMan: Font "xft:Fira Code:Regular:size=16:antialias=True"
 *TaskBar: Font     "xft:Fira Code:Regular:size=16:antialias=True"
-MenuStyle * Font   "xft:Fira Code:Bold:size=16:antialias=True"
+MenuStyle * Font   "xft:Fira Code:Regular:size=16:antialias=True"
 DefaultFont        "xft:Fire Code:Regular:size=16:antialias=True"
 
 #
