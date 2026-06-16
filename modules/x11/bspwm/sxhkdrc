@@ -20,7 +20,7 @@ super + alt + {h,j,k,l}
 # Toggle gaps
 super + g
     if [ "$(bspc config window_gap)" -eq 0 ]; then \
-        bspc config window_gap 60; \
+        bspc config window_gap 128; \
     else \
         bspc config window_gap 0; \
     fi
