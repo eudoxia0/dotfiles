@@ -1,6 +1,6 @@
 @-moz-document domain("wikipedia.org") {
     body {
-        font-family: serif !important;
+        font-family: "TeX Gyre Termes", serif !important;
     }
 
     p {
