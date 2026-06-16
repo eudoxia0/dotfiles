@@ -371,7 +371,7 @@ Mouse 1 I    A RaiseMoveX Move "Iconify off"
 #
 
 DestroyMenu MenuFvwmRoot
-AddToMenu   MenuFvwmRoot "Fvwm" Title
+AddToMenu   MenuFvwmRoot "root" Title
 + "$[gt.&Programs]%icons/programs.png%" Popup MenuPrograms
 + "Terminal%icons/terminal.png%"        Exec exec alacritty
 + "" Nop
