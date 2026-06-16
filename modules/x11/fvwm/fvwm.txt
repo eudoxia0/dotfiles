@@ -1,12 +1,4 @@
 #
-# Variables
-#
-
-InfoStoreAdd terminal alacritty
-InfoStoreAdd runcmd "dmenu_run"
-InfoStoreAdd runcmdopt "-nb '#2b4e5e'"
-
-#
 # Colorsets
 #
 
@@ -328,7 +320,7 @@ DefaultFont        "xft:Fire Code:Regular:size=16:antialias=True"
 #
 
 # s-r: dmenu_run
-Silent Key r A 4 Exec exec $[infostore.runcmd] $[infostore.runcmdopt]
+Silent Key r A 4 Exec exec dmenu_run
 
 # s-Q: quit
 Silent Key q A 4S Quit
@@ -414,10 +406,8 @@ Mouse 1 I    A RaiseMoveX Move "Iconify off"
 DestroyMenu MenuFvwmRoot
 AddToMenu   MenuFvwmRoot "Fvwm" Title
 + "$[gt.&Programs]%icons/programs.png%" Popup MenuPrograms
-+ "Terminal%icons/terminal.png%"        Exec exec $[infostore.terminal]
-+ "Run Command%icons/run_arrow.png%"    Exec exec $[infostore.runcmd] $[infostore.runcmdopt]
++ "Terminal%icons/terminal.png%"        Exec exec alacritty
 + "" Nop
-Test (x FvwmPrompt) + "&FvwmPrompt%icons/terminal.png%" Exec exec $[infostore.terminal] -e FvwmPrompt
 + "$[gt.&Wallpapers]%icons/wallpaper.png%" Popup BGMenu
 + "" Nop
 + "$[gt.Re&fresh]%icons/refresh.png%" Refresh
