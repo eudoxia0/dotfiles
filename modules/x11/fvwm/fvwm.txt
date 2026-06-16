@@ -631,3 +631,13 @@ Silent Key Pause A N Exec exec xscreensaver-command -lock
 
 # Print: take a screenshot of a region
 Silent Key Print A N Exec exec scrot -f -s
+
+#
+# Mouse Bindings
+#
+
+# super + left click hold: move window
+Mouse 1 W 4 Move
+
+# super + right click hold: resize window
+Mouse 3 W 4 Resize
