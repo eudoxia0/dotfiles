@@ -129,7 +129,7 @@ DestroyModuleConfig FvwmIconMan:*
 *FvwmIconMan: IconAndSelectColorset 12
 *FvwmIconMan: DrawIcons always
 *FvwmIconMan: ReliefThickness 0
-*FvwmIconMan: Format "%t"
+*FvwmIconMan: Format "%c: %t"
 *FvwmIconMan: Action Mouse 0 A ret
 *FvwmIconMan: Action Mouse 1 A sendcommand IconManClick
 *FvwmIconMan: Resolution global
