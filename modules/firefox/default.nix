@@ -143,6 +143,7 @@ in
 
         # Big-ass scrollbar.
         "widget.non-native-theme.scrollbar.style" = 4;
+        "widget.non-native-theme.scrollbar.size.override" = 24;
 
         # Always show the scrollbar.
         "layout.testing.overlay-scrollbars.always-visible" = true;
