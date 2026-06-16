@@ -77,13 +77,6 @@ AddToFunc   StartFunction
 + I Module FvwmEvent EventNewDesk
 + I Module FvwmButtons TaskBar
 
-# Function: SetBG $0
-#
-# Used to set the desktop wallpaper.
-DestroyFunc SetBG
-AddToFunc   SetBG
-+ I Exec exec feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/$0
-
 # Function to set background when fvwm starts
 DestroyFunc InitBackground
 AddToFunc InitBackground
