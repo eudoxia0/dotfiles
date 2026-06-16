@@ -20,6 +20,11 @@
     .subtitle {
         font-family: "Doulos SIL", "TeX Gyre Termes", serif;
     }
+
+    html {
+        scrollbar-width: auto !important;
+        scrollbar-color: #888 #f0f0f0 !important;
+    }
 }
 
 @-moz-document domain("plfa.github.io") {
