@@ -171,7 +171,6 @@ DestroyModuleConfig FvwmIconMan:*
 *FvwmIconMan: DrawIcons always
 *FvwmIconMan: ReliefThickness 0
 *FvwmIconMan: Format "%t"
-*FvwmIconMan: Font "xft:Sans:Bold:size=12:antialias=True"
 *FvwmIconMan: Action Mouse 0 A ret
 *FvwmIconMan: Action Mouse 1 A sendcommand IconManClick
 *FvwmIconMan: Resolution global
@@ -186,7 +185,6 @@ MenuStyle * MenuColorset 5, ActiveColorset 6, GreyedColorset 7, TitleColorset 8
 MenuStyle * Hilight3DOff, HilightBack, HilightTitleBack, SeparatorsLong
 MenuStyle * TrianglesSolid, TrianglesUseFore
 MenuStyle * ItemFormat "%s%|%3.1i%5.3l%5l%5r%5.3>%|"
-MenuStyle * Font "xft:Sans:Bold:size=16:antialias=True"
 
 TitleStyle Centered Height 24 -- Flat
 ButtonStyle All ActiveUp Vector 5 15x15@4 15x85@3 85x85@3 85x15@3 \
@@ -216,9 +214,6 @@ ButtonStyle 6 - MwmDecorMin
 # Sets the focus style to SloppyFocus and a mouse click
 # in a window will Raise it.
 Style * SloppyFocus, MouseFocusClickRaises
-
-# Default Font
-DefaultFont "xft:Fire Code:Regular:size=12:antialias=True"
 
 # Window Placement
 Style * MinOverlapPlacement, GrabFocusOff, !UsePPosition
@@ -297,7 +292,6 @@ DestroyModuleConfig TaskBar:*
 *TaskBar: Geometry 128x448+0+0@p
 *TaskBar: Colorset 10
 *TaskBar: Frame    0
-*TaskBar: Font     "xft:Fire Code:Regular:size=14:antialias=True"
 *TaskBar: Columns  4
 *TaskBar: Rows     14
 
@@ -318,6 +312,15 @@ DestroyModuleConfig TaskBar:*
 
 # IconMan
 *TaskBar: (4x4, Top, Swallow FvwmIconMan 'Module FvwmIconMan', Frame 0)
+
+#
+# Fonts
+#
+
+*FvwmIconMan: Font "xft:Sans:Bold:size=12:antialias=True"
+*TaskBar: Font     "xft:Fire Code:Regular:size=14:antialias=True"
+MenuStyle * Font   "xft:Sans:Bold:size=16:antialias=True"
+DefaultFont        "xft:Fire Code:Regular:size=12:antialias=True"
 
 #
 # Keybindings
