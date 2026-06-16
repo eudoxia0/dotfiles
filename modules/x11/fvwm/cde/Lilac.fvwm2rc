@@ -1,0 +1,10 @@
+# Color Scheme Lilac
+Colorset 0 fg white, bg #a5a5ac, hi, sh, Plain, NoShape
+Colorset 1 fg white, bg #a5a5ac, hi, sh, Plain, NoShape
+Colorset 2 fg white, bg #d3d178, hi, sh, Plain, NoShape
+Colorset 3 fg white, bg #a5a5ac, hi, sh, Plain, NoShape
+Colorset 4 fg white, bg #d3d178, hi, sh, Plain, NoShape
+Colorset 5 fg white, bg #a5a5ac, hi, sh, Plain, NoShape
+Colorset 6 fg white, bg #a692b7, hi, sh, Plain, NoShape
+Colorset 7 fg black, bg #c3c3c9, hi, sh, Plain, NoShape
+Colorset 8 fg white, bg #a5a5ac, hi, sh, Plain, NoShape

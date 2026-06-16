@@ -1,0 +1,10 @@
+# Color Scheme Olive
+Colorset 0 fg white, bg #c3c3b9, hi, sh, Plain, NoShape
+Colorset 1 fg white, bg #c3c3b9, hi, sh, Plain, NoShape
+Colorset 2 fg white, bg #83835a, hi, sh, Plain, NoShape
+Colorset 3 fg white, bg #c3c3b9, hi, sh, Plain, NoShape
+Colorset 4 fg white, bg #83835a, hi, sh, Plain, NoShape
+Colorset 5 fg white, bg #c3c3b9, hi, sh, Plain, NoShape
+Colorset 6 fg white, bg #877987, hi, sh, Plain, NoShape
+Colorset 7 fg black, bg #cec2b8, hi, sh, Plain, NoShape
+Colorset 8 fg white, bg #c3c3b9, hi, sh, Plain, NoShape

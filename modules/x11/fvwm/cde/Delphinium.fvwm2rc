@@ -1,0 +1,10 @@
+# Color Scheme Delphinium
+Colorset 0 fg black, bg #c8c8c8, hi, sh, Plain, NoShape
+Colorset 1 fg black, bg #c8c8c8, hi, sh, Plain, NoShape
+Colorset 2 fg black, bg #85c4ed, hi, sh, Plain, NoShape
+Colorset 3 fg black, bg #c8c8c8, hi, sh, Plain, NoShape
+Colorset 4 fg black, bg #85c4ed, hi, sh, Plain, NoShape
+Colorset 5 fg black, bg #c8c8c8, hi, sh, Plain, NoShape
+Colorset 6 fg white, bg #858cd9, hi, sh, Plain, NoShape
+Colorset 7 fg black, bg #ffffe6, hi, sh, Plain, NoShape
+Colorset 8 fg black, bg #c8c8c8, hi, sh, Plain, NoShape

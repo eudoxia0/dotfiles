@@ -1,0 +1,10 @@
+# Color Scheme Grass
+Colorset 0 fg white, bg #bec6b7, hi, sh, Plain, NoShape
+Colorset 1 fg white, bg #bec6b7, hi, sh, Plain, NoShape
+Colorset 2 fg white, bg #d4c77d, hi, sh, Plain, NoShape
+Colorset 3 fg white, bg #bec6b7, hi, sh, Plain, NoShape
+Colorset 4 fg white, bg #d4c77d, hi, sh, Plain, NoShape
+Colorset 5 fg white, bg #bec6b7, hi, sh, Plain, NoShape
+Colorset 6 fg white, bg #5e9c7b, hi, sh, Plain, NoShape
+Colorset 7 fg black, bg #e2f3e2, hi, sh, Plain, NoShape
+Colorset 8 fg white, bg #bec6b7, hi, sh, Plain, NoShape

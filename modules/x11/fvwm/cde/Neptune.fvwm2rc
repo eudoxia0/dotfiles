@@ -1,0 +1,10 @@
+# Color Scheme Neptune
+Colorset 0 fg white, bg #3f938d, hi, sh, Plain, NoShape
+Colorset 1 fg white, bg #3f938d, hi, sh, Plain, NoShape
+Colorset 2 fg black, bg #a2e5c6, hi, sh, Plain, NoShape
+Colorset 3 fg white, bg #3f938d, hi, sh, Plain, NoShape
+Colorset 4 fg black, bg #a2e5c6, hi, sh, Plain, NoShape
+Colorset 5 fg white, bg #3f938d, hi, sh, Plain, NoShape
+Colorset 6 fg white, bg #2d4e76, hi, sh, Plain, NoShape
+Colorset 7 fg white, bg #7889a5, hi, sh, Plain, NoShape
+Colorset 8 fg white, bg #3f938d, hi, sh, Plain, NoShape

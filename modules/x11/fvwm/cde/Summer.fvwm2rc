@@ -1,0 +1,10 @@
+# Color Scheme Summer
+Colorset 0 fg black, bg #ffd690, hi, sh, Plain, NoShape
+Colorset 1 fg black, bg #ffd690, hi, sh, Plain, NoShape
+Colorset 2 fg white, bg #ff5664, hi, sh, Plain, NoShape
+Colorset 3 fg black, bg #ffd690, hi, sh, Plain, NoShape
+Colorset 4 fg white, bg #ff5664, hi, sh, Plain, NoShape
+Colorset 5 fg black, bg #ffd690, hi, sh, Plain, NoShape
+Colorset 6 fg white, bg #829fff, hi, sh, Plain, NoShape
+Colorset 7 fg black, bg #ffffff, hi, sh, Plain, NoShape
+Colorset 8 fg black, bg #ffd690, hi, sh, Plain, NoShape

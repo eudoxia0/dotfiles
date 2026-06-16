@@ -1,0 +1,10 @@
+# Color Scheme DarkGold
+Colorset 0 fg white, bg #7a7c7f, hi, sh, Plain, NoShape
+Colorset 1 fg white, bg #7a7c7f, hi, sh, Plain, NoShape
+Colorset 2 fg white, bg #b89663, hi, sh, Plain, NoShape
+Colorset 3 fg white, bg #7a7c7f, hi, sh, Plain, NoShape
+Colorset 4 fg white, bg #b89663, hi, sh, Plain, NoShape
+Colorset 5 fg white, bg #7a7c7f, hi, sh, Plain, NoShape
+Colorset 6 fg white, bg #535570, hi, sh, Plain, NoShape
+Colorset 7 fg black, bg #ffffe2, hi, sh, Plain, NoShape
+Colorset 8 fg white, bg #7a7c7f, hi, sh, Plain, NoShape

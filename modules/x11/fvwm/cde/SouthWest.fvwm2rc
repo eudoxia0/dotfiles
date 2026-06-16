@@ -1,0 +1,10 @@
+# Color Scheme SouthWest
+Colorset 0 fg white, bg #a97561, hi, sh, Plain, NoShape
+Colorset 1 fg white, bg #a97561, hi, sh, Plain, NoShape
+Colorset 2 fg white, bg #ff7d79, hi, sh, Plain, NoShape
+Colorset 3 fg white, bg #a97561, hi, sh, Plain, NoShape
+Colorset 4 fg white, bg #ff7d79, hi, sh, Plain, NoShape
+Colorset 5 fg white, bg #a97561, hi, sh, Plain, NoShape
+Colorset 6 fg white, bg #c09b80, hi, sh, Plain, NoShape
+Colorset 7 fg white, bg #b18885, hi, sh, Plain, NoShape
+Colorset 8 fg white, bg #a97561, hi, sh, Plain, NoShape

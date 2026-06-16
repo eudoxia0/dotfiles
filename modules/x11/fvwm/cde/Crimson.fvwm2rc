@@ -1,0 +1,10 @@
+# Color Scheme Crimson
+Colorset 0 fg white, bg #aeb2c3, hi, sh, Plain, NoShape
+Colorset 1 fg white, bg #aeb2c3, hi, sh, Plain, NoShape
+Colorset 2 fg white, bg #b24d7a, hi, sh, Plain, NoShape
+Colorset 3 fg white, bg #aeb2c3, hi, sh, Plain, NoShape
+Colorset 4 fg white, bg #b24d7a, hi, sh, Plain, NoShape
+Colorset 5 fg black, bg #aeb2c3, hi, sh, Plain, NoShape
+Colorset 6 fg white, bg #718ba5, hi, sh, Plain, NoShape
+Colorset 7 fg black, bg #fff7e9, hi, sh, Plain, NoShape
+Colorset 8 fg white, bg #aeb2c3, hi, sh, Plain, NoShape

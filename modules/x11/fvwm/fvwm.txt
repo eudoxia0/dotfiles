@@ -372,14 +372,15 @@ Mouse 1 I    A RaiseMoveX Move "Iconify off"
 
 DestroyMenu MenuFvwmRoot
 AddToMenu   MenuFvwmRoot "root" Title
-+ "$[gt.&Programs]%icons/programs.png%" Popup MenuPrograms
++ "Programs%icons/programs.png%" Popup MenuPrograms
 + "Terminal%icons/terminal.png%"        Exec exec alacritty
 + "" Nop
-+ "$[gt.&Wallpapers]%icons/wallpaper.png%" Popup BGMenu
++ "Wallpapers%icons/wallpaper.png%" Popup BGMenu
++ "Color Theme%icons/wallpaper.png%" Popup CdeColorMenu
 + "" Nop
-+ "$[gt.Re&fresh]%icons/refresh.png%" Refresh
-+ "$[gt.&Restart]%icons/restart.png%" Restart
-+ "$[gt.&Quit]%icons/quit.png%"       Module FvwmScript FvwmScript-ConfirmQuit
++ "Refresh%icons/refresh.png%" Refresh
++ "Restart%icons/restart.png%" Restart
++ "Quit%icons/quit.png%"       Module FvwmScript FvwmScript-ConfirmQuit
 
 DestroyMenu MenuPrograms
 AddToMenu   MenuPrograms "$[gt.Programs]" Title
@@ -396,6 +397,11 @@ AddToMenu   BGMenu "Wallpapers" Title
 + "SteelBlue" Exec exec xsetroot -solid SteelBlue
 + "SteelBlue4" Exec exec xsetroot -solid SteelBlue4
 + "Teal" Exec exec xsetroot -solid Teal
+
+DestroyMenu CdeColorMenu
+AddToMenu CdeColorMenu "Cde Colors" Title
+PipeRead 'for i in $[FVWM_USERDIR]/CdeColors/*.fvwm2rc; do \
+  echo "AddToMenu CdeColorMenu $(basename -s .fvwm2rc $i) Read $i"; done'
 
 #
 # Misc

@@ -1,0 +1,10 @@
+# Color Scheme Nutmeg
+Colorset 0 fg white, bg #256593, hi, sh, Plain, NoShape
+Colorset 1 fg white, bg #256593, hi, sh, Plain, NoShape
+Colorset 2 fg black, bg #cec2bb, hi, sh, Plain, NoShape
+Colorset 3 fg white, bg #256593, hi, sh, Plain, NoShape
+Colorset 4 fg black, bg #cec2bb, hi, sh, Plain, NoShape
+Colorset 5 fg white, bg #256593, hi, sh, Plain, NoShape
+Colorset 6 fg white, bg #9f8881, hi, sh, Plain, NoShape
+Colorset 7 fg white, bg #cdb2a6, hi, sh, Plain, NoShape
+Colorset 8 fg white, bg #256593, hi, sh, Plain, NoShape
