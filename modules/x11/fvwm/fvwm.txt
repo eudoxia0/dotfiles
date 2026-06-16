@@ -46,12 +46,40 @@ Colorset 13 fg white,   bg #999999, hi, sh, Plain, NoShape
 Colorset 14 fg #a8988f, bg #999999, hi #aaaaaa, sh #999999, Plain, NoShape
 
 #
-# Configuration
+# General Settings
 #
 
 # All screens show the same desktop. Not relevant since I only have one monitor
 # per host.
 DesktopConfiguration global
+
+# Desktops and pages.
+DesktopName 0 Main
+DesktopName 1 Desk1
+DesktopName 2 Desk2
+DesktopName 3 Desk3
+DesktopSize 2x2
+
+# EdgeScroll will move the view port between the Pages when the mouse
+# moves to the edge of the screen. This set the amount of distance to
+# scroll at 100% (full page) and the EdgeResistance which is a timer
+# for how long the mouse as at the edge before it scrolls.
+#
+# Set EdgeScroll 0 0 and/or EdgeResistance -1 to disable.
+EdgeScroll 100 100
+EdgeResistance 450
+EdgeThickness 1
+Style * EdgeMoveDelay 350, EdgeMoveResistance 350
+
+# EwmhBaseStruts [screen name] [left] [right] [top] [bottom]
+# Reserves space along the edge(s) of the Screen that will not
+# be covered when maximizing or placing windows.
+EwmhBaseStruts screen $[monitor.primary] 0 0 0 0
+
+# This sets the ClickTime and MoveThreshold used to determine
+# Double Clicks, Hold and Move for the mouse.
+ClickTime 250
+MoveThreshold 3
 
 #
 # Functions
@@ -94,11 +122,6 @@ AddToFunc RaiseMove
 + I Raise
 + M $0
 
-DestroyFunc MoveToCurrent
-AddToFunc MoveToCurrent
-+ I ThisWindow MoveToPage
-+ I ThisWindow MoveToDesk
-
 # Function: IconManClick
 #
 # This function is run from FvwmIconMan when the button is clicked.
@@ -111,14 +134,6 @@ AddToFunc   IconManClick
 + I ThisWindow Raise
 + I ThisWindow (AcceptsFocus) FlipFocus
 
-# Function: ToggleTitle
-#
-# This function will toggle if fvwm shows the TitleBar.
-DestroyFunc ToggleTitle
-AddToFunc   ToggleTitle
-+ I ThisWindow (HasTitle) WindowStyle !Title
-+ I TestRc (NoMatch) WindowStyle Title
-
 # Function: ChangeDesk
 #
 # This function is called by FvwmEvent every time the Desk is changed.
@@ -129,102 +144,6 @@ AddToFunc   ChangeDesk
 + I SendToModule TaskBar ChangeButton desk2 Colorset  10
 + I SendToModule TaskBar ChangeButton desk3 Colorset  10
 + I SendToModule TaskBar ChangeButton desk$0 Colorset 11
-
-#
-# Style
-#
-
-# Desktops and Pages
-#
-# Fvwm has both Virtual Desktops and Pages. Each Desktop is built from
-# a grid of Pages. The following sets the name of four Desktops and then
-# divides each Desktop into a 2x2 grid of Pages that are positioned as
-#
-#   +---+---+
-#   |   |   |
-#   +---+---+
-#   |   |   |
-#   +---+---+
-#
-DesktopName 0 Main
-DesktopName 1 Desk1
-DesktopName 2 Desk2
-DesktopName 3 Desk3
-DesktopSize 2x2
-
-# EdgeScroll will move the view port between the Pages when the mouse
-# moves to the edge of the screen. This set the amount of distance to
-# scroll at 100% (full page) and the EdgeResistance which is a timer
-# for how long the mouse as at the edge before it scrolls.
-#
-# Set EdgeScroll 0 0 and/or EdgeResistance -1 to disable.
-EdgeScroll 100 100
-EdgeResistance 450
-EdgeThickness 1
-Style * EdgeMoveDelay 350, EdgeMoveResistance 350
-
-# EwmhBaseStruts [screen name] [left] [right] [top] [bottom]
-# Reserves space along the edge(s) of the Screen that will not
-# be covered when maximizing or placing windows.
-EwmhBaseStruts screen $[monitor.primary] 0 0 0 0
-
-# This sets the ClickTime and MoveThreshold used to determine
-# Double Clicks, Hold and Move for the mouse.
-ClickTime 250
-MoveThreshold 3
-
-# Sets the focus style to SloppyFocus and a mouse click
-# in a window will Raise it.
-Style * SloppyFocus, MouseFocusClickRaises
-
-# Default Font
-DefaultFont "xft:Fire Code:Regular:size=12:antialias=True"
-
-# Window Placement
-Style * MinOverlapPlacement, GrabFocusOff, !UsePPosition
-
-# Sets all windows to OpaqueMove (vs a wired frame) and  windows will
-# snap to each other and the edge of the screen.
-OpaqueMoveSize unlimited
-Style * ResizeOpaque, SnapAttraction 15 SameType ScreenAll, SnapGrid
-
-# Transient Windows (such as open file windows)
-Style * DecorateTransient, StackTransientParent
-Style * !FPGrabFocusTransient, FPReleaseFocusTransient
-
-# WindowShade
-Style * WindowShadeScrolls, WindowShadeSteps 10
-
-# Ignore Numlock and other modifiers for bindings
-# See http://fvwm.org/documentation/faq/#why-do-numlock-capslock-and-scrolllock-interfere-with-clicktofocus-andor-my-mouse-bindings
-IgnoreModifiers L25
-
-# Decor Styles
-Style * BorderWidth 5, HandleWidth 5, MWMButtons, FvwmBorder, FirmBorder
-Style * Colorset 1, HilightColorset 2
-
-# BorderColorset and HilightBorderColorset take 8 positive colorsets
-# to specify the colorset for each edge and handle (corner). The order is:
-#   North NorthEast East SouthEast South SouthWest West NorthWest
-# This makes the edges and corners (handles) different colors.
-Style * BorderColorset 3 4 3 4 3 4 3 4
-Style * HilightBorderColorset 4 8 4 8 4 8 4 8
-
-# Disable Icons from appearing on desktop.
-# Comment this out or use Style * Icon to get the icons back.
-Style * !Icon
-
-# ICCCM allows windows to tell the WM to not give them keyboard focus.
-# Many windows use this incorrectly and expect keyboard focus anyways.
-# This styles tells fvwm to ignore this property, which makes some
-# applications (such as java and electron apps) behave better.
-Style * Lenience
-
-# Window Specific Styles
-Style TaskBar !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
-Style ConfirmQuit !Title, PositionPlacement Center, WindowListSkip, Layer 6
-Style FvwmIdent WindowListSkip
-
 
 #######
 # 4: Menus
@@ -320,16 +239,10 @@ Key Down    WTSF    CSM Maximize True 0 growdown
 Key Right   WTSF    CSM Maximize True growright 0
 Key Left    WTSF    CSM Maximize True growleft 0
 
-#######
-# 6: Window Decor
 #
-# Buttons Locations: [1 3 5 7 9  TTTTT  0 8 6 4 2]
+# Window Decor
 #
-#   1 - WindowOps Menu
-#   2 - Close
-#   4 - Maximize
-#   6 - Minimize
-###########
+
 TitleStyle Centered Height 24 -- Flat
 ButtonStyle All ActiveUp Vector 5 15x15@4 15x85@3 85x85@3 85x15@3 \
                 15x15@3 -- Flat
@@ -355,26 +268,15 @@ ButtonStyle 1 - MwmDecorMenu
 ButtonStyle 4 - MwmDecorMax
 ButtonStyle 6 - MwmDecorMin
 
-############
-# 7: Modules
-#############
-
-# FvwmIdent
 #
-# FvwmIdent is a module that can be used to get the various info about
-# a window. One use is getting the class/resource/name of a window.
-DestroyModuleConfig FvwmIdent:*
-*FvwmIdent: Colorset 10
-*FvwmIdent: Font "xft:Sans:size=10:antialias=True"
+# Modules
+#
 
 # FvwmScript
 DestroyModuleConfig FvwmScript:*
 *FvwmScript: DefaultColorset 10
 
 # FvwmPager
-#
-# This module displays the location of the windows on the various Pages
-# and Desks. This is setup to show only the Pages on the current Desk.
 DestroyModuleConfig FvwmPager:*
 *FvwmPager: Geometry 110x80
 *FvwmPager: Colorset * 10
@@ -389,9 +291,6 @@ DestroyModuleConfig FvwmPager:*
 *FvwmPager: MiniIcons
 
 # FvwmIconMan
-#
-# FvwmIconMan is a powerful tool to list and manage windows. This
-# is used as the window list in the panel or taskbar.
 DestroyModuleConfig FvwmIconMan:*
 *FvwmIconMan: UseWinList true
 *FvwmIconMan: ButtonGeometry 120x20
@@ -415,6 +314,57 @@ DestroyModuleConfig FvwmIconMan:*
 #
 # Decor
 #
+
+# Sets the focus style to SloppyFocus and a mouse click
+# in a window will Raise it.
+Style * SloppyFocus, MouseFocusClickRaises
+
+# Default Font
+DefaultFont "xft:Fire Code:Regular:size=12:antialias=True"
+
+# Window Placement
+Style * MinOverlapPlacement, GrabFocusOff, !UsePPosition
+
+# Sets all windows to OpaqueMove (vs a wired frame) and  windows will
+# snap to each other and the edge of the screen.
+OpaqueMoveSize unlimited
+Style * ResizeOpaque, SnapAttraction 15 SameType ScreenAll, SnapGrid
+
+# Transient Windows (such as open file windows)
+Style * DecorateTransient, StackTransientParent
+Style * !FPGrabFocusTransient, FPReleaseFocusTransient
+
+# WindowShade
+Style * WindowShadeScrolls, WindowShadeSteps 10
+
+# Ignore Numlock and other modifiers for bindings
+# See http://fvwm.org/documentation/faq/#why-do-numlock-capslock-and-scrolllock-interfere-with-clicktofocus-andor-my-mouse-bindings
+IgnoreModifiers L25
+
+# Decor Styles
+Style * BorderWidth 5, HandleWidth 5, MWMButtons, FvwmBorder, FirmBorder
+Style * Colorset 1, HilightColorset 2
+
+# BorderColorset and HilightBorderColorset take 8 positive colorsets
+# to specify the colorset for each edge and handle (corner). The order is:
+#   North NorthEast East SouthEast South SouthWest West NorthWest
+# This makes the edges and corners (handles) different colors.
+Style * BorderColorset 3 4 3 4 3 4 3 4
+Style * HilightBorderColorset 4 8 4 8 4 8 4 8
+
+# Disable Icons from appearing on desktop.
+# Comment this out or use Style * Icon to get the icons back.
+Style * !Icon
+
+# ICCCM allows windows to tell the WM to not give them keyboard focus.
+# Many windows use this incorrectly and expect keyboard focus anyways.
+# This styles tells fvwm to ignore this property, which makes some
+# applications (such as java and electron apps) behave better.
+Style * Lenience
+
+# Window Specific Styles
+Style TaskBar !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
+Style ConfirmQuit !Title, PositionPlacement Center, WindowListSkip, Layer 6
 
 AddToDecor CDEDecor
 + TitleStyle    AllInactive -- Raised
