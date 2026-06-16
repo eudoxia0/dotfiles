@@ -94,8 +94,6 @@ AddToFunc RaiseMove
 + I Raise
 + M $0
 
-
-
 #
 # Module: FvwmScript
 #
