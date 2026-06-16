@@ -216,7 +216,6 @@ Style * !Icon
 Style * Lenience
 
 # Window Specific Styles
-Style MainPanel !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
 Style ConfirmQuit !Title, PositionPlacement Center, WindowListSkip, Layer 6
 
 AddToDecor CDEDecor
@@ -270,6 +269,9 @@ DestroyModuleConfig MainPanel:*
 
 # IconMan
 *MainPanel: (4x4, Top, Swallow FvwmIconMan 'Module FvwmIconMan', Frame 0)
+
+# Style.
+Style MainPanel !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
 
 #
 # Fonts
