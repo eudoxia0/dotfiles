@@ -271,7 +271,7 @@ DestroyModuleConfig MainPanel:*
 *MainPanel: (4x4, Top, Swallow FvwmIconMan 'Module FvwmIconMan', Frame 0)
 
 # Style.
-Style MainPanel !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
+Style MainPanel !Title, Borders, !Handles, Sticky, WindowListSkip, NeverFocus
 
 #
 # Fonts
