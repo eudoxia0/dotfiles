@@ -440,11 +440,14 @@ AddToMenu   MenuPrograms "$[gt.Programs]" Title
 
 DestroyMenu BGMenu
 AddToMenu   BGMenu "Wallpapers" Title
++ "Dark SlateGray" Exec exec xsetroot -solid "#607080"
 + "Gray" Exec exec xsetroot -solid Gray
 + "Panther"  Exec exec feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/panther.jpg
 + "SGI" Exec exec feh --bg-tile /home/eudoxia/.eudoxia.d/data/wallpaper/sgi.png
 + "Semiramis" Exec exec feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/semiramis.jpg
 + "SteelBlue" Exec exec xsetroot -solid SteelBlue
++ "SteelBlue4" Exec exec xsetroot -solid SteelBlue4
++ "Teal" Exec exec xsetroot -solid Teal
 
 #
 # Misc
