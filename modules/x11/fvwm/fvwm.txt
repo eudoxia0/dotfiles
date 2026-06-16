@@ -345,24 +345,20 @@ Mouse 1 W 4 Move
 # super + right click hold: resize window
 Mouse 3 W 4 Resize
 
-# Window Buttons: [1 3 5 7 9  TTTTT  0 8 6 4 2]
-#   2 - Close on single click, Destory on double click.
-#   4 - Maximize (right/middle button will only maximize vertical/horizontal)
-#   6 - Iconify (minimize)
-Mouse 1 2 A Close
-Mouse 1 4 A Maximize 100 100
-Mouse 2 4 A Maximize 0 100
-Mouse 3 4 A Maximize 100 0
+# Window buttons: iconify, maximize, close.
 Mouse 1 6 A Iconify
+Mouse 1 4 A Maximize 100 100
+Mouse 1 2 A Close
 
-#   TitleBar: Click to Raise, Move, Double Click to Maximize
-#             Mouse Wheel Up/Down to WindowShade On/Off
-#   Borders: Click to raise, Move to Resize
-#   Right click TitleBar/Borders for WindowOps Menu
+# Click on the titlebar to Raise, Move, Double Click to Maximize.
 Mouse 1 T    A RaiseMoveX Move Maximize
-Mouse 1 FS   A RaiseMove Resize
+
+# Mouse Wheel Up/Down on titlebar to WindowShade On/Off
 Mouse 4 T    A WindowShade True
 Mouse 5 T    A WindowShade False
+
+# Borders: Click to raise, Move to Resize
+Mouse 1 FS   A RaiseMove Resize
 
 # Left click on the root window: nothing.
 Mouse 1 R    A Nop
