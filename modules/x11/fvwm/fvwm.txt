@@ -299,8 +299,8 @@ DefaultFont        "xft:Fire Code:Regular:size=16:antialias=True"
 # Keybindings
 #
 
-# s-r: dmenu_run
-Silent Key r A 4 Exec exec dmenu_run
+# s-r: rofi
+Silent Key r A 4 Exec exec rofi -show run
 
 # s-Q: quit
 Silent Key q A 4S Quit
