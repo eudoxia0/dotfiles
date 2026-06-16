@@ -249,8 +249,8 @@ Style * Colorset 1, HilightColorset 2, \
 
 DestroyModuleConfig MainPanel:*
 *MainPanel: Geometry 128x320+0+0@p
-*MainPanel: Colorset 1
-*MainPanel: ActiveColorset 2
+*MainPanel: Fore Black
+*MainPanel: Back rgb:90/80/90
 *MainPanel: Frame    4
 *MainPanel: Columns  4
 *MainPanel: Rows     10
