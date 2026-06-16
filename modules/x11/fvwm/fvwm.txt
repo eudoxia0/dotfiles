@@ -21,9 +21,6 @@ Colorset 11 fg white,   bg #eda870, hi, sh, Plain, NoShape
 # Module Hover
 Colorset 12 fg #2d2d2d, bg #eda870, hi, sh, Plain, NoShape
 
-# FvwmPager Active Page
-Colorset 13 fg white,   bg #999999, hi, sh, Plain, NoShape
-
 # FvwmIconMan Iconified Button
 Colorset 14 fg #a8988f, bg #999999, hi #aaaaaa, sh #999999, Plain, NoShape
 
@@ -134,20 +131,6 @@ AddToFunc   ChangeDesk
 # FvwmScript
 DestroyModuleConfig FvwmScript:*
 *FvwmScript: DefaultColorset 10
-
-# FvwmPager
-DestroyModuleConfig FvwmPager:*
-*FvwmPager: Geometry 110x80
-*FvwmPager: Colorset * 10
-*FvwmPager: HilightColorset * 13
-*FvwmPager: BalloonColorset * 10
-*FvwmPager: WindowColorsets 10 11
-*FvwmPager: Font None
-*FvwmPager: Balloons All
-*FvwmPager: BalloonFont "xft:Sans:Bold:size=8:antialias=True"
-*FvwmPager: BallonYOffset +2
-*FvwmPager: Window3dBorders
-*FvwmPager: MiniIcons
 
 # FvwmIconMan
 DestroyModuleConfig FvwmIconMan:*
@@ -286,7 +269,7 @@ DestroyModuleConfig TaskBar:*
 *TaskBar: Colorset 10
 *TaskBar: Frame    0
 *TaskBar: Columns  4
-*TaskBar: Rows     14
+*TaskBar: Rows     10
 
 # DateTime
 *TaskBar: (4x1, Swallow DateTime 'Module FvwmScript FvwmScript-DateTime', Frame 0)
@@ -299,9 +282,6 @@ DestroyModuleConfig TaskBar:*
 *TaskBar: (1x1, Id desk1, Title "β", Action (Mouse 1) GotoDesk 0 1, ActiveColorset 12, Frame 0)
 *TaskBar: (1x1, Id desk2, Title "γ", Action (Mouse 1) GotoDesk 0 2, ActiveColorset 12, Frame 0)
 *TaskBar: (1x1, Id desk3, Title "δ", Action (Mouse 1) GotoDesk 0 3, ActiveColorset 12, Frame 0)
-
-# Pager
-*TaskBar: (4x4, Swallow FvwmPager 'Module FvwmPager *', Frame 0)
 
 # IconMan
 *TaskBar: (4x4, Top, Swallow FvwmIconMan 'Module FvwmIconMan', Frame 0)
