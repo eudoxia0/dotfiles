@@ -13,7 +13,7 @@ Colorset 7 fg white, bg #6c6c6c, hi, sh, Plain, NoShape
 Colorset 8 fg white, bg #76a99c, hi, sh, Plain, NoShape
 
 # Module Default
-Colorset 10 fg white,   bg #999999, hi #aaaaaa, sh #999999, Plain, NoShape
+Colorset 10  fg white, bg gray, Plain, NoShape
 
 # Module Highlight
 Colorset 11 fg white,   bg #eda870, hi, sh, Plain, NoShape
@@ -249,7 +249,7 @@ Style * Colorset 1, HilightColorset 2, \
 
 DestroyModuleConfig MainPanel:*
 *MainPanel: Geometry 128x320+0+0@p
-*MainPanel: Back     Gray
+*MainPanel: Colorset 10
 *MainPanel: Frame    4
 *MainPanel: Columns  4
 *MainPanel: Rows     10
