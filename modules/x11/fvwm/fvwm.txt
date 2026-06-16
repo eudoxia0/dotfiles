@@ -366,10 +366,14 @@ Mouse 5 T    A WindowShade False
 
 # Left click on the root window: nothing.
 Mouse 1 R    A Nop
+
 # Right click on the root window: launch the FVWM menu.
 Mouse 3 R    A Menu MenuFvwmRoot
+
 # Middle click on the root window: open the window list.
 Mouse 2 R    A WindowList
+
+# Left click on a window icon: maximize it.
 Mouse 1 I    A RaiseMoveX Move "Iconify off"
 
 #
