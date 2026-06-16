@@ -5,10 +5,20 @@
   ...
 }:
 
+let
+  calibre-scaled = pkgs.writeShellScriptBin "calibre-scaled" ''
+    if [[ `hostname` == "rostam" ]]; then
+      QT_SCALE_FACTOR=2 calibre
+    else
+        calibre
+    fi
+  '';
+in
 {
   home-manager.users.eudoxia.home.packages = with pkgs; [
     baobab
     calibre
+    calibre-scaled
     cheese
     chromium
     dbeaver-bin

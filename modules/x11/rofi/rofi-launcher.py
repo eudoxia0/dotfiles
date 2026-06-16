@@ -4,7 +4,7 @@ import subprocess
 APPS = {
     "1Password": ["1password"],
     "Baobab": ["baobab"],
-    "Calibre": ["calibre"],
+    "Calibre": ["calibre-scaled"],
     "Chromium": ["chromium-browser"],
     "Fonts": ["font-manager"],
     "Heroic": ["heroic"],
