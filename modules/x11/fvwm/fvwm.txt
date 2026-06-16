@@ -376,7 +376,7 @@ AddToMenu   MenuFvwmRoot "root" Title
 + "Terminal%icons/terminal.png%"        Exec exec alacritty
 + "" Nop
 + "Wallpapers%icons/wallpaper.png%" Popup BGMenu
-+ "Color Theme%icons/wallpaper.png%" Popup CdeColorMenu
++ "Color Theme" Popup CdeColorMenu
 + "" Nop
 + "Refresh%icons/refresh.png%" Refresh
 + "Restart%icons/restart.png%" Restart
