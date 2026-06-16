@@ -249,7 +249,6 @@ Style * Colorset 1, HilightColorset 2, \
 
 DestroyModuleConfig MainPanel:*
 *MainPanel: Geometry 128x320+0+0@p
-*MainPanel: Fore     Black
 *MainPanel: Back     Gray
 *MainPanel: Frame    4
 *MainPanel: Columns  4
@@ -279,7 +278,7 @@ Style MainPanel !Title, Borders, !Handles, Sticky, WindowListSkip, NeverFocus
 #
 
 *FvwmIconMan: Font "xft:Fira Code:Regular:size=16:antialias=True"
-*MainPanel: Font     "xft:Fira Code:Regular:size=16:antialias=True"
+*MainPanel: Font   "xft:Fira Code:Regular:size=16:antialias=True"
 MenuStyle * Font   "xft:Fira Code:Regular:size=16:antialias=True"
 DefaultFont        "xft:Fire Code:Regular:size=16:antialias=True"
 
