@@ -235,11 +235,11 @@ AddToDecor CDEDecor
 + AddButtonStyle 4 Vector 3 42x58@0 58x58@0 58x42@0
 + AddButtonStyle 4 Vector 3 42x58@1 42x42@1 58x42@1
 
-+ TitleStyle Height MinHeight 20
++ TitleStyle Height MinHeight 32
 
 Style * Colorset 1, HilightColorset 2, \
         BorderColorset 3, HilightBorderColorset 4, \
-        BorderWidth 5, HandleWidth 5, \
+        BorderWidth 8, HandleWidth 8, \
         MWMBorder, DepressableBorder, \
         MWMButtons, UseDecor CDEDecor
 
