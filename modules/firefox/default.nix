@@ -140,6 +140,9 @@ in
         "font.name.sans-serif.x-western" = "DejaVu Sans";
         "font.name.monospace.x-western" = "DejaVu Sans Mono";
         "font.size.variable.x-western" = 16;
+
+        # Big-ass scrollbar.
+        "widget.non-native-theme.scrollbar.style" = 4;
       };
     };
   };
