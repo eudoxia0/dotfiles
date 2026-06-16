@@ -259,7 +259,7 @@ Style * Colorset 1, HilightColorset 2, \
 
 DestroyModuleConfig TaskBar:*
 *TaskBar: Geometry 128x320+0+0@p
-*TaskBar: Colorset 10
+*TaskBar: Colorset 5
 *TaskBar: Frame    0
 *TaskBar: Columns  4
 *TaskBar: Rows     10
