@@ -176,7 +176,7 @@ ButtonStyle 6 - MwmDecorMin
 Style * SloppyFocus, MouseFocusClickRaises
 
 # Window Placement
-Style * MinOverlapPlacement, GrabFocusOff, !UsePPosition
+Style * PositionPlacement UnderMouse, GrabFocusOff, !UsePPosition
 
 # Sets all windows to OpaqueMove (vs a wired frame) and  windows will
 # snap to each other and the edge of the screen.
