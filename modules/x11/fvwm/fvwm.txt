@@ -94,6 +94,19 @@ AddToFunc RaiseMove
 + I Raise
 + M $0
 
+
+
+#
+# Module: FvwmScript
+#
+
+DestroyModuleConfig FvwmScript:*
+*FvwmScript: DefaultColorset 10
+
+#
+# Module: FvwmIconMan
+#
+
 # Function: IconManClick
 #
 # This function is run from FvwmIconMan when the button is clicked.
@@ -106,26 +119,6 @@ AddToFunc   IconManClick
 + I ThisWindow Raise
 + I ThisWindow (AcceptsFocus) FlipFocus
 
-# Function: ChangeDesk
-#
-# This function is called by FvwmEvent every time the Desk is changed.
-DestroyFunc ChangeDesk
-AddToFunc   ChangeDesk
-+ I SendToModule TaskBar ChangeButton desk0 Colorset  10
-+ I SendToModule TaskBar ChangeButton desk1 Colorset  10
-+ I SendToModule TaskBar ChangeButton desk2 Colorset  10
-+ I SendToModule TaskBar ChangeButton desk3 Colorset  10
-+ I SendToModule TaskBar ChangeButton desk$0 Colorset 11
-
-#
-# Modules
-#
-
-# FvwmScript
-DestroyModuleConfig FvwmScript:*
-*FvwmScript: DefaultColorset 10
-
-# FvwmIconMan
 DestroyModuleConfig FvwmIconMan:*
 *FvwmIconMan: UseWinList true
 *FvwmIconMan: ButtonGeometry 120x20
@@ -409,6 +402,14 @@ AddToMenu   BGMenu "Wallpapers" Title
 #
 
 # Changes which desk number is highlighted when the desk is changed.
+DestroyFunc ChangeDesk
+AddToFunc   ChangeDesk
++ I SendToModule TaskBar ChangeButton desk0 Colorset  10
++ I SendToModule TaskBar ChangeButton desk1 Colorset  10
++ I SendToModule TaskBar ChangeButton desk2 Colorset  10
++ I SendToModule TaskBar ChangeButton desk3 Colorset  10
++ I SendToModule TaskBar ChangeButton desk$0 Colorset 11
+
 DestroyModuleConfig EventNewDesk:*
 *EventNewDesk: PassID
 *EventNewDesk: new_desk ChangeDesk
