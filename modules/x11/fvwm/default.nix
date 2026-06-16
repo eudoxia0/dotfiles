@@ -22,5 +22,6 @@
 
   home-manager.users.eudoxia.home.packages = with pkgs; [
     stalonetray
+    dockapps.wmCalClock
   ];
 }
