@@ -13,16 +13,16 @@ Colorset 7 fg white, bg #6c6c6c, hi, sh, Plain, NoShape
 Colorset 8 fg white, bg #76a99c, hi, sh, Plain, NoShape
 
 # Module Default
-Colorset 10  fg white, bg gray, Plain, NoShape
+Colorset 10 fg black, bg gray, Plain, NoShape
 
 # Module Highlight
-Colorset 11 fg white,   bg #eda870, hi, sh, Plain, NoShape
+Colorset 11 fg black, bg white, Plain, NoShape
 
 # Module Hover
-Colorset 12 fg #2d2d2d, bg #eda870, hi, sh, Plain, NoShape
+Colorset 12 fg white, bg gainsboro, Plain, NoShape
 
 # FvwmIconMan Iconified Button
-Colorset 14 fg #a8988f, bg #999999, hi #aaaaaa, sh #999999, Plain, NoShape
+Colorset 14 fg darkgray, bg gray, Plain, NoShape
 
 #
 # General Settings
