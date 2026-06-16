@@ -297,7 +297,7 @@ DestroyModuleConfig TaskBar:*
 *TaskBar: Geometry 128x448+0+0@p
 *TaskBar: Colorset 10
 *TaskBar: Frame    0
-*TaskBar: Font     "xft:Fire Code:Regular:size=12:antialias=True"
+*TaskBar: Font     "xft:Fire Code:Regular:size=14:antialias=True"
 *TaskBar: Columns  4
 *TaskBar: Rows     14
 
