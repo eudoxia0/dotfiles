@@ -520,15 +520,6 @@ DestroyModuleConfig FvwmIconMan:*
 *FvwmIconMan: Tips needed
 *FvwmIconMan: Sort id
 
-# FvwmEvent
-#
-# FvwmEvent is a module that can run an action or function
-# on specific events. This instance changes which desk number
-# is highlighted when the desk is changed.
-DestroyModuleConfig EventNewDesk:*
-*EventNewDesk: PassID
-*EventNewDesk: new_desk ChangeDesk
-
 #
 # Decor
 #
@@ -641,3 +632,12 @@ Mouse 1 W 4 Move
 
 # super + right click hold: resize window
 Mouse 3 W 4 Resize
+
+#
+# Misc
+#
+
+# Changes which desk number is highlighted when the desk is changed.
+DestroyModuleConfig EventNewDesk:*
+*EventNewDesk: PassID
+*EventNewDesk: new_desk ChangeDesk
