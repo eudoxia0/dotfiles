@@ -384,8 +384,12 @@ AddToMenu   MenuFvwmRoot "root" Title
 
 DestroyMenu MenuPrograms
 AddToMenu   MenuPrograms "$[gt.Programs]" Title
-+ "Firefox" Exec exec firefox-scaled
++ "Calibre" Exec exec calibre
 + "Emacs" Exec exec emacs
++ "Firefox" Exec exec firefox-scaled
++ "Signal" Exec exec signal-desktop
++ "Sound Settings" Exec exec pavucontrol
++ "Todoist" Exec exec todoist-x11
 
 DestroyMenu BGMenu
 AddToMenu   BGMenu "Wallpapers" Title
