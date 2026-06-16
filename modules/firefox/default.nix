@@ -143,6 +143,9 @@ in
 
         # Big-ass scrollbar.
         "widget.non-native-theme.scrollbar.style" = 4;
+
+        # Always show the scrollbar.
+        "layout.testing.overlay-scrollbars.always-visible" = true;
       };
     };
   };
