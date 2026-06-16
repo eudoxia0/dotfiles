@@ -250,25 +250,25 @@ Style * Colorset 1, HilightColorset 2, \
 DestroyModuleConfig MainPanel:*
 *MainPanel: Geometry 200x350+0+0@p
 *MainPanel: Colorset 10
-*MainPanel: Frame    4
+*MainPanel: Frame    2
 *MainPanel: Columns  4
 *MainPanel: Rows     7
-*MainPanel: Padding  4 4
+*MainPanel: Padding  2 2
 
 # DateTime
-*MainPanel: (4x1, Swallow DateTime 'Module FvwmScript FvwmScript-DateTime', Frame 4)
+*MainPanel: (4x1, Swallow DateTime 'Module FvwmScript FvwmScript-DateTime')
 
 # System tray
-*MainPanel: (4x1, Swallow(NoClose,UseOld) stalonetray 'Exec exec stalonetray', Frame 4)
+*MainPanel: (4x1, Swallow(NoClose,UseOld) stalonetray 'Exec exec stalonetray')
 
 # Desktop list
-*MainPanel: (1x1, Id desk0, Title "α", Action (Mouse 1) GotoDesk 0 0, Colorset 11, ActiveColorset 12, Frame 4)
-*MainPanel: (1x1, Id desk1, Title "β", Action (Mouse 1) GotoDesk 0 1, ActiveColorset 12, Frame 4)
-*MainPanel: (1x1, Id desk2, Title "γ", Action (Mouse 1) GotoDesk 0 2, ActiveColorset 12, Frame 4)
-*MainPanel: (1x1, Id desk3, Title "δ", Action (Mouse 1) GotoDesk 0 3, ActiveColorset 12, Frame 4)
+*MainPanel: (1x1, Id desk0, Title "α", Action (Mouse 1) GotoDesk 0 0, Colorset 11, ActiveColorset 12)
+*MainPanel: (1x1, Id desk1, Title "β", Action (Mouse 1) GotoDesk 0 1, ActiveColorset 12)
+*MainPanel: (1x1, Id desk2, Title "γ", Action (Mouse 1) GotoDesk 0 2, ActiveColorset 12)
+*MainPanel: (1x1, Id desk3, Title "δ", Action (Mouse 1) GotoDesk 0 3, ActiveColorset 12)
 
 # IconMan
-*MainPanel: (4x4, Top, Swallow FvwmIconMan 'Module FvwmIconMan', Frame 4)
+*MainPanel: (4x4, Top, Swallow FvwmIconMan 'Module FvwmIconMan')
 
 # Style.
 Style MainPanel !Title, Borders, !Handles, Sticky, WindowListSkip, NeverFocus
