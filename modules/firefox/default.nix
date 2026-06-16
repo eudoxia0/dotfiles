@@ -146,7 +146,7 @@ in
         "widget.non-native-theme.scrollbar.size.override" = 24;
 
         # Always show the scrollbar.
-        "layout.testing.overlay-scrollbars.always-visible" = true;
+        "widget.gtk.overlay-scrollbars.enabled" = false;
       };
     };
   };
