@@ -23,6 +23,7 @@
     rsync
     smartmontools
     termdown
+    tesseract
     tt
     usbutils # lsusb
     yt-dlp
