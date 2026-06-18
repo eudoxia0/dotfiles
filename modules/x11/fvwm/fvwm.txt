@@ -1,18 +1,8 @@
 # -*- mode: fvwm -*-
 
 #
-# Colorsets
+# Colorset Extras
 #
-
-Colorset 0 fg white, bg #926866, hi, sh, Plain, NoShape
-Colorset 1 fg white, bg #926866, hi, sh, Plain, NoShape
-Colorset 2 fg white, bg #b14b50, hi, sh, Plain, NoShape
-Colorset 3 fg white, bg #926866, hi, sh, Plain, NoShape
-Colorset 4 fg white, bg #b14b50, hi, sh, Plain, NoShape
-Colorset 5 fg white, bg #926866, hi, sh, Plain, NoShape
-Colorset 6 fg white, bg #796e6d, hi, sh, Plain, NoShape
-Colorset 7 fg white, bg #836960, hi, sh, Plain, NoShape
-Colorset 8 fg white, bg #926866, hi, sh, Plain, NoShape
 
 # Module Default
 Colorset 10 fg black, bg gray, Plain, NoShape
@@ -74,6 +64,7 @@ MoveThreshold 3
 DestroyFunc StartFunction
 AddToFunc   StartFunction
 + I Test (Init) InitBackground
++ I Test (Init) InitDefaultColorset
 + I Module FvwmEvent EventNewDesk
 + I Module FvwmButtons MainPanel
 
@@ -93,6 +84,19 @@ DestroyFunc RaiseMove
 AddToFunc RaiseMove
 + I Raise
 + M $0
+
+# InitDefaultColorset: mostly what it says on the tin.
+DestroyFunc InitDefaultColorset
+AddToFunc   InitDefaultColorset
++ I Colorset 0 fg white, bg #926866, hi, sh, Plain, NoShape
++ I Colorset 1 fg white, bg #926866, hi, sh, Plain, NoShape
++ I Colorset 2 fg white, bg #b14b50, hi, sh, Plain, NoShape
++ I Colorset 3 fg white, bg #926866, hi, sh, Plain, NoShape
++ I Colorset 4 fg white, bg #b14b50, hi, sh, Plain, NoShape
++ I Colorset 5 fg white, bg #926866, hi, sh, Plain, NoShape
++ I Colorset 6 fg white, bg #796e6d, hi, sh, Plain, NoShape
++ I Colorset 7 fg white, bg #836960, hi, sh, Plain, NoShape
++ I Colorset 8 fg white, bg #926866, hi, sh, Plain, NoShape
 
 #
 # Module: FvwmScript
