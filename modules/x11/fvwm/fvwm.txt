@@ -108,18 +108,6 @@ DestroyModuleConfig FvwmScript:*
 # Module: FvwmIconMan
 #
 
-# Function: IconManClick
-#
-# This function is run from FvwmIconMan when the button is clicked.
-DestroyFunc IconManClick
-AddToFunc   IconManClick
-+ I ThisWindow (Raised, !Shaded, !Iconic, CurrentPage, AnyScreen) Iconify
-+ I TestRc (Match) Break
-+ I ThisWindow WindowShade off
-+ I ThisWindow Iconify off
-+ I ThisWindow Raise
-+ I ThisWindow (AcceptsFocus) FlipFocus
-
 #
 # Decor
 #
@@ -255,8 +243,6 @@ DestroyModuleConfig MainPanel:*
 # IconMan
 DestroyFunc ConfigureIconMan
 AddToFunc   ConfigureIconMan
-+ I *$0: Action Mouse 0 A ret
-+ I *$0: Action Mouse 1 A sendcommand IconManClick
 + I *$0: ButtonGeometry 120x32
 + I *$0: Colorset 10
 + I *$0: DrawIcons always
@@ -375,9 +361,6 @@ Mouse 3 R    A Menu MenuFvwmRoot
 
 # Middle click on the root window: open the window list.
 Mouse 2 R    A WindowList
-
-# Left click on a window icon: maximize it.
-Mouse 1 I    A RaiseMoveX Move "Iconify off"
 
 #
 # Root Menu
