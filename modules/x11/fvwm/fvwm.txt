@@ -263,7 +263,7 @@ AddToFunc   ConfigureIconMan
 + I *$0: FocusAndSelectColorset 12
 + I *$0: FocusColorset 11
 + I *$0: Font "xft:Fira Code:Regular:size=12:antialias=True"
-+ I *$0: Format "%c: %t"
++ I *$0: Format "%t"
 + I *$0: IconAndSelectColorset 12
 + I *$0: IconColorset 14
 + I *$0: ManagerGeometry 1x1
