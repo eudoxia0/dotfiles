@@ -259,7 +259,7 @@ DefaultFont        $[infostore.font]
 # s-r: rofi
 Silent Key r A 4 Exec exec rofi -show run
 
-# s-Q: quit
+# s-shift-q: quit
 Silent Key q A 4S Quit
 
 # s-R: restart
@@ -274,6 +274,13 @@ Silent Key 2 A 4 GotoDesk 0 1
 Silent Key 3 A 4 GotoDesk 0 2
 Silent Key 4 A 4 GotoDesk 0 3
 Silent Key 5 A 4 GotoDesk 0 4
+
+# s-shift-{1,2,3,4,5}: switch virtual desktop
+Silent Key 1 A 4S MoveToDesk 0 0
+Silent Key 2 A 4S MoveToDesk 0 1
+Silent Key 3 A 4S MoveToDesk 0 2
+Silent Key 4 A 4S MoveToDesk 0 3
+Silent Key 5 A 4S MoveToDesk 0 4
 
 # C-s-c: launch terminal
 Silent Key c A 4C Exec exec alacritty
