@@ -160,6 +160,8 @@ Style * FirmBorder
 # Button style.
 ButtonStyle All -- Raised
 ButtonStyle All Simple -- UseTitleStyle
+
+# Shape of the "close window" button.
 AddButtonStyle 2 Vector 3 21x79@0 79x79@0 79x21@0
 AddButtonStyle 2 Vector 3 21x79@1 21x21@1 79x21@1
 
