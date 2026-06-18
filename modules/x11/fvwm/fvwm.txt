@@ -370,7 +370,7 @@ AddToMenu   WallMenu "Wallpapers" Title
 + "Semiramis" Exec exec feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/semiramis.jpg
 
 DestroyMenu CdeColorMenu
-AddToMenu CdeColorMenu "Cde Colors" Title
+AddToMenu CdeColorMenu "Color Theme" Title
 PipeRead 'for i in $[FVWM_USERDIR]/CdeColors/*.fvwm2rc; do \
   echo "AddToMenu CdeColorMenu $(basename -s .fvwm2rc $i) Read $i"; done'
 
