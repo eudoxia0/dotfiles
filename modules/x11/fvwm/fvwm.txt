@@ -47,6 +47,18 @@ EwmhBaseStruts screen $[monitor.primary] 0 0 48 0
 ClickTime 250
 MoveThreshold 3
 
+# Sets the focus style to SloppyFocus and a mouse click in a window will Raise
+# it.
+Style * SloppyFocus, MouseFocusClickRaises
+
+# Window Placement
+Style * PositionPlacement UnderMouse, GrabFocusOff, !UsePPosition
+
+# Move a wireframe of the window.
+OpaqueMoveSize 0
+# Resize a wireframe of the window.
+Style * ResizeOutline
+
 #
 # Functions
 #
@@ -99,8 +111,11 @@ MenuStyle * TrianglesSolid
 # Submenu triangles are drawn using the foreground colour of
 # the MenuColorset.
 MenuStyle * TrianglesUseFore
+# Menu item format: picture, start of highlight area,
+# mini-icon, labels, sub-menu triangle, end of highlight
+# area.
 MenuStyle * ItemFormat "%s%|%3.1i%5.3l%5l%5r%5.3>%|"
-
+# Title style.
 TitleStyle Centered Height 24 -- Flat
 ButtonStyle All ActiveUp Vector 5 15x15@4 15x85@3 85x85@3 85x15@3 \
                 15x15@3 -- Flat
@@ -126,17 +141,13 @@ ButtonStyle 1 - MwmDecorMenu
 ButtonStyle 4 - MwmDecorMax
 ButtonStyle 6 - MwmDecorMin
 
-# Sets the focus style to SloppyFocus and a mouse click in a window will Raise
-# it.
-Style * SloppyFocus, MouseFocusClickRaises
+# BorderColorset and HilightBorderColorset take 8 positive
+# colorsets to specify the colorset for each edge and handle
+# (corner). The order is: N, NE, E, SE, S, SW, W, NW.
+Style * BorderColorset 3 4 3 4 3 4 3 4
+Style * HilightBorderColorset 4 8 4 8 4 8 4 8
 
-# Window Placement
-Style * PositionPlacement UnderMouse, GrabFocusOff, !UsePPosition
-
-# Sets all windows to OpaqueMove (vs a wired frame) and  windows will
-# snap to each other and the edge of the screen.
-OpaqueMoveSize 0
-Style * ResizeOutline, SnapAttraction 15 SameType ScreenAll, SnapGrid
+Style * SnapAttraction 15 SameType ScreenAll, SnapGrid
 
 # Transient Windows (such as open file windows)
 Style * DecorateTransient, StackTransientParent
@@ -152,17 +163,6 @@ IgnoreModifiers L25
 # Decor Styles
 Style * BorderWidth 5, HandleWidth 5, MWMButtons, FvwmBorder, FirmBorder
 Style * Colorset 1, HilightColorset 2
-
-# BorderColorset and HilightBorderColorset take 8 positive colorsets
-# to specify the colorset for each edge and handle (corner). The order is:
-#   North NorthEast East SouthEast South SouthWest West NorthWest
-# This makes the edges and corners (handles) different colors.
-Style * BorderColorset 3 4 3 4 3 4 3 4
-Style * HilightBorderColorset 4 8 4 8 4 8 4 8
-
-# Disable Icons from appearing on desktop.
-# Comment this out or use Style * Icon to get the icons back.
-Style * !Icon
 
 # ICCCM allows windows to tell the WM to not give them keyboard focus.
 # Many windows use this incorrectly and expect keyboard focus anyways.
