@@ -69,18 +69,6 @@ DestroyFunc InitBackground
 AddToFunc InitBackground
 + I Exec exec feh --bg-fill $[infostore.walls]/osx-panther.png
 
-# Mouse Bindings Functions
-DestroyFunc RaiseMoveX
-AddToFunc RaiseMoveX
-+ I Raise
-+ M $0
-+ D $1
-
-DestroyFunc RaiseMove
-AddToFunc RaiseMove
-+ I Raise
-+ M $0
-
 #
 # Module: FvwmScript
 #
@@ -311,24 +299,35 @@ Mouse 3 W 4 Resize
 # left click on the rightmost window button: close
 Mouse 1 2 A Close
 
-# Click on the titlebar to Raise, Move, Double Click to Maximize.
-Mouse 1 T    A RaiseMoveX Move Maximize
+# Click on the titlebar to Raise, hold to move, double click to maximize.
+DestroyFunc RaiseMoveX
+AddToFunc RaiseMoveX
++ I Raise
++ M $0
++ D $1
+
+Mouse 1 T A RaiseMoveX Move Maximize
 
 # Mouse Wheel Up/Down on titlebar to WindowShade On/Off
 Mouse 4 T    A WindowShade True
 Mouse 5 T    A WindowShade False
 
 # Borders: Click to raise, Move to Resize
-Mouse 1 FS   A RaiseMove Resize
+DestroyFunc RaiseMove
+AddToFunc RaiseMove
++ I Raise
++ M $0
+
+Mouse 1 FS A RaiseMove Resize
 
 # Left click on the root window: nothing.
-Mouse 1 R    A Nop
+Mouse 1 R A Nop
 
 # Right click on the root window: launch the FVWM menu.
-Mouse 3 R    A Menu MenuFvwmRoot
+Mouse 3 R A Menu MenuFvwmRoot
 
 # Middle click on the root window: open the window list.
-Mouse 2 R    A WindowList
+Mouse 2 R A WindowList
 
 #
 # Root Menu
