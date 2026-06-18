@@ -335,6 +335,7 @@ AddToMenu   MenuFvwmRoot "root" Title
 + "Backgrounds%custom-icons/wall.png%" Popup BackgroundMenu
 + "Color Theme%custom-icons/theme.png%" Popup CdeColorMenu
 + "" Nop
++ "Lock%custom-icons/lock.png%" Exec exec xscreensaver-command -lock
 + "Refresh%custom-icons/reload.png%" Refresh
 + "Restart%custom-icons/reload.png%" Restart
 + "Quit%custom-icons/quit.png%"       Module FvwmScript FvwmScript-ConfirmQuit
