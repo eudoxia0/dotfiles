@@ -16,6 +16,6 @@
     services.espanso.enable = true;
 
     home.file.".config/espanso/match/base.yml".source =
-      hm.config.lib.file.mkOutOfStoreSymlink "${hm.config.home.homeDirectory}/root/1-workspace/dotfiles/espanso.yaml";
+      hm.config.lib.file.mkOutOfStoreSymlink "${hm.config.home.homeDirectory}/root/1-workspace/dotfiles/modules/x11/espanso/espanso.yaml";
   };
 }
