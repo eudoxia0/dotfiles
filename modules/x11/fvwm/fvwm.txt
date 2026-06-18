@@ -167,9 +167,6 @@ Style * !Icon
 # applications (such as java and electron apps) behave better.
 Style * Lenience
 
-# Window Specific Styles
-Style ConfirmQuit !Title, PositionPlacement Center, WindowListSkip, Layer 6
-
 AddToDecor CDEDecor
 + TitleStyle    AllInactive -- Raised
 + TitleStyle    AllActive -- Raised
@@ -334,7 +331,7 @@ AddToMenu   MenuFvwmRoot "root" Title
 + "Lock%custom-icons/lock.png%" Exec exec xscreensaver-command -lock
 + "Refresh%custom-icons/reload.png%" Refresh
 + "Restart%custom-icons/reload.png%" Restart
-+ "Quit%custom-icons/quit.png%"       Module FvwmScript FvwmScript-ConfirmQuit
++ "Quit%custom-icons/quit.png%"      Quit
 
 DestroyMenu MenuPrograms
 AddToMenu   MenuPrograms "Programs" Title
