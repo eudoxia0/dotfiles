@@ -82,14 +82,15 @@ in
       package = pkgs.emacs-gtk;
       extraPackages =
         epkgs: with epkgs; [
+          # customPackages.xcompose-mode
           agda2-mode
           consult
           customPackages.cabal-mode
           customPackages.eat
           customPackages.inform7-mode
           customPackages.lean4-mode
-          # customPackages.xcompose-mode
           embark
+          fvwm-mode
           graphviz-dot-mode
           i3wm-config-mode
           just-mode
