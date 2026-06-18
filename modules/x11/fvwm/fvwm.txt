@@ -60,14 +60,9 @@ MoveThreshold 3
 # actions that are run after a restart.
 DestroyFunc StartFunction
 AddToFunc   StartFunction
-+ I Test (Init) InitBackground
++ I Test (Init) Exec exec feh --bg-fill $[infostore.walls]/osx-panther.png
 + I Module FvwmEvent EventNewDesk
 + I Module FvwmButtons MainPanel
-
-# Function to set background when fvwm starts
-DestroyFunc InitBackground
-AddToFunc InitBackground
-+ I Exec exec feh --bg-fill $[infostore.walls]/osx-panther.png
 
 #
 # Module: FvwmScript
