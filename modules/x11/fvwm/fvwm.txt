@@ -381,7 +381,7 @@ AddToMenu   MenuPrograms "$[gt.Programs]" Title
 DestroyMenu BGMenu
 AddToMenu   BGMenu "Wallpapers" Title
 + "Dark SlateGray" Exec exec xsetroot -solid "#607080"
-+ "giygas" Exec exec feh --bg-fill /home/eudoxia/root/1-workspace/dotfiles/modules/wallpaper/images/giygas.png
++ "Giygas" Exec exec feh --bg-fill /home/eudoxia/root/1-workspace/dotfiles/modules/wallpaper/images/giygas.png
 + "Gold Weave" Exec exec feh --bg-tile /home/eudoxia/.eudoxia.d/data/wallpaper/gold-weave.bmp
 + "Gray" Exec exec xsetroot -solid Gray
 + "Panther"  Exec exec feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/panther.jpg
