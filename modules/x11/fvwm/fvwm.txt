@@ -266,10 +266,12 @@ Style MainPanel !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
 # Fonts
 #
 
-*FvwmIconMan: Font "xft:TeX Gyre Termes:Italic:size=18:antialias=True"
-*MainPanel: Font   "xft:TeX Gyre Termes:Italic:size=18:antialias=True"
-MenuStyle * Font   "xft:TeX Gyre Termes:Italic:size=18:antialias=True"
-DefaultFont        "xft:TeX Gyre Termes:Italic:size=18:antialias=True"
+InfoStoreAdd font "xft:NewComputerModern10:Regular:size=18:antialias=True"
+
+*FvwmIconMan: Font $[infostore.font]
+*MainPanel: Font   $[infostore.font]
+MenuStyle * Font   $[infostore.font]
+DefaultFont        $[infostore.font]
 
 #
 # Keybindings
