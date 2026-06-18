@@ -383,6 +383,9 @@ PipeRead 'for i in $[FVWM_USERDIR]/cde-colors/*.fvwm2rc; do \
 DestroyMenu WinMenu
 AddToMenu   WinMenu "Window Operations" Title
 + "Center" ResizeMove 90wa 80wa 5 10
++ "Left" ResizeMove 45wa 80wa 3 10
++ "Right" ResizeMove 45wa 80wa 53 10
++ "" Nop
 + "Close" Close
 
 # Right click on the titlebar to open the menu.
