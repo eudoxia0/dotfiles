@@ -354,9 +354,7 @@ Mouse 1 W 4 Move
 # super + right click hold: resize window
 Mouse 3 W 4 Resize
 
-# Window buttons: iconify, maximize, close.
-Mouse 1 6 A Iconify
-Mouse 1 4 A Maximize 100 100
+# left click on the rightmost window button: close
 Mouse 1 2 A Close
 
 # Click on the titlebar to Raise, Move, Double Click to Maximize.
