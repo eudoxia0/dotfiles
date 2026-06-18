@@ -75,6 +75,7 @@ DestroyModuleConfig FvwmScript:*
 # Decor
 #
 
+# Width, in pixels, of the 3D decor around menus.
 MenuStyle * Hilight3DThickness 2
 MenuStyle * MenuColorset 5, ActiveColorset 6, GreyedColorset 7, TitleColorset 8
 MenuStyle * Hilight3DThick, HilightBack, HilightTitleBack, SeparatorsLong
