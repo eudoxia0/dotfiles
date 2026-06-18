@@ -231,11 +231,12 @@ Style MainPanel !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
 # Fonts
 #
 
-InfoStoreAdd font "xft:NewComputerModern10:Regular:size=18:antialias=True"
+InfoStoreAdd fontname NewComputerModern10
+InfoStoreAdd fontsize 18
 
-*MainPanel: Font   $[infostore.font]
-MenuStyle * Font   $[infostore.font]
-DefaultFont        $[infostore.font]
+*MainPanel: Font   "xft:$[infostore.fontname]:Italic:size=$[infostore.fontsize]:antialias=True"
+MenuStyle * Font   "xft:$[infostore.fontname]:Regular:size=$[infostore.fontsize]:antialias=True"
+DefaultFont        "xft:$[infostore.fontname]:Regular:size=$[infostore.fontsize]:antialias=True"
 
 #
 # Keybindings
