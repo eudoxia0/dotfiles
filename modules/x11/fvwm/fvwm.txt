@@ -222,6 +222,20 @@ DestroyModuleConfig MainPanel:*
 # Style.
 Style MainPanel !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
 
+# Changes which desk number is highlighted when the desk is changed.
+DestroyFunc ChangeDesk
+AddToFunc   ChangeDesk
++ I SendToModule MainPanel ChangeButton desk0 Colorset 10
++ I SendToModule MainPanel ChangeButton desk1 Colorset 10
++ I SendToModule MainPanel ChangeButton desk2 Colorset 10
++ I SendToModule MainPanel ChangeButton desk3 Colorset 10
++ I SendToModule MainPanel ChangeButton desk4 Colorset 10
++ I SendToModule MainPanel ChangeButton desk$0 Colorset 11
+
+DestroyModuleConfig EventNewDesk:*
+*EventNewDesk: PassID
+*EventNewDesk: new_desk ChangeDesk
+
 #
 # Fonts
 #
@@ -370,21 +384,3 @@ DestroyMenu ThemeMenu
 AddToMenu ThemeMenu "Theme" Title
 PipeRead 'for i in $[FVWM_USERDIR]/cde-colors/*.fvwm2rc; do \
   echo "AddToMenu ThemeMenu $(basename -s .fvwm2rc $i) Read $i"; done'
-
-#
-# Misc
-#
-
-# Changes which desk number is highlighted when the desk is changed.
-DestroyFunc ChangeDesk
-AddToFunc   ChangeDesk
-+ I SendToModule MainPanel ChangeButton desk0 Colorset 10
-+ I SendToModule MainPanel ChangeButton desk1 Colorset 10
-+ I SendToModule MainPanel ChangeButton desk2 Colorset 10
-+ I SendToModule MainPanel ChangeButton desk3 Colorset 10
-+ I SendToModule MainPanel ChangeButton desk4 Colorset 10
-+ I SendToModule MainPanel ChangeButton desk$0 Colorset 11
-
-DestroyModuleConfig EventNewDesk:*
-*EventNewDesk: PassID
-*EventNewDesk: new_desk ChangeDesk
