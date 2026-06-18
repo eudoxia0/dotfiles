@@ -10,7 +10,7 @@ let
     if [[ `hostname` == "rostam" ]]; then
       QT_SCALE_FACTOR=2 calibre
     else
-        calibre
+      calibre
     fi
   '';
 in
