@@ -51,6 +51,8 @@ MoveThreshold 3
 Style * MouseFocus
 # Clicking on a window raises it.
 Style * MouseFocusClickRaises
+# Transient windows should grab focus.
+Style * FPGrabFocusTransient
 
 # Place new windows under the mouse pointer.
 Style * PositionPlacement UnderMouse
