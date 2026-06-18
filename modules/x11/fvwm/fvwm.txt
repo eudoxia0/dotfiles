@@ -47,9 +47,11 @@ EwmhBaseStruts screen $[monitor.primary] 0 0 48 0
 ClickTime 250
 MoveThreshold 3
 
-# Sets the focus style to SloppyFocus and a mouse click in a window will Raise
-# it.
-Style * SloppyFocus, MouseFocusClickRaises
+# Windows are focused when the mouse pointer enters the
+# window.
+Style * SloppyFocus
+# Clicking on a window raises it.
+Style * MouseFocusClickRaises
 
 # Window Placement
 Style * PositionPlacement UnderMouse, GrabFocusOff, !UsePPosition
