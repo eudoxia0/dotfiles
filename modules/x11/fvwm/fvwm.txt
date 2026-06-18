@@ -147,28 +147,9 @@ ButtonStyle 6 - MwmDecorMin
 Style * BorderColorset 3 4 3 4 3 4 3 4
 Style * HilightBorderColorset 4 8 4 8 4 8 4 8
 
-Style * SnapAttraction 15 SameType ScreenAll, SnapGrid
-
-# Transient Windows (such as open file windows)
-Style * DecorateTransient, StackTransientParent
-Style * !FPGrabFocusTransient, FPReleaseFocusTransient
-
-# WindowShade
-Style * WindowShadeScrolls, WindowShadeSteps 10
-
-# Ignore Numlock and other modifiers for bindings
-# See http://fvwm.org/documentation/faq/#why-do-numlock-capslock-and-scrolllock-interfere-with-clicktofocus-andor-my-mouse-bindings
-IgnoreModifiers L25
-
 # Decor Styles
 Style * BorderWidth 5, HandleWidth 5, MWMButtons, FvwmBorder, FirmBorder
 Style * Colorset 1, HilightColorset 2
-
-# ICCCM allows windows to tell the WM to not give them keyboard focus.
-# Many windows use this incorrectly and expect keyboard focus anyways.
-# This styles tells fvwm to ignore this property, which makes some
-# applications (such as java and electron apps) behave better.
-Style * Lenience
 
 AddToDecor CDEDecor
 + TitleStyle    AllInactive -- Raised
@@ -189,11 +170,39 @@ AddToDecor CDEDecor
 
 + TitleStyle Height MinHeight 32
 
-Style * Colorset 1, HilightColorset 2, \
-        BorderColorset 3, HilightBorderColorset 4, \
-        BorderWidth 8, HandleWidth 8, \
-        MWMBorder, DepressableBorder, \
-        MWMButtons, UseDecor CDEDecor
+Style * Colorset 1
+Style * HilightColorset 2
+Style * BorderColorset 3
+Style * HilightBorderColorset 4
+Style * BorderWidth 8
+Style * HandleWidth 8
+Style * MWMBorder
+Style * DepressableBorder
+Style * MWMButtons
+Style * UseDecor CDEDecor
+
+#
+# Behaviour
+#
+
+Style * SnapAttraction 15 SameType ScreenAll, SnapGrid
+
+# Transient Windows (such as open file windows)
+Style * DecorateTransient, StackTransientParent
+Style * !FPGrabFocusTransient, FPReleaseFocusTransient
+
+# WindowShade
+Style * WindowShadeScrolls, WindowShadeSteps 10
+
+# Ignore Numlock and other modifiers for bindings
+# See http://fvwm.org/documentation/faq/#why-do-numlock-capslock-and-scrolllock-interfere-with-clicktofocus-andor-my-mouse-bindings
+IgnoreModifiers L25
+
+# ICCCM allows windows to tell the WM to not give them keyboard focus.
+# Many windows use this incorrectly and expect keyboard focus anyways.
+# This styles tells fvwm to ignore this property, which makes some
+# applications (such as java and electron apps) behave better.
+Style * Lenience
 
 #
 # MainPanel
