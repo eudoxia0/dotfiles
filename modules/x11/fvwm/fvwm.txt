@@ -348,7 +348,7 @@ AddToMenu   MenuFvwmRoot "root" Title
 
 DestroyMenu MenuPrograms
 AddToMenu   MenuPrograms "Programs" Title
-+ "Calibre%custom-icons/calibre.png%" Exec exec calibre
++ "Calibre%custom-icons/calibre.png%" Exec exec calibre-scaled
 + "Emacs%custom-icons/emacs.png%" Exec exec emacs
 + "Firefox%custom-icons/firefox.png%" Exec exec firefox-scaled
 + "Signal%custom-icons/signal.png%" Exec exec signal-desktop
