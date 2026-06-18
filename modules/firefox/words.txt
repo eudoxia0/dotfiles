@@ -20,6 +20,7 @@ Dually
 ECR
 ECS
 FSRS
+GABA
 Gentzen
 Gliese
 HCL
@@ -29,7 +30,9 @@ Innsmouth
 Intuitionism
 KaTeX
 Kobo
+LDP
 LLM
+LTP
 LaTeX
 Lenovo
 Makefile
@@ -84,6 +87,7 @@ disjunction
 dually
 epitaxy
 equational
+excitatory
 expressivity
 fluvoxamine
 formalisms
@@ -92,6 +96,7 @@ frontmatter
 functors
 fursuit
 genericity
+glutamate
 growable
 hashcards
 headshots
@@ -108,11 +113,15 @@ monoamine
 monomorphization
 monomorphized
 nanofabrication
+neuropharmacology
 neurophysiology
 neurotypical
 norepinephrine
 outcompete
 outcompeting
+postsynaptic
+potentiation
+presynaptic
 prodromal
 qubit
 qubits
@@ -125,6 +134,7 @@ sequent
 stderr
 stdin
 stdout
+substring
 sudo
 symplectic
 systemd
