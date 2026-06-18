@@ -65,7 +65,8 @@ OpaqueMoveSize 0
 # Resize a wireframe of the window.
 Style * ResizeOutline
 
-Style * SnapAttraction 15 SameType ScreenAll, SnapGrid
+# When moving windows, snap to window and screen edges.
+Style * SnapGrid, SnapAttraction 15 SameType ScreenAll
 
 # Transient Windows (such as open file windows)
 Style * DecorateTransient, StackTransientParent
