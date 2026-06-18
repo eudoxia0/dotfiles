@@ -23,12 +23,6 @@ Colorset 11 fg black, bg white, Plain, NoShape
 # Module Hover
 Colorset 12 fg white, bg gainsboro, Plain, NoShape
 
-# FvwmIconMan Iconified Button
-Colorset 14 fg darkgray, bg gray, Plain, NoShape
-
-# FvwmIconMan: Focused Window
-Colorset 15 fg black, bg gainsboro, Plain, NoShape
-
 #
 # General Settings
 #
@@ -233,25 +227,7 @@ DestroyModuleConfig MainPanel:*
 *MainPanel: (48x1, Id desk3, Title "δ", Action (Mouse 1) GotoDesk 0 3, ActiveColorset 12)
 *MainPanel: (48x1, Id desk4, Title "ε", Action (Mouse 1) GotoDesk 0 4, ActiveColorset 12)
 
-# IconMan
-DestroyModuleConfig FvwmIconMan:*
-*FvwmIconMan: ButtonGeometry 192x48
-*FvwmIconMan: DrawIcons always
-*FvwmIconMan: Format "%t"
-*FvwmIconMan: ManagerGeometry 1x1
-*FvwmIconMan: ReliefThickness 1
-*FvwmIconMan: Resolution global
-*FvwmIconMan: Sort id
-*FvwmIconMan: Tips needed
-*FvwmIconMan: UseWinList true
-*FvwmIconMan: Colorset 10
-*FvwmIconMan: FocusColorset 15
-*FvwmIconMan: SelectColorset 15
-*FvwmIconMan: FocusAndSelectColorset 15
-*FvwmIconMan: IconColorset 14
-*FvwmIconMan: IconAndSelectColorset 14
-
-*MainPanel: (3216x1, Left Swallow FvwmIconMan 'Module FvwmIconMan FvwmIconMan')
+*MainPanel: (3216x1)
 
 # System tray
 *MainPanel: (192x1, Swallow(NoClose,UseOld) stalonetray 'Exec exec stalonetray')
@@ -268,7 +244,6 @@ Style MainPanel !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
 
 InfoStoreAdd font "xft:NewComputerModern10:Regular:size=18:antialias=True"
 
-*FvwmIconMan: Font $[infostore.font]
 *MainPanel: Font   $[infostore.font]
 MenuStyle * Font   $[infostore.font]
 DefaultFont        $[infostore.font]
