@@ -15,7 +15,6 @@
       package = pkgs.clearlooks-phenix;
     };
     iconTheme = {
-      # package = pkgs.adwaita-icon-theme;
       name = "Bluecurve";
     };
   };
