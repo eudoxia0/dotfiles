@@ -10,7 +10,7 @@ InfoStoreAdd walls /home/eudoxia/.eudoxia.d/data/wallpaper
 # Default Colorset
 #
 
-Read $[FVWM_USERDIR]/cde-colors/Cinnamon.fvwm2rc
+Read $[FVWM_USERDIR]/cde-colors/Delphinium.fvwm2rc
 
 # Module Default
 Colorset 10 fg black, bg gray, Plain, NoShape
