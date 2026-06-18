@@ -59,6 +59,25 @@ OpaqueMoveSize 0
 # Resize a wireframe of the window.
 Style * ResizeOutline
 
+Style * SnapAttraction 15 SameType ScreenAll, SnapGrid
+
+# Transient Windows (such as open file windows)
+Style * DecorateTransient, StackTransientParent
+Style * !FPGrabFocusTransient, FPReleaseFocusTransient
+
+# WindowShade
+Style * WindowShadeScrolls, WindowShadeSteps 10
+
+# Ignore Numlock and other modifiers for bindings
+# See http://fvwm.org/documentation/faq/#why-do-numlock-capslock-and-scrolllock-interfere-with-clicktofocus-andor-my-mouse-bindings
+IgnoreModifiers L25
+
+# ICCCM allows windows to tell the WM to not give them keyboard focus.
+# Many windows use this incorrectly and expect keyboard focus anyways.
+# This styles tells fvwm to ignore this property, which makes some
+# applications (such as java and electron apps) behave better.
+Style * Lenience
+
 #
 # Functions
 #
@@ -115,97 +134,37 @@ MenuStyle * TrianglesUseFore
 # mini-icon, labels, sub-menu triangle, end of highlight
 # area.
 MenuStyle * ItemFormat "%s%|%3.1i%5.3l%5l%5r%5.3>%|"
+
 # Title style.
-TitleStyle Centered Height 24 -- Flat
-ButtonStyle All ActiveUp Vector 5 15x15@4 15x85@3 85x85@3 85x15@3 \
-                15x15@3 -- Flat
-ButtonStyle All ToggledActiveUp Vector 5 15x15@4 15x85@3 85x85@3 \
-                85x15@3 15x15@3 -- Flat
-ButtonStyle All ActiveDown Vector 5 20x20@4 20x80@3 80x80@3 80x20@3 \
-                20x20@3 -- Flat
-ButtonStyle All ToggledActiveDown Vector 5 20x20@4 20x80@3 80x80@3 \
-                80x20@3 20x20@3 -- Flat
-ButtonStyle All ToggledInactive Vector 5 47x47@3 57x53@3 53x53@3 \
-                53x47@3 47x47@3 -- Flat
-ButtonStyle All Inactive Vector 5 47x47@3 57x53@3 53x53@3 53x47@3 \
-                47x47@3 -- Flat
-AddButtonStyle 1 Active Vector 5 45x45@3 55x45@3 55x55@3 45x55@3 45x45@3
-AddButtonStyle 2 Active Vector 4 35x35@3 65x65@3 35x65@4 65x35@3
-AddButtonStyle 4 Active Vector 8 30x70@3 30x30@3 70x30@3 70x70@3 30x70@3 \
-                 30x50@4 50x50@3 50x70@3
-AddButtonStyle 4 ToggledActiveUp Vector 8 30x70@3 30x30@3 70x30@3 70x70@3 \
-                 30x70@3 50x30@4 50x50@3 70x50@3
-AddButtonStyle 6 Active Vector 5 35x60@3 65x60@3 65x50@3 35x50@3 35x60@3
-ButtonStyle All - Clear
-ButtonStyle 1 - MwmDecorMenu
-ButtonStyle 4 - MwmDecorMax
-ButtonStyle 6 - MwmDecorMin
+TitleStyle Centered Height 32 -- Raised
+TitleStyle Height MinHeight 32
 
-# BorderColorset and HilightBorderColorset take 8 positive
-# colorsets to specify the colorset for each edge and handle
-# (corner). The order is: N, NE, E, SE, S, SW, W, NW.
-Style * BorderColorset 3 4 3 4 3 4 3 4
-Style * HilightBorderColorset 4 8 4 8 4 8 4 8
-
-# Decor Styles
-Style * BorderWidth 5, HandleWidth 5, MWMButtons, FvwmBorder, FirmBorder
-Style * Colorset 1, HilightColorset 2
-
+# Colorset for inactive windows.
 Style * Colorset 1
+# Colorset for the active window.
 Style * HilightColorset 2
+# Colorset for inactive window borders.
 Style * BorderColorset 3
+# Colorset for active window borders.
 Style * HilightBorderColorset 4
 # Border width.
 Style * BorderWidth 8
 # Resize handle width.
 Style * HandleWidth 8
 # Use MWM-style borders.
-Style * MWMBorder
-# ?
-Style * DepressableBorder
-# Use MWM-style buttons.
-Style * MWMButtons
+Style * MwmBorder
+# Clicking on the border to resize does not change the
+# look of the border.
+Style * FirmBorder
 
-# CDE decor.
-AddToDecor CDEDecor
-+ TitleStyle    AllInactive -- Raised
-+ TitleStyle    AllActive -- Raised
-+ ButtonStyle   All Simple -- UseTitleStyle
-+ BorderStyle   Simple
-+ TitleStyle    Centered -- Raised
-+ ButtonStyle   All -- Raised
-+ AddButtonStyle 1 Vector 3 23x58@0 77x58@0 77x42@0
-+ AddButtonStyle 1 Vector 3 23x58@1 23x42@1 77x42@1
-+ AddButtonStyle 2 Vector 3 21x79@0 79x79@0 79x21@0
-+ AddButtonStyle 2 Vector 3 21x79@1 21x21@1 79x21@1
-+ AddButtonStyle 4 Vector 3 42x58@0 58x58@0 58x42@0
-+ AddButtonStyle 4 Vector 3 42x58@1 42x42@1 58x42@1
-+ TitleStyle Height MinHeight 32
+# Button style.
+ButtonStyle All -- Raised
+ButtonStyle All Simple -- UseTitleStyle
+AddButtonStyle 2 Vector 3 21x79@0 79x79@0 79x21@0
+AddButtonStyle 2 Vector 3 21x79@1 21x21@1 79x21@1
 
-Style * UseDecor CDEDecor
-
-#
-# Behaviour
-#
-
-Style * SnapAttraction 15 SameType ScreenAll, SnapGrid
-
-# Transient Windows (such as open file windows)
-Style * DecorateTransient, StackTransientParent
-Style * !FPGrabFocusTransient, FPReleaseFocusTransient
-
-# WindowShade
-Style * WindowShadeScrolls, WindowShadeSteps 10
-
-# Ignore Numlock and other modifiers for bindings
-# See http://fvwm.org/documentation/faq/#why-do-numlock-capslock-and-scrolllock-interfere-with-clicktofocus-andor-my-mouse-bindings
-IgnoreModifiers L25
-
-# ICCCM allows windows to tell the WM to not give them keyboard focus.
-# Many windows use this incorrectly and expect keyboard focus anyways.
-# This styles tells fvwm to ignore this property, which makes some
-# applications (such as java and electron apps) behave better.
-Style * Lenience
+# Border style.
+BorderStyle Simple
 
 #
 # MainPanel
