@@ -15,7 +15,7 @@ APPS = {
     "Screenshot": ["scrot", "-f", "-s"],
     "Signal": ["signal-desktop"],
     "Sound Settings": ["pavucontrol"],
-    "Todoist": ["todoist-x11"],
+    "Todoist": ["todoist"],
     "Transmission": ["transmission-gtk"],
     "Zed": ["zeditor"],
 }
