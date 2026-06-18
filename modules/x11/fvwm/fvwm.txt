@@ -85,9 +85,14 @@ MenuStyle * ActiveColorset 6
 MenuStyle * GreyedColorset 7
 # Colorset of menu titles.
 MenuStyle * TitleColorset 8
+# Highlight active menus items with a thick 3D border.
 MenuStyle * Hilight3DThick
+# Highlight the background of active menu items.
 MenuStyle * HilightBack
+# Highlight menu titles.
 MenuStyle * HilightTitleBack
+# Long separators cut across the whole width of the menu,
+# short ones leave a few pixels of margin.
 MenuStyle * SeparatorsLong
 MenuStyle * TrianglesSolid, TrianglesUseFore
 MenuStyle * ItemFormat "%s%|%3.1i%5.3l%5l%5r%5.3>%|"
