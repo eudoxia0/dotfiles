@@ -367,6 +367,9 @@ DestroyMenu WallMenu
 AddToMenu   WallMenu "Wallpapers" Title
 + "Giygas" Exec exec feh --bg-fill /home/eudoxia/root/1-workspace/dotfiles/modules/wallpaper/images/giygas.png
 + "Gold Weave" Exec exec feh --bg-tile /home/eudoxia/.eudoxia.d/data/wallpaper/gold-weave.bmp
++ "OS X Leopard Server" Exec exec feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/osx-leopard-server.jpg
++ "OS X Panther" Exec exec feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/osx-panther.jpg
++ "OS X Tiger" Exec exec feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/osx-tiger.jpg
 + "Panther"  Exec exec feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/panther.jpg
 + "SGI" Exec exec feh --bg-tile /home/eudoxia/.eudoxia.d/data/wallpaper/sgi.png
 + "Semiramis" Exec exec feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/semiramis.jpg
