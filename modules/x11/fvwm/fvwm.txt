@@ -105,10 +105,6 @@ DestroyModuleConfig FvwmScript:*
 *FvwmScript: DefaultColorset 10
 
 #
-# Module: FvwmIconMan
-#
-
-#
 # Decor
 #
 
@@ -242,8 +238,6 @@ DestroyModuleConfig MainPanel:*
 
 # IconMan
 DestroyModuleConfig FvwmIconMan:*
-*FvwmIconMan: Action Mouse 0 A ret
-*FvwmIconMan: Action Mouse 1 A sendcommand IconManClick
 *FvwmIconMan: ButtonGeometry 120x48
 *FvwmIconMan: Colorset 10
 *FvwmIconMan: DrawIcons always
