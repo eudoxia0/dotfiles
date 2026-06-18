@@ -22,6 +22,11 @@
           source = ./cde;
           recursive = true;
         };
+        # Copy the custom icons directory.
+        ".fvwm/custom-icons" = {
+          source = ./icons;
+          recursive = true;
+        };
       };
     };
   };

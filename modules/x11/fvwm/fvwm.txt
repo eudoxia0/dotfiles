@@ -330,28 +330,28 @@ Mouse 2 R    A WindowList
 DestroyMenu MenuFvwmRoot
 AddToMenu   MenuFvwmRoot "root" Title
 + "Programs%icons/programs.png%" Popup MenuPrograms
-+ "Terminal%icons/terminal.png%"        Exec exec alacritty
++ "Terminal%custom-icons/term.png%"        Exec exec alacritty
 + "" Nop
-+ "Backgrounds%icons/wallpaper.png%" Popup BackgroundMenu
-+ "Color Theme" Popup CdeColorMenu
++ "Backgrounds%custom-icons/wall.png%" Popup BackgroundMenu
++ "Color Theme%custom-icons/theme.png%" Popup CdeColorMenu
 + "" Nop
-+ "Refresh%icons/refresh.png%" Refresh
-+ "Restart%icons/restart.png%" Restart
-+ "Quit%icons/quit.png%"       Module FvwmScript FvwmScript-ConfirmQuit
++ "Refresh%custom-icons/reload.png%" Refresh
++ "Restart%custom-icons/reload.png%" Restart
++ "Quit%custom-icons/quit.png%"       Module FvwmScript FvwmScript-ConfirmQuit
 
 DestroyMenu MenuPrograms
 AddToMenu   MenuPrograms "Programs" Title
-+ "Calibre" Exec exec calibre
-+ "Emacs" Exec exec emacs
-+ "Firefox" Exec exec firefox-scaled
-+ "Signal" Exec exec signal-desktop
-+ "Sound Settings" Exec exec pavucontrol
-+ "Todoist" Exec exec todoist
++ "Calibre%custom-icons/calibre.png%" Exec exec calibre
++ "Emacs%custom-icons/emacs.png%" Exec exec emacs
++ "Firefox%custom-icons/browser.png%" Exec exec firefox-scaled
++ "Signal%custom-icons/signal.png%" Exec exec signal-desktop
++ "Sound Settings%custom-icons/sound.png%" Exec exec pavucontrol
++ "Todoist%custom-icons/todoist.png%" Exec exec todoist
 
 DestroyMenu BackgroundMenu
 AddToMenu   BackgroundMenu "Backgrounds" Title
-+ "Colors" Popup ColorMenu
-+ "Wallpapers" Popup WallMenu
++ "Colors%custom-icons/theme.png%" Popup ColorMenu
++ "Wallpapers%custom-icons/wall.png%" Popup WallMenu
 
 DestroyMenu ColorMenu
 AddToMenu   ColorMenu "Colors" Title
