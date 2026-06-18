@@ -48,7 +48,7 @@ ClickTime 250
 MoveThreshold 3
 
 # Window focus behaviour.
-Style * ClickToFocus
+Style * MouseFocus
 # Clicking on a window raises it.
 Style * MouseFocusClickRaises
 
