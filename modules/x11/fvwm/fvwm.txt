@@ -67,7 +67,7 @@ AddToFunc   StartFunction
 # Function to set background when fvwm starts
 DestroyFunc InitBackground
 AddToFunc InitBackground
-+ I Exec exec feh --bg-fill $[infostore.walls]/panther.jpg
++ I Exec exec feh --bg-fill $[infostore.walls]/osx-panther.png
 
 # Mouse Bindings Functions
 DestroyFunc RaiseMoveX
