@@ -24,7 +24,7 @@
         };
         # Copy the custom icons directory.
         ".fvwm/custom-icons" = {
-          source = ./icons;
+          source = ./custom-icons;
           recursive = true;
         };
       };
