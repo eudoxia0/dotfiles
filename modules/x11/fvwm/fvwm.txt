@@ -56,7 +56,7 @@ Style * EdgeMoveDelay 350, EdgeMoveResistance 350
 # EwmhBaseStruts [screen name] [left] [right] [top] [bottom]
 # Reserves space along the edge(s) of the Screen that will not
 # be covered when maximizing or placing windows.
-EwmhBaseStruts screen $[monitor.primary] 0 0 0 0
+EwmhBaseStruts screen $[monitor.primary] 0 0 48 0
 
 # This sets the ClickTime and MoveThreshold used to determine
 # Double Clicks, Hold and Move for the mouse.
@@ -220,57 +220,48 @@ Style * Colorset 1, HilightColorset 2, \
 #
 
 DestroyModuleConfig MainPanel:*
-*MainPanel: Geometry 360x1472+0+0@p
+*MainPanel: Geometry $[monitor.$[monitor.primary].width]x48+0+0@p
 *MainPanel: Colorset 10
 *MainPanel: Frame    2
-*MainPanel: Columns  5
-*MainPanel: Rows     23
+*MainPanel: Columns  $[monitor.$[monitor.primary].width]
+*MainPanel: Rows     1
 *MainPanel: Padding  2 2
 
 # DateTime
-*MainPanel: (5x1, Swallow DateTime 'Module FvwmScript FvwmScript-DateTime')
+*MainPanel: (192x1, Swallow DateTime 'Module FvwmScript FvwmScript-DateTime')
 
 # System tray
-*MainPanel: (5x1, Swallow(NoClose,UseOld) stalonetray 'Exec exec stalonetray')
+*MainPanel: (192x1, Swallow(NoClose,UseOld) stalonetray 'Exec exec stalonetray')
 
 # Desktop list
-*MainPanel: (1x1, Id desk0, Title "α", Action (Mouse 1) GotoDesk 0 0, Colorset 11, ActiveColorset 12)
-*MainPanel: (1x1, Id desk1, Title "β", Action (Mouse 1) GotoDesk 0 1, ActiveColorset 12)
-*MainPanel: (1x1, Id desk2, Title "γ", Action (Mouse 1) GotoDesk 0 2, ActiveColorset 12)
-*MainPanel: (1x1, Id desk3, Title "δ", Action (Mouse 1) GotoDesk 0 3, ActiveColorset 12)
-*MainPanel: (1x1, Id desk4, Title "ε", Action (Mouse 1) GotoDesk 0 4, ActiveColorset 12)
+*MainPanel: (48x1, Id desk0, Title "α", Action (Mouse 1) GotoDesk 0 0, Colorset 11, ActiveColorset 12)
+*MainPanel: (48x1, Id desk1, Title "β", Action (Mouse 1) GotoDesk 0 1, ActiveColorset 12)
+*MainPanel: (48x1, Id desk2, Title "γ", Action (Mouse 1) GotoDesk 0 2, ActiveColorset 12)
+*MainPanel: (48x1, Id desk3, Title "δ", Action (Mouse 1) GotoDesk 0 3, ActiveColorset 12)
+*MainPanel: (48x1, Id desk4, Title "ε", Action (Mouse 1) GotoDesk 0 4, ActiveColorset 12)
 
 # IconMan
-DestroyFunc ConfigureIconMan
-AddToFunc   ConfigureIconMan
-+ I *$0: ButtonGeometry 120x32
-+ I *$0: Colorset 10
-+ I *$0: DrawIcons always
-+ I *$0: FocusAndSelectColorset 12
-+ I *$0: FocusColorset 11
-+ I *$0: Font "xft:Fira Code:Regular:size=12:antialias=True"
-+ I *$0: Format "%t"
-+ I *$0: IconAndSelectColorset 12
-+ I *$0: IconColorset 14
-+ I *$0: ManagerGeometry 1x1
-+ I *$0: ReliefThickness 0
-+ I *$0: Resolution desk $1
-+ I *$0: SelectColorset 12
-+ I *$0: Sort id
-+ I *$0: Tips needed
-+ I *$0: UseWinList true
+DestroyModuleConfig FvwmIconMan:*
+*FvwmIconMan: Action Mouse 0 A ret
+*FvwmIconMan: Action Mouse 1 A sendcommand IconManClick
+*FvwmIconMan: ButtonGeometry 120x48
+*FvwmIconMan: Colorset 10
+*FvwmIconMan: DrawIcons always
+*FvwmIconMan: FocusAndSelectColorset 12
+*FvwmIconMan: FocusColorset 11
+*FvwmIconMan: Font "xft:Fira Code:Regular:size=14:antialias=True"
+*FvwmIconMan: Format "%t"
+*FvwmIconMan: IconAndSelectColorset 12
+*FvwmIconMan: IconColorset 14
+*FvwmIconMan: ManagerGeometry 1x1
+*FvwmIconMan: ReliefThickness 0
+*FvwmIconMan: Resolution global
+*FvwmIconMan: SelectColorset 12
+*FvwmIconMan: Sort id
+*FvwmIconMan: Tips needed
+*FvwmIconMan: UseWinList true
 
-ConfigureIconMan FvwmIconMan0 0
-ConfigureIconMan FvwmIconMan1 1
-ConfigureIconMan FvwmIconMan2 2
-ConfigureIconMan FvwmIconMan3 3
-ConfigureIconMan FvwmIconMan4 4
-
-*MainPanel: (5x4, Top Swallow FvwmIconMan0 'Module FvwmIconMan FvwmIconMan0')
-*MainPanel: (5x4, Top Swallow FvwmIconMan1 'Module FvwmIconMan FvwmIconMan1')
-*MainPanel: (5x4, Top Swallow FvwmIconMan2 'Module FvwmIconMan FvwmIconMan2')
-*MainPanel: (5x4, Top Swallow FvwmIconMan3 'Module FvwmIconMan FvwmIconMan3')
-*MainPanel: (5x4, Top Swallow FvwmIconMan4 'Module FvwmIconMan FvwmIconMan4')
+*MainPanel: (3216x1, Top Swallow FvwmIconMan 'Module FvwmIconMan FvwmIconMan')
 
 # Style.
 Style MainPanel !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
