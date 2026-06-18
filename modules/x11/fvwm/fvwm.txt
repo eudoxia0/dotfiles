@@ -389,7 +389,7 @@ AddToMenu   MenuPrograms "$[gt.Programs]" Title
 + "Firefox" Exec exec firefox-scaled
 + "Signal" Exec exec signal-desktop
 + "Sound Settings" Exec exec pavucontrol
-+ "Todoist" Exec exec todoist-x11
++ "Todoist" Exec exec todoist
 
 DestroyMenu BGMenu
 AddToMenu   BGMenu "Wallpapers" Title
