@@ -375,3 +375,15 @@ DestroyMenu ThemeMenu
 AddToMenu ThemeMenu "Theme" Title
 PipeRead 'for i in $[FVWM_USERDIR]/cde-colors/*.fvwm2rc; do \
   echo "AddToMenu ThemeMenu $(basename -s .fvwm2rc $i) Read $i"; done'
+
+#
+# Window Operations Menu
+#
+
+DestroyMenu WinMenu
+AddToMenu   WinMenu "Window Operations" Title
++ "Center" ResizeMove 90wa 80wa 5 10
++ "Close" Close
+
+# Right click on the titlebar to open the menu.
+Mouse 3 T A Menu WinMenu
