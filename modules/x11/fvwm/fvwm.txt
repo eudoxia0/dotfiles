@@ -230,7 +230,7 @@ InfoStoreAdd fontsize 18
 
 *MainPanel: Font   "xft:$[infostore.fontname]:Italic:size=$[infostore.fontsize]:antialias=True"
 MenuStyle * Font   "xft:$[infostore.fontname]:Regular:size=$[infostore.fontsize]:antialias=True"
-DefaultFont        "xft:$[infostore.fontname]:Regular:size=$[infostore.fontsize]:antialias=True"
+DefaultFont        "xft:$[infostore.fontname]:Regular:size=20:antialias=True"
 
 #
 # Keybindings
