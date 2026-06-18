@@ -266,10 +266,10 @@ Style MainPanel !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
 # Fonts
 #
 
-*FvwmIconMan: Font "xft:Fira Code:Regular:size=14:antialias=True"
-*MainPanel: Font   "xft:Fira Code:Regular:size=16:antialias=True"
-MenuStyle * Font   "xft:Fira Code:Regular:size=16:antialias=True"
-DefaultFont        "xft:Fire Code:Regular:size=16:antialias=True"
+*FvwmIconMan: Font "xft:TeX Gyre Termes:Italic:size=18:antialias=True"
+*MainPanel: Font   "xft:TeX Gyre Termes:Italic:size=18:antialias=True"
+MenuStyle * Font   "xft:TeX Gyre Termes:Italic:size=18:antialias=True"
+DefaultFont        "xft:TeX Gyre Termes:Italic:size=18:antialias=True"
 
 #
 # Keybindings
@@ -367,7 +367,7 @@ AddToMenu   MenuFvwmRoot "root" Title
 + "Quit%icons/quit.png%"       Module FvwmScript FvwmScript-ConfirmQuit
 
 DestroyMenu MenuPrograms
-AddToMenu   MenuPrograms "$[gt.Programs]" Title
+AddToMenu   MenuPrograms "Programs" Title
 + "Calibre" Exec exec calibre
 + "Emacs" Exec exec emacs
 + "Firefox" Exec exec firefox-scaled
