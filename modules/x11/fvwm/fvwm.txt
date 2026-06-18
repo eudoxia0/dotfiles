@@ -26,6 +26,9 @@ Colorset 12 fg white, bg gainsboro, Plain, NoShape
 # FvwmIconMan Iconified Button
 Colorset 14 fg darkgray, bg gray, Plain, NoShape
 
+# FvwmIconMan: Focused Window
+Colorset 15 fg black, bg gainsboro, Plain, NoShape
+
 #
 # General Settings
 #
@@ -238,24 +241,24 @@ DestroyModuleConfig MainPanel:*
 
 # IconMan
 DestroyModuleConfig FvwmIconMan:*
-*FvwmIconMan: ButtonGeometry 120x48
-*FvwmIconMan: Colorset 10
+*FvwmIconMan: ButtonGeometry 192x48
 *FvwmIconMan: DrawIcons always
-*FvwmIconMan: FocusAndSelectColorset 12
-*FvwmIconMan: FocusColorset 11
 *FvwmIconMan: Font "xft:Fira Code:Regular:size=14:antialias=True"
 *FvwmIconMan: Format "%t"
-*FvwmIconMan: IconAndSelectColorset 12
-*FvwmIconMan: IconColorset 14
 *FvwmIconMan: ManagerGeometry 1x1
-*FvwmIconMan: ReliefThickness 0
+*FvwmIconMan: ReliefThickness 1
 *FvwmIconMan: Resolution global
-*FvwmIconMan: SelectColorset 12
 *FvwmIconMan: Sort id
 *FvwmIconMan: Tips needed
 *FvwmIconMan: UseWinList true
+*FvwmIconMan: Colorset 10
+*FvwmIconMan: FocusColorset 15
+*FvwmIconMan: SelectColorset 15
+*FvwmIconMan: FocusAndSelectColorset 15
+*FvwmIconMan: IconColorset 14
+*FvwmIconMan: IconAndSelectColorset 14
 
-*MainPanel: (3216x1, Top Swallow FvwmIconMan 'Module FvwmIconMan FvwmIconMan')
+*MainPanel: (3216x1, Left Swallow FvwmIconMan 'Module FvwmIconMan FvwmIconMan')
 
 # Style.
 Style MainPanel !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
