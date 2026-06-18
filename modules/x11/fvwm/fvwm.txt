@@ -103,13 +103,6 @@ AddToFunc   StartFunction
 + I Module FvwmButtons MainPanel
 
 #
-# Module: FvwmScript
-#
-
-DestroyModuleConfig FvwmScript:*
-*FvwmScript: DefaultColorset 10
-
-#
 # Decor
 #
 
@@ -201,6 +194,8 @@ DestroyModuleConfig MainPanel:*
 *MainPanel: (192x1, Swallow(NoClose,UseOld) stalonetray 'Exec exec stalonetray --icon-size=32')
 
 # Date and time.
+DestroyModuleConfig FvwmScript:*
+*FvwmScript: DefaultColorset 10
 *MainPanel: (192x1, Swallow DateTime 'Module FvwmScript FvwmScript-DateTime')
 
 # Style.
