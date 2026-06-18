@@ -359,7 +359,7 @@ AddToMenu   MenuFvwmRoot "root" Title
 + "Programs%icons/programs.png%" Popup MenuPrograms
 + "Terminal%icons/terminal.png%"        Exec exec alacritty
 + "" Nop
-+ "Wallpapers%icons/wallpaper.png%" Popup BGMenu
++ "Backgrounds%icons/wallpaper.png%" Popup BackgroundMenu
 + "Color Theme" Popup CdeColorMenu
 + "" Nop
 + "Refresh%icons/refresh.png%" Refresh
@@ -375,18 +375,26 @@ AddToMenu   MenuPrograms "$[gt.Programs]" Title
 + "Sound Settings" Exec exec pavucontrol
 + "Todoist" Exec exec todoist
 
-DestroyMenu BGMenu
-AddToMenu   BGMenu "Wallpapers" Title
+DestroyMenu BackgroundMenu
+AddToMenu   BackgroundMenu "Backgrounds" Title
++ "Colors" Popup ColorMenu
++ "Wallpapers" Popup WallMenu
+
+DestroyMenu ColorMenu
+AddToMenu   ColorMenu "Colors" Title
 + "Dark SlateGray" Exec exec xsetroot -solid "#607080"
-+ "Giygas" Exec exec feh --bg-fill /home/eudoxia/root/1-workspace/dotfiles/modules/wallpaper/images/giygas.png
-+ "Gold Weave" Exec exec feh --bg-tile /home/eudoxia/.eudoxia.d/data/wallpaper/gold-weave.bmp
 + "Gray" Exec exec xsetroot -solid Gray
-+ "Panther"  Exec exec feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/panther.jpg
-+ "SGI" Exec exec feh --bg-tile /home/eudoxia/.eudoxia.d/data/wallpaper/sgi.png
-+ "Semiramis" Exec exec feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/semiramis.jpg
 + "SteelBlue" Exec exec xsetroot -solid SteelBlue
 + "SteelBlue4" Exec exec xsetroot -solid SteelBlue4
 + "Teal" Exec exec xsetroot -solid Teal
+
+DestroyMenu WallMenu
+AddToMenu   WallMenu "Wallpapers" Title
++ "Giygas" Exec exec feh --bg-fill /home/eudoxia/root/1-workspace/dotfiles/modules/wallpaper/images/giygas.png
++ "Gold Weave" Exec exec feh --bg-tile /home/eudoxia/.eudoxia.d/data/wallpaper/gold-weave.bmp
++ "Panther"  Exec exec feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/panther.jpg
++ "SGI" Exec exec feh --bg-tile /home/eudoxia/.eudoxia.d/data/wallpaper/sgi.png
++ "Semiramis" Exec exec feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/semiramis.jpg
 
 DestroyMenu CdeColorMenu
 AddToMenu CdeColorMenu "Cde Colors" Title
