@@ -257,12 +257,12 @@ DestroyFunc ConfigureIconMan
 AddToFunc   ConfigureIconMan
 + I *$0: Action Mouse 0 A ret
 + I *$0: Action Mouse 1 A sendcommand IconManClick
-+ I *$0: ButtonGeometry 120x20
++ I *$0: ButtonGeometry 120x32
 + I *$0: Colorset 10
 + I *$0: DrawIcons always
 + I *$0: FocusAndSelectColorset 12
 + I *$0: FocusColorset 11
-+ I *$0: Font "xft:Fira Code:Regular:size=14:antialias=True"
++ I *$0: Font "xft:Fira Code:Regular:size=12:antialias=True"
 + I *$0: Format "%c: %t"
 + I *$0: IconAndSelectColorset 12
 + I *$0: IconColorset 14
