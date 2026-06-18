@@ -28,7 +28,7 @@ Colorset 14 fg darkgray, bg gray, Plain, NoShape
 # General Settings
 #
 
-# All screens show the same desktop. Not relevant since I only have one monitor
+# All screens show the same desktop. Not relevant since I only have one monitor.
 # per host.
 DesktopConfiguration global
 
@@ -39,10 +39,10 @@ DesktopName 2 Desk2
 DesktopName 3 Desk3
 DesktopSize 1x1
 
-# EdgeScroll will move the view port between the Pages when the mouse
-# moves to the edge of the screen. This set the amount of distance to
-# scroll at 100% (full page) and the EdgeResistance which is a timer
-# for how long the mouse as at the edge before it scrolls.
+# EdgeScroll will move the view port between the Pages when the mouse moves to
+# the edge of the screen. This set the amount of distance to scroll at 100%
+# (full page) and the EdgeResistance which is a timer for how long the mouse as
+# at the edge before it scrolls.
 #
 # Set EdgeScroll 0 0 and/or EdgeResistance -1 to disable.
 EdgeScroll 100 100
