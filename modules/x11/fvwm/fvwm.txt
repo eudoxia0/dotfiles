@@ -248,7 +248,7 @@ Style * Colorset 1, HilightColorset 2, \
 #
 
 DestroyModuleConfig MainPanel:*
-*MainPanel: Geometry 200x350+0+0@p
+*MainPanel: Geometry 512x512+0+0@p
 *MainPanel: Colorset 10
 *MainPanel: Frame    2
 *MainPanel: Columns  4
@@ -269,6 +269,7 @@ DestroyModuleConfig MainPanel:*
 
 # IconMan
 *MainPanel: (4x4, Top, Swallow FvwmIconMan 'Module FvwmIconMan')
+*FvwmIconMan: Sort id
 
 # Style.
 Style MainPanel !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
@@ -277,7 +278,7 @@ Style MainPanel !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
 # Fonts
 #
 
-*FvwmIconMan: Font "xft:Fira Code:Regular:size=16:antialias=True"
+*FvwmIconMan: Font "xft:Fira Code:Regular:size=14:antialias=True"
 *MainPanel: Font   "xft:Fira Code:Regular:size=16:antialias=True"
 MenuStyle * Font   "xft:Fira Code:Regular:size=16:antialias=True"
 DefaultFont        "xft:Fire Code:Regular:size=16:antialias=True"
