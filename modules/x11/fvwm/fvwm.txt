@@ -151,6 +151,22 @@ Style * HilightBorderColorset 4 8 4 8 4 8 4 8
 Style * BorderWidth 5, HandleWidth 5, MWMButtons, FvwmBorder, FirmBorder
 Style * Colorset 1, HilightColorset 2
 
+Style * Colorset 1
+Style * HilightColorset 2
+Style * BorderColorset 3
+Style * HilightBorderColorset 4
+# Border width.
+Style * BorderWidth 8
+# Resize handle width.
+Style * HandleWidth 8
+# Use MWM-style borders.
+Style * MWMBorder
+# ?
+Style * DepressableBorder
+# Use MWM-style buttons.
+Style * MWMButtons
+
+# CDE decor.
 AddToDecor CDEDecor
 + TitleStyle    AllInactive -- Raised
 + TitleStyle    AllActive -- Raised
@@ -158,27 +174,14 @@ AddToDecor CDEDecor
 + BorderStyle   Simple
 + TitleStyle    Centered -- Raised
 + ButtonStyle   All -- Raised
-
 + AddButtonStyle 1 Vector 3 23x58@0 77x58@0 77x42@0
 + AddButtonStyle 1 Vector 3 23x58@1 23x42@1 77x42@1
-
 + AddButtonStyle 2 Vector 3 21x79@0 79x79@0 79x21@0
 + AddButtonStyle 2 Vector 3 21x79@1 21x21@1 79x21@1
-
 + AddButtonStyle 4 Vector 3 42x58@0 58x58@0 58x42@0
 + AddButtonStyle 4 Vector 3 42x58@1 42x42@1 58x42@1
-
 + TitleStyle Height MinHeight 32
 
-Style * Colorset 1
-Style * HilightColorset 2
-Style * BorderColorset 3
-Style * HilightBorderColorset 4
-Style * BorderWidth 8
-Style * HandleWidth 8
-Style * MWMBorder
-Style * DepressableBorder
-Style * MWMButtons
 Style * UseDecor CDEDecor
 
 #
