@@ -318,7 +318,7 @@ Silent Key r A 4S Restart
 # s-q: close focused window
 Silent Key q A 4 Close
 
-# s-{0,1,2,3,4}: switch virtual desktop
+# s-{1,2,3,4,5}: switch virtual desktop
 Silent Key 1 A 4 GotoDesk 0 0
 Silent Key 2 A 4 GotoDesk 0 1
 Silent Key 3 A 4 GotoDesk 0 2
