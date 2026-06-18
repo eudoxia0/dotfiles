@@ -52,8 +52,13 @@ Style * ClickToFocus
 # Clicking on a window raises it.
 Style * MouseFocusClickRaises
 
-# Window Placement
-Style * PositionPlacement UnderMouse, GrabFocusOff, !UsePPosition
+# Place new windows under the mouse pointer.
+Style * PositionPlacement UnderMouse
+# When a new window is created, it grabs focus.
+Style * GrabFocusOn
+# When a new window is created, ignore the app's requested
+# position.
+Style * !UsePPosition
 
 # Move a wireframe of the window.
 OpaqueMoveSize 0
