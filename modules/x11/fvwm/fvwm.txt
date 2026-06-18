@@ -232,7 +232,7 @@ Style * Colorset 1, HilightColorset 2, \
 #
 
 DestroyModuleConfig MainPanel:*
-*MainPanel: Geometry 512x1472+0+0@p
+*MainPanel: Geometry 360x1472+0+0@p
 *MainPanel: Colorset 10
 *MainPanel: Frame    2
 *MainPanel: Columns  5
