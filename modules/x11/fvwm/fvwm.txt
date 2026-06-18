@@ -171,8 +171,8 @@ ButtonStyle 1 - MwmDecorMenu
 ButtonStyle 4 - MwmDecorMax
 ButtonStyle 6 - MwmDecorMin
 
-# Sets the focus style to SloppyFocus and a mouse click
-# in a window will Raise it.
+# Sets the focus style to SloppyFocus and a mouse click in a window will Raise
+# it.
 Style * SloppyFocus, MouseFocusClickRaises
 
 # Window Placement
