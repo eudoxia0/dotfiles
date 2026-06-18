@@ -10,17 +10,18 @@
     enable = true;
   };
 
-  # Copy the CDE colors directory.
-  home-manager.users.eudoxia.home.file.".fvwm/CdeColors" = {
-    source = ./cde;
-    recursive = true;
+  home-manager.users.eudoxia = hm: {
+    home = {
+      packages = [ pkgs.stalonetray ];
+      file = {
+        # Copy the fvwm config.
+        ".fvwm/config".source = ./fvwm.txt;
+        # Copy the CDE colors directory.
+        ".fvwm/CdeColors" = {
+          source = ./cde;
+          recursive = true;
+        };
+      };
+    };
   };
-
-  home-manager.users.eudoxia.home.file = {
-    ".fvwm/config".source = ./fvwm.txt;
-  };
-
-  home-manager.users.eudoxia.home.packages = with pkgs; [
-    stalonetray
-  ];
 }
