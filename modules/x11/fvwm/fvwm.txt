@@ -37,7 +37,7 @@ DesktopName 0 Desk0
 Desktopname 1 Desk1
 DesktopName 2 Desk2
 DesktopName 3 Desk3
-DesktopName 3 Desk4
+DesktopName 4 Desk4
 DesktopSize 1x1
 
 # EdgeScroll will move the view port between the Pages when the mouse moves to
