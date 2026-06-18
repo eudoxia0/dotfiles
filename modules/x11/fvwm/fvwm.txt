@@ -333,7 +333,7 @@ AddToMenu   MenuFvwmRoot "root" Title
 + "Terminal%custom-icons/term.png%"        Exec exec alacritty
 + "" Nop
 + "Backgrounds%custom-icons/wall.png%" Popup BackgroundMenu
-+ "Color Theme%custom-icons/theme.png%" Popup CdeColorMenu
++ "Theme%custom-icons/theme.png%" Popup CdeColorMenu
 + "" Nop
 + "Lock%custom-icons/lock.png%" Exec exec xscreensaver-command -lock
 + "Refresh%custom-icons/reload.png%" Refresh
@@ -371,7 +371,7 @@ AddToMenu   WallMenu "Wallpapers" Title
 + "Semiramis" Exec exec feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/semiramis.jpg
 
 DestroyMenu CdeColorMenu
-AddToMenu CdeColorMenu "Color Theme" Title
+AddToMenu CdeColorMenu "Theme" Title
 PipeRead 'for i in $[FVWM_USERDIR]/CdeColors/*.fvwm2rc; do \
   echo "AddToMenu CdeColorMenu $(basename -s .fvwm2rc $i) Read $i"; done'
 
