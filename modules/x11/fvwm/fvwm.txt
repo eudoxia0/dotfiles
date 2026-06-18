@@ -230,11 +230,11 @@ Style * Colorset 1, HilightColorset 2, \
 #
 
 DestroyModuleConfig MainPanel:*
-*MainPanel: Geometry 512x512+0+0@p
+*MainPanel: Geometry 320x1472+0+0@p
 *MainPanel: Colorset 10
 *MainPanel: Frame    2
 *MainPanel: Columns  5
-*MainPanel: Rows     11
+*MainPanel: Rows     23
 *MainPanel: Padding  2 2
 
 # DateTime
@@ -251,43 +251,38 @@ DestroyModuleConfig MainPanel:*
 *MainPanel: (1x1, Id desk4, Title "ε", Action (Mouse 1) GotoDesk 0 4, ActiveColorset 12)
 
 # IconMan
-*MainPanel: (5x4, Top Swallow FvwmIconMan 'Module FvwmIconMan IconMan1')
-*IconMan1: Action Mouse 0 A ret
-*IconMan1: Action Mouse 1 A sendcommand IconManClick
-*IconMan1: ButtonGeometry 120x20
-*IconMan1: Colorset 10
-*IconMan1: DrawIcons always
-*IconMan1: FocusAndSelectColorset 12
-*IconMan1: FocusColorset 11
-*IconMan1: Format "%c: %t"
-*IconMan1: IconAndSelectColorset 12
-*IconMan1: IconColorset 14
-*IconMan1: ManagerGeometry 1x1
-*IconMan1: ReliefThickness 0
-*IconMan1: Resolution desk 0
-*IconMan1: SelectColorset 12
-*IconMan1: Sort id
-*IconMan1: Tips needed
-*IconMan1: UseWinList true
+DestroyFunc ConfigureIconMan
+AddToFunc   ConfigureIconMan
++ I *$0: Action Mouse 0 A ret
++ I *$0: Action Mouse 1 A sendcommand IconManClick
++ I *$0: ButtonGeometry 120x20
++ I *$0: Colorset 10
++ I *$0: DrawIcons always
++ I *$0: FocusAndSelectColorset 12
++ I *$0: FocusColorset 11
++ I *$0: Font "xft:Fira Code:Regular:size=14:antialias=True"
++ I *$0: Format "%c: %t"
++ I *$0: IconAndSelectColorset 12
++ I *$0: IconColorset 14
++ I *$0: ManagerGeometry 1x1
++ I *$0: ReliefThickness 0
++ I *$0: Resolution desk $1
++ I *$0: SelectColorset 12
++ I *$0: Sort id
++ I *$0: Tips needed
++ I *$0: UseWinList true
 
-*MainPanel: (5x4, Top Swallow FvwmIconMan 'Module FvwmIconMan IconMan2')
-*IconMan2: Action Mouse 0 A ret
-*IconMan2: Action Mouse 1 A sendcommand IconManClick
-*IconMan2: ButtonGeometry 120x20
-*IconMan2: Colorset 10
-*IconMan2: DrawIcons always
-*IconMan2: FocusAndSelectColorset 12
-*IconMan2: FocusColorset 11
-*IconMan2: Format "%c: %t"
-*IconMan2: IconAndSelectColorset 12
-*IconMan2: IconColorset 14
-*IconMan2: ManagerGeometry 1x1
-*IconMan2: ReliefThickness 0
-*IconMan2: Resolution desk 1
-*IconMan2: SelectColorset 12
-*IconMan2: Sort id
-*IconMan2: Tips needed
-*IconMan2: UseWinList true
+ConfigureIconMan FvwmIconMan0 0
+ConfigureIconMan FvwmIconMan1 1
+ConfigureIconMan FvwmIconMan2 2
+ConfigureIconMan FvwmIconMan3 3
+ConfigureIconMan FvwmIconMan4 4
+
+*MainPanel: (5x4, Top Swallow FvwmIconMan0 'Module FvwmIconMan FvwmIconMan0')
+*MainPanel: (5x4, Top Swallow FvwmIconMan1 'Module FvwmIconMan FvwmIconMan1')
+*MainPanel: (5x4, Top Swallow FvwmIconMan2 'Module FvwmIconMan FvwmIconMan2')
+*MainPanel: (5x4, Top Swallow FvwmIconMan3 'Module FvwmIconMan FvwmIconMan3')
+*MainPanel: (5x4, Top Swallow FvwmIconMan4 'Module FvwmIconMan FvwmIconMan4')
 
 # Style.
 Style MainPanel !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
@@ -296,8 +291,6 @@ Style MainPanel !Title, !Borders, !Handles, Sticky, WindowListSkip, NeverFocus
 # Fonts
 #
 
-*IconMan1: Font "xft:Fira Code:Regular:size=14:antialias=True"
-*IconMan2: Font "xft:Fira Code:Regular:size=14:antialias=True"
 *MainPanel: Font   "xft:Fira Code:Regular:size=16:antialias=True"
 MenuStyle * Font   "xft:Fira Code:Regular:size=16:antialias=True"
 DefaultFont        "xft:Fire Code:Regular:size=16:antialias=True"
