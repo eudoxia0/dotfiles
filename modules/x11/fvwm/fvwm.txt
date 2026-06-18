@@ -388,13 +388,31 @@ PipeRead 'for i in $[FVWM_USERDIR]/cde-colors/*.fvwm2rc; do \
 # Window Operations Menu
 #
 
+DestroyFunc ResizeMoveLeft
+AddToFunc   ResizeMoveLeft
++ I ResizeMove 45wa 80wa 3 10
+
+DestroyFunc ResizeMoveRight
+AddToFunc   ResizeMoveRight
++ I ResizeMove 45wa 80wa 53 10
+
+DestroyFunc ResizeMoveCenter
+AddToFunc   ResizeMoveCenter
++ I ResizeMove 90wa 80wa 5 10
+
 DestroyMenu WinMenu
 AddToMenu   WinMenu "Window Operations" Title
-+ "Center" ResizeMove 90wa 80wa 5 10
-+ "Left" ResizeMove 45wa 80wa 3 10
-+ "Right" ResizeMove 45wa 80wa 53 10
++ "Center" ResizeMoveCenter
++ "Left" ResizeMoveLeft
++ "Right" ResizeMoveRight
 + "" Nop
 + "Close" Close
 
 # Right click on the titlebar to open the menu.
 Mouse 3 T A Menu WinMenu
+
+# s-a: ResizeMoveLeft
+Silent Key a W 4 ResizeMoveLeft
+
+# s-d: ResizeMoveRight
+Silent Key d W 4 ResizeMoveRight
