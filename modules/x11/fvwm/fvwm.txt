@@ -214,7 +214,7 @@ DestroyModuleConfig MainPanel:*
 *MainPanel: (48x1, Id desk3, Title "δ", Action (Mouse 1) GotoDesk 0 3, ActiveColorset 12)
 *MainPanel: (48x1, Id desk4, Title "ε", Action (Mouse 1) GotoDesk 0 4, ActiveColorset 12)
 
-*MainPanel: (3216x1, Title "", Action Nop)
+*MainPanel: (3216x1, Title "", Action Nop, Frame 0)
 
 # System tray
 *MainPanel: (192x1, Swallow(NoClose,UseOld) stalonetray 'Exec exec stalonetray')
