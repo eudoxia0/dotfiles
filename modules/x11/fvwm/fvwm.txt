@@ -47,9 +47,8 @@ EwmhBaseStruts screen $[monitor.primary] 0 0 48 0
 ClickTime 250
 MoveThreshold 3
 
-# Windows are focused when the mouse pointer enters the
-# window.
-Style * SloppyFocus
+# Window focus behaviour.
+Style * ClickToFocus
 # Clicking on a window raises it.
 Style * MouseFocusClickRaises
 
