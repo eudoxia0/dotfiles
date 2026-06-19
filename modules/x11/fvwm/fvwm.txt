@@ -272,10 +272,10 @@ Silent Key c A 4C Exec exec alacritty
 Silent Key e A 4C Exec exec emacs
 
 # C-s-w: launch browser
-Silent Key w A 4C Exec exec firefox-scaled
+Silent Key w A 4C Exec exec firefox
 
 # C-s-f: launch file manager
-Silent Key f A 4C Exec exec thunar-scaled
+Silent Key f A 4C Exec exec thunar
 
 # Pause: lock the screen
 Silent Key Pause A N Exec exec xscreensaver-command -lock
@@ -356,7 +356,7 @@ DestroyMenu MenuPrograms
 AddToMenu   MenuPrograms "Programs" Title
 + "Calibre%custom-icons/calibre.png%" Exec exec calibre-scaled
 + "Emacs%custom-icons/emacs.png%" Exec exec emacs
-+ "Firefox%custom-icons/firefox.png%" Exec exec firefox-scaled
++ "Firefox%custom-icons/firefox.png%" Exec exec firefox
 + "Signal%custom-icons/signal.png%" Exec exec signal-desktop
 + "Sound Settings%custom-icons/sound.png%" Exec exec pavucontrol
 + "Todoist%custom-icons/todoist.png%" Exec exec todoist

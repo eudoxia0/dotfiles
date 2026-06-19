@@ -5,20 +5,7 @@
   ...
 }:
 
-let
-  firefox-scaled = pkgs.writeShellScriptBin "firefox-scaled" ''
-    if [[ `hostname` == "rostam" ]]; then
-      GDK_DPI_SCALE=1.5 firefox
-    else
-      firefox
-    fi
-  '';
-in
 {
-  home-manager.users.eudoxia.home.packages = [
-    firefox-scaled
-  ];
-
   home-manager.users.eudoxia.programs.firefox = {
     enable = true;
     languagePacks = [ "en-US" ];

@@ -5,15 +5,6 @@
   ...
 }:
 
-let
-  thunar-scaled = pkgs.writeShellScriptBin "thunar-scaled" ''
-    if [[ `hostname` == "rostam" ]]; then
-      GDK_DPI_SCALE=1.5 thunar
-    else
-      thunar
-    fi
-  '';
-in
 {
   programs.thunar = {
     enable = true;
@@ -60,8 +51,6 @@ in
     xz
     zip
     zstd
-
-    thunar-scaled
   ];
 
   # xfconf
