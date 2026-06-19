@@ -283,6 +283,12 @@ Silent Key Pause A N Exec exec xscreensaver-command -lock
 # Print: take a screenshot of a region
 Silent Key Print A N Exec exec scrot -f -s
 
+# C-Print: take a screenshot of the current window.
+Silent Key Print A C Exec exec scrot -u -b
+
+# M-Print: take a screenshot of the whole screen.
+Silent Key Print A M Exec exec scrot
+
 # M-Tab: window list
 Silent Key Tab A M WindowList Root c c NoGeometry, SelectOnRelease Alt_L, SortByClass
 
