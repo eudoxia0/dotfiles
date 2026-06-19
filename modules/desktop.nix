@@ -25,6 +25,7 @@ in
     evince
     file-roller
     gimp3
+    gnome-calculator
     gnome-disk-utility
     gparted
     keepassxc
