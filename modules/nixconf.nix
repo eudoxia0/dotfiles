@@ -25,7 +25,7 @@
   nix.gc = {
     automatic = true;
     dates = "daily";
-    options = "--delete-older-than 7f";
+    options = "--delete-older-than 7d";
   };
 
   # Stop warning about dirty trees.
