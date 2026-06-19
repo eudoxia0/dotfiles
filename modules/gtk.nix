@@ -24,4 +24,11 @@
     adwaita-icon-theme-legacy
     adwaita-icon-theme
   ];
+
+  # On X11, new GTK4 windows appear as a black rectangle for a few frames
+  # before being painted. Using the software renderer fixes this at the cost
+  # of losing GPU acceleration.
+  home-manager.users.eudoxia.home.sessionVariables = {
+    GSK_RENDERER = "cairo";
+  };
 }
