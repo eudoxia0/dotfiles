@@ -27,6 +27,7 @@ in
     gimp3
     gnome-calculator
     gnome-disk-utility
+    gnome-pomodoro
     gparted
     keepassxc
     koreader
