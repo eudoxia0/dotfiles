@@ -31,6 +31,9 @@
   # Stop warning about dirty trees.
   nix.settings.warn-dirty = false;
 
+  # Cache flake evaluation.
+  nix.settings.eval-cache = true;
+
   # Enable the nix-ld shim.
   programs.nix-ld = {
     enable = true;
