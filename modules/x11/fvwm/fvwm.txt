@@ -342,15 +342,15 @@ Mouse 2 R A WindowList
 DestroyMenu MenuFvwmRoot
 AddToMenu   MenuFvwmRoot "root" Title
 + "Programs%custom-icons/launcher.png%" Popup MenuPrograms
-+ "Terminal%custom-icons/term.png%"        Exec exec alacritty
++ "Terminal%custom-icons/term.png%"     Exec exec alacritty
 + "" Nop
-+ "Backgrounds%custom-icons/wall.png%" Popup BackgroundMenu
-+ "Theme%custom-icons/theme.png%" Popup ThemeMenu
++ "Backgrounds%custom-icons/wall.png%"  Popup BackgroundMenu
++ "Theme%custom-icons/theme.png%"       Popup ThemeMenu
 + "" Nop
-+ "Lock%custom-icons/lock.png%" Exec exec xscreensaver-command -lock
-+ "Refresh%custom-icons/reload.png%" Refresh
-+ "Restart%custom-icons/reload.png%" Restart
-+ "Quit%custom-icons/quit.png%"      Quit
++ "Lock%custom-icons/lock.png%"         Exec exec xscreensaver-command -lock
++ "Refresh%custom-icons/reload.png%"    Refresh
++ "Restart%custom-icons/reload.png%"    Restart
++ "Quit%custom-icons/quit.png%"         Quit
 
 DestroyMenu MenuPrograms
 AddToMenu   MenuPrograms "Programs" Title
