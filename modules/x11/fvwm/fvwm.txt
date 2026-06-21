@@ -408,11 +408,11 @@ AddToFunc   ResizeMoveCenter
 
 DestroyMenu WinMenu
 AddToMenu   WinMenu "Window Operations" Title
-+ "Center" ResizeMoveCenter
-+ "Left" ResizeMoveLeft
-+ "Right" ResizeMoveRight
-+ "" Nop
-+ "Close" Close
++ "Center"  ResizeMoveCenter
++ "Left"    ResizeMoveLeft
++ "Right"   ResizeMoveRight
++ ""        Nop
++ "Close"   Close
 
 # Right click on the titlebar to open the menu.
 Mouse 3 T A Menu WinMenu
