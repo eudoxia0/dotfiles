@@ -45,7 +45,6 @@ in
     v4l-utils
     viewnior
     vlc
-    wev
     zathura
   ];
 }
