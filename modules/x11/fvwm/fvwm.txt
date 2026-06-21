@@ -360,6 +360,7 @@ AddToMenu   MenuPrograms "Programs" Title
 + "Emacs%custom-icons/emacs.png%"              Exec exec emacs
 + "File Manager%custom-icons/folder.png%"      Exec exec thunar
 + "Firefox%custom-icons/firefox.png%"          Exec exec firefox
++ "GIMP%custom-icons/gimp.png%"                Exec exec gimp
 + "Pomodoro Timer%custom-icons/pomodoro.png%"  Exec exec gnome-pomodoro
 + "Signal%custom-icons/signal.png%"            Exec exec signal-desktop
 + "Sound Settings%custom-icons/sound.png%"     Exec exec pavucontrol
