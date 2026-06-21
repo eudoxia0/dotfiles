@@ -5,24 +5,23 @@
   ...
 }:
 
+let
+  bluecurve = pkgs.callPackage ./bluecurve.nix {};
+in
 {
   programs.dconf.enable = true;
 
   home-manager.users.eudoxia.gtk = {
     enable = true;
-    theme = {
-      name = "Clearlooks-Phenix";
-      package = pkgs.clearlooks-phenix;
-    };
-    iconTheme = {
-      name = "Bluecurve";
-    };
+    theme.name = "Bluecurve";
+    iconTheme.name = "Bluecurve";
   };
 
   # Install other themes so we can preview them.
   home-manager.users.eudoxia.home.packages = with pkgs; [
     adwaita-icon-theme-legacy
     adwaita-icon-theme
+    bluecurve
   ];
 
   # On X11, new GTK4 windows appear as a black rectangle for a few frames
