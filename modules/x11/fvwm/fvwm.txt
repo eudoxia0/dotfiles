@@ -368,22 +368,22 @@ AddToMenu   BackgroundMenu "Backgrounds"  Title
 
 DestroyMenu ColorMenu
 AddToMenu   ColorMenu "Colors" Title
-+ "Dark SlateGray" Exec exec xsetroot -solid "#607080"
-+ "Gray" Exec exec xsetroot -solid Gray
-+ "SteelBlue" Exec exec xsetroot -solid SteelBlue
-+ "SteelBlue4" Exec exec xsetroot -solid SteelBlue4
-+ "Teal" Exec exec xsetroot -solid Teal
++ "Dark SlateGray"  Exec exec xsetroot -solid "#607080"
++ "Gray"            Exec exec xsetroot -solid Gray
++ "SteelBlue"       Exec exec xsetroot -solid SteelBlue
++ "SteelBlue4"      Exec exec xsetroot -solid SteelBlue4
++ "Teal"            Exec exec xsetroot -solid Teal
 
 DestroyMenu WallMenu
 AddToMenu   WallMenu "Wallpapers" Title
-+ "Giygas" Exec exec feh --bg-fill $[infostore.walls]/giygas.png
-+ "Gold Weave" Exec exec feh --bg-tile $[infostore.walls]/gold-weave.bmp
-+ "OS X Leopard Server" Exec exec feh --bg-fill $[infostore.walls]/osx-leopard-server.jpg
-+ "OS X Panther" Exec exec feh --bg-fill $[infostore.walls]/osx-panther.png
-+ "OS X Tiger" Exec exec feh --bg-fill $[infostore.walls]/osx-tiger.png
-+ "Panther"  Exec exec feh --bg-fill $[infostore.walls]/panther.jpg
-+ "SGI" Exec exec feh --bg-tile $[infostore.walls]/sgi.png
-+ "Semiramis" Exec exec feh --bg-fill $[infostore.walls]/semiramis.jpg
++ "Giygas"               Exec exec feh --bg-fill $[infostore.walls]/giygas.png
++ "Gold Weave"           Exec exec feh --bg-tile $[infostore.walls]/gold-weave.bmp
++ "OS X Leopard Server"  Exec exec feh --bg-fill $[infostore.walls]/osx-leopard-server.jpg
++ "OS X Panther"         Exec exec feh --bg-fill $[infostore.walls]/osx-panther.png
++ "OS X Tiger"           Exec exec feh --bg-fill $[infostore.walls]/osx-tiger.png
++ "Panther"              Exec exec feh --bg-fill $[infostore.walls]/panther.jpg
++ "SGI"                  Exec exec feh --bg-tile $[infostore.walls]/sgi.png
++ "Semiramis"            Exec exec feh --bg-fill $[infostore.walls]/semiramis.jpg
 
 DestroyMenu ThemeMenu
 AddToMenu ThemeMenu "Theme" Title
