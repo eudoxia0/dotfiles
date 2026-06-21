@@ -358,6 +358,7 @@ AddToMenu   MenuPrograms "Programs" Title
 + "Calibre%custom-icons/calibre.png%"          Exec exec calibre-scaled
 + "Cheese%custom-icons/camera.png%"            Exec exec cheese
 + "Emacs%custom-icons/emacs.png%"              Exec exec emacs
++ "File Manager%custom-icons/folder.png%"      Exec exec thunar
 + "Firefox%custom-icons/firefox.png%"          Exec exec firefox
 + "Pomodoro Timer%custom-icons/pomodoro.png%"  Exec exec gnome-pomodoro
 + "Signal%custom-icons/signal.png%"            Exec exec signal-desktop
