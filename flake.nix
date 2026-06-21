@@ -19,7 +19,6 @@
     }:
     let
       shared = [
-        ./modules/1password.nix
         ./modules/audio.nix
         ./modules/bluetooth.nix
         ./modules/cli.nix
