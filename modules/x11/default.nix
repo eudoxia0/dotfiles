@@ -17,5 +17,6 @@
     dmenu
     kitty
     xsecurelock
+    rofi
   ];
 }

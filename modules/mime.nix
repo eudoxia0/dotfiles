@@ -20,6 +20,7 @@ in
     defaultApplications = {
       "application/epub+zip" = [ "koreader.desktop" ];
       "application/pdf" = [ "org.pwmt.zathura.desktop" ];
+      "application/postscript" = [ "org.pwmt.zathura.desktop" ];
       "application/vnd.amazon.ebook" = [ "koreader.desktop" ];
       "application/x-fictionbook+xml" = [ "koreader.desktop" ];
       "application/x-mobipocket-ebook" = [ "koreader.desktop" ];
