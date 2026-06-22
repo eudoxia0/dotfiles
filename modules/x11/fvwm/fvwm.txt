@@ -55,7 +55,7 @@ Style * MouseFocusClickRaises
 Style * FPGrabFocusTransient
 
 # Place new windows under the mouse pointer.
-Style * UnderMouse
+Style * PositionPlacement UnderMouse
 # When a new window is created, it grabs focus.
 Style * GrabFocusOn
 # When a new window is created, ignore the app's requested
