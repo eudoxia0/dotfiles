@@ -54,8 +54,8 @@ Style * MouseFocusClickRaises
 # Transient windows should grab focus.
 Style * FPGrabFocusTransient
 
-# Place new windows in a cascading fashion.
-Style * CascadePlacement
+# Place new windows under the mouse pointer.
+Style * UnderMouse
 # When a new window is created, it grabs focus.
 Style * GrabFocusOn
 # When a new window is created, ignore the app's requested
