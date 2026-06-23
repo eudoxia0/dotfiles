@@ -42,7 +42,6 @@ in
     signal-desktop
     strawberry
     transmission_4-gtk
-    v4l-utils
     viewnior
     vlc
     zathura

@@ -24,7 +24,6 @@
   ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ ];
-  boot.extraModulePackages = [ ];
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/ad82ea66-73e2-42c2-ab0c-eeabb7532917";
