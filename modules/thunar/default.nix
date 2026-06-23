@@ -36,7 +36,6 @@
     libgsf # odf thumbnails
     libraw # RAW thumbnails
     poppler # pdf thumbnails
-    poppler-utils
     webp-pixbuf-loader # webp thumbnail
 
     xclip # to implement the "copy path" custom action
