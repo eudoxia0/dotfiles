@@ -30,7 +30,7 @@
     rustup
     sass
     sqlite
-    texliveSmall
+    texliveFull
     tokei
     tree
     typst
