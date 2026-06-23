@@ -25,6 +25,7 @@
     libheif
     libxml2 # xmllint
     nixfmt-tree
+    poppler-utils
     python314
     ruff
     rustup
