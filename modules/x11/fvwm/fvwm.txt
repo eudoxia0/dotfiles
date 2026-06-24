@@ -382,7 +382,7 @@ AddToMenu   ColorMenu "Colors" Title
 DestroyMenu WallMenu
 AddToMenu   WallMenu "Wallpapers" Title
 + "Giygas"               Exec exec feh --bg-fill $[infostore.walls]/giygas.png
-+ "Gold Weave"           Exec exec feh --bg-tile $[infostore.walls]/gold-weave.bmp
++ "Gold Weave"           Exec exec feh --bg-tile $[infostore.walls]/gold-weave.png
 + "OS X Leopard Server"  Exec exec feh --bg-fill $[infostore.walls]/osx-leopard-server.jpg
 + "OS X Panther"         Exec exec feh --bg-fill $[infostore.walls]/osx-panther.png
 + "OS X Tiger"           Exec exec feh --bg-fill $[infostore.walls]/osx-tiger.png
