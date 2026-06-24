@@ -385,6 +385,7 @@ AddToMenu   WallMenu "Wallpapers" Title
 + "Gold Weave"           Exec exec feh --bg-tile $[infostore.walls]/gold-weave.png
 + "OS X Leopard Server"  Exec exec feh --bg-fill $[infostore.walls]/osx-leopard-server.jpg
 + "OS X Panther"         Exec exec feh --bg-fill $[infostore.walls]/osx-panther.png
++ "Red Weave"            Exec exec feh --bg-tile $[infostore.walls]/red-weave.png
 + "OS X Tiger"           Exec exec feh --bg-fill $[infostore.walls]/osx-tiger.png
 + "Panther"              Exec exec feh --bg-fill $[infostore.walls]/panther.jpg
 + "SGI"                  Exec exec feh --bg-tile $[infostore.walls]/sgi.png
