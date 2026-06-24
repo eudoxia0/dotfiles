@@ -6,7 +6,7 @@
 }:
 
 let
-  bluecurve = pkgs.callPackage ./bluecurve.nix {};
+  bluecurve = pkgs.callPackage ./bluecurve.nix { };
 in
 {
   programs.dconf.enable = true;
