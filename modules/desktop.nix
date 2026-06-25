@@ -37,6 +37,7 @@ in
     nwg-look
     obsidian
     protonmail-desktop
+    protonmail-bridge
     quodlibet
     seahorse
     signal-desktop
@@ -49,6 +50,4 @@ in
 
   programs._1password.enable = true;
   programs._1password-gui.enable = true;
-
-  services.protonmail-bridge.enable = true;
 }
