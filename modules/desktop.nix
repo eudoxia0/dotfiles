@@ -36,7 +36,6 @@ in
     mupdf
     nwg-look
     obsidian
-    protonmail-bridge
     protonmail-desktop
     quodlibet
     seahorse
@@ -50,4 +49,6 @@ in
 
   programs._1password.enable = true;
   programs._1password-gui.enable = true;
+
+  services.protonmail-bridge.enable = true;
 }
