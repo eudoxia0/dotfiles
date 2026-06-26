@@ -87,6 +87,7 @@ disempower
 disempowerment
 disjunction
 dually
+dysautonomia
 epitaxy
 equational
 excitatory
@@ -138,6 +139,7 @@ stdin
 stdout
 substring
 sudo
+superintelligent
 symplectic
 systemd
 theatre
