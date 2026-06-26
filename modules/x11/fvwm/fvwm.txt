@@ -100,7 +100,7 @@ Style * Lenience
 # actions that are run after a restart.
 DestroyFunc StartFunction
 AddToFunc   StartFunction
-+ I Test (Init) Exec exec feh --bg-fill $[infostore.walls]/osx-panther.png
++ I Test (Init) Exec exec feh --bg-tile $[infostore.walls]/red-weave.png
 + I Module FvwmEvent EventNewDesk
 + I Module FvwmButtons MainPanel
 
