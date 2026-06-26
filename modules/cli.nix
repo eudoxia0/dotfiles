@@ -11,6 +11,7 @@
     djvu2pdf
     file
     gnuplot
+    imapsync
     inxi
     ispell
     lsof
