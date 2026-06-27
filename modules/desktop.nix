@@ -36,7 +36,6 @@ in
     mupdf
     nwg-look
     obsidian
-    protonmail-desktop
     protonmail-bridge
     quodlibet
     seahorse
