@@ -12,6 +12,6 @@ let
 in
 {
   home-manager.users.eudoxia.home.packages = with pkgs; [
-    # todoist # TODO: uncomment when we can build electron
+    todoist # TODO: uncomment when we can build electron
   ];
 }
