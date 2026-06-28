@@ -35,10 +35,10 @@ in
     mpv
     mupdf
     nwg-look
-    # obsidian
+    # obsidian # TODO: uncomment when we can build electron
     quodlibet
     seahorse
-    # signal-desktop
+    # signal-desktop # TODO: uncomment when we can build electron
     strawberry
     transmission_4-gtk
     viewnior
