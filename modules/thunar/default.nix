@@ -44,7 +44,7 @@
     gnutar
     gzip
     lz4
-    mate.engrampa # open archive files
+    engrampa # open archive files
     unrar
     unzip
     xz
