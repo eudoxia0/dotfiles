@@ -36,7 +36,7 @@ in
     obsidian
     quodlibet
     seahorse
-    # signal-desktop # TODO: uncomment when we can build electron
+    signal-desktop
     strawberry
     transmission_4-gtk
     viewnior
