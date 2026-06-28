@@ -7,7 +7,7 @@
 
 {
   home-manager.users.eudoxia.home.packages = with pkgs; [
-    # beets
+    beets
   ];
 
   home-manager.users.eudoxia.home.file = {
