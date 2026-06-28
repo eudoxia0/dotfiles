@@ -82,7 +82,7 @@ in
       package = pkgs.emacs-gtk;
       extraPackages =
         epkgs: with epkgs; [
-          customPackages.xcompose-mode
+          # customPackages.xcompose-mode # TODO: why does this get stuck building forever?
           agda2-mode
           consult
           customPackages.cabal-mode
