@@ -84,7 +84,7 @@
           modules = shared ++ [
             ./hosts/rostam/configuration.nix
             ./hosts/rostam/hardware-configuration.nix
-            ./modules/bright.nix
+            ./modules/brightness-desktop.nix
             ./modules/newsboat
           ];
         };
