@@ -21,6 +21,7 @@
       user = {
         name = "Fernando Borretti";
         email = "fernando@borretti.me";
+        signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILdw0/4AIQ4oAlhsFVTOix5ke+7iBgql2xHUEZxoPa3U fernando@borretti.me";
       };
       color = {
         ui = "auto";
