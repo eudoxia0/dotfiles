@@ -84,7 +84,6 @@
           modules = shared ++ [
             ./hosts/rostam/configuration.nix
             ./hosts/rostam/hardware-configuration.nix
-            ./modules/beets
             ./modules/bright.nix
             ./modules/newsboat
           ];
