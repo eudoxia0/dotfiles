@@ -9,6 +9,7 @@
   home-manager.users.eudoxia.programs.firefox = {
     enable = true;
     languagePacks = [ "en-US" ];
+    configPath = ".mozilla/firefox";
 
     # about:policies
     policies = {
