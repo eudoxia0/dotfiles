@@ -19,12 +19,10 @@
     }:
     let
       shared = [
+        ./modules/apps.nix
         ./modules/audio.nix
         ./modules/beets
         ./modules/bluetooth.nix
-        ./modules/cli.nix
-        ./modules/desktop.nix
-        ./modules/dev.nix
         ./modules/docker.nix
         ./modules/emacs
         ./modules/eudoxia.nix
@@ -54,7 +52,6 @@
         ./modules/ssh.nix
         ./modules/syncthing.nix
         ./modules/thunar
-        ./modules/todoist.nix
         ./modules/wallpaper
         ./modules/webcam.nix
         ./modules/x11
