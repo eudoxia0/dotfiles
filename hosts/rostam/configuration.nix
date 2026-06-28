@@ -40,24 +40,6 @@ in
     rocmPackages.clr.icd
   ];
 
-  # Syncthing config.
-  home-manager.users.eudoxia.services.syncthing = {
-    settings.devices = {
-      ismene = {
-        name = "ismene";
-        id = "VRJ6ZRO-PIWBKBP-FSW5ARD-J7PXDMH-JV5VVVD-HMQP37B-V65NSA6-HGNWGQH";
-      };
-    };
-    settings.folders = {
-      "root" = {
-        id = "root";
-        label = "root";
-        path = "/home/eudoxia/root";
-        devices = [ "ismene" ];
-      };
-    };
-  };
-
   services.displayManager.ly.settings.box_title = "rostam";
 
   home-manager.users.eudoxia.home.stateVersion = "25.05"; # DO NOT CHANGE
