@@ -30,4 +30,6 @@ in
   home-manager.users.eudoxia.home.sessionVariables = {
     GSK_RENDERER = "cairo";
   };
+
+  gtk.gtk4.theme = null;
 }
