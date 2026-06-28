@@ -30,10 +30,8 @@ in
     gnome-pomodoro
     gparted
     keepassxc
-    koreader
     libreoffice
     mpv
-    mupdf
     nwg-look
     # obsidian # TODO: uncomment when we can build electron
     quodlibet
