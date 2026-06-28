@@ -46,23 +46,6 @@ let
       ];
     };
 
-    lean4-mode = pkgs.emacsPackages.melpaBuild {
-      pname = "lean4-mode";
-      version = "1.1.2";
-      src = pkgs.fetchFromGitHub {
-        owner = "leanprover-community";
-        repo = "lean4-mode";
-        rev = "1388f9d1429e38a39ab913c6daae55f6ce799479";
-        sha256 = "sha256-6XFcyqSTx1CwNWqQvIc25cuQMwh3YXnbgr5cDiOCxBk=";
-      };
-      packageRequires = with pkgs.emacsPackages; [
-        dash
-        lsp-mode
-        magit-section
-      ];
-      files = ''("*.el" "data")'';
-    };
-
     xcompose-mode = pkgs.emacsPackages.trivialBuild {
       pname = "xcompose-mode";
       version = "unstable";
@@ -88,7 +71,6 @@ in
           customPackages.cabal-mode
           # customPackages.eat # TODO: uncomment when codeberg comes back online
           customPackages.inform7-mode
-          customPackages.lean4-mode
           embark
           fvwm-mode
           graphviz-dot-mode
