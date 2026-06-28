@@ -1,7 +1,9 @@
-directory: ~/root/music
-library: ~/root/6-databases/beets/musiclibrary.db
+directory: ~/root/4-library/music
+library: ~/root/4-library/music/musiclibrary.db
 import:
+  # When importing songs, copy the file to the library
+  # and delete the original.
   move: yes
 plugins:
-  - musicbrainz
+  # Download cover art.
   - fetchart
