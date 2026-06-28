@@ -33,7 +33,7 @@ in
     libreoffice
     mpv
     nwg-look
-    # obsidian # TODO: uncomment when we can build electron
+    obsidian # TODO: uncomment when we can build electron
     quodlibet
     seahorse
     # signal-desktop # TODO: uncomment when we can build electron
