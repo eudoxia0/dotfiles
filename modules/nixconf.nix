@@ -40,12 +40,12 @@
     libraries = with pkgs; [
       libGLU
       libGL
-      xorg.libX11
-      xorg.libXcursor
-      xorg.libXrandr
-      xorg.libXi
-      xorg.libXext
-      xorg.libXxf86vm
+      libX11
+      libXcursor
+      libXrandr
+      libXi
+      libXext
+      libXxf86vm
       openal
       libpulseaudio
       alsa-lib
