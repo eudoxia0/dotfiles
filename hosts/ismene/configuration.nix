@@ -1,16 +1,16 @@
 { config, pkgs, ... }:
 
 let
-  deviceUuid = "8a7825d3-550f-44be-a8a2-47ddcee57bb8";
+  deviceUuid = "a4725842-ece5-467d-9598-6583ed21c7eb";
 in
 {
   networking.hostName = "ismene";
 
   boot.initrd.luks.devices."luks-${deviceUuid}".device = "/dev/disk/by-uuid/${deviceUuid}";
 
-  home-manager.users.eudoxia.programs.git.settings.user = {
-    signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIcjDwuJ2FcXmZ7RQihS65HIJQbLqjqRkzRttdLUDhrs fernando@borretti.me";
-  };
+  # home-manager.users.eudoxia.programs.git.settings.user = {
+  #  signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIcjDwuJ2FcXmZ7RQihS65HIJQbLqjqRkzRttdLUDhrs fernando@borretti.me";
+  # };
 
   # Keep Intel microcode up to date.
   hardware.cpu.intel.updateMicrocode = true;
@@ -35,8 +35,8 @@ in
     };
   };
 
-  home-manager.users.eudoxia.home.stateVersion = "25.05"; # DO NOT CHANGE
-  system.stateVersion = "25.05"; # DO NOT CHANGE
+  home-manager.users.eudoxia.home.stateVersion = "25.11"; # DO NOT CHANGE
+  system.stateVersion = "25.11"; # DO NOT CHANGE
   nixpkgs.config.allowUnfree = true;
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
