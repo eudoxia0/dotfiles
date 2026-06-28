@@ -46,4 +46,6 @@ in
       "x-scheme-handler/https" = [ "firefox.desktop" ];
     };
   };
+
+  home-manager.users.eudoxia.xdg.userDirs.setSessionVariables = true;
 }
