@@ -38,7 +38,7 @@
     webp-pixbuf-loader # webp thumbnail
 
     xclip # to implement the "copy path" custom action
-    xfce.xfconf # query xfce config
+    xfconf # query xfce config
 
     bzip2
     gnutar
