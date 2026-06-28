@@ -94,6 +94,7 @@
           modules = shared ++ [
             ./hosts/ismene/configuration.nix
             ./hosts/ismene/hardware-configuration.nix
+            ./modules/brightness-laptop.nix
           ];
         };
       };
