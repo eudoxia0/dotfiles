@@ -20,6 +20,7 @@
     let
       shared = [
         ./modules/audio.nix
+        ./modules/beets.nix
         ./modules/bluetooth.nix
         ./modules/cli.nix
         ./modules/desktop.nix
