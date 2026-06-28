@@ -35,10 +35,10 @@ in
     mpv
     mupdf
     nwg-look
-    obsidian
+    # obsidian
     quodlibet
     seahorse
-    signal-desktop
+    # signal-desktop
     strawberry
     transmission_4-gtk
     viewnior
