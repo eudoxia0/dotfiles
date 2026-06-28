@@ -93,7 +93,6 @@ in
           sly
           sublime-themes
           treemacs
-          treesit-grammars.with-all-grammars
           typst-ts-mode
           unfill
           vertico
