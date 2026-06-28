@@ -31,5 +31,5 @@ in
     GSK_RENDERER = "cairo";
   };
 
-  gtk.gtk4.theme = null;
+  home-manager.users.eudoxia.gtk.gtk4.theme = null;
 }
