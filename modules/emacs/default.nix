@@ -63,16 +63,16 @@ let
       files = ''("*.el" "data")'';
     };
 
-    # xcompose-mode = pkgs.emacsPackages.trivialBuild {
-    #   pname = "xcompose-mode";
-    #   version = "unstable";
-    #   src = pkgs.fetchgit {
-    #     url = "git://git.thomasvoss.com/xcompose-mode.git";
-    #     rev = "aeb03f9144e39c882ca6c5c61b9ed1300a2a12ee";
-    #     sha256 = "sha256-lPapwSJKG+noINmT1G5jNyUZs5VykMOSKJIbQxBWLEA=";
-    #   };
-    #   packageRequires = [ ];
-    # };
+    xcompose-mode = pkgs.emacsPackages.trivialBuild {
+      pname = "xcompose-mode";
+      version = "unstable";
+      src = pkgs.fetchgit {
+        url = "git://git.thomasvoss.com/xcompose-mode.git";
+        rev = "aeb03f9144e39c882ca6c5c61b9ed1300a2a12ee";
+        sha256 = "sha256-lPapwSJKG+noINmT1G5jNyUZs5VykMOSKJIbQxBWLEA=";
+      };
+      packageRequires = [ ];
+    };
   };
 in
 {
@@ -82,7 +82,7 @@ in
       package = pkgs.emacs-gtk;
       extraPackages =
         epkgs: with epkgs; [
-          # customPackages.xcompose-mode
+          customPackages.xcompose-mode
           agda2-mode
           consult
           customPackages.cabal-mode
