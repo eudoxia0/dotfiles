@@ -14,9 +14,8 @@
     home = {
       packages = [ pkgs.stalonetray ];
       file = {
-        # Symlink the fvwm config.
-        ".fvwm/config".source =
-          hm.config.lib.file.mkOutOfStoreSymlink "${hm.config.home.homeDirectory}/root/1-workspace/dotfiles/modules/x11/fvwm/fvwm.txt";
+        # Copy the fvwm config.
+        ".fvwm/config".source = ./fvwm.txt;
         # Copy the CDE colors directory.
         ".fvwm/cde-colors" = {
           source = ./cde-colors;
