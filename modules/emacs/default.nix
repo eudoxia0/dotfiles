@@ -86,7 +86,7 @@ in
           agda2-mode
           consult
           customPackages.cabal-mode
-          customPackages.eat
+          # customPackages.eat # TODO: uncomment when codeberg comes back online
           customPackages.inform7-mode
           customPackages.lean4-mode
           embark
