@@ -8,10 +8,6 @@ in
 
   boot.initrd.luks.devices."luks-${deviceUuid}".device = "/dev/disk/by-uuid/${deviceUuid}";
 
-  home-manager.users.eudoxia.programs.git.settings.user = {
-    signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILdw0/4AIQ4oAlhsFVTOix5ke+7iBgql2xHUEZxoPa3U fernando@borretti.me";
-  };
-
   home-manager.users.eudoxia.home.sessionVariables = {
     GDK_DPI_SCALE = "1.5";
   };
