@@ -22,10 +22,10 @@ def main(text: str):
 
 if __name__ == "__main__":
     argc: int = len(sys.argv)
-    if argc == 2:
+    if argc == 1:
         with open(sys.argv[1]) as stream:
             main(stream.read())
-    elif argc == 1:
+    elif argc == 0:
         main(sys.stdin.read())
     else:
         print("Wrong number of arguments.", file=sys.stderr)
