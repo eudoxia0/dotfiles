@@ -47,5 +47,9 @@
       source = ./heic2jpg.sh;
       executable = true;
     };
+    ".eudoxia.d/bin/punct" = {
+      source = ./punct.py;
+      executable = true;
+    };
   };
 }
