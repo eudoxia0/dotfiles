@@ -88,6 +88,7 @@ https://tomcritchlow.com/feed
 https://tomorrowfoundry.substack.com/feed
 https://totalhealthoptimization.com/feed/
 https://toughsf.blogspot.com/feeds/posts/default?alt=rss
+https://tris.sherliker.net/feed.xml
 https://tymoon.eu/api/reader/rss
 https://utcc.utoronto.ca/~cks/space/blog/?atom
 https://v5.chriskrycho.com/feed.xml
