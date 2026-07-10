@@ -51,5 +51,9 @@
       source = ./punct.py;
       executable = true;
     };
+    ".eudoxia.d/bin/get-cpu-governor" = {
+      source = ./get-cpu-governor.sh;
+      executable = true;
+    };
   };
 }
