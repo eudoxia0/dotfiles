@@ -13,11 +13,11 @@
     options = "compose:ralt";
   };
   home-manager.users.eudoxia.home.packages = with pkgs; [
-    scrot
+    arandr
     dmenu
     kitty
-    xsecurelock
     rofi
-    arandr
+    scrot
+    xsecurelock
   ];
 }
