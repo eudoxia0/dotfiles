@@ -7,8 +7,7 @@
 
 {
   # Timezone configuration.
-  # time.timeZone = "Australia/Sydney";
-  time.timeZone = "Asia/Manila";
+  time.timeZone = "Australia/Sydney";
 
   # Locale settings.
   i18n.defaultLocale = "en_US.UTF-8";
