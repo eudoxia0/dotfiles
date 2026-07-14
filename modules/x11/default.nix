@@ -18,5 +18,6 @@
     kitty
     xsecurelock
     rofi
+    arandr
   ];
 }
