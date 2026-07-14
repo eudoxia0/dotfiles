@@ -68,7 +68,7 @@ in
           # customPackages.xcompose-mode # TODO: why does this get stuck building forever?
           consult
           customPackages.cabal-mode
-          customPackages.eat # TODO: uncomment when codeberg comes back online
+          customPackages.eat
           customPackages.inform7-mode
           embark
           fvwm-mode
