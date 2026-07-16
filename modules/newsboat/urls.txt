@@ -24,6 +24,7 @@ https://cybermonk.substack.com/feed
 https://danluu.com/atom.xml
 https://datakinds.github.io/feed.xml
 https://david.alvarezrosa.com/index.xml
+https://defense-and-freedom.blogspot.com/feeds/posts/default
 https://diminishedcapacity.substack.com/feed
 https://dresdencodak.com/feed/
 https://dynomight.net/feed.xml
