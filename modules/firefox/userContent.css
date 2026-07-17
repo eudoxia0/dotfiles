@@ -33,3 +33,15 @@
         text-align: justify;
     }
 }
+
+@-moz-document domain("x.com") {
+    /* Hide the right sidebar */
+    div[data-testid="sidebarColumn"] {
+        display: none;
+    }
+
+    /* Hide the left sidebar */
+    header[role="banner"] {
+        display: none;
+    }
+}
