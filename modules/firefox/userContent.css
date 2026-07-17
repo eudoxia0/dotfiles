@@ -44,4 +44,9 @@
     header[role="banner"] {
         display: none;
     }
+
+    /* Hide floating buttons */
+    button[aria-label="Grok"], button[aria-label="Chat"] {
+        display: none;
+    }
 }
