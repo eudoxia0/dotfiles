@@ -27,13 +27,6 @@
     }
 }
 
-@-moz-document domain("plfa.github.io") {
-    article {
-        font-family: "Doulos SIL";
-        text-align: justify;
-    }
-}
-
 @-moz-document domain("x.com") {
     /* Hide the right sidebar */
     div[data-testid="sidebarColumn"] {
