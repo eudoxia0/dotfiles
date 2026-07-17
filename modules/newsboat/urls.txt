@@ -27,6 +27,7 @@ https://david.alvarezrosa.com/index.xml
 https://defense-and-freedom.blogspot.com/feeds/posts/default
 https://diminishedcapacity.substack.com/feed
 https://dresdencodak.com/feed/
+https://dustycloud.org/blog/index.xml
 https://dynomight.net/feed.xml
 https://dz4k.com/feed.xml
 https://eli.thegreenplace.net/feeds/all.atom.xml
