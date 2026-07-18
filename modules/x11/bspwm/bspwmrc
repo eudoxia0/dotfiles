@@ -39,4 +39,4 @@ systemctl --user start xcape &
 systemctl --user start xdg-desktop-portal-gtk &
 
 # Set the wallpaper.
-feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/panther.jpg
+feh --bg-fill /home/eudoxia/.eudoxia.d/data/wallpaper/osx-leopard-server.jpg
