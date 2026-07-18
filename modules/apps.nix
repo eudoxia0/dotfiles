@@ -16,6 +16,16 @@ let
   todoist = pkgs.writeShellScriptBin "todoist" ''
     TZ=Australia/Sydney exec ${pkgs.todoist-electron}/bin/todoist-electron "$@"
   '';
+
+  # See: https://github.com/NixOS/nixpkgs/issues/519484
+  #
+  # TODO: remove when we have pandoc 3.8 or above in nixpkgs
+  patchedQuarto = pkgs.quarto.overrideAttrs (oldAttrs: {
+    postPatch = (oldAttrs.postPatch or "") + ''
+      substituteInPlace bin/quarto.js \
+        --replace-fail "syntax-highlighting" "highlight-style"
+    '';
+  });
 in
 {
   home-manager.users.eudoxia.home.packages = with pkgs; [
@@ -65,6 +75,7 @@ in
     obsidian
     ocrmypdf
     pandoc
+    patchedQuarto
     pciutils # lspci
     poppler-utils
     python314
