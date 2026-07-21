@@ -53,5 +53,6 @@
       source = ./font-cache-update.sh;
       executable = true;
     };
+    ".config/fontconfig/fonts.conf".source = ./fonts.conf;
   };
 }
