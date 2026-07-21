@@ -7,7 +7,7 @@ history = 100000
 
 [font]
 normal = { family = "Noto Sans Mono", style = "Regular" }
-size = 9.0
+size = 10.0
 offset = { x = 0, y = 0 }
 
 [terminal]
