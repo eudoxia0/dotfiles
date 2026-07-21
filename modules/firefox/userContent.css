@@ -10,6 +10,11 @@
 }
 
 @-moz-document domain("substack.com") {
+    h1,
+    h2 {
+        font-family: "Doulos SIL", "TeX Gyre Termes", serif;
+    }
+
     .single-post {
         text-align: justify;
         text-justify: inter-word;
@@ -39,7 +44,8 @@
     }
 
     /* Hide floating buttons */
-    button[aria-label="Grok"], button[aria-label="Chat"] {
+    button[aria-label="Grok"],
+    button[aria-label="Chat"] {
         display: none;
     }
 }
