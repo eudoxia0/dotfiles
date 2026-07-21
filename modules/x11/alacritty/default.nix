@@ -12,7 +12,7 @@
       packages = [ pkgs.alacritty ];
 
       file = {
-        # Symlink the config.
+        # Copy the config.
         ".config/alacritty/alacritty.toml".source = ./config.toml;
       };
     };
