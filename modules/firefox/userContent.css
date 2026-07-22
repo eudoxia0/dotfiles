@@ -11,8 +11,12 @@
 
 @-moz-document domain("substack.com") {
     h1,
-    h2 {
-        font-family: "Doulos SIL", "TeX Gyre Termes", serif;
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "TeX Gyre Termes", serif !important;
     }
 
     .single-post {
