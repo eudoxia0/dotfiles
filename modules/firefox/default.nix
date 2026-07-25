@@ -124,7 +124,7 @@
         "browser.newtabpage.activity-stream.feeds.topsites" = false;
 
         # Configure fonts.
-        "font.name.serif.x-western" = "DejaVu Serif";
+        "font.name.serif.x-western" = "TeX Gyre Termes";
         "font.name.sans-serif.x-western" = "DejaVu Sans";
         "font.name.monospace.x-western" = "DejaVu Sans Mono";
         "font.size.variable.x-western" = 16;
