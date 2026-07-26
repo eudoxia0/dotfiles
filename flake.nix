@@ -46,6 +46,7 @@
         ./modules/services/cleanup-xdg-dirs.nix
         ./modules/services/epoch.nix
         ./modules/services/metauro.nix
+        ./modules/services/pm.nix
         ./modules/services/thetis.nix
         ./modules/services/zetanom.nix
         ./modules/shell.nix
