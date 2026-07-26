@@ -76,6 +76,7 @@ matches:
   - { trigger: ":tag", replace: "🔖" }
   - { trigger: ":talk", replace: "💬" }
   - { trigger: ":tea", replace: "🍵" }
+  - { trigger: ":think", replace: "🤔" }
   - { trigger: ":tomato", replace: "🍅" }
   - { trigger: ":tools", replace: "🛠️" }
   - { trigger: ":tooth", replace: "🦷" }
