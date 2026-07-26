@@ -135,6 +135,7 @@ qubits
 radiotelescope
 repo
 repos
+retrofuturism
 reuptake
 ribosomes
 sequent
