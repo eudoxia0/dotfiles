@@ -45,6 +45,7 @@ matches:
   - { trigger: ":folder", replace: "📁" }
   - { trigger: ":frog", replace: "🐸" }
   - { trigger: ":heart", replace: "❤️" }
+  - { trigger: ":idea", replace: "💡" }
   - { trigger: ":inbox", replace: "📥️" }
   - { trigger: ":invite", replace: "💌" }
   - { trigger: ":iron", replace: "♨️" }
