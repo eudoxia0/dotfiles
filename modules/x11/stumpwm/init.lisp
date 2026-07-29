@@ -17,13 +17,6 @@
 (setf *mouse-focus-policy* :sloppy)
 
 ;;;
-;;; Appearance
-;;;
-
-;; Font.
-(set-font "-xos4-terminus-medium-r-normal-*-28-*-*-*-*-*-*-*")
-
-;;;
 ;;; Keybindings
 ;;;
 
@@ -91,12 +84,12 @@
 ;; Toggle the modeline on/off.
 (defprefixkey "m" "mode-line")
 
-;; Toggle gaps on/off.
-(defprefixkey "g" "toggle-gaps")
-
 ;; Lock the screen with xscreensaver.
 (defprefixkey "x" "exec xscreensaver-command --lock")
 (defkey "Pause" "exec xscreensaver-command --lock")
+
+;; Toggle gaps on/off.
+(defprefixkey "g" "toggle-gaps")
 
 ;;;
 ;;; Startup
