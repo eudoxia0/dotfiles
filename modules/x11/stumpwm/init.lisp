@@ -11,6 +11,13 @@
 (setf *mouse-focus-policy* :sloppy)
 
 ;;;
+;;; Appearance
+;;;
+
+;; Font.
+(set-font "-xos4-terminus-medium-r-normal-*-28-*-*-*-*-*-*-*")
+
+;;;
 ;;; Keybindings
 ;;;
 
