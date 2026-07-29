@@ -5,6 +5,12 @@
 (in-package :stumpwm)
 
 ;;;
+;;; Modules
+;;;
+
+(load "~/.stumpwm.d/gaps.lisp")
+
+;;;
 ;;; General Configuration
 ;;;
 
@@ -84,6 +90,9 @@
 
 ;; Toggle the modeline on/off.
 (defprefixkey "m" "mode-line")
+
+;; Toggle gaps on/off.
+(defprefixkey "g" "toggle-gaps")
 
 ;; Lock the screen with xscreensaver.
 (defprefixkey "x" "exec xscreensaver-command --lock")

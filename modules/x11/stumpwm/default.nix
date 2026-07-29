@@ -12,5 +12,6 @@
 
   home-manager.users.eudoxia.home.file = {
     ".stumpwm.d/init.lisp".source = ./init.lisp;
+    ".stumpwm.d/gaps.lisp".source = ./gaps.lisp;
   };
 }
