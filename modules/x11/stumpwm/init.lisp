@@ -34,9 +34,6 @@
 (defmacro defkey (k c)
   `(define-key *top-map* (kbd ,k) ,c))
 
-(defmacro defprefixkey (k c)
-  `(define-key *root-map* (kbd ,k) ,c))
-
 ;; Quit.
 (defkey "s-Q" "quit")
 
@@ -89,14 +86,13 @@
 (defkey "Print" "exec scrot -f -s")
 
 ;; Toggle the modeline on/off.
-(defprefixkey "m" "mode-line")
+(define-key *root-map* (kbd "m") "mode-line")
 
 ;; Lock the screen with xscreensaver.
-(defprefixkey "x" "exec xscreensaver-command --lock")
 (defkey "Pause" "exec xscreensaver-command --lock")
 
 ;; Toggle gaps on/off.
-(defprefixkey "g" "toggle-gaps")
+(define-key *root-map* (kbd "g") "toggle-gaps")
 
 ;;;
 ;;; Startup
