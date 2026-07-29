@@ -61,6 +61,7 @@
         ./modules/x11/fvwm
         ./modules/x11/polybar
         ./modules/x11/redshift
+        ./modules/x11/stumpwm
         ./modules/x11/xcape
         ./modules/x11/xcompose
         ./modules/x11/xscreensaver
