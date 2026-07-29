@@ -55,7 +55,7 @@
 (defkey "s-%" "gmove ε")
 
 ;; Prompt for a shell command to run.
-(defkey "s-r" "exec")
+(defkey "s-r" "exec rofi -show run")
 
 ;; Close the current window.
 (defkey "s-q" "delete-window")
