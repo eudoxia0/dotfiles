@@ -85,11 +85,11 @@
 ;; Take a screenshot of a selected region.
 (defkey "Print" "exec scrot -f -s")
 
-;; Toggle the modeline on/off.
-(define-key *root-map* (kbd "m") "mode-line")
-
 ;; Lock the screen with xscreensaver.
 (defkey "Pause" "exec xscreensaver-command --lock")
+
+;; Toggle the modeline on/off.
+(define-key *root-map* (kbd "m") "mode-line")
 
 ;; Toggle gaps on/off.
 (define-key *root-map* (kbd "g") "toggle-gaps")
