@@ -11,6 +11,13 @@
 (load "~/.stumpwm.d/gaps.lisp")
 
 ;;;
+;;; Appearance
+;;;
+
+;; Font.
+(set-font "-xos4-terminus-medium-r-normal-*-28-*-*-*-*-*-*-*")
+
+;;;
 ;;; General Configuration
 ;;;
 
