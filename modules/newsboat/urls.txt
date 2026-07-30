@@ -51,6 +51,7 @@ https://jazzatlas.com/index.xml
 https://jordankaye.dev/index.xml
 https://jyn.dev/atom.xml
 https://kevinlynagh.com/feed.xml
+https://kirwinhampshire.substack.com/feed
 https://kokoscript.com/rss.xml
 https://lr0.org/blog/index.xml
 https://lukasschwab.me/blog/feed.xml
