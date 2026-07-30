@@ -9,7 +9,7 @@ let
     if [[ `hostname` == "rostam" ]]; then
       QT_SCALE_FACTOR=2 ${pkgs.calibre}/bin/calibre
     else
-        ${pkgs.calibre}/bin/calibre
+      ${pkgs.calibre}/bin/calibre
     fi
   '';
 
