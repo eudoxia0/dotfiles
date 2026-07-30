@@ -95,13 +95,11 @@
 (define-key *root-map* (kbd "g") "toggle-gaps")
 
 ;; Remove default keybindings I don't use.
-(undefine-key *root-map* (kbd "c"))
-(undefine-key *root-map* (kbd "C-c"))
-(undefine-key *root-map* (kbd "e"))
-(undefine-key *root-map* (kbd "C-e"))
-(undefine-key *root-map* (kbd "C-a"))
-(undefine-key *root-map* (kbd "!"))
-(undefine-key *root-map* (kbd "w"))
+(defparameter *keybinds-to-remove*
+  (list "c" "C-c" "e" "C-e" "C-a" "!" "w" "x" "F1" "F2" "F3" "F4" "F5" "F6" "F7" "F8" "F9" "F10" "C-0"))
+
+(dolist (key *keybinds-to-remove*)
+  (undefine-key *root-map* (kbd key)))
 
 ;;;
 ;;; Startup
