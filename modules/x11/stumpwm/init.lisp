@@ -94,6 +94,10 @@
 ;; Toggle gaps on/off.
 (define-key *root-map* (kbd "g") "toggle-gaps")
 
+;; Remove default keybindings I don't use.
+(undefine-key *root-map* (kbd "c"))
+(undefine-key *root-map* (kbd "C-c"))
+
 ;;;
 ;;; Startup
 ;;;
