@@ -97,6 +97,11 @@
 ;; Remove default keybindings I don't use.
 (undefine-key *root-map* (kbd "c"))
 (undefine-key *root-map* (kbd "C-c"))
+(undefine-key *root-map* (kbd "e"))
+(undefine-key *root-map* (kbd "C-e"))
+(undefine-key *root-map* (kbd "C-a"))
+(undefine-key *root-map* (kbd "!"))
+(undefine-key *root-map* (kbd "w"))
 
 ;;;
 ;;; Startup
