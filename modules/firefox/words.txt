@@ -63,6 +63,7 @@ Waterhouse
 Weyl
 Yudkowsky
 Zindell
+accelerationist
 actionability
 allocator
 antisymmetry
@@ -146,6 +147,7 @@ stderr
 stdin
 stdout
 substring
+successionism
 sudo
 superintelligent
 symplectic
