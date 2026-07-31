@@ -98,10 +98,10 @@
 (dolist (key (list "c" "C-c" "e" "C-e" "C-a" "!" "w" "x" "F1" "F2" "F3" "F4" "F5" "F6" "F7" "F8" "F9" "F10" "b" "C-b"))
   (undefine-key *root-map* (kbd key)))
 
-(dolist (key (list "#"))
+(dolist (key (list "#" "RET" "C-RET" "DEL"))
   (undefine-key *group-root-map* (kbd key)))
 
-(dolist (key (list "C-0" "C-1" "C-2" "C-3" "C-4" "C-5" "C-6" "C-7" "C-8" "C-9"))
+(dolist (key (list "C-0" "C-1" "C-2" "C-3" "C-4" "C-5" "C-6" "C-7" "C-8" "C-9" "l" "C-l" "F" "f" "TAB" "M-TAB" "n" "C-n" "C-M-n" "SPC" "C-SPC" "p" "C-n" "C-M-p"))
   (undefine-key *tile-group-root-map* (kbd key)))
 
 ;;;
