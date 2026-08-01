@@ -57,14 +57,14 @@
 @-moz-document domain("forum.zosoproject.com") {
     /* Fix link colors */
     a {
-        color: #0000ee;
+        color: #0000ee !important;
     }
 
     a:visited {
-        color: #551a8b;
+        color: #551a8b !important;
     }
 
     .thread-title {
-        color: #0000ee;
+        color: #0000ee !important;
     }
 }
