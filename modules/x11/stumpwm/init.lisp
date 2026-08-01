@@ -186,10 +186,16 @@
 
 ;; Modeline format.
 (setf *screen-mode-line-format*
-      (list "[^B%n^b] %W"
+      (list "%g" ; groups
             "|"
+            "%w" ; windows
             "^>"
-            "%d"))
+            "|"
+            "%d" ; date
+            ))
+
+;; When displaying the list of groups, show only the group's name.
+(setf *group-format* "%t")
 
 ;; Update modeline every second.
 (setf *mode-line-timeout* 1)
