@@ -175,11 +175,21 @@
   (undefine-key *tile-group-root-map* (kbd key)))
 
 ;;;
+;;; Mode Line
+;;;
+
+;; Put the mode line in the bottom.
+(setf *mode-line-position* :top)
+
+;; Enable mode line.
+(toggle-mode-line (current-screen) (current-head))
+
+;;;
 ;;; Startup
 ;;;
 
 ;; Start polybar.
-(run-shell-command "polybar 2> ~/.polybar.log")
+;(run-shell-command "polybar 2> ~/.polybar.log")
 
 ;; Set the wallpaper.
 (run-shell-command "feh --no-fehbg --bg-fill ~/.eudoxia.d/data/wallpaper/panther.jpg")
