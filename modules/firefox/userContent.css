@@ -53,3 +53,18 @@
         display: none;
     }
 }
+
+@-moz-document domain("forum.zosoproject.com") {
+    /* Fix link colors */
+    a {
+        color: #0000ee;
+    }
+
+    a:visited {
+        color: #551a8b;
+    }
+
+    .thread-title {
+        color: #0000ee;
+    }
+}
