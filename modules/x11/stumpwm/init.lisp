@@ -24,6 +24,9 @@
 ;; Focus follows mouse.
 (setf *mouse-focus-policy* :sloppy)
 
+;; Disable startup message.
+(setf *startup-message* nil)
+
 ;;;
 ;;; Keybindings
 ;;;
