@@ -21,6 +21,7 @@
 ;;; General Configuration
 ;;;
 
+;; Focus follows mouse.
 (setf *mouse-focus-policy* :sloppy)
 
 ;;;
