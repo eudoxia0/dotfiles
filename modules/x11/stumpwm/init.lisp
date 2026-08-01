@@ -94,6 +94,9 @@
 ;; Toggle gaps on/off.
 (define-key *root-map* (kbd "g") "toggle-gaps")
 
+;; Focus on the next window in this frame.
+(define-key *top-map* (kbd "s-TAB") "next-in-frame")
+
 ;; Remove default keybindings I don't use.
 (dolist (key (list "c"
                    "C-c"
