@@ -175,37 +175,11 @@
   (undefine-key *tile-group-root-map* (kbd key)))
 
 ;;;
-;;; Mode Line
-;;;
-
-;; Put the mode line in the bottom.
-(setf *mode-line-position* :top)
-
-;; Enable mode line.
-(toggle-mode-line (current-screen) (current-head))
-
-;; Modeline format.
-(setf *screen-mode-line-format*
-      (list "%g" ; groups
-            "|"
-            "%w" ; windows
-            "^>"
-            "|"
-            "%d" ; date
-            ))
-
-;; When displaying the list of groups, show only the group's name.
-(setf *group-format* "%t")
-
-;; Update modeline every second.
-(setf *mode-line-timeout* 1)
-
-;;;
 ;;; Startup
 ;;;
 
 ;; Start polybar.
-;(run-shell-command "polybar 2> ~/.polybar.log")
+(run-shell-command "polybar 2> ~/.polybar.log")
 
 ;; Set the wallpaper.
 (run-shell-command "feh --no-fehbg --bg-fill ~/.eudoxia.d/data/wallpaper/panther.jpg")
