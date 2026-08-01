@@ -21,8 +21,8 @@
 ;;; General Configuration
 ;;;
 
-;; Focus ignores the mouse.
-(setf *mouse-focus-policy* :ignore)
+;; Focus follows mouse.
+(setf *mouse-focus-policy* :sloppy)
 
 ;; Disable startup message.
 (setf *startup-message* nil)
