@@ -59,6 +59,15 @@
       # Disable search suggestions.
       SearchSuggestEnabled = false;
 
+      # Save PDFs to disk instead of opening them.
+      Handlers = {
+        mimeTypes = {
+          "application/pdf" = {
+            action = "saveToDisk";
+          };
+        };
+      };
+
       # Install extensions.
       ExtensionSettings = {
         # uBlock Origin
