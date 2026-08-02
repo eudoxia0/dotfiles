@@ -24,6 +24,7 @@ GABA
 Gentzen
 Gliese
 HCL
+Herbrand
 IAM
 IaC
 Innsmouth
