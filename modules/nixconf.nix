@@ -14,8 +14,8 @@
 
   # Speed up compilation.
   nix.settings = {
-    max-jobs = 2;
-    cores = 2;
+    max-jobs = "auto";
+    cores = 0;
   };
 
   # Use hard links for identical paths.
