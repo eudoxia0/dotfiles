@@ -178,6 +178,8 @@
                    "M-t"))
   (undefine-key *tile-group-root-map* (kbd key)))
 
+(define-key *root-map* (kbd "x") "exec xscreensaver-command --lock")
+
 ;;;
 ;;; Startup
 ;;;
