@@ -11,11 +11,5 @@
       enable = true;
       guiAddress = "127.0.0.1:8384";
     };
-
-    home.file."root/.stignore".text = ''
-      target
-      .venv
-      __pycache__
-    '';
   };
 }
