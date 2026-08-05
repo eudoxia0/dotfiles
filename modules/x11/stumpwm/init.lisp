@@ -39,6 +39,18 @@
   "Decrease laptop brightness using brightnessctl."
   (run-shell-command "brightnessctl set 5%-"))
 
+(defcommand volume-up () ()
+  "Increase volume."
+  (run-shell-command "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"))
+
+(defcommand volume-down () ()
+  "Decrease volume."
+  (run-shell-command "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"))
+
+(defcommand volume-mute () ()
+  "Toggle mute."
+  (run-shell-command "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"))
+
 ;;;
 ;;; Keybindings
 ;;;
@@ -194,6 +206,10 @@
 
 (define-key *top-map* (kbd "XF86MonBrightnessUp") "laptop-brightness-up")
 (define-key *top-map* (kbd "XF86MonBrightnessDown") "laptop-brightness-down"))
+
+(define-key *top-map* (kbd "XF86AudioRaiseVolume") "volume-up")
+(define-key *top-map* (kbd "XF86AudioLowerVolume") "volume-down")
+(define-key *top-map* (kbd "XF86AudioMute") "volume-mute")
 
 ;;;
 ;;; Startup
