@@ -355,7 +355,7 @@ AddToMenu   MenuFvwmRoot "root" Title
 DestroyMenu MenuPrograms
 AddToMenu   MenuPrograms "Programs" Title
 + "1Password%custom-icons/onepassword.png%"    Exec exec 1password
-+ "Calibre%custom-icons/calibre.png%"          Exec exec calibre-scaled
++ "Calibre%custom-icons/calibre.png%"          Exec exec calibre
 + "Cheese%custom-icons/camera.png%"            Exec exec cheese
 + "Emacs%custom-icons/emacs.png%"              Exec exec emacs
 + "File Manager%custom-icons/folder.png%"      Exec exec thunar

@@ -5,14 +5,6 @@
 }:
 
 let
-  calibre-scaled = pkgs.writeShellScriptBin "calibre-scaled" ''
-    if [[ `hostname` == "rostam" ]]; then
-      QT_SCALE_FACTOR=2 ${pkgs.calibre}/bin/calibre
-    else
-      ${pkgs.calibre}/bin/calibre
-    fi
-  '';
-
   todoist = pkgs.writeShellScriptBin "todoist" ''
     TZ=Australia/Sydney exec ${pkgs.todoist-electron}/bin/todoist-electron "$@"
   '';
@@ -32,7 +24,7 @@ in
     age
     baobab
     btop
-    calibre-scaled
+    calibre
     cargo-deny
     cargo-machete
     cargo-watch
