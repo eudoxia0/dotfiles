@@ -205,7 +205,7 @@
 (define-key *root-map* (kbd "x") "exec xscreensaver-command --lock")
 
 (define-key *top-map* (kbd "XF86MonBrightnessUp") "laptop-brightness-up")
-(define-key *top-map* (kbd "XF86MonBrightnessDown") "laptop-brightness-down"))
+(define-key *top-map* (kbd "XF86MonBrightnessDown") "laptop-brightness-down")
 
 (define-key *top-map* (kbd "XF86AudioRaiseVolume") "volume-up")
 (define-key *top-map* (kbd "XF86AudioLowerVolume") "volume-down")
