@@ -145,8 +145,8 @@
         # Always show the scrollbar.
         "widget.gtk.overlay-scrollbars.enabled" = false;
 
-        # Disable smooth scrolling.
-        "general.smoothScroll" = false;
+        # Use smooth scrolling.
+        "general.smoothScroll" = true;
       };
     };
   };
