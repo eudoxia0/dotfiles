@@ -28,6 +28,18 @@
 (setf *startup-message* nil)
 
 ;;;
+;;; Custom Commands
+;;;
+
+(defcommand laptop-brightness-up () ()
+  "Increase laptop brightness using brightnessctl."
+  (run-shell-command "brightnessctl set +5%"))
+
+(defcommand laptop-brightness-down () ()
+  "Decrease laptop brightness using brightnessctl."
+  (run-shell-command "brightnessctl set 5%-"))
+
+;;;
 ;;; Keybindings
 ;;;
 
@@ -179,6 +191,9 @@
   (undefine-key *tile-group-root-map* (kbd key)))
 
 (define-key *root-map* (kbd "x") "exec xscreensaver-command --lock")
+
+(define-key *top-map* (kbd "XF86MonBrightnessUp") "laptop-brightness-up")
+(define-key *top-map* (kbd "XF86MonBrightnessDown") "laptop-brightness-down"))
 
 ;;;
 ;;; Startup
