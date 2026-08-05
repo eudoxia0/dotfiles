@@ -52,80 +52,9 @@
   (run-shell-command "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"))
 
 ;;;
-;;; Keybindings
+;;; Clear Keybindinds
 ;;;
 
-;; Prefix key: logo+w.
-(set-prefix-key (kbd "s-w"))
-
-;; Utilities.
-(defmacro defkey (k c)
-  `(define-key *top-map* (kbd ,k) ,c))
-
-;; Quit.
-(defkey "s-Q" "quit")
-
-;; Reload the configuration.
-(defkey "s-R" "loadrc")
-
-;; Define a new set of workspaces.
-
-(stumpwm::run-commands
- "grename α"
- "gnew β"
- "gnew γ"
- "gnew δ"
- "gnew ε"
- "gselect α")
-
-;; Switch workspaces.
-(defkey "s-1" "gselect α")
-(defkey "s-2" "gselect β")
-(defkey "s-3" "gselect γ")
-(defkey "s-4" "gselect δ")
-(defkey "s-5" "gselect ε")
-
-;; Move the current window to another workspace.
-(defkey "s-!" "gmove α")
-(defkey "s-@" "gmove β")
-(defkey "s-#" "gmove γ")
-(defkey "s-$" "gmove δ")
-(defkey "s-%" "gmove ε")
-
-;; Prompt for a shell command to run.
-(defkey "s-r" "exec rofi -show run")
-
-;; Close the current window.
-(defkey "s-q" "delete-window")
-
-;; Launch Firefox.
-(defkey "C-s-w" "exec firefox")
-
-;; Launch Emacs.
-(defkey "C-s-e" "exec emacs")
-
-;; Launch the file manager.
-(defkey "C-s-f" "exec thunar")
-
-;; Launch the terminal.
-(defkey "C-s-c" "exec alacritty")
-
-;; Take a screenshot of a selected region.
-(defkey "Print" "exec scrot -f -s")
-
-;; Lock the screen with xscreensaver.
-(defkey "Pause" "exec xscreensaver-command --lock")
-
-;; Toggle the modeline on/off.
-(define-key *root-map* (kbd "m") "mode-line")
-
-;; Toggle gaps on/off.
-(define-key *root-map* (kbd "g") "toggle-gaps")
-
-;; Focus on the next window in this frame.
-(define-key *top-map* (kbd "s-TAB") "next-in-frame")
-
-;; Remove default keybindings I don't use.
 (dolist (key (list "c"
                    "C-c"
                    "e"
@@ -202,11 +131,86 @@
                    "M-t"))
   (undefine-key *tile-group-root-map* (kbd key)))
 
+;;;
+;;; Keybindings
+;;;
+
+;; Prefix key: logo+w.
+(set-prefix-key (kbd "s-w"))
+
+;; Utilities.
+(defmacro defkey (k c)
+  `(define-key *top-map* (kbd ,k) ,c))
+
+;; Quit.
+(defkey "s-Q" "quit")
+
+;; Reload the configuration.
+(defkey "s-R" "loadrc")
+
+;; Define a new set of workspaces.
+
+(stumpwm::run-commands
+ "grename α"
+ "gnew β"
+ "gnew γ"
+ "gnew δ"
+ "gnew ε"
+ "gselect α")
+
+;; Switch workspaces.
+(defkey "s-1" "gselect α")
+(defkey "s-2" "gselect β")
+(defkey "s-3" "gselect γ")
+(defkey "s-4" "gselect δ")
+(defkey "s-5" "gselect ε")
+
+;; Move the current window to another workspace.
+(defkey "s-!" "gmove α")
+(defkey "s-@" "gmove β")
+(defkey "s-#" "gmove γ")
+(defkey "s-$" "gmove δ")
+(defkey "s-%" "gmove ε")
+
+;; Prompt for a shell command to run.
+(defkey "s-r" "exec rofi -show run")
+
+;; Close the current window.
+(defkey "s-q" "delete-window")
+
+;; Launch Firefox.
+(defkey "C-s-w" "exec firefox")
+
+;; Launch Emacs.
+(defkey "C-s-e" "exec emacs")
+
+;; Launch the file manager.
+(defkey "C-s-f" "exec thunar")
+
+;; Launch the terminal.
+(defkey "C-s-c" "exec alacritty")
+
+;; Take a screenshot of a selected region.
+(defkey "Print" "exec scrot -f -s")
+
+;; Lock the screen with xscreensaver.
+(defkey "Pause" "exec xscreensaver-command --lock")
 (define-key *root-map* (kbd "x") "exec xscreensaver-command --lock")
 
+;; Toggle the modeline on/off.
+(define-key *root-map* (kbd "m") "mode-line")
+
+;; Toggle gaps on/off.
+(define-key *root-map* (kbd "g") "toggle-gaps")
+
+;; Focus on the next window in this frame.
+(define-key *top-map* (kbd "s-TAB") "next-in-frame")
+
+;; Brightness.
 (define-key *top-map* (kbd "XF86MonBrightnessUp") "laptop-brightness-up")
 (define-key *top-map* (kbd "XF86MonBrightnessDown") "laptop-brightness-down")
 
+;; Volume.
 (define-key *top-map* (kbd "XF86AudioRaiseVolume") "volume-up")
 (define-key *top-map* (kbd "XF86AudioLowerVolume") "volume-down")
 (define-key *top-map* (kbd "XF86AudioMute") "volume-mute")
