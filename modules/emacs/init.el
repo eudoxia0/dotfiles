@@ -104,13 +104,9 @@
   (string= (system-name) "ismene"))
 
 ;; Font.
-(let ((font-size (cond
-                  ((rostam-p) "14")  ; 4K monitor
-                  ((ismene-p) "12")  ; 1080p laptop
-                  (t "15"))))        ; default
-  (let ((font (format "Fira Code-%s" font-size)))
-    (set-face-attribute 'default nil :font font)
-    (set-face-attribute 'mode-line nil :font font)))
+(let ((font "Fira Code-13"))
+  (set-face-attribute 'default nil :font font)
+  (set-face-attribute 'mode-line nil :font font))
 
 ;; Show trailing whitespace.
 (setq-default show-trailing-whitespace t)
