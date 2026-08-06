@@ -23,7 +23,6 @@
         ./modules/audio.nix
         ./modules/beets
         ./modules/bluetooth.nix
-        ./modules/docker.nix
         ./modules/emacs
         ./modules/eudoxia.nix
         ./modules/fastfetch
