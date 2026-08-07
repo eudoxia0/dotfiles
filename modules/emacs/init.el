@@ -471,7 +471,7 @@
 ;;;
 
 (defun quick-commit ()
-  "Stage all changes, commit with a prompt, and push to origin."
+  "Stage all changes, commit with a prompt."
   (interactive)
   (let* ((branch (string-trim
                   (shell-command-to-string
@@ -480,7 +480,6 @@
     (shell-command "git add -u")
     (shell-command (format "git commit -m %s"
                            (shell-quote-argument commit-msg)))
-    (shell-command (format "git push origin %s" branch))
-    (message "Committed and pushed to origin/%s" branch)))
+    (message "Committed.")))
 
 (keymap-global-set "C-c ." 'quick-commit)
