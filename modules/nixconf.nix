@@ -38,19 +38,20 @@
   programs.nix-ld = {
     enable = true;
     libraries = with pkgs; [
-      libGLU
+      alsa-lib
       libGL
+      libGLU
       libX11
       libXcursor
-      libXrandr
-      libXi
       libXext
+      libXi
+      libXmu
+      libXrandr
       libXxf86vm
-      openal
       libpulseaudio
-      alsa-lib
-      stdenv.cc.cc.lib
       libxkbcommon
+      openal
+      stdenv.cc.cc.lib
     ];
   };
 }
