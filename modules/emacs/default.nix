@@ -96,6 +96,7 @@ in
           typst-ts-mode
           unfill
           vertico
+          vue-mode
           web-mode
           yaml-mode
           zenburn-theme
