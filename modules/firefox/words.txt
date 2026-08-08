@@ -104,6 +104,7 @@ functors
 fursuit
 genericity
 glutamate
+glutaraldehyde
 growable
 hashcards
 headshots
