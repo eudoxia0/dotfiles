@@ -197,6 +197,9 @@
 (defkey "Pause" "exec xscreensaver-command --lock")
 (define-key *root-map* (kbd "x") "exec xscreensaver-command --lock")
 
+;; Lock the screen with xsecurelock (no screensaver).
+(define-key *root-map* (kbd "X") "exec xsecurelock")
+
 ;; Toggle the modeline on/off.
 (define-key *root-map* (kbd "m") "mode-line")
 
