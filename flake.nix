@@ -45,7 +45,6 @@
         ./modules/services/cleanup-xdg-dirs.nix
         ./modules/services/epoch.nix
         ./modules/services/metauro.nix
-        ./modules/services/pm.nix
         ./modules/shell.nix
         ./modules/ssh.nix
         ./modules/syncthing.nix
