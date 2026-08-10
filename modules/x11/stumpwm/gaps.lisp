@@ -11,11 +11,11 @@
 (defparameter *head-gaps-size* 0)
 
 ;; Inner gaps run along all the 4 borders of a window.
-(defparameter *inner-gaps-size* 30)
+(defparameter *inner-gaps-size* 16)
 
 ;; Outer gaps add more padding to the outermost borders of a window
 ;; (touching the screen border).
-(defparameter *outer-gaps-size* 30)
+(defparameter *outer-gaps-size* 16)
 
 ;; Whether or not gaps are on.
 (defparameter *gaps-on* nil)
