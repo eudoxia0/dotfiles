@@ -17,6 +17,19 @@
 ;; Font.
 (set-font "-xos4-terminus-medium-r-normal-*-28-*-*-*-*-*-*-*")
 
+;; Window border width.
+(setf *transient-border-width* 3
+      *normal-border-width* 3)
+
+;; Window border style.
+(setf *window-border-style* :thin)
+
+;; Border colour of focused windows.
+(set-focus-color "#7799cc")
+
+;; Border colour of unfocused windows.
+(set-unfocus-color "gray")
+
 ;;;
 ;;; General Configuration
 ;;;
