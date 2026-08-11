@@ -80,7 +80,6 @@
             ./hosts/rostam/configuration.nix
             ./hosts/rostam/hardware-configuration.nix
             ./modules/brightness-desktop.nix
-            ./modules/newsboat
           ];
         };
 

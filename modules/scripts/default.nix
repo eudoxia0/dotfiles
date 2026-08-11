@@ -11,10 +11,6 @@
       source = ./add-to-dictionary.py;
       executable = true;
     };
-    ".eudoxia.d/bin/add-feed" = {
-      source = ./add-feed.py;
-      executable = true;
-    };
     ".eudoxia.d/bin/timestamp" = {
       source = ./timestamp.py;
       executable = true;
