@@ -58,7 +58,6 @@ in
     ocrmypdf
     pandoc
     pciutils # lspci
-    planify
     poppler-utils
     python314
     quodlibet
