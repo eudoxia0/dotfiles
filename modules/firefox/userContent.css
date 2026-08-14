@@ -36,24 +36,6 @@
     }
 }
 
-@-moz-document domain("x.com") {
-    /* Hide the right sidebar */
-    div[data-testid="sidebarColumn"] {
-        display: none;
-    }
-
-    /* Hide the left sidebar */
-    header[role="banner"] {
-        display: none;
-    }
-
-    /* Hide floating buttons */
-    button[aria-label="Grok"],
-    button[aria-label="Chat"] {
-        display: none;
-    }
-}
-
 @-moz-document domain("forum.zosoproject.com") {
     /* Fix link colors */
     a {
