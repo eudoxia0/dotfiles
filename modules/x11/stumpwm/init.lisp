@@ -19,7 +19,8 @@
 
 ;; Window border width.
 (setf *transient-border-width* 3
-      *normal-border-width* 3)
+      *normal-border-width* 3
+      *maxsize-border-width* 3)
 
 ;; Window border style.
 (setf *window-border-style* :thin)
