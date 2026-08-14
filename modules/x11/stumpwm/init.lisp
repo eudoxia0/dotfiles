@@ -22,7 +22,7 @@
       *normal-border-width* 3)
 
 ;; Window border style.
-(setf *window-border-style* :thin)
+(setf *window-border-style* :thick)
 
 ;; Border colour of focused windows.
 (set-focus-color "#7799cc")
