@@ -39,6 +39,7 @@ in
     gnuplot
     gparted
     graphviz
+    heroic
     imagemagick
     inxi
     ispell
