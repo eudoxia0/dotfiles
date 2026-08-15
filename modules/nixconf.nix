@@ -54,4 +54,8 @@
       stdenv.cc.cc.lib
     ];
   };
+
+  # Gaming type shi.
+  hardware.graphics.enable = true;
+  hardware.graphics.enable32Bit = true;
 }
