@@ -20,4 +20,8 @@
     scrot
     xsecurelock
   ];
+
+  home-manager.users.eudoxia.home.file = {
+    ".Xresources".source = ./xresources.txt;
+  };
 }

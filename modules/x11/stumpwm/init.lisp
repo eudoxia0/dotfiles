@@ -187,7 +187,7 @@
 (defkey "s-%" "gmove ε")
 
 ;; Prompt for a shell command to run.
-(defkey "s-r" "exec rofi -show run")
+(defkey "s-r" "exec rofi -dpi 192 -show run")
 
 ;; Close the current window.
 (defkey "s-q" "delete-window")
@@ -247,3 +247,4 @@
 (run-shell-command "systemctl --user start xcape")
 (run-shell-command "systemctl --user start xdg-desktop-portal-gtk")
 (run-shell-command "systemctl --user start xscreensaver")
+(run-shell-command "xrdb -merge ~/.Xresources")
