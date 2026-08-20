@@ -11,6 +11,7 @@
     nushell
   ];
 
-  # Copy nushell config.
-  home-manager.users.eudoxia.home.file.".config/nushell/config.nu".source = ./config.nu;
+  systemd.tmpfiles.rules = [
+    "L+ /home/eudoxia/.config/nushell/config.nu - - - - /home/eudoxia/root/1-workspace/dotfiles/modules/nushell/config.nu"
+  ];
 }
