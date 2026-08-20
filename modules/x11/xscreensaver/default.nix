@@ -12,7 +12,7 @@
 
   services.xscreensaver.enable = true;
 
-  home-manager.users.eudoxia.home.file = {
-    ".xscreensaver".source = ./xscreensaver.txt;
-  };
+  systemd.tmpfiles.rules = [
+    "L+ /home/eudoxia/.xscreensaver - - - - /home/eudoxia/root/1-workspace/dotfiles/modules/x11/xscreensaver/xscreensaver.txt"
+  ];
 }
