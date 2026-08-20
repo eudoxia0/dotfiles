@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  dotfilesDir,
   ...
 }:
 
@@ -20,15 +21,11 @@
   # thumbnails service
   services.tumbler.enable = true;
 
-  # Configure custom Thunar actions.
-  home-manager.users.eudoxia.home.file = {
-    ".config/Thunar/uca.xml".source = ./actions.xml;
-  };
-
-  # Configure the bookmarks on the left pane.
-  home-manager.users.eudoxia.home.file = {
-    ".config/gtk-3.0/bookmarks".source = ./bookmarks.txt;
-  };
+  # Configure custom Thunar actions and the bookmarks on the left pane.
+  systemd.tmpfiles.rules = [
+    "L+ /home/eudoxia/.config/Thunar/uca.xml - - - - ${dotfilesDir}/modules/thunar/actions.xml"
+    "L+ /home/eudoxia/.config/gtk-3.0/bookmarks - - - - ${dotfilesDir}/modules/thunar/bookmarks.txt"
+  ];
 
   # Other packages needed by Thunar.
   home-manager.users.eudoxia.home.packages = with pkgs; [

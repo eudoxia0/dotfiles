@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  dotfilesDir,
   ...
 }:
 
@@ -13,6 +14,6 @@
   services.xscreensaver.enable = true;
 
   systemd.tmpfiles.rules = [
-    "L+ /home/eudoxia/.xscreensaver - - - - /home/eudoxia/root/1-workspace/dotfiles/modules/x11/xscreensaver/xscreensaver.txt"
+    "L+ /home/eudoxia/.xscreensaver - - - - ${dotfilesDir}/modules/x11/xscreensaver/xscreensaver.txt"
   ];
 }

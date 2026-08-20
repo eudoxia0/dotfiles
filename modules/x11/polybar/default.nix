@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  dotfilesDir,
   ...
 }:
 
@@ -12,11 +13,8 @@
     })
   ];
 
-  home-manager.users.eudoxia.home.file = {
-    ".config/polybar/config.ini".source = ./polybar.ini;
-    ".config/polybar/world-clock.sh" = {
-      source = ./world-clock.sh;
-      executable = true;
-    };
-  };
+  systemd.tmpfiles.rules = [
+    "L+ /home/eudoxia/.config/polybar/config.ini - - - - ${dotfilesDir}/modules/x11/polybar/polybar.ini"
+    "L+ /home/eudoxia/.config/polybar/world-clock.sh - - - - ${dotfilesDir}/modules/x11/polybar/world-clock.sh"
+  ];
 }

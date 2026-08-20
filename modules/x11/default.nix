@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  dotfilesDir,
   ...
 }:
 
@@ -21,7 +22,7 @@
     xsecurelock
   ];
 
-  home-manager.users.eudoxia.home.file = {
-    ".Xresources".source = ./xresources.txt;
-  };
+  systemd.tmpfiles.rules = [
+    "L+ /home/eudoxia/.Xresources - - - - ${dotfilesDir}/modules/x11/xresources.txt"
+  ];
 }

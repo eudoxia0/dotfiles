@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  dotfilesDir,
   ...
 }:
 
@@ -10,7 +11,7 @@
     beets
   ];
 
-  home-manager.users.eudoxia.home.file = {
-    ".config/beets/config.yaml".source = ./beets.yaml;
-  };
+  systemd.tmpfiles.rules = [
+    "L+ /home/eudoxia/.config/beets/config.yaml - - - - ${dotfilesDir}/modules/beets/beets.yaml"
+  ];
 }

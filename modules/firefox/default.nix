@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  dotfilesDir,
   ...
 }:
 
@@ -154,5 +155,7 @@
     };
   };
 
-  home-manager.users.eudoxia.home.file.".mozilla/firefox/default/persdict.dat".source = ./words.txt;
+  systemd.tmpfiles.rules = [
+    "L+ /home/eudoxia/.mozilla/firefox/default/persdict.dat - - - - ${dotfilesDir}/modules/firefox/words.txt"
+  ];
 }
