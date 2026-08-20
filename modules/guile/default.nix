@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  dotfilesDir,
   ...
 }:
 
@@ -10,11 +11,10 @@
     guile
   ];
 
-  home-manager.users.eudoxia.home.file.".guile".source = ./init.scm;
-  home-manager.users.eudoxia.home.file.".guile-modules/eudoxia" = {
-    source = ./eudoxia;
-    recursive = true;
-  };
+  systemd.tmpfiles.rules = [
+    "L+ /home/eudoxia/.guile - - - - ${dotfilesDir}/modules/guile/init.scm"
+    "L+ /home/eudoxia/.guile-modules/eudoxia - - - - ${dotfilesDir}/modules/guile/eudoxia"
+  ];
 
   home-manager.users.eudoxia.home.sessionVariables = {
     GUILE_LOAD_PATH = "/home/eudoxia/.guile-modules";

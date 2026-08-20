@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  dotfilesDir,
   ...
 }:
 
@@ -16,20 +17,8 @@
     longitude = 151.2;
   };
 
-  home-manager.users.eudoxia.home.file = {
-    ".eudoxia.d/bin/start-redshift" = {
-      text = ''
-        #/bin/sh
-        systemctl --user start redshift
-      '';
-      executable = true;
-    };
-    ".eudoxia.d/bin/stop-redshift" = {
-      text = ''
-        #/bin/sh
-        systemctl --user stop redshift
-      '';
-      executable = true;
-    };
-  };
+  systemd.tmpfiles.rules = [
+    "L+ /home/eudoxia/.eudoxia.d/bin/start-redshift - - - - ${dotfilesDir}/modules/x11/redshift/start-redshift.sh"
+    "L+ /home/eudoxia/.eudoxia.d/bin/stop-redshift - - - - ${dotfilesDir}/modules/x11/redshift/stop-redshift.sh"
+  ];
 }

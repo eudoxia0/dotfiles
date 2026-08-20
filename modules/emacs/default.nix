@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  dotfilesDir,
   ...
 }:
 
@@ -110,7 +111,7 @@ in
   };
 
   systemd.tmpfiles.rules = [
-    "L+ /home/eudoxia/.emacs.d/early-init.el - - - - /home/eudoxia/root/1-workspace/dotfiles/modules/emacs/early-init.el"
-    "L+ /home/eudoxia/.emacs.d/init.el - - - - /home/eudoxia/root/1-workspace/dotfiles/modules/emacs/init.el"
+    "L+ /home/eudoxia/.emacs.d/early-init.el - - - - ${dotfilesDir}/modules/emacs/early-init.el"
+    "L+ /home/eudoxia/.emacs.d/init.el - - - - ${dotfilesDir}/modules/emacs/init.el"
   ];
 }

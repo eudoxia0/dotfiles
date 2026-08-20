@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  dotfilesDir,
   ...
 }:
 
@@ -11,11 +12,8 @@
     sxhkd.package = pkgs.sxhkd;
   };
 
-  home-manager.users.eudoxia.home.file = {
-    ".config/bspwm/bspwmrc" = {
-      source = ./bspwmrc;
-      executable = true;
-    };
-    ".config/sxhkd/sxhkdrc".source = ./sxhkdrc;
-  };
+  systemd.tmpfiles.rules = [
+    "L+ /home/eudoxia/.config/bspwm/bspwmrc - - - - ${dotfilesDir}/modules/x11/bspwm/bspwmrc"
+    "L+ /home/eudoxia/.config/sxhkd/sxhkdrc - - - - ${dotfilesDir}/modules/x11/bspwm/sxhkdrc"
+  ];
 }

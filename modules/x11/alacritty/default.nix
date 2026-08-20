@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  dotfilesDir,
   ...
 }:
 
@@ -14,6 +15,6 @@
   };
 
   systemd.tmpfiles.rules = [
-    "L+ /home/eudoxia/.config/alacritty/alacritty.toml - - - - /home/eudoxia/root/1-workspace/dotfiles/modules/x11/alacritty/config.toml"
+    "L+ /home/eudoxia/.config/alacritty/alacritty.toml - - - - ${dotfilesDir}/modules/x11/alacritty/config.toml"
   ];
 }

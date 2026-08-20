@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, dotfilesDir, ... }:
 
 let
   deviceUuid = "74e2a22c-c0d3-4bfd-ac1f-3cb889b6e1ff";
@@ -39,7 +39,7 @@ in
   };
 
   systemd.tmpfiles.rules = [
-    "L+ /etc/sddm.conf.d/hidpi.conf - - - - /home/eudoxia/root/1-workspace/dotfiles/hosts/rostam/sddm-hidpi.conf"
+    "L+ /etc/sddm.conf.d/hidpi.conf - - - - ${dotfilesDir}/hosts/rostam/sddm-hidpi.conf"
   ];
 
   services.displayManager.ly.settings.box_title = "rostam";

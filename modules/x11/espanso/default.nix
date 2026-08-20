@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  dotfilesDir,
   ...
 }:
 
@@ -14,8 +15,10 @@
 
   home-manager.users.eudoxia = hm: {
     services.espanso.enable = true;
-
-    # Copy the config.
-    home.file.".config/espanso/match/base.yml".source = ./espanso.yaml;
   };
+
+  # Copy the config.
+  systemd.tmpfiles.rules = [
+    "L+ /home/eudoxia/.config/espanso/match/base.yml - - - - ${dotfilesDir}/modules/x11/espanso/espanso.yaml"
+  ];
 }

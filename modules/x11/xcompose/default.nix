@@ -2,11 +2,12 @@
   config,
   pkgs,
   lib,
+  dotfilesDir,
   ...
 }:
 
 {
-  home-manager.users.eudoxia.home.file = {
-    ".XCompose".source = ./xcompose.xcm;
-  };
+  systemd.tmpfiles.rules = [
+    "L+ /home/eudoxia/.XCompose - - - - ${dotfilesDir}/modules/x11/xcompose/xcompose.xcm"
+  ];
 }

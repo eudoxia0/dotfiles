@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  dotfilesDir,
   ...
 }:
 
@@ -48,11 +49,8 @@
   ];
 
   # script to reload the font cache
-  home-manager.users.eudoxia.home.file = {
-    ".eudoxia.d/bin/font-cache-update" = {
-      source = ./font-cache-update.sh;
-      executable = true;
-    };
-    ".config/fontconfig/fonts.conf".source = ./fonts.conf;
-  };
+  systemd.tmpfiles.rules = [
+    "L+ /home/eudoxia/.eudoxia.d/bin/font-cache-update - - - - ${dotfilesDir}/modules/font/font-cache-update.sh"
+    "L+ /home/eudoxia/.config/fontconfig/fonts.conf - - - - ${dotfilesDir}/modules/font/fonts.conf"
+  ];
 }

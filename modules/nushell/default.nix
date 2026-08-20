@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  dotfilesDir,
   ...
 }:
 
@@ -12,6 +13,6 @@
   ];
 
   systemd.tmpfiles.rules = [
-    "L+ /home/eudoxia/.config/nushell/config.nu - - - - /home/eudoxia/root/1-workspace/dotfiles/modules/nushell/config.nu"
+    "L+ /home/eudoxia/.config/nushell/config.nu - - - - ${dotfilesDir}/modules/nushell/config.nu"
   ];
 }

@@ -18,6 +18,8 @@
       ...
     }:
     let
+      dotfilesDir = "/home/eudoxia/root/1-workspace/dotfiles";
+
       shared = [
         ./modules/apps.nix
         ./modules/audio.nix
@@ -76,6 +78,7 @@
       nixosConfigurations = {
         rostam = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
+          specialArgs = { inherit dotfilesDir; };
           modules = shared ++ [
             ./hosts/rostam/configuration.nix
             ./hosts/rostam/hardware-configuration.nix
@@ -85,6 +88,7 @@
 
         ismene = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
+          specialArgs = { inherit dotfilesDir; };
           modules = shared ++ [
             ./hosts/ismene/configuration.nix
             ./hosts/ismene/hardware-configuration.nix
