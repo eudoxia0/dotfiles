@@ -38,6 +38,10 @@ in
     GDK_DPI_SCALE = 0.5;
   };
 
+  systemd.tmpfiles.rules = [
+    "L+ /etc/sddm.conf.d/hidpi.conf - - - - /home/eudoxia/root/1-workspace/dotfiles/hosts/rostam/sddm-hidpi.conf"
+  ];
+
   services.displayManager.ly.settings.box_title = "rostam";
 
   home-manager.users.eudoxia.home.stateVersion = "25.05"; # DO NOT CHANGE
