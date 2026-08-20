@@ -37,12 +37,6 @@ in
     rocmPackages.clr.icd
   ];
 
-  # Monitor scaling.
-  home-manager.users.eudoxia.home.sessionVariables = {
-    GDK_SCALE = 2;
-    GDK_DPI_SCALE = 0.5;
-  };
-
   systemd.tmpfiles.rules = [
     "L+ /etc/sddm.conf.d/hidpi.conf - - - - ${dotfilesDir}/hosts/rostam/sddm-hidpi.conf"
   ];
