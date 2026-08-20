@@ -1,4 +1,9 @@
-{ config, pkgs, dotfilesDir, ... }:
+{
+  config,
+  pkgs,
+  dotfilesDir,
+  ...
+}:
 
 let
   deviceUuid = "74e2a22c-c0d3-4bfd-ac1f-3cb889b6e1ff";
