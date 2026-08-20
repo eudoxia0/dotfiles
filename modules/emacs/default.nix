@@ -104,12 +104,13 @@ in
         ];
     };
 
-    # Copy init.el.
-    home.file.".emacs.d/init.el".source = ./init.el;
-    home.file.".emacs.d/early-init.el".source = ./early-init.el;
-
     home.sessionVariables = {
       EDITOR = "emacs";
     };
   };
+
+  systemd.tmpfiles.rules = [
+    "L+ /home/eudoxia/.emacs.d/early-init.el - - - - /home/eudoxia/root/1-workspace/dotfiles/modules/emacs/early-init.el"
+    "L+ /home/eudoxia/.emacs.d/init.el - - - - /home/eudoxia/root/1-workspace/dotfiles/modules/emacs/init.el"
+  ];
 }
