@@ -147,6 +147,9 @@
 
         # Use smooth scrolling.
         "general.smoothScroll" = true;
+
+        # Middle click to scroll
+        "general.autoScroll" = true;
       };
     };
   };
