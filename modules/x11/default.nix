@@ -21,8 +21,4 @@
     scrot
     xsecurelock
   ];
-
-  systemd.tmpfiles.rules = [
-    "L+ /home/eudoxia/.Xresources - - - - ${dotfilesDir}/modules/x11/xresources.txt"
-  ];
 }

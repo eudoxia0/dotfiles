@@ -39,6 +39,7 @@ in
 
   systemd.tmpfiles.rules = [
     "L+ /etc/sddm.conf.d/hidpi.conf - - - - ${dotfilesDir}/hosts/rostam/sddm-hidpi.conf"
+    "L+ /home/eudoxia/.Xresources - - - - ${dotfilesDir}/modules/x11/xresources.txt"
   ];
 
   services.displayManager.ly.settings.box_title = "rostam";
