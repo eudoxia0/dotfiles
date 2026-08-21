@@ -41,12 +41,13 @@ in
     "L+ /etc/sddm.conf.d/hidpi.conf - - - - ${dotfilesDir}/hosts/rostam/sddm-hidpi.conf"
   ];
 
-  services.xserver.dpi = 192;
+  # services.xserver.dpi = 192;
+  services.xserver.dpi = 96;
 
   # Monitor scaling.
   home-manager.users.eudoxia.home.sessionVariables = {
-    GDK_SCALE = "2";
-    GDK_DPI_SCALE = "0.5";
+    # GDK_SCALE = "2";
+    GDK_DPI_SCALE = "1.5";
   };
 
   services.displayManager.ly.settings.box_title = "rostam";
