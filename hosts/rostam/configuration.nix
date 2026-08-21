@@ -39,8 +39,9 @@ in
 
   systemd.tmpfiles.rules = [
     "L+ /etc/sddm.conf.d/hidpi.conf - - - - ${dotfilesDir}/hosts/rostam/sddm-hidpi.conf"
-    "L+ /home/eudoxia/.Xresources - - - - ${dotfilesDir}/modules/x11/xresources.txt"
   ];
+
+  services.xserver.dpi = 192;
 
   # Monitor scaling.
   home-manager.users.eudoxia.home.sessionVariables = {
