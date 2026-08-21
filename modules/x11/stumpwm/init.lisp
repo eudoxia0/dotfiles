@@ -187,7 +187,7 @@
 (defkey "s-%" "gmove ε")
 
 ;; Prompt for a shell command to run.
-(defkey "s-r" "exec rofi -dpi 96 -show run")
+(defkey "s-r" "exec rofi -dpi 192 -show run")
 
 ;; Close the current window.
 (defkey "s-q" "delete-window")
