@@ -42,6 +42,12 @@ in
     "L+ /home/eudoxia/.Xresources - - - - ${dotfilesDir}/modules/x11/xresources.txt"
   ];
 
+  # Monitor scaling.
+  home-manager.users.eudoxia.home.sessionVariables = {
+    GDK_SCALE = 2;
+    GDK_DPI_SCALE = 0.5;
+  };
+
   services.displayManager.ly.settings.box_title = "rostam";
 
   home-manager.users.eudoxia.home.stateVersion = "25.05"; # DO NOT CHANGE
