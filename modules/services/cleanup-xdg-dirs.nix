@@ -20,12 +20,6 @@ let
   '';
 in
 {
-  # Disable automatic creation of XDG user directories.
-  home-manager.users.eudoxia.xdg.userDirs = {
-    enable = true;
-    createDirectories = false;
-  };
-
   # Install the cleanup script so it can be run manually.
   users.users.eudoxia.packages = [ cleanupXdgScript ];
 
