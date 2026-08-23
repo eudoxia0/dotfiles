@@ -13,7 +13,7 @@
     variant = "";
     options = "compose:ralt";
   };
-  home-manager.users.eudoxia.home.packages = with pkgs; [
+  users.users.eudoxia.packages = with pkgs; [
     arandr
     dmenu
     kitty

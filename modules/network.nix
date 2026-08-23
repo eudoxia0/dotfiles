@@ -15,7 +15,5 @@
   };
 
   # If nm-applet is not instaled explicitly it won't have icons.
-  home-manager.users.eudoxia.home.packages = with pkgs; [
-    networkmanagerapplet
-  ];
+  users.users.eudoxia.packages = [ pkgs.networkmanagerapplet ];
 }

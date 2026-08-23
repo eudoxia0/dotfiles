@@ -18,7 +18,7 @@ in
   };
 
   # Install other themes so we can preview them.
-  home-manager.users.eudoxia.home.packages = with pkgs; [
+  users.users.eudoxia.packages = with pkgs; [
     adwaita-icon-theme-legacy
     adwaita-icon-theme
     bluecurve

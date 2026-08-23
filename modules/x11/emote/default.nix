@@ -6,7 +6,7 @@
 }:
 
 {
-  home-manager.users.eudoxia.home.packages = [ pkgs.emote ];
+  users.users.eudoxia.packages = [ pkgs.emote ];
 
   home-manager.users.eudoxia.systemd.user.services.emote = {
     Unit = {

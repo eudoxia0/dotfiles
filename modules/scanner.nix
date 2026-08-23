@@ -19,7 +19,7 @@
   hardware.sane.brscan5.enable = true;
 
   # Install GNOME Document Scanner.
-  home-manager.users.eudoxia.home.packages = with pkgs; [
+  users.users.eudoxia.packages = with pkgs; [
     simple-scan
   ];
 }

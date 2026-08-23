@@ -20,9 +20,7 @@ in
   hardware.cpu.amd.updateMicrocode = true;
 
   # Radeon inspector.
-  home-manager.users.eudoxia.home.packages = with pkgs; [
-    radeontop
-  ];
+  users.users.eudoxia.packages = [ pkgs.radeontop ];
 
   # Add your user to the necessary groups
   users.users.eudoxia.extraGroups = [

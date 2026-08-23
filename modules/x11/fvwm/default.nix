@@ -10,9 +10,10 @@
     enable = true;
   };
 
+  users.users.eudoxia.packages = [ pkgs.stalonetray ];
+
   home-manager.users.eudoxia = hm: {
     home = {
-      packages = [ pkgs.stalonetray ];
       file = {
         # Copy the fvwm config.
         ".fvwm/config".source = ./fvwm.txt;

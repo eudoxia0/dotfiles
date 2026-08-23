@@ -13,7 +13,7 @@
   ];
 
   # Install feh.
-  home-manager.users.eudoxia.home.packages = [
+  users.users.eudoxia.packages = [
     pkgs.feh
   ];
 }

@@ -10,7 +10,7 @@ let
   '';
 in
 {
-  home-manager.users.eudoxia.home.packages = with pkgs; [
+  users.users.eudoxia.packages = with pkgs; [
     age
     baobab
     btop

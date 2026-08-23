@@ -28,7 +28,7 @@
   ];
 
   # Other packages needed by Thunar.
-  home-manager.users.eudoxia.home.packages = with pkgs; [
+  users.users.eudoxia.packages = with pkgs; [
     ffmpegthumbnailer # video thumbnails
     libgsf # odf thumbnails
     libraw # RAW thumbnails

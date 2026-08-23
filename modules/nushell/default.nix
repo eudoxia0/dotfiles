@@ -8,7 +8,7 @@
 
 {
   # Install nushell.
-  home-manager.users.eudoxia.home.packages = with pkgs; [
+  users.users.eudoxia.packages = with pkgs; [
     nushell
   ];
 

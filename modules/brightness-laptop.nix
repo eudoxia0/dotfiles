@@ -7,7 +7,5 @@
 
 {
   # Install brightnessctl.
-  home-manager.users.eudoxia.home.packages = with pkgs; [
-    brightnessctl
-  ];
+  users.users.eudoxia.packages = [ pkgs.brightnessctl ];
 }

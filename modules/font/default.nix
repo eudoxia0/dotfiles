@@ -43,7 +43,7 @@
   };
 
   # font-related programs.
-  home-manager.users.eudoxia.home.packages = with pkgs; [
+  users.users.eudoxia.packages = with pkgs; [
     font-manager
     gnome-font-viewer
   ];

@@ -7,7 +7,7 @@
 }:
 
 {
-  home-manager.users.eudoxia.home.packages = with pkgs; [
+  users.users.eudoxia.packages = with pkgs; [
     xscreensaver # needed for cli commands
   ];
 

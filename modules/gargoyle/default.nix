@@ -6,7 +6,5 @@
 }:
 
 {
-  home-manager.users.eudoxia.home.packages = with pkgs; [
-    gargoyle
-  ];
+  users.users.eudoxia.packages = [ pkgs.gargoyle ];
 }

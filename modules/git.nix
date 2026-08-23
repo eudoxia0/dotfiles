@@ -6,9 +6,7 @@
 }:
 
 {
-  home-manager.users.eudoxia.home.packages = with pkgs; [
-    meld
-  ];
+  users.users.eudoxia.packages = [ pkgs.meld ];
 
   home-manager.users.eudoxia.programs.git = {
     enable = true;

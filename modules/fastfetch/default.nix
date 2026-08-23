@@ -7,9 +7,7 @@
 }:
 
 {
-  home-manager.users.eudoxia.home.packages = with pkgs; [
-    fastfetch
-  ];
+  users.users.eudoxia.packages = [ pkgs.fastfetch ];
 
   systemd.tmpfiles.rules = [
     "L+ /home/eudoxia/.eudoxia.d/data/nerv/nerv-color.txt - - - - ${dotfilesDir}/modules/fastfetch/nerv/nerv-color.txt"

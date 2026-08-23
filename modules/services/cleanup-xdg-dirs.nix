@@ -27,7 +27,7 @@ in
   };
 
   # Install the cleanup script so it can be run manually.
-  home-manager.users.eudoxia.home.packages = [ cleanupXdgScript ];
+  users.users.eudoxia.packages = [ cleanupXdgScript ];
 
   # Continuously remove unwanted XDG directories that applications recreate
   home-manager.users.eudoxia.systemd.user.services.cleanup-xdg-dirs = {

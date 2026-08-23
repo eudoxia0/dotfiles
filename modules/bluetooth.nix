@@ -26,7 +26,7 @@ in
 {
   hardware.bluetooth.enable = true;
 
-  home-manager.users.eudoxia.home.packages = [
+  users.users.eudoxia.packages = [
     connect-headphones
     disconnect-headphones
     connect-earbuds
