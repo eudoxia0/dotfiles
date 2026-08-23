@@ -98,9 +98,7 @@ let
     zerodark-theme
   ];
 
-  emacs-custom = ((pkgs.emacsPackagesFor pkgs.emacs-gtk).emacsWithPackages (
-    epkgs: emacs-packages
-  ));
+  emacs-custom = ((pkgs.emacsPackagesFor pkgs.emacs-gtk).emacsWithPackages (epkgs: emacs-packages));
 in
 {
   users.users.eudoxia.packages = [ emacs-custom ];
