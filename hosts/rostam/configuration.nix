@@ -43,7 +43,7 @@ in
   services.xserver.dpi = 96;
 
   # Monitor scaling.
-  home-manager.users.eudoxia.home.sessionVariables = {
+  environment.sessionVariables = {
     # GDK_SCALE = "2";
     GDK_DPI_SCALE = "1.5";
   };

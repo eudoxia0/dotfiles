@@ -16,7 +16,7 @@
     "L+ /home/eudoxia/.guile-modules/eudoxia - - - - ${dotfilesDir}/modules/guile/eudoxia"
   ];
 
-  home-manager.users.eudoxia.home.sessionVariables = {
+  environment.sessionVariables = {
     GUILE_LOAD_PATH = "/home/eudoxia/.guile-modules";
   };
 }
