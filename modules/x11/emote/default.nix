@@ -8,21 +8,16 @@
 {
   users.users.eudoxia.packages = [ pkgs.emote ];
 
-  home-manager.users.eudoxia.systemd.user.services.emote = {
-    Unit = {
-      Description = "Emote emoji picker";
-      After = [ "graphical-session.target" ];
-      PartOf = [ "graphical-session.target" ];
-    };
+  systemd.user.services.emote = {
+    description = "Emote emoji picker";
+    after = [ "graphical-session.target" ];
+    partOf = [ "graphical-session.target" ];
+    wantedBy = [ "graphical-session.target" ];
 
-    Service = {
-      ExecStart = "${pkgs.emote}/bin/emote";
+    serviceConfig = {
+      ExecStart = lib.getExe pkgs.emote;
       Restart = "on-failure";
       RestartSec = "5s";
-    };
-
-    Install = {
-      WantedBy = [ "graphical-session.target" ];
     };
   };
 }
