@@ -48,9 +48,9 @@
     gnome-font-viewer
   ];
 
-  # script to reload the font cache
   systemd.tmpfiles.rules = [
     "L+ /home/eudoxia/.eudoxia.d/bin/font-cache-update - - - - ${dotfilesDir}/modules/font/font-cache-update.sh"
     "L+ /home/eudoxia/.config/fontconfig/fonts.conf - - - - ${dotfilesDir}/modules/font/fonts.conf"
+    "L+ /home/eudoxia/.local/share/fonts - - - - ${dotfilesDir}/modules/font/custom"
   ];
 }
