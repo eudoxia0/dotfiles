@@ -10,10 +10,9 @@
   networking.firewall.enable = true;
   services.mullvad-vpn.enable = true;
 
-  home-manager.users.eudoxia.services = {
-    network-manager-applet.enable = true;
-  };
+  # Enable the network manager applet (systray icon).
+  programs.nm-applet.enable = true;
 
-  # If nm-applet is not instaled explicitly it won't have icons.
+  # Need this to set the icons for the network manager applet.
   users.users.eudoxia.packages = [ pkgs.networkmanagerapplet ];
 }

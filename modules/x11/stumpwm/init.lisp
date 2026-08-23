@@ -243,7 +243,7 @@
 (run-shell-command "xsetroot -cursor_name left_ptr")
 
 ;; On startup, restart services that are killed by quitting the window manager.
-(run-shell-command "systemctl --user start network-manager-applet")
+(run-shell-command "systemctl --user start nm-applet")
 (run-shell-command "systemctl --user start xcape")
 (run-shell-command "systemctl --user start xdg-desktop-portal-gtk")
 (run-shell-command "systemctl --user start xscreensaver")

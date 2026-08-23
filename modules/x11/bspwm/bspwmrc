@@ -33,7 +33,7 @@ polybar &
 
 # These services are killed by exiting the window manager. Ensure they are
 # running on startup.
-systemctl --user start network-manager-applet &
+systemctl --user start nm-applet &
 systemctl --user start xcape &
 systemctl --user start xdg-desktop-portal-gtk &
 systemctl --user start xscreensaver &
