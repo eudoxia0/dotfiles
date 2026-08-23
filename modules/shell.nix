@@ -8,10 +8,9 @@
 {
   programs.bash.enable = true;
 
-  home-manager.users.eudoxia.home = {
-    sessionPath = [
-      "$HOME/.eudoxia.d/bin"
-      "$HOME/.cargo/bin"
-    ];
-  };
+  # Add directories to PATH.
+  environment.variables.PATH = [
+    "/home/eudoxia/.eudoxia.d/bin"
+    "/home/eudoxia/.cargo/bin"
+  ];
 }
