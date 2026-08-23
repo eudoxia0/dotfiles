@@ -13,9 +13,8 @@
     KERNEL=="uinput", GROUP="input", MODE="0660"
   '';
 
-  home-manager.users.eudoxia = hm: {
-    services.espanso.enable = true;
-  };
+  # Enable the Espanso service.
+  services.espanso.enable = true;
 
   # Copy the config.
   systemd.tmpfiles.rules = [
