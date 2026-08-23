@@ -6,9 +6,7 @@
 }:
 
 {
-  home-manager.users.eudoxia = {
-    programs.bash.enable = true;
-  };
+  programs.bash.enable = true;
 
   home-manager.users.eudoxia.home = {
     sessionPath = [
