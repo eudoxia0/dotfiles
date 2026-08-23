@@ -30,11 +30,11 @@ in
   users.users.eudoxia.packages = [ cleanupXdgScript ];
 
   # Continuously remove unwanted XDG directories that applications recreate
-  home-manager.users.eudoxia.systemd.user.services.cleanup-xdg-dirs = {
-    Unit = {
-      Description = "Clean up unwanted XDG user directories";
-    };
-    Service = {
+  systemd.user.services.cleanup-xdg-dirs = {
+    description = "Clean up unwanted XDG user directories";
+    wantedBy = [ "default.target" ];
+
+    serviceConfig = {
       Type = "simple";
       ExecStart = "${pkgs.writeShellScript "cleanup-xdg-dirs-loop" ''
         while true; do
@@ -49,9 +49,6 @@ in
       ''}";
       StandardOutput = "null";
       StandardError = "null";
-    };
-    Install = {
-      WantedBy = [ "default.target" ];
     };
   };
 }
