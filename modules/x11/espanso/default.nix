@@ -14,10 +14,9 @@
   '';
 
   # Enable the Espanso service.
-  services.espanso.enable = true;
-
-  # Use the X11 package.
-  services.espanso.package = pkgs.espanso;
+  home-manager.users.eudoxia = hm: {
+    services.espanso.enable = true;
+  };
 
   # Copy the config.
   systemd.tmpfiles.rules = [
