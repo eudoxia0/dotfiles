@@ -58,53 +58,52 @@ let
       packageRequires = [ ];
     };
   };
+
+  emacs-packages = with pkgs.emacsPackages; [
+    # customPackages.xcompose-mode # TODO: why does this get stuck building forever?
+    consult
+    customPackages.cabal-mode
+    customPackages.eat
+    customPackages.inform7-mode
+    embark
+    fvwm-mode
+    graphviz-dot-mode
+    i3wm-config-mode
+    just-mode
+    kaolin-themes
+    lsp-mode
+    lsp-ui
+    magit
+    marginalia
+    markdown-mode
+    moe-theme
+    nano-theme
+    nix-mode
+    nushell-mode
+    olivetti
+    orderless
+    projectile
+    ripgrep
+    rust-mode
+    sly
+    sublime-themes
+    treemacs
+    typst-ts-mode
+    unfill
+    vertico
+    vue-mode
+    web-mode
+    yaml-mode
+    zenburn-theme
+    zerodark-theme
+  ];
+
+  emacs-custom = ((pkgs.emacsPackagesFor pkgs.emacs-gtk).emacsWithPackages (
+    epkgs: emacs-packages
+  ));
 in
 {
-  home-manager.users.eudoxia = {
-    programs.emacs = {
-      enable = true;
-      package = pkgs.emacs-gtk;
-      extraPackages =
-        epkgs: with epkgs; [
-          # customPackages.xcompose-mode # TODO: why does this get stuck building forever?
-          consult
-          customPackages.cabal-mode
-          customPackages.eat
-          customPackages.inform7-mode
-          embark
-          fvwm-mode
-          graphviz-dot-mode
-          i3wm-config-mode
-          just-mode
-          kaolin-themes
-          lsp-mode
-          lsp-ui
-          magit
-          marginalia
-          markdown-mode
-          moe-theme
-          nano-theme
-          nix-mode
-          nushell-mode
-          olivetti
-          orderless
-          projectile
-          ripgrep
-          rust-mode
-          sly
-          sublime-themes
-          treemacs
-          typst-ts-mode
-          unfill
-          vertico
-          vue-mode
-          web-mode
-          yaml-mode
-          zenburn-theme
-          zerodark-theme
-        ];
-    };
-  };
+  users.users.eudoxia.packages = [ emacs-custom ];
 
   systemd.tmpfiles.rules = [
     "L+ /home/eudoxia/.emacs.d/early-init.el - - - - ${dotfilesDir}/modules/emacs/early-init.el"
