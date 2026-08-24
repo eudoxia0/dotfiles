@@ -12,5 +12,6 @@
     user = "eudoxia";
     group = "users";
     configDir = "/home/eudoxia/.config/syncthing";
+    openDefaultPorts = true;
   };
 }
