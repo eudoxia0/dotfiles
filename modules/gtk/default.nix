@@ -2,6 +2,7 @@
   config,
   pkgs,
   lib,
+  dotfilesDir,
   ...
 }:
 
@@ -11,11 +12,10 @@ in
 {
   programs.dconf.enable = true;
 
-  home-manager.users.eudoxia.gtk = {
-    enable = true;
-    theme.name = "Bluecurve";
-    iconTheme.name = "Bluecurve";
-  };
+  systemd.tmpfiles.rules = [
+    "L+ /home/eudoxia/.config/gtk-3.0/settings.ini - - - - ${dotfilesDir}/modules/gtk/gtk3-settings.ini"
+    "L+ /home/eudoxia/.config/gtk-4.0/settings.ini - - - - ${dotfilesDir}/modules/gtk/gtk4-settings.ini"
+  ];
 
   # Install other themes so we can preview them.
   users.users.eudoxia.packages = with pkgs; [
@@ -30,6 +30,4 @@ in
   environment.sessionVariables = {
     GSK_RENDERER = "cairo";
   };
-
-  home-manager.users.eudoxia.gtk.gtk4.theme = null;
 }

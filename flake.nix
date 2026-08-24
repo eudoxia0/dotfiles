@@ -32,7 +32,7 @@
         ./modules/font
         ./modules/gargoyle
         ./modules/git
-        ./modules/gtk.nix
+        ./modules/gtk
         ./modules/guile
         ./modules/locale.nix
         ./modules/mimeapps
