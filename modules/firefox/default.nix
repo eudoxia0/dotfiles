@@ -131,8 +131,8 @@
   };
 
   systemd.tmpfiles.rules = [
-    "L+ /home/eudoxia/.mozilla/firefox/default/persdict.dat - - - - ${dotfilesDir}/modules/firefox/words.txt"
-    "L+ /home/eudoxia/.mozilla/firefox/profiles.ini - - - - ${dotfilesDir}/modules/firefox/profiles.ini"
-    "L+ /home/eudoxia/.mozilla/firefox/default/chrome/userContent.css - - - - ${dotfilesDir}/modules/firefox/userContent.css"
+    "L+ /home/eudoxia/.config/mozilla/firefox/default/persdict.dat - - - - ${dotfilesDir}/modules/firefox/words.txt"
+    "L+ /home/eudoxia/.config/mozilla/firefox/profiles.ini - - - - ${dotfilesDir}/modules/firefox/profiles.ini"
+    "L+ /home/eudoxia/.config/mozilla/firefox/default/chrome/userContent.css - - - - ${dotfilesDir}/modules/firefox/userContent.css"
   ];
 }
