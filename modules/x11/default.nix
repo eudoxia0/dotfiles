@@ -20,5 +20,6 @@
     rofi
     scrot
     xsecurelock
+    xdpyinfo
   ];
 }
