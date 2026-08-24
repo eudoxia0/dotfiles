@@ -1,0 +1,31 @@
+[alias]
+tree = "log --pretty='%Cgreen%h%Creset [%ai] %s %Cred<%Creset%an%Cred>' --decorate --graph"
+undo = "reset --soft HEAD~1"
+
+[color]
+ui = "auto"
+
+[commit]
+gpgsign = true
+
+[diff]
+tool = "meld"
+
+[difftool]
+prompt = false
+
+[difftool "meld"]
+cmd = "meld \"$LOCAL\" \"$REMOTE\""
+
+[gpg]
+format = "ssh"
+
+[mergetool "meld"]
+cmd = "meld \"$LOCAL\" \"$BASE\" \"$REMOTE\" --output=\"$MERGED\""
+prompt = false
+trustExitCode = "true"
+
+[user]
+email = "fernando@borretti.me"
+name = "Fernando Borretti"
+signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILdw0/4AIQ4oAlhsFVTOix5ke+7iBgql2xHUEZxoPa3U fernando@borretti.me"

@@ -31,7 +31,7 @@
         ./modules/firefox
         ./modules/font
         ./modules/gargoyle
-        ./modules/git.nix
+        ./modules/git
         ./modules/gtk.nix
         ./modules/guile
         ./modules/locale.nix
