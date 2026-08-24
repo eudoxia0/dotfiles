@@ -31,7 +31,6 @@ in
     };
   };
 
-  home-manager.users.eudoxia.home.stateVersion = "25.11"; # DO NOT CHANGE
   system.stateVersion = "25.11"; # DO NOT CHANGE
   nixpkgs.config.allowUnfree = true;
   boot.loader.systemd-boot.enable = true;

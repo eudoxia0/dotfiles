@@ -3,18 +3,12 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
-    home-manager = {
-      url = "github:nix-community/home-manager/release-26.05";
-      # home-manager should track the same nixpkgs as the system
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs =
     {
       self,
       nixpkgs,
-      home-manager,
       ...
     }:
     let
@@ -65,13 +59,6 @@
         ./modules/x11/xcape
         ./modules/x11/xcompose
         ./modules/x11/xscreensaver
-
-        # Make home-manager use system pkgs
-        home-manager.nixosModules.home-manager
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-        }
       ];
     in
     {
