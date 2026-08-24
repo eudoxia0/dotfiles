@@ -46,6 +46,7 @@ in
   environment.sessionVariables = {
     # GDK_SCALE = "2";
     GDK_DPI_SCALE = "1.5";
+    QT_SCALE_FACTOR = "1.5";
   };
 
   services.displayManager.ly.settings.box_title = "rostam";
