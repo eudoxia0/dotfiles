@@ -21,10 +21,11 @@
   # thumbnails service
   services.tumbler.enable = true;
 
-  # Configure custom Thunar actions and the bookmarks on the left pane.
+  # Configure custom Thunar actions, custom bookmarks, xfconf XML.
   systemd.tmpfiles.rules = [
     "L+ /home/eudoxia/.config/Thunar/uca.xml - - - - ${dotfilesDir}/modules/thunar/actions.xml"
     "L+ /home/eudoxia/.config/gtk-3.0/bookmarks - - - - ${dotfilesDir}/modules/thunar/bookmarks.txt"
+    "L+ /home/eudoxia/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml - - - - ${dotfilesDir}/modules/thunar/thunar.xml"
   ];
 
   # Other packages needed by Thunar.
@@ -35,7 +36,6 @@
     webp-pixbuf-loader # webp thumbnail
 
     xclip # to implement the "copy path" custom action
-    xfconf # query xfce config
 
     bzip2
     gnutar
@@ -48,15 +48,4 @@
     zip
     zstd
   ];
-
-  # xfconf
-  home-manager.users.eudoxia.xfconf.settings = {
-    thunar = {
-      "hidden-bookmarks" = [
-        "file:///home/eudoxia/Desktop"
-        "recent:///"
-        "computer:///"
-      ];
-    };
-  };
 }
