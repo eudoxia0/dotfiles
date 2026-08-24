@@ -4,7 +4,7 @@ from subprocess import CompletedProcess, Popen, run
 OPTIONS: list[tuple[str, list[str]]] = [
     ("1password", ["1password"]),
     ("baobab", ["baobab"]),
-    ("calibre", ["calibre-scaled"]),
+    ("calibre", ["calibre"]),
     ("chromium", ["chromium-browser"]),
     ("emacs", ["emacs"]),
     ("firefox", ["firefox"]),
