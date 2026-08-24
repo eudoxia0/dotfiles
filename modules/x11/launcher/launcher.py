@@ -7,6 +7,7 @@ OPTIONS: list[tuple[str, list[str]]] = [
     ("calibre", ["calibre-scaled"]),
     ("chromium", ["chromium-browser"]),
     ("emacs", ["emacs"]),
+    ("firefox", ["firefox"]),
     ("font manager", ["font-manager"]),
     ("heroic", ["heroic"]),
     ("libreoffice", ["libreoffice"]),
