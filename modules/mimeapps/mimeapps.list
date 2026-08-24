@@ -1,0 +1,25 @@
+[Default Applications]
+application/epub+zip=koreader.desktop
+application/pdf=org.pwmt.zathura.desktop
+application/postscript=org.pwmt.zathura.desktop
+application/vnd.amazon.ebook=koreader.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=writer.desktop
+application/x-fictionbook+xml=koreader.desktop
+application/x-mobipocket-ebook=koreader.desktop
+application/xml=emacs.desktop
+image/avif=viewnior.desktop
+image/gif=viewnior.desktop
+image/jpeg=viewnior.desktop
+image/png=viewnior.desktop
+image/svg+xml=viewnior.desktop
+image/vnd.djvu=djvulibre-djview4.desktop
+image/vnd.microsoft.icon=viewnior.desktop
+image/webp=viewnior.desktop
+image/x-djvu=djvulibre-djview4.desktop
+image/x-icon=viewnior.desktop
+text/html=firefox.desktop
+text/markdown=emacs.desktop
+text/plain=emacs.desktop
+text/xml=emacs.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop

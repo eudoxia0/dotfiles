@@ -35,7 +35,7 @@
         ./modules/gtk.nix
         ./modules/guile
         ./modules/locale.nix
-        ./modules/mime.nix
+        ./modules/mimeapps
         ./modules/network.nix
         ./modules/nixconf.nix
         ./modules/nushell
