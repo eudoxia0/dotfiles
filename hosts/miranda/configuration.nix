@@ -20,6 +20,9 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
+  services.xserver.dpi = 192;
+  # services.xserver.dpi = 96;
+
   # Enable the GNOME Desktop Environment.
   # services.xserver.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
