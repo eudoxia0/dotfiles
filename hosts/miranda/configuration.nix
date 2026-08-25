@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, dotfilesDir, ... }:
 
 {
   imports =
@@ -38,6 +38,10 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
+  systemd.tmpfiles.rules = [
+    "L+ /etc/sddm.conf.d/hidpi.conf - - - - ${dotfilesDir}/hosts/miranda/sddm-hidpi.conf"
+  ];
 
   system.stateVersion = "26.05"; # DO NOT CHANGE
 
