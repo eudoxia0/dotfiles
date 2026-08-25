@@ -104,7 +104,7 @@
   (string= (system-name) "ismene"))
 
 ;; Font.
-(let ((font "Fira Code-14"))
+(let ((font "Fira Code-12"))
   (set-face-attribute 'default nil :font font)
   (set-face-attribute 'mode-line nil :font font))
 
