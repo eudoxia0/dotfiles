@@ -16,14 +16,6 @@
 
   boot.initrd.luks.devices."luks-b3e5bbdb-0bd6-415a-b46e-9c1de6e288bc".device = "/dev/disk/by-uuid/b3e5bbdb-0bd6-415a-b46e-9c1de6e288bc";
   networking.hostName = "miranda"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-  # Enable networking
-  networking.networkmanager.enable = true;
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
