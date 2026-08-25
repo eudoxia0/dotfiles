@@ -89,19 +89,19 @@
         ./modules/thunar
         ./modules/wallpaper
         # ./modules/webcam.nix
-        # ./modules/x11
-        # ./modules/x11/alacritty
+        ./modules/x11
+        ./modules/x11/alacritty
         # ./modules/x11/bspwm
-        # ./modules/x11/emote
-        # ./modules/x11/espanso
+        ./modules/x11/emote
+        ./modules/x11/espanso
         # ./modules/x11/fvwm
-        # ./modules/x11/launcher
-        # ./modules/x11/polybar
-        # ./modules/x11/redshift
-        # ./modules/x11/stumpwm
-        # ./modules/x11/xcape
-        # ./modules/x11/xcompose
-        # ./modules/x11/xscreensaver
+        ./modules/x11/launcher
+        ./modules/x11/polybar
+        ./modules/x11/redshift
+        ./modules/x11/stumpwm
+        ./modules/x11/xcape
+        ./modules/x11/xcompose
+        ./modules/x11/xscreensaver
       ];
     in
     {
