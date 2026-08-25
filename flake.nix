@@ -84,7 +84,7 @@
         ./modules/sddm.nix
         # ./modules/services.nix
         ./modules/shell.nix
-        # ./modules/ssh.nix
+        ./modules/ssh.nix
         ./modules/syncthing.nix
         ./modules/thunar
         ./modules/wallpaper
