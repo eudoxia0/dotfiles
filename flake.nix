@@ -81,7 +81,7 @@
         # ./modules/perf.nix
         # ./modules/scanner.nix
         ./modules/scripts
-        # ./modules/sddm.nix
+        ./modules/sddm.nix
         # ./modules/services.nix
         ./modules/shell.nix
         # ./modules/ssh.nix
