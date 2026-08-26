@@ -75,7 +75,7 @@ in
     strawberry
     termdown
     tesseract
-    # texliveFull
+    texliveFull
     todoist
     tokei
     transmission_4-gtk
