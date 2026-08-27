@@ -20,13 +20,13 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  # services.xserver.dpi = 192;
-  services.xserver.dpi = 96;
+  services.xserver.dpi = 144;
 
   # Monitor scaling.
   environment.sessionVariables = {
-    GDK_DPI_SCALE = "2";
-    QT_SCALE_FACTOR = "2";
+    GDK_SCALE = "1";
+    GDK_DPI_SCALE = "1";
+    QT_SCALE_FACTOR = "1";
   };
 
   # Enable the GNOME Desktop Environment.
