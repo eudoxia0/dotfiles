@@ -2,19 +2,25 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, dotfilesDir, ... }:
+{
+  config,
+  pkgs,
+  dotfilesDir,
+  ...
+}:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.initrd.luks.devices."luks-b3e5bbdb-0bd6-415a-b46e-9c1de6e288bc".device = "/dev/disk/by-uuid/b3e5bbdb-0bd6-415a-b46e-9c1de6e288bc";
+  boot.initrd.luks.devices."luks-b3e5bbdb-0bd6-415a-b46e-9c1de6e288bc".device =
+    "/dev/disk/by-uuid/b3e5bbdb-0bd6-415a-b46e-9c1de6e288bc";
   networking.hostName = "miranda"; # Define your hostname.
 
   # Enable the X11 windowing system.
