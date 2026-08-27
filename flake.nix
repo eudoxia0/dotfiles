@@ -63,7 +63,7 @@
         ./modules/apps.nix
         ./modules/audio.nix
         ./modules/beets
-        # ./modules/bluetooth.nix
+        ./modules/bluetooth.nix
         ./modules/emacs
         ./modules/eudoxia.nix
         ./modules/fastfetch
@@ -75,7 +75,7 @@
         # ./modules/guile
         ./modules/locale.nix
         # ./modules/mimeapps
-        # ./modules/network.nix
+        ./modules/network.nix
         ./modules/nixconf.nix
         ./modules/nushell
         # ./modules/perf.nix
