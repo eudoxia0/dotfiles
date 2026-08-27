@@ -69,7 +69,7 @@
         ./modules/fastfetch
         ./modules/firefox
         ./modules/font
-        # ./modules/gargoyle
+        ./modules/gargoyle
         ./modules/git
         ./modules/gtk
         # ./modules/guile
