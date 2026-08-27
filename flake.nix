@@ -79,7 +79,7 @@
         ./modules/nixconf.nix
         ./modules/nushell
         # ./modules/perf.nix
-        # ./modules/scanner.nix
+        ./modules/scanner.nix
         ./modules/scripts
         ./modules/sddm.nix
         # ./modules/services.nix
