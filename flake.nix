@@ -27,7 +27,6 @@
         ./modules/gargoyle
         ./modules/git
         ./modules/gtk
-        ./modules/guile
         ./modules/locale.nix
         ./modules/mimeapps
         ./modules/network.nix
@@ -72,7 +71,6 @@
         ./modules/gargoyle
         ./modules/git
         ./modules/gtk
-        # ./modules/guile
         ./modules/locale.nix
         ./modules/mimeapps
         ./modules/network.nix
