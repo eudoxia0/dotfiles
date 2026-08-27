@@ -54,6 +54,11 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  environment.systemPackages = with pkgs; [
+    acpi
+    bluetui
+  ];
+
   # Power management.
   services.power-profiles-daemon.enable = false;
   services.auto-cpufreq.enable = true;
