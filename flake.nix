@@ -74,7 +74,7 @@
         ./modules/gtk
         # ./modules/guile
         ./modules/locale.nix
-        # ./modules/mimeapps
+        ./modules/mimeapps
         ./modules/network.nix
         ./modules/nixconf.nix
         ./modules/nushell
