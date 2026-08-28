@@ -60,5 +60,4 @@
   ];
 
   system.stateVersion = "26.05"; # DO NOT CHANGE
-
 }
