@@ -60,6 +60,7 @@
   ];
 
   # Power management.
+  services.thermald.enable = true;
   services.power-profiles-daemon.enable = false;
   services.auto-cpufreq.enable = true;
   services.auto-cpufreq.settings = {
@@ -75,6 +76,7 @@
 
   systemd.tmpfiles.rules = [
     "L+ /etc/sddm.conf.d/hidpi.conf - - - - ${dotfilesDir}/hosts/miranda/sddm-hidpi.conf"
+    "L+ /home/eudoxia/.config/polybar/config.ini - - - - ${dotfilesDir}/hosts/miranda/polybar-miranda.ini"
   ];
 
   system.stateVersion = "26.05"; # DO NOT CHANGE

@@ -37,6 +37,7 @@ in
 
   systemd.tmpfiles.rules = [
     "L+ /etc/sddm.conf.d/hidpi.conf - - - - ${dotfilesDir}/hosts/rostam/sddm-hidpi.conf"
+    "L+ /home/eudoxia/.config/polybar/config.ini - - - - ${dotfilesDir}/hosts/rostam/polybar-rostam.ini"
   ];
 
   # X11 DPI. Values: 96, 144, 192.

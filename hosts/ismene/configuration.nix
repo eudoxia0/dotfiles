@@ -31,6 +31,10 @@ in
     };
   };
 
+  systemd.tmpfiles.rules = [
+    "L+ /home/eudoxia/.config/polybar/config.ini - - - - ${dotfilesDir}/hosts/ismene/polybar-ismene.ini"
+  ];
+
   system.stateVersion = "25.11"; # DO NOT CHANGE
   nixpkgs.config.allowUnfree = true;
   boot.loader.systemd-boot.enable = true;
