@@ -6,9 +6,7 @@
 }:
 
 {
-  environment.systemPackages = with pkgs; [
-    acpi
-  ];
+  environment.systemPackages = [ pkgs.acpi ];
 
   powerManagement.enable = true;
   powerManagement.cpuFreqGovernor = "performance";

@@ -6,9 +6,7 @@
 }:
 
 {
-  environment.systemPackages = with pkgs; [
-    acpi
-  ];
+  environment.systemPackages = [ pkgs.acpi ];
 
   services.thermald.enable = true;
   services.power-profiles-daemon.enable = false;
