@@ -67,6 +67,7 @@
             ./hosts/rostam/hardware-configuration.nix
             ./modules/brightness-desktop.nix
             ./modules/perf.nix
+            ./modules/power-desktop.nix
           ];
         };
 
@@ -78,6 +79,7 @@
             ./hosts/ismene/hardware-configuration.nix
             ./modules/brightness-laptop.nix
             ./modules/perf.nix
+            ./modules/power-laptop.nix
           ];
         };
 
@@ -88,6 +90,7 @@
             ./hosts/miranda/configuration.nix
             ./hosts/miranda/hardware-configuration.nix
             ./modules/brightness-laptop.nix
+            ./modules/power-laptop.nix
           ];
         };
       };

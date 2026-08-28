@@ -31,5 +31,6 @@ in
     disconnect-headphones
     connect-earbuds
     disconnect-earbuds
+    pkgs.bluetui
   ];
 }

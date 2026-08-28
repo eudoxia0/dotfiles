@@ -11,26 +11,6 @@ in
   # Keep Intel microcode up to date.
   hardware.cpu.intel.updateMicrocode = true;
 
-  environment.systemPackages = with pkgs; [
-    acpi
-    bluetui
-  ];
-
-  services.thermald.enable = true;
-
-  # Power management.
-  services.auto-cpufreq.enable = true;
-  services.auto-cpufreq.settings = {
-    battery = {
-      governor = "powersave";
-      turbo = "never";
-    };
-    charger = {
-      governor = "performance";
-      turbo = "auto";
-    };
-  };
-
   systemd.tmpfiles.rules = [
     "L+ /home/eudoxia/.config/polybar/config.ini - - - - ${dotfilesDir}/hosts/ismene/polybar-ismene.ini"
   ];
