@@ -23,9 +23,6 @@
     "/dev/disk/by-uuid/b3e5bbdb-0bd6-415a-b46e-9c1de6e288bc";
   networking.hostName = "miranda"; # Define your hostname.
 
-  # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
   services.xserver.dpi = 144;
 
   # Monitor scaling.
@@ -47,9 +44,6 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
-
-  # Install firefox.
-  programs.firefox.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
