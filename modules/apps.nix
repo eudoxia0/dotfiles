@@ -77,6 +77,7 @@ in
     tesseract
     texliveFull
     todoist
+    todoist-electron
     tokei
     transmission_4-gtk
     tree
