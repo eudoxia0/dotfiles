@@ -47,7 +47,7 @@ in
     # Scale GTK font sizes. Real number.
     GDK_DPI_SCALE = "0.5";
     # Scale GT apps. Real number.
-    # QT_SCALE_FACTOR = "1.5";
+    QT_SCALE_FACTOR = "1.5";
   };
 
   services.displayManager.ly.settings.box_title = "rostam";
