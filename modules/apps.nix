@@ -28,7 +28,6 @@ in
     djvu2pdf
     evince
     fd
-    fheroes2
     file
     file-roller
     ghostscript
