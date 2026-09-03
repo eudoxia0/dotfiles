@@ -11,7 +11,6 @@ OPTIONS: list[tuple[str, list[str]]] = [
     ("folder: dotfiles", ["zeditor", "/home/eudoxia/root/1-workspace/dotfiles"]),
     ("folder: flashcards", ["zeditor", "/home/eudoxia/root/1-workspace/flashcards"]),
     ("font manager", ["font-manager"]),
-    ("heroic", ["heroic"]),
     ("libreoffice", ["libreoffice"]),
     ("lock", ["xscreensaver-command", "-lock"]),
     ("music player", ["strawberry"]),
