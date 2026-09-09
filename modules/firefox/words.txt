@@ -65,6 +65,7 @@ Weyl
 Yudkowsky
 Zindell
 accelerationist
+accelerationists
 actionability
 allocator
 antisymmetry
