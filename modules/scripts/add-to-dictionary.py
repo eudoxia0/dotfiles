@@ -20,7 +20,7 @@ PATH: Path = (
 def main():
     ws: set[str] = load_words()
     ws.add(read_word())
-    write_words(sorted(ws))
+    write_words(sorted(ws, key=lambda s: s.lower()))
 
 
 def load_words() -> set[str]:
