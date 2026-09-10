@@ -35,8 +35,8 @@ def load_words() -> set[str]:
 
 def write_words(ws: list[str]):
     with open(PATH, "w") as f:
-        f.write("\n".join(ws))
-        f.write("\n")
+        _ = f.write("\n".join(ws))
+        _ = f.write("\n")
 
 
 def read_word() -> str:
