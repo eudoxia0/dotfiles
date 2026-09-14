@@ -28,6 +28,7 @@ cloneable
 CloudFormation
 CloudWatch
 cloze
+coercively
 combinatorial
 conformational
 constructivism
@@ -78,12 +79,13 @@ Herbrand
 hojicha
 homeworld
 homomorphism
+hoopoe
 hypersomnia
 IaC
 IAM
 Innsmouth
-intuitionism
 Intuitionism
+intuitionism
 jhana
 journalling
 KaTeX
@@ -163,6 +165,7 @@ TOML
 transhuman
 transhumanism
 transhumanist
+trigeminal
 Uber
 uncountably
 upscaling
