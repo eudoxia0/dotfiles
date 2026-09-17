@@ -51,6 +51,7 @@
   systemd.tmpfiles.rules = [
     "L+ /etc/sddm.conf.d/hidpi.conf - - - - ${dotfilesDir}/hosts/miranda/sddm-hidpi.conf"
     "L+ /home/eudoxia/.config/polybar/config.ini - - - - ${dotfilesDir}/hosts/miranda/polybar-miranda.ini"
+    "L+ /home/eudoxia/.config/sway/extra/miranda - - - - ${dotfilesDir}/hosts/miranda/sway.conf"
   ];
 
   system.stateVersion = "26.05"; # DO NOT CHANGE

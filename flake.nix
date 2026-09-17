@@ -78,7 +78,7 @@
           specialArgs = { inherit dotfilesDir; };
           modules =
             shared
-            ++ x11
+            ++ wayland
             ++ [
               ./hosts/rostam/configuration.nix
               ./hosts/rostam/hardware-configuration.nix
