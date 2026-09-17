@@ -15,7 +15,6 @@
 
   # Enable the Espanso service.
   services.espanso.enable = true;
-  services.espanso.package = pkgs.espanso-wayland;
 
   # Copy the config.
   systemd.tmpfiles.rules = [
