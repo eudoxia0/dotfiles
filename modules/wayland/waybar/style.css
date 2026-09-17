@@ -1,15 +1,15 @@
 * {
-    font-family: "Noto Sans Mono";
+    font-family: "Noto Sans Mono", sans-serif;
     font-size: 15px;
 }
 
 window#waybar {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: black;
+    color: white;
 }
 
 #workspaces button {
-    color: #ffffff;
+    color: white;
     background-color: transparent;
     padding: 0 5px;
     border: none;
@@ -21,7 +21,7 @@ window#waybar {
 }
 
 #workspaces button.focused {
-    background-color: #333333;
+    background-color: #333;
 }
 
 #workspaces button:hover {
@@ -33,5 +33,5 @@ window#waybar {
 #wireplumber,
 #battery {
     padding: 0 10px;
-    border-left: 1px solid #ffffff;
+    border-left: 1px solid white;
 }
