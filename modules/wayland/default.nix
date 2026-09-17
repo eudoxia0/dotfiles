@@ -15,5 +15,6 @@
     wlsunset
     wdisplays
     swaylock
+    sway-contrib.grimshot
   ];
 }
