@@ -1,14 +1,17 @@
 * {
     font-family: "Noto Sans Mono", sans-serif;
-    font-size: 15px;
-    background-color: black;
+    font-size: 16px;
     color: white;
+}
+
+window {
+    background-color: black;
 }
 
 #workspaces button {
     color: white;
     background-color: transparent;
-    padding: 0 5px;
+    padding: 0 8px;
     border: none;
     border-radius: 0;
 }
@@ -18,7 +21,7 @@
 }
 
 #workspaces button.focused {
-    background-color: #333;
+    background-color: #444;
 }
 
 #workspaces button:hover {
