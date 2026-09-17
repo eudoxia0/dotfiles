@@ -6,7 +6,7 @@
 
 let
   todoist = pkgs.writeShellScriptBin "todoist" ''
-    TZ=Australia/Sydney exec ${pkgs.todoist-electron}/bin/todoist-electron "$@"
+    TZ=Australia/Sydney exec ${pkgs.todoist-electron}/bin/todoist-electron "$@" --ozone-platform-hint=auto
   '';
 in
 {

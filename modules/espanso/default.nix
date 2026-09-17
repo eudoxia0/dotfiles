@@ -15,11 +15,10 @@
 
   # Enable the Espanso service.
   services.espanso.enable = true;
-  services.espanso.package = pkgs.espanso;
 
   # Copy the config.
   systemd.tmpfiles.rules = [
-    "L+ /home/eudoxia/.config/espanso/config/default.yml - - - - ${dotfilesDir}/modules/x11/espanso/config.yaml"
-    "L+ /home/eudoxia/.config/espanso/match/base.yml - - - - ${dotfilesDir}/modules/x11/espanso/espanso.yaml"
+    "L+ /home/eudoxia/.config/espanso/config/default.yml - - - - ${dotfilesDir}/modules/espanso/config.yaml"
+    "L+ /home/eudoxia/.config/espanso/match/base.yml - - - - ${dotfilesDir}/modules/espanso/espanso.yaml"
   ];
 }
