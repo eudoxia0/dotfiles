@@ -20,6 +20,7 @@
         ./modules/beets
         ./modules/bluetooth.nix
         ./modules/emacs
+        ./modules/espanso
         ./modules/eudoxia.nix
         ./modules/fastfetch
         ./modules/firefox
@@ -34,7 +35,6 @@
         ./modules/nushell
         ./modules/scanner.nix
         ./modules/scripts
-        ./modules/sddm.nix
         ./modules/services.nix
         ./modules/shell.nix
         ./modules/ssh.nix
@@ -42,11 +42,16 @@
         ./modules/thunar
         ./modules/wallpaper
         ./modules/webcam.nix
+
+      ];
+
+      x11 = [
+        ./modules/espanso/x11.nix
+        ./modules/sddm.nix
         ./modules/x11
         ./modules/x11/alacritty
         ./modules/x11/bspwm
         ./modules/x11/emote
-        ./modules/x11/espanso
         ./modules/x11/fvwm
         ./modules/x11/launcher
         ./modules/x11/polybar
@@ -56,42 +61,59 @@
         ./modules/x11/xcompose
         ./modules/x11/xscreensaver
       ];
+
+      wayland = [
+        ./modules/espanso/wayland.nix
+        ./modules/gdm.nix
+        ./modules/wayland
+        ./modules/wayland/espanso
+        ./modules/wayland/sway
+      ];
     in
     {
       nixosConfigurations = {
         rostam = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           specialArgs = { inherit dotfilesDir; };
-          modules = shared ++ [
-            ./hosts/rostam/configuration.nix
-            ./hosts/rostam/hardware-configuration.nix
-            ./modules/brightness-desktop.nix
-            ./modules/perf.nix
-            ./modules/power-desktop.nix
-          ];
+          modules =
+            shared
+            ++ x11
+            ++ [
+              ./hosts/rostam/configuration.nix
+              ./hosts/rostam/hardware-configuration.nix
+              ./modules/brightness-desktop.nix
+              ./modules/perf.nix
+              ./modules/power-desktop.nix
+            ];
         };
 
         ismene = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           specialArgs = { inherit dotfilesDir; };
-          modules = shared ++ [
-            ./hosts/ismene/configuration.nix
-            ./hosts/ismene/hardware-configuration.nix
-            ./modules/brightness-laptop.nix
-            ./modules/perf.nix
-            ./modules/power-laptop.nix
-          ];
+          modules =
+            shared
+            ++ x11
+            ++ [
+              ./hosts/ismene/configuration.nix
+              ./hosts/ismene/hardware-configuration.nix
+              ./modules/brightness-laptop.nix
+              ./modules/perf.nix
+              ./modules/power-laptop.nix
+            ];
         };
 
         miranda = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           specialArgs = { inherit dotfilesDir; };
-          modules = shared ++ [
-            ./hosts/miranda/configuration.nix
-            ./hosts/miranda/hardware-configuration.nix
-            ./modules/brightness-laptop.nix
-            ./modules/power-laptop.nix
-          ];
+          modules =
+            shared
+            ++ wayland
+            ++ [
+              ./hosts/miranda/configuration.nix
+              ./hosts/miranda/hardware-configuration.nix
+              ./modules/brightness-laptop.nix
+              ./modules/power-laptop.nix
+            ];
         };
       };
     };
