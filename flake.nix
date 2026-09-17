@@ -68,6 +68,7 @@
         ./modules/wayland
         ./modules/wayland/foot
         ./modules/wayland/sway
+        ./modules/wayland/waybar
       ];
     in
     {
