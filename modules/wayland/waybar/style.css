@@ -1,9 +1,6 @@
 * {
     font-family: "Noto Sans Mono", sans-serif;
     font-size: 15px;
-}
-
-window#waybar {
     background-color: black;
     color: white;
 }
