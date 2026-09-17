@@ -12,7 +12,6 @@
     grim
     rofimoji
     wl-clipboard
-    foot
     wlsunset
     wdisplays
     swaylock

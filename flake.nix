@@ -66,6 +66,7 @@
         ./modules/espanso/wayland.nix
         ./modules/gdm.nix
         ./modules/wayland
+        ./modules/wayland/foot
         ./modules/wayland/sway
       ];
     in
