@@ -4,6 +4,28 @@
 ;; (setq use-package-compute-statistics t)
 
 ;;;
+;;; Package Management
+;;;
+
+(require 'package)
+
+(setq package-archives
+      '(("gnu"    . "https://elpa.gnu.org/packages/")
+        ("nongnu" . "https://elpa.nongnu.org/nongnu/")
+        ("melpa"  . "https://melpa.org/packages/")))
+
+(package-initialize)
+
+(unless package-archive-contents
+  (package-refresh-contents))
+
+(require 'use-package)
+
+;; Automatically install any package referenced by a `use-package' form that
+;; isn't already installed.
+(setq use-package-always-ensure t)
+
+;;;
 ;;; General
 ;;;
 
@@ -123,6 +145,15 @@
 ;;;
 
 (require 'cl-lib)
+
+;; Theme packages. Installed here (rather than required) so `load-theme' can
+;; find them, since some of the themes below are built into Emacs.
+(use-package kaolin-themes)
+(use-package moe-theme)
+(use-package nano-theme)
+(use-package sublime-themes)
+(use-package zenburn-theme)
+(use-package zerodark-theme)
 
 (defvar my-themes
   '(adwaita
@@ -465,6 +496,30 @@
   :config
   (setq web-mode-engines-alist
         '(("django" . "\\.jinja2\\'"))))
+
+;;;
+;;; Other Modes
+;;;
+
+;; These packages require no special configuration.
+
+(use-package fvwm-mode)
+(use-package graphviz-dot-mode)
+(use-package i3wm-config-mode)
+(use-package just-mode)
+(use-package lsp-mode)
+(use-package lsp-ui)
+(use-package magit)
+(use-package nix-mode)
+(use-package nushell-mode)
+(use-package olivetti)
+(use-package ripgrep)
+(use-package rust-mode)
+(use-package sly)
+(use-package typst-ts-mode)
+(use-package unfill)
+(use-package vue-mode)
+(use-package yaml-mode)
 
 ;;;
 ;;; Quick Commit
