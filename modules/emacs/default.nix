@@ -7,26 +7,9 @@
 }:
 
 let
-  customPackages = {
-    inform7-mode = pkgs.emacsPackages.trivialBuild {
-      pname = "inform7-mode";
-      version = "unstable";
-      src = pkgs.fetchFromGitHub {
-        owner = "alexispurslane";
-        repo = "inform7-mode";
-        rev = "f99e534768c816ec038f34126f88d816c2f7d9ff";
-        sha256 = "sha256-r9Zzd8Ro3p+Bae11bf1WIeVWkbmg17RKLDqG4UcFT1o=";
-      };
-      packageRequires = with pkgs.emacsPackages; [
-        s
-      ];
-    };
-  };
-
   emacs-packages = with pkgs.emacsPackages; [
     consult
     cabal-mode
-    customPackages.inform7-mode
     embark
     fvwm-mode
     graphviz-dot-mode
