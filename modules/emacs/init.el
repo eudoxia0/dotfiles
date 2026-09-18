@@ -411,6 +411,7 @@
 ;;;
 
 (use-package nxml-mode
+  :ensure nil
   :config
   (defun e/in-start-tag-p ()
     ;; Check that we're at the end of a start tag. From the source code of
@@ -530,3 +531,15 @@
     (message "Committed.")))
 
 (keymap-global-set "C-c ." 'quick-commit)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:background nil)))))
