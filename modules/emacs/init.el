@@ -401,14 +401,6 @@
 (use-package inform7)
 
 ;;;
-;;; Mode: XCompose
-;;;
-
-(use-package xcompose-mode
-  :mode (("\\.XCompose\\'" . xcompose-mode)
-         ("\\.xcm\\'" . xcompose-mode)))
-
-;;;
 ;;; Mode: Lean4
 ;;;
 
