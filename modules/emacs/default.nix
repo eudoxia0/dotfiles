@@ -8,18 +8,6 @@
 
 let
   customPackages = {
-    cabal-mode = pkgs.emacsPackages.trivialBuild {
-      pname = "cabal-mode";
-      version = "unstable";
-      src = pkgs.fetchFromGitHub {
-        owner = "webdevred";
-        repo = "cabal-mode";
-        rev = "083a777e09bdb5a8d8d69862d44f13078664091f";
-        sha256 = "sha256-c5dUsnEx+0uXFzxQLMnhiP8Gvwedzvq0F0BA+beBkmI=";
-      };
-      packageRequires = [ ];
-    };
-
     inform7-mode = pkgs.emacsPackages.trivialBuild {
       pname = "inform7-mode";
       version = "unstable";
@@ -49,7 +37,7 @@ let
   emacs-packages = with pkgs.emacsPackages; [
     # customPackages.xcompose-mode # TODO: why does this get stuck building forever?
     consult
-    customPackages.cabal-mode
+    cabal-mode
     customPackages.inform7-mode
     embark
     fvwm-mode
