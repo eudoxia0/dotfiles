@@ -21,21 +21,9 @@ let
         s
       ];
     };
-
-    xcompose-mode = pkgs.emacsPackages.trivialBuild {
-      pname = "xcompose-mode";
-      version = "unstable";
-      src = pkgs.fetchgit {
-        url = "git://git.thomasvoss.com/xcompose-mode.git";
-        rev = "aeb03f9144e39c882ca6c5c61b9ed1300a2a12ee";
-        sha256 = "sha256-lPapwSJKG+noINmT1G5jNyUZs5VykMOSKJIbQxBWLEA=";
-      };
-      packageRequires = [ ];
-    };
   };
 
   emacs-packages = with pkgs.emacsPackages; [
-    # customPackages.xcompose-mode # TODO: why does this get stuck building forever?
     consult
     cabal-mode
     customPackages.inform7-mode
