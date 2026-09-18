@@ -46,6 +46,7 @@
       ];
 
       x11 = [
+        ./modules/emacs/x11.nix
         ./modules/espanso/x11.nix
         ./modules/sddm.nix
         ./modules/x11
@@ -63,6 +64,7 @@
       ];
 
       wayland = [
+        ./modules/emacs/wayland.nix
         ./modules/espanso/wayland.nix
         ./modules/gdm.nix
         ./modules/wayland
