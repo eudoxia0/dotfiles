@@ -8,8 +8,8 @@
 
 let
   emacs-packages = with pkgs.emacsPackages; [
-    consult
     cabal-mode
+    consult
     embark
     fvwm-mode
     graphviz-dot-mode
