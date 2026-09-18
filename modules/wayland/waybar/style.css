@@ -13,19 +13,18 @@ window {
     background-color: transparent;
     padding: 0 8px;
     border: none;
-    border-radius: 0;
 }
 
 #workspaces button:not(.empty) {
     font-weight: bold;
 }
 
-#workspaces button.focused {
-    background-color: #444;
-}
-
 #workspaces button:hover {
     background: black;
+}
+
+#workspaces button.focused {
+    background-color: #444;
 }
 
 #clock,
