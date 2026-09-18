@@ -20,19 +20,6 @@ let
       packageRequires = [ ];
     };
 
-    eat = pkgs.emacsPackages.trivialBuild {
-      pname = "eat";
-      version = "unstable";
-      src = pkgs.fetchgit {
-        url = "https://codeberg.org/akib/emacs-eat.git";
-        rev = "c8d54d649872bfe7b2b9f49ae5c2addbf12d3b99";
-        sha256 = "sha256-9xG2rMlaMFY77JzUQ3JFrc7XKILZSL8TbP/BkzvBvMk=";
-      };
-      packageRequires = with pkgs.emacsPackages; [
-        compat
-      ];
-    };
-
     inform7-mode = pkgs.emacsPackages.trivialBuild {
       pname = "inform7-mode";
       version = "unstable";
@@ -63,7 +50,6 @@ let
     # customPackages.xcompose-mode # TODO: why does this get stuck building forever?
     consult
     customPackages.cabal-mode
-    customPackages.eat
     customPackages.inform7-mode
     embark
     fvwm-mode
