@@ -16,6 +16,7 @@
     default = {
       ids = [
         "*"
+        "-1234:5678:*"
       ];
       settings = {
         main = {
