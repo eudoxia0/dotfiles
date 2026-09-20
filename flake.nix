@@ -69,6 +69,7 @@
         ./modules/gdm.nix
         ./modules/wayland
         ./modules/wayland/foot
+        ./modules/wayland/keyd
         ./modules/wayland/sway
         ./modules/wayland/waybar
       ];
