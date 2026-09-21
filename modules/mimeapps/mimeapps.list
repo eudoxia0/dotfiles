@@ -2,10 +2,7 @@
 application/epub+zip=org.pwmt.zathura.desktop
 application/pdf=org.pwmt.zathura.desktop
 application/postscript=org.pwmt.zathura.desktop
-application/vnd.amazon.ebook=koreader.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=writer.desktop
-application/x-fictionbook+xml=koreader.desktop
-application/x-mobipocket-ebook=koreader.desktop
 application/xhtml+xml=firefox.desktop
 application/xml=emacs.desktop
 image/avif=viewnior.desktop
