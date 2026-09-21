@@ -38,8 +38,6 @@ in
     "L+ /home/eudoxia/.config/sway/extra/rostam - - - - ${dotfilesDir}/hosts/rostam/sway.conf"
   ];
 
-  services.displayManager.ly.settings.box_title = "rostam";
-
   system.stateVersion = "25.05"; # DO NOT CHANGE
   nixpkgs.config.allowUnfree = true;
   boot.loader.systemd-boot.enable = true;
