@@ -22,6 +22,7 @@ bupropion
 catastrophizing
 ChatGPT
 checkpointing
+chibi
 CLI
 ClickOps
 cloneable
@@ -84,8 +85,8 @@ hypersomnia
 IaC
 IAM
 Innsmouth
-Intuitionism
 intuitionism
+Intuitionism
 jhana
 journalling
 KaTeX
