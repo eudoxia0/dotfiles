@@ -1,11 +1,25 @@
 * {
-    font-family: "Noto Sans Mono", sans-serif;
-    font-size: 16px;
     color: white;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 window {
     background-color: black;
+}
+
+#workspaces {
+    font-family: "TeX Gyre Termes", serif;
+    font-size: 18px;
+}
+
+#clock,
+#tray,
+#wireplumber,
+#battery {
+    font-family: "U001", sans-serif;
+    font-size: 14px;
 }
 
 #workspaces button {
