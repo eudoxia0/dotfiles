@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  dotfilesDir,
   ...
 }:
 
@@ -17,4 +18,10 @@
     # Scale GT apps. Real number.
     QT_SCALE_FACTOR = "2";
   };
+
+
+
+  systemd.tmpfiles.rules = [
+    "L+ /home/eudoxia/.config/polybar/config.ini - - - - ${dotfilesDir}/hosts/rostam/polybar-rostam.ini"
+  ];
 }
