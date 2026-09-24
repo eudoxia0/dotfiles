@@ -116,6 +116,7 @@
             ++ [
               ./hosts/miranda/configuration.nix
               ./hosts/miranda/hardware-configuration.nix
+              ./hosts/miranda/wayland.nix
               ./modules/brightness-laptop.nix
               ./modules/power-laptop.nix
             ];

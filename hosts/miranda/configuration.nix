@@ -23,24 +23,8 @@
     "/dev/disk/by-uuid/b3e5bbdb-0bd6-415a-b46e-9c1de6e288bc";
   networking.hostName = "miranda"; # Define your hostname.
 
-  services.xserver.dpi = 144;
-
-  # Monitor scaling.
-  environment.sessionVariables = {
-    GDK_SCALE = "1";
-    GDK_DPI_SCALE = "1";
-    QT_SCALE_FACTOR = "1";
-  };
-
   # Enable the GNOME Desktop Environment.
-  # services.xserver.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
-
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -51,7 +35,6 @@
   systemd.tmpfiles.rules = [
     "L+ /etc/sddm.conf.d/hidpi.conf - - - - ${dotfilesDir}/hosts/miranda/sddm-hidpi.conf"
     "L+ /home/eudoxia/.config/polybar/config.ini - - - - ${dotfilesDir}/hosts/miranda/polybar-miranda.ini"
-    "L+ /home/eudoxia/.config/sway/extra/miranda - - - - ${dotfilesDir}/hosts/miranda/sway.conf"
   ];
 
   system.stateVersion = "26.05"; # DO NOT CHANGE
