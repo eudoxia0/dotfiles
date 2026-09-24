@@ -66,8 +66,7 @@
       wayland = [
         ./modules/emacs/wayland.nix
         ./modules/espanso/wayland.nix
-        ./modules/sddm.nix
-        ./modules/sddm-wayland.nix
+        ./modules/gdm.nix
         ./modules/wayland
         ./modules/wayland/foot
         ./modules/wayland/keyd
