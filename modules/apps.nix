@@ -46,6 +46,7 @@ in
     jq
     just
     keepassxc
+    killall
     libheif
     libreoffice
     libxml2 # xmllint
