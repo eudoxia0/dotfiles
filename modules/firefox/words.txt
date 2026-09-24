@@ -40,6 +40,7 @@ definability
 denialism
 desaturate
 DevOps
+discretization
 discretize
 disempower
 disempowerment
@@ -47,8 +48,8 @@ disjunction
 DM
 Dockerfile
 dreamt
-dually
 Dually
+dually
 dysautonomia
 ECR
 ECS
