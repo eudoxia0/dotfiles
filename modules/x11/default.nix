@@ -13,6 +13,7 @@
     variant = "";
     options = "compose:ralt";
   };
+  console.useXkbConfig = true;
   users.users.eudoxia.packages = with pkgs; [
     arandr
     dmenu
