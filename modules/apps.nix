@@ -6,7 +6,11 @@
 
 let
   todoist = pkgs.writeShellScriptBin "todoist" ''
-    TZ=Australia/Sydney exec ${pkgs.todoist-electron}/bin/todoist-electron "$@" --ozone-platform-hint=auto
+    TZ=Australia/Sydney exec ${pkgs.todoist-electron}/bin/todoist-electron "$@"
+  '';
+
+  todoist-wayland = pkgs.writeShellScriptBin "todoist-wayland" ''
+    TZ=Australia/Sydney exec ${pkgs.todoist-electron}/bin/todoist-electron "$@" --enable-features=UseOzonePlatform --ozone-platform=wayland
   '';
 in
 {
@@ -78,6 +82,7 @@ in
     texliveFull
     todoist
     todoist-electron
+    todoist-wayland
     tokei
     transmission_4-gtk
     tree
