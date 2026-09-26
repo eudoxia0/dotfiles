@@ -5,7 +5,7 @@
 }:
 
 let
-  todoist = pkgs.writeShellScriptBin "todoist" ''
+  todoist-x11 = pkgs.writeShellScriptBin "todoist-x11" ''
     TZ=Australia/Sydney exec ${pkgs.todoist-electron}/bin/todoist-electron "$@"
   '';
 
@@ -80,9 +80,9 @@ in
     termdown
     tesseract
     texliveFull
-    todoist
     todoist-electron
     todoist-wayland
+    todoist-x11
     tokei
     transmission_4-gtk
     tree
