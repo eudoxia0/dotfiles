@@ -80,7 +80,6 @@ in
     termdown
     tesseract
     texliveFull
-    todoist-electron
     todoist-wayland
     todoist-x11
     tokei
