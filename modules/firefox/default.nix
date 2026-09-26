@@ -52,6 +52,9 @@
 
     # Middle click to scroll
     "general.autoScroll" = true;
+
+    # Enable fractional scaling on Wayland.
+    "widget.wayland.fractional-scale.enabled" = true;
   };
 
   # about:policies
