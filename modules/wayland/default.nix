@@ -17,4 +17,7 @@
     swaylock
     sway-contrib.grimshot
   ];
+
+  # Make Electron apps use Wayland.
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 }
