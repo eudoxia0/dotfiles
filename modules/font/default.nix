@@ -29,18 +29,19 @@
     u001-font
   ];
 
-  # fontconfig settings
-  fonts.fontconfig = {
-    antialias = true;
-    hinting = {
-      enable = true;
-      style = "slight";
-    };
-    subpixel = {
-      rgba = "rgb";
-      lcdfilter = "default";
-    };
-  };
+  # Render fonts with anti-aliasing.
+  fonts.fontconfig.antialias = true;
+
+  # Font hinting tries to align the text outlines to the pixel grid,
+  # to make text appear crisper. This is most useful in low-resolution
+  # displays, so we can turn it off.
+  fonts.fontconfig.hinting.enable = false;
+
+  # Subpixel rendering exploits the physical layout of LCD screens to
+  # make text look sharper. Turn it off when doing fractional display
+  # scaling.
+  fonts.fontconfig.subpixel.rgba = "none";
+  fonts.fontconfig.subpixel.lcdfilter = "none";
 
   # font-related programs.
   users.users.eudoxia.packages = with pkgs; [
