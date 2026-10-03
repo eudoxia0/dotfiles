@@ -17,5 +17,5 @@
     hide_version_string = true;
   };
 
-  security.pam.services.gdm.enableGnomeKeyring = true;
+  security.pam.services.ly.enableGnomeKeyring = true;
 }
