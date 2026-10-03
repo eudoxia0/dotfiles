@@ -48,7 +48,6 @@
       x11 = [
         ./modules/emacs/x11.nix
         ./modules/espanso/x11.nix
-        ./modules/sddm.nix
         ./modules/x11
         ./modules/x11/alacritty
         ./modules/x11/bspwm

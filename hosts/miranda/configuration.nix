@@ -33,7 +33,6 @@
   nixpkgs.config.allowUnfree = true;
 
   systemd.tmpfiles.rules = [
-    "L+ /etc/sddm.conf.d/hidpi.conf - - - - ${dotfilesDir}/hosts/miranda/sddm-hidpi.conf"
     "L+ /home/eudoxia/.config/polybar/config.ini - - - - ${dotfilesDir}/hosts/miranda/polybar-miranda.ini"
   ];
 
