@@ -17,7 +17,8 @@ window {
 #clock,
 #tray,
 #wireplumber,
-#battery {
+#battery,
+#backlight {
     font-family: "Noto Sans Mono", sans-serif;
     font-size: 14px;
 }
@@ -44,7 +45,8 @@ window {
 #clock,
 #tray,
 #wireplumber,
-#battery {
+#battery,
+#backlight {
     padding: 0 10px;
     border-left: 1px solid white;
 }
