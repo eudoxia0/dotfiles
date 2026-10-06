@@ -9,6 +9,7 @@ Anki
 Anthropic
 antisymmetry
 aripiprazole
+Aristotelianism
 ASI
 AST
 AUD
@@ -19,6 +20,7 @@ Borretti
 bottlenecked
 Brouwer
 bupropion
+capacitive
 catastrophizing
 ChatGPT
 checkpointing
@@ -53,6 +55,7 @@ dually
 dysautonomia
 ECR
 ECS
+emotivism
 ensouled
 epitaxy
 equational
