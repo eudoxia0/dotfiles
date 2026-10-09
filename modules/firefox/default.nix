@@ -42,7 +42,7 @@
 
     # Big-ass scrollbar.
     "widget.non-native-theme.scrollbar.style" = 4;
-    "widget.non-native-theme.scrollbar.size.override" = 24;
+    "widget.non-native-theme.scrollbar.size.override" = 12;
 
     # Always show the scrollbar.
     "widget.gtk.overlay-scrollbars.enabled" = false;
