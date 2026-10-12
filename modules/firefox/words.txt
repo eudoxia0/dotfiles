@@ -20,6 +20,7 @@ Borretti
 bottlenecked
 Brouwer
 bupropion
+Caltrain
 capacitive
 catastrophizing
 ChatGPT
@@ -50,8 +51,8 @@ disjunction
 DM
 Dockerfile
 dreamt
-Dually
 dually
+Dually
 dysautonomia
 ECR
 ECS
@@ -89,8 +90,8 @@ hypersomnia
 IaC
 IAM
 Innsmouth
-intuitionism
 Intuitionism
+intuitionism
 jhana
 journalling
 KaTeX
@@ -109,8 +110,8 @@ Marrickville
 matcha
 Matrioshka
 melatonin
-Methylphenidate
 methylphenidate
+Methylphenidate
 monoamine
 monomorphization
 monomorphized
