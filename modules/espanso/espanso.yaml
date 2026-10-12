@@ -56,6 +56,7 @@ matches:
   - { trigger: ":log", replace: "📝" }
   - { trigger: ":lotion", replace: "🧴" }
   - { trigger: ":mag", replace: "🔍" }
+  - { trigger: ":map", replace: "🗺️" }
   - { trigger: ":milk", replace: "🥛" }
   - { trigger: ":monitor", replace: "🖥️" }
   - { trigger: ":muscle", replace: "💪" }
