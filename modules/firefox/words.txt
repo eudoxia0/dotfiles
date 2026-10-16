@@ -36,6 +36,7 @@ coercively
 combinatorial
 conformational
 constructivism
+credentialism
 deanonymizing
 declaratively
 deduplication
@@ -90,8 +91,8 @@ hypersomnia
 IaC
 IAM
 Innsmouth
-Intuitionism
 intuitionism
+Intuitionism
 jhana
 journalling
 KaTeX
@@ -177,6 +178,7 @@ Uber
 uncountably
 upscaling
 UUID
+Vinge
 von
 vtable
 Waterhouse
