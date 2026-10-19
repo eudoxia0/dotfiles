@@ -90,7 +90,6 @@ in
     typst
     usbutils # lsusb
     uv
-    viewnior
     vlc
     yt-dlp
     zathura
