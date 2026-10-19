@@ -68,6 +68,7 @@ in
     quodlibet
     restic
     ripgrep
+    ristretto
     rsync
     ruff
     rustup
