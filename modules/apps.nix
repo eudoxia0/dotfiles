@@ -68,7 +68,6 @@ in
     quodlibet
     restic
     ripgrep
-    ristretto
     rsync
     ruff
     rustup
@@ -90,6 +89,7 @@ in
     typst
     usbutils # lsusb
     uv
+    viewnior
     vlc
     yt-dlp
     zathura
