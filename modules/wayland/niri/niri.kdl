@@ -82,6 +82,11 @@ layout {
     }
 }
 
+window-rule {
+    geometry-corner-radius 0
+    clip-to-geometry true
+}
+
 // Overview mode configuration.
 overview {
     zoom 0.25
@@ -157,6 +162,11 @@ binds {
     Mod+Shift+3 { move-column-to-workspace "γ"; }
     Mod+Shift+4 { move-column-to-workspace "δ"; }
     Mod+Shift+5 { move-column-to-workspace "ε"; }
+
+    // Movement.
+    Mod+Tab { focus-column-right; }
+    Mod+WheelScrollDown cooldown-ms=150 { focus-column-right; }
+    Mod+WheelScrollUp   cooldown-ms=150 { focus-column-left; }
 
     // Applications.
     Mod+Ctrl+C { spawn "foot"; }
