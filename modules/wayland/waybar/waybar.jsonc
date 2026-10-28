@@ -3,7 +3,7 @@
   "position": "top",
   "height": 32,
   "spacing": 4,
-  "modules-left": ["sway/workspaces"],
+  "modules-left": ["sway/workspaces", "niri/workspaces"],
   "modules-center": [],
   "modules-right": ["backlight", "wireplumber", "battery", "tray", "clock"],
   "sway/workspaces": {
