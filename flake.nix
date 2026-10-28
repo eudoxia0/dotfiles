@@ -69,6 +69,7 @@
         ./modules/wayland
         ./modules/wayland/foot
         ./modules/wayland/keyd
+        ./modules/wayland/niri
         ./modules/wayland/sway
         ./modules/wayland/waybar
       ];
