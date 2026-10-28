@@ -142,22 +142,53 @@ window-rule {
 }
 
 binds {
-    Mod+W { toggle-column-tabbed-display; }
+    // General.
+    Mod+Grave { toggle-overview; }
+    Mod+Shift+Q { quit; }
+
+    // Workspaces.
     Mod+1 { focus-workspace 1; }
     Mod+2 { focus-workspace 2; }
     Mod+3 { focus-workspace 3; }
     Mod+4 { focus-workspace 4; }
     Mod+5 { focus-workspace 5; }
-    Mod+6 { focus-workspace 6; }
-    Mod+7 { focus-workspace 7; }
-    Mod+8 { focus-workspace 8; }
-    Mod+9 { focus-workspace 9; }
-    Mod+C { switch-preset-column-width; }
+    Mod+Shift+1 { move-column-to-workspace 1; }
+    Mod+Shift+2 { move-column-to-workspace 2; }
+    Mod+Shift+3 { move-column-to-workspace 3; }
+    Mod+Shift+4 { move-column-to-workspace 4; }
+    Mod+Shift+5 { move-column-to-workspace 5; }
+
+    // Applications.
     Mod+Ctrl+C { spawn "foot"; }
-    Mod+Ctrl+Down  { move-window-down; }
     Mod+Ctrl+E { spawn "emacs"; }
-    Mod+Ctrl+End  { move-column-to-last; }
     Mod+Ctrl+F { spawn "thunar"; }
+    Mod+Ctrl+W { spawn "firefox"; }
+    Mod+R { spawn "wmenu-run"; }
+
+    // Lock screen.
+    Pause { spawn "swaylock"; }
+
+    // Screenshot.
+    Print { screenshot-screen; }
+
+    // Audio.
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
+    XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+    XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
+    XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
+    XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+    XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
+    XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
+
+    // Brightness.
+    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
+
+    // etc.
+    Mod+C { switch-preset-column-width; }
+    Mod+Ctrl+Down  { move-window-down; }
+    Mod+Ctrl+End  { move-column-to-last; }
     Mod+Ctrl+Home { move-column-to-first; }
     Mod+Ctrl+I         { move-column-to-workspace-up; }
     Mod+Ctrl+Left  { move-column-left; }
@@ -166,8 +197,6 @@ binds {
     Mod+Ctrl+Right { move-column-right; }
     Mod+Ctrl+U         { move-column-to-workspace-down; }
     Mod+Ctrl+Up    { move-window-up; }
-    Mod+Ctrl+W { spawn "firefox"; }
-    Mod+Ctrl+A { spawn "todoist-wayland"; }
     Mod+Down  { focus-window-down; }
     Mod+BracketLeft { consume-or-expel-window-left; }
     Mod+End  { focus-column-last; }
@@ -177,38 +206,14 @@ binds {
     Mod+I              { focus-workspace-up; }
     Mod+Left  { focus-column-left; }
     Mod+Minus { set-column-width "-10%"; }
-    Mod+Grave { toggle-overview; }
     Mod+Page_Down      { focus-workspace-down; }
     Mod+Page_Up        { focus-workspace-up; }
     Mod+Q repeat=false { close-window; }
-    Mod+R { spawn "wmenu-run"; }
     Mod+Right { focus-column-right; }
-    Mod+Shift+1 { move-column-to-workspace 1; }
-    Mod+Shift+2 { move-column-to-workspace 2; }
-    Mod+Shift+3 { move-column-to-workspace 3; }
-    Mod+Shift+4 { move-column-to-workspace 4; }
-    Mod+Shift+5 { move-column-to-workspace 5; }
-    Mod+Shift+6 { move-column-to-workspace 6; }
-    Mod+Shift+7 { move-column-to-workspace 7; }
-    Mod+Shift+8 { move-column-to-workspace 8; }
-    Mod+Shift+9 { move-column-to-workspace 9; }
-    Mod+Shift+Q { quit; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
     Mod+U              { focus-workspace-down; }
     Mod+Up    { focus-window-up; }
     Mod+V       { toggle-window-floating; }
-    Pause { spawn "swaylock"; }
-    Print { screenshot-screen; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
-    XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
-    XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
-    XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
-    XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
-    XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
-    XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
-    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
 }
 
 hotkey-overlay {
