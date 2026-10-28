@@ -21,7 +21,7 @@ output "DP-1" {
 }
 
 layout {
-    gaps 8
+    gaps 32
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -30,12 +30,6 @@ layout {
     // - "on-overflow", focusing a column will center it if it doesn't fit
     //   together with the previously focused column.
     center-focused-column "never"
-
-    preset-column-widths {
-        proportion 0.33333
-        proportion 0.5
-        proportion 0.66667
-    }
 
     // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+R) toggles between.
     // preset-window-heights { }
@@ -81,10 +75,10 @@ layout {
     // Top and bottom struts will simply add outer gaps in addition to the area occupied by
     // layer-shell panels and regular gaps.
     struts {
-        left 32
-        right 32
-        top 32
-        bottom 32
+        left 0
+        right 0
+        top 0
+        bottom 0
     }
 }
 
