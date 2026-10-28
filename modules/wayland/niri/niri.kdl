@@ -244,7 +244,7 @@ binds {
     Mod+I              { focus-workspace-up; }
     Mod+Left  { focus-column-left; }
     Mod+Minus { set-column-width "-10%"; }
-    Mod+O repeat=false { toggle-overview; }
+    Mod+Grave { toggle-overview; }
     Mod+Page_Down      { focus-workspace-down; }
     Mod+Page_Up        { focus-workspace-up; }
     Mod+Q repeat=false { close-window; }
