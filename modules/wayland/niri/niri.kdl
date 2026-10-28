@@ -135,22 +135,28 @@ window-rule {
     open-floating true
 }
 
+workspace "α"
+workspace "β"
+workspace "γ"
+workspace "δ"
+workspace "ε"
+
 binds {
     // General.
     Mod+Grave { toggle-overview; }
     Mod+Shift+Q { quit; }
 
     // Workspaces.
-    Mod+1 { focus-workspace 1; }
-    Mod+2 { focus-workspace 2; }
-    Mod+3 { focus-workspace 3; }
-    Mod+4 { focus-workspace 4; }
-    Mod+5 { focus-workspace 5; }
-    Mod+Shift+1 { move-column-to-workspace 1; }
-    Mod+Shift+2 { move-column-to-workspace 2; }
-    Mod+Shift+3 { move-column-to-workspace 3; }
-    Mod+Shift+4 { move-column-to-workspace 4; }
-    Mod+Shift+5 { move-column-to-workspace 5; }
+    Mod+1 { focus-workspace "α"; }
+    Mod+2 { focus-workspace "β"; }
+    Mod+3 { focus-workspace "γ"; }
+    Mod+4 { focus-workspace "δ"; }
+    Mod+5 { focus-workspace "ε"; }
+    Mod+Shift+1 { move-column-to-workspace "α"; }
+    Mod+Shift+2 { move-column-to-workspace "β"; }
+    Mod+Shift+3 { move-column-to-workspace "γ"; }
+    Mod+Shift+4 { move-column-to-workspace "δ"; }
+    Mod+Shift+5 { move-column-to-workspace "ε"; }
 
     // Applications.
     Mod+Ctrl+C { spawn "foot"; }
