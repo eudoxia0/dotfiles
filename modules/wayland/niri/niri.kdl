@@ -88,6 +88,21 @@ layout {
     }
 }
 
+// Overview mode configuration.
+overview {
+    zoom 0.25
+    backdrop-color "#36648b"
+    workspace-shadow {
+        off
+    }
+}
+
+gestures {
+    hot-corners {
+        off
+    }
+}
+
 // No client-side decoration.
 prefer-no-csd
 
@@ -127,6 +142,7 @@ window-rule {
 }
 
 binds {
+    Mod+W { toggle-column-tabbed-display; }
     Mod+1 { focus-workspace 1; }
     Mod+2 { focus-workspace 2; }
     Mod+3 { focus-workspace 3; }
@@ -153,6 +169,7 @@ binds {
     Mod+Ctrl+W { spawn "firefox"; }
     Mod+Ctrl+A { spawn "todoist-wayland"; }
     Mod+Down  { focus-window-down; }
+    Mod+BracketLeft { consume-or-expel-window-left; }
     Mod+End  { focus-column-last; }
     Mod+Equal { set-column-width "+10%"; }
     Mod+F { maximize-column; }
