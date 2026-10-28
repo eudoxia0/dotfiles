@@ -52,7 +52,7 @@ layout {
 
     // Focus ring style.
     focus-ring {
-        off
+        on
     }
 
     // Border styte.
