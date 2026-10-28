@@ -169,7 +169,7 @@ binds {
     Pause { spawn "swaylock"; }
 
     // Screenshot.
-    Print { screenshot-screen; }
+    Print { screenshot; }
 
     // Audio.
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
