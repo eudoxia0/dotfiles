@@ -178,7 +178,7 @@ layout {
 // You can change the path where screenshots are saved.
 // A ~ at the front will be expanded to the home directory.
 // The path is formatted with strftime(3) to give you the screenshot date and time.
-screenshot-path "~/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+screenshot-path "~/%Y-%m-%d-%H%M%S_screenshot.png"
 
 // Animation settings.
 // The wiki explains how to configure individual animations:
