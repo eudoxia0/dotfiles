@@ -19,5 +19,6 @@
     "L+ /home/eudoxia/.eudoxia.d/bin/heic2jpg - - - - ${dotfilesDir}/modules/scripts/heic2jpg.sh"
     "L+ /home/eudoxia/.eudoxia.d/bin/punct - - - - ${dotfilesDir}/modules/scripts/punct.py"
     "L+ /home/eudoxia/.eudoxia.d/bin/get-cpu-governor - - - - ${dotfilesDir}/modules/scripts/get-cpu-governor.sh"
+    "L+ /home/eudoxia/.eudoxia.d/bin/get-mullvad-ip - - - - ${dotfilesDir}/modules/scripts/get-mullvad-ip.sh"
   ];
 }
