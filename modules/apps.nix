@@ -60,7 +60,6 @@ in
     nixfmt-tree
     nwg-look
     obsidian
-    ocrmypdf
     pandoc
     pciutils # lspci
     poppler-utils
