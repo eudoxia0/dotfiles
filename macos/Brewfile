@@ -1,6 +1,7 @@
 brew "git"
 brew "pandoc"
 brew "stow"
+brew "tree"
 cask "1password"
 cask "ampcode/tap/amp@beta"
 cask "calibre"
