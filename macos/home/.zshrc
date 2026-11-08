@@ -8,3 +8,6 @@ alias gu='git push -u origin HEAD'
 # Rust aliases.
 alias cf='cargo +nightly fmt'
 alias ck='cargo check'
+
+# PATH
+path+=('/opt/homebrew/lib/ruby/gems/4.0.0/bin')
