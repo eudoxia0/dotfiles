@@ -11,3 +11,4 @@ alias ck='cargo check'
 
 # PATH
 path+=('/opt/homebrew/lib/ruby/gems/4.0.0/bin')
+path+=('/Users/eudoxia/.eudoxia.d/bin')
