@@ -23,3 +23,5 @@ cask "slack"
 cask "todoist-app"
 cask "whatsapp"
 cask "zed"
+# Program that allows you to count code, quickly
+brew "tokei"
