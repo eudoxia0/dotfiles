@@ -1,3 +1,4 @@
+# Git aliases.
 alias gb='git branch'
 alias gcam='git commit -a -m'
 alias gco='git checkout'
@@ -8,6 +9,9 @@ alias gu='git push -u origin HEAD'
 # Rust aliases.
 alias cf='cargo +nightly fmt'
 alias ck='cargo check'
+
+# Other aliases.
+alias bb='brew bundle'
 
 # PATH
 path+=('/opt/homebrew/lib/ruby/gems/4.0.0/bin')
