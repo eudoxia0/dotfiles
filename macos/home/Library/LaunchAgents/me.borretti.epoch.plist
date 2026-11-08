@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Self-hosted journal app. -->
+    <key>Label</key>
+    <string>me.borretti.epoch</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/eudoxia/.eudoxia.d/bin/epoch</string>
+        <string>serve</string>
+    </array>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>RUST_LOG</key>
+        <string>info</string>
+        <key>EPOCH_PORT</key>
+        <string>12003</string>
+        <key>EPOCH_DB_PATH</key>
+        <string>/Volumes/Asterion/Sync/6-databases/epoch/epoch.db</string>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true/>
+    <key>LimitLoadToSessionType</key>
+    <string>Aqua</string>
+
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
+    <key>ThrottleInterval</key>
+    <integer>5</integer>
+
+    <key>StandardOutPath</key>
+    <string>/Users/eudoxia/Library/Logs/epoch.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/eudoxia/Library/Logs/epoch.log</string>
+</dict>
+</plist>
