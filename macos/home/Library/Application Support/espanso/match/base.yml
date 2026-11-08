@@ -1,0 +1,110 @@
+matches:
+  - trigger: ":espanso"
+    replace: "Hi there!"
+
+  # Emojis
+  - { trigger: ":admin", replace: "📝" }
+  - { trigger: ":alarm", replace: "⏰" }
+  - { trigger: ":art", replace: "🎨" }
+  - { trigger: ":ask", replace: "💬" }
+  - { trigger: ":basket", replace: "🧺" }
+  - { trigger: ":battery", replace: "🔋" }
+  - { trigger: ":bed", replace: "🛏️" }
+  - { trigger: ":bento", replace: "🍱" }
+  - { trigger: ":bird", replace: "🐦" }
+  - { trigger: ":block", replace: "💹" }
+  - { trigger: ":blush", replace: "😊" }
+  - { trigger: ":bookblue", replace: "📘" }
+  - { trigger: ":bookgreen", replace: "📗" }
+  - { trigger: ":bookred", replace: "📕" }
+  - { trigger: ":books", replace: "📚" }
+  - { trigger: ":bowl", replace: "🥣" }
+  - { trigger: ":box", replace: "📦" }
+  - { trigger: ":brush", replace: "🪥" }
+  - { trigger: ":bug", replace: "🐞" }
+  - { trigger: ":bus", replace: "🚌" }
+  - { trigger: ":cake", replace: "🎂" }
+  - { trigger: ":cal", replace: "📆" }
+  - { trigger: ":cart", replace: "🛒" }
+  - { trigger: ":charge", replace: "🔋" }
+  - { trigger: ":chore", replace: "🔧" }
+  - { trigger: ":coffee", replace: "☕" }
+  - { trigger: ":cook", replace: "🍳" }
+  - { trigger: ":cream", replace: "🧴" }
+  - { trigger: ":dash", replace: "💨" }
+  - { trigger: ":desktop", replace: "🖥️" }
+  - { trigger: ":disc", replace: "💿" }
+  - { trigger: ":down", replace: "⬇️" }
+  - { trigger: ":drop", replace: "💧" }
+  - { trigger: ":dry", replace: "💨" }
+  - { trigger: ":dvd", replace: "📀" }
+  - { trigger: ":env", replace: "✉️" }
+  - { trigger: ":feat", replace: "🌿" }
+  - { trigger: ":fence", replace: "🚧" }
+  - { trigger: ":film", replace: "🎬" }
+  - { trigger: ":fish", replace: "🐟" }
+  - { trigger: ":folder", replace: "📁" }
+  - { trigger: ":frog", replace: "🐸" }
+  - { trigger: ":heart", replace: "❤️" }
+  - { trigger: ":home", replace: "🏡" }
+  - { trigger: ":idea", replace: "💡" }
+  - { trigger: ":inbox", replace: "📥️" }
+  - { trigger: ":invite", replace: "💌" }
+  - { trigger: ":iron", replace: "♨️" }
+  - { trigger: ":laptop", replace: "💻" }
+  - { trigger: ":link", replace: "🔗" }
+  - { trigger: ":log", replace: "📝" }
+  - { trigger: ":lotion", replace: "🧴" }
+  - { trigger: ":mag", replace: "🔍" }
+  - { trigger: ":map", replace: "🗺️" }
+  - { trigger: ":milk", replace: "🥛" }
+  - { trigger: ":monitor", replace: "🖥️" }
+  - { trigger: ":muscle", replace: "💪" }
+  - { trigger: ":orange", replace: "🍊" }
+  - { trigger: ":pack", replace: "🎒" }
+  - { trigger: ":pancake", replace: "🥞" }
+  - { trigger: ":paper", replace: "📄" }
+  - { trigger: ":phone", replace: "☎️" }
+  - { trigger: ":photo", replace: "📸" }
+  - { trigger: ":pill", replace: "💊" }
+  - { trigger: ":razor", replace: "🪒" }
+  - { trigger: ":read", replace: "📖" }
+  - { trigger: ":shake", replace: "🥛" }
+  - { trigger: ":shave", replace: "🪒" }
+  - { trigger: ":shirt", replace: "👕" }
+  - { trigger: ":shop", replace: "🛍️" }
+  - { trigger: ":shower", replace: "🚿" }
+  - { trigger: ":sleep", replace: "😪" }
+  - { trigger: ":soap", replace: "🧼" }
+  - { trigger: ":steam", replace: "♨️" }
+  - { trigger: ":tag", replace: "🔖" }
+  - { trigger: ":talk", replace: "💬" }
+  - { trigger: ":taxi", replace: "🚕" }
+  - { trigger: ":tea", replace: "🍵" }
+  - { trigger: ":think", replace: "🤔" }
+  - { trigger: ":tomato", replace: "🍅" }
+  - { trigger: ":tools", replace: "🛠️" }
+  - { trigger: ":tooth", replace: "🦷" }
+  - { trigger: ":tp", replace: "🧻" }
+  - { trigger: ":train", replace: "🚄" }
+  - { trigger: ":tram", replace: "🚊" }
+  - { trigger: ":trash", replace: "🗑️" }
+  - { trigger: ":usd", replace: "💵" }
+  - { trigger: ":veg", replace: "🥗" }
+  - { trigger: ":wait", replace: "⏳" }
+  - { trigger: ":walk", replace: "🚶‍♂️" }
+  - { trigger: ":wash", replace: "💦" }
+  - { trigger: ":water", replace: "💧" }
+  - { trigger: ":wave", replace: "🌊" }
+  - { trigger: ":wifi", replace: "🛜" }
+  - { trigger: ":wolf", replace: "🐺" }
+  - { trigger: ":wrench", replace: "🔧" }
+  - { trigger: ":write", replace: "✍️" }
+  - { trigger: ":zap", replace: "⚡" }
+  - { trigger: ":zzz", replace: "💤" }
+
+  # Kaomoji
+  - { trigger: ":ganbatte", replace: "٩( 'ω' )و" }
+
+  # etc.
+  - { trigger: ":hakase", replace: "博士" }

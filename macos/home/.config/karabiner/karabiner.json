@@ -1,0 +1,40 @@
+{
+  "profiles": [
+    {
+      "complex_modifications": {
+        "rules": [
+          {
+            "description": "Shift Parentheses",
+            "manipulators": [
+              {
+                "from": { "key_code": "left_shift" },
+                "to": [{ "key_code": "left_shift" }],
+                "to_if_alone": [
+                  {
+                    "key_code": "9",
+                    "modifiers": ["left_shift"]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": { "key_code": "right_shift" },
+                "to": [{ "key_code": "right_shift" }],
+                "to_if_alone": [
+                  {
+                    "key_code": "0",
+                    "modifiers": ["left_shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          }
+        ]
+      },
+      "name": "Default profile",
+      "selected": true,
+      "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
+    }
+  ]
+}
