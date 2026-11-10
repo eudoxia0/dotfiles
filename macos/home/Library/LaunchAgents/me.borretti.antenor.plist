@@ -18,7 +18,7 @@
         <key>ANTENOR_PORT</key>
         <string>12004</string>
         <key>ANTENOR_DATA_DIRECTORY</key>
-        <string>/Volumes/Asterion/Sync/6-databases/antenor</string>
+        <string>/Volumes/Asterion/Root/Databases/antenor</string>
     </dict>
 
     <key>RunAtLoad</key>

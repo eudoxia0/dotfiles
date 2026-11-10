@@ -19,7 +19,7 @@
         <key>EPOCH_PORT</key>
         <string>12003</string>
         <key>EPOCH_DB_PATH</key>
-        <string>/Volumes/Asterion/Sync/6-databases/epoch/epoch.db</string>
+        <string>/Volumes/Asterion/Root/Databases/epoch/epoch.db</string>
     </dict>
 
     <key>RunAtLoad</key>

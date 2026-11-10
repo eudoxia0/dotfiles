@@ -18,7 +18,7 @@
         <key>METAURO_PORT</key>
         <string>12005</string>
         <key>METAURO_DATA_DIRECTORY</key>
-        <string>/Volumes/Asterion/Sync/6-databases/metauro</string>
+        <string>/Volumes/Asterion/Root/Databases/metauro</string>
     </dict>
 
     <key>RunAtLoad</key>
