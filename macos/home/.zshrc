@@ -12,6 +12,7 @@ alias ck='cargo check'
 
 # Other aliases.
 alias bb='brew bundle'
+alias cdt='cd ~/dotfiles/macos'
 
 # PATH
 path+=('/opt/homebrew/lib/ruby/gems/4.0.0/bin')
