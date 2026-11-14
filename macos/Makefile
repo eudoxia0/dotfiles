@@ -1,2 +1,2 @@
 stow:
-	stow --no-folding --target=/Users/eudoxia home
+	stow --no-folding --adopt --target=/Users/eudoxia home
