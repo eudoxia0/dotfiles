@@ -5,6 +5,8 @@ matches:
   # Emojis
   - { trigger: ":admin", replace: "📝" }
   - { trigger: ":alarm", replace: "⏰" }
+  - { trigger: ":anger", replace: "💢" }
+  - { trigger: ":angry", replace: "💢" }
   - { trigger: ":art", replace: "🎨" }
   - { trigger: ":ask", replace: "💬" }
   - { trigger: ":basket", replace: "🧺" }
