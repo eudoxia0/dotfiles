@@ -35,7 +35,7 @@
         ./modules/nushell
         ./modules/scanner.nix
         ./modules/scripts
-        ./modules/services.nix
+        # ./modules/services.nix
         ./modules/shell.nix
         ./modules/ssh.nix
         ./modules/syncthing.nix
