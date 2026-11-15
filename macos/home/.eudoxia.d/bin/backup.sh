@@ -10,3 +10,4 @@ rsync --progress \
       --delete \
       /Volumes/Asterion/Root/ \
       /Volumes/$1/Root
+sync
