@@ -105,6 +105,9 @@ matches:
   - { trigger: ":zap", replace: "⚡" }
   - { trigger: ":zzz", replace: "💤" }
 
+  # Unicode
+  - { trigger: ":option", replace: "⌥" }
+
   # Kaomoji
   - { trigger: ":ganbatte", replace: "٩( 'ω' )و" }
 
