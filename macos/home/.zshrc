@@ -14,6 +14,7 @@ alias ck='cargo check'
 alias bb='brew bundle'
 alias cdt='cd ~/dotfiles/macos'
 alias cdf='cd "/Volumes/Asterion/Root/1 Workspace/flashcards"'
+alias cdw='cd "/Volumes/Asterion/Root/1 Workspace/eudoxia0.github.io"'
 
 # PATH
 path+=('/opt/homebrew/lib/ruby/gems/4.0.0/bin')
