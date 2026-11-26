@@ -108,6 +108,7 @@ matches:
   # Unicode
   - { trigger: ":option", replace: "⌥" }
   - { trigger: ":command", replace: "⌘" }
+  - { trigger: ":shift", replace: "⇧" }
 
   # Kaomoji
   - { trigger: ":ganbatte", replace: "٩( 'ω' )و" }
